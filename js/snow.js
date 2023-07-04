@@ -1,7 +1,7 @@
 ;(function () {
     const Config = {
-       snow: ['', '', '※', '', '', '', ], 
-        color: '#d9e2e7', 
+       snow: ['', '', 'U+2744', '', '', '', ], 
+        color: '#FF0000', 
         speed: 10, 
         dom: document.getElementsByTagName('body')[0], 
         interval: 500 

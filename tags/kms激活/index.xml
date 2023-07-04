@@ -10,212 +10,212 @@
 &lt;p>为了防止破解我加了壳子OVO&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="源代码">源代码&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt"> 10
-&lt;/span>&lt;span class="lnt"> 11
-&lt;/span>&lt;span class="lnt"> 12
-&lt;/span>&lt;span class="lnt"> 13
-&lt;/span>&lt;span class="lnt"> 14
-&lt;/span>&lt;span class="lnt"> 15
-&lt;/span>&lt;span class="lnt"> 16
-&lt;/span>&lt;span class="lnt"> 17
-&lt;/span>&lt;span class="lnt"> 18
-&lt;/span>&lt;span class="lnt"> 19
-&lt;/span>&lt;span class="lnt"> 20
-&lt;/span>&lt;span class="lnt"> 21
-&lt;/span>&lt;span class="lnt"> 22
-&lt;/span>&lt;span class="lnt"> 23
-&lt;/span>&lt;span class="lnt"> 24
-&lt;/span>&lt;span class="lnt"> 25
-&lt;/span>&lt;span class="lnt"> 26
-&lt;/span>&lt;span class="lnt"> 27
-&lt;/span>&lt;span class="lnt"> 28
-&lt;/span>&lt;span class="lnt"> 29
-&lt;/span>&lt;span class="lnt"> 30
-&lt;/span>&lt;span class="lnt"> 31
-&lt;/span>&lt;span class="lnt"> 32
-&lt;/span>&lt;span class="lnt"> 33
-&lt;/span>&lt;span class="lnt"> 34
-&lt;/span>&lt;span class="lnt"> 35
-&lt;/span>&lt;span class="lnt"> 36
-&lt;/span>&lt;span class="lnt"> 37
-&lt;/span>&lt;span class="lnt"> 38
-&lt;/span>&lt;span class="lnt"> 39
-&lt;/span>&lt;span class="lnt"> 40
-&lt;/span>&lt;span class="lnt"> 41
-&lt;/span>&lt;span class="lnt"> 42
-&lt;/span>&lt;span class="lnt"> 43
-&lt;/span>&lt;span class="lnt"> 44
-&lt;/span>&lt;span class="lnt"> 45
-&lt;/span>&lt;span class="lnt"> 46
-&lt;/span>&lt;span class="lnt"> 47
-&lt;/span>&lt;span class="lnt"> 48
-&lt;/span>&lt;span class="lnt"> 49
-&lt;/span>&lt;span class="lnt"> 50
-&lt;/span>&lt;span class="lnt"> 51
-&lt;/span>&lt;span class="lnt"> 52
-&lt;/span>&lt;span class="lnt"> 53
-&lt;/span>&lt;span class="lnt"> 54
-&lt;/span>&lt;span class="lnt"> 55
-&lt;/span>&lt;span class="lnt"> 56
-&lt;/span>&lt;span class="lnt"> 57
-&lt;/span>&lt;span class="lnt"> 58
-&lt;/span>&lt;span class="lnt"> 59
-&lt;/span>&lt;span class="lnt"> 60
-&lt;/span>&lt;span class="lnt"> 61
-&lt;/span>&lt;span class="lnt"> 62
-&lt;/span>&lt;span class="lnt"> 63
-&lt;/span>&lt;span class="lnt"> 64
-&lt;/span>&lt;span class="lnt"> 65
-&lt;/span>&lt;span class="lnt"> 66
-&lt;/span>&lt;span class="lnt"> 67
-&lt;/span>&lt;span class="lnt"> 68
-&lt;/span>&lt;span class="lnt"> 69
-&lt;/span>&lt;span class="lnt"> 70
-&lt;/span>&lt;span class="lnt"> 71
-&lt;/span>&lt;span class="lnt"> 72
-&lt;/span>&lt;span class="lnt"> 73
-&lt;/span>&lt;span class="lnt"> 74
-&lt;/span>&lt;span class="lnt"> 75
-&lt;/span>&lt;span class="lnt"> 76
-&lt;/span>&lt;span class="lnt"> 77
-&lt;/span>&lt;span class="lnt"> 78
-&lt;/span>&lt;span class="lnt"> 79
-&lt;/span>&lt;span class="lnt"> 80
-&lt;/span>&lt;span class="lnt"> 81
-&lt;/span>&lt;span class="lnt"> 82
-&lt;/span>&lt;span class="lnt"> 83
-&lt;/span>&lt;span class="lnt"> 84
-&lt;/span>&lt;span class="lnt"> 85
-&lt;/span>&lt;span class="lnt"> 86
-&lt;/span>&lt;span class="lnt"> 87
-&lt;/span>&lt;span class="lnt"> 88
-&lt;/span>&lt;span class="lnt"> 89
-&lt;/span>&lt;span class="lnt"> 90
-&lt;/span>&lt;span class="lnt"> 91
-&lt;/span>&lt;span class="lnt"> 92
-&lt;/span>&lt;span class="lnt"> 93
-&lt;/span>&lt;span class="lnt"> 94
-&lt;/span>&lt;span class="lnt"> 95
-&lt;/span>&lt;span class="lnt"> 96
-&lt;/span>&lt;span class="lnt"> 97
-&lt;/span>&lt;span class="lnt"> 98
-&lt;/span>&lt;span class="lnt"> 99
-&lt;/span>&lt;span class="lnt">100
-&lt;/span>&lt;span class="lnt">101
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-batch" data-lang="batch">&lt;span class="line">&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">ECHO&lt;/span> OFF
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM QBFC Project Options Begin&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM HasVersionInfo: Yes&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Companyname: LEl_FENG Studio&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Productname: Office KMS激活器&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Filedescription: 本KMS激活器支持Office 2010,Office 2013,Office 2016&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Copyrights: 禁止使用本程序违法&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Trademarks: 114514&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Originalname: Office kms&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Comments: 禁止使用本程序违法&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Productversion: 13.24.41.23&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Fileversion: 11.41.25.32&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Internalname: office kms&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM ExeType: console&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Architecture: x86&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM Appicon: blog\blog\my blog\static\favicon.ico&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM AdministratorManifest: No&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">REM QBFC Project Options End&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">ECHO&lt;/span> ON
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">echo&lt;/span> off
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mode con cols=75 lines=25
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">title&lt;/span>=Office LEl_FENG
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">setlocal&lt;/span> EnableDelayedExpansion&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">color&lt;/span> 71 &lt;span class="p">&amp;amp;&lt;/span> &lt;span class="k">cd&lt;/span> /d &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%~dp0&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">%1&lt;/span> &lt;span class="nv">%2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">ver&lt;/span>&lt;span class="p">|&lt;/span>find &lt;span class="s2">&amp;#34;5.&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>nul&lt;span class="p">&amp;amp;&amp;amp;&lt;/span>&lt;span class="k">goto&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">start&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mshta vbscript:createobject(&lt;span class="s2">&amp;#34;shell.application&amp;#34;&lt;/span>).shellexecute(&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%~s0&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>,&lt;span class="s2">&amp;#34;goto :start&amp;#34;&lt;/span>,&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>,&lt;span class="s2">&amp;#34;runas&amp;#34;&lt;/span>,1)(window.close)&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">goto&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">eof&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nl">start&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="nv">KMS_Sev&lt;/span>&lt;span class="p">=&lt;/span>kms9.MSGuides.com
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">cls&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span> 正在检查网络情况……耐心等待
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span>.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ping cloud.tencent.com &lt;span class="p">|&lt;/span> find &lt;span class="s2">&amp;#34;超时&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> NUL &lt;span class="p">&amp;amp;&amp;amp;&lt;/span> &lt;span class="k">goto&lt;/span> &lt;span class="nl">fail&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ping cloud.tencent.com &lt;span class="p">|&lt;/span> find &lt;span class="s2">&amp;#34;目标主机&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> NUL &lt;span class="p">&amp;amp;&amp;amp;&lt;/span> &lt;span class="k">goto&lt;/span> &lt;span class="nl">fail&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span> 本机网络良好……
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">goto&lt;/span> &lt;span class="nl">office&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nl">office&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span> 检查安装的office……
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">call&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">GetOfficePath&lt;/span> 14 Office2010
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">call&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">ActOffice&lt;/span> 14 Office2010
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">call&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">GetOfficePath&lt;/span> 15 Office2013
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">call&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">ActOffice&lt;/span> 15 Office2013
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%ProgramFiles%&lt;/span>&lt;span class="s2">\Microsoft Office\Office16\ospp.vbs&amp;#34;&lt;/span> &lt;span class="k">set&lt;/span> &lt;span class="nv">_Office16Path&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="nv">%ProgramFiles%&lt;/span>\Microsoft Office\Office16
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%ProgramFiles(x86)%&lt;/span>&lt;span class="s2">\Microsoft Office\Office16\ospp.vbs&amp;#34;&lt;/span> &lt;span class="k">set&lt;/span> &lt;span class="nv">_Office16Path&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="nv">%ProgramFiles(x86)%&lt;/span>\Microsoft Office\Office16
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">DEFINED&lt;/span> &lt;span class="nv">_Office16Path&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span> 已发现 Office2016
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">call&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">ActOffice&lt;/span> 16 Office2016
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span> 未发现 Office2016&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">pause&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">exit&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nl">ActOffice&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">DEFINED&lt;/span> &lt;span class="nv">_Office%1Path&lt;/span> &lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">cd&lt;/span> /d &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">!_Office%1Path!&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="nv">%1&lt;/span> &lt;span class="ow">EQU&lt;/span> 16 &lt;span class="k">call&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">Licens16&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span> 尝试激活 &lt;span class="nv">%2&lt;/span> ...&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span>.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> cscript //nologo ospp.vbs /sethst:kms.cangshui.net &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> cscript //nologo ospp.vbs /act &lt;span class="p">|&lt;/span> find /i &lt;span class="s2">&amp;#34;successful&amp;#34;&lt;/span> &lt;span class="p">&amp;amp;&amp;amp;&lt;/span> &lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span> ***** &lt;span class="nv">%2&lt;/span> 激活成功 ***** &lt;span class="p">&amp;amp;&lt;/span> &lt;span class="k">echo&lt;/span>.&lt;span class="p">)&lt;/span> &lt;span class="p">||&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span> ***** &lt;span class="nv">%2&lt;/span> 激活失败 ***** &lt;span class="p">&amp;amp;&lt;/span> &lt;span class="k">echo&lt;/span>.&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">cd&lt;/span> /d &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%~dp0&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">goto&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">EOF&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nl">GetOfficePath&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span> 检测 &lt;span class="nv">%2&lt;/span> 系列产品的安装路径...
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="nv">_Office%1Path&lt;/span>&lt;span class="p">=&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="nv">_Reg32&lt;/span>&lt;span class="p">=&lt;/span>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\&lt;span class="nv">%1&lt;/span>.0\Common\InstallRoot
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="nv">_Reg64&lt;/span>&lt;span class="p">=&lt;/span>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\&lt;span class="nv">%1&lt;/span>.0\Common\InstallRoot
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">reg query &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%_Reg32%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> /v &lt;span class="s2">&amp;#34;Path&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> nul &lt;span class="mi">2&lt;/span>&lt;span class="p">&amp;gt;&amp;amp;&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="p">&amp;amp;&amp;amp;&lt;/span> &lt;span class="k">FOR&lt;/span> &lt;span class="k">/F&lt;/span> &lt;span class="s2">&amp;#34;tokens=2*&amp;#34;&lt;/span> &lt;span class="se">%%&lt;/span>a &lt;span class="k">IN&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;reg query &amp;#34;&lt;/span>&lt;span class="nv">%_Reg32%&lt;/span>&lt;span class="s1">&amp;#34; /v &amp;#34;Path&amp;#34;&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> &lt;span class="k">SET&lt;/span> &lt;span class="s2">&amp;#34;_OfficePath1=&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">b&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">reg query &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%_Reg64%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> /v &lt;span class="s2">&amp;#34;Path&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> nul &lt;span class="mi">2&lt;/span>&lt;span class="p">&amp;gt;&amp;amp;&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="p">&amp;amp;&amp;amp;&lt;/span> &lt;span class="k">FOR&lt;/span> &lt;span class="k">/F&lt;/span> &lt;span class="s2">&amp;#34;tokens=2*&amp;#34;&lt;/span> &lt;span class="se">%%&lt;/span>a &lt;span class="k">IN&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;reg query &amp;#34;&lt;/span>&lt;span class="nv">%_Reg64%&lt;/span>&lt;span class="s1">&amp;#34; /v &amp;#34;Path&amp;#34;&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> &lt;span class="k">SET&lt;/span> &lt;span class="s2">&amp;#34;_OfficePath2=&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">b&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">DEFINED&lt;/span> &lt;span class="nv">_OfficePath1&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">if&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%_OfficePath1%&lt;/span>&lt;span class="s2">ospp.vbs&amp;#34;&lt;/span> &lt;span class="k">set&lt;/span> &lt;span class="nv">_Office%1Path&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="nv">!_OfficePath1!&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">DEFINED&lt;/span> &lt;span class="nv">_OfficePath2&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">if&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%_OfficePath2%&lt;/span>&lt;span class="s2">ospp.vbs&amp;#34;&lt;/span> &lt;span class="k">set&lt;/span> &lt;span class="nv">_Office%1Path&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="nv">!_OfficePath2!&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="nv">_OfficePath1&lt;/span>&lt;span class="p">=&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="nv">_OfficePath2&lt;/span>&lt;span class="p">=&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">DEFINED&lt;/span> &lt;span class="nv">_Office%1Path&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span> 已发现 &lt;span class="nv">%2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">echo&lt;/span>.&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">echo&lt;/span> 未发现 &lt;span class="nv">%2&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">goto&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">EOF&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nl">Licens16&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="k">/f&lt;/span> &lt;span class="se">%%&lt;/span>x &lt;span class="k">in&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dir /b ..\root\Licenses16\project???vl_kms*.xrm-ms&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> cscript ospp.vbs /inslic:&lt;span class="s2">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">x&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="k">/f&lt;/span> &lt;span class="se">%%&lt;/span>x &lt;span class="k">in&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dir /b ..\root\Licenses16\proplusvl_kms*.xrm-ms&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> cscript ospp.vbs /inslic:&lt;span class="s2">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">x&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="k">/f&lt;/span> &lt;span class="se">%%&lt;/span>x &lt;span class="k">in&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dir /b ..\root\Licenses16\standardvl_kms*.xrm-ms&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> cscript ospp.vbs /inslic:&lt;span class="s2">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">x&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="k">/f&lt;/span> &lt;span class="se">%%&lt;/span>x &lt;span class="k">in&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dir /b ..\root\Licenses16\visio???vl_kms*.xrm-ms&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> cscript ospp.vbs /inslic:&lt;span class="s2">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">x&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="k">/f&lt;/span> &lt;span class="se">%%&lt;/span>x &lt;span class="k">in&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dir /b ..\root\Licenses16\project???vl_mak*.xrm-ms&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> cscript ospp.vbs /inslic:&lt;span class="s2">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">x&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="k">/f&lt;/span> &lt;span class="se">%%&lt;/span>x &lt;span class="k">in&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dir /b ..\root\Licenses16\proplusvl_mak*.xrm-ms&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> cscript ospp.vbs /inslic:&lt;span class="s2">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">x&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="k">/f&lt;/span> &lt;span class="se">%%&lt;/span>x &lt;span class="k">in&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dir /b ..\root\Licenses16\standardvl_mak*.xrm-ms&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> cscript ospp.vbs /inslic:&lt;span class="s2">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">x&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="k">/f&lt;/span> &lt;span class="se">%%&lt;/span>x &lt;span class="k">in&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dir /b ..\root\Licenses16\visio???vl_mak*.xrm-ms&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">do&lt;/span> cscript ospp.vbs /inslic:&lt;span class="s2">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span class="se">%%&lt;/span>&lt;span class="s2">x&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cscript ospp.vbs /inpkey:NYH39-6GMXT-T39D4-WVXY2-D69YY &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cscript ospp.vbs /inpkey:7WHWN-4T7MP-G96JF-G33KR-W8GF4 &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cscript ospp.vbs /inpkey:RBWW7-NTJD4-FFK2C-TDJ7V-4C2QP &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99 &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cscript ospp.vbs /inpkey:YG9NW-3K39V-2T3HJ-93F3Q-G83KT &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cscript ospp.vbs /inpkey:PD3PC-RHNGV-FXJ29-8JK7D-RJRJK &lt;span class="p">&amp;gt;&lt;/span>nul
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">goto&lt;/span> &lt;span class="p">:&lt;/span>&lt;span class="nl">EOF&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">exit&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nl">fail&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">cls&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span> 连接不了服务器……QWQ
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">pause&lt;/span>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-batch" data-lang="batch">&lt;span style="display:flex;">&lt;span>@&lt;span style="color:#66d9ef">ECHO&lt;/span> OFF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM QBFC Project Options Begin&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM HasVersionInfo: Yes&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Companyname: LEl_FENG Studio&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Productname: Office KMS激活器&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Filedescription: 本KMS激活器支持Office 2010,Office 2013,Office 2016&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Copyrights: 禁止使用本程序违法&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Trademarks: 114514&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Originalname: Office kms&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Comments: 禁止使用本程序违法&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Productversion: 13.24.41.23&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Fileversion: 11.41.25.32&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Internalname: office kms&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM ExeType: console&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Architecture: x86&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM Appicon: blog\blog\my blog\static\favicon.ico&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM AdministratorManifest: No&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">REM QBFC Project Options End&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@&lt;span style="color:#66d9ef">ECHO&lt;/span> ON
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@&lt;span style="color:#66d9ef">echo&lt;/span> off
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mode con cols=75 lines=25
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">title&lt;/span>=Office LEl_FENG
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">setlocal&lt;/span> EnableDelayedExpansion&amp;amp;&lt;span style="color:#66d9ef">color&lt;/span> 71 &amp;amp; &lt;span style="color:#66d9ef">cd&lt;/span> /d &lt;span style="color:#e6db74">&amp;#34;&lt;/span>%~dp0&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>%1 %2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">ver&lt;/span>|find &lt;span style="color:#e6db74">&amp;#34;5.&amp;#34;&lt;/span>&amp;gt;nul&amp;amp;&amp;amp;&lt;span style="color:#66d9ef">goto&lt;/span> :start
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mshta vbscript:createobject(&lt;span style="color:#e6db74">&amp;#34;shell.application&amp;#34;&lt;/span>).shellexecute(&lt;span style="color:#e6db74">&amp;#34;&lt;/span>%~s0&lt;span style="color:#e6db74">&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;goto :start&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;runas&amp;#34;&lt;/span>,1)(window.close)&amp;amp;&lt;span style="color:#66d9ef">goto&lt;/span> :eof
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>:start
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">set&lt;/span> KMS_Sev=kms9.MSGuides.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">cls&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">echo&lt;/span> 正在检查网络情况……耐心等待
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">echo&lt;/span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ping cloud.tencent.com | find &lt;span style="color:#e6db74">&amp;#34;超时&amp;#34;&lt;/span> &amp;gt; NUL &amp;amp;&amp;amp; &lt;span style="color:#66d9ef">goto&lt;/span> fail
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ping cloud.tencent.com | find &lt;span style="color:#e6db74">&amp;#34;目标主机&amp;#34;&lt;/span> &amp;gt; NUL &amp;amp;&amp;amp; &lt;span style="color:#66d9ef">goto&lt;/span> fail
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">echo&lt;/span> 本机网络良好……
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">goto&lt;/span> office
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>:office
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">echo&lt;/span> 检查安装的office……
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">call&lt;/span> :GetOfficePath 14 Office2010
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">call&lt;/span> :ActOffice 14 Office2010
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">call&lt;/span> :GetOfficePath 15 Office2013
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">call&lt;/span> :ActOffice 15 Office2013
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">exist&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>%ProgramFiles%&lt;span style="color:#e6db74">\Microsoft Office\Office16\ospp.vbs&amp;#34;&lt;/span> &lt;span style="color:#66d9ef">set&lt;/span> _Office16Path=%ProgramFiles%\Microsoft Office\Office16
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">exist&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>%ProgramFiles(x86)%&lt;span style="color:#e6db74">\Microsoft Office\Office16\ospp.vbs&amp;#34;&lt;/span> &lt;span style="color:#66d9ef">set&lt;/span> _Office16Path=%ProgramFiles(x86)%\Microsoft Office\Office16
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">DEFINED&lt;/span> _Office16Path (&lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span> 已发现 Office2016
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">call&lt;/span> :ActOffice 16 Office2016
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ) &lt;span style="color:#66d9ef">else&lt;/span> (&lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span> 未发现 Office2016)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">pause&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">exit&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>:ActOffice
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">DEFINED&lt;/span> _Office%1Path (
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">cd&lt;/span> /d &lt;span style="color:#e6db74">&amp;#34;&lt;/span>!_Office%1Path!&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> %1 &lt;span style="color:#f92672">EQU&lt;/span> 16 &lt;span style="color:#66d9ef">call&lt;/span> :Licens16
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span> 尝试激活 %2 ...&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cscript //nologo ospp.vbs /sethst:kms.cangshui.net &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cscript //nologo ospp.vbs /act | find /i &lt;span style="color:#e6db74">&amp;#34;successful&amp;#34;&lt;/span> &amp;amp;&amp;amp; (
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span> ***** %2 激活成功 ***** &amp;amp; &lt;span style="color:#66d9ef">echo&lt;/span>.) || (&lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span> ***** %2 激活失败 ***** &amp;amp; &lt;span style="color:#66d9ef">echo&lt;/span>.)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">cd&lt;/span> /d &lt;span style="color:#e6db74">&amp;#34;&lt;/span>%~dp0&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">goto&lt;/span> :EOF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>:GetOfficePath
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span> 检测 %2 系列产品的安装路径...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">set&lt;/span> _Office%1Path=
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">set&lt;/span> _Reg32=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\%1.0\Common\InstallRoot
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">set&lt;/span> _Reg64=HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\%1.0\Common\InstallRoot
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>reg query &lt;span style="color:#e6db74">&amp;#34;&lt;/span>%_Reg32%&lt;span style="color:#e6db74">&amp;#34;&lt;/span> /v &lt;span style="color:#e6db74">&amp;#34;Path&amp;#34;&lt;/span> &amp;gt; nul &lt;span style="color:#ae81ff">2&lt;/span>&amp;gt;&amp;amp;&lt;span style="color:#ae81ff">1&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#66d9ef">FOR&lt;/span> &lt;span style="color:#66d9ef">/F&lt;/span> &lt;span style="color:#e6db74">&amp;#34;tokens=2*&amp;#34;&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>a &lt;span style="color:#66d9ef">IN&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;reg query &amp;#34;&lt;/span>%_Reg32%&lt;span style="color:#e6db74">&amp;#34; /v &amp;#34;Path&amp;#34;&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> &lt;span style="color:#66d9ef">SET&lt;/span> &lt;span style="color:#e6db74">&amp;#34;_OfficePath1=&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">b&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>reg query &lt;span style="color:#e6db74">&amp;#34;&lt;/span>%_Reg64%&lt;span style="color:#e6db74">&amp;#34;&lt;/span> /v &lt;span style="color:#e6db74">&amp;#34;Path&amp;#34;&lt;/span> &amp;gt; nul &lt;span style="color:#ae81ff">2&lt;/span>&amp;gt;&amp;amp;&lt;span style="color:#ae81ff">1&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#66d9ef">FOR&lt;/span> &lt;span style="color:#66d9ef">/F&lt;/span> &lt;span style="color:#e6db74">&amp;#34;tokens=2*&amp;#34;&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>a &lt;span style="color:#66d9ef">IN&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;reg query &amp;#34;&lt;/span>%_Reg64%&lt;span style="color:#e6db74">&amp;#34; /v &amp;#34;Path&amp;#34;&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> &lt;span style="color:#66d9ef">SET&lt;/span> &lt;span style="color:#e6db74">&amp;#34;_OfficePath2=&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">b&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">DEFINED&lt;/span> _OfficePath1 (&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">exist&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>%_OfficePath1%&lt;span style="color:#e6db74">ospp.vbs&amp;#34;&lt;/span> &lt;span style="color:#66d9ef">set&lt;/span> _Office%1Path=!_OfficePath1!)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">DEFINED&lt;/span> _OfficePath2 (&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">exist&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>%_OfficePath2%&lt;span style="color:#e6db74">ospp.vbs&amp;#34;&lt;/span> &lt;span style="color:#66d9ef">set&lt;/span> _Office%1Path=!_OfficePath2!)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">set&lt;/span> _OfficePath1=
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">set&lt;/span> _OfficePath2=
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#66d9ef">DEFINED&lt;/span> _Office%1Path (&lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span> 已发现 %2) &lt;span style="color:#66d9ef">else&lt;/span> (&lt;span style="color:#66d9ef">echo&lt;/span>.&amp;amp;&lt;span style="color:#66d9ef">echo&lt;/span> 未发现 %2)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">goto&lt;/span> :EOF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>:Licens16
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">/f&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>x &lt;span style="color:#66d9ef">in&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;dir /b ..\root\Licenses16\project???vl_kms*.xrm-ms&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> cscript ospp.vbs /inslic:&lt;span style="color:#e6db74">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">x&amp;#34;&lt;/span> &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">/f&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>x &lt;span style="color:#66d9ef">in&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;dir /b ..\root\Licenses16\proplusvl_kms*.xrm-ms&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> cscript ospp.vbs /inslic:&lt;span style="color:#e6db74">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">x&amp;#34;&lt;/span> &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">/f&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>x &lt;span style="color:#66d9ef">in&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;dir /b ..\root\Licenses16\standardvl_kms*.xrm-ms&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> cscript ospp.vbs /inslic:&lt;span style="color:#e6db74">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">x&amp;#34;&lt;/span> &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">/f&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>x &lt;span style="color:#66d9ef">in&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;dir /b ..\root\Licenses16\visio???vl_kms*.xrm-ms&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> cscript ospp.vbs /inslic:&lt;span style="color:#e6db74">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">x&amp;#34;&lt;/span> &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">/f&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>x &lt;span style="color:#66d9ef">in&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;dir /b ..\root\Licenses16\project???vl_mak*.xrm-ms&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> cscript ospp.vbs /inslic:&lt;span style="color:#e6db74">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">x&amp;#34;&lt;/span> &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">/f&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>x &lt;span style="color:#66d9ef">in&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;dir /b ..\root\Licenses16\proplusvl_mak*.xrm-ms&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> cscript ospp.vbs /inslic:&lt;span style="color:#e6db74">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">x&amp;#34;&lt;/span> &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">/f&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>x &lt;span style="color:#66d9ef">in&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;dir /b ..\root\Licenses16\standardvl_mak*.xrm-ms&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> cscript ospp.vbs /inslic:&lt;span style="color:#e6db74">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">x&amp;#34;&lt;/span> &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#66d9ef">/f&lt;/span> &lt;span style="color:#ae81ff">%%&lt;/span>x &lt;span style="color:#66d9ef">in&lt;/span> (&lt;span style="color:#e6db74">&amp;#39;dir /b ..\root\Licenses16\visio???vl_mak*.xrm-ms&amp;#39;&lt;/span>) &lt;span style="color:#66d9ef">do&lt;/span> cscript ospp.vbs /inslic:&lt;span style="color:#e6db74">&amp;#34;..\root\Licenses16\&lt;/span>&lt;span style="color:#ae81ff">%%&lt;/span>&lt;span style="color:#e6db74">x&amp;#34;&lt;/span> &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cscript ospp.vbs /inpkey:NYH39-6GMXT-T39D4-WVXY2-D69YY &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cscript ospp.vbs /inpkey:7WHWN-4T7MP-G96JF-G33KR-W8GF4 &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cscript ospp.vbs /inpkey:RBWW7-NTJD4-FFK2C-TDJ7V-4C2QP &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99 &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cscript ospp.vbs /inpkey:YG9NW-3K39V-2T3HJ-93F3Q-G83KT &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cscript ospp.vbs /inpkey:PD3PC-RHNGV-FXJ29-8JK7D-RJRJK &amp;gt;nul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">goto&lt;/span> :EOF
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">exit&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>:fail
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">cls&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">echo&lt;/span> 连接不了服务器……QWQ
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">pause&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div></description></item></channel></rss>
