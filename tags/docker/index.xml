@@ -1,1 +1,461 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/docker/</link><description>Recent content in docker on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker 资源整合</title><link>https://blog.xpdbk.com/post/docker-zy/</link><pubDate>Wed, 11 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker-zy/</guid><description>&lt;img src="https://blog.xpdbk.com/post/docker-zy/docker.png" alt="Featured image of post Docker 资源整合" />Docker 记录玩Docker的过程 Docker 安装 使用官方安装脚本自动安装 安装命令如下： 1 curl -fsSL https://get.docker.com | bash -s docker 也可以使用国内 daocloud 一键安装命令： 1 curl -sSL https://get.daocloud.io/docker | sh Docker</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/docker/</link><description>Recent content in docker on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker 资源整合</title><link>https://blog.xpdbk.com/post/docker-zy/</link><pubDate>Wed, 11 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker-zy/</guid><description>&lt;img src="https://blog.xpdbk.com/post/docker-zy/docker.png" alt="Featured image of post Docker 资源整合" />&lt;h2 id="docker">Docker&lt;/h2>
+&lt;blockquote>
+&lt;p>记录玩Docker的过程&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="docker-安装">Docker 安装&lt;/h2>
+&lt;h3 id="使用官方安装脚本自动安装">使用官方安装脚本自动安装&lt;/h3>
+&lt;p>安装命令如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">curl -fsSL https://get.docker.com &lt;span class="p">|&lt;/span> bash -s docker
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>也可以使用国内 &lt;code>daocloud&lt;/code> 一键安装命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">curl -sSL https://get.daocloud.io/docker &lt;span class="p">|&lt;/span> sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="docker基本命令">Docker基本命令&lt;/h2>
+&lt;blockquote>
+&lt;p>Docker 镜像是由 Dockerfile 和一些必要的依赖项组成的，Docker 容器是动态的 Docker 镜像。要使用 Docker 命令，首先需要知道您是在处理镜像还是容器。一旦你知道你所处理的是镜像还是容器之后，你才可以找到正确的命令。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="命令的共性">命令的共性&lt;/h3>
+&lt;p>你需要知道一些关于 Docker 命令的规律：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Docker CLI 管理命令以 docker 开头，然后是空格，接着是管理类别，然后是空格最后是命令。例如，docker container stop 这一命令可以停止容器。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>引用特定容器或镜像的命令需要该容器或镜像的名称或 ID。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>举个例子，docker container run my_app 是用于构建和运行名为 &lt;em>my_app&lt;/em> 的容器的命令。在本文示例中，我将使用名称 my_container 来引用通用容器。同理，my_image、my_tag 也是如此。&lt;/p>
+&lt;p>我将单独提供命令和通用标志。前面有两个破折号的标志是标志的全名。带有一个破折号的标志是完整标志名称的缩写。例如，-p 是–port 标志的缩写。&lt;/p>
+&lt;p>本文的目标是让您牢牢记住这些命令和标记，并希望您可以在创建容器或构建镜像的时候可以将本指南作为参考。&lt;/p>
+&lt;h3 id="容器命令">容器命令&lt;/h3>
+&lt;p>使用 docker container my_command&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>create — 从镜像中创建一个容器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>start — 启动一个已有的容器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>run — 创建一个新的容器并且启动它&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ls — 列出正在运行的容器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>inspect — 查看关于容器的信息&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>logs — 打印日志&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>stop — 优雅停止正在运行的容器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>kill — 立即停止容器中的主要进程&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>rm — 删除已经停止的容器&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="镜像命令">镜像命令&lt;/h3>
+&lt;p>使用 docker image my_command&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>build — 构建一个镜像&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>push — 将镜像推送到远程镜像仓库中&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ls — 列出镜像&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>history — 查看中间镜像信息&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>inspect — 查看关于镜像的信息，包括层&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>rm — 删除镜像&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="容器-镜像">容器 &amp;amp;镜像&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>docker version — 列出关于 Docker 客户端以及服务器版本的信息&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>docker login — 登录到 Docker 镜像仓库&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>docker system prune — 删除所有未使用的容器、网络以及无名称的镜像（虚悬镜像）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="容器命令详解">容器命令详解&lt;/h3>
+&lt;h4 id="启动容器">启动容器&lt;/h4>
+&lt;p>术语“创建”，“开始”和“运行”在日常生活中都具有相似的语义，但每个都是一个独立的 Docker 命令，用于创建并/或启动容器。让我们先看看创建容器的命令。&lt;/p>
+&lt;p>&lt;strong>docker container create my_repo/my_image:my_tag&lt;/strong> — 从一个镜像中创建容器&lt;/p>
+&lt;p>我将在下文中把 my_repo/my_image:my_tag 缩写为 my_image。&lt;/p>
+&lt;p>你可以通过传递许多标志来 create。&lt;/p>
+&lt;p>&lt;strong>docker container create -a STDIN my_image&lt;/strong>&lt;/p>
+&lt;p>-a 是—attach 的缩写，指将容器连接到 STDIN，STDOUT 或 STDERR。&lt;/p>
+&lt;p>既然我们已经创建了一个容器，那么让我们来启动它。&lt;/p>
+&lt;p>&lt;strong>docker container start my_container&lt;/strong> — 启动一个已有的容器&lt;/p>
+&lt;p>请注意，容器可以通过容器的 ID 或容器的名称来引用。&lt;/p>
+&lt;p>&lt;strong>docker container start my_container&lt;/strong>&lt;/p>
+&lt;p>既然你知道如何创建和启动一个容器，让我们来看看最常见的 Docker 命令。它将 create 和 start 结合到一个命令中：run。&lt;/p>
+&lt;p>&lt;strong>docker container run my_image&lt;/strong> — 创建一个新容器并且启动它。这一命令同样也有许多选项。让我们看看其中几个。&lt;/p>
+&lt;p>&lt;strong>docker container run -i -t -p 1000:8000 &amp;ndash;rm my_image&lt;/strong>&lt;/p>
+&lt;p>-i 是—interactive 的缩写，即使未连接，也要保持 STDIN 打开；-t 是—tty 的缩写，它会分配一个伪终端，将终端与容器的 STDIN 和 STDOUT 连接起来。&lt;/p>
+&lt;p>你需要指定-i 和-t 通过终端 shell 与容器交互。&lt;/p>
+&lt;p>-p 是 –port 的缩写。端口是与外部世界的接口。1000：8000 将 Docker 端口 8000 映射到计算机上的端口 1000。如果你有一个 app 输出了一些内容到浏览器，你可以将浏览器导航到 localhost:1000 并且查看它。&lt;/p>
+&lt;p>–rm 自动删除停止运行的容器。&lt;/p>
+&lt;p>让我们再来看看 run 的几个例子。&lt;/p>
+&lt;p>&lt;strong>docker container run -it my_image my_command&lt;/strong>&lt;/p>
+&lt;p>sh 是你可在运行时指定的命令，它将在容器内部启动 shell 会话，你可以通过终端与其交互。对于 Alpine 镜像，sh 优于 bash，因为 Alpine 镜像不随 bash 一起安装。键入 exit 以结束交互式 shell 会话。&lt;/p>
+&lt;p>请注意，我们将-i 和-t 结合为-it。&lt;/p>
+&lt;p>&lt;strong>docker container run -d my_image&lt;/strong>&lt;/p>
+&lt;p>-d 是—detach 的缩写，指在后台运行容器，允许您在容器运行时将终端用于其他命令。&lt;/p>
+&lt;h4 id="检查容器状态">检查容器状态&lt;/h4>
+&lt;p>如果你有许多运行中的 Docker 容器并且想要找到与哪一个互动，那么你需要列出它们。&lt;/p>
+&lt;p>&lt;strong>docker container ls&lt;/strong> — 列出运行中的容器，同时提供关于容器有用的信息。&lt;/p>
+&lt;p>&lt;strong>docker container ls -a -s&lt;/strong>&lt;/p>
+&lt;p>-a 是–all 的缩写，列出所有容器（不仅仅是正在运行中的容器）&lt;/p>
+&lt;p>-s 是—size 的缩写，列出每个容器的大小。&lt;/p>
+&lt;p>&lt;strong>docker container inspect my_container&lt;/strong> — 查看有关容器的信息&lt;/p>
+&lt;p>&lt;strong>docker container logs my_container&lt;/strong> — 列出容器日志&lt;/p>
+&lt;h4 id="终止容器">终止容器&lt;/h4>
+&lt;p>有时你需要停止一个正在运行中的容器，你需要用到以下命令：&lt;/p>
+&lt;p>&lt;strong>docker container stop my_container&lt;/strong> — 优雅地停止一个或多个正在运行的容器。在容器关闭之前提供默认 10 秒以完成任何进程。&lt;/p>
+&lt;p>如果你觉得 10 秒太长的话，可以使用以下命令：&lt;/p>
+&lt;p>&lt;strong>docker container kill my_container&lt;/strong> — 立即停止一个或多个正在运行的容器。这就像拔掉电视上的插头一样。但是在大多数情况下，建议使用 stop 命令。&lt;/p>
+&lt;p>&lt;strong>docker container kill $(docker ps -q)&lt;/strong> — 终止所有运行中的容器&lt;/p>
+&lt;p>你需要删除容器可以使用以下命令：&lt;/p>
+&lt;p>&lt;strong>docker container rm my_container&lt;/strong> — 删除一个或多个容器&lt;/p>
+&lt;p>&lt;strong>docker container rm $(docker ps -a -q)&lt;/strong> — 删除所有不在运行中的容器&lt;/p>
+&lt;p>以上就是 Docker 容器的关键命令。接下来，我们来看看关于镜像的命令。&lt;/p>
+&lt;h3 id="镜像命令详解">镜像命令详解&lt;/h3>
+&lt;p>以下是 Docker 镜像使用的 7 条命令&lt;/p>
+&lt;h4 id="构建镜像">构建镜像&lt;/h4>
+&lt;p>&lt;strong>docker image build -t my_repo/my_image:my_tag .&lt;/strong> 在指定路径或 url 的 Dockerfile 中构建一个名为 &lt;em>&amp;gt;my_image&lt;/em> 的 Docker 镜像。&lt;/p>
+&lt;p>-t 是 tag 的缩写，是告诉 docker 用提供的标签来标记镜像，在本例中，是 &lt;em>my_tag&lt;/em>。&lt;/p>
+&lt;p>在命令末尾的句号（.）是告诉 Docker 根据当前工作目录中的 Dockerfile 构建镜像。&lt;/p>
+&lt;p>当你构建好镜像之后，你想要推送它到远程仓库中以便它可以共享并且在有需要的时候被拉取。那么下一个命令十分有用，尽管并非是镜像命令。&lt;/p>
+&lt;p>&lt;strong>docker login&lt;/strong> — 登录到 Docker 镜像仓库，根据提示键入你的用户名和密码&lt;/p>
+&lt;p>&lt;strong>docker image push my_repo/my_image:my_tag&lt;/strong> — 推送一个镜像到仓库。&lt;/p>
+&lt;p>你拥有了这些镜像之后，你可能想要检查他们。&lt;/p>
+&lt;h4 id="检查镜像">检查镜像&lt;/h4>
+&lt;p>&lt;strong>docker image ls&lt;/strong> — 列出你的镜像以及每个镜像的大小&lt;/p>
+&lt;p>&lt;strong>docker image history my_image&lt;/strong> — 显示镜像的中间镜像，包括大小及其创建方式&lt;/p>
+&lt;p>&lt;strong>docker image inspect my_image&lt;/strong> — 显示关于镜像的细节，包括组成镜像的层&lt;/p>
+&lt;p>有时候你还需要清理你的镜像。&lt;/p>
+&lt;h4 id="清理镜像">清理镜像&lt;/h4>
+&lt;p>&lt;strong>docker image rm my_image&lt;/strong> — 删除指定镜像。如果镜像被保存在镜像仓库中，那么该镜像在那依旧可用。&lt;/p>
+&lt;p>&lt;strong>docker image rm $(docker images -a -q)&lt;/strong> — 删除所有镜像。必须小心使用这一命令。请注意已经被推送到远程仓库的镜像依然能够保存，这是镜像仓库的一个优势。&lt;/p>
+&lt;p>以上就是大部分与 Docker 镜像相关的重要命令。&lt;/p>
+&lt;p>要在使用 Docker 时查看 CLI 引用，只需在命令行中输入命令 docker 即可。Docker 文档请参阅：&lt;/p>
+&lt;p>&lt;a class="link" href="https://docs.docker.com/engine/reference/commandline/cli/" target="_blank" rel="noopener"
+>Use the Docker command line | Docker Documentation&lt;/a>&lt;/p>
+&lt;p>现在你已经掌握了运行 Docker 的关键命令，可以用 Docker 了！&lt;/p>
+&lt;h2 id="docker可视化-portainer安装">Docker可视化 Portainer安装&lt;/h2>
+&lt;p>&lt;strong>Portainer是Docker的可视化管理工具&lt;/strong>，镜像、容器、日志显示等操作，Swarm集群、服务等集中管理和操作、登录用户管理和控制等功能。&lt;/p>
+&lt;h3 id="portainer官网">Portainer官网&lt;/h3>
+&lt;p>Portainer官网：&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.portainer.io%2F" target="_blank" rel="noopener"
+>https://www.portainer.io/&lt;/a>&lt;/p>
+&lt;p>Portainer官网提供的安装文档：&lt;/p>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.portainer.io%2Finstallation%2F" target="_blank" rel="noopener"
+>https://www.portainer.io/installation/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fportainer.readthedocs.io%2Fen%2Fstable%2Fdeployment.html" target="_blank" rel="noopener"
+>https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
+&lt;p>&lt;strong>1、利用Docker拉取portainer镜像&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker pull portainer/portainer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>3、运行启动portainer&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>温馨小提示&lt;/strong>： 这里需开放9000端口来映射portainer&lt;br>
+/var/run/docker.sock:/var/run/docker.sock -&amp;gt; 映射本地docker路径&lt;br>
+/home/docker/portainer:/data -&amp;gt; 实现数据持久化【原因：portainer的数据存储在容器内部的/data目录，容易导致容器重启的时候数据丢失，作用：将portainer数据映射到本地】&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">docker&lt;/span> &lt;span class="n">run&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="mi">9000&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">9000&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">sock&lt;/span>&lt;span class="o">:/&lt;/span>&lt;span class="n">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">sock&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">home&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">portainer&lt;/span>&lt;span class="o">:/&lt;/span>&lt;span class="n">data&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">name&lt;/span> &lt;span class="n">portainer&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">restart&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">always&lt;/span> &lt;span class="n">portainer&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">portainer&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>启动后通过 服务器地址:9000 即可访问portainer，第一次访问注意需要设置账号密码&lt;/p>
+&lt;h3 id="总结">总结&lt;/h3>
+&lt;ol>
+&lt;li>不同的环境安装可根据官网给出的文档进行操作&lt;/li>
+&lt;li>另外Docker的其它可视化管理工具还有：DockerUI、Shipyard、Rancher 等&lt;/li>
+&lt;/ol>
+&lt;h2 id="使用-docker-自建支持-dohdot-的-dns-服务器">使用 Docker 自建支持 DoH、DoT 的 DNS 服务器&lt;/h2>
+&lt;p>DoH (DNS over HTTPS) 和 DoT (DNS over TLS) 有效避免了运营商的 DNS 监听和劫持，本文记录在公网搭建一个可以去广告的 DNS 服务器（借助 Adguard Home）。&lt;/p>
+&lt;h3 id="前期准备">前期准备&lt;/h3>
+&lt;ul>
+&lt;li>公网服务器一台&lt;/li>
+&lt;li>域名一个，并且指向该公网服务器&lt;/li>
+&lt;li>域名指向该公网服务器，并申请好 TLS 证书（可使用 Let’s Encrypt 申请）&lt;/li>
+&lt;/ul>
+&lt;h3 id="docker-部署">Docker 部署&lt;/h3>
+&lt;p>Docker Hub 镜像地址：&lt;a class="link" href="https://hub.docker.com/r/adguard/adguardhome" target="_blank" rel="noopener"
+>Docker&lt;/a>&lt;/p>
+&lt;p>安装好 Docker 后下载镜像，以下任选其一&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>1 &lt;br>2&lt;/th>
+&lt;th>docker pull adguard/adguardhome:latest # 稳定版 &lt;br>docker pull adguard/adguardhome:edge # 最新的版本，可能不稳定&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;/table>
+&lt;p>新建配置目录和工作目录&lt;/p>
+&lt;pre>&lt;code>mkdir /root/adguardhome/workdir
+mkdir /root/adguardhome/confdir
+&lt;/code>&lt;/pre>
+&lt;p>启动镜像，完成后进入配置页面：&lt;code>HostIP:3000&lt;/code>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>1 &lt;br>2 &lt;br>3 &lt;br>4 &lt;br>5 &lt;br>6&lt;/th>
+&lt;th>docker run &amp;ndash;name adguardhome \ &lt;br> -v /root/adguardhome/workdir:/opt/adguardhome/work \ &lt;br> -v /root/adguardhome/confdir:/opt/adguardhome/conf \ &lt;br> &amp;ndash;restart always \ &lt;br> -p 443:443 -p 853:853 -p 3000:3000 -p 53:53/udp -p 53:53/tcp \ &lt;br> -d adguard/adguardhome:edge&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;/table>
+&lt;p>注意，第一次进入配置页面需要配置监听端口，配置好后注意修改容器启动时端口的映射，并以新的命令重新启动容器&lt;/p>
+&lt;h3 id="上游服务器设置">上游服务器设置&lt;/h3>
+&lt;p>进入 Adguard Home 控制台，找到「设置 - DNS 设置」&lt;/p>
+&lt;p>「上游 DNS 服务器」可填入公共 DNS 服务器&lt;/p>
+&lt;p>国内常用的公共 DNS 如下：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>DNS 服务器地址&lt;/th>
+&lt;th>类型&lt;/th>
+&lt;th>提供商&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>https://dns.alidns.com/dns-query&lt;/code>&lt;/td>
+&lt;td>DNS over HTTPS&lt;/td>
+&lt;td>阿里 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>tls://dns.alidns.com&lt;/code>&lt;/td>
+&lt;td>DNS over TLS&lt;/td>
+&lt;td>阿里 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>https://doh.360.cn/dns-query&lt;/code>&lt;/td>
+&lt;td>DNS over HTTPS&lt;/td>
+&lt;td>360 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>119.29.29.29&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>DNSPod&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>182.254.116.116&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>DNSPod&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>223.5.5.5&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>阿里 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>223.6.6.6&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>阿里 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>114.114.114.114&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>114 DNS&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>「Bootstrap DNS 服务器」填入一到两个常规 DNS 服务器就可以，如 &lt;code>223.5.5.5&lt;/code> 和 &lt;code>119.29.29.29&lt;/code>&lt;/p>
+&lt;p>在 「DNS 服务设定中」，勾选「使用客户端的子网地址（EDNS）」，可以使查询的客户端得到离其最近的网站 IP 解析。&lt;/p>
+&lt;h3 id="doh--dot-设置">DoH &amp;amp; DoT 设置&lt;/h3>
+&lt;p>进入「设置 - 加密设置」&lt;/p>
+&lt;p>勾选「启用加密」，填写准备的域名，「HTTPS 端口」和「DNS-over-TLS 端口」均可自定义，如有改正记得重新修改容器启动时的端口映射配置。&lt;/p>
+&lt;p>证书可以选择「设置证书路径」和「粘贴证书内容」，按要求配置。&lt;/p>
+&lt;p>配置完成后可以使用「&lt;code>https://域名&lt;/code>」访问控制台&lt;/p>
+&lt;h3 id="去广告设置">去广告设置&lt;/h3>
+&lt;p>进入「过滤器 - DNS 封锁清单」&lt;/p>
+&lt;p>附一些常用的规则：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>HalfLife，规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则：&lt;code>https://gitee.com/halflife/list/raw/master/ad.txt&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>EasyPrivacy，隐私保护：&lt;code>https://easylist-downloads.adblockplus.org/easyprivacy.txt&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>I don’t care about cookies，我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告：&lt;code>https://www.i-dont-care-about-cookies.eu/abp/&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>anti-AD，自称是目前中文区命中率最高的广告过滤列表：&lt;code>https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>乘风广告、视频过滤规则：&lt;code>https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt&lt;/code>、&lt;code>https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt&lt;/code>&lt;/p>
+&lt;p>&lt;strong>至此配置完成&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>使用普通 DNS 解析，在客户端填入服务器的 IP 即可，若要使用 DoH 和 DoT 则需使用另外的工具。&lt;/p>
+&lt;p>最新版的 Chrome 已经支持使用 DoH 解析，在 Chrome 中找到「设置 - 安全 - 使用安全 DNS」，按规则填入域名即可&lt;/p>
+&lt;h2 id="linux-53-dns端口被-systemd-resolve-占用">Linux 53 DNS端口被 systemd-resolve 占用&lt;/h2>
+&lt;p>1.停用 systemd-resolved 服务&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">systemctl stop systemd-resolved
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>编辑 &lt;code>/etc/systemd/resolved.conf&lt;/code> 文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /etc/systemd/resolved.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>换下面说明更改，然后按一下“esc”键，再输入“:wq”（不要输入引号），回车保存&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="k">[Resolve]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">DNS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">8.8.8.8 #取消注释，增加dns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#FallbackDNS=&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#Domains=&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#LLMNR=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#MulticastDNS=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#DNSSEC=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#Cache=yes&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">DNSStubListener&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">no #取消注释，把yes改为no&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最后输入下面命令即可&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="使用docker安装opentracker自建bt-tracker服务器">使用Docker安装OpenTracker，自建BT Tracker服务器&lt;/h2>
+&lt;p>OpenTracker用于搭建Tracker服务器，据说该工具性能很强，就连全球最大的BT服务器海盗湾也在使用，有人专门制作了一个OpenTracker的Docker镜像，基本不到1分钟就可以搭建好一个BT Tracker服务器，有兴趣的也可以玩玩。&lt;/p>
+&lt;h3 id="安装opentracker">安装OpenTracker&lt;/h3>
+&lt;h3 id="运行命令">运行命令：&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker run --name tracker-server -d -p 6666:6666 -p 6666:6666/udp moerats/tracker-server:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果你服务器上的&lt;code>6666&lt;/code>端口正在被使用，而&lt;code>7777&lt;/code>没被使用，那就改成&lt;code>7777:6666&lt;/code>参数后再运行。&lt;/p>
+&lt;p>对于某些系统可能还需要开启防火墙端口，比如CentOS 7，开启命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">firewall-cmd --zone&lt;span class="o">=&lt;/span>public --add-port&lt;span class="o">=&lt;/span>6666/tcp --permanent
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">firewall-cmd --zone&lt;span class="o">=&lt;/span>public --add-port&lt;span class="o">=&lt;/span>6666/udp --permanent
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">firewall-cmd --reload
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="使用方法">使用方法&lt;/h3>
+&lt;p>我们在制作种子添加&lt;code>Tracker&lt;/code>服务器时，可以填：&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>http://IP:6666/announce&lt;/code>&lt;/li>
+&lt;li>或者：&lt;/li>
+&lt;li>&lt;code>udp://IP:6666/announce&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>也可以同时添加http和udp。&lt;/p>
+&lt;p>统计地址：&lt;code>http://IP:6666/stats&lt;/code>&lt;/p>
+&lt;p>更详细的统计地址：&lt;code>http://IP:6666/stats?mode=everything&lt;/code>。&lt;/p>
+&lt;h2 id="docker部署github-proxy代理为github文件下载加速">Docker部署Github Proxy代理为Github文件下载加速&lt;/h2>
+&lt;p>当前网络环境下Github要么不能访问，要么下载速度极慢，毫无体验可言，平时拉库等操作会失败，所以找到此办法，可有效解决以上问题。&lt;/p>
+&lt;h3 id="必备条件">必备条件：&lt;/h3>
+&lt;p>一台可以无限上网的linux主机，比如国外的服务器，或者阿里云、腾讯云的海外/香港云主机&lt;/p>
+&lt;p>这是必须的前提&lt;/p>
+&lt;h3 id="docker部署">Docker部署&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker run -d --name&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;gh-proxy-py&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -p 0.0.0.0:9183:9183
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --restart&lt;span class="o">=&lt;/span>always
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hunsh/gh-proxy-py:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>第一个&lt;code>9183&lt;/code>就是需要对外的端口，需要打开或映射出去&lt;/p>
+&lt;p>完成后可以浏览器打开：服务器地址:端口，如果出现页面，即代表成功&lt;/p>
+&lt;h3 id="如何使用">如何使用&lt;/h3>
+&lt;p>部署成功后就可以使用了，方法也很简单，直接Github地址之前加你的服务器地址：端口（80可以省略）&lt;/p>
+&lt;p>比如服务器地址：&lt;code>IP&lt;/code>&lt;/p>
+&lt;p>端口是&lt;code>9183&lt;/code>&lt;/p>
+&lt;p>就可以这样输入：&lt;code>IP:9183/https://github.com/Cyberbolt/baota.git&lt;/code>&lt;/p></description></item></channel></rss>

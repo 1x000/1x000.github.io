@@ -1,1 +1,1460 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/tool/</link><description>Recent content in 工具 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/tool/index.xml" rel="self" type="application/rss+xml"/><item><title>b站关注批量删除</title><link>https://blog.xpdbk.com/post/bz-gzqc/</link><pubDate>Sun, 09 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bz-gzqc/</guid><description>快速取消B站（哔哩哔哩）关注的UP？ 当你互粉之后你就会发现一堆没有用的视频就出来了（我没互粉）或者你在注册新号的时候不小心关注了一堆UP 然后</description></item><item><title>使用linux进行24小时直播</title><link>https://blog.xpdbk.com/post/zhibo-24h/</link><pubDate>Sat, 25 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/zhibo-24h/</guid><description>本文章的方法，禁止用来滥用。 使用之前请看视频网站TOS，禁止违反视频网站纪律。 使用Linux进行24小时直播 材料： 一台手机和一个不限流量的网</description></item><item><title>文件加壳方法（简单）</title><link>https://blog.xpdbk.com/post/7z-jiake/</link><pubDate>Sat, 04 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/7z-jiake/</guid><description>文件加密方法（简单） 软件选择 7z和Themida就足够了（为的就是简单！） 俩软件下载页面 https://drive.xpdbk.com/0:/EXE%E6%96%87%E4%BB%B6%E5%8A%A0%E5%A3%B3%E9%98%B2%E6%8B%86/ EXE文件直接打开解压就行了</description></item><item><title>Android VMOS Pro(安卓虚拟机) v2.9.6 修改版</title><link>https://blog.xpdbk.com/post/vmosdl/</link><pubDate>Sun, 26 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/vmosdl/</guid><description>仅用来探讨技术和学习 下载学习之后请24小时内删除 Android VMOS Pro(安卓虚拟机) v2.9.6 VMOS Pro将为用户提供自定义ROM的权限，将用户的想象力发挥到极致，</description></item><item><title>Navicat Premium 15 软件</title><link>https://blog.xpdbk.com/post/npremium/</link><pubDate>Sun, 26 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/npremium/</guid><description>仅用来探讨技术和学习 下载学习之后请24小时内删除 Navicat Premium 15破解 Navicat Premium 15 可以真正被激活 16版本似乎有点难 Navicat Premium介绍 Navicat premium是一款</description></item><item><title>DLL反编译</title><link>https://blog.xpdbk.com/post/dllfby/</link><pubDate>Sat, 25 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/dllfby/</guid><description>仅用来探讨技术和学习 下载学习之后请24小时内删除 DLL TO C DLL to C是一款可怕的DLL反编译工具，能够把DLL转换成可编译的C或C++代码，当您丢失</description></item><item><title>CS1.6 纪狗气死我了</title><link>https://blog.xpdbk.com/post/hacker-cs1.6/</link><pubDate>Fri, 13 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/hacker-cs1.6/</guid><description>&lt;img src="https://blog.xpdbk.com/post/hacker-cs1.6/cs1.6.jpg" alt="Featured image of post CS1.6 纪狗气死我了" />CS1.6 纪狗气死我了 CS1.6 外纪玩法 声明：仅供研究DLL注入与和机器人打或者在Hack vs Hack（HVH）服务器玩，请不要在普通的在线服务器里面玩不然被</description></item><item><title>D0H</title><link>https://blog.xpdbk.com/post/doh-zj/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/doh-zj/</guid><description>D0H解析去广告 仅用于去广告 已失效待补 base64混淆需要自己解密哦 使用方法可以搜索百度 DOH在浏览器上怎么用</description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>自建tracker服务器用于文件分享 众所周知bittorrent是一款P2P文件传输协议，能够让两台内网机器实现点对点的文件传输。 随着各种资</description></item><item><title>vps服务器中安装frp开放端口</title><link>https://blog.xpdbk.com/post/frp-bt/</link><pubDate>Sun, 08 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/frp-bt/</guid><description>vps服务器中安装frp开放端口 安装GOST 创建Scock5隧道 1 wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh &amp;amp;&amp;amp; chmod +x gost.sh &amp;amp;&amp;amp; ./gost.sh 安装Frp 安装 1 2 3 4 yum -y install wget screen wget https://github.com/fatedier/frp/releases/download/v0.46.0/frp_0.46.0_linux_amd64.tar.gz -O frp.tar.gz tar xzf frp.tar.gz cd frp_* 修</description></item><item><title>Obsidian：一款离线笔记软件</title><link>https://blog.xpdbk.com/post/obsidian-bj/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/obsidian-bj/</guid><description>&lt;img src="https://blog.xpdbk.com/post/obsidian-bj/1.png" alt="Featured image of post Obsidian：一款离线笔记软件" />obsidian笔记 obsidian是一种笔记软件，可在您的本地纯文本文件文件夹之上运行。 给孙子的笔记 在我们这个云服务可以随时 关闭 、被 收购或</description></item><item><title>如何安全的传送你的文件？</title><link>https://blog.xpdbk.com/post/404-jm/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/404-jm/</guid><description>如何防止你的文件被别人偷看？ 本篇文章将教你如何传文件才不会被好兄弟看到 使用加密工具，可以在使用百度网盘等服务，安全地储存下载好的东西。 加密工</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/tool/</link><description>Recent content in 工具 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/tool/index.xml" rel="self" type="application/rss+xml"/><item><title>b站关注批量删除</title><link>https://blog.xpdbk.com/post/bz-gzqc/</link><pubDate>Sun, 09 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bz-gzqc/</guid><description>&lt;h2 id="快速取消b站哔哩哔哩关注的up">快速取消B站（哔哩哔哩）关注的UP？&lt;/h2>
+&lt;p>当你&lt;strong>互粉&lt;/strong>之后你就会发现一堆没有用的视频就出来了（我没互粉）或者你在注册新号的时候不小心关注了一堆UP&lt;/p>
+&lt;p>然后你发现B站没有批量取消关注功能，只能一个一个（恼）的点击。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">ms&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">300&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// 暂停300毫秒
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">ii&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">xx&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">$&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.be-dropdown-item:contains(&amp;#39;取消关注&amp;#39;)&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;本页关注了&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">xx&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;个UP！&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">tt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">setInterval&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span>&lt;span class="p">(){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="nx">ii&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nx">ii&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nx">xx&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">xx&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">ii&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">click&lt;/span>&lt;span class="p">();&lt;/span> &lt;span class="c1">// 自动点击｛取消关注｝
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">clearInterval&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">tt&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 停止操作
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;OK！本页没UP了！&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">ii&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">},&lt;/span> &lt;span class="nx">ms&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nx">ii&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 暂停多少毫秒，再执行下一次点击，时间间隔增加变化
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>以&lt;strong>Chrome&lt;/strong>浏览器为例&lt;/p>
+&lt;p>按&lt;strong>F12&lt;/strong>&lt;/p>
+&lt;p>进入&lt;strong>Console&lt;/strong>界面&lt;/p>
+&lt;p>粘贴以上代码&lt;/p>
+&lt;p>&lt;code>Enter&lt;/code>&lt;/p>
+&lt;p>即可批量快速取消关注本页20所有up主&lt;/p>
+&lt;p>&lt;strong>F5&lt;/strong>或&lt;strong>Ctrl+R&lt;/strong>刷新一下页面，再执行一遍，就可以快速把所有up主都果断取关了。&lt;/p></description></item><item><title>使用linux进行24小时直播</title><link>https://blog.xpdbk.com/post/zhibo-24h/</link><pubDate>Sat, 25 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/zhibo-24h/</guid><description>&lt;blockquote>
+&lt;p>本文章的方法，禁止用来滥用。&lt;/p>
+&lt;p>使用之前请看视频网站TOS，禁止违反视频网站纪律。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="使用linux进行24小时直播">使用Linux进行24小时直播&lt;/h2>
+&lt;blockquote>
+&lt;p>材料：&lt;/p>
+&lt;p>一台手机和一个不限流量的网络&lt;/p>
+&lt;p>有问题请去评论区提问&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="安装-ubuntu必须">安装 Ubuntu（必须）&lt;/h2>
+&lt;h3 id="手机24h直播">手机24H直播&lt;/h3>
+&lt;p>省电和安静相比于云服务器成本更低&lt;/p>
+&lt;h3 id="linuxdeploy需要root权限">LinuxDeploy（需要Root权限）&lt;/h3>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/awa.webp"
+width="1280"
+height="960"
+srcset="https://blog.xpdbk.com/post/zhibo-24h/awa_hu220ae6b7c1f01da558f818f9f531184c_271550_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/zhibo-24h/awa_hu220ae6b7c1f01da558f818f9f531184c_271550_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="风景"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>&lt;strong>linux deploy&lt;/strong>搭建环境时，从网上查阅了很多资料，感觉手机充当linux服务器时，性能差强人意。（但是直播足够了）&lt;/p>
+&lt;p>如果是linux的初学者，用手机来充当服务器学习，是一个不错的选择（遇到问题，然后去解决）。
+市面上可以被root的手机很少（如果你的手机是一加和小米你可以root试试）&lt;/p>
+&lt;h4 id="可root的手机">可root的手机&lt;/h4>
+&lt;p>小米红米全机型：
+小米红米手机一直支持官方解锁BL（一般7天解锁），通过解锁BL后就可以刷机玩机获取
+&lt;strong>root&lt;/strong>操作等，小米的解锁BL也是最神奇的，支持微信支付宝指纹支付，堪称完美。&lt;/p>
+&lt;p>三星/一加/Realme/联想/华硕ROG机型
+此5大机型也一样支持官方解锁BL，一般官方都提供了解锁方法，解锁时间最快，不需要
+等待。有些是解锁命令解锁，有些是官方解锁工具解锁。通过解锁BL后一样支持玩机刷机
+操作，但以上机型解锁BL后系统均不再支持微信指纹支付，必须依赖面具指纹模块，或者
+上锁BL&lt;/p>
+&lt;p>努比亚红魔/魅族/黑鲨/LG机型
+以上5个机型并不支持官方解锁BL，自然解锁BL刷机全靠开发者实现。庆幸的是以上机型
+基本都可以飞官方解锁BL刷机操作，然后获取完美root等等。非官方解锁BL可能会使得手
+机失去保修功能，希望保修的小伙伴，需要在保修之前刷回官方系统，再回锁BL&lt;/p>
+&lt;p>OPPO能深度测试机型
+OPPO机型目前能root的并不多，都需要通过官方 &lt;strong>深度测试&lt;/strong>，官方未开放深度测试的机型目前并没有任何解锁刷机root方法，已知只有这些机型可申请测试，并且申请时间为每月的1号或者15号，需要解锁root的用户请及时申请，解锁BL会导致数据清空，请备份数据再刷
+机。指纹支付也会一起失效，同一加机型&lt;/p>
+&lt;p>支持Find X/R17 Pro/Reno/Reno Ace/Find X2系列/Ace2/Reno3系列/R17全网通/K1/K3
+/K5/R15x正式版/Reno4、Reno4 Pro、Reno4 SE 5G/Reno5 Pro+、Reno5 Pro、Reno5&lt;/p>
+&lt;blockquote>
+&lt;p>root不规范变砖两行泪&lt;/p>
+&lt;/blockquote>
+&lt;p>使用时需要注意的问题与总结：&lt;/p>
+&lt;ul>
+&lt;li>&lt;del>在Linux Deploy设置中，Path里需要将BusyBox安装路径设置（默认/system/xbin）&lt;/del> &lt;strong>BusyBox&lt;/strong>装了就开不了鸡了&lt;/li>
+&lt;li>启用允许挂载Android上的资源时，挂载点名称要注意，文档里名称，与自己手机使用的名称不一致（可通过文件管理工具查看）&lt;/li>
+&lt;li>下载网速是硬伤，安装系统时连接的国外服务器，有可能下载超时&lt;/li>
+&lt;li>不要从应用商店等下载apk，直接到github上，下载最新apk&lt;/li>
+&lt;/ul>
+&lt;p>以上问题，都可能造成ssh等服务启动失败，不能正常使用。&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/FEWF4.webp"
+width="1500"
+height="504"
+srcset="https://blog.xpdbk.com/post/zhibo-24h/FEWF4_hu643da3caccb972df7b06a1f911bb3443_31180_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/zhibo-24h/FEWF4_hu643da3caccb972df7b06a1f911bb3443_31180_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="挂载SD卡"
+class="gallery-image"
+data-flex-grow="297"
+data-flex-basis="714px"
+>&lt;/p>
+&lt;p>SD卡挂载示例&lt;/p>
+&lt;hr>
+&lt;h4 id="使用环境">使用环境&lt;/h4>
+&lt;p>下载 Xshell&lt;/p>
+&lt;p>已ROOT手机一台&lt;/p>
+&lt;p>一台电脑&lt;/p>
+&lt;p>使用ssh访问linux deploy&lt;/p>
+&lt;hr>
+&lt;h4 id="前置服务器安装说明">前置服务器安装说明&lt;/h4>
+&lt;h5 id="手机安装-busybox-app">手机安装 BusyBox app&lt;/h5>
+&lt;p>&lt;a class="link" href="https://github.com/meefik/busybox/releases" target="_blank" rel="noopener"
+>https://github.com/meefik/busybox/releases&lt;/a>&lt;/p>
+&lt;p>&lt;del>应用界面，选择install(使用默认配置/system/xbin)&lt;/del> 请自己试试如果完蛋了就重新安装Linux Deploy&lt;/p>
+&lt;h5 id="手机安装-linux-deploy">手机安装 linux deploy&lt;/h5>
+&lt;p>&lt;a class="link" href="https://github.com/meefik/linuxdeploy/releases" target="_blank" rel="noopener"
+>Releases · meefik/linuxdeploy · GitHub&lt;/a>&lt;/p>
+&lt;h4 id="修改linux-deploy配置">修改linux deploy配置&lt;/h4>
+&lt;p>linux deploy界面，选择左上角图标-配置：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>属性&lt;/th>
+&lt;th>配置&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>屏幕常亮&lt;/td>
+&lt;td>选中&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>锁定Wi-Fi&lt;/td>
+&lt;td>选中&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CPU唤醒&lt;/td>
+&lt;td>选中&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>PATH变量&lt;/td>
+&lt;td>与BusyBox中配置一致 /system/xbin&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>修改后选择“更新环境”，保存配置。&lt;/p>
+&lt;h4 id="修改linux安装属性">修改linux安装属性&lt;/h4>
+&lt;p>linux deploy界面，选择右下角图标：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>属性&lt;/th>
+&lt;th>配置&lt;/th>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>发行版本 GNU/Linux&lt;/td>
+&lt;td>Ubuntu&lt;/td>
+&lt;td>Ubuntu 安装最简单了&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>架构&lt;/td>
+&lt;td>arm64&lt;/td>
+&lt;td>可以通过linux deploy右上角图标-状态，查看手机cpu架构&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>发行版本呢&lt;/td>
+&lt;td>默认&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>镜像大小&lt;/td>
+&lt;td>4096&lt;/td>
+&lt;td>最高支持4096MB&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>文件系统&lt;/td>
+&lt;td>ext4&lt;/td>
+&lt;td>保持默认&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>用户名&lt;/td>
+&lt;td>root&lt;/td>
+&lt;td>ssh登陆时使用&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>用户密码&lt;/td>
+&lt;td>自己设置&lt;/td>
+&lt;td>英文大小写和数字&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>本地化&lt;/td>
+&lt;td>zh_CN.UTF-8&lt;/td>
+&lt;td>中文包即可&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>启用 允许使用初始化系统&lt;/td>
+&lt;td>不启用&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>启用允许挂载android上的资源&lt;/td>
+&lt;td>选中&lt;/td>
+&lt;td>自己按照上面的方法挂载&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>挂载点列表&lt;/td>
+&lt;td>/mnt/sdcard:/mnt&lt;/td>
+&lt;td>源名称：挂载点名称&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>注：不同手机名称不一样,可以通过MT文件查看工具查看&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>启用SSH服务器&lt;/td>
+&lt;td>选中&lt;/td>
+&lt;td>默认&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="安装ubuntu">安装Ubuntu&lt;/h4>
+&lt;p>linux deploy右上角图标-安装&lt;/p>
+&lt;h4 id="安装依赖项">安装依赖项&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt install ffmpeg screen
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>直接按&lt;code>Y&lt;/code>即可&lt;/p>
+&lt;h2 id="termux不用root的通用方法">Termux（不用root的通用方法）&lt;/h2>
+&lt;blockquote>
+&lt;p>事先说明这种方法性能更弱&lt;/p>
+&lt;/blockquote>
+&lt;p>通过 Termux 和 Ubuntu 22 在 Android 上运行 FFmpeg。 但是它需要手动设置大量命令，小心不要跳过任何步骤。 注意，这可能需要10至20分钟的时间或更长的时间，取决于您的技术知识水平。 互联网速度和 CPU 速度。&lt;/p>
+&lt;h3 id="安装">安装&lt;/h3>
+&lt;h4 id="termux">Termux&lt;/h4>
+&lt;blockquote>
+&lt;p>警告&lt;/p>
+&lt;p>&lt;strong>Termux 的Play 商店版本已经过时，不支持，不要使用，请使用 &lt;a class="link" href="https://github.com/termux/termux-app/releases/latest/" target="_blank" rel="noopener"
+>Github one在新窗口打开&lt;/a>&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>转到 &lt;a class="link" href="https://github.com/termux/termux-app/releases/latest/" target="_blank" rel="noopener"
+>Termux Github 最新版本在新窗口打开&lt;/a>, 下载 &lt;code>debug_universal.apk&lt;/code>, 解压缩它并运行它。&lt;/p>
+&lt;blockquote>
+&lt;p>提示&lt;/p>
+&lt;p>&lt;strong>如果您的文件管理器不允许您运行 APK 文件， 安装并使用 &lt;code>MT文件管理器&lt;/code> 并允许它在接到请求时安装第三方应用程序。&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>重要警告&lt;/p>
+&lt;p>&lt;strong>一旦您安装了 Termux，打开它，拉下安卓菜单以通知， 在 Termux 通知中，向下拖动直到您看到以下选项：&lt;code>Exit | Acquire wakelock&lt;/code>, 点击&lt;code>Acquire wakelock&lt;/code> 并允许Termux在询问时拥有电池优化排除权限。 如果您不这样做，您的性能将会变得更差，Termux 可能会在后台运行时被 Android 杀死！&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="安装-ubuntu-2204">安装 Ubuntu 22.04&lt;/h4>
+&lt;p>用于安装 Ubuntu 22。 在 Termux 中，您需要 &lt;code>wget&lt;/code> and &lt;code>proot&lt;/code>中, 我们将在下一步安装它们。&lt;/p>
+&lt;p>一旦您安装 Termux 后打开并运行以下命令（按顺序排列）：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;code>pkg update&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>pkg upgrade&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>pkg install proot wget&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>提示&lt;/p>
+&lt;p>&lt;strong>如果你被要求在更新/升级命令过程中按Y/N 键，只需输入 Y 并按Enter&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>然后您需要使用以下命令下载安装脚本：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">wget https://raw.githubusercontent.com/MFDGaming/ubuntu-in-termux/master/ubuntu.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在脚本下载完毕时运行它：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">bash ubuntu.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后您将被问到一个问题，输入 &lt;code>Y&lt;/code> 并按 &lt;code>Enter&lt;/code>。&lt;/p>
+&lt;p>安装完成后，您可以使用 Ubuntu 启动：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./startubuntu.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="安装依赖">安装依赖&lt;/h4>
+&lt;p>首先，我们需要更新 APT 软件包管理器仓库并安装依赖项。&lt;/p>
+&lt;p>要更新 APT 存储库，请运行以下命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt update -y &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> apt upgrade -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>完成后，我们需要安装依赖项，命令如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt install ffmpeg screen
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="介绍-ffmpeg">介绍 FFmpeg&lt;/h2>
+&lt;p>&lt;a class="link" href="https://ffmpeg.org/" target="_blank" rel="noopener"
+>FFmpeg&lt;/a> 本身是一款非常强大的命令行实用程序，在 Linux 发行版、Windows 以及 macOS 等系统上均可运行，支持多种架构。FFmpeg 是用 C 语言和汇编语言编写的，性能强大，提供跨平台支持。&lt;/p>
+&lt;h3 id="ffmpeg-安装">FFmpeg 安装&lt;/h3>
+&lt;p>在 Ubuntu 等 Linux 发行版上， FFmpeg 的安装比较简单。打开终端，运行以下命令安装即可。&lt;/p>
+&lt;h4 id="ubuntu-及与其相似的发行版">Ubuntu 及与其相似的发行版&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt install FFmpeg
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>FFmpeg 安装完成后，可输入以下命令查看安装是否成功。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">ffmpeg --version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/yee.png"
+width="1365"
+height="767"
+srcset="https://blog.xpdbk.com/post/zhibo-24h/yee_hu2d3b096675237d63350c0837e02d5f5a_201619_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/zhibo-24h/yee_hu2d3b096675237d63350c0837e02d5f5a_201619_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="测试安装情况"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="427px"
+>&lt;/p>
+&lt;h2 id="文件传输">文件传输&lt;/h2>
+&lt;blockquote>
+&lt;p>这关非常重要关乎你的直播是否能打开&lt;/p>
+&lt;p>需要安装Xftp&lt;/p>
+&lt;/blockquote>
+&lt;p>然后你发现最右边有一个Xftp按钮 点一下它（必须要连接SSH之后才能用）&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/ffm.png"
+width="368"
+height="83"
+srcset="https://blog.xpdbk.com/post/zhibo-24h/ffm_huccb64bccd3cad2275d3a219b12ee9c01_17490_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/zhibo-24h/ffm_huccb64bccd3cad2275d3a219b12ee9c01_17490_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="演示文件传输"
+class="gallery-image"
+data-flex-grow="443"
+data-flex-basis="1064px"
+>&lt;/p>
+&lt;p>&lt;strong>linuxdeploy&lt;/strong>路径是这样的&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">/root
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>而&lt;strong>Termux&lt;/strong>需要安装SSHD才能用SFTP&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pkg install sshd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>安装之后运行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sshd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>设置密码&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl"> passwd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查询手机ip，以实际手机ip为准&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">ifconfig
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查询当前用户&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl"> whoami
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>确认ssh服务的监听端口&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">netstat -ntlp | grep sshd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>默认SSH端口就是这台手机的&lt;code>8022&lt;/code>端口&lt;/p>
+&lt;p>默认路径在这&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">/data/data/com.termux/files/home/ubuntu-fs/root
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="启动直播前的准备">启动直播前的准备&lt;/h2>
+&lt;p>Youtube准备&lt;/p>
+&lt;p>在Youtube直播不能直播有版权的东西（简单来说就是Youtube上面火的东西）&lt;/p>
+&lt;p>例如我直播的内容是丁真所以也没事&lt;/p>
+&lt;p>有能力的可以点开链接看雪豹直播doge&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=xwTnSvGj4iw" target="_blank" rel="noopener"
+>I Got Smoke 丁真无限循环 24H*7Days - YouTube&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/tlyt.png"
+width="1365"
+height="696"
+srcset="https://blog.xpdbk.com/post/zhibo-24h/tlyt_huf496f5c60fc28104d6196f89ba70bb64_525781_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/zhibo-24h/tlyt_huf496f5c60fc28104d6196f89ba70bb64_525781_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="直播例子"
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="470px"
+>&lt;/p>
+&lt;p>Youtube直播对于你们来说太难了&lt;/p>
+&lt;h3 id="bilibili直播">Bilibili直播&lt;/h3>
+&lt;p>账号需要实名（满18岁）&lt;/p>
+&lt;p>需要IP地址在中国大陆&lt;/p>
+&lt;p>不在中国大陆的可以使用归雁加速器（自己搜）&lt;/p>
+&lt;p>&lt;a class="link" href="https://live.bilibili.com/24595202" target="_blank" rel="noopener"
+>https://live.bilibili.com/24595202&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/114514.png"
+width="1364"
+height="695"
+srcset="https://blog.xpdbk.com/post/zhibo-24h/114514_hu160c968b7f2d7488e9311bb6ef58cef0_931374_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/zhibo-24h/114514_hu160c968b7f2d7488e9311bb6ef58cef0_931374_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="bili直播"
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="471px"
+>&lt;/p>
+&lt;p>如果你具备了这些条件请继续往下看&lt;/p>
+&lt;h2 id="直播脚本">直播脚本&lt;/h2>
+&lt;blockquote>
+&lt;p>请把以下的内容封装成 .sh格式 例如： &lt;code>535ir.sh&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>创建一个文件夹&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir zhibo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>进入文件夹&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> zhibo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加脚本&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">nano zhibo.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>没NANO就安装一下&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt install nano
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="youtube直播脚本">Youtube直播脚本&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">while&lt;/span> &lt;span class="nb">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ffmpeg -re -i &lt;span class="s2">&amp;#34;视频.mp4&amp;#34;&lt;/span> -vcodec copy -acodec copy -f flv &lt;span class="s2">&amp;#34;服务器地址/直播码&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="bilibili直播脚本">Bilibili直播脚本&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">while&lt;/span> &lt;span class="nb">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ffmpeg -re -i &lt;span class="s2">&amp;#34;视频.mp4&amp;#34;&lt;/span> -vcodec copy -acodec copy -f flv &lt;span class="s2">&amp;#34;服务器地址/直播码&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="运行直播">运行直播&lt;/h2>
+&lt;p>添加一个虚拟终端&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">screen -S 自定义名字
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">运行 ./脚本名.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>回到虚拟终端&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">screen -r 你刚才自定义的名字
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>从虚拟终端退出&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">在 screen 终端 下 按下 Ctrl+a d键
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>踩坑的话请自行去Bing搜索搜索相关问题&lt;/p>
+&lt;p>或者在评论区提问&lt;/p>
+&lt;/blockquote></description></item><item><title>文件加壳方法（简单）</title><link>https://blog.xpdbk.com/post/7z-jiake/</link><pubDate>Sat, 04 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/7z-jiake/</guid><description>&lt;h2 id="文件加密方法简单">文件加密方法（简单）&lt;/h2>
+&lt;h2 id="软件选择">软件选择&lt;/h2>
+&lt;p>7z和Themida就足够了（为的就是简单！）&lt;/p>
+&lt;blockquote>
+&lt;p>俩软件下载页面 &lt;a class="link" href="https://drive.xpdbk.com/0:/EXE%E6%96%87%E4%BB%B6%E5%8A%A0%E5%A3%B3%E9%98%B2%E6%8B%86/" target="_blank" rel="noopener"
+>https://drive.xpdbk.com/0:/EXE%E6%96%87%E4%BB%B6%E5%8A%A0%E5%A3%B3%E9%98%B2%E6%8B%86/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>EXE文件直接打开解压就行了&lt;/p>
+&lt;/blockquote></description></item><item><title>Android VMOS Pro(安卓虚拟机) v2.9.6 修改版</title><link>https://blog.xpdbk.com/post/vmosdl/</link><pubDate>Sun, 26 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/vmosdl/</guid><description>&lt;blockquote>
+&lt;p>仅用来探讨技术和学习&lt;/p>
+&lt;p>下载学习之后请24小时内删除&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="android-vmos-pro安卓虚拟机-v296">Android VMOS Pro(安卓虚拟机) v2.9.6&lt;/h2>
+&lt;p>VMOS Pro将为用户提供自定义&lt;code>ROM&lt;/code>的权限，将用户的想象力发挥到极致，自带&lt;code>root&lt;/code>环境，预装&lt;strong>Google Mobile Service&lt;/strong>。&lt;/p>
+&lt;p>&lt;strong>VMOS专业版的特点&lt;/strong>：&lt;/p>
+&lt;p>&lt;strong>安全防护&lt;/strong> 独立的虚拟手机系统，不受真机系统的限制，可以满足开发和测试的需要，不用担心病毒和系统崩溃的风险。&lt;/p>
+&lt;p>&lt;strong>root 权限&lt;/strong> 自带root权限，预装XP框架和Google移动服务，满足极客手机发烧友的各种需求。&lt;/p>
+&lt;p>&lt;strong>万物悬浮窗&lt;/strong> 支持任意应用浮动窗口，可用于多屏操作。&lt;/p>
+&lt;p>&lt;strong>应用双开&lt;/strong> 游戏双开，应用双开，一边玩游戏，一边看直播，一边聊天，比云手机更流畅，工作生活两不误。&lt;/p>
+&lt;p>&lt;strong>ROM平台&lt;/strong> ROM系统7.1和5.1版本，支持拥有多个虚拟机。&lt;/p>
+&lt;p>&lt;strong>操作便捷&lt;/strong> 具有浮球功能，操作切换简单方便。&lt;/p>
+&lt;p>&lt;strong>息屏挂机&lt;/strong> 支持修改分辨率，可息屏后台运行。&lt;/p>
+&lt;p>&lt;strong>文件互传&lt;/strong> 文件中转站支持真机和虚拟机应用文件的相互克隆，避免繁琐的重复安装。&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/vmosdl/photo_2023-02-26_21-45-47.jpg"
+width="720"
+height="1280"
+srcset="https://blog.xpdbk.com/post/vmosdl/photo_2023-02-26_21-45-47_hufdd53d828e8f2f3263137f1db6d2b703_66212_480x0_resize_q75_box.jpg 480w, https://blog.xpdbk.com/post/vmosdl/photo_2023-02-26_21-45-47_hufdd53d828e8f2f3263137f1db6d2b703_66212_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="vmos"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+> &lt;img src="https://blog.xpdbk.com/post/vmosdl/photo_2023-02-26_21-45-53.jpg"
+width="720"
+height="1280"
+srcset="https://blog.xpdbk.com/post/vmosdl/photo_2023-02-26_21-45-53_hu1fa07c8cbdbce5c931b0f43995c3236e_56362_480x0_resize_q75_box.jpg 480w, https://blog.xpdbk.com/post/vmosdl/photo_2023-02-26_21-45-53_hu1fa07c8cbdbce5c931b0f43995c3236e_56362_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="vmos2"
+class="gallery-image"
+data-flex-grow="56"
+data-flex-basis="135px"
+>&lt;/p>
+&lt;h2 id="修改说明">修改说明&lt;/h2>
+&lt;p>解除VIP会员限制，所有rom都可以下载&lt;/p>
+&lt;h2 id="下载地址">下载地址&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/b0323sx8d" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>&lt;/p>
+&lt;p>访问密码：&lt;code>3ae9&lt;/code>&lt;/p>
+&lt;/blockquote></description></item><item><title>Navicat Premium 15 软件</title><link>https://blog.xpdbk.com/post/npremium/</link><pubDate>Sun, 26 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/npremium/</guid><description>&lt;blockquote>
+&lt;p>仅用来探讨技术和学习&lt;/p>
+&lt;p>下载学习之后请24小时内删除&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="navicat-premium-15破解">Navicat Premium 15破解&lt;/h2>
+&lt;p>&lt;strong>Navicat Premium 15&lt;/strong> 可以真正被激活 &lt;strong>16&lt;/strong>版本似乎有点难&lt;/p>
+&lt;blockquote>
+&lt;h2 id="navicat-premium介绍">Navicat Premium介绍&lt;/h2>
+&lt;/blockquote>
+&lt;p>&lt;strong>Navicat premium&lt;/strong>是一款数据库管理工具，可以连接多个数据库。它允许您用一个程序同时连接到 &lt;code>MySQL&lt;/code>、&lt;code>SQLite&lt;/code>、&lt;code>Oracle&lt;/code> 和 &lt;code>PostgreSQL&lt;/code> 数据库，从而更方便地管理不同类型的数据库。&lt;/p>
+&lt;p>&lt;code>Navicat Premium 15&lt;/code> ，工具是&lt;strong>收费&lt;/strong>的，因为学习买的话，不怎么划算，所以这里有修改版的。&lt;/p>
+&lt;p>软件界面：&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/asda.png"
+width="1365"
+height="729"
+srcset="https://blog.xpdbk.com/post/npremium/asda_hu71baccaceae4ea2614bbbb1c5d8a395c_92082_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/asda_hu71baccaceae4ea2614bbbb1c5d8a395c_92082_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="软件界面"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="449px"
+>&lt;/p>
+&lt;blockquote>
+&lt;h2 id="安装包和破解工具">安装包和破解工具&lt;/h2>
+&lt;/blockquote>
+&lt;p>&lt;code>Navicat premium 15&lt;/code>安装包和破解工具&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://kkdaj.lanzoui.com/ic03rbi" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>&lt;/p>
+&lt;p>访问密码：无&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;h2 id="开始安装">开始安装&lt;/h2>
+&lt;/blockquote>
+&lt;p>下载好后首先安装 &lt;code>Navicat Premium 15&lt;/code> ，一路下一步就完了。&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/wdas.png"
+width="504"
+height="386"
+srcset="https://blog.xpdbk.com/post/npremium/wdas_hu4be362e536189dd550badf7213f77f43_57992_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/wdas_hu4be362e536189dd550badf7213f77f43_57992_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="安装"
+class="gallery-image"
+data-flex-grow="130"
+data-flex-basis="313px"
+>&lt;/p>
+&lt;blockquote>
+&lt;h2 id="开始激活--激活必须断网">开始激活 激活必须断网&lt;/h2>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>使用注册机，先退出所有杀毒软件，再打开注册机。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/114514.png"
+width="240"
+height="183"
+srcset="https://blog.xpdbk.com/post/npremium/114514_hu4cf2774b1c8915f82034c85f8150ec36_19221_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/114514_hu4cf2774b1c8915f82034c85f8150ec36_19221_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="激活"
+class="gallery-image"
+data-flex-grow="131"
+data-flex-basis="314px"
+>&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>在激活工具的第一个选项&lt;code>1)Patch&lt;/code>里选择&lt;code>Backup&lt;/code>，&lt;code>Host&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Navicat&lt;/strong> 是&lt;code>15&lt;/code>版本就选&lt;code>15&lt;/code>版本&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>点击，&lt;code>Patch&lt;/code>按钮&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>如图：&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/daewf.png"
+width="570"
+height="50"
+srcset="https://blog.xpdbk.com/post/npremium/daewf_hu83df88c8daaa1ef1d119b84994946dd1_3224_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/daewf_hu83df88c8daaa1ef1d119b84994946dd1_3224_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="1140"
+data-flex-basis="2736px"
+>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/afewaw.png"
+width="960"
+height="540"
+srcset="https://blog.xpdbk.com/post/npremium/afewaw_hucab93506b8c45212a01d83e2ca4e9614_23117_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/afewaw_hucab93506b8c45212a01d83e2ca4e9614_23117_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>&lt;strong>以下提示说明Patch成功了。&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/fewg.png"
+width="640"
+height="609"
+srcset="https://blog.xpdbk.com/post/npremium/fewg_huc3a674e2950b98aa7166948636ed0d0e_107668_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/fewg_huc3a674e2950b98aa7166948636ed0d0e_107668_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="105"
+data-flex-basis="252px"
+>&lt;/p>
+&lt;ol start="3">
+&lt;li>&lt;strong>Language&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>License&lt;/code>里选中&lt;code>Enterprise&lt;/code>、在&lt;code>Produce&lt;/code>里选&lt;code>Premium&lt;/code>、在&lt;code>Languages&lt;/code>里选&lt;code>Simplified Chinese&lt;/code>(简体中文)&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/feasf.png"
+width="572"
+height="75"
+srcset="https://blog.xpdbk.com/post/npremium/feasf_huc163b5504bb8454b76025baaf0667703_7482_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/feasf_huc163b5504bb8454b76025baaf0667703_7482_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="762"
+data-flex-basis="1830px"
+>&lt;/p>
+&lt;ol start="4">
+&lt;li>&lt;strong>Resale License&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>选择&lt;code>Site License&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/gerg.png"
+width="584"
+height="103"
+srcset="https://blog.xpdbk.com/post/npremium/gerg_hu4dfcaa00c87f5aa1b1f151ca19a7c6bd_9509_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/gerg_hu4dfcaa00c87f5aa1b1f151ca19a7c6bd_9509_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="566"
+data-flex-basis="1360px"
+>&lt;/p>
+&lt;ol start="5">
+&lt;li>&lt;code>Keygen / Offline Activation&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>点击&lt;code>Generate&lt;/code>按钮就会生成一个许可证秘钥，将许可证秘钥复制后就打开&lt;code>Navicat Premium 15&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/reger.png"
+width="579"
+height="340"
+srcset="https://blog.xpdbk.com/post/npremium/reger_hu3f1535ea225c8a28491b734eae72d9b0_35920_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/reger_hu3f1535ea225c8a28491b734eae72d9b0_35920_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="170"
+data-flex-basis="408px"
+>&lt;/p>
+&lt;ol start="6">
+&lt;li>&lt;strong>打开&lt;code>Navicat Premium 15&lt;/code>，点击注册&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/fewf.png"
+width="702"
+height="606"
+srcset="https://blog.xpdbk.com/post/npremium/fewf_huca6e1e7a9b2dbc506f2ee6511f06347d_238312_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/fewf_huca6e1e7a9b2dbc506f2ee6511f06347d_238312_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="115"
+data-flex-basis="278px"
+>&lt;/p>
+&lt;ol start="7">
+&lt;li>&lt;strong>粘贴秘钥，然后点击激活按钮&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/fwaf.png"
+width="1332"
+height="679"
+srcset="https://blog.xpdbk.com/post/npremium/fwaf_hu95316dae3d60e8cdf3a37b3b1bbcc018_109906_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/fwaf_hu95316dae3d60e8cdf3a37b3b1bbcc018_109906_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="470px"
+>&lt;/p>
+&lt;p>&lt;strong>在弹出的界面选择手动激活&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/gwerg.png"
+width="704"
+height="288"
+srcset="https://blog.xpdbk.com/post/npremium/gwerg_hu4440df699982ae2df8261f995ccd6dc8_133471_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/gwerg_hu4440df699982ae2df8261f995ccd6dc8_133471_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="激活"
+class="gallery-image"
+data-flex-grow="244"
+data-flex-basis="586px"
+>&lt;/p>
+&lt;ol start="8">
+&lt;li>将请求码粘贴到注册机&lt;code>Request Code&lt;/code>框中（完整过程看图）&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/awa.png"
+width="1202"
+height="642"
+srcset="https://blog.xpdbk.com/post/npremium/awa_hub6f1dbbb7ba2b2f11aa530ad3ce9c4f0_218272_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/awa_hub6f1dbbb7ba2b2f11aa530ad3ce9c4f0_218272_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="449px"
+>&lt;/p>
+&lt;ol start="9">
+&lt;li>点击激活页面的激活弹出（说明激活成功）&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/wfa.png"
+width="206"
+height="129"
+srcset="https://blog.xpdbk.com/post/npremium/wfa_hu2218a34b81dde2453b30c72896472a23_5442_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/wfa_hu2218a34b81dde2453b30c72896472a23_5442_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="159"
+data-flex-basis="383px"
+>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/npremium/awda.png"
+width="546"
+height="389"
+srcset="https://blog.xpdbk.com/post/npremium/awda_huf7df52cae107a6bed0ce7db4813546f1_11429_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/npremium/awda_huf7df52cae107a6bed0ce7db4813546f1_11429_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="140"
+data-flex-basis="336px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>激活成功了 如果经济允许，还是希望可以支持正版！！！&lt;/p>
+&lt;p>附上购买地址&lt;code>http://www.navicat.com.cn/download/navicat-premium&lt;/code>&lt;/p>
+&lt;/blockquote></description></item><item><title>DLL反编译</title><link>https://blog.xpdbk.com/post/dllfby/</link><pubDate>Sat, 25 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/dllfby/</guid><description>&lt;blockquote>
+&lt;p>仅用来探讨技术和学习&lt;/p>
+&lt;p>下载学习之后请24小时内删除&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="dll-to-c">DLL TO C&lt;/h2>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/dllfby/dll.png"
+width="968"
+height="542"
+srcset="https://blog.xpdbk.com/post/dllfby/dll_hu97a9df9efbf83498af65502c181f0c2c_428430_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/dllfby/dll_hu97a9df9efbf83498af65502c181f0c2c_428430_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="dll to c"
+class="gallery-image"
+data-flex-grow="178"
+data-flex-basis="428px"
+>&lt;/p>
+&lt;p>&lt;strong>DLL to C&lt;/strong>是一款可怕的DLL反编译工具，能够把DLL转换成可编译的C或C++代码，当您丢失DLL的源代码时，您可以用DLL to C，它能够把DLL转换回可编译的代码，并且具有生成数据结构和反汇编代码段的功能，和其它的反编译或反汇编工具最大的不同是：它生成的代码是可以直接编译运行的，它可以为所有数据段生成数据结构并拆解代码段，还可以生成函数关系树，然后可以方便地导出DLL中所需的指定特征，它可以将汇编代码转换成C代码，C代码也是可编译的，非常强大&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iQwL30ojfmhi" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>&lt;/p>
+&lt;p>访问密码：&lt;code>41ng&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>压缩密码&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">NbeV+lgz9Ce6m2da/8bkvXWr9nBtjfId
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="使用方法">使用方法&lt;/h2>
+&lt;p>1.运行Dll2C.exe
+2. 打开文件TestWin32Dll\Win32Dll.dll
+3. 单击“开始转换”按钮。
+4.将生成的文件复制到你的VC项目目录中，然后将复制的文件添加到你的VC项目中。
+5. 在您的 VC 项目中调用生成的代码。 您可以查看文件 TestWin32Dll\TestWin32Dll.cpp 以了解如何调用。&lt;/p>
+&lt;p>如果在编译或运行时出现错误，请尝试使用 Microsoft Visual Studio 2008 专业版进行编译。 如需更多帮助，请联系 &lt;a class="link" href="mailto:support@dll-decompiler.com" >support@dll-decompiler.com&lt;/a>&lt;/p>
+&lt;h2 id="dll-to-c-反编译效果源码">DLL TO C 反编译效果源码&lt;/h2>
+&lt;p>&lt;code>HPP.DLL&lt;/code> CS 1.6的纪&lt;/p>
+&lt;p>&lt;code>NorAdrenaline.DLL&lt;/code> CS1.6的纪&lt;/p></description></item><item><title>CS1.6 纪狗气死我了</title><link>https://blog.xpdbk.com/post/hacker-cs1.6/</link><pubDate>Fri, 13 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/hacker-cs1.6/</guid><description>&lt;img src="https://blog.xpdbk.com/post/hacker-cs1.6/cs1.6.jpg" alt="Featured image of post CS1.6 纪狗气死我了" />&lt;h2 id="cs16-纪狗气死我了">CS1.6 纪狗气死我了&lt;/h2>
+&lt;h2 id="cs16-外纪玩法">CS1.6 外纪玩法&lt;/h2>
+&lt;p>&lt;strong>声明&lt;/strong>：仅供研究DLL注入与和机器人打或者在Hack vs Hack（HVH）服务器玩，请不要在普通的在线服务器里面玩不然被腐竹ban ip了我不管&lt;/p>
+&lt;blockquote>
+&lt;p>压缩包密码：&lt;code>HfuGhf4c&lt;/code>&lt;/p>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iIv3k0kt5fwh" target="_blank" rel="noopener"
+>蓝奏云地址&lt;/a>&lt;/p>
+&lt;p>访问密码：&lt;code>d7qm&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>已测试里面纪的大部分快捷键为&lt;code>lns&lt;/code>&lt;/p>
+&lt;h3 id="最好的cs16-evol静默暴力">最好的cs1.6 EVOL静默暴力&lt;/h3>
+&lt;p>打不开的打开注入没有反应的把杀毒关掉重试，有问题先关杀毒
+注入后按ins键请进游戏按ins大厅按ins是没有反应的！！&lt;/p>
+&lt;p>良好的解析复杂的配置和优质的GUI动画但是容易卡枪&lt;/p>
+&lt;p>帧数很低貌似比较吃CPU&lt;/p>
+&lt;p>GUI键 &lt;code>ins&lt;/code>&lt;/p>
+&lt;p>&lt;strong>游玩视频&lt;/strong>&lt;/p>
+&lt;p>施工中&lt;/p></description></item><item><title>D0H</title><link>https://blog.xpdbk.com/post/doh-zj/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/doh-zj/</guid><description>&lt;h2 id="d0h解析去广告">D0H解析去广告&lt;/h2>
+&lt;blockquote>
+&lt;p>仅用于去广告&lt;/p>
+&lt;/blockquote>
+&lt;pre>&lt;code>已失效待补
+&lt;/code>&lt;/pre>
+&lt;p>&lt;code>base64&lt;/code>混淆需要自己解密哦&lt;/p>
+&lt;p>使用方法可以搜索百度 &lt;code>DOH在浏览器上怎么用&lt;/code>&lt;/p></description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>&lt;h2 id="自建tracker服务器用于文件分享">自建tracker服务器用于文件分享&lt;/h2>
+&lt;p>众所周知bittorrent是一款P2P文件传输协议，能够让两台内网机器实现点对点的文件传输。&lt;/p>
+&lt;p>随着各种资源的丰富，bit下载也越来越为大众所熟知。&lt;/p>
+&lt;p>我们都知道，两台内网机器，直接使用http或者udp是无法进行文件分享的。&lt;/p>
+&lt;p>要么使用网盘，有限速和和谐风险。&lt;/p>
+&lt;p>要么使用服务器FTP转发，但是硬盘和带宽成本比较高。&lt;/p>
+&lt;p>要么使用P2P同步工具，但是要安装专用的软件。&lt;/p>
+&lt;p>故这里尝试使用BT协议做文件分享，即将要分享的文件打包成种子，然后将种子传给对方。大部分人都是有BT下载工具的。&lt;/p>
+&lt;p>由于共有tracker存在安全隐患，本篇文章就是介绍如何搭建私有tracker服务器。&lt;/p>
+&lt;h2 id="在vps上使用bittorrent-tracker">在VPS上使用bittorrent-tracker&lt;/h2>
+&lt;p>这是&lt;code>webtorrent&lt;/code>项目的一个部分。使用&lt;code>nodejs&lt;/code>进行搭建部署。&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/webtorrent/bittorrent-tracker" target="_blank" rel="noopener"
+>官方&lt;/a>有英文文档，这里我简单说一下如何使用：&lt;/p>
+&lt;p>首先要下载&lt;code>nodejs&lt;/code>和&lt;code>npm&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">apt install nodejs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">apt install npm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后安装&lt;code>bittorrent-tracker&lt;/code>包：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm install bittorrent-tracker
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>新建一个&lt;code>server.js&lt;/code>文件，设置一个简单的服务器，更多可以参考官方文档&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Create a web sockets signaling server
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nx">lookup&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">hostname&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;0.0.0.0&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">process&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">env&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">PORT&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="mi">3001&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">Server&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;bittorrent-tracker&amp;#39;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">Server&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">server&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Server&lt;/span>&lt;span class="p">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">udp&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// enable udp server? [default=true]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">http&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// enable http server? [default=true]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">ws&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// enable websocket server? [default=true]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">stats&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// enable web-based statistics? [default=true]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;error&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// fatal server error!
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">//console.log(err.message)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;warning&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// client sent bad data. probably not a problem, just a buggy client.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">//console.log(err.message)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;listening&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// fired when all requested servers are listening
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Signal server http port:&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">http&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">address&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">port&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Signal server ws port:&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">ws&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">address&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">port&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// listen for individual tracker messages from peers:
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;start&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">addr&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;got start message from &amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">addr&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">Object&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">keys&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">torrents&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">forEach&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">hash&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">lookup&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">torrents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">hash&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">infoHash&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">torrents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">hash&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">peers&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//console.log(&amp;#34;peers: &amp;#34; + server.torrents[hash].peers.length)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;complete&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">addr&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;stop&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">addr&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// start tracker server listening! Use 0 to listen on a random free port.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">listen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">port&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">hostname&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;listening&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后运行即可：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">node server.js
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>默认的使用端口为&lt;code>3001&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">root@lelfeng:~/tracker# node server-test.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Signal server http port:3001
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Signal server ws port:3001
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>访问对应地址，返回：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">d14:failure reason33:invalid action in HTTP request: /e
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这种方法不如&lt;code>Docker&lt;/code>然后也老&lt;/p></description></item><item><title>vps服务器中安装frp开放端口</title><link>https://blog.xpdbk.com/post/frp-bt/</link><pubDate>Sun, 08 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/frp-bt/</guid><description>&lt;h2 id="vps服务器中安装frp开放端口">vps服务器中安装frp开放端口&lt;/h2>
+&lt;h2 id="安装gost">安装GOST&lt;/h2>
+&lt;p>创建Scock5隧道&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> chmod +x gost.sh &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> ./gost.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="安装frp">安装Frp&lt;/h2>
+&lt;h3 id="安装">安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">yum -y install wget screen
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://github.com/fatedier/frp/releases/download/v0.46.0/frp_0.46.0_linux_amd64.tar.gz -O frp.tar.gz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tar xzf frp.tar.gz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> frp_*
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="修改配置文件">修改配置文件&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">vi /root/frp_*/frps.ini
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="frpsini内容为">frps.ini内容为&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="k">[common]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">bind_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">9127&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">bind_udp_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">9127&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">bind_addr&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">0.0.0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">allow_ports&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">1001-1500,10001-22500&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">token&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">www.xpdbk.com&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">tls_only&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="启动软件">启动软件&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /root/frp_*&lt;span class="p">;&lt;/span>screen -dmS awa ./frps -c ./frps.ini
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="查看是否启动成功">查看是否启动成功&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">netstat -apn &lt;span class="p">|&lt;/span> grep frps
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="设置为开机启动">设置为开机启动&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;cd /root/frp_*;screen -dmS awa ./frps -c ./frps.ini&amp;#34;&lt;/span> &amp;gt;&amp;gt; /etc/rc.d/rc.local
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="centos-7需要设置执行权限">centos 7需要设置执行权限&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">chmod +x /etc/rc.d/rc.local
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ll /etc/rc.d/rc.local
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="检查防火墙与服务器安全组放通端口">检查防火墙与服务器安全组放通端口&lt;/h2>
+&lt;h3 id="将所有iptables以序号标记显示执行">将所有iptables以序号标记显示，执行：&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">iptables -L -n --line-numbers
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="清空命令">清空命令&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">iptables -t nat -F
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t nat -X
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t nat -P PREROUTING ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t nat -P POSTROUTING ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t nat -P OUTPUT ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t mangle -F
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t mangle -X
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t mangle -P PREROUTING ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t mangle -P INPUT ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t mangle -P FORWARD ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t mangle -P OUTPUT ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t mangle -P POSTROUTING ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -F
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -X
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -P FORWARD ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -P INPUT ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -P OUTPUT ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t raw -F
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t raw -X
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t raw -P PREROUTING ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -t raw -P OUTPUT ACCEPT
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">service iptables save
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="centos-7中关闭firewalld防火墙">centos 7中关闭firewalld防火墙&lt;/h3>
+&lt;p>启动&lt;br>
+&lt;code>systemctl start firewalld&lt;/code>&lt;/p>
+&lt;p>启用开机自启动&lt;br>
+&lt;code>systemctl enable firewalld&lt;/code>&lt;/p>
+&lt;p>关闭&lt;br>
+&lt;code>systemctl stop firewalld&lt;/code>&lt;/p>
+&lt;p>关闭开机自启动&lt;br>
+&lt;code>systemctl disable firewalld&lt;/code>&lt;/p>
+&lt;p>查看运行状态&lt;br>
+&lt;code>firewall-cmd --state&lt;/code>&lt;/p>
+&lt;h4 id="一键关闭也可以">一键关闭也可以&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">systemctl stop firewalld&lt;span class="p">;&lt;/span>systemctl disable firewalld&lt;span class="p">;&lt;/span>service ip6tables stop&lt;span class="p">;&lt;/span>service iptables stop&lt;span class="p">;&lt;/span>chkconfig iptables off
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="windows-frp客户端下载">Windows Frp客户端下载&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/fatedier/frp/releases/download/v0.46.0/frp_0.46.0_windows_386.zip" target="_blank" rel="noopener"
+>https://github.com/fatedier/frp/releases/download/v0.46.0/frp_0.46.0_windows_386.zip&lt;/a>&lt;/p>
+&lt;h3 id="解压并且用记事本打开修改配置文件frpcini">解压并且用记事本打开修改配置文件frpc.ini&lt;/h3>
+&lt;h4 id="frpcini内容为xxxx改成frp的服务器ip">frpc.ini内容为，x.x.x.x改成frp的服务器ip&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="k">[common]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">server_addr&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">x.x.x.x&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">server_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">8000&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">protocol&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">websocket&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">token&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">www.itzmx.com&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">tls_enable&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">[Remote Download]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">type&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">tcp&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">local_ip&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">127.0.0.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">local_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">1235&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">remote_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">1235&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">[BT Listen TCP]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">type&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">tcp&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">local_ip&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">127.0.0.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">local_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">22223&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">remote_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">22223&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">[BT Listen UDP]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">type&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">udp&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">local_ip&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">127.0.0.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">local_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">22223&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">remote_port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">22223&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>新建一个 &lt;code>awa.bat&lt;/code> 文件内容为&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-batch" data-lang="batch">&lt;span class="line">&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">echo&lt;/span> off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">title&lt;/span>=开始启用内网穿透
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mode con cols=100 lines=54&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">color&lt;/span> 2&lt;span class="p">&amp;amp;&lt;/span>&lt;span class="k">color&lt;/span> 5B
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span> 准备启用内网穿透服务
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">pause&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span> 内网穿透服务启动中，预计3秒，请稍候……
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">frpc.exe -c frpc.ini
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span> 如有报错请复制文件记录输出数值以便交流讨论。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">pause&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>此时端口已经可以正常为TCP端口打通，但是由于BT客户端，tracker发起对外请求时候，还是用的是自身网络，没有经过frp，所以他人获取的ip是自身未经过内网透传的ip而不是frp服务器ip&lt;br>
+&lt;strong>解决办法一&lt;/strong>
+需要在服务器中同时安装其它代理，或者隧道软件，例如v2，并且v2客户端打开本地监听端口功能&lt;/p>
+&lt;p>如果BT客户端不支持设置代理功能，可以使用另一款软件，netch为整个exe进程进行加速，这种方式会消耗较多vps服务器的流量，此时建议换比特彗星这种支持内置代理功能的BT客户端&lt;/p>
+&lt;p>使用比特彗星客户端scock5代理功能设置&lt;/p>
+&lt;p>仅用于穿透&lt;/p></description></item><item><title>Obsidian：一款离线笔记软件</title><link>https://blog.xpdbk.com/post/obsidian-bj/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/obsidian-bj/</guid><description>&lt;img src="https://blog.xpdbk.com/post/obsidian-bj/1.png" alt="Featured image of post Obsidian：一款离线笔记软件" />&lt;h2 id="obsidian笔记">obsidian笔记&lt;/h2>
+&lt;p>&lt;u>obsidian是一种笔记软件，可在您的本地纯文本文件文件夹之上运行。&lt;/u>&lt;/p>
+&lt;h2 id="给孙子的笔记">给孙子的笔记&lt;/h2>
+&lt;p>在我们这个云服务可以随时 &lt;a class="link" href="https://techcrunch.com/2013/07/31/evernote-competitor-catch-com-shuts-down-its-note-taking-apps-company-heading-in-different-direction/" target="_blank" rel="noopener"
+>关闭&lt;/a> &lt;a class="link" href="https://www.theverge.com/2014/5/22/5741602/one-time-evernote-pinterest-rival-springpad-to-close-its-doors" target="_blank" rel="noopener"
+>、&lt;/a>&lt;a class="link" href="https://gadgets.ndtv.com/apps/news/microsoft-to-do-new-features-wunderlist-shuts-down-2224833" target="_blank" rel="noopener"
+>被&lt;/a> &lt;a class="link" href="https://www.theverge.com/2012/3/12/2865638/twitter-acquires-posterous-blogging-platform" target="_blank" rel="noopener"
+>收购&lt;/a>或 &lt;a class="link" href="https://techcrunch.com/2016/12/14/evernotes-new-privacy-policy-allows-employees-to-read-your-notes/" target="_blank" rel="noopener"
+>更改隐私政策&lt;/a>的时代， 您最不想要的就是专有格式和数据锁定。&lt;/p>
+&lt;p>使用 Obsidian，&lt;strong>您的数据位于本地文件夹&lt;/strong>中。永远不要再将您一生的工作作为人质留在云端。&lt;/p>
+&lt;h2 id="面向未来的格式">面向未来的格式&lt;/h2>
+&lt;p>黑曜石使用 Markdown。Markdown 被 Reddit 和 GitHub 等网站广泛使用，并且不会很快消失。&lt;/p>
+&lt;p>Markdown 被设计成人类可读的。它没有被编码混淆；您可以直接使用 Markdown 编辑器编辑源文件，也可以使用脚本自动编辑它们。&lt;/p>
+&lt;h2 id="全面控制">全面控制&lt;/h2>
+&lt;p>你的笔记存在于你的设备上，期间。您可以根据需要对它们进行加密或备份；这是你的决定，不是我们的。&lt;/p>
+&lt;p>纯文本文件可让您在其上进行各种同步、加密和数据处理。Obsidian 与 Dropbox、Cryptomator 和任何处理纯文本文件的软件配合得很好。&lt;/p>
+&lt;h2 id="始终可用">始终可用&lt;/h2>
+&lt;p>没有互联网？没问题。Obsidian 完全离线工作，互联网或服务问题永远不会成为您的问题。&lt;/p>
+&lt;p>随时随地享受阅读和处理笔记的乐趣。&lt;/p>
+&lt;p>&lt;a class="link" href="https://obsidian.md/" target="_blank" rel="noopener"
+>官网&lt;/a>&lt;/p></description></item><item><title>如何安全的传送你的文件？</title><link>https://blog.xpdbk.com/post/404-jm/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/404-jm/</guid><description>&lt;h2 id="如何防止你的文件被别人偷看">如何防止你的文件被别人偷看？&lt;/h2>
+&lt;blockquote>
+&lt;p>本篇文章将教你如何传文件才不会被好兄弟看到&lt;/p>
+&lt;/blockquote>
+&lt;p>使用加密工具，可以在使用百度网盘等服务，安全地储存下载好的东西。&lt;/p>
+&lt;p>加密工具的局限是要求通信双方都掌握加密/解密的方法，使用门槛较高，沟通效率较低，难以大范围普及。&lt;/p>
+&lt;h2 id="1-网盘加密">1 网盘加密&lt;/h2>
+&lt;p>1.可以使用 Veracrypt 创建的虚拟加密盘（对称加密，需另循安全渠道向接收方发送密码），或者&lt;/p>
+&lt;p>2.使用 GnuPG 加密（非对称加密，需事先交换公钥）文件，&lt;/p>
+&lt;p>3.较为低阶的做法是直接使用加密的压缩包。加密完成后可修改文件名后缀，将其伪装成因损坏而无法打开的文件。&lt;/p>
+&lt;h2 id="2-隐写术">2 隐写术&lt;/h2>
+&lt;p>隐写术 (steganography) 是指对图片中每个像素的颜色进行肉眼无法察觉的微调，借此向图片文件中写入密文。&lt;/p>
+&lt;blockquote>
+&lt;p>隐写术需要借助 &lt;a class="link" href="https://pvphack.lanzoue.com/b031u7isd" target="_blank" rel="noopener"
+>OpenStego （打开新窗口）&lt;/a>&lt;/p>
+&lt;p>访问密码:g0el&lt;/p>
+&lt;/blockquote>
+&lt;p>等专门的软件进行，写入信息过程是在软件中分别导入图片和写入信息的文档（如 .txt），选择加密算法和设置密码，最后由软件生成合成了原图片和文档的新图片；提取信息的过程是将图片导入软件，输入密码解密后提取出写入的信息。需要注意的是写入密文的图片必须以原图形式传输，如图片被压缩或修改将导致信息无法被读取。&lt;/p>
+&lt;p>可以在公共聊天室传短信息到你的朋友的手里&lt;/p>
+&lt;h3 id="打开stego">打开Stego&lt;/h3>
+&lt;p>OpenStego 是一个隐写术应用程序，它提供两种功能：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>数据隐藏：它可以隐藏图像文件中的任何数据。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>水印：使用不可见签名为图像文件加水印。它可用于检测未经授权的文件复制。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>对于图形用户界面：&lt;/p>
+&lt;p>如果您使用安装程序，请使用 OpenStego 的菜单快捷方式。对于 zip 下载，使用捆绑的批处理文件或 shell 脚本启动 GUI。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">openstego.bat (Windows)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">./openstego.sh (Linux / MacOS)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="隐藏信息">隐藏信息&lt;/h3>
+&lt;p>在隐藏信息之前需要做做两样准备，也就是&lt;strong>Cover&lt;/strong>以及&lt;strong>Message文件&lt;/strong>。第一个就是我们需要用来作伪装的无害的图片，第二个message文件就是我们用来存储信息的文件，一般创建一个.txt的文件即可。 首先我们找好一张可以隐藏真实意图的图片，比如这样一张： &lt;img src="https://blog.xpdbk.com/post/404-jm/128.jpg"
+width="605"
+height="605"
+srcset="https://blog.xpdbk.com/post/404-jm/128_hu3809bf546ae07053922b0c20f35cab60_28684_480x0_resize_q75_box.jpg 480w, https://blog.xpdbk.com/post/404-jm/128_hu3809bf546ae07053922b0c20f35cab60_28684_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="猫猫"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+> 然后我们新建一个txt文件，并写下这样一段话 “我年轻的时候就读过：论语，老子，孟子，尚书，礼记，大学，中庸，周易，左转，庄子，墨子，荀子，韩非子，孙子兵法………常识，老人与海，世界秩序,…….” 然后文件准备就绪以后，就开始想办法把这两个文件合二为一。&lt;/p>
+&lt;p>&lt;strong>打开软件界面&lt;/strong> &lt;img src="https://blog.xpdbk.com/post/404-jm/121.png"
+width="1100"
+height="458"
+srcset="https://blog.xpdbk.com/post/404-jm/121_huef17b15f7a2211cddbfc00e632bd51d6_30273_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/404-jm/121_huef17b15f7a2211cddbfc00e632bd51d6_30273_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="演示awa"
+class="gallery-image"
+data-flex-grow="240"
+data-flex-basis="576px"
+> 第一行浏览咱们需要隐藏的装有需要传输的信息的文件，第二行死Cover，也就是咱们选好的看起来非常友好无害的图片，最后需要选择输出文件的名字和地址，到时候便于知道输出的图片在哪里叫什么名字。 然后需要选择加密算法设置密码，最后点击右下角的&lt;strong>Hide Data&lt;/strong>隐藏信息即可。咱们查看一下隐藏好信息的图片发现和原来的图片没有什么区别但是其实里面已经包含了&lt;strong>背书单&lt;/strong>文件了：&lt;/p>
+&lt;p>&lt;strong>提取隐藏信息&lt;/strong>&lt;br>
+这个操作相对简单，必须要知道对称加密的密码才可以提取，而且&lt;strong>要保证图片没有被压缩过或者修改过&lt;/strong>，有时候为了防止通讯软件压缩图片会考虑选择以传输压缩文件的方式传输。&lt;br>
+&lt;img src="https://blog.xpdbk.com/post/404-jm/4awa.png"
+width="1100"
+height="465"
+srcset="https://blog.xpdbk.com/post/404-jm/4awa_hu182c7bbb16be7e507ceda9e04c1ffd0c_20583_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/404-jm/4awa_hu182c7bbb16be7e507ceda9e04c1ffd0c_20583_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="密码加密"
+class="gallery-image"
+data-flex-grow="236"
+data-flex-basis="567px"
+>&lt;br>
+首先选择&lt;strong>Extract Data&lt;/strong>提取数据，然后第一行找到含有隐藏数据的文件，第二行浏览输出地址，就是提取出来的文件保存在哪里，最后必须要输入密码才可以解密，因此需要正确的输入密码，最后就是提取数据。&lt;br>
+操作很简单吧(●’◡’●)，可以自己试试看。&lt;/p>
+&lt;h2 id="使用des加密短文">使用DES加密短文&lt;/h2>
+&lt;p>&lt;strong>☆提供高质量的数据保护，防止数据未经授权的泄露和未被察觉的修改；&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>☆具有相当高的复杂性，使得破译的开销超过可能获得的利益，同时又要便于理解和掌握；&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>☆DES密码体制的安全性应该不依赖于算法的保密，其安全性仅以加密密钥的保密为基础；&lt;/strong>&lt;/p>
+&lt;p>离线加解密DES &lt;a class="link" href="https://leak.ptik.ga/d/%E8%A7%A3%E5%AF%86%E5%B7%A5%E5%85%B7/DES%E8%A7%A3%E5%AF%86.7z?sign=4yJi9D0j47i7eQO7aB0wz7yTsenV6eDtyiT-XTWAu8Q=:0" target="_blank" rel="noopener"
+>HTML文件下载&lt;/a>&lt;/p></description></item></channel></rss>

