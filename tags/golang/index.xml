@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>golang on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/golang/</link><description>Recent content in golang on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Jul 2019 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Example</title><link>https://blog.xpdbk.com/post/example/</link><pubDate>Mon, 22 Jul 2019 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/example/</guid><description>&lt;p>#Content before encryption.&lt;/p>
+&lt;hugo-encrypt>
+&lt;div id="hugo-encrypt-encryption-notice">
+&lt;p>以下内容被密码保护&lt;/p>
+&lt;noscript>&lt;span id="hugo-encrypt-enable-js">Javascript needs to be enabled to decrypt content&lt;/span>&lt;/noscript>
+&lt;div class='hugo-encrypt-form'>
+&lt;input
+class="hugo-encrypt-input"
+id="hugo-encrypt-password"
+placeholder='请输入密码'
+/>
+&lt;input
+class="hugo-encrypt-button"
+type="button"
+value='提交'
+id="button" onclick="hugoDecrypt(document.getElementById('hugo-encrypt-password').value,'input')"
+/>
+&lt;div id="hugo-encrypt-input-response">&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;cipher-text data-password='PASSWORD' style="display:none;">
+&lt;p>##Encrypted content.&lt;/p>
+&lt;/cipher-text>
+&lt;style type="text/css">div#hugo-encrypt-sha1sum {display: none;}&lt;/style>
+&lt;script>
+const storageKey = location.pathname + "password";
+const userStorage = window['sessionStorage'] ;
+function str2buf(str) {
+return new TextEncoder("utf-8").encode(str);
+}
+function buf2str(buffer) {
+return new TextDecoder("utf-8").decode(buffer);
+}
+function hex2buf(hexStr) {
+return new Uint8Array(hexStr.match(/.{2}/g).map(h => parseInt(h, 16)));
+}
+function deriveKey(passphrase, salt) {
+salt = salt || crypto.getRandomValues(new Uint8Array(8));
+return crypto.subtle
+.importKey("raw", str2buf(passphrase), "PBKDF2", false, ["deriveKey"])
+.then(key =>
+crypto.subtle.deriveKey(
+{ name: "PBKDF2", salt, iterations: 1000, hash: "SHA-256" },
+key,
+{ name: "AES-GCM", length: 256 },
+false,
+["encrypt", "decrypt"],
+),
+)
+.then(key => [key, salt]);
+}
+function decrypt(passphrase, saltIvCipherHex) {
+const [salt, iv, data] = saltIvCipherHex.split("-").map(hex2buf);
+return deriveKey(passphrase, salt)
+.then(([key]) => crypto.subtle.decrypt({ name: "AES-GCM", iv }, key, data))
+.then(v => buf2str(new Uint8Array(v)));
+}
+async function digestMessage(message) {
+const msgUint8 = new TextEncoder().encode(message);
+const hashBuffer = await crypto.subtle.digest('SHA-1', msgUint8);
+const hashArray = Array.from(new Uint8Array(hashBuffer));
+const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+return hashHex;
+}
+const hugoDecrypt = function(password, type) {
+for (const cipher of ciphers) {
+decrypt(password, cipher.innerText).then(function(decrypted_text) {
+digestMessage(decrypted_text.replace(/\r?\n?[^\r\n]*$/, "")).then(function(sha1_sum) {
+if ( decrypted_text.includes(sha1_sum) ) {
+document.getElementById("hugo-encrypt-encryption-notice").remove();
+cipher.outerHTML = decrypted_text;
+userStorage.setItem(storageKey, password);
+document.getElementById("hugo-encrypt-sha1sum").innerHTML = "Success: " + sha1_sum;
+console.log("Decryption successful. Storing password in sessionStorage.");
+}
+});
+}).catch(function(error) {
+if (type === "input") {
+document.getElementById("hugo-encrypt-input-response").innerHTML = "密码错误";
+console.log('密码错误', error);
+} else if (type === "storage") {
+userStorage.removeItem(location.pathname + "password");
+console.log("Password changed. Clearing userStorage.", error);
+}
+});
+}
+};
+&lt;/script>
+&lt;script>
+window.onload = () => {
+ciphers = Array.from(document.querySelectorAll("cipher-text"));
+if (userStorage.getItem(storageKey)) {
+console.log("Found storageKey in userStorage. Attemtping decryption");
+hugoDecrypt(userStorage.getItem(storageKey), "storage");
+}
+};
+&lt;/script>
+&lt;/hugo-encrypt></description></item></channel></rss>
