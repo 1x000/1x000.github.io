@@ -1,4 +1,475 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/post/</link><description>Recent content in Posts on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Free Client（免费客户端集合）</title><link>https://blog.xpdbk.com/post/crack-client/</link><pubDate>Fri, 30 Jun 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/crack-client/</guid><description>&lt;img src="https://blog.xpdbk.com/post/crack-client/1314535.webp" alt="Featured image of post Free Client（免费客户端集合）" />&lt;h2 id="free-client免费客户端集合">Free Client（免费客户端集合）&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/post/</link><description>Recent content in Posts on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>博客常用命令（离线用）</title><link>https://blog.xpdbk.com/post/blog-ml/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blog-ml/</guid><description>&lt;h2 id="博客命令记录">博客命令记录&lt;/h2>
+&lt;h2 id="主题相关">主题相关&lt;/h2>
+&lt;p>FrontMatter 字段含义&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">title: 标题
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">description: 描述
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: 时间（1111-11-11）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">image: 显示的特色图片
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">comments: 显示 / 隐藏评论区(T/F)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">license: 文章协议 输入 false 可以隐藏
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hidden: 隐藏文章（不在首页，归档等页面显示，但是可以直接通过链接访问）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">math: 是否加载 KaTeX 脚本
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">slug: 固定链接
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">draft: 是否为草稿
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">categories:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - 分类
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tags:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - 标签
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lastmod: 上次更新时间
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keywords: &amp;#34;关键词&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="markdown相关">MarkDown相关&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl"># 我是一级标题
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 我是二级标题
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">### 我是三级标题
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#### 我是四级标题
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">##### 我是五级标题
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">###### 我是六级标题
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*斜体文本*
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">**粗体文本**
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">***粗斜体文本***
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">一行中用三个以上的星号*、减号-、底线_来建立一个分隔线
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~~删除线~~
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">u&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>带下划线文本&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">u&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">创建脚注格式类似这样 [^JiaoZhu]。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[^JiaoZhu]: 脚注的内容
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">列表：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- 项目1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- 项目2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- 项目3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">有序列表：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1. 第一项
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2. 第二项
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3. 第三项
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; 区块引用
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[链接文本](网址)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![图片描述](图片链接)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">表格：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 表头1 | 表头2 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| ---- | ---- |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格1 | 单元格2 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格3 | 单元格4 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">表格对齐方式：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 左对齐 | 右对齐 | 居中对齐 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| :---- | ----: | :----: |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 内容 | 内容 | 内容 |
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="简码">简码&lt;/h2>
+&lt;p>Stack 带有一组&lt;a class="link" href="https://gohugo.io/content-management/shortcodes/" target="_blank" rel="noopener"
+>简码&lt;/a>，您可以在您的内容中使用这些简码。&lt;/p>
+&lt;p>此页面仅包含特定于 Stack 的简码。Hugo 的内置短代码记录&lt;a class="link" href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes" target="_blank" rel="noopener"
+>在此处&lt;/a>。&lt;/p>
+&lt;h2 id="哔哩哔哩视频">哔哩哔哩视频&lt;/h2>
+&lt;p>嵌入&lt;a class="link" href="https://www.bilibili.com/" target="_blank" rel="noopener"
+>哔哩哔哩&lt;/a>视频。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">
+&lt;p>Bilibili 视频av号或BV号错误！请检查视频av号或BV号是否正确&lt;/p>
+&lt;p>当前视频av或BV号：VIDEO_ID，视频分P：PART_NUMBER&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=PART_NUMBER&amp;&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://www.bilibili.com/video/av12345678&lt;/code>为&lt;code>av12345678&lt;/code>。&lt;code>AV&lt;/code>和均受&lt;code>BV&lt;/code>支持。&lt;/p>
+&lt;p>是&lt;code>PART_NUMBER&lt;/code>可选的。它可用于指定要播放的视频部分。例如，零件号&lt;code>https://www.bilibili.com/video/av12345678?p=2&lt;/code>是&lt;code>2&lt;/code>。&lt;/p>
+&lt;h2 id="腾讯视频">腾讯视频&lt;/h2>
+&lt;p>嵌入&lt;a class="link" href="https://v.qq.com/" target="_blank" rel="noopener"
+>腾讯视频&lt;/a>视频。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">
+&lt;div class="video-wrapper">
+&lt;iframe src="https://v.qq.com/txp/iframe/player.html?vid=VIDEO_ID&amp;auto=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://v.qq.com/x/cover/hzgtnf6tbvfekfv/g0014r3khdw.html&lt;/code>为&lt;code>g0014r3khdw&lt;/code>。&lt;/p>
+&lt;h2 id="youtube-视频">Youtube 视频&lt;/h2>
+&lt;p>嵌入&lt;a class="link" href="https://www.youtube.com/" target="_blank" rel="noopener"
+>YouTube&lt;/a>视频。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/VIDEO_ID"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://www.youtube.com/watch?v=VIDEO_ID&lt;/code>为&lt;code>VIDEO_ID&lt;/code>。&lt;/p>
+&lt;h2 id="通用视频文件">通用视频文件&lt;/h2>
+&lt;p>嵌入视频文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
+&lt;video
+controls
+src="VIDEO_URL"
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="VIDEO_URL">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
+&lt;video
+controls
+src="VIDEO_URL"
+poster="./video-poster.webp"
+autoplay
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="VIDEO_URL">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以&lt;code>VIDEO_URL&lt;/code>是 URL 或相对于目录的路径&lt;code>static&lt;/code>。例如，&lt;code>src=&amp;quot;/video/my-video.mp4&amp;quot;&lt;/code>将嵌入您站点文件夹的视频文件&lt;code>static/video/my-video.mp4&lt;/code>。&lt;/p>
+&lt;p>该&lt;code>autoplay&lt;/code>属性是可选的。它可用于指定是否应自动播放视频。该&lt;code>poster&lt;/code>属性是可选的。它可用于指定视频的海报图像。&lt;/p>
+&lt;h2 id="gitlab">GitLab&lt;/h2>
+&lt;p>嵌入&lt;a class="link" href="https://gitlab.com/" target="_blank" rel="noopener"
+>GitLab&lt;/a>片段。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;script
+type="application/javascript"
+src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
+>&lt;/script>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以&lt;code>SNIPPET_ID&lt;/code>在片段的 URL 中找到。例如，代码段 ID&lt;code>https://gitlab.com/-/snippets/1234567&lt;/code>是&lt;code>1234567&lt;/code>。&lt;/p>
+&lt;h2 id="引用">引用&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;blockquote>
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>A famous person, &lt;/span>&lt;a href="https://en.wikipedia.org/wiki/Book">&lt;cite>The book they wrote&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>通过上述组织，您可以像这样在您的内容中插入图像：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">--- content/post/my-first-post/index.md ---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.webp&lt;/span>)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.webp&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="插入图库">插入图库&lt;/h2>
+&lt;p>要插入图片库，您需要为图片库创建一个页面包。例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">content
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── gallery
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── my-first-gallery
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── image1.webp
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── image2.webp
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── image3.webp
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">--- content/gallery/my-first-gallery/index.md ---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.webp&lt;/span>) ![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.webp&lt;/span>)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image3.webp&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>它将呈现两行，第一行有两张图像，第二行有一张图像。&lt;/p>
+&lt;h3 id="高斯模糊">高斯模糊&lt;/h3>
+&lt;p>在你的文章中直接输入&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;blur&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>是高斯模糊呐~ &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="黑幕效果">黑幕效果&lt;/h3>
+&lt;p>在你的文章中直接输入&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;shady&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>诶嘿嘿，我藏好了哦&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="坑">坑&lt;/h3>
+&lt;p>这样一搞的话回车键/Tab的换行就完蛋了= =, 可以用&lt;code>&amp;lt;br&amp;gt;&lt;/code>放在行末尾来换行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;blur&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>行1 &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">br&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">行2 &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">br&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">行3&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="因为它没用--即答">因为它没用= = 即答)&lt;/h2>
+&lt;p>&lt;del>别打我 逃)&lt;/del>&lt;/p>
+&lt;p>支持美人鱼JS和Ketax&lt;/p>
+&lt;h2 id="google广告">Google广告&lt;/h2>
+&lt;p>已经植入&lt;/p>
+&lt;h2 id="hugo文章加密">hugo文章加密&lt;/h2>
+&lt;p>···&lt;/p>
+&lt;hr>
+&lt;h2 id="title-this-is-an-encrypted-post">title: &amp;ldquo;This Is An Encrypted Post&amp;rdquo;&lt;/h2>
+&lt;p>This content is visible to anyone.&lt;/p>
+&lt;hugo-encrypt>
+&lt;div id="hugo-encrypt-encryption-notice">
+&lt;p>以下内容被密码保护&lt;/p>
+&lt;noscript>&lt;span id="hugo-encrypt-enable-js">Javascript needs to be enabled to decrypt content&lt;/span>&lt;/noscript>
+&lt;div class='hugo-encrypt-form'>
+&lt;input
+class="hugo-encrypt-input"
+id="hugo-encrypt-password"
+placeholder='请输入密码'
+/>
+&lt;input
+class="hugo-encrypt-button"
+type="button"
+value='提交'
+id="button" onclick="hugoDecrypt(document.getElementById('hugo-encrypt-password').value,'input')"
+/>
+&lt;div id="hugo-encrypt-input-response">&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;cipher-text data-password='postspecificpassword' style="display:none;">
+&lt;p>This content will be encrypted!&lt;/p>
+&lt;/cipher-text>
+&lt;style type="text/css">div#hugo-encrypt-sha1sum {display: none;}&lt;/style>
+&lt;script>
+const storageKey = location.pathname + "password";
+const userStorage = window['sessionStorage'] ;
+function str2buf(str) {
+return new TextEncoder("utf-8").encode(str);
+}
+function buf2str(buffer) {
+return new TextDecoder("utf-8").decode(buffer);
+}
+function hex2buf(hexStr) {
+return new Uint8Array(hexStr.match(/.{2}/g).map(h => parseInt(h, 16)));
+}
+function deriveKey(passphrase, salt) {
+salt = salt || crypto.getRandomValues(new Uint8Array(8));
+return crypto.subtle
+.importKey("raw", str2buf(passphrase), "PBKDF2", false, ["deriveKey"])
+.then(key =>
+crypto.subtle.deriveKey(
+{ name: "PBKDF2", salt, iterations: 1000, hash: "SHA-256" },
+key,
+{ name: "AES-GCM", length: 256 },
+false,
+["encrypt", "decrypt"],
+),
+)
+.then(key => [key, salt]);
+}
+function decrypt(passphrase, saltIvCipherHex) {
+const [salt, iv, data] = saltIvCipherHex.split("-").map(hex2buf);
+return deriveKey(passphrase, salt)
+.then(([key]) => crypto.subtle.decrypt({ name: "AES-GCM", iv }, key, data))
+.then(v => buf2str(new Uint8Array(v)));
+}
+async function digestMessage(message) {
+const msgUint8 = new TextEncoder().encode(message);
+const hashBuffer = await crypto.subtle.digest('SHA-1', msgUint8);
+const hashArray = Array.from(new Uint8Array(hashBuffer));
+const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+return hashHex;
+}
+const hugoDecrypt = function(password, type) {
+for (const cipher of ciphers) {
+decrypt(password, cipher.innerText).then(function(decrypted_text) {
+digestMessage(decrypted_text.replace(/\r?\n?[^\r\n]*$/, "")).then(function(sha1_sum) {
+if ( decrypted_text.includes(sha1_sum) ) {
+document.getElementById("hugo-encrypt-encryption-notice").remove();
+cipher.outerHTML = decrypted_text;
+userStorage.setItem(storageKey, password);
+document.getElementById("hugo-encrypt-sha1sum").innerHTML = "Success: " + sha1_sum;
+console.log("Decryption successful. Storing password in sessionStorage.");
+}
+});
+}).catch(function(error) {
+if (type === "input") {
+document.getElementById("hugo-encrypt-input-response").innerHTML = "密码错误";
+console.log('密码错误', error);
+} else if (type === "storage") {
+userStorage.removeItem(location.pathname + "password");
+console.log("Password changed. Clearing userStorage.", error);
+}
+});
+}
+};
+&lt;/script>
+&lt;script>
+window.onload = () => {
+ciphers = Array.from(document.querySelectorAll("cipher-text"));
+if (userStorage.getItem(storageKey)) {
+console.log("Found storageKey in userStorage. Attemtping decryption");
+hugoDecrypt(userStorage.getItem(storageKey), "storage");
+}
+};
+&lt;/script>
+&lt;/hugo-encrypt>
+&lt;p>···&lt;/p>
+&lt;h2 id="视频api测试mp4">视频API测试（MP4）&lt;/h2>
+&lt;div class="video-wrapper">
+&lt;video
+controls
+src="https://ipcheck1.xpdbk.com/api/videos/awa.mp4"
+poster="./avatar.webp"
+autoplay
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="https://ipcheck1.xpdbk.com/api/videos/awa.mp4">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div></description></item><item><title>Free Client（免费客户端集合）</title><link>https://blog.xpdbk.com/post/crack-client/</link><pubDate>Fri, 30 Jun 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/crack-client/</guid><description>&lt;img src="https://blog.xpdbk.com/post/crack-client/1314535.webp" alt="Featured image of post Free Client（免费客户端集合）" />&lt;h2 id="free-client免费客户端集合">Free Client（免费客户端集合）&lt;/h2>
 &lt;blockquote>
 &lt;p>欢迎来这里交流低配电脑可用开裂客户端&lt;/p>
 &lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
@@ -8068,478 +8539,7 @@ mkdir /root/adguardhome/confdir
 &lt;p>没有互联网？没问题。Obsidian 完全离线工作，互联网或服务问题永远不会成为您的问题。&lt;/p>
 &lt;p>随时随地享受阅读和处理笔记的乐趣。&lt;/p>
 &lt;p>&lt;a class="link" href="https://obsidian.md/" target="_blank" rel="noopener"
->官网&lt;/a>&lt;/p></description></item><item><title>博客常用命令（离线用）</title><link>https://blog.xpdbk.com/post/blog-ml/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blog-ml/</guid><description>&lt;h2 id="博客命令记录">博客命令记录&lt;/h2>
-&lt;h2 id="主题相关">主题相关&lt;/h2>
-&lt;p>FrontMatter 字段含义&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">title: 标题
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">description: 描述
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: 时间（1111-11-11）
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">image: 显示的特色图片
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">comments: 显示 / 隐藏评论区(T/F)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">license: 文章协议 输入 false 可以隐藏
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hidden: 隐藏文章（不在首页，归档等页面显示，但是可以直接通过链接访问）
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">math: 是否加载 KaTeX 脚本
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">slug: 固定链接
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">draft: 是否为草稿
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">categories:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - 分类
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tags:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - 标签
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lastmod: 上次更新时间
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keywords: &amp;#34;关键词&amp;#34;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="markdown相关">MarkDown相关&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;span class="lnt">33
-&lt;/span>&lt;span class="lnt">34
-&lt;/span>&lt;span class="lnt">35
-&lt;/span>&lt;span class="lnt">36
-&lt;/span>&lt;span class="lnt">37
-&lt;/span>&lt;span class="lnt">38
-&lt;/span>&lt;span class="lnt">39
-&lt;/span>&lt;span class="lnt">40
-&lt;/span>&lt;span class="lnt">41
-&lt;/span>&lt;span class="lnt">42
-&lt;/span>&lt;span class="lnt">43
-&lt;/span>&lt;span class="lnt">44
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl"># 我是一级标题
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 我是二级标题
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">### 我是三级标题
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#### 我是四级标题
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">##### 我是五级标题
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">###### 我是六级标题
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">*斜体文本*
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">**粗体文本**
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">***粗斜体文本***
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">一行中用三个以上的星号*、减号-、底线_来建立一个分隔线
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~~删除线~~
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">u&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>带下划线文本&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">u&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">创建脚注格式类似这样 [^JiaoZhu]。
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[^JiaoZhu]: 脚注的内容
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">列表：
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- 项目1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- 项目2
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- 项目3
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">有序列表：
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1. 第一项
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2. 第二项
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3. 第三项
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; 区块引用
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[链接文本](网址)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![图片描述](图片链接)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">表格：
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 表头1 | 表头2 |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| ---- | ---- |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格1 | 单元格2 |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格3 | 单元格4 |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">表格对齐方式：
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 左对齐 | 右对齐 | 居中对齐 |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| :---- | ----: | :----: |
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 内容 | 内容 | 内容 |
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="简码">简码&lt;/h2>
-&lt;p>Stack 带有一组&lt;a class="link" href="https://gohugo.io/content-management/shortcodes/" target="_blank" rel="noopener"
->简码&lt;/a>，您可以在您的内容中使用这些简码。&lt;/p>
-&lt;p>此页面仅包含特定于 Stack 的简码。Hugo 的内置短代码记录&lt;a class="link" href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes" target="_blank" rel="noopener"
->在此处&lt;/a>。&lt;/p>
-&lt;h2 id="哔哩哔哩视频">哔哩哔哩视频&lt;/h2>
-&lt;p>嵌入&lt;a class="link" href="https://www.bilibili.com/" target="_blank" rel="noopener"
->哔哩哔哩&lt;/a>视频。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">
-&lt;p>Bilibili 视频av号或BV号错误！请检查视频av号或BV号是否正确&lt;/p>
-&lt;p>当前视频av或BV号：VIDEO_ID，视频分P：PART_NUMBER&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=PART_NUMBER&amp;&amp;autoplay=0"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://www.bilibili.com/video/av12345678&lt;/code>为&lt;code>av12345678&lt;/code>。&lt;code>AV&lt;/code>和均受&lt;code>BV&lt;/code>支持。&lt;/p>
-&lt;p>是&lt;code>PART_NUMBER&lt;/code>可选的。它可用于指定要播放的视频部分。例如，零件号&lt;code>https://www.bilibili.com/video/av12345678?p=2&lt;/code>是&lt;code>2&lt;/code>。&lt;/p>
-&lt;h2 id="腾讯视频">腾讯视频&lt;/h2>
-&lt;p>嵌入&lt;a class="link" href="https://v.qq.com/" target="_blank" rel="noopener"
->腾讯视频&lt;/a>视频。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">
-&lt;div class="video-wrapper">
-&lt;iframe src="https://v.qq.com/txp/iframe/player.html?vid=VIDEO_ID&amp;auto=0"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://v.qq.com/x/cover/hzgtnf6tbvfekfv/g0014r3khdw.html&lt;/code>为&lt;code>g0014r3khdw&lt;/code>。&lt;/p>
-&lt;h2 id="youtube-视频">Youtube 视频&lt;/h2>
-&lt;p>嵌入&lt;a class="link" href="https://www.youtube.com/" target="_blank" rel="noopener"
->YouTube&lt;/a>视频。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/VIDEO_ID"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://www.youtube.com/watch?v=VIDEO_ID&lt;/code>为&lt;code>VIDEO_ID&lt;/code>。&lt;/p>
-&lt;h2 id="通用视频文件">通用视频文件&lt;/h2>
-&lt;p>嵌入视频文件&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
-&lt;video
-controls
-src="VIDEO_URL"
->
-&lt;p>
-Your browser doesn't support HTML5 video. Here is a
-&lt;a href="VIDEO_URL">link to the video&lt;/a> instead.
-&lt;/p>
-&lt;/video>
-&lt;/div>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
-&lt;video
-controls
-src="VIDEO_URL"
-poster="./video-poster.webp"
-autoplay
->
-&lt;p>
-Your browser doesn't support HTML5 video. Here is a
-&lt;a href="VIDEO_URL">link to the video&lt;/a> instead.
-&lt;/p>
-&lt;/video>
-&lt;/div>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>可以&lt;code>VIDEO_URL&lt;/code>是 URL 或相对于目录的路径&lt;code>static&lt;/code>。例如，&lt;code>src=&amp;quot;/video/my-video.mp4&amp;quot;&lt;/code>将嵌入您站点文件夹的视频文件&lt;code>static/video/my-video.mp4&lt;/code>。&lt;/p>
-&lt;p>该&lt;code>autoplay&lt;/code>属性是可选的。它可用于指定是否应自动播放视频。该&lt;code>poster&lt;/code>属性是可选的。它可用于指定视频的海报图像。&lt;/p>
-&lt;h2 id="gitlab">GitLab&lt;/h2>
-&lt;p>嵌入&lt;a class="link" href="https://gitlab.com/" target="_blank" rel="noopener"
->GitLab&lt;/a>片段。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;script
-type="application/javascript"
-src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
->&lt;/script>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>可以&lt;code>SNIPPET_ID&lt;/code>在片段的 URL 中找到。例如，代码段 ID&lt;code>https://gitlab.com/-/snippets/1234567&lt;/code>是&lt;code>1234567&lt;/code>。&lt;/p>
-&lt;h2 id="引用">引用&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;blockquote>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>A famous person, &lt;/span>&lt;a href="https://en.wikipedia.org/wiki/Book">&lt;cite>The book they wrote&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>通过上述组织，您可以像这样在您的内容中插入图像：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">--- content/post/my-first-post/index.md ---
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.webp&lt;/span>)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.webp&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="插入图库">插入图库&lt;/h2>
-&lt;p>要插入图片库，您需要为图片库创建一个页面包。例如：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── gallery
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── my-first-gallery
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── index.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── image1.webp
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── image2.webp
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── image3.webp
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">--- content/gallery/my-first-gallery/index.md ---
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.webp&lt;/span>) ![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.webp&lt;/span>)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image3.webp&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>它将呈现两行，第一行有两张图像，第二行有一张图像。&lt;/p>
-&lt;h3 id="高斯模糊">高斯模糊&lt;/h3>
-&lt;p>在你的文章中直接输入&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;blur&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>是高斯模糊呐~ &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="黑幕效果">黑幕效果&lt;/h3>
-&lt;p>在你的文章中直接输入&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;shady&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>诶嘿嘿，我藏好了哦&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="坑">坑&lt;/h3>
-&lt;p>这样一搞的话回车键/Tab的换行就完蛋了= =, 可以用&lt;code>&amp;lt;br&amp;gt;&lt;/code>放在行末尾来换行&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">span&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;blur&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>行1 &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">br&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">行2 &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">br&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">行3&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">span&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="因为它没用--即答">因为它没用= = 即答)&lt;/h2>
-&lt;p>&lt;del>别打我 逃)&lt;/del>&lt;/p>
-&lt;p>支持美人鱼JS和Ketax&lt;/p>
-&lt;h2 id="google广告">Google广告&lt;/h2>
-&lt;p>已经植入&lt;/p>
-&lt;h2 id="hugo文章加密">hugo文章加密&lt;/h2>
-&lt;p>···&lt;/p>
-&lt;hr>
-&lt;h2 id="title-this-is-an-encrypted-post">title: &amp;ldquo;This Is An Encrypted Post&amp;rdquo;&lt;/h2>
-&lt;p>This content is visible to anyone.&lt;/p>
-&lt;hugo-encrypt>
-&lt;div id="hugo-encrypt-encryption-notice">
-&lt;p>以下内容被密码保护&lt;/p>
-&lt;noscript>&lt;span id="hugo-encrypt-enable-js">Javascript needs to be enabled to decrypt content&lt;/span>&lt;/noscript>
-&lt;div class='hugo-encrypt-form'>
-&lt;input
-class="hugo-encrypt-input"
-id="hugo-encrypt-password"
-placeholder='请输入密码'
-/>
-&lt;input
-class="hugo-encrypt-button"
-type="button"
-value='提交'
-id="button" onclick="hugoDecrypt(document.getElementById('hugo-encrypt-password').value,'input')"
-/>
-&lt;div id="hugo-encrypt-input-response">&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;cipher-text data-password='postspecificpassword' style="display:none;">
-&lt;p>This content will be encrypted!&lt;/p>
-&lt;/cipher-text>
-&lt;style type="text/css">div#hugo-encrypt-sha1sum {display: none;}&lt;/style>
-&lt;script>
-const storageKey = location.pathname + "password";
-const userStorage = window['sessionStorage'] ;
-function str2buf(str) {
-return new TextEncoder("utf-8").encode(str);
-}
-function buf2str(buffer) {
-return new TextDecoder("utf-8").decode(buffer);
-}
-function hex2buf(hexStr) {
-return new Uint8Array(hexStr.match(/.{2}/g).map(h => parseInt(h, 16)));
-}
-function deriveKey(passphrase, salt) {
-salt = salt || crypto.getRandomValues(new Uint8Array(8));
-return crypto.subtle
-.importKey("raw", str2buf(passphrase), "PBKDF2", false, ["deriveKey"])
-.then(key =>
-crypto.subtle.deriveKey(
-{ name: "PBKDF2", salt, iterations: 1000, hash: "SHA-256" },
-key,
-{ name: "AES-GCM", length: 256 },
-false,
-["encrypt", "decrypt"],
-),
-)
-.then(key => [key, salt]);
-}
-function decrypt(passphrase, saltIvCipherHex) {
-const [salt, iv, data] = saltIvCipherHex.split("-").map(hex2buf);
-return deriveKey(passphrase, salt)
-.then(([key]) => crypto.subtle.decrypt({ name: "AES-GCM", iv }, key, data))
-.then(v => buf2str(new Uint8Array(v)));
-}
-async function digestMessage(message) {
-const msgUint8 = new TextEncoder().encode(message);
-const hashBuffer = await crypto.subtle.digest('SHA-1', msgUint8);
-const hashArray = Array.from(new Uint8Array(hashBuffer));
-const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-return hashHex;
-}
-const hugoDecrypt = function(password, type) {
-for (const cipher of ciphers) {
-decrypt(password, cipher.innerText).then(function(decrypted_text) {
-digestMessage(decrypted_text.replace(/\r?\n?[^\r\n]*$/, "")).then(function(sha1_sum) {
-if ( decrypted_text.includes(sha1_sum) ) {
-document.getElementById("hugo-encrypt-encryption-notice").remove();
-cipher.outerHTML = decrypted_text;
-userStorage.setItem(storageKey, password);
-document.getElementById("hugo-encrypt-sha1sum").innerHTML = "Success: " + sha1_sum;
-console.log("Decryption successful. Storing password in sessionStorage.");
-}
-});
-}).catch(function(error) {
-if (type === "input") {
-document.getElementById("hugo-encrypt-input-response").innerHTML = "密码错误";
-console.log('密码错误', error);
-} else if (type === "storage") {
-userStorage.removeItem(location.pathname + "password");
-console.log("Password changed. Clearing userStorage.", error);
-}
-});
-}
-};
-&lt;/script>
-&lt;script>
-window.onload = () => {
-ciphers = Array.from(document.querySelectorAll("cipher-text"));
-if (userStorage.getItem(storageKey)) {
-console.log("Found storageKey in userStorage. Attemtping decryption");
-hugoDecrypt(userStorage.getItem(storageKey), "storage");
-}
-};
-&lt;/script>
-&lt;/hugo-encrypt>
-&lt;p>···&lt;/p>
-&lt;h2 id="视频api测试">视频API测试&lt;/h2>
-&lt;div class="video-wrapper">
-&lt;video
-controls
-src="https://ipcheck1.xpdbk.com/api/videos/415796390-1-208.mp4"
-poster="./avatar.webp"
-autoplay
->
-&lt;p>
-Your browser doesn't support HTML5 video. Here is a
-&lt;a href="https://ipcheck1.xpdbk.com/api/videos/415796390-1-208.mp4">link to the video&lt;/a> instead.
-&lt;/p>
-&lt;/video>
-&lt;/div></description></item><item><title>有趣的网站</title><link>https://blog.xpdbk.com/post/shuoshuo-youqu/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/shuoshuo-youqu/</guid><description>&lt;h2 id="这-8-个有趣网站">这 8 个有趣网站&lt;/h2>
+>官网&lt;/a>&lt;/p></description></item><item><title>有趣的网站</title><link>https://blog.xpdbk.com/post/shuoshuo-youqu/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/shuoshuo-youqu/</guid><description>&lt;h2 id="这-8-个有趣网站">这 8 个有趣网站&lt;/h2>
 &lt;h2 id="假装电脑在升级">假装电脑在升级&lt;/h2>
 &lt;p>&lt;a class="link" href="https://link.juejin.cn/?target=http%3A%2F%2Ffakeupdate.net%2F" title="http://fakeupdate.net/"
 target="_blank" rel="noopener"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/blog/</link><description>Recent content in blog on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 28 Dec 2022 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>博客常用命令（离线用）</title><link>https://blog.xpdbk.com/post/blog-ml/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blog-ml/</guid><description>&lt;h2 id="博客命令记录">博客命令记录&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/blog/</link><description>Recent content in blog on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>博客常用命令（离线用）</title><link>https://blog.xpdbk.com/post/blog-ml/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blog-ml/</guid><description>&lt;h2 id="博客命令记录">博客命令记录&lt;/h2>
 &lt;h2 id="主题相关">主题相关&lt;/h2>
 &lt;p>FrontMatter 字段含义&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -456,17 +456,17 @@ hugoDecrypt(userStorage.getItem(storageKey), "storage");
 &lt;/script>
 &lt;/hugo-encrypt>
 &lt;p>···&lt;/p>
-&lt;h2 id="视频api测试">视频API测试&lt;/h2>
+&lt;h2 id="视频api测试mp4">视频API测试（MP4）&lt;/h2>
 &lt;div class="video-wrapper">
 &lt;video
 controls
-src="https://ipcheck1.xpdbk.com/api/videos/415796390-1-208.mp4"
+src="https://ipcheck1.xpdbk.com/api/videos/awa.mp4"
 poster="./avatar.webp"
 autoplay
 >
 &lt;p>
 Your browser doesn't support HTML5 video. Here is a
-&lt;a href="https://ipcheck1.xpdbk.com/api/videos/415796390-1-208.mp4">link to the video&lt;/a> instead.
+&lt;a href="https://ipcheck1.xpdbk.com/api/videos/awa.mp4">link to the video&lt;/a> instead.
 &lt;/p>
 &lt;/video>
 &lt;/div></description></item></channel></rss>
