@@ -1202,7 +1202,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get install libssl-dev
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>如何进行免费的CC压力测试</title><link>https://blog.xpdbk.com/post/cc-gongji/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/cc-gongji/</guid><description>&lt;img src="https://blog.xpdbk.com/post/cc-gongji/awa.jpg" alt="Featured image of post 如何进行免费的CC压力测试" />&lt;h2 id="cc压力测试教程">CC压力测试教程&lt;/h2>
+&lt;/div></description></item><item><title>如何进行免费的CC压力测试</title><link>https://blog.xpdbk.com/post/cc-gongji/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/cc-gongji/</guid><description>&lt;img src="https://blog.xpdbk.com/post/cc-gongji/awa.webp" alt="Featured image of post 如何进行免费的CC压力测试" />&lt;h2 id="cc压力测试教程">CC压力测试教程&lt;/h2>
 &lt;blockquote>
 &lt;p>仅供测试不要用来做违法的事情&lt;/p>
 &lt;/blockquote>
@@ -1338,7 +1338,7 @@
 &lt;p>&lt;a class="link" href="https://github.com/Leeon123/CC-attack" target="_blank" rel="noopener"
 >GitHub - Leeon123/CC-attack: Using Socks4/5 or http proxies to make a multithreading Http-flood/Https-flood (cc) attack.&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;p>不要拿去违法OwO&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.png" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
+&lt;p>不要拿去违法OwO&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
 &lt;p>系统默认安装了apache2现在就来卸载此服务。&lt;/p>
 &lt;h2 id="1查找web服务">1、查找web服务&lt;/h2>
 &lt;p>使用如下命令：&lt;/p>

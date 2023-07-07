@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>autodog on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/autodog/</link><description>Recent content in autodog on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 04 Apr 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/autodog/index.xml" rel="self" type="application/rss+xml"/><item><title>FDP使用方法与一键包整合</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/</link><pubDate>Tue, 04 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/awa.png" alt="Featured image of post FDP使用方法与一键包整合" />&lt;h2 id="fdp使用方法与一键包整合">FDP使用方法与一键包整合&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>autodog on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/autodog/</link><description>Recent content in autodog on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 04 Apr 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/autodog/index.xml" rel="self" type="application/rss+xml"/><item><title>FDP使用方法与一键包整合</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/</link><pubDate>Tue, 04 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/awa.webp" alt="Featured image of post FDP使用方法与一键包整合" />&lt;h2 id="fdp使用方法与一键包整合">FDP使用方法与一键包整合&lt;/h2>
 &lt;h2 id="开纪一键包不含配置">开纪一键包（不含配置）&lt;/h2>
 &lt;p>接下来不会做任何改动除非有重大更新 and 跟随最新的&lt;a class="link" href="https://github.com/SkidderMC/FDPClient" target="_blank" rel="noopener"
 >FDP&lt;/a>版本&lt;/p>
@@ -54,10 +54,10 @@
 &lt;/ul>
 &lt;h3 id="java安装过程">Java安装过程&lt;/h3>
 &lt;p>&lt;strong>点击Java.exe安装&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/javastart.png"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/javastart.webp"
 width="415"
 height="107"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/javastart_hu6a398ec2cf2f7e945be0e22c8256abeb_8610_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/javastart_hu6a398ec2cf2f7e945be0e22c8256abeb_8610_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/javastart_hub0639c2e1c2d4c76b980d021e3711b50_6462_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/javastart_hub0639c2e1c2d4c76b980d021e3711b50_6462_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="点击Java.exe安装"
 class="gallery-image"
@@ -65,10 +65,10 @@ data-flex-grow="387"
 data-flex-basis="930px"
 >&lt;/p>
 &lt;p>&lt;strong>Java安装页面&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/java8hgf.png"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/java8hgf.webp"
 width="1072"
 height="587"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/java8hgf_hu4d58f1c715252d9737ea526f37ee8a83_60193_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/java8hgf_hu4d58f1c715252d9737ea526f37ee8a83_60193_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/java8hgf_hu2ebc3ca5748d91921ecf5b0a75e7a32e_41254_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/java8hgf_hu2ebc3ca5748d91921ecf5b0a75e7a32e_41254_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="Java安装页面"
 class="gallery-image"
@@ -76,10 +76,10 @@ data-flex-grow="182"
 data-flex-basis="438px"
 >&lt;/p>
 &lt;p>&lt;strong>一路点击&lt;code>下一步&lt;/code>直到这个页面&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dwe4rf.png"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dwe4rf.webp"
 width="785"
 height="594"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dwe4rf_hu2e54cff38dbb3dc8f3112359e7883f71_30075_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dwe4rf_hu2e54cff38dbb3dc8f3112359e7883f71_30075_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dwe4rf_hub4add7cf0de8157805fa52049032fcaa_12540_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dwe4rf_hub4add7cf0de8157805fa52049032fcaa_12540_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="安装中&amp;hellip;"
 class="gallery-image"
@@ -87,10 +87,10 @@ data-flex-grow="132"
 data-flex-basis="317px"
 >&lt;/p>
 &lt;p>&lt;strong>安装完毕后的样子&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawd.jpg"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawd.webp"
 width="799"
 height="614"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawd_hub67d470b7b4ef8f27cab8fbf08cf73f8_64953_480x0_resize_q75_box.jpg 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawd_hub67d470b7b4ef8f27cab8fbf08cf73f8_64953_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawd_hu0527ac9c54b3509515069c0b4046fce4_22018_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawd_hu0527ac9c54b3509515069c0b4046fce4_22018_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="安装完毕"
 class="gallery-image"
@@ -123,10 +123,10 @@ data-flex-basis="312px"
 >NET 4.8 Windows7 下载&lt;/a>&lt;/p>
 &lt;h3 id="net安装过程">NET安装过程&lt;/h3>
 &lt;p>&lt;strong>点击EXE&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawdds.png"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawdds.webp"
 width="914"
 height="193"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawdds_huf30267435e28325a7ceb46b7172e37aa_19624_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawdds_huf30267435e28325a7ceb46b7172e37aa_19624_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawdds_hu10f3181ec9d13f998dae67b75b59a386_14290_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dawdds_hu10f3181ec9d13f998dae67b75b59a386_14290_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="点击EXE"
 class="gallery-image"
@@ -134,10 +134,10 @@ data-flex-grow="473"
 data-flex-basis="1136px"
 >&lt;/p>
 &lt;p>&lt;strong>跳出安装界面&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dasdaw.png"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dasdaw.webp"
 width="537"
 height="483"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dasdaw_hua37c40e0692c5d8fdbdfff925cea63bd_35372_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dasdaw_hua37c40e0692c5d8fdbdfff925cea63bd_35372_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dasdaw_huafba64cdca4779782f73e0bf89019c5e_40722_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dasdaw_huafba64cdca4779782f73e0bf89019c5e_40722_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="NET安装界面"
 class="gallery-image"
@@ -145,10 +145,10 @@ data-flex-grow="111"
 data-flex-basis="266px"
 >&lt;/p>
 &lt;p>&lt;strong>一路按提示安装即可，安装需要一点时间，出现如下界面，则表示安装成功。&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dfasef.png"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dfasef.webp"
 width="539"
 height="478"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dfasef_hu555a01f70d9769825edcb57e78c9f94b_19129_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dfasef_hu555a01f70d9769825edcb57e78c9f94b_19129_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dfasef_hu856800867c019fe751fe2263c67be4fe_11416_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/dfasef_hu856800867c019fe751fe2263c67be4fe_11416_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="安装完成"
 class="gallery-image"
@@ -157,10 +157,10 @@ data-flex-basis="270px"
 >&lt;/p>
 &lt;p>&lt;strong>最后重启电脑framework即可生效。&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>注意：有些win7电脑安装高版本后默认还是使用自带的.Net Framework3.5，需要手工取消&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/34tfg.jpg"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/34tfg.webp"
 width="429"
 height="427"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/34tfg_hu062ce09980b1e2eceb6b838239c5ae40_65391_480x0_resize_q75_box.jpg 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/34tfg_hu062ce09980b1e2eceb6b838239c5ae40_65391_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/34tfg_hu46644b01eaf2435a134d87fc6ce39531_28792_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/34tfg_hu46644b01eaf2435a134d87fc6ce39531_28792_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="取消旧版NET"
 class="gallery-image"
@@ -196,10 +196,10 @@ data-flex-basis="241px"
 &lt;p>访问密码:&lt;code>60ju&lt;/code> 无压缩密码&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="v2-hud">V2 HUD&lt;/h2>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/hud.PNG"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/hud.webp"
 width="584"
 height="18"
-srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/hud_hu90977b45633e6345dd95b8cf7bcce041_2784_480x0_resize_box_3.PNG 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/hud_hu90977b45633e6345dd95b8cf7bcce041_2784_1024x0_resize_box_3.PNG 1024w"
+srcset="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/hud_hub84b7d42f78cf10395cef74ab97786c5_1986_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack/hud_hub84b7d42f78cf10395cef74ab97786c5_1986_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="HUD文件"
 class="gallery-image"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zonecraft on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/zonecraft/</link><description>Recent content in zonecraft on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/zonecraft/index.xml" rel="self" type="application/rss+xml"/><item><title>Zonecraft服的FDPClient配置</title><link>https://blog.xpdbk.com/post/zonecraft-config/</link><pubDate>Sun, 11 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/zonecraft-config/</guid><description>&lt;img src="https://blog.xpdbk.com/post/zonecraft-config/pvp.png" alt="Featured image of post Zonecraft服的FDPClient配置" />&lt;h2 id="zonecraft配置">zonecraft配置&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zonecraft on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/zonecraft/</link><description>Recent content in zonecraft on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/zonecraft/index.xml" rel="self" type="application/rss+xml"/><item><title>Zonecraft服的FDPClient配置</title><link>https://blog.xpdbk.com/post/zonecraft-config/</link><pubDate>Sun, 11 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/zonecraft-config/</guid><description>&lt;img src="https://blog.xpdbk.com/post/zonecraft-config/pvp.webp" alt="Featured image of post Zonecraft服的FDPClient配置" />&lt;h2 id="zonecraft配置">zonecraft配置&lt;/h2>
 &lt;p>请使用 &lt;code>FDPClient v5.1.5&lt;/code> 使用本配置&lt;/p>
 &lt;blockquote>
 &lt;p>本配置已在此服务器失效（本文章仅作存档）&lt;/p>
@@ -17,10 +17,10 @@
 &lt;p>[?] 测试刀爆（不要启动）&lt;/p>
 &lt;p>[?] 中文也可以打开了（如果乱码了就来这里重新下载）&lt;/p>
 &lt;p>演示图片 :&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/zonecraft-config/awa.png"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/zonecraft-config/awa.webp"
 width="1366"
 height="706"
-srcset="https://blog.xpdbk.com/post/zonecraft-config/awa_hu430e026a4f7b7109ae253954ecb0bd45_58337_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/zonecraft-config/awa_hu430e026a4f7b7109ae253954ecb0bd45_58337_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xpdbk.com/post/zonecraft-config/awa_hudc6706887cc1234c8afdac7c46246d31_71070_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/zonecraft-config/awa_hudc6706887cc1234c8afdac7c46246d31_71070_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="V2 演示图片"
 class="gallery-image"

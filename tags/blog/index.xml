@@ -228,7 +228,7 @@ Your browser doesn't support HTML5 video. Here is a
 &lt;video
 controls
 src="VIDEO_URL"
-poster="./video-poster.png"
+poster="./video-poster.webp"
 autoplay
 >
 &lt;p>
@@ -275,8 +275,8 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">--- content/post/my-first-post/index.md ---
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.png&lt;/span>)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.png&lt;/span>)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.webp&lt;/span>)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.webp&lt;/span>)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="插入图库">插入图库&lt;/h2>
@@ -296,9 +296,9 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── gallery
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── my-first-gallery
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── index.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── image1.png
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── image2.png
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── image3.png
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── image1.webp
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── image2.webp
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── image3.webp
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;div class="highlight">&lt;div class="chroma">
@@ -309,8 +309,8 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">--- content/gallery/my-first-gallery/index.md ---
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.png&lt;/span>) ![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.png&lt;/span>)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image3.png&lt;/span>)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.webp&lt;/span>) ![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.webp&lt;/span>)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image3.webp&lt;/span>)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>它将呈现两行，第一行有两张图像，第二行有一张图像。&lt;/p>
@@ -352,4 +352,121 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;p>&lt;del>别打我 逃)&lt;/del>&lt;/p>
 &lt;p>支持美人鱼JS和Ketax&lt;/p>
 &lt;h2 id="google广告">Google广告&lt;/h2>
-&lt;p>已经植入&lt;/p></description></item></channel></rss>
+&lt;p>已经植入&lt;/p>
+&lt;h2 id="hugo文章加密">hugo文章加密&lt;/h2>
+&lt;p>···&lt;/p>
+&lt;hr>
+&lt;h2 id="title-this-is-an-encrypted-post">title: &amp;ldquo;This Is An Encrypted Post&amp;rdquo;&lt;/h2>
+&lt;p>This content is visible to anyone.&lt;/p>
+&lt;hugo-encrypt>
+&lt;div id="hugo-encrypt-encryption-notice">
+&lt;p>以下内容被密码保护&lt;/p>
+&lt;noscript>&lt;span id="hugo-encrypt-enable-js">Javascript needs to be enabled to decrypt content&lt;/span>&lt;/noscript>
+&lt;div class='hugo-encrypt-form'>
+&lt;input
+class="hugo-encrypt-input"
+id="hugo-encrypt-password"
+placeholder='请输入密码'
+/>
+&lt;input
+class="hugo-encrypt-button"
+type="button"
+value='提交'
+id="button" onclick="hugoDecrypt(document.getElementById('hugo-encrypt-password').value,'input')"
+/>
+&lt;div id="hugo-encrypt-input-response">&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;cipher-text data-password='postspecificpassword' style="display:none;">
+&lt;p>This content will be encrypted!&lt;/p>
+&lt;/cipher-text>
+&lt;style type="text/css">div#hugo-encrypt-sha1sum {display: none;}&lt;/style>
+&lt;script>
+const storageKey = location.pathname + "password";
+const userStorage = window['sessionStorage'] ;
+function str2buf(str) {
+return new TextEncoder("utf-8").encode(str);
+}
+function buf2str(buffer) {
+return new TextDecoder("utf-8").decode(buffer);
+}
+function hex2buf(hexStr) {
+return new Uint8Array(hexStr.match(/.{2}/g).map(h => parseInt(h, 16)));
+}
+function deriveKey(passphrase, salt) {
+salt = salt || crypto.getRandomValues(new Uint8Array(8));
+return crypto.subtle
+.importKey("raw", str2buf(passphrase), "PBKDF2", false, ["deriveKey"])
+.then(key =>
+crypto.subtle.deriveKey(
+{ name: "PBKDF2", salt, iterations: 1000, hash: "SHA-256" },
+key,
+{ name: "AES-GCM", length: 256 },
+false,
+["encrypt", "decrypt"],
+),
+)
+.then(key => [key, salt]);
+}
+function decrypt(passphrase, saltIvCipherHex) {
+const [salt, iv, data] = saltIvCipherHex.split("-").map(hex2buf);
+return deriveKey(passphrase, salt)
+.then(([key]) => crypto.subtle.decrypt({ name: "AES-GCM", iv }, key, data))
+.then(v => buf2str(new Uint8Array(v)));
+}
+async function digestMessage(message) {
+const msgUint8 = new TextEncoder().encode(message);
+const hashBuffer = await crypto.subtle.digest('SHA-1', msgUint8);
+const hashArray = Array.from(new Uint8Array(hashBuffer));
+const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+return hashHex;
+}
+const hugoDecrypt = function(password, type) {
+for (const cipher of ciphers) {
+decrypt(password, cipher.innerText).then(function(decrypted_text) {
+digestMessage(decrypted_text.replace(/\r?\n?[^\r\n]*$/, "")).then(function(sha1_sum) {
+if ( decrypted_text.includes(sha1_sum) ) {
+document.getElementById("hugo-encrypt-encryption-notice").remove();
+cipher.outerHTML = decrypted_text;
+userStorage.setItem(storageKey, password);
+document.getElementById("hugo-encrypt-sha1sum").innerHTML = "Success: " + sha1_sum;
+console.log("Decryption successful. Storing password in sessionStorage.");
+}
+});
+}).catch(function(error) {
+if (type === "input") {
+document.getElementById("hugo-encrypt-input-response").innerHTML = "密码错误";
+console.log('密码错误', error);
+} else if (type === "storage") {
+userStorage.removeItem(location.pathname + "password");
+console.log("Password changed. Clearing userStorage.", error);
+}
+});
+}
+};
+&lt;/script>
+&lt;script>
+window.onload = () => {
+ciphers = Array.from(document.querySelectorAll("cipher-text"));
+if (userStorage.getItem(storageKey)) {
+console.log("Found storageKey in userStorage. Attemtping decryption");
+hugoDecrypt(userStorage.getItem(storageKey), "storage");
+}
+};
+&lt;/script>
+&lt;/hugo-encrypt>
+&lt;p>···&lt;/p>
+&lt;h2 id="视频api测试">视频API测试&lt;/h2>
+&lt;div class="video-wrapper">
+&lt;video
+controls
+src="https://ipcheck1.xpdbk.com/api/videos/415796390-1-208.mp4"
+poster="./avatar.webp"
+autoplay
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="https://ipcheck1.xpdbk.com/api/videos/415796390-1-208.mp4">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div></description></item></channel></rss>

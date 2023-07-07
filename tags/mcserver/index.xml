@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mcserver on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/mcserver/</link><description>Recent content in mcserver on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/mcserver/index.xml" rel="self" type="application/rss+xml"/><item><title>如何用VPS搭建Minecraft Java原版服务器</title><link>https://blog.xpdbk.com/post/mc-server/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/mc-server/</guid><description>&lt;img src="https://blog.xpdbk.com/post/mc-server/game.png" alt="Featured image of post 如何用VPS搭建Minecraft Java原版服务器" />&lt;h2 id="基于vps搭建minecraft服务器linux">基于VPS搭建Minecraft服务器（Linux）&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mcserver on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/mcserver/</link><description>Recent content in mcserver on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/mcserver/index.xml" rel="self" type="application/rss+xml"/><item><title>如何用VPS搭建Minecraft Java原版服务器</title><link>https://blog.xpdbk.com/post/mc-server/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/mc-server/</guid><description>&lt;img src="https://blog.xpdbk.com/post/mc-server/game.webp" alt="Featured image of post 如何用VPS搭建Minecraft Java原版服务器" />&lt;h2 id="基于vps搭建minecraft服务器linux">基于VPS搭建Minecraft服务器（Linux）&lt;/h2>
 &lt;h2 id="一为啥要搭建">一、为啥要搭建&lt;/h2>
 &lt;p>我们玩&lt;code>Minecraft&lt;/code>的时候，可能需要联机玩。但是在 &lt;code>Minecraft Java&lt;/code> 上只有 &lt;code>LAN&lt;/code> 在线。这时候我们就需要搭建一个服务器，让不同地区的玩家可以一起联机。&lt;/p>
 &lt;blockquote>
@@ -62,10 +62,10 @@
 &lt;p>例如以下页面&lt;/p>
 &lt;p>&lt;a class="link" href="https://mcversions.net/download/1.12.2" target="_blank" rel="noopener"
 >1.12.2&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/mc-server/666.png"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/mc-server/666.webp"
 width="1365"
 height="695"
-srcset="https://blog.xpdbk.com/post/mc-server/666_hu17996892a55d9d3e2bcc698290f69c64_355068_480x0_resize_box_3.png 480w, https://blog.xpdbk.com/post/mc-server/666_hu17996892a55d9d3e2bcc698290f69c64_355068_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.xpdbk.com/post/mc-server/666_hu2bbd2ccde6b843650c3d8bd2cbe5dcf3_72574_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/mc-server/666_hu2bbd2ccde6b843650c3d8bd2cbe5dcf3_72574_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="下载服务端"
 class="gallery-image"
@@ -91,10 +91,10 @@ data-flex-basis="471px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>打开&lt;code>eula.txt&lt;/code>，修改红框部分为&lt;code>eula=true&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/mc-server/awda.PNG"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/mc-server/awda.webp"
 width="1059"
 height="364"
-srcset="https://blog.xpdbk.com/post/mc-server/awda_hu415c2ee9ea1d2c1f2041abc692adc243_16590_480x0_resize_box_3.PNG 480w, https://blog.xpdbk.com/post/mc-server/awda_hu415c2ee9ea1d2c1f2041abc692adc243_16590_1024x0_resize_box_3.PNG 1024w"
+srcset="https://blog.xpdbk.com/post/mc-server/awda_hu4dc607e55e7c9e68bb96435168389937_19942_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/mc-server/awda_hu4dc607e55e7c9e68bb96435168389937_19942_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="修改红框内的东西"
 class="gallery-image"
@@ -280,10 +280,10 @@ max-world-size=29999984
 &lt;/div>&lt;h3 id="删除screen">删除Screen&lt;/h3>
 &lt;p>在当前&lt;strong>screen&lt;/strong>下，输入&lt;code>Ctrl+D&lt;/code>，&lt;strong>删除&lt;/strong>该&lt;strong>screen&lt;/strong>.&lt;/p>
 &lt;h2 id="服务器开好了之后的样子">服务器开好了之后的样子&lt;/h2>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/mc-server/dfwerf.PNG"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/mc-server/dfwerf.webp"
 width="1060"
 height="365"
-srcset="https://blog.xpdbk.com/post/mc-server/dfwerf_huc95f320cf450029c8e1d0f2dcf89478b_39020_480x0_resize_box_3.PNG 480w, https://blog.xpdbk.com/post/mc-server/dfwerf_huc95f320cf450029c8e1d0f2dcf89478b_39020_1024x0_resize_box_3.PNG 1024w"
+srcset="https://blog.xpdbk.com/post/mc-server/dfwerf_huff4d15e65c72e7b93d5a19f7e1e13d06_60768_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/mc-server/dfwerf_huff4d15e65c72e7b93d5a19f7e1e13d06_60768_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="开好的服务器"
 class="gallery-image"
