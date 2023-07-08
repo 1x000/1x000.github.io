@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/tool/</link><description>Recent content in 工具 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/tool/index.xml" rel="self" type="application/rss+xml"/><item><title>b站关注批量删除</title><link>https://blog.xpdbk.com/post/bz-gzqc/</link><pubDate>Sun, 09 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bz-gzqc/</guid><description>&lt;h2 id="快速取消b站哔哩哔哩关注的up">快速取消B站（哔哩哔哩）关注的UP？&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/tool/</link><description>Recent content in 工具 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/tool/index.xml" rel="self" type="application/rss+xml"/><item><title>b站关注批量删除</title><link>https://blog.xpdbk.com/post/bz-gzqc/</link><pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/bz-gzqc/</guid><description>&lt;h2 id="快速取消b站哔哩哔哩关注的up">快速取消B站（哔哩哔哩）关注的UP？&lt;/h2>
 &lt;p>当你&lt;strong>互粉&lt;/strong>之后你就会发现一堆没有用的视频就出来了（我没互粉）或者你在注册新号的时候不小心关注了一堆UP&lt;/p>
 &lt;p>然后你发现B站没有批量取消关注功能，只能一个一个（恼）的点击。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -39,7 +39,7 @@
 &lt;p>粘贴以上代码&lt;/p>
 &lt;p>&lt;code>Enter&lt;/code>&lt;/p>
 &lt;p>即可批量快速取消关注本页20所有up主&lt;/p>
-&lt;p>&lt;strong>F5&lt;/strong>或&lt;strong>Ctrl+R&lt;/strong>刷新一下页面，再执行一遍，就可以快速把所有up主都果断取关了。&lt;/p></description></item><item><title>使用linux进行24小时直播</title><link>https://blog.xpdbk.com/post/zhibo-24h/</link><pubDate>Sat, 25 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/zhibo-24h/</guid><description>&lt;blockquote>
+&lt;p>&lt;strong>F5&lt;/strong>或&lt;strong>Ctrl+R&lt;/strong>刷新一下页面，再执行一遍，就可以快速把所有up主都果断取关了。&lt;/p></description></item><item><title>使用linux进行24小时直播</title><link>https://blog.xpdbk.com/post/zhibo-24h/</link><pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/zhibo-24h/</guid><description>&lt;blockquote>
 &lt;p>本文章的方法，禁止用来滥用。&lt;/p>
 &lt;p>使用之前请看视频网站TOS，禁止违反视频网站纪律。&lt;/p>
 &lt;/blockquote>
@@ -598,7 +598,7 @@ data-flex-basis="471px"
 &lt;/div>&lt;blockquote>
 &lt;p>踩坑的话请自行去Bing搜索搜索相关问题&lt;/p>
 &lt;p>或者在评论区提问&lt;/p>
-&lt;/blockquote></description></item><item><title>文件加壳方法（简单）</title><link>https://blog.xpdbk.com/post/7z-jiake/</link><pubDate>Sat, 04 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/7z-jiake/</guid><description>&lt;h2 id="文件加密方法简单">文件加密方法（简单）&lt;/h2>
+&lt;/blockquote></description></item><item><title>文件加壳方法（简单）</title><link>https://blog.xpdbk.com/post/7z-jiake/</link><pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/7z-jiake/</guid><description>&lt;h2 id="文件加密方法简单">文件加密方法（简单）&lt;/h2>
 &lt;h2 id="软件选择">软件选择&lt;/h2>
 &lt;p>7z和Themida就足够了（为的就是简单！）&lt;/p>
 &lt;blockquote>
@@ -898,7 +898,7 @@ data-flex-basis="428px"
 &lt;p>如果在编译或运行时出现错误，请尝试使用 Microsoft Visual Studio 2008 专业版进行编译。 如需更多帮助，请联系 &lt;a class="link" href="mailto:support@dll-decompiler.com" >support@dll-decompiler.com&lt;/a>&lt;/p>
 &lt;h2 id="dll-to-c-反编译效果源码">DLL TO C 反编译效果源码&lt;/h2>
 &lt;p>&lt;code>HPP.DLL&lt;/code> CS 1.6的纪&lt;/p>
-&lt;p>&lt;code>NorAdrenaline.DLL&lt;/code> CS1.6的纪&lt;/p></description></item><item><title>CS1.6 纪狗气死我了</title><link>https://blog.xpdbk.com/post/hacker-cs1.6/</link><pubDate>Fri, 13 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/hacker-cs1.6/</guid><description>&lt;img src="https://blog.xpdbk.com/post/hacker-cs1.6/cs1.6.webp" alt="Featured image of post CS1.6 纪狗气死我了" />&lt;h2 id="cs16-纪狗气死我了">CS1.6 纪狗气死我了&lt;/h2>
+&lt;p>&lt;code>NorAdrenaline.DLL&lt;/code> CS1.6的纪&lt;/p></description></item><item><title>CS1.6 纪狗气死我了</title><link>https://blog.xpdbk.com/post/hacker-cs1.6/</link><pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/hacker-cs1.6/</guid><description>&lt;img src="https://blog.xpdbk.com/post/hacker-cs1.6/cs1.6.webp" alt="Featured image of post CS1.6 纪狗气死我了" />&lt;h2 id="cs16-纪狗气死我了">CS1.6 纪狗气死我了&lt;/h2>
 &lt;h2 id="cs16-外纪玩法">CS1.6 外纪玩法&lt;/h2>
 &lt;p>&lt;strong>声明&lt;/strong>：仅供研究DLL注入与和机器人打或者在Hack vs Hack（HVH）服务器玩，请不要在普通的在线服务器里面玩不然被腐竹ban ip了我不管&lt;/p>
 &lt;blockquote>
@@ -915,14 +915,14 @@ data-flex-basis="428px"
 &lt;p>帧数很低貌似比较吃CPU&lt;/p>
 &lt;p>GUI键 &lt;code>ins&lt;/code>&lt;/p>
 &lt;p>&lt;strong>游玩视频&lt;/strong>&lt;/p>
-&lt;p>施工中&lt;/p></description></item><item><title>D0H</title><link>https://blog.xpdbk.com/post/doh-zj/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/doh-zj/</guid><description>&lt;h2 id="d0h解析去广告">D0H解析去广告&lt;/h2>
+&lt;p>施工中&lt;/p></description></item><item><title>D0H</title><link>https://blog.xpdbk.com/post/doh-zj/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/doh-zj/</guid><description>&lt;h2 id="d0h解析去广告">D0H解析去广告&lt;/h2>
 &lt;blockquote>
 &lt;p>仅用于去广告&lt;/p>
 &lt;/blockquote>
 &lt;pre>&lt;code>已失效待补
 &lt;/code>&lt;/pre>
 &lt;p>&lt;code>base64&lt;/code>混淆需要自己解密哦&lt;/p>
-&lt;p>使用方法可以搜索百度 &lt;code>DOH在浏览器上怎么用&lt;/code>&lt;/p></description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>&lt;h2 id="自建tracker服务器用于文件分享">自建tracker服务器用于文件分享&lt;/h2>
+&lt;p>使用方法可以搜索百度 &lt;code>DOH在浏览器上怎么用&lt;/code>&lt;/p></description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>&lt;h2 id="自建tracker服务器用于文件分享">自建tracker服务器用于文件分享&lt;/h2>
 &lt;p>众所周知bittorrent是一款P2P文件传输协议，能够让两台内网机器实现点对点的文件传输。&lt;/p>
 &lt;p>随着各种资源的丰富，bit下载也越来越为大众所熟知。&lt;/p>
 &lt;p>我们都知道，两台内网机器，直接使用http或者udp是无法进行文件分享的。&lt;/p>
@@ -1085,7 +1085,7 @@ data-flex-basis="428px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">d14:failure reason33:invalid action in HTTP request: /e
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>这种方法不如&lt;code>Docker&lt;/code>然后也老&lt;/p></description></item><item><title>vps服务器中安装frp开放端口</title><link>https://blog.xpdbk.com/post/frp-bt/</link><pubDate>Sun, 08 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/frp-bt/</guid><description>&lt;h2 id="vps服务器中安装frp开放端口">vps服务器中安装frp开放端口&lt;/h2>
+&lt;/div>&lt;p>这种方法不如&lt;code>Docker&lt;/code>然后也老&lt;/p></description></item><item><title>vps服务器中安装frp开放端口</title><link>https://blog.xpdbk.com/post/frp-bt/</link><pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/frp-bt/</guid><description>&lt;h2 id="vps服务器中安装frp开放端口">vps服务器中安装frp开放端口&lt;/h2>
 &lt;h2 id="安装gost">安装GOST&lt;/h2>
 &lt;p>创建Scock5隧道&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1350,7 +1350,7 @@ data-flex-basis="428px"
 需要在服务器中同时安装其它代理，或者隧道软件，例如v2，并且v2客户端打开本地监听端口功能&lt;/p>
 &lt;p>如果BT客户端不支持设置代理功能，可以使用另一款软件，netch为整个exe进程进行加速，这种方式会消耗较多vps服务器的流量，此时建议换比特彗星这种支持内置代理功能的BT客户端&lt;/p>
 &lt;p>使用比特彗星客户端scock5代理功能设置&lt;/p>
-&lt;p>仅用于穿透&lt;/p></description></item><item><title>Obsidian：一款离线笔记软件</title><link>https://blog.xpdbk.com/post/obsidian-bj/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/obsidian-bj/</guid><description>&lt;img src="https://blog.xpdbk.com/post/obsidian-bj/1.webp" alt="Featured image of post Obsidian：一款离线笔记软件" />&lt;h2 id="obsidian笔记">obsidian笔记&lt;/h2>
+&lt;p>仅用于穿透&lt;/p></description></item><item><title>Obsidian：一款离线笔记软件</title><link>https://blog.xpdbk.com/post/obsidian-bj/</link><pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/obsidian-bj/</guid><description>&lt;img src="https://blog.xpdbk.com/post/obsidian-bj/1.webp" alt="Featured image of post Obsidian：一款离线笔记软件" />&lt;h2 id="obsidian笔记">obsidian笔记&lt;/h2>
 &lt;p>&lt;u>obsidian是一种笔记软件，可在您的本地纯文本文件文件夹之上运行。&lt;/u>&lt;/p>
 &lt;h2 id="给孙子的笔记">给孙子的笔记&lt;/h2>
 &lt;p>在我们这个云服务可以随时 &lt;a class="link" href="https://techcrunch.com/2013/07/31/evernote-competitor-catch-com-shuts-down-its-note-taking-apps-company-heading-in-different-direction/" target="_blank" rel="noopener"
@@ -1370,7 +1370,7 @@ data-flex-basis="428px"
 &lt;p>没有互联网？没问题。Obsidian 完全离线工作，互联网或服务问题永远不会成为您的问题。&lt;/p>
 &lt;p>随时随地享受阅读和处理笔记的乐趣。&lt;/p>
 &lt;p>&lt;a class="link" href="https://obsidian.md/" target="_blank" rel="noopener"
->官网&lt;/a>&lt;/p></description></item><item><title>如何安全的传送你的文件？</title><link>https://blog.xpdbk.com/post/404-jm/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/404-jm/</guid><description>&lt;h2 id="如何防止你的文件被别人偷看">如何防止你的文件被别人偷看？&lt;/h2>
+>官网&lt;/a>&lt;/p></description></item><item><title>如何安全的传送你的文件？</title><link>https://blog.xpdbk.com/post/404-jm/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/404-jm/</guid><description>&lt;h2 id="如何防止你的文件被别人偷看">如何防止你的文件被别人偷看？&lt;/h2>
 &lt;blockquote>
 &lt;p>本篇文章将教你如何传文件才不会被好兄弟看到&lt;/p>
 &lt;/blockquote>

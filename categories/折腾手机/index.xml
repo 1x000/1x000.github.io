@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>折腾手机 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/%E6%8A%98%E8%85%BE%E6%89%8B%E6%9C%BA/</link><description>Recent content in 折腾手机 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Dec 2022 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/categories/%E6%8A%98%E8%85%BE%E6%89%8B%E6%9C%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>Termux 使用配置教程</title><link>https://blog.xpdbk.com/post/phone-termux/</link><pubDate>Tue, 20 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/phone-termux/</guid><description>&lt;h2 id="termux-使用配置教程">Termux 使用配置教程&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>折腾手机 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/%E6%8A%98%E8%85%BE%E6%89%8B%E6%9C%BA/</link><description>Recent content in 折腾手机 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.xpdbk.com/categories/%E6%8A%98%E8%85%BE%E6%89%8B%E6%9C%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>Termux 使用配置教程</title><link>https://blog.xpdbk.com/post/phone-termux/</link><pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/phone-termux/</guid><description>&lt;h2 id="termux-使用配置教程">Termux 使用配置教程&lt;/h2>
 &lt;h2 id="学习资源">学习资源&lt;/h2>
 &lt;p>因为本文内容超级长，手机浏览起来难免会卡顿，建议有条件的同学使用 PC 端观看本文。&lt;/p>
 &lt;h3 id="termux-简介">Termux 简介&lt;/h3>
@@ -3670,7 +3670,7 @@ alt="成功爆破出了SSH的密码 以前的"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;https://www.54t3456345yg356yh56h54h54h547h5hj&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span>curl -F-&lt;span class="o">=&lt;/span>&lt;span class="se">\&amp;lt;&lt;/span>- qrenco.de
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>如果你不嫌无聊的话还可以扫描这个二维码，然后就又打开这篇文章了。&lt;/p></description></item><item><title>旧手机来做网站服务器</title><link>https://blog.xpdbk.com/post/phone-web/</link><pubDate>Tue, 20 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/phone-web/</guid><description>&lt;h2 id="旧手机来做网站服务器">旧手机来做网站服务器&lt;/h2>
+&lt;/div>&lt;p>如果你不嫌无聊的话还可以扫描这个二维码，然后就又打开这篇文章了。&lt;/p></description></item><item><title>旧手机来做网站服务器</title><link>https://blog.xpdbk.com/post/phone-web/</link><pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/phone-web/</guid><description>&lt;h2 id="旧手机来做网站服务器">旧手机来做网站服务器&lt;/h2>
 &lt;blockquote>
 &lt;p>仅供个人学习用&lt;/p>
 &lt;/blockquote>
@@ -3919,7 +3919,7 @@ FRP 安卓客户端&lt;br>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">service iptables restart
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>使用闲置Android手机挖门罗币</title><link>https://blog.xpdbk.com/post/android-xmr/</link><pubDate>Tue, 20 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/android-xmr/</guid><description>&lt;h2 id="利用闲置android-机挖门罗币">利用闲置Android 机挖门罗币&lt;/h2>
+&lt;/div></description></item><item><title>使用闲置Android手机挖门罗币</title><link>https://blog.xpdbk.com/post/android-xmr/</link><pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/android-xmr/</guid><description>&lt;h2 id="利用闲置android-机挖门罗币">利用闲置Android 机挖门罗币&lt;/h2>
 &lt;h2 id="什么是门罗币">什么是门罗币？&lt;/h2>
 &lt;blockquote>
 &lt;p>门罗币（Monero，缩写：XMR）是一个创建于2014年4月开源加密货币，它着重于私隐、分权和可扩展性。与自比特币衍生的许多加密货币不同，Monero 基于CryptoNote 协议，并在区块链模糊化方面有显着的算法差异。&lt;/p>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/linux/</link><description>Recent content in linux on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker 资源整合</title><link>https://blog.xpdbk.com/post/docker-zy/</link><pubDate>Wed, 11 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker-zy/</guid><description>&lt;img src="https://blog.xpdbk.com/post/docker-zy/docker.webp" alt="Featured image of post Docker 资源整合" />&lt;h2 id="docker">Docker&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/linux/</link><description>Recent content in linux on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker 资源整合</title><link>https://blog.xpdbk.com/post/docker-zy/</link><pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/docker-zy/</guid><description>&lt;img src="https://blog.xpdbk.com/post/docker-zy/docker.webp" alt="Featured image of post Docker 资源整合" />&lt;h2 id="docker">Docker&lt;/h2>
 &lt;blockquote>
 &lt;p>记录玩Docker的过程&lt;/p>
 &lt;/blockquote>
@@ -458,7 +458,7 @@ mkdir /root/adguardhome/confdir
 &lt;p>部署成功后就可以使用了，方法也很简单，直接Github地址之前加你的服务器地址：端口（80可以省略）&lt;/p>
 &lt;p>比如服务器地址：&lt;code>IP&lt;/code>&lt;/p>
 &lt;p>端口是&lt;code>9183&lt;/code>&lt;/p>
-&lt;p>就可以这样输入：&lt;code>IP:9183/https://github.com/Cyberbolt/baota.git&lt;/code>&lt;/p></description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>&lt;h2 id="自建tracker服务器用于文件分享">自建tracker服务器用于文件分享&lt;/h2>
+&lt;p>就可以这样输入：&lt;code>IP:9183/https://github.com/Cyberbolt/baota.git&lt;/code>&lt;/p></description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>&lt;h2 id="自建tracker服务器用于文件分享">自建tracker服务器用于文件分享&lt;/h2>
 &lt;p>众所周知bittorrent是一款P2P文件传输协议，能够让两台内网机器实现点对点的文件传输。&lt;/p>
 &lt;p>随着各种资源的丰富，bit下载也越来越为大众所熟知。&lt;/p>
 &lt;p>我们都知道，两台内网机器，直接使用http或者udp是无法进行文件分享的。&lt;/p>
@@ -621,7 +621,7 @@ mkdir /root/adguardhome/confdir
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">d14:failure reason33:invalid action in HTTP request: /e
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>这种方法不如&lt;code>Docker&lt;/code>然后也老&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
+&lt;/div>&lt;p>这种方法不如&lt;code>Docker&lt;/code>然后也老&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
 &lt;p>系统默认安装了apache2现在就来卸载此服务。&lt;/p>
 &lt;h2 id="1查找web服务">1、查找web服务&lt;/h2>
 &lt;p>使用如下命令：&lt;/p>
@@ -641,7 +641,7 @@ mkdir /root/adguardhome/confdir
 &lt;p>&lt;code>rm -rf /var/www&lt;/code>&lt;/p>
 &lt;p>&lt;code>rm -rf /etc/libapache2-mod-jk&lt;/code>&lt;/p>
 &lt;h2 id="4最后">4、最后&lt;/h2>
-&lt;p>80端口释放，没有问题了。&lt;/p></description></item><item><title>VPS安全加固</title><link>https://blog.xpdbk.com/post/linux-anquan/</link><pubDate>Sat, 05 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/linux-anquan/</guid><description>&lt;img src="https://blog.xpdbk.com/post/linux-anquan/awa.webp" alt="Featured image of post VPS安全加固" />&lt;h2 id="vps安全加固">VPS安全加固&lt;/h2>
+&lt;p>80端口释放，没有问题了。&lt;/p></description></item><item><title>VPS安全加固</title><link>https://blog.xpdbk.com/post/linux-anquan/</link><pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/linux-anquan/</guid><description>&lt;img src="https://blog.xpdbk.com/post/linux-anquan/awa.webp" alt="Featured image of post VPS安全加固" />&lt;h2 id="vps安全加固">VPS安全加固&lt;/h2>
 &lt;p>VPS 用了快3个月，开始意识到之前 VPS 一点安全措施都没做。&lt;/p>
 &lt;blockquote>
 &lt;p>由于一台 vps 就相当于一台拥有独立 IP 的，直接暴露于互联网之上的电脑，这在为你带来便利的同时也直接让你的 vps 与危险画上了等号，密码穷举、DDOS 攻击、各种各样你想到的想不到的攻击方法都在等待着你，不要相信你那惊悚的创意能想出多么强大的密码，统计学告诉我们——还是相信 RSA 吧！&lt;/p>
