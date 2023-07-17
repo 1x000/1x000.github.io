@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LEl_FENG的小屋</title><link>https://blog.xpdbk.com/</link><description>Recent content on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/index.xml" rel="self" type="application/rss+xml"/><item><title>CE自写插件反汇编硬追基址提供LUA接口实现pvz僵尸绘制</title><link>https://blog.xpdbk.com/post/ce%E8%87%AA%E5%86%99%E6%8F%92%E4%BB%B6-lua%E6%8E%A5%E5%8F%A3-pvz-%E5%83%B5%E5%B0%B8%E7%BB%98%E5%88%B6/</link><pubDate>Mon, 17 Jul 2023 21:20:43 +0700</pubDate><guid>https://blog.xpdbk.com/post/ce%E8%87%AA%E5%86%99%E6%8F%92%E4%BB%B6-lua%E6%8E%A5%E5%8F%A3-pvz-%E5%83%B5%E5%B0%B8%E7%BB%98%E5%88%B6/</guid><description>&lt;blockquote>
 &lt;p>本文为转载文，看此文之前请看本站的声明&lt;/p>
+&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
+&lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
+&lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
+&lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="硬追前言">硬追前言：&lt;/h2>
 &lt;p>看了很多有关植物大战僵尸的教程，比较少看到用汇编来找基址的，大多是用&amp;quot;找出是什么访问了这个地址&amp;quot;来找的&lt;/p>
@@ -4396,7 +4400,13 @@ data-flex-basis="153px"
 &lt;p>最后，希望大家能一起变强，相互交流，相互进步，我也只是个&lt;strong>勉强入门的萌新&lt;/strong>，能力不足，水平有限，希望大家多多支持和鼓励一下。以上~~~~期待我们的下次再会&lt;/p>
 &lt;p>下载链接：&lt;a class="link" href="MyPlugin.zip?versionId=CAEQHhiBgICetbLAvBciIDZkZWM2ZTA3NGZmZjRhZTE5ZTZiNWNhYzZlODQ0Mjhh" >MyPlugin&lt;/a>&lt;/p>
 &lt;p>源码太大了，只能用自己的阿里云OSS了 QAQ&lt;/p>
-&lt;p>PS：本插件和上篇教程的插件是同一个插件，改了个名字而已&lt;/p></description></item><item><title>【Docker可视化工具】Portainer安装教程</title><link>https://blog.xpdbk.com/post/docker--portainer-install/</link><pubDate>Mon, 17 Jul 2023 20:42:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker--portainer-install/</guid><description>&lt;h2 id="docker可视化工具portainer安装教程">【Docker可视化工具】Portainer安装教程&lt;/h2>
+&lt;p>PS：本插件和上篇教程的插件是同一个插件，改了个名字而已&lt;/p></description></item><item><title>【Docker可视化工具】Portainer安装教程</title><link>https://blog.xpdbk.com/post/docker--portainer-install/</link><pubDate>Mon, 17 Jul 2023 20:42:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker--portainer-install/</guid><description>&lt;blockquote>
+&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
+&lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
+&lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
+&lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="docker可视化工具portainer安装教程">【Docker可视化工具】Portainer安装教程&lt;/h2>
 &lt;h2 id="前言">前言&lt;/h2>
 &lt;p>&lt;strong>Portainer是Docker的可视化管理工具&lt;/strong>，镜像、容器、日志显示等操作，Swarm集群、服务等集中管理和操作、登录用户管理和控制等功能。&lt;/p>
 &lt;h2 id="portainer官网提供的有关资料">Portainer官网提供的有关资料&lt;/h2>
@@ -4438,7 +4448,13 @@ data-flex-basis="153px"
 &lt;p>进入之后可选择访问Local管理本地docker相关信息&lt;/p>
 &lt;p>点击下面的local进入管理docker&lt;/p>
 &lt;h2 id="总结">总结&lt;/h2>
-&lt;p>不同的环境安装可根据官网给出的文档进行操作~&lt;/p></description></item><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;p>当我们连接到Wi-Fi网络时，我们通常会认为我们的连接是安全的。但是，有些人可能会利用Wi-Fi协议中的漏洞进行攻击，使得我们的设备无法继续与网络通信。这就是WiFi Deauthentication攻击的基本原理。&lt;/p>
+&lt;p>不同的环境安装可根据官网给出的文档进行操作~&lt;/p></description></item><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;blockquote>
+&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
+&lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
+&lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
+&lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
+&lt;/blockquote>
+&lt;p>当我们连接到Wi-Fi网络时，我们通常会认为我们的连接是安全的。但是，有些人可能会利用Wi-Fi协议中的漏洞进行攻击，使得我们的设备无法继续与网络通信。这就是WiFi Deauthentication攻击的基本原理。&lt;/p>
 &lt;p>在本文中，我要介绍如何使用Kali Linux执行WiFi Deauthentication攻击。&lt;/p>
 &lt;pre>&lt;code>.-. ____
 / \ / \

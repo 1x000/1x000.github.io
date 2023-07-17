@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/linux/</link><description>Recent content in linux on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>【Docker可视化工具】Portainer安装教程</title><link>https://blog.xpdbk.com/post/docker--portainer-install/</link><pubDate>Mon, 17 Jul 2023 20:42:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker--portainer-install/</guid><description>&lt;h2 id="docker可视化工具portainer安装教程">【Docker可视化工具】Portainer安装教程&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/linux/</link><description>Recent content in linux on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>【Docker可视化工具】Portainer安装教程</title><link>https://blog.xpdbk.com/post/docker--portainer-install/</link><pubDate>Mon, 17 Jul 2023 20:42:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker--portainer-install/</guid><description>&lt;blockquote>
+&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
+&lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
+&lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
+&lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="docker可视化工具portainer安装教程">【Docker可视化工具】Portainer安装教程&lt;/h2>
 &lt;h2 id="前言">前言&lt;/h2>
 &lt;p>&lt;strong>Portainer是Docker的可视化管理工具&lt;/strong>，镜像、容器、日志显示等操作，Swarm集群、服务等集中管理和操作、登录用户管理和控制等功能。&lt;/p>
 &lt;h2 id="portainer官网提供的有关资料">Portainer官网提供的有关资料&lt;/h2>

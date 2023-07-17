@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;p>当我们连接到Wi-Fi网络时，我们通常会认为我们的连接是安全的。但是，有些人可能会利用Wi-Fi协议中的漏洞进行攻击，使得我们的设备无法继续与网络通信。这就是WiFi Deauthentication攻击的基本原理。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;blockquote>
+&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
+&lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
+&lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
+&lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
+&lt;/blockquote>
+&lt;p>当我们连接到Wi-Fi网络时，我们通常会认为我们的连接是安全的。但是，有些人可能会利用Wi-Fi协议中的漏洞进行攻击，使得我们的设备无法继续与网络通信。这就是WiFi Deauthentication攻击的基本原理。&lt;/p>
 &lt;p>在本文中，我要介绍如何使用Kali Linux执行WiFi Deauthentication攻击。&lt;/p>
 &lt;pre>&lt;code>.-. ____
 / \ / \
