@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术探讨 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/</link><description>Recent content in 技术探讨 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 25 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>Shortny PHP 短网址汉化版搭建</title><link>https://blog.xpdbk.com/post/dwzdj/</link><pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/dwzdj/</guid><description>&lt;h2 id="shortny-php-短网址汉化版搭建">Shortny PHP 短网址汉化版搭建&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术探讨 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/</link><description>Recent content in 技术探讨 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 25 Feb 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>Shortny PHP 短网址汉化版搭建</title><link>https://blog.xpdbk.com/post/dwzdj/</link><pubDate>Sat, 25 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/dwzdj/</guid><description>&lt;h2 id="shortny-php-短网址汉化版搭建">Shortny PHP 短网址汉化版搭建&lt;/h2>
 &lt;blockquote>
 &lt;p>不要用来违法，只用于学习网站搭建方法&lt;/p>
 &lt;/blockquote>
@@ -76,7 +76,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">error_page&lt;/span> &lt;span class="mi">403&lt;/span> &lt;span class="nx">http&lt;/span>&lt;span class="o">://&lt;/span>&lt;span class="nx">你的域名&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">404&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Tor网站搭建</title><link>https://blog.xpdbk.com/post/torwzdj/</link><pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/torwzdj/</guid><description>&lt;h2 id="暗网网站搭建和暗网域名申请方法">暗网网站搭建和暗网域名申请方法&lt;/h2>
+&lt;/div></description></item><item><title>Tor网站搭建</title><link>https://blog.xpdbk.com/post/torwzdj/</link><pubDate>Sat, 25 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/torwzdj/</guid><description>&lt;h2 id="暗网网站搭建和暗网域名申请方法">暗网网站搭建和暗网域名申请方法&lt;/h2>
 &lt;blockquote>
 &lt;p>不要用来违法，只用于学习网站搭建方法&lt;/p>
 &lt;/blockquote>

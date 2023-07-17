@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/linux/</link><description>Recent content in linux on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker 资源整合</title><link>https://blog.xpdbk.com/post/docker-zy/</link><pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/docker-zy/</guid><description>&lt;img src="https://blog.xpdbk.com/post/docker-zy/docker.webp" alt="Featured image of post Docker 资源整合" />&lt;h2 id="docker">Docker&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/linux/</link><description>Recent content in linux on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>【Docker可视化工具】Portainer安装教程</title><link>https://blog.xpdbk.com/post/docker--portainer-install/</link><pubDate>Mon, 17 Jul 2023 20:42:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker--portainer-install/</guid><description>&lt;h2 id="docker可视化工具portainer安装教程">【Docker可视化工具】Portainer安装教程&lt;/h2>
+&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>&lt;strong>Portainer是Docker的可视化管理工具&lt;/strong>，镜像、容器、日志显示等操作，Swarm集群、服务等集中管理和操作、登录用户管理和控制等功能。&lt;/p>
+&lt;h2 id="portainer官网提供的有关资料">Portainer官网提供的有关资料&lt;/h2>
+&lt;p>Portainer官网：https://www.portainer.io/&lt;/p>
+&lt;p>Portainer官网提供的安装文档：&lt;/p>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://www.portainer.io/installation/" target="_blank" rel="noopener"
+>https://www.portainer.io/installation/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://portainer.readthedocs.io/en/stable/deployment.html" target="_blank" rel="noopener"
+>https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
+&lt;p>&lt;strong>安装docker&lt;/strong> 这里不多说&lt;/p>
+&lt;p>&lt;strong>利用Docker拉取portainer镜像&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker pull portainer/portainer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>运行启动portainer&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>这里需开放9000端口来映射portainer&lt;br>
+/var/run/docker.sock:/var/run/docker.sock -&amp;gt; 映射本地docker路径&lt;br>
+/home/docker/portainer:/data -&amp;gt; 实现数据持久化 原因：portainer的数据存储在容器内部的/data目录，容易导致容器重启的时候数据丢失，作用：将portainer数据映射到本地&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v /home/docker/portainer:/data --name portainer --restart=always portainer/portainer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>启动后通过 服务器地址:9000 即可访问portainer，第一次访问注意需要设置账号密码&lt;/p>
+&lt;p>设置好之后点击创建用户&lt;/p>
+&lt;p>进入之后可选择访问Local管理本地docker相关信息&lt;/p>
+&lt;p>点击下面的local进入管理docker&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>不同的环境安装可根据官网给出的文档进行操作~&lt;/p></description></item><item><title>Docker 资源整合</title><link>https://blog.xpdbk.com/post/docker-zy/</link><pubDate>Wed, 11 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker-zy/</guid><description>&lt;img src="https://blog.xpdbk.com/post/docker-zy/docker.webp" alt="Featured image of post Docker 资源整合" />&lt;h2 id="docker">Docker&lt;/h2>
 &lt;blockquote>
 &lt;p>记录玩Docker的过程&lt;/p>
 &lt;/blockquote>
@@ -458,7 +500,7 @@ mkdir /root/adguardhome/confdir
 &lt;p>部署成功后就可以使用了，方法也很简单，直接Github地址之前加你的服务器地址：端口（80可以省略）&lt;/p>
 &lt;p>比如服务器地址：&lt;code>IP&lt;/code>&lt;/p>
 &lt;p>端口是&lt;code>9183&lt;/code>&lt;/p>
-&lt;p>就可以这样输入：&lt;code>IP:9183/https://github.com/Cyberbolt/baota.git&lt;/code>&lt;/p></description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>&lt;h2 id="自建tracker服务器用于文件分享">自建tracker服务器用于文件分享&lt;/h2>
+&lt;p>就可以这样输入：&lt;code>IP:9183/https://github.com/Cyberbolt/baota.git&lt;/code>&lt;/p></description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>&lt;h2 id="自建tracker服务器用于文件分享">自建tracker服务器用于文件分享&lt;/h2>
 &lt;p>众所周知bittorrent是一款P2P文件传输协议，能够让两台内网机器实现点对点的文件传输。&lt;/p>
 &lt;p>随着各种资源的丰富，bit下载也越来越为大众所熟知。&lt;/p>
 &lt;p>我们都知道，两台内网机器，直接使用http或者udp是无法进行文件分享的。&lt;/p>
@@ -621,7 +663,7 @@ mkdir /root/adguardhome/confdir
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">d14:failure reason33:invalid action in HTTP request: /e
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>这种方法不如&lt;code>Docker&lt;/code>然后也老&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
+&lt;/div>&lt;p>这种方法不如&lt;code>Docker&lt;/code>然后也老&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
 &lt;p>系统默认安装了apache2现在就来卸载此服务。&lt;/p>
 &lt;h2 id="1查找web服务">1、查找web服务&lt;/h2>
 &lt;p>使用如下命令：&lt;/p>
@@ -641,7 +683,7 @@ mkdir /root/adguardhome/confdir
 &lt;p>&lt;code>rm -rf /var/www&lt;/code>&lt;/p>
 &lt;p>&lt;code>rm -rf /etc/libapache2-mod-jk&lt;/code>&lt;/p>
 &lt;h2 id="4最后">4、最后&lt;/h2>
-&lt;p>80端口释放，没有问题了。&lt;/p></description></item><item><title>VPS安全加固</title><link>https://blog.xpdbk.com/post/linux-anquan/</link><pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/linux-anquan/</guid><description>&lt;img src="https://blog.xpdbk.com/post/linux-anquan/awa.webp" alt="Featured image of post VPS安全加固" />&lt;h2 id="vps安全加固">VPS安全加固&lt;/h2>
+&lt;p>80端口释放，没有问题了。&lt;/p></description></item><item><title>VPS安全加固</title><link>https://blog.xpdbk.com/post/linux-anquan/</link><pubDate>Sat, 05 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/linux-anquan/</guid><description>&lt;img src="https://blog.xpdbk.com/post/linux-anquan/awa.webp" alt="Featured image of post VPS安全加固" />&lt;h2 id="vps安全加固">VPS安全加固&lt;/h2>
 &lt;p>VPS 用了快3个月，开始意识到之前 VPS 一点安全措施都没做。&lt;/p>
 &lt;blockquote>
 &lt;p>由于一台 vps 就相当于一台拥有独立 IP 的，直接暴露于互联网之上的电脑，这在为你带来便利的同时也直接让你的 vps 与危险画上了等号，密码穷举、DDOS 攻击、各种各样你想到的想不到的攻击方法都在等待着你，不要相信你那惊悚的创意能想出多么强大的密码，统计学告诉我们——还是相信 RSA 吧！&lt;/p>

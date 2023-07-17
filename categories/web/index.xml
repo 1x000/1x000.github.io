@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网站 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/web/</link><description>Recent content in 网站 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Bilibili的优化指南和项目</title><link>https://blog.xpdbk.com/post/bilibili-go/</link><pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/bilibili-go/</guid><description>&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网站 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/categories/web/</link><description>Recent content in 网站 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/categories/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Bilibili的优化指南和项目</title><link>https://blog.xpdbk.com/post/bilibili-go/</link><pubDate>Wed, 28 Jun 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bilibili-go/</guid><description>&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
 &lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
 &lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
 &lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
@@ -990,7 +990,7 @@
 >BilibiliUnfollowingListener&lt;/a> - 一个由纯JAVA开发的全自动bilibil取关/关注检测程序.jar&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/freedom-introvert/biliSendCommAntifraud" target="_blank" rel="noopener"
 >biliSendCommAntifraud&lt;/a> - 哔哩发评反诈.jar&lt;/li>
-&lt;/ul></description></item><item><title>Shortny PHP 短网址汉化版搭建</title><link>https://blog.xpdbk.com/post/dwzdj/</link><pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/dwzdj/</guid><description>&lt;h2 id="shortny-php-短网址汉化版搭建">Shortny PHP 短网址汉化版搭建&lt;/h2>
+&lt;/ul></description></item><item><title>Shortny PHP 短网址汉化版搭建</title><link>https://blog.xpdbk.com/post/dwzdj/</link><pubDate>Sat, 25 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/dwzdj/</guid><description>&lt;h2 id="shortny-php-短网址汉化版搭建">Shortny PHP 短网址汉化版搭建&lt;/h2>
 &lt;blockquote>
 &lt;p>不要用来违法，只用于学习网站搭建方法&lt;/p>
 &lt;/blockquote>
@@ -1068,7 +1068,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">error_page&lt;/span> &lt;span class="mi">403&lt;/span> &lt;span class="nx">http&lt;/span>&lt;span class="o">://&lt;/span>&lt;span class="nx">你的域名&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">404&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Tor网站搭建</title><link>https://blog.xpdbk.com/post/torwzdj/</link><pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/torwzdj/</guid><description>&lt;h2 id="暗网网站搭建和暗网域名申请方法">暗网网站搭建和暗网域名申请方法&lt;/h2>
+&lt;/div></description></item><item><title>Tor网站搭建</title><link>https://blog.xpdbk.com/post/torwzdj/</link><pubDate>Sat, 25 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/torwzdj/</guid><description>&lt;h2 id="暗网网站搭建和暗网域名申请方法">暗网网站搭建和暗网域名申请方法&lt;/h2>
 &lt;blockquote>
 &lt;p>不要用来违法，只用于学习网站搭建方法&lt;/p>
 &lt;/blockquote>
@@ -1202,7 +1202,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get install libssl-dev
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>如何进行免费的CC压力测试</title><link>https://blog.xpdbk.com/post/cc-gongji/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/cc-gongji/</guid><description>&lt;img src="https://blog.xpdbk.com/post/cc-gongji/awa.webp" alt="Featured image of post 如何进行免费的CC压力测试" />&lt;h2 id="cc压力测试教程">CC压力测试教程&lt;/h2>
+&lt;/div></description></item><item><title>如何进行免费的CC压力测试</title><link>https://blog.xpdbk.com/post/cc-gongji/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/cc-gongji/</guid><description>&lt;img src="https://blog.xpdbk.com/post/cc-gongji/awa.webp" alt="Featured image of post 如何进行免费的CC压力测试" />&lt;h2 id="cc压力测试教程">CC压力测试教程&lt;/h2>
 &lt;blockquote>
 &lt;p>仅供测试不要用来做违法的事情&lt;/p>
 &lt;/blockquote>
@@ -1338,7 +1338,7 @@
 &lt;p>&lt;a class="link" href="https://github.com/Leeon123/CC-attack" target="_blank" rel="noopener"
 >GitHub - Leeon123/CC-attack: Using Socks4/5 or http proxies to make a multithreading Http-flood/Https-flood (cc) attack.&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;p>不要拿去违法OwO&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
+&lt;p>不要拿去违法OwO&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
 &lt;p>系统默认安装了apache2现在就来卸载此服务。&lt;/p>
 &lt;h2 id="1查找web服务">1、查找web服务&lt;/h2>
 &lt;p>使用如下命令：&lt;/p>
