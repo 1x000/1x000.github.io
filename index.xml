@@ -599,8 +599,8 @@ list-folded="true">
 &lt;/code>&lt;/pre>
 &lt;h2 id="网易云">网易云&lt;/h2>
 &lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=557578993&amp;auto=0&amp;height=66">&lt;/iframe>
-&lt;pre>&lt;code>&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=557578993&amp;auto=0&amp;height=66">&lt;/iframe>
-&lt;/code>&lt;/pre></description></item><item><title>Free Client（免费客户端集合）</title><link>https://blog.xpdbk.com/post/crack-client/</link><pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/crack-client/</guid><description>&lt;img src="https://blog.xpdbk.com/post/crack-client/1314535.webp" alt="Featured image of post Free Client（免费客户端集合）" />&lt;h2 id="free-client免费客户端集合">Free Client（免费客户端集合）&lt;/h2>
+&lt;pre>&lt;code>&amp;lt;!-- &lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=557578993&amp;auto=0&amp;height=66">&lt;/iframe>
+--&amp;gt;&lt;/code>&lt;/pre></description></item><item><title>Free Client（免费客户端集合）</title><link>https://blog.xpdbk.com/post/crack-client/</link><pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/crack-client/</guid><description>&lt;img src="https://blog.xpdbk.com/post/crack-client/1314535.webp" alt="Featured image of post Free Client（免费客户端集合）" />&lt;h2 id="free-client免费客户端集合">Free Client（免费客户端集合）&lt;/h2>
 &lt;blockquote>
 &lt;p>欢迎来这里交流低配电脑可用开裂客户端&lt;/p>
 &lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
@@ -20149,7 +20149,7 @@ allowfullscreen="true"
 &lt;/blockquote>
 &lt;h2 id="限制国服问题">限制国服问题&lt;/h2>
 &lt;p>2023/02/12到2023/06/01&lt;/p>
-&lt;p>疑似限制中国大陆玩家进入服务器&lt;/p></description></item><item><title>文章归档</title><link>https://blog.xpdbk.com/archives/</link><pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/archives/</guid><description/></item><item><title>PVP材质包和HUD配置 整合</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-pack-hud/</link><pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-pack-hud/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-pack-hud/qwq.webp" alt="Featured image of post PVP材质包和HUD配置 整合" />&lt;p>需要HUD请去这里&lt;/p>
+&lt;p>疑似限制中国大陆玩家进入服务器&lt;/p></description></item><item><title>归档</title><link>https://blog.xpdbk.com/archives/</link><pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/archives/</guid><description/></item><item><title>PVP材质包和HUD配置 整合</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-pack-hud/</link><pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-pack-hud/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-pack-hud/qwq.webp" alt="Featured image of post PVP材质包和HUD配置 整合" />&lt;p>需要HUD请去这里&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack" target="_blank" rel="noopener"
 >https://blog.xpdbk.com/post/minecraft-1.8.9-hack-pack&lt;/a>&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
 &lt;p>系统默认安装了apache2现在就来卸载此服务。&lt;/p>
@@ -20451,35 +20451,129 @@ hugoDecrypt(userStorage.getItem(storageKey), "storage");
 }
 };
 &lt;/script>
-&lt;/hugo-encrypt></description></item><item><title>本站声明</title><link>https://blog.xpdbk.com/bzsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/bzsm/</guid><description>&lt;h2 id="本站声明">本站声明&lt;/h2>
-&lt;h2 id="相关声明">相关声明&lt;/h2>
-&lt;p>免责声明：本程序仅供参考和个人使用。尽管我们努力确保程序的准确性和可靠性，但对于使用该程序所导致的任何损失或损害不承担任何责任。&lt;/p>
-&lt;p>下载风险：用户应自行承担下载和使用本程序的风险。我们不对下载过程中可能出现的计算机病毒、恶意软件或其他损坏用户设备或数据的情况负责。&lt;/p>
-&lt;p>第三方链接：本程序可能包含指向第三方网站或资源的链接。这些链接仅为方便用户提供。我们对这些链接的内容或准确性不负任何责任，并且不承担因使用这些链接而导致的任何损失或损害。&lt;/p>
-&lt;p>免责范围：在适用法律允许的最大范围内，我们不对因使用或无法使用本程序而产生的任何直接或间接损害承担责任，包括但不限于利润损失、业务中断、数据丢失等。&lt;/p>
+&lt;/hugo-encrypt></description></item><item><title>动态</title><link>https://blog.xpdbk.com/shuoshuo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/shuoshuo/</guid><description>&lt;script type="text/javascript" src="https://unpkg.com/artitalk">&lt;/script>
+&lt;div id="artitalk_main">&lt;/div>
+&lt;script>
+new Artitalk({
+appId: '4I7DAgk86OSk4EFuqaoBCUSK-MdYXbMMI', // Your LeanCloud appId
+appKey: '4xSQE6gk0Vaiq5sS1u3VsQlQ' // Your LeanCloud appKey
+})
+&lt;/script></description></item><item><title>关于</title><link>https://blog.xpdbk.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/about/</guid><description>&lt;h2 id="关于留言">『关于/留言』&lt;/h2>
+&lt;p>我是一个热爱折腾的高中生&lt;/p>
+&lt;p>这个博客是我2022年 14岁建的（记录）&lt;/p>
+&lt;p>我的网名：&lt;code>LEl_FENG&lt;/code>&lt;/p>
+&lt;h2 id="你有q群吗">你有Q群吗&lt;/h2>
+&lt;p>答: &lt;code>没有怕被搞&lt;/code>&lt;/p>
+&lt;h2 id="我的兴趣爱好">🌵我的兴趣爱好:&lt;/h2>
+&lt;p>👦数码设备&lt;/p>
+&lt;p>👨‍💻电子产品&lt;/p>
+&lt;p>💪操作系统，尤其是win7+VM和越狱的IOS&lt;/p>
+&lt;p>✍️写博客&lt;/p>
+&lt;p>👋打游戏，比如大多数的枪战游戏和我喜欢的minecraft&lt;/p>
+&lt;p>🎉python编程&lt;/p>
+&lt;p>🔮音乐，如金曲or电音&lt;/p>
+&lt;p>♂不是gay啊&lt;/p>
+&lt;p>🃏喜欢大自然和小动物&lt;/p>
+&lt;hr>
+&lt;h2 id="我的一些站点">我的一些站点&lt;/h2>
+&lt;p>&lt;a class="link" href="https://faka.xpdbk.com/" target="_blank" rel="noopener"
+>我的商店&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://jigou.xpdbk.com/" target="_blank" rel="noopener"
+>纪狗导航&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h3 id="擅长">💪擅长：&lt;/h3>
+&lt;p>写HTML，CSS，JS&lt;/p>
+&lt;p>能够较熟练使用Windows，Linux，macos，iOS，Android&lt;/p>
+&lt;p>一点点Ae、Pr&lt;/p>
+&lt;p>一点点的Word、Excel、PowerPoint&lt;/p>
+&lt;p>FPS游戏&lt;/p>
+&lt;p>我的世界开寄&lt;/p>
+&lt;p>CS1.6开寄&lt;/p>
+&lt;hr>
+&lt;h3 id="联系">🃏联系：&lt;/h3>
+&lt;p>邮箱：&lt;code>huaweilaomke402@gmail.com&lt;/code>&lt;/p>
+&lt;hr>
+&lt;h3 id="留言">👺留言&lt;/h3>
+&lt;p>在这里可以留下你的足迹，切勿散布广告与不好的言论哦&lt;/p>
+&lt;hr></description></item><item><title>管理</title><link>https://blog.xpdbk.com/edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/edit/</guid><description>&lt;p>&lt;a class="link" href="https://1x000-special-couscous-qjwwgwvvxqf69jw.github.dev/" target="_blank" rel="noopener"
+>在线编辑文章（本站）&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://blogdash.xpdbk.com/" target="_blank" rel="noopener"
+>本站后台面板&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://1x000-glowing-guacamole-745gjqpj7rgh9jj.github.dev/" target="_blank" rel="noopener"
+>在线编辑文章（jigoudoc）&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>如果你不是内部人员，请不要点击这些链接awa。&lt;/p>
+&lt;/blockquote></description></item><item><title>声明</title><link>https://blog.xpdbk.com/bzsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/bzsm/</guid><description>&lt;h2 id="本站声明">本站声明&lt;/h2>
+&lt;blockquote>
+&lt;p>本站指的是 &lt;a class="link" href="https://blog.xpdbk.com" target="_blank" rel="noopener"
+>blog.xpdbk.com&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="联系方式">联系方式&lt;/h3>
+&lt;p>B站和Youtube私信&lt;/p>
+&lt;p>邮箱: &lt;code>huaweilaomke402@gmail.com&lt;/code>&lt;/p>
+&lt;h2 id="本站主声明">本站主声明&lt;/h2>
+&lt;h3 id="免责声明">免责声明&lt;/h3>
+&lt;blockquote>
+&lt;p>所有程序意思是本站的所有能被下载和使用的程序和源码&lt;/p>
+&lt;/blockquote>
+&lt;p>本站的所有程序源码（包含外部和内部）仅供个人参考和个人使用，尽管我们努力确保程序的准确性和可靠性，但对于使用本站程序所导致的任何损失或损害将不承担任何责任，请在使用前把程序放到沙盒内运行和杀毒。&lt;/p>
+&lt;h3 id="下载风险">下载风险&lt;/h3>
+&lt;p>用户应自行承担下载和使用本站程序的风险，我们不对下载过程中可能出现的计算机病毒、恶意软件或其他损坏用户设备或数据的情况负责。&lt;/p>
+&lt;h3 id="第三方链接">第三方链接&lt;/h3>
+&lt;p>本程序可能包含指向第三方网站或资源的链接，这些链接仅为方便用户提供，我们对这些链接的内容或准确性不负任何责任，并且不承担因使用这些链接而导致的任何损失或损害。&lt;/p>
+&lt;h3 id="免责范围">免责范围&lt;/h3>
+&lt;p>在适用法律允许的最大范围内，我们不对因使用或无法使用本程序而产生的任何直接或间接损害承担责任，包括但不限于利润损失、业务中断、数据丢失等。&lt;/p>
+&lt;h3 id="文章免责声明">文章免责声明&lt;/h3>
 &lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
 &lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
 &lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
 &lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
-&lt;h2 id="网站的软件及各种mod和游戏和水影不限于fdp的版权声明">网站的软件及各种mod和游戏和水影（不限于FDP）的版权声明&lt;/h2>
+&lt;p>文章可能提供第三方网站的链接，我们不负责维护这些网站。我们不对这些网站的内容负责任。提供这些网站的链接并不意味我们对这些网站或它们的内容的认可或支持。我们不对这些链接网站作出任何陈述或保证，也不对它们负任何责任。&lt;/p>
+&lt;h3 id="软件免责声明">软件免责声明&lt;/h3>
 &lt;p>&lt;strong>LEl_FENG&lt;/strong>（也就是本人的站点）不允许受版权保护的软件以公开形式发布，如果发现请联系我们提交版权证书，我们会第一时间处理，请确保您已阅读并理解此政策。&lt;/p>
-&lt;p>附注：根据二○○二年一月一日《计算机软件保护条例》规定：为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。&lt;/p>
-&lt;p>&lt;strong>数字千年版权法案（DMCA）&lt;/strong>&lt;/p>
+&lt;p>不论何种情形我们都不对任何由于使用或无法使用本网站提供的信息所造成的直接的、间接的、附带的、特殊的或余波所及的损失、灵失、债务或中断负任何责任﹝不论是可预见的或是不可预见的，即使我们巳被告知这种可能性﹞。&lt;/p>
+&lt;p>根据二○○二年一月一日《计算机软件保护条例》规定：为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。鉴于此，也希望大家按此说明研究软件！谢 谢！&lt;/p>
+&lt;p>[&lt;code>blog.xpdbk.com&lt;/code>]保证站内提供的所有可下载资源（软件等等）都是按“原样”提供，本站未做过任何改动；但[&lt;code>blog.xpdbk.com&lt;/code>]不保证本站提供的下载资源的准确性、安全性和完整性；同时[&lt;code>blog.xpdbk.com&lt;/code>]也不承担用户因使用这些下载资源对自己和他人造成任何 形式的损失或伤害。&lt;/p>
+&lt;h3 id="版权声明">版权声明&lt;/h3>
+&lt;p>[&lt;code>blog.xpdbk.com&lt;/code>] 尊重各网络文件的版权问题，所有软件文件均出自网络，所有提供下载的软件和资源均为软件或程序作者提供和网友推荐收集整理而来，仅供学习和研究使用。如有侵犯你的版权，请及时通知我们（邮箱：&lt;code>huaweilaomke402@gmail.com&lt;/code>），本站将立即改正，同时要求用户在24小时内删除从[&lt;code>blog.xpdbk.com&lt;/code>]下传的文件。&lt;/p>
+&lt;p>为了确保软件可靠性，和作者的版权，本站大部分软件都经过检查后再发布，但因为人员不够，[&lt;code>blog.xpdbk.com&lt;/code>]不保证提供的下载资源的准确性、安全性和完整性；下载后请自行检查是否带有病毒，同时[&lt;code>blog.xpdbk.com&lt;/code>]也不承担用户因使用这些下载资源对自己和他人造成任何形式的损失或伤害。&lt;/p>
+&lt;p>未经[&lt;code>blog.xpdbk.com&lt;/code>]的明确许可，任何人不得盗链本站下载资源；不得复制或仿造本网站或者在非[&lt;code>blog.xpdbk.com&lt;/code>]所属的服务器上建立镜像，[&lt;code>blog.xpdbk.com&lt;/code>]对其自行开发的或和他人共同开发的所有内容、技术手段和服务拥有全部知识产权，任何人不得侵害或 破坏，也不得擅自使用。&lt;/p>
+&lt;p>访问[&lt;code>blog.xpdbk.com&lt;/code>]的用户必须明白，[&lt;code>blog.xpdbk.com&lt;/code>]对提供下载的软件等不拥有任何权利，其版权归该下载资源的合法拥有者所有。&lt;/p>
+&lt;h4 id="数字千年版权法案dmca">数字千年版权法案（DMCA）&lt;/h4>
 &lt;p>&lt;strong>LEl_FENG&lt;/strong> 接受受版权保护的内容&lt;code>DMCA&lt;/code>侵权通知。&lt;/p>
 &lt;p>针对未存储在&lt;strong>LEl_FENG&lt;/strong>服务器上的下载地址网盘存储的文件提出侵犯通知，请联系该存储网盘服务商提供版权侵犯通知。&lt;strong>LEl_FENG&lt;/strong>无权删除外部服务器上的文件，因此可能不会处理与该软件相关的版权侵权通知。&lt;/p>
 &lt;p>受版权证书保护的软件页面我们会删除链接，要联系&lt;strong>LEl_FENG&lt;/strong>提交版权侵权通知，您必须使用邮件联系。&lt;/p>
 &lt;p>只有发送邮件：您的侵权通知必须包含以下所有内容，我们才能被接受：&lt;/p>
 &lt;p>您认为受版权保护的软件的详细信息，包括其在&lt;strong>LEl_FENG&lt;/strong>网站内的页面。&lt;/p>
 &lt;p>您是版权所有者或有版权代理所有者的信息或证明，我们一般会在收到投诉后48小时内处理。&lt;/p>
-&lt;h2 id="下载声明">下载声明&lt;/h2>
-&lt;p>[&lt;code>blog.xpdbk.com&lt;/code>] 尊重各网络文件的版权问题，所有软件文件均出自网络，所有提供下载的软件和资源均为软件或程序作者提供和网友推荐收集整理而来，仅供学习和研究使用。如有侵犯你的版权，请及时通知我们（邮箱：&lt;code>huaweilaomke402@gmail.com&lt;/code>），本站将立即改正，同时要求用户在24小时内删除从[&lt;code>blog.xpdbk.com&lt;/code>]下传的文件。&lt;/p>
-&lt;p>为了确保软件可靠性，和作者的版权，本站大部分软件都经过检查后再发布，但因为人员不够，[&lt;code>blog.xpdbk.com&lt;/code>]不保证提供的下载资源的准确性、安全性和完整性；下载后请自行检查是否带有病毒，同时[&lt;code>blog.xpdbk.com&lt;/code>]也不承担用户因使用这些下载资源对自己和他人造成任何形式的损失或伤害。&lt;/p>
-&lt;p>未经[&lt;code>blog.xpdbk.com&lt;/code>]的明确许可，任何人不得盗链本站下载资源；不得复制或仿造本网站或者在非[&lt;code>blog.xpdbk.com&lt;/code>]所属的服务器上建立镜像，[&lt;code>blog.xpdbk.com&lt;/code>]对其自行开发的或和他人共同开发的所有内容、技术手段和服务拥有全部知识产权，任何人不得侵害或 破坏，也不得擅自使用。&lt;/p>
-&lt;p>访问[&lt;code>blog.xpdbk.com&lt;/code>]的用户必须明白，[&lt;code>blog.xpdbk.com&lt;/code>]对提供下载的软件等不拥有任何权利，其版权归该下载资源的合法拥有者所有。&lt;/p>
-&lt;p>[&lt;code>blog.xpdbk.com&lt;/code>]保证站内提供的所有可下载资源（软件等等）都是按“原样”提供，本站未做过任何改动；但[&lt;code>blog.xpdbk.com&lt;/code>]不保证本站提供的下载资源的准确性、安全性和完整性；同时[&lt;code>blog.xpdbk.com&lt;/code>]也不承担用户因使用这些下载资源对自己和他人造成任何 形式的损失或伤害。&lt;/p>
-&lt;p>本网站可能提供第三方网站的链接，我们不负责维护这些网站。我们不对这些网站的内容负责任。提供这些网站的链接并不意味我们对这些网站或它们的内容的认可或支持。我们不对这些链接网站作出任何陈述或保证，也不对它们负任何责任。&lt;/p>
-&lt;p>根据二○○二年一月一日《计算机软件保护条例》规定：为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。鉴于此，也希望大家按此说明研究软件！谢 谢！&lt;/p>
-&lt;p>不论何种情形我们都不对任何由于使用或无法使用本网站提供的信息所造成的直接的、间接的、附带的、特殊的或余波所及的损失、灵失、债务或中断负任何责任﹝不论是可预见的或是不可预见的，即使我们巳被告知这种可能性﹞。&lt;/p>
+&lt;h3 id="我的世界mod和wiki的免责声明">我的世界Mod和Wiki的免责声明&lt;/h3>
+&lt;h4 id="前言和免责声明">前言和免责声明&lt;/h4>
+&lt;h5 id="免责声明-1">免责声明&lt;/h5>
+&lt;blockquote>
+&lt;p>本文仅供学习并且只在这里和Github和我的博客里面发布&lt;/p>
+&lt;/blockquote>
+&lt;p>此Wiki是LEl_FENG和贡献者们维护的一个公共Wiki皆在缓解乐子们坑钱，让好奇者能学到他想要的东西，并保留住他的钱财&lt;/p>
+&lt;p>不支持在网易我的世界使用FDPClient修改游戏&lt;/p>
+&lt;p>根据中国大陆的法律 修改游戏属于破坏计算机系统罪&lt;/p>
+&lt;p>Forge加载器本身就是外挂，Forge通过动态修改minecraft的字节码实现更多的游戏玩法和功能这个行为也被Minecraft允许&lt;/p>
+&lt;h4 id="minecraft和我的世界的区别">Minecraft和我的世界的区别&lt;/h4>
+&lt;blockquote>
+&lt;p>要搞清楚两个游戏的区别&lt;/p>
+&lt;/blockquote>
+&lt;h5 id="minecraft">Minecraft&lt;/h5>
+&lt;p>Minecraft（就是国际版和离线版）是Mojang制作的Java游戏后来被微软收购，但是由于Minecraft官方的EULA协议里面有写不允许对游戏本体jar进行修改并把原文件分发给其他人。但是它允许玩家自行间接使用mod加载器（Forge等等的加载器）对游戏的Java字节码进行动态修改，由此就衍生出来可以扩展游戏玩法的mod同时就有了庞大的mod社区&lt;/p>
+&lt;h5 id="网易我的世界">网易我的世界&lt;/h5>
+&lt;p>我的世界（网易代理版）是一个由微软授权让网易在中国大陆地区代理的游戏，官方不允许玩家私自使用mod加载到游戏里面，游戏客户端不能离线必须要联网才能玩，网易协议有写玩家不能私自对游戏进行修改。&lt;/p>
+&lt;h4 id="mod和和水影vape等client的区别">Mod和和水影Vape等Client的区别&lt;/h4>
+&lt;blockquote>
+&lt;p>这里已经讲的很详细了&lt;/p>
+&lt;/blockquote>
+&lt;h5 id="mod">Mod&lt;/h5>
+&lt;p>Mod的本质也就是一群大佬对Minecraft客户端进行逆向从而制造了Forge等mod加载器对minecraft本体进行间接动态修改实现，小到内存修复大到各种你电脑跑不动的大型mod。&lt;/p>
+&lt;h5 id="水影是什么">水影是什么&lt;/h5>
+&lt;p>是基于Minecraft Mod做的一个外挂，通过Forge等加载器修改游戏关键字节码（运动节点等）实现aimbot（自瞄）或者Speed（速度）等功能，Mojang官方并不会封杀它因为它是合法的并且在github开源&lt;/p>
+&lt;h5 id="fdpclient是什么">FDPClient是什么&lt;/h5>
+&lt;p>FdpClient 是基于水影的一个客户端并添加了更多的功能和更多的~~bug&lt;/p>
 &lt;h2 id="网站-隐私政策">网站 隐私政策&lt;/h2>
 &lt;p>欢迎您访问我们的产品。 &lt;strong>网站&lt;/strong> （包括网站等产品提供的服务，以下简称“产品和服务”）是由 &lt;strong>LEl_FENG&lt;/strong> （以下简称“我们”）开发并运营的。 确保用户的数据安全和隐私保护是我们的首要任务， 本隐私政策载明了您访问和使用我们的产品和服务时所收集的数据及其处理方式。&lt;/p>
 &lt;p>请您在继续使用我们的产品前务必认真仔细阅读并确认充分理解本隐私政策全部规则和要点， 一旦您选择使用，即视为您同意本隐私政策的全部内容，同意我们按其收集和使用您的相关信息。 如您在在阅读过程中，对本政策有任何疑问，可联系我们的客服咨询， 请通过 &lt;strong>&lt;a class="link" href="mailto:huaweilaomke402@gmail.com" >huaweilaomke402@gmail.com&lt;/a>&lt;/strong> 或产品中的反馈方式与我们取得联系。 如您不同意相关协议或其中的任何条款的，您应停止使用我们的产品和服务。&lt;/p>
@@ -20511,71 +20605,10 @@ hugoDecrypt(userStorage.getItem(storageKey), "storage");
 &lt;p>我们出于不同的目的使用各种Cookie，包括：严格必要型Cookie、性能Cookie、营销Cookie和功能Cookie。 某些Cookie可能由外部第三方提供，以向我们的产品提供其它功能。 我们不会将 Cookie 用于本政策所述目的之外的任何用途。您可根据自己的偏好管理或删除 Cookie。 您可以清除计算机上或手机中保存的所有 Cookie，大部分网络浏览器都设有阻止或禁用 Cookie 的功能， 您可对浏览器进行配置。阻止或禁用 Cookie 功能后，可能影响您使用或不能充分使用我们的产品和服务。&lt;/p>
 &lt;h3 id="五我们如何处理未成年人的个人信息">五、我们如何处理未成年人的个人信息&lt;/h3>
 &lt;p>我们的产品、网站和服务主要面向成人。如果没有父母或监护人的同意，儿童不得创建自己的用户账户。 对于经父母同意而收集儿童个人信息的情况，我们只会在受到法律允许、 父母或监护人明确同意或者保护儿童所必要的情况下使用或公开披露此信息。&lt;/p>
-&lt;p>如果我们发现自己在未事先获得可证实的父母同意的情况下收集了儿童的个人信息，则会设法尽快删除相关数据。 若您是未成年人的监护人，当您对您所监护的未成年人使用我们的服务或其向我们提供的用户信息有任何疑问时， 请您及时与我们联系。我们将根据国家相关法律法规及本政策的规定保护未成年人用户信息的保密性及安全性。&lt;/p></description></item><item><title>关于我</title><link>https://blog.xpdbk.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/about/</guid><description>&lt;h2 id="关于留言">『关于/留言』&lt;/h2>
-&lt;p>我是一个热爱折腾的高中生&lt;/p>
-&lt;p>这个博客是我2022年 14岁建的（记录）&lt;/p>
-&lt;p>我的网名：&lt;code>LEl_FENG&lt;/code>&lt;/p>
-&lt;h2 id="你有q群吗">你有Q群吗&lt;/h2>
-&lt;p>答: &lt;code>没有怕被搞&lt;/code>&lt;/p>
-&lt;h2 id="我的兴趣爱好">🌵我的兴趣爱好:&lt;/h2>
-&lt;p>👦数码设备&lt;/p>
-&lt;p>👨‍💻电子产品&lt;/p>
-&lt;p>💪操作系统，尤其是win7+VM和越狱的IOS&lt;/p>
-&lt;p>✍️写博客&lt;/p>
-&lt;p>👋打游戏，比如大多数的枪战游戏和我喜欢的minecraft&lt;/p>
-&lt;p>🎉python编程&lt;/p>
-&lt;p>🔮音乐，如金曲or电音&lt;/p>
-&lt;p>♂不是gay啊&lt;/p>
-&lt;p>🃏喜欢大自然和小动物&lt;/p>
-&lt;hr>
-&lt;h2 id="我的一些站点">我的一些站点&lt;/h2>
-&lt;p>&lt;a class="link" href="https://faka.xpdbk.com/" target="_blank" rel="noopener"
->我的商店&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://ziyuan.xpdbk.com/" target="_blank" rel="noopener"
->免费整合包资源站点&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://pan.xpdbk.com/" target="_blank" rel="noopener"
->消耗流量站点&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://jigou.xpdbk.com/" target="_blank" rel="noopener"
->纪狗导航&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://leak.xpdbk.com" target="_blank" rel="noopener"
->纪狗资源&lt;/a>&lt;/p>
-&lt;hr>
-&lt;h3 id="擅长">💪擅长：&lt;/h3>
-&lt;p>写HTML，CSS，JS&lt;/p>
-&lt;p>能够较熟练使用Windows，Linux，macos，iOS，Android&lt;/p>
-&lt;p>一点点Ae、Pr&lt;/p>
-&lt;p>一点点的Word、Excel、PowerPoint&lt;/p>
-&lt;p>FPS游戏&lt;/p>
-&lt;p>我的世界开寄&lt;/p>
-&lt;p>CS1.6开寄&lt;/p>
-&lt;hr>
-&lt;h3 id="联系">🃏联系：&lt;/h3>
-&lt;p>邮箱：&lt;code>huaweilaomke402@gmail.com&lt;/code>&lt;/p>
-&lt;hr>
-&lt;h3 id="留言">👺留言&lt;/h3>
-&lt;p>在这里可以留下你的足迹，切勿散布广告与不好的言论哦&lt;/p>
-&lt;hr></description></item><item><title>说说</title><link>https://blog.xpdbk.com/shuoshuo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/shuoshuo/</guid><description>&lt;script type="text/javascript" src="https://unpkg.com/artitalk">&lt;/script>
-&lt;div id="artitalk_main">&lt;/div>
-&lt;script>
-new Artitalk({
-appId: '4I7DAgk86OSk4EFuqaoBCUSK-MdYXbMMI', // Your LeanCloud appId
-appKey: '4xSQE6gk0Vaiq5sS1u3VsQlQ' // Your LeanCloud appKey
-})
-&lt;/script></description></item><item><title>网站编辑</title><link>https://blog.xpdbk.com/edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/edit/</guid><description>&lt;p>&lt;a class="link" href="https://1x000-special-couscous-qjwwgwvvxqf69jw.github.dev/" target="_blank" rel="noopener"
->在线编辑文章（本站）&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://blogdash.xpdbk.com/" target="_blank" rel="noopener"
->本站后台面板&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://1x000-glowing-guacamole-745gjqpj7rgh9jj.github.dev/" target="_blank" rel="noopener"
->在线编辑文章（jigoudoc）&lt;/a>&lt;/p>
-&lt;p>样式可以选择最顺眼的加到收藏里面&lt;/p>
-&lt;p>&lt;a class="link" href="https://blog.xpdbk.com/" target="_blank" rel="noopener"
->样式1&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://blog2.xpdbk.com/" target="_blank" rel="noopener"
->样式2&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://jgwd.xpdbk.com" target="_blank" rel="noopener"
->纪狗编写doc&lt;/a>&lt;/p></description></item><item><title>线路</title><link>https://blog.xpdbk.com/bloglink/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/bloglink/</guid><description>&lt;h2 id="镜像列表">镜像列表&lt;/h2>
+&lt;p>如果我们发现自己在未事先获得可证实的父母同意的情况下收集了儿童的个人信息，则会设法尽快删除相关数据。 若您是未成年人的监护人，当您对您所监护的未成年人使用我们的服务或其向我们提供的用户信息有任何疑问时， 请您及时与我们联系。我们将根据国家相关法律法规及本政策的规定保护未成年人用户信息的保密性及安全性。&lt;/p></description></item><item><title>搜索</title><link>https://blog.xpdbk.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/search/</guid><description/></item><item><title>线路</title><link>https://blog.xpdbk.com/bloglink/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/bloglink/</guid><description>&lt;h2 id="镜像列表">镜像列表&lt;/h2>
 &lt;blockquote>
 &lt;p>本列表为本站的镜像域名，如果访问速度慢请把这些域名加进你的书签里面。&lt;/p>
+&lt;p>如出现了不符合要求的内容请随时反馈 邮箱： &lt;code>huaweilaomke402@gmail.com&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;table>
 &lt;thead>
@@ -20587,36 +20620,39 @@ appKey: '4xSQE6gk0Vaiq5sS1u3VsQlQ' // Your LeanCloud appKey
 &lt;tbody>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://blog.xpdbk.com/" target="_blank" rel="noopener"
->主站线路&lt;/a>&lt;/td>
+>主站&lt;/a>&lt;/td>
 &lt;td>本站的主要线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://vlblog.xpdbk.com/" target="_blank" rel="noopener"
->Vercel线路&lt;/a>&lt;/td>
+>Vercel 线路&lt;/a>&lt;/td>
 &lt;td>基于 Vercel 平台的镜像线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://lelfeng.netlify.app/" target="_blank" rel="noopener"
->netlify线路&lt;/a>&lt;/td>
+>Netlify 线路&lt;/a>&lt;/td>
 &lt;td>基于 Netlify 平台的镜像线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://cfblog.xpdbk.com/" target="_blank" rel="noopener"
->Cf PAGES线路&lt;/a>&lt;/td>
+>Cf Pages 线路&lt;/a>&lt;/td>
 &lt;td>基于 Cloudflare Pages 平台的镜像线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://1x000.github.io/" target="_blank" rel="noopener"
->Github线路&lt;/a>&lt;/td>
+>Github 线路&lt;/a>&lt;/td>
 &lt;td>基于 GitHub Pages 平台的镜像线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://adaewfd321fg3.cachefly.net/" target="_blank" rel="noopener"
->CacheFly线路&lt;/a>&lt;/td>
+>CacheFly 线路&lt;/a>&lt;/td>
 &lt;td>基于 CacheFly CDN 的镜像线路&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>友情链接</title><link>https://blog.xpdbk.com/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/links/</guid><description>&lt;img src="https://blog.xpdbk.com/links/666.webp" alt="Featured image of post 友情链接" />&lt;h1 id="一些网站-and-my-friends">一些网站 and My Friends&lt;/h1>
+&lt;/table>
+&lt;blockquote>
+&lt;p>本人不承担这些线路的可用性，线路可能随时会变。&lt;/p>
+&lt;/blockquote></description></item><item><title>友链</title><link>https://blog.xpdbk.com/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/links/</guid><description>&lt;img src="https://blog.xpdbk.com/links/666.webp" alt="Featured image of post 友链" />&lt;h1 id="一些网站-and-my-friends">一些网站 and My Friends&lt;/h1>
 &lt;p>如您希望交换友情链接，敬请在评论区留言。&lt;br>
 本站目前仅接受个人博客网站的友链申请。&lt;/p>
 &lt;p>本站友链信息如下：&lt;/p>
@@ -20635,4 +20671,4 @@ appKey: '4xSQE6gk0Vaiq5sS1u3VsQlQ' // Your LeanCloud appKey
 &lt;li>
 &lt;p>定期维护：在添加友链后，您应该定期检查友链的有效性和安全性，并及时更新或删除失效的友链。&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>站内搜索</title><link>https://blog.xpdbk.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/search/</guid><description/></item></channel></rss>
+&lt;/ol></description></item></channel></rss>
