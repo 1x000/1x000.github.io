@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/hugo/</link><description>Recent content in hugo on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Jul 2019 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Example</title><link>https://blog.xpdbk.com/post/example/</link><pubDate>Mon, 22 Jul 2019 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/example/</guid><description>&lt;p>#Content before encryption.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/hugo/</link><description>Recent content in hugo on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>加密测试</title><link>https://blog.xpdbk.com/post/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</link><pubDate>Sat, 22 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/%E5%8A%A0%E5%AF%86%E6%B5%8B%E8%AF%95/</guid><description>&lt;h2 id="content-before-encryption">Content before encryption.&lt;/h2>
 &lt;hugo-encrypt>
 &lt;div id="hugo-encrypt-encryption-notice">
 &lt;p>以下内容被密码保护&lt;/p>
@@ -18,7 +18,7 @@ id="button" onclick="hugoDecrypt(document.getElementById('hugo-encrypt-password'
 &lt;div id="hugo-encrypt-input-response">&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;cipher-text data-password='PASSWORD' style="display:none;">
+&lt;cipher-text data-password='123456' style="display:none;">
 &lt;p>##Encrypted content.&lt;/p>
 &lt;/cipher-text>
 &lt;style type="text/css">div#hugo-encrypt-sha1sum {display: none;}&lt;/style>
