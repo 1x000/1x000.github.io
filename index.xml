@@ -36888,8 +36888,9 @@ ClientAliveInterval 60&lt;/p>
 &lt;div id="artitalk_main">&lt;/div>
 &lt;script>
 new Artitalk({
-appId: '4I7DAgk86OSk4EFuqaoBCUSK-MdYXbMMI', // Your LeanCloud appId
-appKey: '4xSQE6gk0Vaiq5sS1u3VsQlQ' // Your LeanCloud appKey
+serverURL: 'https://shuoshuo1.xpdbk.com/',
+appId: '1145141919810', // Your LeanCloud appId
+appKey: '666' // Your LeanCloud appKey
 })
 &lt;/script></description></item><item><title>关于</title><link>https://blog.xpdbk.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/about/</guid><description>&lt;img src="https://blog.xpdbk.com/about/about.webp" alt="Featured image of post 关于" />&lt;h2 id="hiiiii我是小胖">Hiiiii，我是小胖&lt;/h2>
 &lt;p>&lt;code>LEl_FENG&lt;/code> 起这个名字主要是因为我当时的奇妙灵感doge&lt;/p>
