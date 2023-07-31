@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>autokill on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/autokill/</link><description>Recent content in autokill on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 13 May 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/autokill/index.xml" rel="self" type="application/rss+xml"/><item><title>Incognito Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</link><pubDate>Sat, 13 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</guid><description>&lt;h2 id="incognito-绕过">Incognito 绕过&lt;/h2>
+&lt;p>首先这个反作弊是免费的，在检测&lt;code>Noslow&lt;/code>和&lt;code>Fly&lt;/code>上面堪称完美，但是其他地方就不行了。目前没见服务器使用（失落）&lt;/p>
+&lt;h2 id="incognito-v1官方fdp">Incognito V1（官方FDP）&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定到家的静默杀戮光环&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 不好的反击退&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超级OP的自动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边走边真防砍（速度是跑着的速度）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 弓箭超级Fly！&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 兼容最新FDP&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>{！}需要使用最新FDP&lt;/p>
+&lt;h2 id="下载区">下载区&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;strong>V1版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/i61T60w19cgb" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码:&lt;code>d7w5&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>Incognito114514&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/5/13&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote></description></item><item><title>GrimFDP配置绕过Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</link><pubDate>Fri, 12 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</guid><description>&lt;h2 id="grim-绕过">Grim 绕过&lt;/h2>
+&lt;p>首先这个配置是免费的，在功能上肯定不如那些付费&lt;strong>XXSense&lt;/strong>了，其次做这个配置我没有收益，如果你觉得不好的话可以左转去用他们的&lt;strong>Sense&lt;/strong>哈哈&lt;/p>
+&lt;h2 id="grim-v2官方fdp">Grim V2（官方FDP）&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定到家的静默杀戮光环&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边移动边打人的0反Grim反击退&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 更不容易掉落的手动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 3FMC 仿Matrix半径机器人mod专门绕过&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 跑吃绕过（不稳定）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边走边真防砍（速度是跑着的速度）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 去除一些BUG和HIM（不是）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 兼容最新FDP&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>{！}需要使用最新FDP&lt;/p>
+&lt;h2 id="grim-v2xiaoxixisense魔改fdp">Grim V2（XiaoxixiSense魔改FDP）&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 开箱即用&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超稳定的杀戮&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 多种反击退（奇怪的反击退）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 加强手动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 支持0反（不稳定能打人）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 可移动0反（不能打人）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 简洁的HUD&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 去除一些无用的选项&lt;/p>
+&lt;p>V2配置使用 &lt;code>.cfg load grimv1&lt;/code> 切换配置&lt;/p>
+&lt;p>本配置使用&lt;code>XiaoxixiSense&lt;/code>可以到我的上一期文章下载&lt;/p>
+&lt;p>如果你不会用的话可以找我远控你的电脑帮你安装（不要钱）但是需要你有minecraft游玩基础如果没有任何基础的话请去看官方的wiki&lt;/p>
+&lt;p>如果你发我消息我没回的话是我在复习中考有时间会帮你搞&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="grim-v1官方fdp配置">Grim V1（官方FDP配置）&lt;/h2>
+&lt;p>&lt;strong>V1 DEV LOG&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 安全搭路（快速蹲搭）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Blink（闪现）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 安全杀戮（正在摸索）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 没有视觉（优化）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 无假功能且免费&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 仅支持&lt;code>FDP 5.3.0 官方版&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="下载区">下载区&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;strong>V2版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iumt30w19atc" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码：&lt;code>egrb&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>114514GrimConfig&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/5/13&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>V2版本（XiaoxixiSense魔改FDP）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iJCqP0u7fpng" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码:&lt;code>22u1&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>无&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/4/29&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>V1版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/imWgW0sqip4h" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码:&lt;code>ajd7&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>iz@JkuT4&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/4/11&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote></description></item></channel></rss>

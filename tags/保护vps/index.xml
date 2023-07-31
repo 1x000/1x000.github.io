@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>保护VPS on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/%E4%BF%9D%E6%8A%A4vps/</link><description>Recent content in 保护VPS on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 05 Nov 2022 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E4%BF%9D%E6%8A%A4vps/index.xml" rel="self" type="application/rss+xml"/><item><title>VPS安全加固</title><link>https://blog.xpdbk.com/post/linux-anquan/</link><pubDate>Sat, 05 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/linux-anquan/</guid><description>&lt;img src="https://blog.xpdbk.com/post/linux-anquan/awa.webp" alt="Featured image of post VPS安全加固" />&lt;h2 id="vps安全加固">VPS安全加固&lt;/h2>
+&lt;p>VPS 用了快3个月，开始意识到之前 VPS 一点安全措施都没做。&lt;/p>
+&lt;blockquote>
+&lt;p>由于一台 vps 就相当于一台拥有独立 IP 的，直接暴露于互联网之上的电脑，这在为你带来便利的同时也直接让你的 vps 与危险画上了等号，密码穷举、DDOS 攻击、各种各样你想到的想不到的攻击方法都在等待着你，不要相信你那惊悚的创意能想出多么强大的密码，统计学告诉我们——还是相信 RSA 吧！&lt;/p>
+&lt;/blockquote>
+&lt;p>不信，我们在机器上跑几个命令看看吧。&lt;/p>
+&lt;ul>
+&lt;li>1.查看尝试暴力破解机器密码的人&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>sudo grep &amp;quot;Failed password for root&amp;quot; /var/log/auth.log | awk '{print $11}' | sort | uniq -c | sort -nr | more&lt;/code>&lt;/p>
+&lt;p>或者 &lt;code>cat /var/log/auth.log&lt;/code>&lt;br>
+​&lt;/p>
+&lt;ul>
+&lt;li>2.查看暴力猜用户名的人&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>sudo grep &amp;quot;Failed password for invalid user&amp;quot; /var/log/auth.log | awk '{print $13}' | sort | uniq -c | sort -nr | more&lt;/code>&lt;/p>
+&lt;p>看完倒吸一口可乐bushi&lt;/p>
+&lt;p>想破解我的 IP 有 14 个，看来必须行动起来了。&lt;/p>
+&lt;h2 id="采取行动">采取行动&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;code>root@vultr:~#&lt;/code> apt-get update&lt;br>
+&lt;code>root@vultr:~#&lt;/code> apt-get upgrade&lt;br>
+没用配置国内的源，速度嫌慢，就省略这步，否则需要等 20mins。&lt;br>
+对于自动每日更新，我们可以配置一些执行软件。至于是否必要，如果你的服务器只是用来安装一个 SS 或 SSR 应用，并没有其他非常重要的服务端服务，也许并不需要这种操作，因为这一过程实在太消耗时间和资源了。但是如果是有其他重要的数据服务，保证软件的安全补丁的及时更新还是十分必要的。&lt;/p>
+&lt;/blockquote>
+&lt;p>普通使用者，只在第一次安装，或在几个发行周期之后才去更新都没问题。&lt;/p>
+&lt;p>用户设置&lt;/p>
+&lt;p>启用公钥验证登入 ssh&lt;/p>
+&lt;p>在第一次部署 VPS 服务器没有勾选 SSH，删除重装其实最简单的办法。可是这样旧套餐就没了。只能在部署的服务器上手动添加 SSH key。&lt;/p>
+&lt;p>使用Xshell的密钥生成功能选择最高加密位数然后加上密码&lt;/p>
+&lt;p>关于 SSH key 的知识可参考&lt;br>
+&lt;a class="link" href="https://www.jianshu.com/p/1246cfdbe460" target="_blank" rel="noopener"
+>SSH key 的介绍与在 Git 中的使用&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.ssh.com/ssh/keygen/" target="_blank" rel="noopener"
+>ssh 官网&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.vultr.com/docs/how-do-i-generate-ssh-keys/" target="_blank" rel="noopener"
+>&lt;del>vultr 一直被墙IP的VPS 官网&lt;/del>&lt;/a>&lt;/p>
+&lt;p>2.将本地的公钥扔到服务器上去&lt;/p>
+&lt;p>要注意的是，你想要这对密钥登录哪个账户，就放到哪个账户下，比如我要自动登录 root，那么我就会这样做：&lt;/p>
+&lt;blockquote>
+&lt;p>mkdir ~/.ssh //如果当前用户目录下没有 .ssh 目录，就先创建目录&lt;br>
+chmod 700 ~/.ssh&lt;br>
+mv id_rsa.pub ~/.ssh&lt;br>
+cd .ssh&lt;br>
+mv id_rsa.pub authorized_keys //因为是新系统，就直接改名。 如果本身就有 authorized_keys 文件，就需要 cat id_rsa.pub &amp;raquo; authorized_keys。将文件内容追加入 authorized_keys。&lt;br>
+chmod 600 authorized_keys&lt;/p>
+&lt;/blockquote>
+&lt;p>关闭所有帐户 ssh 密码登录&lt;/p>
+&lt;blockquote>
+&lt;p>/etc/ssh/sshd_config&lt;/p>
+&lt;/blockquote>
+&lt;p>在如上目录找到 ssh 服务的配置文件，将如下字段进行修改：&lt;/p>
+&lt;blockquote>
+&lt;p>#PasswordAuthentication yes&lt;br>
+//修改为如下内容：&lt;br>
+PasswordAuthentication no //所有用户都不能以密码的方式登录了。&lt;br>
+RSAAuthentication yes&lt;br>
+PubkeyAuthentication yes&lt;br>
+//使用命令重启 ssh 服务：&lt;br>
+/etc/init.d/ssh restart&lt;br>
+另外，为了避免 Write failed: Broken pipe 错误，你也可以顺便在这个文档末尾加上下面一条命令，然后再重启 ssh 服务。&lt;br>
+ClientAliveInterval 60&lt;/p>
+&lt;/blockquote>
+&lt;p>更换默认 ssh 端口&lt;/p>
+&lt;blockquote>
+&lt;p>/etc/ssh/sshd_config&lt;/p>
+&lt;/blockquote>
+&lt;p>进入以上文件，注销 22 端口并新增。&lt;/p>
+&lt;blockquote>
+&lt;p>把#port 22&lt;br>
+改成port xxxxx //你定义的端口，任何 1024 – 65535 之间的数字。知名端口，常用于系统服务等，例如 http 服务的端口号是 80&lt;/p>
+&lt;/blockquote>
+&lt;p>一个没有防护的节点，就像带着流血的伤口，在鲨鱼出没的水域里游泳。俗称：肉鸡。&lt;br>
+网络虽然是自由的信息场，但也绝不是纯净的伊甸园。恩，得学会自我保护。&lt;/p></description></item></channel></rss>

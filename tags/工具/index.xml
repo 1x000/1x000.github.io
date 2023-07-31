@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;blockquote>
+&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
+&lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
+&lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
+&lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
+&lt;/blockquote>
+&lt;p>当我们连接到Wi-Fi网络时，我们通常会认为我们的连接是安全的。但是，有些人可能会利用Wi-Fi协议中的漏洞进行攻击，使得我们的设备无法继续与网络通信。这就是WiFi Deauthentication攻击的基本原理。&lt;/p>
+&lt;p>在本文中，我要介绍如何使用Kali Linux执行WiFi Deauthentication攻击。&lt;/p>
+&lt;pre>&lt;code>.-. ____
+/ \ / \
+/ \ | 0 0 |
+/ O \ | -- |
+/_________\ \______/
+/ \
+/ \
+/ \
+/ \
+/ \
+/_____________________\
+| |
+| kali-linux- |
+| wifi-deauth-attack- |
+| guide |
+|_____________________|
+| | | |
+|__| |__|
+&lt;/code>&lt;/pre>
+&lt;h2 id="准备工作">准备工作&lt;/h2>
+&lt;p>在开始之前，您需要准备以下工具：&lt;/p>
+&lt;ul>
+&lt;li>一台安装了Kali Linux的计算机。&lt;/li>
+&lt;li>一个支持监视模式的无线网卡（可用外置网卡）。&lt;/li>
+&lt;/ul>
+&lt;h2 id="步骤">步骤&lt;/h2>
+&lt;p>以下是执行WiFi Deauthentication攻击的基本步骤：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>打开终端并启用监视模式。您可以使用以下命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo airmon-ng start wlan0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>扫描可用的WiFi网络。您可以使用以下命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo airodump-ng wlan0mon
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这将显示周围的所有WiFi网络的详细信息，包括SSID、BSSID和信号强度等信息。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>找到您要攻击的WiFi网络的BSSID和信道。您可以在&lt;code>airodump-ng&lt;/code>的输出中找到这些信息。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>执行Deauthentication攻击。您可以使用以下命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo aireplay-ng --deauth &amp;lt;数量&amp;gt; -a &amp;lt;BSSID&amp;gt; -c &amp;lt;目标设备的MAC地址&amp;gt; wlan0mon
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在上面的命令中，&lt;code>&amp;lt;数量&amp;gt;&lt;/code>表示要发送的Deauthentication帧的数量，&lt;code>&amp;lt;BSSID&amp;gt;&lt;/code>表示要攻击的WiFi网络的BSSID，&lt;code>&amp;lt;目标设备的MAC地址&amp;gt;&lt;/code>表示要攻击的设备的MAC地址。&lt;code>wlan0mon&lt;/code>是启用了监视模式的接口名称。&lt;/p>
+&lt;p>您可以使用&lt;code>aireplay-ng&lt;/code>的其他选项来更改攻击的参数，例如更改攻击间隔时间或使用不同的攻击模式等。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;p>在执行WiFi Deauthentication攻击时，请注意以下几点：&lt;/p>
+&lt;ul>
+&lt;li>请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。&lt;/li>
+&lt;li>请勿将此技术用于未经授权的网络。&lt;/li>
+&lt;li>请勿将此技术用于任何非法用途。&lt;/li>
+&lt;/ul>
+&lt;h2 id="结论">结论&lt;/h2>
+&lt;p>WiFi Deauthentication攻击是一种利用WiFi协议漏洞的攻击方式，可以使得连接到特定WiFi网络的设备无法继续与该网络通信。在Kali Linux中，您可以使用&lt;code>aireplay-ng&lt;/code>和&lt;code>airmon-ng&lt;/code>这两个工具来执行此类攻击。但请注意，这种攻击可能会导致法律问题，因此请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。&lt;/p>
+&lt;h2 id="视频效果演示">视频效果演示&lt;/h2>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Fj411o7FC&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>想看具体教程可以到我的Youtube频道看（B站审核严）&lt;/p></description></item></channel></rss>

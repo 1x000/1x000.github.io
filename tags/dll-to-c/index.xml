@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DLL TO C on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/dll-to-c/</link><description>Recent content in DLL TO C on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 25 Feb 2023 15:14:47 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/dll-to-c/index.xml" rel="self" type="application/rss+xml"/><item><title>DLL反编译</title><link>https://blog.xpdbk.com/post/dllfby/</link><pubDate>Sat, 25 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/dllfby/</guid><description>&lt;blockquote>
+&lt;p>仅用来探讨技术和学习&lt;/p>
+&lt;p>下载学习之后请24小时内删除&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="dll-to-c">DLL TO C&lt;/h2>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/dllfby/dll.webp"
+width="968"
+height="542"
+srcset="https://blog.xpdbk.com/post/dllfby/dll_hu717fc75449aa7bbd18f226d626fea6f5_61162_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/dllfby/dll_hu717fc75449aa7bbd18f226d626fea6f5_61162_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="dll to c"
+class="gallery-image"
+data-flex-grow="178"
+data-flex-basis="428px"
+>&lt;/p>
+&lt;p>&lt;strong>DLL to C&lt;/strong>是一款可怕的DLL反编译工具，能够把DLL转换成可编译的C或C++代码，当您丢失DLL的源代码时，您可以用DLL to C，它能够把DLL转换回可编译的代码，并且具有生成数据结构和反汇编代码段的功能，和其它的反编译或反汇编工具最大的不同是：它生成的代码是可以直接编译运行的，它可以为所有数据段生成数据结构并拆解代码段，还可以生成函数关系树，然后可以方便地导出DLL中所需的指定特征，它可以将汇编代码转换成C代码，C代码也是可编译的，非常强大&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iQwL30ojfmhi" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>&lt;/p>
+&lt;p>访问密码：&lt;code>41ng&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>压缩密码&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">NbeV+lgz9Ce6m2da/8bkvXWr9nBtjfId
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="使用方法">使用方法&lt;/h2>
+&lt;p>1.运行Dll2C.exe
+2. 打开文件TestWin32Dll\Win32Dll.dll
+3. 单击“开始转换”按钮。
+4.将生成的文件复制到你的VC项目目录中，然后将复制的文件添加到你的VC项目中。
+5. 在您的 VC 项目中调用生成的代码。 您可以查看文件 TestWin32Dll\TestWin32Dll.cpp 以了解如何调用。&lt;/p>
+&lt;p>如果在编译或运行时出现错误，请尝试使用 Microsoft Visual Studio 2008 专业版进行编译。 如需更多帮助，请联系 &lt;a class="link" href="mailto:support@dll-decompiler.com" >support@dll-decompiler.com&lt;/a>&lt;/p>
+&lt;h2 id="dll-to-c-反编译效果源码">DLL TO C 反编译效果源码&lt;/h2>
+&lt;p>&lt;code>HPP.DLL&lt;/code> CS 1.6的纪&lt;/p>
+&lt;p>&lt;code>NorAdrenaline.DLL&lt;/code> CS1.6的纪&lt;/p></description></item></channel></rss>

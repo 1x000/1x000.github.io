@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blockSmc on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/blocksmc/</link><description>Recent content in blockSmc on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 26 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/blocksmc/index.xml" rel="self" type="application/rss+xml"/><item><title>BlockSmc服务器NCP反作弊+Verus反作弊绕过整合</title><link>https://blog.xpdbk.com/post/blocksmc-fdpclient/</link><pubDate>Wed, 26 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blocksmc-fdpclient/</guid><description>&lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/awa.webp" alt="Featured image of post BlockSmc服务器NCP反作弊+Verus反作弊绕过整合" />&lt;h2 id="bmc服务器配置">BMC服务器配置&lt;/h2>
+&lt;blockquote>
+&lt;p>注意：对于此配置请使用&lt;code>FDPClient&lt;/code>进行游玩&lt;/p>
+&lt;p>&lt;code>regedithaha20&lt;/code> 的论坛已经无了（隔墙挖床的功能来自此人）&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="bmc服务器特性列表必须掌握">BMC服务器特性列表（必须掌握）&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>范围时间&lt;/th>
+&lt;th>早上&lt;/th>
+&lt;th>中午&lt;/th>
+&lt;th>下午&lt;/th>
+&lt;th>晚上&lt;/th>
+&lt;th>夜晚&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>粗略时间&lt;/strong>&lt;/td>
+&lt;td>7点到11点&lt;/td>
+&lt;td>12点到3点&lt;/td>
+&lt;td>4点到7点&lt;/td>
+&lt;td>4点到10点&lt;/td>
+&lt;td>11点到7点&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>概率&lt;/strong>&lt;/td>
+&lt;td>15%到38%&lt;/td>
+&lt;td>36%到77%&lt;/td>
+&lt;td>45%到75%&lt;/td>
+&lt;td>80%到99%&lt;/td>
+&lt;td>29%到完全&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>表现形式&lt;/strong>&lt;/td>
+&lt;td>被/report非常可能ban&lt;/td>
+&lt;td>被/report可能会Ban&lt;/td>
+&lt;td>被/report直接被Ban&lt;/td>
+&lt;td>不用/report直接ban&lt;/td>
+&lt;td>甚至自动穿盔甲都ban&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>全部被Ban原因&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>反作弊 封禁24小时和7天&lt;/th>
+&lt;th style="text-align:center">客服（工作人员）检测 封禁7天&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Hacker&lt;/td>
+&lt;td style="text-align:center">aimbot&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Aimbot（杀戮检测）7天&lt;/td>
+&lt;td style="text-align:center">auto armor&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Fly（搭路检测）7天&lt;/td>
+&lt;td style="text-align:center">Fly&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>AutoArmor（高延迟原因）7天&lt;/td>
+&lt;td style="text-align:center">no knockback&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>常见问题简明解答&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>类型&lt;/th>
+&lt;th>被封禁&lt;/th>
+&lt;th>高延迟&lt;/th>
+&lt;th>卡&lt;/th>
+&lt;th>改进配置&lt;/th>
+&lt;th>可以咨询？&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>问题描述&lt;/td>
+&lt;td>连锁IP封禁&lt;/td>
+&lt;td>高于300ms&lt;/td>
+&lt;td>30FPS&lt;/td>
+&lt;td>我想改进你的配置&lt;/td>
+&lt;td>可以加你电报或者QQ咨询吗&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>解决方案&lt;/td>
+&lt;td>重启入户光猫&lt;/td>
+&lt;td>加速器&lt;/td>
+&lt;td>自己寻找优化MOD&lt;/td>
+&lt;td>跟我私聊&lt;/td>
+&lt;td>可以的有时间我回&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="常见问题复杂解答">常见问题复杂解答&lt;/h2>
+&lt;p>你的延迟高于&lt;code>300ms&lt;/code>（&lt;del>别玩了，不用加速器还想开军舰！&lt;/del>）。&lt;/p>
+&lt;p>（可以开自动骂人&lt;code>insult&lt;/code>）可以配置打完人自动阴阳怪气&lt;/p>
+&lt;p>&lt;strong>自动骂人配置的更改方法（仅用于FDP）&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;[&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% 我看你需要蛋白质 盖亚！\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% ^^看起来你需要IQ\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% ^^真的L哈哈\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% 这就是亼\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;]&amp;#34;&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="err">可以发挥你的全部的想象力&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/rrr.webp"
+width="1365"
+height="767"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/rrr_hufab1be46ba800f7fcbfd7ec69cac3158_40498_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/rrr_hufab1be46ba800f7fcbfd7ec69cac3158_40498_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="配置方法"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="427px"
+>&lt;/p>
+&lt;p>被服务器踢出去了你之后不要着急&lt;a class="link" href="https://zhidao.baidu.com/question/1546511523377942507.html?qbl=relate_question_4" target="_blank" rel="noopener"
+>重启光猫&lt;/a>请一定要重新进一下&lt;a class="link" href="https://blocksmc.com" target="_blank" rel="noopener"
+>服务器&lt;/a>看看是否真的被BAN。&lt;/p>
+&lt;p>&lt;del>一次重启光猫可以玩5次&lt;/del>（参考时间表）&lt;/p>
+&lt;p>重启光猫是在换你的IP，&lt;del>所有&lt;/del>的服务器都是基于IP ban的。&lt;/p>
+&lt;p>&lt;strong>我的经验：用正版号，这个服用正版封的比盗版慢。&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>我的材质包&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>这个&lt;a class="link" href="https://blog.xpdbk.com/post/minecraft-1.8.9-pack-hud/#v2-hud" target="_blank" rel="noopener"
+>PVP材质包和HUD配置 整合&lt;/a>里面&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>BlockSmc服务器IP&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>BMC服务器离线登陆IP（客服在后面追XD）:&lt;code>blocksmc.com&lt;/code>&lt;/p>
+&lt;p>BMC服务器正版登录IP（封的速度更慢）:&lt;code>premium.blocksmc.com&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="blocksmc预览图片">Blocksmc预览图片&lt;/h2>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/qda.webp"
+width="108"
+height="39"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/qda_hu222f085a38d152731933cce204890852_942_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/qda_hu222f085a38d152731933cce204890852_942_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="菜单"
+class="gallery-image"
+data-flex-grow="276"
+data-flex-basis="664px"
+> &lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/hh.webp"
+width="205"
+height="409"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/hh_hu550566bf535d39ecaa25250eed7f619f_9364_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/hh_hu550566bf535d39ecaa25250eed7f619f_9364_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="随机ID"
+class="gallery-image"
+data-flex-grow="50"
+data-flex-basis="120px"
+> &lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/yee.webp"
+width="322"
+height="51"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/yee_hu997931570403fbc2a8a24a0462f09c15_2712_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/yee_hu997931570403fbc2a8a24a0462f09c15_2712_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="注册"
+class="gallery-image"
+data-flex-grow="631"
+data-flex-basis="1515px"
+>&lt;/p>
+&lt;p>&lt;strong>服务器菜单里面的常用选项&lt;/strong> &lt;strong>随机ID器&lt;/strong> &lt;strong>注册方法&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/hh5.webp"
+width="500"
+height="416"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/hh5_hu5a6ae235b421ff7af889112504b8e61d_19272_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/hh5_hu5a6ae235b421ff7af889112504b8e61d_19272_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="封禁页面"
+class="gallery-image"
+data-flex-grow="120"
+data-flex-basis="288px"
+> &lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-02-05_18.05.06.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-02-05_18.05.06_hub4a92bff1f1f1b4fae0ff27bde3511f0_77086_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-02-05_18.05.06_hub4a92bff1f1f1b4fae0ff27bde3511f0_77086_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="注册成功"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+> &lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-02-05_18.07.13.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-02-05_18.07.13_hu175989dc695dd6195eb06432a663dc0c_81250_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-02-05_18.07.13_hu175989dc695dd6195eb06432a663dc0c_81250_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="别开杀戮"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;h2 id="本页离线页面-2023726版本">本页离线页面 2023.7.26版本&lt;/h2>
+&lt;blockquote>
+&lt;p>为了让网络不好的人能离线保存我的网页&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iaeLS13klakb" target="_blank" rel="noopener"
+>https://pvphack.lanzoue.com/iaeLS13klakb&lt;/a> 密码：2n43&lt;/p>
+&lt;h2 id="blocksmcv67">BlocksmcV6.7&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 升级FDP版本到5.3.5（我用5.3.0版本用的不耐烦了）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Scaffold再改了一点现在可以实现任意角度乱搭了&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 取消Scaffold的疾跑模式（因为开了疾跑模式在起床模式里面活不了多久）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 小VL杀戮（NCP和Verus）NCP只报小VL，Verus只报Aimbot&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> AutoBlock（防砍）为了让NCP和Verus不爆VL所以重新调整&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 试验版本的NCP Longjump（请勿使用）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 防不住客服（如果要防客服的话要用VAPE和Drip等演技端）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>演示视频： &lt;a class="link" href="https://www.bilibili.com/video/BV1Jh4y1575V" target="_blank" rel="noopener"
+>https://www.bilibili.com/video/BV1Jh4y1575V&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iTcZG13kkgbc" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码：&lt;code>d8dr&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>LEl_FENG_114514&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="blocksmc-b1基于v5的完全重置版">Blocksmc B1（基于V5的完全重置版）&lt;/h2>
+&lt;blockquote>
+&lt;p>之前的配置都太水了然后用不了&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 实现了Verus和NCP反作弊的彻底无VL搭路（重点）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 实现了预判的杀戮优化&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 删除Noslow（试验性）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 最新FDPClient 5.3.0 适配&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>演示视频 &lt;a class="link" href="https://www.bilibili.com/video/BV1D14y1276o" target="_blank" rel="noopener"
+>https://www.bilibili.com/video/BV1D14y1276o&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/i7Nzg10rfnmj" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码：&lt;code>a5ip&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>LEl_FENG_Config_1X9Hdas&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="blocksmc-v5-回归暴力">Blocksmc V5 （回归暴力）&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 再次优化搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 去除没用的step&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超级忽略反作弊但是忽略不了客服（安全也封客服乱ban人）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 修复了一些bug并适配最新构建FDP&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>[!] 请使用FDP 2023.5.13 最新构建版本&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iqtZ40w181sb" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码：&lt;code>667p&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>ConfigByLEl_FENG&lt;/code>&lt;/p>
+&lt;p>完整性校验（&lt;code>SHA-1&lt;/code>）：SHA1: &lt;code>c8dbcb975f742a5d8ba19da040e92a8bc907fe2e&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="blocksmc-v4-fix">Blocksmc v4 fix&lt;/h2>
+&lt;p>VEV LOG：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Noslow优化&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 删除部分暴力功能&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 防客服封号（只能防一点）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 新的step&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 防封慢速搭路&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>[!] 请使用FDP 5.2.7 版本&lt;/p>
+&lt;blockquote>
+&lt;p>压缩密码：&lt;code>4124124&lt;/code>&lt;/p>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/ifZkl0r3ac7a" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码：&lt;code>heza&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="lb-blocksmc-v1">LB+ Blocksmc V1&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>说明&lt;/th>
+&lt;th>键位&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Xray（透视）&lt;/td>
+&lt;td>K&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>起床模式&lt;/td>
+&lt;td>LCtrl&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>现代GUI&lt;/td>
+&lt;td>RShift&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>搭路&lt;/td>
+&lt;td>V&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>自动整理与拿东西&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>现代GUI&lt;/td>
+&lt;td>RShift&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>自动整理与拿东西&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>远古GUI&lt;/td>
+&lt;td>O&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>续写散文（大哥转头）&lt;/td>
+&lt;td>U&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>速度+转圈圈&lt;/td>
+&lt;td>X&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>安全搭路&lt;/td>
+&lt;td>Z&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>自动瞄准和自动射弓箭&lt;/td>
+&lt;td>B&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>不要按 &lt;code>L&lt;/code> 键 里面的功能都没用&lt;/p>
+&lt;p>这个搭路和杀戮都不稳定 我急忙做出来的&lt;/p>
+&lt;p>演示视频： &lt;a class="link" href="https://www.bilibili.com/video/BV18j411u7cj" target="_blank" rel="noopener"
+>https://www.bilibili.com/video/BV18j411u7cj&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>自释放压缩包密码&lt;code>AwT9Y2Y8&lt;/code>&lt;/p>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iaeDG0psodfg" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 蓝奏云访问密码：&lt;code>2t5r&lt;/code>&lt;/p>
+&lt;p>本文件是安全的不要魔改之后来栽赃我&lt;/p>
+&lt;p>压缩文件完整性校验 ↓&lt;/p>
+&lt;p>名称: &lt;code>BMC LB+ V1.exe&lt;/code>&lt;/p>
+&lt;p>大小: &lt;code>37576309&lt;/code> 字节 (&lt;code>35&lt;/code> MiB)&lt;/p>
+&lt;p>CRC32: &lt;code>91172A6B&lt;/code>&lt;/p>
+&lt;p>CRC64: &lt;code>692D82CC985ADF55&lt;/code>&lt;/p>
+&lt;p>SHA256: &lt;code>133daad85166cf8373c7efbbe6a20f5e1f3e4290d75a91065b05bd0d65118ad0&lt;/code>&lt;/p>
+&lt;p>SHA1: &lt;code>90d7c0982457e41d953f4b2f3ca19812075ae6c6&lt;/code>&lt;/p>
+&lt;p>BLAKE2sp: &lt;code>7b8f2edd208b079c4fdb31fcb41610787754e11b915089039dfb29b60bca0e70&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="bmc-fdp-v35-配置开源起床战争增强">BMC FDP V3.5 配置（开源+起床战争增强）&lt;/h2>
+&lt;p>&lt;strong>开源库（没人贡献哈哈）&lt;/strong>&lt;/p>
+&lt;p>&lt;code>GITHUB&lt;/code>仓库&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-link" data-lang="link">&lt;span class="line">&lt;span class="cl">&lt;span class="err">https://github.com/1x000/BMC/&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>GITEE&lt;/code>仓库&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-link" data-lang="link">&lt;span class="line">&lt;span class="cl">&lt;span class="err">https://gitee.com/cat-owo/BMC/&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>蓝奏云&lt;/p>
+&lt;p>JSON配置（配置本体）&lt;/p>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/ihzKq0mpn8xc" target="_blank" rel="noopener"
+>https://pvphack.lanzoue.com/ihzKq0mpn8xc&lt;/a>&lt;br>
+密码:&lt;code>co9a&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>biexiang114514&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>DEV 日志&lt;/p>
+&lt;p>&lt;code>V3.5相对于V3:&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 隔空挖床&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> NCP longjump Lmao FLY（不要用不稳定）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> NCP 自动搭路加强（Tower不回弹）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 增加安全搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 进一步完善客户端&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> killaura CPS加强&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 自动登录（&lt;del>登dua郎&lt;/del>）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 不封的暴力刀爆&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> Rise同款 ZOOM FLY&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 无顶头瞬间FLY&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>[!] 不要使用 FASTUSE FASTUSE 仅为测试版&lt;/p>
+&lt;p>[!]不要长时间使用TOWER（稳定待测试）&lt;/p>
+&lt;p>[!] 隔空挖床不会被检测，但在挖床时请关掉 killaura（做一个冲锋队）&lt;/p>
+&lt;p>对于此配置请使用&lt;code>FDP5.1.5&lt;/code>或者&lt;code>5.1&lt;/code>版本&lt;/p>
+&lt;p>&lt;strong>起床演示视频&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.bilibili.com/video/BV1iG4y1U7aH" target="_blank" rel="noopener"
+>https://www.bilibili.com/video/BV1iG4y1U7aH&lt;/a>&lt;/p>
+&lt;p>&lt;strong>空岛演示视频&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.bilibili.com/video/BV1oR4y1B7pZ" target="_blank" rel="noopener"
+>https://www.bilibili.com/video/BV1oR4y1B7pZ&lt;/a>&lt;/p>
+&lt;p>&lt;strong>搭路测试&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.bilibili.com/video/BV1XY411v7dR" target="_blank" rel="noopener"
+>https://www.bilibili.com/video/BV1XY411v7dR&lt;/a>&lt;/p>
+&lt;h2 id="bmc-fdp-v3-配置-配置增强">BMC FDP V3 配置 （配置增强）&lt;/h2>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-01-13_07.38.24.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-01-13_07.38.24_hu1d48190bc4bac09e4a9964725517f535_60496_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/2023-01-13_07.38.24_hu1d48190bc4bac09e4a9964725517f535_60496_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="NCP"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;p>BMC配置的DEV log:&lt;/p>
+&lt;p>&lt;code>V3配置相对于V3 start的DEV log:&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 合法的Speed&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 简单的键位设置&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超简洁HUD&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> NCP ZOOM FLY（抱歉我还没时间解决）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> NCP 不封的搭路（需要时间解决谢谢提醒）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 修复老版配置BUG（搭路回弹+边缘卡方块间歇性封号）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 修复了杀戮瞄准不了的问题&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 删减了一些影响帧数的视觉&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 轻量的HUD&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 合法暴击&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 修复搭路非法发包封号&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 需要IQ和电脑即可游玩&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 没用的的Nofall&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>[!]请一定要把游戏语言变成英文语言！ 不然会乱码&lt;/p>
+&lt;p>[!]查看键位请按你的键盘上的 &lt;code>Alt&lt;/code>&lt;/p>
+&lt;p>&lt;strong>v3 start&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> FDP主程序更新到了5.1.5&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 删除无用的视觉（优化嘛）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定的魔力转圈圈&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 更快的speed（在视觉上）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 修复老配置的bug&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>[!]请一定要把游戏语言变成英文语言！ 不然会乱码&lt;/p>
+&lt;p>[!]查看键位请按你的键盘上的 &lt;code>Alt &lt;/code>&lt;/p>
+&lt;blockquote>
+&lt;p>压缩包密码：&lt;code>A1VnCzA5&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>访问密码：&lt;code>9pbj&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/i0dOU0gv8i2b" target="_blank" rel="noopener"
+>配置下载&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>对于此配置请使用&lt;code>FDP5.1.5&lt;/code>或者&lt;code>5.1&lt;/code>版本&lt;/p>
+&lt;p>新版 5.1.5 FDP下载 &lt;a class="link" href="https://pvphack.lanzoue.com/iRRzE0hpsxdc" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码: &lt;code>1be6&lt;/code>&lt;/p>
+&lt;p>5.1.5版本 演示视频:&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.bilibili.com/video/BV1Q8411L7Uh" target="_blank" rel="noopener"
+>https://www.bilibili.com/video/BV1Q8411L7Uh&lt;/a>&lt;/p>
+&lt;h2 id="更新手机版本电脑削弱版">更新手机版本（电脑削弱版）&lt;/h2>
+&lt;blockquote>
+&lt;p>手机版端文件&lt;a class="link" href="https://pvphack.lanzoue.com/ixV0q0kdln6j" target="_blank" rel="noopener"
+>下载&lt;/a> 访问密码：&lt;code>27vw&lt;/code>&lt;/p>
+&lt;p>澪启动器原版&lt;a class="link" href="https://wwi.lanzouw.com/iiabLzt3vmf" target="_blank" rel="noopener"
+>下载&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>手机版本 注意事项：&lt;/p>
+&lt;p>把1.8.9文件夹复制到手机的&lt;/p>
+&lt;p>&lt;code>/MioLancher/.minecraft/versions/复制到这来&lt;/code>&lt;/p>
+&lt;p>&lt;code>.minecraft&lt;/code>是隐藏的所以需要进入官方手机文件管理里面打开&lt;code>显示隐藏文件功能&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/awa.webp"
+width="1110"
+height="342"
+srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/awa_hu589afea931d2d9979ae42c94e7212f3e_24626_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/awa_hu589afea931d2d9979ae42c94e7212f3e_24626_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="文件管理"
+class="gallery-image"
+data-flex-grow="324"
+data-flex-basis="778px"
+>&lt;/p>
+&lt;p>你懒的话可以使用MT管理器&lt;/p>
+&lt;p>&lt;a class="link" href="https://mt2.cn/" target="_blank" rel="noopener"
+>MT管理器下载&lt;/a>&lt;/p>
+&lt;p>[!] MT管理器请谨慎使用，可能会毁掉你的数据！（别问我是怎么知道的）&lt;/p>
+&lt;p>演示视频: &lt;a class="link" href="https://www.bilibili.com/video/BV1XR4y1m7vd" target="_blank" rel="noopener"
+>https://www.bilibili.com/video/BV1XR4y1m7vd&lt;/a>&lt;/p></description></item><item><title>BMC服务器配置 整合版</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-bmc-config/</link><pubDate>Sat, 13 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-bmc-config/</guid><description>&lt;h2 id="bmc服务器配置">BMC服务器配置&lt;/h2>
+&lt;p>请到 &lt;a class="link" href="https://blog.xpdbk.com/post/blocksmc-fdpclient" target="_blank" rel="noopener"
+>https://blog.xpdbk.com/post/blocksmc-fdpclient&lt;/a> 查看新文章&lt;/p></description></item><item><title>Blocksmc V3 电脑+手机版端</title><link>https://blog.xpdbk.com/post/bmc-phone/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bmc-phone/</guid><description>&lt;h2 id="bmc-电脑配置手机端">BMC 电脑配置+手机端&lt;/h2>
+&lt;p>请到 &lt;a class="link" href="https://blog.xpdbk.com/post/blocksmc-fdpclient" target="_blank" rel="noopener"
+>https://blog.xpdbk.com/post/blocksmc-fdpclient&lt;/a> 查看新文章&lt;/p></description></item></channel></rss>
