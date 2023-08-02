@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/post/</link><description>Recent content in Posts on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 27 Jul 2023 10:11:14 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>记一次博客被反向代理</title><link>https://blog.xpdbk.com/post/web-fake-fandai/</link><pubDate>Thu, 27 Jul 2023 10:11:14 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-fake-fandai/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-fake-fandai/photo_2023-07-27_21-08-20.webp" alt="Featured image of post 记一次博客被反向代理" />&lt;p>昨天闲来无事在看谷歌分析统计出来的数据，看到了一条从来没见过的域名的引用，原本以为是那种采集站或者是谁参考了我的文章，打算去看看的，但是打开页面之后直接看到打开了我的博客（原封不动）。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/post/</link><description>Recent content in Posts on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 01 Aug 2023 22:15:20 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM LiuxOne服务器白嫖</title><link>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</link><pubDate>Tue, 01 Aug 2023 22:15:20 +0700</pubDate><guid>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>提醒自己的句子</title><link>https://blog.xpdbk.com/post/jitang-juzi/</link><pubDate>Tue, 01 Aug 2023 22:14:58 +0700</pubDate><guid>https://blog.xpdbk.com/post/jitang-juzi/</guid><description>&lt;h2 id="正文">正文&lt;/h2>
+&lt;blockquote>
+&lt;p>取长补短&lt;/p>
+&lt;/blockquote>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>因为&lt;/th>
+&lt;th>结果&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>性子越急&lt;/td>
+&lt;td>智慧越低&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>性子越稳&lt;/td>
+&lt;td>智慧越深&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>脾气越大&lt;/td>
+&lt;td>身体越差&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>脾气越稳&lt;/td>
+&lt;td>福报越深&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>声音越大&lt;/td>
+&lt;td>修行越差&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>声音越柔&lt;/td>
+&lt;td>修行越好&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>心胸越宽&lt;/td>
+&lt;td>家庭越安&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>格局越大&lt;/td>
+&lt;td>事业越顺&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="不生气">不生气&lt;/h2>
+&lt;blockquote>
+&lt;p>生气了不如把生气的时间用到自己身上&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>
+&lt;p>不要跟婚姻过不去&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>不要跟朋友过不去&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>不要跟孩子过不去&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="改变">改变&lt;/h2>
+&lt;p>心里不明白，不启发&lt;/p>
+&lt;p>别人想改变自己，才启发&lt;/p>
+&lt;p>别人改变不了，只能改变自己&lt;/p>
+&lt;p>自己是自己最大的敌人&lt;/p></description></item><item><title>记一次博客被反向代理</title><link>https://blog.xpdbk.com/post/web-fake-fandai/</link><pubDate>Thu, 27 Jul 2023 10:11:14 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-fake-fandai/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-fake-fandai/photo_2023-07-27_21-08-20.webp" alt="Featured image of post 记一次博客被反向代理" />&lt;p>昨天闲来无事在看谷歌分析统计出来的数据，看到了一条从来没见过的域名的引用，原本以为是那种采集站或者是谁参考了我的文章，打算去看看的，但是打开页面之后直接看到打开了我的博客（原封不动）。&lt;/p>
 &lt;p>内容不能说一模一样吧，只能说连页面的结构都一样。见过采集的也见过参考的，但是还没见过整个站都反代过去的。。。&lt;/p>
 &lt;hr>
 &lt;h2 id="一开始">一开始&lt;/h2>
