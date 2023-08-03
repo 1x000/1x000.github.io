@@ -1,1 +1,126 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linuxone on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/linuxone/</link><description>Recent content in linuxone on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 01 Aug 2023 22:15:20 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/linuxone/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM LiuxOne服务器白嫖</title><link>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</link><pubDate>Tue, 01 Aug 2023 22:15:20 +0700</pubDate><guid>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</guid><description>&lt;p>awa&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linuxone on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/linuxone/</link><description>Recent content in linuxone on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 01 Aug 2023 22:15:20 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/linuxone/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM LiuxOne服务器白嫖</title><link>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</link><pubDate>Tue, 01 Aug 2023 22:15:20 +0700</pubDate><guid>https://blog.xpdbk.com/post/ibm-linuxone-freevps/</guid><description>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/linux1.webp" alt="Featured image of post IBM LiuxOne服务器白嫖" />&lt;blockquote>
+&lt;p>在白嫖的VPS中，有需要验证信用卡的，也有不需要验证信用卡的，这篇教程就来和大家申请一台Linux One的IPv4 VPS&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="准备材料">准备材料&lt;/h2>
+&lt;ul>
+&lt;li>一个邮箱（最好是 gmail、QQ 之类的冷门邮箱实测我的 &lt;a class="link" href="mailto:xiaopang@xpdbk.com" >xiaopang@xpdbk.com&lt;/a> 这种类型的邮箱也能注册）&lt;/li>
+&lt;/ul>
+&lt;h2 id="申请流程">申请流程&lt;/h2>
+&lt;blockquote>
+&lt;p>如果你才被封号，请换一个代理或者IP再次注册，不然你的邮箱会连跪&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>使用本地网络打开注册页面，点击 &lt;strong>Register&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg.webp"
+width="458"
+height="458"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg_hud42c69d98535ad19a9352b041bdc4469_11122_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg_hud42c69d98535ad19a9352b041bdc4469_11122_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="注册"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>&lt;/p>
+&lt;ol start="2">
+&lt;li>输入邮箱和名字、以及申请用途（尽量真实一点），然后点击 &lt;strong>Request your trial&lt;/strong> 按钮&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>圈红圈的你可以用你的脑子想出最偏门的名字&lt;/p>
+&lt;p>圈篮圈的必须和你所在地对应不然申请不过&lt;/p>
+&lt;p>圈黑圈的理由必须要真实一点（&lt;del>我拿Linux打游戏&lt;/del>）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg2.webp"
+width="1365"
+height="661"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg2_hu50280f329d5081927f4ce6169a6126b9_22666_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/reg2_hu50280f329d5081927f4ce6169a6126b9_22666_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="注册过程"
+class="gallery-image"
+data-flex-grow="206"
+data-flex-basis="495px"
+>&lt;/p>
+&lt;ol start="3">
+&lt;li>如果出现图中提示，即代表账户申请成功了&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/5rf4.webp"
+width="730"
+height="144"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/5rf4_hu3941e36aeac54f8b3ed5ac6b42c3bebf_7352_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/5rf4_hu3941e36aeac54f8b3ed5ac6b42c3bebf_7352_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="成功注册"
+class="gallery-image"
+data-flex-grow="506"
+data-flex-basis="1216px"
+>&lt;/p>
+&lt;ol start="4">
+&lt;li>点击邮件中的链接激活账号&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%9542%E8%8E%B7.webp"
+width="1076"
+height="523"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%9542%E8%8E%B7_hu493a28de1fc5f958a3b6cb75c11b19db_45510_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%9542%E8%8E%B7_hu493a28de1fc5f958a3b6cb75c11b19db_45510_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="账号激活邮箱"
+class="gallery-image"
+data-flex-grow="205"
+data-flex-basis="493px"
+>&lt;/p>
+&lt;ol start="5">
+&lt;li>登录账户之后，另外一封邮件会提示账户到期时间。到时候还是可以使用同一邮箱继续注册续下去&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%95%E8%8E%B7.webp"
+width="1365"
+height="671"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%95%E8%8E%B7_hue08940d8142ec5b62d97b4d63a701301_68788_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/%E6%8D%95%E8%8E%B7_hue08940d8142ec5b62d97b4d63a701301_68788_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="剩余时间邮件"
+class="gallery-image"
+data-flex-grow="203"
+data-flex-basis="488px"
+>&lt;/p>
+&lt;ol start="6">
+&lt;li>点开之后按照顺序选择就行了&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/23.webp"
+width="1294"
+height="600"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/23_hu79a79a911829247c9181d0d963c8acaa_25374_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/23_hu79a79a911829247c9181d0d963c8acaa_25374_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="机器界面"
+class="gallery-image"
+data-flex-grow="215"
+data-flex-basis="517px"
+>&lt;/p>
+&lt;ol start="7">
+&lt;li>等待1-4分钟后，控制面板将会出现VPS的IP、登录用户名&lt;/li>
+&lt;/ol>
+&lt;h2 id="体验">体验&lt;/h2>
+&lt;blockquote>
+&lt;p>配置很好&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ibm-linuxone-freevps/54636.webp"
+width="878"
+height="417"
+srcset="https://blog.xpdbk.com/post/ibm-linuxone-freevps/54636_hu7c3898ebf334f5d5cc95898dffe3ccb2_33126_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ibm-linuxone-freevps/54636_hu7c3898ebf334f5d5cc95898dffe3ccb2_33126_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="配置测试"
+class="gallery-image"
+data-flex-grow="210"
+data-flex-basis="505px"
+>&lt;/p>
+&lt;h2 id="封号常见原因">封号常见原因&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>大流量&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CPU占用长期满（不算）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>对网络IO占用时间过长&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>有IPV4有速度有配置&lt;/p>
+&lt;p>容易封号嗝屁&lt;/p></description></item></channel></rss>
