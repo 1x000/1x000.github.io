@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LEl_FENG Blog</title><link>https://blog.xpdbk.com/en/</link><description>Recent content on LEl_FENG Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>blockdrop server FDP config</title><link>https://blog.xpdbk.com/en/post/blockdrop-bp/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/en/post/blockdrop-bp/</guid><description>&lt;img src="https://blog.xpdbk.com/en/post/blockdrop-bp/ewe.webp" alt="Featured image of post blockdrop server FDP config" />&lt;h2 id="blockdrop-bypass">Blockdrop bypass&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LEl_FENG Blog</title><link>https://blog.xpdbk.com/en/</link><description>Recent content on LEl_FENG Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.xpdbk.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>LK 99 Is this superconductor fake?</title><link>https://blog.xpdbk.com/en/post/lk99-superconductor/</link><pubDate>Thu, 03 Aug 2023 08:21:58 +0700</pubDate><guid>https://blog.xpdbk.com/en/post/lk99-superconductor/</guid><description>&lt;h3 id="lk-99-a-controversial-claim-of-room-temperature-superconductivity">LK-99: A Controversial Claim of Room-Temperature Superconductivity&lt;/h3>
+&lt;p>Superconductivity is the phenomenon of zero electrical resistance and expulsion of magnetic fields in certain materials when they are cooled below a critical temperature. Superconductors have many applications, such as magnetic resonance imaging, quantum computing, and high-speed trains. However, most superconductors require extremely low temperatures (below -200 °C) and high pressures to operate, which limits their practical use.&lt;/p>
+&lt;p>In this article, we introduce LK-99, a novel material that claims to be a superconductor at room temperature and ambient pressure. LK-99 is a mix of powdered compounds of lead, oxygen, sulphur and phosphorus. When it is heated at very high temperatures, it forms a dark grey solid. According to the new research, the material exhibits some of the common characteristics of superconductors, such as zero resistivity, critical current, and a critical magnetic field.&lt;/p>
+&lt;p>LK-99 was first discovered and manufactured by a team of researchers including Sukbae Lee and Ji-Hoon Kim from Korea University. The team claims that LK-99 functions as a superconductor at ambient pressure and below 400 K (127 °C; 260 °F). As of 3 August 2023, the synthesis of LK-99 and observation of its superconductivity at any temperature have not been peer-reviewed or independently replicated. The announcement was widely shared and the reaction by the scientific world was mainly skeptical due to the extraordinary nature of the claims, the repeated failure of previous claims of room-temperature superconductors, and errors and inconsistencies in the pre-published papers. Independent teams are attempting to replicate the South Korean team&amp;rsquo;s work, with results expected in August 2023 owing to the straightforward method of producing the material.&lt;/p>
+&lt;p>The claim of LK-99 has also sparked a race among DIY enthusiasts and amateur scientists to reproduce the experiment at home or in their labs. Some of them have posted videos on Bilibili, a Chinese video-sharing platform, showing their attempts to synthesize LK-99 and test its magnetic properties. One of the most popular videos was posted by an account named &amp;ldquo;Guan Shan Kou Male Technician&amp;rdquo;, who claimed to have successfully synthesized LK-99 crystals that can levitate over a magnet with a larger angle than the original paper. However, he also said that he still needs to verify the electrical resistance to confirm the superconductivity.&lt;/p>
+&lt;p>The claim of LK-99 has also received some support from theoretical calculations. A team from Lawrence Berkeley National Laboratory in the US published a paper on arXiv, claiming that they have found the theoretical basis for the superconductivity of copper-doped lead phosphate apatite, which is the structure of LK-99. They used computer models to describe the characteristics that a room-temperature superconductor should have, and found that LK-99 matches those criteria.&lt;/p>
+&lt;p>If confirmed, LK-99 would be a breakthrough in the field of superconductivity and could have a huge impact on many industries, such as electronics, energy, and transportation. However, until then, LK-99 remains a controversial and unverified claim that needs further investigation and validation.&lt;/p></description></item><item><title>blockdrop server FDP config</title><link>https://blog.xpdbk.com/en/post/blockdrop-bp/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/en/post/blockdrop-bp/</guid><description>&lt;img src="https://blog.xpdbk.com/en/post/blockdrop-bp/ewe.webp" alt="Featured image of post blockdrop server FDP config" />&lt;h2 id="blockdrop-bypass">Blockdrop bypass&lt;/h2>
 &lt;h2 id="blockdrop-config">Blockdrop config&lt;/h2>
 &lt;h3 id="v1-formal-edition">V1 formal edition&lt;/h3>
 &lt;blockquote>
@@ -54,48 +60,120 @@ class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
 >&lt;/p>
-&lt;h2 id="aboutmessage">&amp;ldquo;About/Message&amp;rdquo;&lt;/h2>
-&lt;p>I&amp;rsquo;m a high school student who loves to toss&lt;/p>
+&lt;h2 id="hiiiii-i-am-chubby">Hiiiii, I am chubby&lt;/h2>
+&lt;p>&lt;code>LEl_FENG&lt;/code> named this mainly because of my wonderful inspiration doge at that time&lt;/p>
+&lt;p>&lt;code>Qing_Shaun&lt;/code> messed up (&lt;/p>
+&lt;p>&lt;code>lbwnb21&lt;/code> is the name of my original MC account and also integrates my 2B2T memories&lt;/p>
+&lt;p>I am a high school student who loves tossing (Jala is a sophomore)&lt;/p>
 &lt;p>This blog was created by me at the age of 14 in 2022 (record)&lt;/p>
-&lt;p>my screen name：&lt;code>LEl_FENG&lt;/code>&lt;/p>
-&lt;h2 id="your-group-chat">your group chat？&lt;/h2>
-&lt;p>answer：At this &lt;a class="link" href="https://t.me/xianliaoclub" target="_blank" rel="noopener"
->Telegram: Contact @xianliaoclub&lt;/a> 。&lt;/p>
-&lt;h2 id="my-hobbies">🌵my hobbies:&lt;/h2>
-&lt;p>👦digital equipment&lt;/p>
-&lt;p>👨‍💻electronic product&lt;/p>
-&lt;p>💪Operating system, especially win7+VM and jailbroken IOS system&lt;/p>
-&lt;p>✍️write a blog&lt;/p>
-&lt;p>👋play games like most gun games and my favorite minecraft&lt;/p>
-&lt;p>🎉python programming&lt;/p>
-&lt;p>🔮Music, such as hits or electronic music&lt;/p>
-&lt;p>♂not gay&lt;/p>
-&lt;p>🃏I like nature and small animals&lt;/p>
+&lt;ul>
+&lt;li>Linux Windows Party&lt;/li>
+&lt;li>Favorite editors are VS Code and EditPlus&lt;/li>
+&lt;li>Know some PV production and photography (PR, PS) and have done PV editing&lt;/li>
+&lt;li>Now learning to draw&lt;/li>
+&lt;/ul>
 &lt;hr>
-&lt;h2 id="some-of-my-sites">some of my sites&lt;/h2>
-&lt;p>&lt;a class="link" href="https://faka.xpdbk.com/" target="_blank" rel="noopener"
->my store&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://ziyuan.xpdbk.com/" target="_blank" rel="noopener"
->Free integration pack resource site&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://pan.xpdbk.com/" target="_blank" rel="noopener"
->Traffic consumption site&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://jigou.xpdbk.com/" target="_blank" rel="noopener"
->hacker go&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://leak.xpdbk.com" target="_blank" rel="noopener"
->free Resource site&lt;/a>&lt;/p>
+&lt;p>My tags: post-00s, INTP personality, love of technology, uncomfortable without tossing, minimalist perfectionist&amp;hellip;&lt;/p>
 &lt;hr>
-&lt;h3 id="good-at">💪good at：&lt;/h3>
-&lt;p>Write HTML, CSS, JS&lt;/p>
-&lt;p>Able to use Windows, Linux, macos, iOS, Android proficiently&lt;/p>
-&lt;p>A little Ae, Pr&lt;/p>
-&lt;p>A little Word, Excel, PowerPoint&lt;/p>
-&lt;p>FPS game&lt;/p>
-&lt;p>minecraft hacker&lt;/p>
-&lt;p>CS1.6 hacker&lt;/p>
+&lt;h2 id="self-portrait">self-portrait&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> ▃▆█▇▄▖
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">▟◤ ▖ ◥█▎
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">◢◤ ▐ ▐▉
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">▗◤ ▂ ▗▖ ▕█▎
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">◤ ▗▅▖◥▄ ▀◣ █▊
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">▐ ▕▎◥▖◣◤◢██
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">█◣ ◥▅█▀ ▐██◤
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ▐█▙▂ ◢██◤
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ◥██◣◢▄◤
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="contact-me">Contact me&lt;/h2>
+&lt;p>&lt;strong>TG&lt;/strong>: &lt;a class="link" href="https://l.xpdbk.com/dt52S6" target="_blank" rel="noopener"
+>https://l.xpdbk.com/dt52S6&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Email&lt;/strong>: &lt;a class="link" href="mailto:huaweilaomke402@gmail.com" >huaweilaomke402@gmail.com&lt;/a>&lt;/p>
 &lt;hr>
-&lt;h3 id="connect">🃏connect：&lt;/h3>
-&lt;p>Email：&lt;code>huaweilaomke402@gmail.com&lt;/code>&lt;/p>
+&lt;h2 id="my-hobbies">🌵My hobbies:&lt;/h2>
+&lt;p>Interests and hobbies: The interests are too extensive, so I won’t list them. Anyway, it’s &amp;ldquo;know everything, but not good at everything&amp;rdquo;.&lt;/p>
 &lt;hr>
-&lt;h3 id="message">👺message&lt;/h3>
+&lt;h2 id="about-the-site">About the site&lt;/h2>
+&lt;p>The name of the site is xpdbk. When I registered the domain name, I thought about a name that was easy to pronounce for a long time, and I came up with such a thing. In fact, the meaning of this name is &lt;strong>Little Pang’s Blog&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;h2 id="build-a-site">Build a site:&lt;/h2>
+&lt;blockquote>
+&lt;p>Why build this blog?&lt;/p>
+&lt;/blockquote>
+&lt;p>This blog is built to share some more interesting and fun things, and at the same time record some tossing processes. The core reason is because I want to localize the articles I wrote and don&amp;rsquo;t want to be deleted&lt;/p>
+&lt;blockquote>
+&lt;p>How to start a blog?&lt;/p>
+&lt;/blockquote>
+&lt;p>you can learn from the basics&lt;/p>
+&lt;blockquote>
+&lt;p>Why static framework - Hugo?&lt;/p>
+&lt;/blockquote>
+&lt;p>In fact, I used hexo and vuepress in the early days, but in the end they gave up because they were not compatible with Windows7. Later, I discovered hugo, which was quite easy to use. It avoided the bloat of npm and the excessive dependence on the network and system, which made me feel instantly It&amp;rsquo;s very cool, and the migration of the theme is more convenient. I have been using it until now, and there is a &lt;code>hugo-theme-stack&lt;/code> on hugo that I am quite satisfied with. Static blogs are easier to manage and operate. A novice like me is not suitable for playing dynamic blogs at present, and dynamic blogs don’t have the spare time to deal with attacks and performance, so I have to choose static blogs&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;h2 id="my-device">My device&lt;/h2>
+&lt;p>PC: Acer 4739Z 2011&lt;/p>
+&lt;p>Mouse: 9.9 pieces of office mouse (support DC)&lt;/p>
+&lt;p>Keyboard: second-hand Internet cafe green axis mechanical keyboard (model unknown)&lt;/p>
+&lt;p>MobilePhone: iPhone6 US 16G Rose Gold&lt;/p>
+&lt;hr>
+&lt;h2 id="contact">🃏Contact:&lt;/h2>
+&lt;p>E-mail: &lt;code>huaweilaomke402@gmail.com&lt;/code>&lt;/p>
+&lt;hr>
+&lt;h2 id="leave-a-comment">👺Leave a comment&lt;/h2>
 &lt;p>You can leave your footprints here, do not spread advertisements and bad remarks&lt;/p>
+&lt;hr>
+&lt;h2 id="my-history-site-memorial">My History Site (Memorial)&lt;/h2>
+&lt;p>&lt;a class="link" href="https://web.archive.org/web/20220428105733/https://hlmc.ga/" target="_blank" rel="noopener"
+>HLM Organization Official Website 1&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://web.archive.org/web/20220426093245/https://hlmmc.ga/" target="_blank" rel="noopener"
+>HLM Organization Official Website 2&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://web.archive.org/web/20230526225711/https://abaaba.cyou/" target="_blank" rel="noopener"
+>Historical Address 1&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://web.archive.org/web/20230719164818/http://xpdbk.top/" target="_blank" rel="noopener"
+>Historical Address 2&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="blog-chronicle-monthly-history">Blog Chronicle Monthly History&lt;/h2>
+&lt;blockquote>
+&lt;p>Historic&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="january-2023">January 2023&lt;/h3>
+&lt;p>01-20 Xpdbk domain name registration&lt;/p>
+&lt;h3 id="february-2023">February 2023&lt;/h3>
+&lt;p>02-08 Added an emoticon package
+&lt;strong>02-09 Start planning to build a site based on &lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
+>hugo&lt;/a> framework and &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
+>stack&lt;/a> theme&lt;/strong>
+02-10 &amp;ldquo;About&amp;rdquo; page added &lt;strong>Blog Chronicle&lt;/strong>
+02-13 Site Migration to WordPress Framework&lt;/p>
+&lt;h3 id="march-2023">March 2023&lt;/h3>
+&lt;p>03-XX site added RSS, Music service migrated to Vercel&lt;/p>
+&lt;h3 id="april-2023">April 2023&lt;/h3>
+&lt;p>04-29 Footer part of the code modification, adding various elements&lt;/p>
+&lt;h3 id="may-2023">May 2023&lt;/h3>
+&lt;p>05-02 Optimized Waline&amp;rsquo;s emoticon pack loading speed&lt;/p>
+&lt;h3 id="july-2023">July 2023&lt;/h3>
+&lt;p>07-16 The site-wide cache of CF CDN was cancelled, and a new CDN was used to improve the access speed of visitors&lt;/p>
+&lt;p>Our story continues&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;h2 id="bless">bless&lt;/h2>
+&lt;details>
+&lt;summary>Expand details:&lt;/summary>
+I wish you all big PHP errors in the new year, all fileinfo cannot be installed, npm/composer install all reports errors, Laravel Mix all reports unknown errors, all servers crash, computers report errors, Linux rm rf, databases are deleted , CN2 detours, all lines are blocked, all overseas websites are walled, server bombs, gateways have no response, proxy 50O, website 502, several RAID groups are bombed together, UPS explodes, DDOS CC is constant all year round, traffic is few Thousands of T, hundreds of millions of concurrency, all ping times out, all filings are all re-examined, resources are 404, SSL is all redirected, CDN does not return to the source, crawlers will never come to your home, zero eggs are included, database timeouts, front-ends are always 502, and IPs are always blocked 80,443, blue screen on Windows startup, Kernel Panic on Linux startup, five countries on macOS startup, server iDRAC/iLO/IPMI/KVM all lost connection, all routers exploded, routing table memory overflowed, switches were all looped, firewalls were all blocked, wireless channels All conflicts, CC, DDOS all come, crimped network cables are all short-circuited, BGP is all leaking meters, cabinets are all powered off, RAiD is all exploded, NAS data is all lost, optical modules are all fried, optical fibers are all different, optical modems are all hot, and electric meters are all Reverse, full burn-through of empty opening, Java null pointer, Adobe family failed to save + flashback, half of the production program was completely shut down, one point 102, English cloze question text is not on the same page, math question 23 quadratic function moving point , Off-topic in Chinese composition, can’t answer political questions, can’t understand short history essays, doesn’t know about biological genetics, fractured a bone before a physical examination, stepped on a ball while kicking a football, described reading comprehension as anthropomorphic, didn’t finish homework for winter vacation, network delay =999, voltmeter and ammeter cannot be distinguished clearly, potassium permanganate is not plugged with cotton, Windows update fatal error, flashing third-party firmware will turn bricks, water cooling leaks, CPU bends, fan blades break, double-click the mouse, and the keyboard gets water , video card blurred screen, motherboard surge, power supply burnt, USB short circuit, solid state disk loss, disk bad sectors, Rongmai damp, memory error, 2345 kidnapping, compiler convulsions, github can’t connect, all compiler errors, all errors can’t be thrown Out, multi-threading is not adjusted well, if you forget to save, you will have a power outage, the memory is full, the CPU heats up, the debugging crashes, the main class cannot be found in the package, the problem cannot be solved, the IDE does not respond at all, and it is impossible to ask for help Boss, when I have an idea, I am in a hurry, all the variables can’t get the value, I forget all the code I wrote, I can’t understand all my comments, the program is full of bugs after compilation, the more bugs are fixed, the more bugs are fixed, I don’t want to do it , buy Intel CPU and AMD motherboard, buy genuine Citrix Macdin, boot account error, apply silicone grease to the pins, Alipay is automatically deducted, forgetting password does not reset, apply for Great Wall Broadband, twrp card must be swiped Error reporting, download mode must be lost, 9008 cannot save bricks, black apple is not compatible with efi, data cable is broken
+&lt;/details>
 &lt;hr></description></item><item><title>search</title><link>https://blog.xpdbk.com/en/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/en/search/</guid><description/></item></channel></rss>
