@@ -294,39 +294,36 @@ appKey: '666' // Your LeanCloud appKey
 &lt;blockquote>
 &lt;p>如果你不是内部人员，请不要点击这些链接awa。&lt;/p>
 &lt;/blockquote></description></item><item><title>文章搜索</title><link>https://blog.xpdbk.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/search/</guid><description/></item><item><title>友情链接</title><link>https://blog.xpdbk.com/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/links/</guid><description>&lt;img src="https://blog.xpdbk.com/links/666.webp" alt="Featured image of post 友情链接" />&lt;h1 id="有用的网站和友情链接">有用的网站和友情链接&lt;/h1>
+&lt;blockquote>
 &lt;p>如您希望交换友情链接，敬请在评论区留言。&lt;/p>
-&lt;p>本站目前仅接受个人博客网站的友链申请。&lt;/p>
+&lt;/blockquote>
 &lt;hr>
 &lt;p>本站友链信息如下：&lt;/p>
-&lt;p>Gravatar： &lt;a class="link" href="https://www.gravatar.com/avatar/aab5d73cc0e0db42ddfcadbd1361e8a4?s=128" target="_blank" rel="noopener"
->https://www.gravatar.com/avatar/aab5d73cc0e0db42ddfcadbd1361e8a4?s=128&lt;/a>&lt;/p>
-&lt;p>网站图标如下&lt;/p>
-&lt;p>&lt;a class="link" href="https://img.xpdbk.com/file/imglol/img/avatar.jpg" target="_blank" rel="noopener"
+&lt;p>网站图标: &lt;a class="link" href="https://img.xpdbk.com/file/imglol/img/avatar.jpg" target="_blank" rel="noopener"
 >https://img.xpdbk.com/file/imglol/img/avatar.jpg&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://img2.xpdbk.com/avatar.jpg" target="_blank" rel="noopener"
->https://img2.xpdbk.com/avatar.jpg&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://cdn.jsdelivr.net/gh/1x000/zdzy/tp/avatar.jpg" target="_blank" rel="noopener"
->https://cdn.jsdelivr.net/gh/1x000/zdzy/tp/avatar.jpg&lt;/a>&lt;/p>
 &lt;p>网站名称： XiaoPang的个人博客&lt;/p>
 &lt;p>网站地址： &lt;a class="link" href="https://blog.xpdbk.com" target="_blank" rel="noopener"
 >https://blog.xpdbk.com&lt;/a>&lt;/p>
 &lt;p>网站简介： 追随梦想需竭尽全力&lt;/p>
 &lt;hr>
+&lt;h2 id="必遵守的">必遵守的&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>遵守法律法规：在添加友链时，您应该遵守相关的法律法规，不得发布任何违法违规的信息，如色情、赌博、诈骗等内容。&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>定期维护：在添加友链后，您应该定期检查友链的有效性和安全性，并及时更新或删除失效的友链。&lt;/p>
+&lt;p>失联站点将会定期归档（非删除帮你留一个痕迹）&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>如果发现你被换成&lt;code>l.xpdbk.com&lt;/code>的链接的话，这是因为你的网站不稳定所以我通过链接帮你转发了（OwO）&lt;/p>
+&lt;p>如果发现你被换成&lt;code>l.xpdbk.com&lt;/code>的链接的话，这是因为你的网站不稳定所以我通过帮你转发了&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>我希望贵站不是商业化门户网站，或植有影响观看体验广告的网站也要求不包含敏感内容。&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;hr>
-&lt;p>我希望贵站不是商业化门户网站，亦或是植有影响观看体验广告的网站。&lt;/p>
-&lt;p>失联站点将会定期移除，非法网站会立即禁止并拉黑。&lt;/p>
-&lt;p>当博客失联后，将会尝试联系博主；若长时间失联将会取消友链。&lt;/p>
-&lt;p>博客运行时间 ≥7天&lt;/p>
-&lt;p>每 6 月至少更新一片文章 (请看注意)&lt;/p>
-&lt;p>不包含敏感内容&lt;/p></description></item></channel></rss>
+&lt;h2 id="友链要求">友链要求&lt;/h2>
+&lt;p>当博客失联后，将会尝试联系博主；若长时间失联将会归档友链（非删除=留一个你曾经的痕迹）。&lt;/p>
+&lt;p>博客运行时间 ≥3天&lt;/p>
+&lt;p>每12个月至少更新一个文章&lt;/p>
+&lt;p>保证网站服务器24小时内17小时不掉线（经常掉线对你我都不好）&lt;/p></description></item></channel></rss>
