@@ -24,7 +24,7 @@ id="button" onclick="hugoDecrypt(document.getElementById('hugo-encrypt-password'
 &lt;style type="text/css">div#hugo-encrypt-sha1sum {display: none;}&lt;/style>
 &lt;script>
 const storageKey = location.pathname + "password";
-const userStorage = window['sessionStorage'] ;
+const userStorage = localStorage ;
 function str2buf(str) {
 return new TextEncoder("utf-8").encode(str);
 }
@@ -71,7 +71,7 @@ document.getElementById("hugo-encrypt-encryption-notice").remove();
 cipher.outerHTML = decrypted_text;
 userStorage.setItem(storageKey, password);
 document.getElementById("hugo-encrypt-sha1sum").innerHTML = "Success: " + sha1_sum;
-console.log("Decryption successful. Storing password in sessionStorage.");
+console.log("Decryption successful. Storing password in Storage.");
 }
 });
 }).catch(function(error) {
