@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/blog/</link><description>Recent content in blog on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>博客常用命令（离线用）</title><link>https://blog.xpdbk.com/post/blog-ml/</link><pubDate>Sun, 16 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blog-ml/</guid><description>&lt;h2 id="博客命令记录">博客命令记录&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/blog/</link><description>Recent content in blog on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>本人版权所有</copyright><lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>博客常用命令（离线用）</title><link>https://blog.xpdbk.com/post/blog-ml/</link><pubDate>Sun, 16 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blog-ml/</guid><description>&lt;h2 id="博客命令记录">博客命令记录&lt;/h2>
 &lt;h2 id="主题相关">主题相关&lt;/h2>
 &lt;p>FrontMatter 字段含义&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -600,4 +600,7 @@ list-folded="true">
 &lt;h2 id="网易云">网易云&lt;/h2>
 &lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=557578993&amp;auto=0&amp;height=66">&lt;/iframe>
 &lt;pre>&lt;code>&amp;lt;!-- &lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=557578993&amp;auto=0&amp;height=66">&lt;/iframe>
---&amp;gt;&lt;/code>&lt;/pre></description></item></channel></rss>
+--&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;h2 id="按键">按键&lt;/h2>
+&lt;p>Press &lt;kbd>CTRL&lt;/kbd> + &lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;/p></description></item></channel></rss>
