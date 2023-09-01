@@ -1,1 +1,103 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网站被攻击 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/%E7%BD%91%E7%AB%99%E8%A2%AB%E6%94%BB%E5%87%BB/</link><description>Recent content in 网站被攻击 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>本人版权所有</copyright><lastBuildDate>Tue, 29 Aug 2023 13:58:11 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E7%BD%91%E7%AB%99%E8%A2%AB%E6%94%BB%E5%87%BB/index.xml" rel="self" type="application/rss+xml"/><item><title>记一次博客被专业DDOS和各种非法攻击</title><link>https://blog.xpdbk.com/post/ddos-blog-1/</link><pubDate>Tue, 29 Aug 2023 13:58:11 +0700</pubDate><guid>https://blog.xpdbk.com/post/ddos-blog-1/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网站被攻击 on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/tags/%E7%BD%91%E7%AB%99%E8%A2%AB%E6%94%BB%E5%87%BB/</link><description>Recent content in 网站被攻击 on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>本人版权所有</copyright><lastBuildDate>Tue, 29 Aug 2023 13:58:11 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E7%BD%91%E7%AB%99%E8%A2%AB%E6%94%BB%E5%87%BB/index.xml" rel="self" type="application/rss+xml"/><item><title>记一次博客被DDOS和非法攻击</title><link>https://blog.xpdbk.com/post/ddos-blog-1/</link><pubDate>Tue, 29 Aug 2023 13:58:11 +0700</pubDate><guid>https://blog.xpdbk.com/post/ddos-blog-1/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>因为我的博客最初建站的时候就是用的&lt;code>wordpress&lt;/code>所以我对DDOS攻击和CC攻击十分的了解并且经常关注，后来我陆续尝试了&lt;code>typecho&lt;/code>和&lt;code>Halo&lt;/code>等动态框架，最后&lt;code>jekyll&lt;/code>到&lt;code>Hexo&lt;/code>辗转来到了&lt;code>Hugo&lt;/code>这个静态博客框架之后我才没有继续担心服务器和DDOS防护问题然后就是一直是没有忧虑的状态，直到最近的一个&lt;code>人&lt;/code>来对我的网站实施了4天的恶性攻击之后才让我重视起了DDOS和CC的防护&lt;/p>
+&lt;h2 id="起源">起源&lt;/h2>
+&lt;p>在11点的晚上我正在刷着手机的时候一个邮件来了，给我说我的网站已经用了&lt;code>75GB&lt;/code>的流量，我当时就在想什么东西用了这么多的流量？&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/2.webp"
+width="697"
+height="427"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/2_hu61035c777cd25ad0569fb020cc1e0b45_18466_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/2_hu61035c777cd25ad0569fb020cc1e0b45_18466_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="邮件提醒"
+class="gallery-image"
+data-flex-grow="163"
+data-flex-basis="391px"
+>
+&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/3.webp"
+width="912"
+height="491"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/3_hu7af1aaf68db1dc93fc049848a022485f_14362_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/3_hu7af1aaf68db1dc93fc049848a022485f_14362_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="流量超标1"
+class="gallery-image"
+data-flex-grow="185"
+data-flex-basis="445px"
+>&lt;/p>
+&lt;p>然后我就点进去一看，直接给我吓了一个激灵&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/3123.webp"
+width="923"
+height="493"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/3123_hu0123f6b66a6ab32b027fa7fb52d57284_28416_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/3123_hu0123f6b66a6ab32b027fa7fb52d57284_28416_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="流量超标2"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="449px"
+>&lt;/p>
+&lt;p>这我不管的话接下来肯定要关站啊，关站之后我肯定就没有收录了&lt;/p>
+&lt;h2 id="插曲">插曲&lt;/h2>
+&lt;p>这个攻击者还给我的短链接服务塞一大堆的灰产链接，但是经过我的HTML注释，你访问我的 &lt;code>https://l.xpdbk.com&lt;/code> 之后没办法向里面添加链接只有我能在后台添加，本来是想要公开使用的但是有这种人存在不得不私有&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/42434234.webp"
+width="1017"
+height="563"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/42434234_hud03e8a81990fb7f7046ae308445b0da1_23936_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/42434234_hud03e8a81990fb7f7046ae308445b0da1_23936_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="短链接流量超标"
+class="gallery-image"
+data-flex-grow="180"
+data-flex-basis="433px"
+>
+&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/4234234.webp"
+width="1001"
+height="380"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/4234234_hu6063fff67e2df29716fcd8bcb1ea4618_7504_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/4234234_hu6063fff67e2df29716fcd8bcb1ea4618_7504_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="短链接仓库"
+class="gallery-image"
+data-flex-grow="263"
+data-flex-basis="632px"
+>
+&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/25t24t.webp"
+width="563"
+height="470"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/25t24t_hue9bc7f51fd3d7e9ef89e1c8ccfd6cfda_24712_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/25t24t_hue9bc7f51fd3d7e9ef89e1c8ccfd6cfda_24712_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="短链接编辑界面"
+class="gallery-image"
+data-flex-grow="119"
+data-flex-basis="287px"
+>&lt;/p>
+&lt;h2 id="采取动作">采取动作&lt;/h2>
+&lt;p>快马加鞭的加上了&lt;code>CF CDN&lt;/code>，因为我之前为了照顾中国的用户所以我没打开&lt;code>CF CDN&lt;/code>的小云朵，在WAF防火墙的低档之下，攻击者的所有流量都被消弱了&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/53535.webp"
+width="995"
+height="334"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/53535_hueedac4e5686c85387a92fd68a787b89e_19228_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/53535_hueedac4e5686c85387a92fd68a787b89e_19228_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="WAF防火墙"
+class="gallery-image"
+data-flex-grow="297"
+data-flex-basis="714px"
+>
+&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/5353a5.webp"
+width="1000"
+height="220"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/5353a5_hu6e4094afa2e8a5b0820c993b1cd0bbc8_9372_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/5353a5_hu6e4094afa2e8a5b0820c993b1cd0bbc8_9372_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="WAF防火墙2"
+class="gallery-image"
+data-flex-grow="454"
+data-flex-basis="1090px"
+>&lt;/p>
+&lt;h2 id="最后">最后&lt;/h2>
+&lt;p>所有的流量都被化解掉了&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/434324234.webp"
+width="1020"
+height="587"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/434324234_hu84ca457604e8b561332131fc2dee4026_38880_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/434324234_hu84ca457604e8b561332131fc2dee4026_38880_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="总流量"
+class="gallery-image"
+data-flex-grow="173"
+data-flex-basis="417px"
+>&lt;/p>
+&lt;p>送给攻击者一句话：这个世界没有不劳而获的事情&lt;/p></description></item></channel></rss>

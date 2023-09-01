@@ -1,4 +1,329 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/post/</link><description>Recent content in Posts on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>本人版权所有</copyright><lastBuildDate>Tue, 29 Aug 2023 13:58:11 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>记一次博客被专业DDOS和各种非法攻击</title><link>https://blog.xpdbk.com/post/ddos-blog-1/</link><pubDate>Tue, 29 Aug 2023 13:58:11 +0700</pubDate><guid>https://blog.xpdbk.com/post/ddos-blog-1/</guid><description/></item><item><title>Augus和GrimAC</title><link>https://blog.xpdbk.com/post/augus%E5%92%8Cgrimac/</link><pubDate>Sun, 27 Aug 2023 21:16:59 +0700</pubDate><guid>https://blog.xpdbk.com/post/augus%E5%92%8Cgrimac/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>Kevin的polar</title><link>https://blog.xpdbk.com/post/kevin%E7%9A%84polar/</link><pubDate>Sun, 27 Aug 2023 21:12:11 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin%E7%9A%84polar/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>基岩版黑客配置和端集合</title><link>https://blog.xpdbk.com/post/jyb-hack/</link><pubDate>Sun, 27 Aug 2023 21:11:59 +0700</pubDate><guid>https://blog.xpdbk.com/post/jyb-hack/</guid><description>&lt;img src="https://blog.xpdbk.com/post/jyb-hack/Screenshot_20230827_220342_dev.sora.protohax.webp" alt="Featured image of post 基岩版黑客配置和端集合" />&lt;h2 id="基岩版黑客protohax">基岩版黑客ProtoHax&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LEl_FENG的小屋</title><link>https://blog.xpdbk.com/post/</link><description>Recent content in Posts on LEl_FENG的小屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>本人版权所有</copyright><lastBuildDate>Fri, 01 Sep 2023 08:49:19 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>一键设置ROOT账户访问SSH的脚本</title><link>https://blog.xpdbk.com/post/linux-ssh-root-shell/</link><pubDate>Fri, 01 Sep 2023 08:49:19 +0700</pubDate><guid>https://blog.xpdbk.com/post/linux-ssh-root-shell/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>当我们自己用官方 &lt;a class="link" href="https://ubuntu.com/download/server" target="_blank" rel="noopener"
+>Ubuntu服务器镜像&lt;/a> 安装到服务器上面之后登录账号也只能登录当初安装并设置的账号并用&lt;code>sudo su&lt;/code>命令提权，但是并没有root账户可以进行SSH登录，这是因为root账户创建之后每次开机都会随机密码且关闭SSH登录，所以我们去一个一个的用&lt;code>nano&lt;/code>和&lt;code>vim&lt;/code>改密码对我们来说一点都不方便。&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Windows&lt;/strong>全部都需要新建一个&lt;code>.txt&lt;/code>文件之后改后缀保存为&lt;code>.sh&lt;/code>文件并在linux上面&lt;code>./root.sh&lt;/code>运行&lt;/p>
+&lt;p>&lt;strong>linux&lt;/strong> 直接用&lt;code>nano&lt;/code>或者&lt;code>vim&lt;/code>创建一个&lt;code>root.sh&lt;/code>并使用&lt;code>./&lt;/code>运行即可&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="ｕｂｕｎｔｕ专属">ｕｂｕｎｔｕ专属&lt;/h2>
+&lt;details>
+&lt;summary>只针对内网ubuntu（不要安全只要方便）&lt;/summary>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 开启root权限&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置root密码&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root:awa114514&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> chpasswd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 重启sshd服务&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl restart sshd.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;SSH ROOT权限已开启并密码已更改为awa114514&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;/details>
+&lt;h2 id="兼容所有linux发型版本的脚本">兼容所有linux发型版本的脚本&lt;/h2>
+&lt;blockquote>
+&lt;p>随手写的&lt;/p>
+&lt;/blockquote>
+&lt;details>
+&lt;summary>兼容所有linux发行版的正常脚本&lt;/summary>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 检查 root 密码是否满足安全要求&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> ! check_passwd&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root 密码不安全，请重新设置 root 密码&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 提示用户确认操作&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">read&lt;/span> -p &lt;span class="s2">&amp;#34;确认开启 root 权限并设置 root 密码吗？(y/n) &amp;#34;&lt;/span> answer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="nv">$answer&lt;/span> !&lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;y&amp;#34;&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;操作已取消&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 检查系统类型&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">type&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>uname &lt;span class="p">|&lt;/span> tr &lt;span class="s1">&amp;#39;[:upper:]&amp;#39;&lt;/span> &lt;span class="s1">&amp;#39;[:lower:]&amp;#39;&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 开启 root 权限&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">case&lt;/span> &lt;span class="nv">$type&lt;/span> in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> linux&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> *&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;该脚本仅适用于 Linux 系统&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置 root 密码&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root:&lt;/span>&lt;span class="nv">$password&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> chpasswd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 重启 sshd 服务&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl restart sshd.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;SSH ROOT 权限已开启并密码已更改为 &lt;/span>&lt;span class="nv">$password&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;/details>
+&lt;h2 id="兼容-centosubuntuarch-和-debian-的脚本">兼容 CentOS、Ubuntu、Arch 和 Debian 的脚本&lt;/h2>
+&lt;blockquote>
+&lt;p>随手写的&lt;/p>
+&lt;/blockquote>
+&lt;details>
+&lt;summary>兼容 CentOS、Ubuntu、Arch 和 Debian 的脚本&lt;/summary>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 检查root密码是否满足安全要求&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> ! check_passwd&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root密码不安全，请重新设置root密码&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 提示用户确认操作&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">read&lt;/span> -p &lt;span class="s2">&amp;#34;确认开启root权限并设置root密码吗？(y/n) &amp;#34;&lt;/span> answer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="nv">$answer&lt;/span> !&lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;y&amp;#34;&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;操作已取消&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 检查操作系统&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">os&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>cat /etc/os-release &lt;span class="p">|&lt;/span> grep &lt;span class="s2">&amp;#34;PRETTY_NAME&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> cut -d &lt;span class="s1">&amp;#39;=&amp;#39;&lt;/span> -f &lt;span class="m">2&lt;/span> &lt;span class="p">|&lt;/span> tr -d &lt;span class="s1">&amp;#39;&amp;#34;&amp;#39;&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 开启root权限&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">case&lt;/span> &lt;span class="nv">$os&lt;/span> in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;CentOS Linux&amp;#34;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;Ubuntu&amp;#34;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin no/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;Arch Linux&amp;#34;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin no/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;Debian&amp;#34;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置root密码&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root:awa114514&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> chpasswd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 重启sshd服务&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl restart sshd.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;SSH ROOT权限已开启并密码已更改为awa114514&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;/details></description></item><item><title>记一次博客被DDOS和非法攻击</title><link>https://blog.xpdbk.com/post/ddos-blog-1/</link><pubDate>Tue, 29 Aug 2023 13:58:11 +0700</pubDate><guid>https://blog.xpdbk.com/post/ddos-blog-1/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>因为我的博客最初建站的时候就是用的&lt;code>wordpress&lt;/code>所以我对DDOS攻击和CC攻击十分的了解并且经常关注，后来我陆续尝试了&lt;code>typecho&lt;/code>和&lt;code>Halo&lt;/code>等动态框架，最后&lt;code>jekyll&lt;/code>到&lt;code>Hexo&lt;/code>辗转来到了&lt;code>Hugo&lt;/code>这个静态博客框架之后我才没有继续担心服务器和DDOS防护问题然后就是一直是没有忧虑的状态，直到最近的一个&lt;code>人&lt;/code>来对我的网站实施了4天的恶性攻击之后才让我重视起了DDOS和CC的防护&lt;/p>
+&lt;h2 id="起源">起源&lt;/h2>
+&lt;p>在11点的晚上我正在刷着手机的时候一个邮件来了，给我说我的网站已经用了&lt;code>75GB&lt;/code>的流量，我当时就在想什么东西用了这么多的流量？&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/2.webp"
+width="697"
+height="427"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/2_hu61035c777cd25ad0569fb020cc1e0b45_18466_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/2_hu61035c777cd25ad0569fb020cc1e0b45_18466_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="邮件提醒"
+class="gallery-image"
+data-flex-grow="163"
+data-flex-basis="391px"
+>
+&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/3.webp"
+width="912"
+height="491"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/3_hu7af1aaf68db1dc93fc049848a022485f_14362_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/3_hu7af1aaf68db1dc93fc049848a022485f_14362_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="流量超标1"
+class="gallery-image"
+data-flex-grow="185"
+data-flex-basis="445px"
+>&lt;/p>
+&lt;p>然后我就点进去一看，直接给我吓了一个激灵&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/3123.webp"
+width="923"
+height="493"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/3123_hu0123f6b66a6ab32b027fa7fb52d57284_28416_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/3123_hu0123f6b66a6ab32b027fa7fb52d57284_28416_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="流量超标2"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="449px"
+>&lt;/p>
+&lt;p>这我不管的话接下来肯定要关站啊，关站之后我肯定就没有收录了&lt;/p>
+&lt;h2 id="插曲">插曲&lt;/h2>
+&lt;p>这个攻击者还给我的短链接服务塞一大堆的灰产链接，但是经过我的HTML注释，你访问我的 &lt;code>https://l.xpdbk.com&lt;/code> 之后没办法向里面添加链接只有我能在后台添加，本来是想要公开使用的但是有这种人存在不得不私有&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/42434234.webp"
+width="1017"
+height="563"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/42434234_hud03e8a81990fb7f7046ae308445b0da1_23936_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/42434234_hud03e8a81990fb7f7046ae308445b0da1_23936_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="短链接流量超标"
+class="gallery-image"
+data-flex-grow="180"
+data-flex-basis="433px"
+>
+&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/4234234.webp"
+width="1001"
+height="380"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/4234234_hu6063fff67e2df29716fcd8bcb1ea4618_7504_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/4234234_hu6063fff67e2df29716fcd8bcb1ea4618_7504_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="短链接仓库"
+class="gallery-image"
+data-flex-grow="263"
+data-flex-basis="632px"
+>
+&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/25t24t.webp"
+width="563"
+height="470"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/25t24t_hue9bc7f51fd3d7e9ef89e1c8ccfd6cfda_24712_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/25t24t_hue9bc7f51fd3d7e9ef89e1c8ccfd6cfda_24712_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="短链接编辑界面"
+class="gallery-image"
+data-flex-grow="119"
+data-flex-basis="287px"
+>&lt;/p>
+&lt;h2 id="采取动作">采取动作&lt;/h2>
+&lt;p>快马加鞭的加上了&lt;code>CF CDN&lt;/code>，因为我之前为了照顾中国的用户所以我没打开&lt;code>CF CDN&lt;/code>的小云朵，在WAF防火墙的低档之下，攻击者的所有流量都被消弱了&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/53535.webp"
+width="995"
+height="334"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/53535_hueedac4e5686c85387a92fd68a787b89e_19228_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/53535_hueedac4e5686c85387a92fd68a787b89e_19228_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="WAF防火墙"
+class="gallery-image"
+data-flex-grow="297"
+data-flex-basis="714px"
+>
+&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/5353a5.webp"
+width="1000"
+height="220"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/5353a5_hu6e4094afa2e8a5b0820c993b1cd0bbc8_9372_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/5353a5_hu6e4094afa2e8a5b0820c993b1cd0bbc8_9372_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="WAF防火墙2"
+class="gallery-image"
+data-flex-grow="454"
+data-flex-basis="1090px"
+>&lt;/p>
+&lt;h2 id="最后">最后&lt;/h2>
+&lt;p>所有的流量都被化解掉了&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ddos-blog-1/434324234.webp"
+width="1020"
+height="587"
+srcset="https://blog.xpdbk.com/post/ddos-blog-1/434324234_hu84ca457604e8b561332131fc2dee4026_38880_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ddos-blog-1/434324234_hu84ca457604e8b561332131fc2dee4026_38880_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="总流量"
+class="gallery-image"
+data-flex-grow="173"
+data-flex-basis="417px"
+>&lt;/p>
+&lt;p>送给攻击者一句话：这个世界没有不劳而获的事情&lt;/p></description></item><item><title>Augus和GrimAC</title><link>https://blog.xpdbk.com/post/augus%E5%92%8Cgrimac/</link><pubDate>Sun, 27 Aug 2023 21:16:59 +0700</pubDate><guid>https://blog.xpdbk.com/post/augus%E5%92%8Cgrimac/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>Kevin的polar</title><link>https://blog.xpdbk.com/post/kevin%E7%9A%84polar/</link><pubDate>Sun, 27 Aug 2023 21:12:11 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin%E7%9A%84polar/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>基岩版黑客配置和端集合</title><link>https://blog.xpdbk.com/post/jyb-hack/</link><pubDate>Sun, 27 Aug 2023 21:11:59 +0700</pubDate><guid>https://blog.xpdbk.com/post/jyb-hack/</guid><description>&lt;img src="https://blog.xpdbk.com/post/jyb-hack/Screenshot_20230827_220342_dev.sora.protohax.webp" alt="Featured image of post 基岩版黑客配置和端集合" />&lt;h2 id="基岩版黑客protohax">基岩版黑客ProtoHax&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://github.com/CloudPixel-Studio/ProtoHax-Release" target="_blank" rel="noopener"
 >ProtoHax魔改&lt;/a>&lt;/p>
