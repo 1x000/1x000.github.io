@@ -580,4 +580,202 @@ list-folded="true">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">Press&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">CTRL&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">ALT&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">Delete&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="nx">to&lt;/span> &lt;span class="nx">end&lt;/span> &lt;span class="nx">the&lt;/span> &lt;span class="nx">session&lt;/span>&lt;span class="p">.&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>Press &lt;kbd>CTRL&lt;/kbd> + &lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;/p></description></item></channel></rss>
+&lt;/div>&lt;p>Press &lt;kbd>CTRL&lt;/kbd> + &lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;/p>
+&lt;h2 id="github">github&lt;/h2>
+&lt;div class="github">
+&lt;div class="logo">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon github-icon" viewBox="0 0 16 16">&lt;path fill-rule="evenodd" clip-rule="evenodd" d="M2 2.5C2 1.83696 2.26339 1.20107 2.73223 0.732233C3.20108 0.263392 3.83696 0 4.5 0L13.25 0C13.4489 0 13.6397 0.0790176 13.7803 0.21967C13.921 0.360322 14 0.551088 14 0.75V13.25C14 13.4489 13.921 13.6397 13.7803 13.7803C13.6397 13.921 13.4489 14 13.25 14H10.75C10.5511 14 10.3603 13.921 10.2197 13.7803C10.079 13.6397 10 13.4489 10 13.25C10 13.0511 10.079 12.8603 10.2197 12.7197C10.3603 12.579 10.5511 12.5 10.75 12.5H12.5V10.5H4.5C4.30308 10.5 4.11056 10.5582 3.94657 10.6672C3.78257 10.7762 3.65442 10.9312 3.57816 11.1128C3.50191 11.2943 3.48096 11.4943 3.51793 11.6878C3.5549 11.8812 3.64816 12.0594 3.786 12.2C3.92524 12.3422 4.0023 12.5338 4.00024 12.7328C3.99818 12.9318 3.91716 13.1218 3.775 13.261C3.63285 13.4002 3.4412 13.4773 3.24222 13.4752C3.04325 13.4732 2.85324 13.3922 2.714 13.25C2.25571 12.7829 1.99929 12.1544 2 11.5V2.5ZM12.5 1.5V9H4.5C4.144 9 3.806 9.074 3.5 9.208V2.5C3.5 2.23478 3.60536 1.98043 3.79289 1.79289C3.98043 1.60536 4.23478 1.5 4.5 1.5H12.5ZM5 12.25V15.5C5 15.5464 5.01293 15.5919 5.03734 15.6314C5.06175 15.6709 5.09667 15.7028 5.1382 15.7236C5.17972 15.7444 5.22621 15.7532 5.27245 15.749C5.31869 15.7448 5.36286 15.7279 5.4 15.7L6.85 14.613C6.89328 14.5805 6.94591 14.563 7 14.563C7.05409 14.563 7.10673 14.5805 7.15 14.613L8.6 15.7C8.63714 15.7279 8.68131 15.7448 8.72755 15.749C8.77379 15.7532 8.82028 15.7444 8.8618 15.7236C8.90333 15.7028 8.93826 15.6709 8.96266 15.6314C8.98707 15.5919 9 15.5464 9 15.5V12.25C9 12.1837 8.97366 12.1201 8.92678 12.0732C8.87989 12.0263 8.81631 12 8.75 12H5.25C5.1837 12 5.12011 12.0263 5.07322 12.0732C5.02634 12.1201 5 12.1837 5 12.25Z"/>&lt;/svg>
+&lt;a class="name" href=https://github.com/gohugoio/hugo target="_blank">hugo&lt;/a>
+&lt;/div>
+&lt;div class="visibility">public&lt;/div>
+&lt;div class="description">The world’s fastest framework for building websites.&lt;/div>
+&lt;div class="language">
+&lt;span class="language-color" style="background-color: #00add8">&lt;/span>
+&lt;span class="language-name">GO&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">github&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;hugo&amp;#34;&lt;/span> &lt;span class="nx">link&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;https://github.com/gohugoio/hugo&amp;#34;&lt;/span> &lt;span class="nx">description&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;The world’s fastest framework for building websites.&amp;#34;&lt;/span> &lt;span class="nx">color&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;#00add8&amp;#34;&lt;/span> &lt;span class="nx">language&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;GO&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>参数&lt;/th>
+&lt;th>解释&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>name&lt;/td>
+&lt;td>仓库名&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>link&lt;/td>
+&lt;td>链接&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>description&lt;/td>
+&lt;td>简介&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>color&lt;/td>
+&lt;td>颜色&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>language&lt;/td>
+&lt;td>语言&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="简洁版彩色标签">简洁版彩色标签&lt;/h2>
+&lt;div class="simple-notice simple-notice-warning" >
+&lt;div class="simple-notice-title">&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon simple-notice-icon" viewBox="0 0 512 512" fill="#b30000">&lt;path d="M114.57 76.07a45.71 45.71 0 00-67.51-6.41c-17.58 16.18-19 43.52-4.75 62.77l91.78 123-92.33 124.15c-14.23 19.25-13.11 46.59 4.74 62.77a45.71 45.71 0 0067.5-6.41L242.89 262.7a12.14 12.14 0 000-14.23zm355.67 303.51l-92.33-124.13 91.78-123c14.22-19.25 12.83-46.59-4.75-62.77a45.71 45.71 0 00-67.51 6.41l-128 172.12a12.14 12.14 0 000 14.23L398 435.94a45.71 45.71 0 0067.51 6.41c17.84-16.18 18.96-43.52 4.73-62.77z"/>&lt;/svg>&lt;/div>&lt;p>warning 可以换成 info tip note&lt;/p>&lt;/div>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">simple&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">notice&lt;/span> &lt;span class="nx">simple&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">notice&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">warning&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">warning&lt;/span> &lt;span class="nx">可以换成&lt;/span> &lt;span class="nx">info&lt;/span> &lt;span class="nx">tip&lt;/span> &lt;span class="nx">note&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">simple&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">notice&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="块引用2">块引用2&lt;/h2>
+&lt;myblockquote class="quote">
+&lt;p>十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。&lt;/p>&lt;/myblockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">myquote&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">十里青山远&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">潮平路带沙&lt;/span>&lt;span class="err">。&lt;/span>&lt;span class="nx">数声啼鸟怨年华&lt;/span>&lt;span class="err">。&lt;/span>&lt;span class="nx">又是凄凉时候&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">在天涯&lt;/span>&lt;span class="err">。&lt;/span>&lt;span class="nx">白露收残月&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">清风散晓霞&lt;/span>&lt;span class="err">。&lt;/span>&lt;span class="nx">绿杨堤畔问荷花&lt;/span>&lt;span class="err">。&lt;/span>&lt;span class="nx">记得年时沽酒&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">那人家&lt;/span>&lt;span class="err">。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">myquote&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="引用居中块">引用居中块&lt;/h2>
+&lt;myblockquote class="quote-center">
+&lt;p>十里青山远，潮平路带沙&lt;br>数声啼鸟怨年华&lt;br>又是凄凉时候，在天涯&lt;br>白露收残月，清风散晓霞&lt;/p>&lt;/myblockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">quote&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">center&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">十里青山远&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">潮平路带沙&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">br&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">数声啼鸟怨年华&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">br&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">又是凄凉时候&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">在天涯&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">br&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">白露收残月&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">清风散晓霞&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">quote&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">center&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s">``&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">##&lt;/span> &lt;span class="nx">相册&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+&lt;meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+&lt;script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js">&lt;/script>
+&lt;link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/nanogallery2/3.0.5/css/nanogallery2.min.css">
+&lt;script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/nanogallery2/3.0.5/jquery.nanogallery2.min.js">&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;div data-nanogallery2='{
+"thumbnailDisplayTransition": "none",
+"thumbnailHeight": "200",
+"thumbnailWidth": "200",
+"galleryMosaic" : [
+{ "c": 1, "r": 1, "w": 2, "h": 2 },
+{ "c": 3, "r": 1, "w": 1, "h": 1 },
+{ "c": 3, "r": 2, "w": 1, "h": 1 },
+{ "c": 4, "r": 1, "w": 1, "h": 1 },
+{ "c": 4, "r": 2, "w": 1, "h": 1 },
+{ "c": 1, "r": 3, "w": 2, "h": 1 },
+{ "c": 3, "r": 3, "w": 2, "h": 1 },
+{ "c": 1, "r": 4, "w": 1, "h": 1 }
+],
+"thumbnailDisplayTransitionDuration": 500,
+"thumbnailDisplayInterval": 30,
+"galleryDisplayTransition": "none",
+"galleryDisplayTransitionDuration": 500,
+"galleryDisplayMode": "rows",
+"thumbnailDisplayOutsideScreen": "false",
+"eventsDebounceDelay": 10,
+"thumbnailL1BorderHorizontal": 0,
+"thumbnailL1BorderVertical": 0,
+"thumbnailLabel": {
+"titleFontSize": "0.6em"
+},
+"thumbnailHoverEffect2": "image_scale_1.00_1.10|label_backgroundColor_rgba(0,0,0,0)_rgba(255,255,255,0)",
+"galleryTheme": {
+"thumbnail": {
+"borderRadius": "8px"
+}
+},
+"thumbnailToolbarImage": {
+"topLeft": "",
+"topRight": "",
+"bottomLeft": "",
+"bottomRight": ""
+},
+"viewerToolbar": {
+"display": true,
+"standard": "label"
+},
+"viewerTools": {
+"topLeft": "pageCounter, playPauseButton",
+"topRight": "downloadButton, rotateLeft, zoomButton, fullscreenButton, closeButton"
+},
+"viewerGalleryTWidth": 40,
+"viewerGalleryTHeight": 40
+}'>
+&lt;a href="https://cdn.lovir.cn/photo/DSCF9645.webp" data-ngThumb="https://cdn.lovir.cn/photo/DSCF9645.webp">&lt;/a>
+}
+&lt;a href="https://cdn.lovir.cn/photo/DSCF7385.webp" data-ngThumb="https://cdn.lovir.cn/photo/DSCF7385.webp">&lt;/a>
+&lt;a href="https://cdn.lovir.cn/photo/DSCF6903.webp" data-ngThumb="https://cdn.lovir.cn/photo/DSCF6903.webp">&lt;/a>
+&lt;/div>
+&lt;/body>
+&lt;/html>
+&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s">``&lt;/span>&lt;span class="err">`&lt;/span>&lt;span class="k">go&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">galleries&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">gallery&lt;/span> &lt;span class="nx">src&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;https://cdn.lovir.cn/photo/DSCF9645.webp&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">gallery&lt;/span> &lt;span class="nx">src&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;https://cdn.lovir.cn/photo/DSCF7385.webp&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">gallery&lt;/span> &lt;span class="nx">src&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;https://cdn.lovir.cn/photo/DSCF6903.webp&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">galleries&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
