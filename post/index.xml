@@ -23933,7 +23933,7 @@ data-flex-basis="153px"
 &lt;/span>&lt;span class="lnt">16
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">title: 标题
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">title: 标题
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">description: 描述
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: 时间（1111-11-11）
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">image: 显示的特色图片
@@ -24059,18 +24059,7 @@ data-flex-basis="153px"
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">
-&lt;p>Bilibili 视频av号或BV号错误！请检查视频av号或BV号是否正确&lt;/p>
-&lt;p>当前视频av或BV号：VIDEO_ID，视频分P：PART_NUMBER&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=PART_NUMBER&amp;&amp;autoplay=0"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">bilibili&lt;/span> &lt;span class="nx">VIDEO_ID&lt;/span> &lt;span class="nx">PART_NUMBER&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://www.bilibili.com/video/av12345678&lt;/code>为&lt;code>av12345678&lt;/code>。&lt;code>AV&lt;/code>和均受&lt;code>BV&lt;/code>支持。&lt;/p>
@@ -24083,16 +24072,7 @@ allowfullscreen="true"
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">
-&lt;div class="video-wrapper">
-&lt;iframe src="https://v.qq.com/txp/iframe/player.html?vid=VIDEO_ID&amp;auto=0"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">tencent&lt;/span> &lt;span class="nx">VIDEO_ID&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://v.qq.com/x/cover/hzgtnf6tbvfekfv/g0014r3khdw.html&lt;/code>为&lt;code>g0014r3khdw&lt;/code>。&lt;/p>
@@ -24104,14 +24084,7 @@ allowfullscreen="true"
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/VIDEO_ID"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">youtube&lt;/span> &lt;span class="nx">VIDEO_ID&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>可以&lt;code>Video_ID&lt;/code>在视频的 URL 中找到。例如 的视频ID&lt;code>https://www.youtube.com/watch?v=VIDEO_ID&lt;/code>为&lt;code>VIDEO_ID&lt;/code>。&lt;/p>
@@ -24124,31 +24097,9 @@ title="YouTube Video"
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
-&lt;video
-controls
-src="VIDEO_URL"
->
-&lt;p>
-Your browser doesn't support HTML5 video. Here is a
-&lt;a href="VIDEO_URL">link to the video&lt;/a> instead.
-&lt;/p>
-&lt;/video>
-&lt;/div>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">video&lt;/span> &lt;span class="nx">VIDEO_URL&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
-&lt;video
-controls
-src="VIDEO_URL"
-poster="./video-poster.webp"
-autoplay
->
-&lt;p>
-Your browser doesn't support HTML5 video. Here is a
-&lt;a href="VIDEO_URL">link to the video&lt;/a> instead.
-&lt;/p>
-&lt;/video>
-&lt;/div>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">video&lt;/span> &lt;span class="nx">src&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;VIDEO_URL&amp;#34;&lt;/span> &lt;span class="nx">autoplay&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span> &lt;span class="nx">poster&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;./video-poster.webp&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>可以&lt;code>VIDEO_URL&lt;/code>是 URL 或相对于目录的路径&lt;code>static&lt;/code>。例如，&lt;code>src=&amp;quot;/video/my-video.mp4&amp;quot;&lt;/code>将嵌入您站点文件夹的视频文件&lt;code>static/video/my-video.mp4&lt;/code>。&lt;/p>
@@ -24161,10 +24112,7 @@ Your browser doesn't support HTML5 video. Here is a
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;script
-type="application/javascript"
-src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
->&lt;/script>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">gitlab&lt;/span> &lt;span class="nx">SNIPPET_ID&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>可以&lt;code>SNIPPET_ID&lt;/code>在片段的 URL 中找到。例如，代码段 ID&lt;code>https://gitlab.com/-/snippets/1234567&lt;/code>是&lt;code>1234567&lt;/code>。&lt;/p>
@@ -24172,10 +24120,13 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;blockquote>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>A famous person, &lt;/span>&lt;a href="https://en.wikipedia.org/wiki/Book">&lt;cite>The book they wrote&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">quote&lt;/span> &lt;span class="nx">author&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;A famous person&amp;#34;&lt;/span> &lt;span class="nx">source&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;The book they wrote&amp;#34;&lt;/span> &lt;span class="nx">url&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;https://en.wikipedia.org/wiki/Book&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">Lorem&lt;/span> &lt;span class="nx">ipsum&lt;/span> &lt;span class="nx">dolor&lt;/span> &lt;span class="nx">sit&lt;/span> &lt;span class="nx">amet&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">consectetur&lt;/span> &lt;span class="nx">adipiscing&lt;/span> &lt;span class="nx">elit&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">sed&lt;/span> &lt;span class="nx">do&lt;/span> &lt;span class="nx">eiusmod&lt;/span> &lt;span class="nx">tempor&lt;/span> &lt;span class="nx">incididunt&lt;/span> &lt;span class="nx">ut&lt;/span> &lt;span class="nx">labore&lt;/span> &lt;span class="nx">et&lt;/span> &lt;span class="nx">dolore&lt;/span> &lt;span class="nx">magna&lt;/span> &lt;span class="nx">aliqua&lt;/span>&lt;span class="p">.&lt;/span> &lt;span class="nx">Ut&lt;/span> &lt;span class="nx">enim&lt;/span> &lt;span class="nx">ad&lt;/span> &lt;span class="nx">minim&lt;/span> &lt;span class="nx">veniam&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">quis&lt;/span> &lt;span class="nx">nostrud&lt;/span> &lt;span class="nx">exercitation&lt;/span> &lt;span class="nx">ullamco&lt;/span> &lt;span class="nx">laboris&lt;/span> &lt;span class="nx">nisi&lt;/span> &lt;span class="nx">ut&lt;/span> &lt;span class="nx">aliquip&lt;/span> &lt;span class="nx">ex&lt;/span> &lt;span class="nx">ea&lt;/span> &lt;span class="nx">commodo&lt;/span> &lt;span class="nx">consequat&lt;/span>&lt;span class="p">.&lt;/span> &lt;span class="nx">Duis&lt;/span> &lt;span class="nx">aute&lt;/span> &lt;span class="nx">irure&lt;/span> &lt;span class="nx">dolor&lt;/span> &lt;span class="nx">in&lt;/span> &lt;span class="nx">reprehenderit&lt;/span> &lt;span class="nx">in&lt;/span> &lt;span class="nx">voluptate&lt;/span> &lt;span class="nx">velit&lt;/span> &lt;span class="nx">esse&lt;/span> &lt;span class="nx">cillum&lt;/span> &lt;span class="nx">dolore&lt;/span> &lt;span class="nx">eu&lt;/span> &lt;span class="nx">fugiat&lt;/span> &lt;span class="nx">nulla&lt;/span> &lt;span class="nx">pariatur&lt;/span>&lt;span class="p">.&lt;/span> &lt;span class="nx">Excepteur&lt;/span> &lt;span class="nx">sint&lt;/span> &lt;span class="nx">occaecat&lt;/span> &lt;span class="nx">cupidatat&lt;/span> &lt;span class="nx">non&lt;/span> &lt;span class="nx">proident&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">sunt&lt;/span> &lt;span class="nx">in&lt;/span> &lt;span class="nx">culpa&lt;/span> &lt;span class="nx">qui&lt;/span> &lt;span class="nx">officia&lt;/span> &lt;span class="nx">deserunt&lt;/span> &lt;span class="nx">mollit&lt;/span> &lt;span class="nx">anim&lt;/span> &lt;span class="nx">id&lt;/span> &lt;span class="nx">est&lt;/span> &lt;span class="nx">laborum&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">quote&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>通过上述组织，您可以像这样在您的内容中插入图像：&lt;/p>
@@ -24186,9 +24137,9 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">--- content/post/my-first-post/index.md ---
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.webp&lt;/span>)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.webp&lt;/span>)
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">--- content/post/my-first-post/index.md ---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![Image 1](image1.webp)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![Image 2](image2.webp)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="插入图库">插入图库&lt;/h2>
@@ -24204,7 +24155,7 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;/span>&lt;span class="lnt">7
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">content
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">content
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── gallery
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── my-first-gallery
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── index.md
@@ -24220,9 +24171,9 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">--- content/gallery/my-first-gallery/index.md ---
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image1.webp&lt;/span>) ![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">image2.webp&lt;/span>)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">image3.webp&lt;/span>)
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">--- content/gallery/my-first-gallery/index.md ---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![Image 1](image1.webp) ![Image 2](image2.webp)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![Image 1](image3.webp)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>它将呈现两行，第一行有两张图像，第二行有一张图像。&lt;/p>
@@ -24262,11 +24213,10 @@ src="https://gitlab.com/-/snippets/SNIPPET_ID.js"
 &lt;/div>
 &lt;/div>&lt;h2 id="因为它没用--即答">因为它没用= = 即答)&lt;/h2>
 &lt;p>&lt;del>别打我 逃)&lt;/del>&lt;/p>
-&lt;p>支持美人鱼JS和Ketax&lt;/p>
+&lt;p>支持美人鱼JS和Ketax数学公式&lt;/p>
 &lt;h2 id="google广告">Google广告&lt;/h2>
-&lt;p>已经植入&lt;/p>
+&lt;p>已经植入到cfg文件&lt;/p>
 &lt;h2 id="hugo文章加密">hugo文章加密&lt;/h2>
-&lt;p>···&lt;/p>
 &lt;hr>
 &lt;h2 id="title-this-is-an-encrypted-post">title: &amp;ldquo;This Is An Encrypted Post&amp;rdquo;&lt;/h2>
 &lt;p>This content is visible to anyone.&lt;/p>
@@ -24367,40 +24317,30 @@ hugoDecrypt(userStorage.getItem(storageKey), "storage");
 };
 &lt;/script>
 &lt;/hugo-encrypt>
-&lt;pre>&lt;code>This content is visible to anyone.
-&lt;hugo-encrypt>
-&lt;div id="hugo-encrypt-encryption-notice">
-&lt;p>以下内容被密码保护&lt;/p>
-&lt;noscript>&lt;span id="hugo-encrypt-enable-js">Javascript needs to be enabled to decrypt content&lt;/span>&lt;/noscript>
-&lt;div class='hugo-encrypt-form'>
-&lt;input
-class="hugo-encrypt-input"
-id="hugo-encrypt-password"
-placeholder='请输入密码'
-/>
-&lt;input
-class="hugo-encrypt-button"
-type="button"
-value='提交'
-id="button" onclick="hugoDecrypt(document.getElementById('hugo-encrypt-password').value,'input')"
-/>
-&lt;div id="hugo-encrypt-input-response">&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;cipher-text data-password='postspecificpassword' style="display:none;">
-&lt;pre>&lt;code>This content will be encrypted!
-&lt;/code>&lt;/pre>
-&lt;/cipher-text>
-&lt;/hugo-encrypt>
-&lt;/code>&lt;/pre>
-&lt;p>···&lt;/p>
-&lt;h2 id="视频api测试mp4">视频API测试（MP4）&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&lt;div class="video-wrapper">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">This&lt;/span> &lt;span class="nx">content&lt;/span> &lt;span class="nx">is&lt;/span> &lt;span class="nx">visible&lt;/span> &lt;span class="nx">to&lt;/span> &lt;span class="nx">anyone&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>&lt;span class="o">%&lt;/span> &lt;span class="nx">hugo&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">encrypt&lt;/span> &lt;span class="s">&amp;#34;postspecificpassword&amp;#34;&lt;/span> &lt;span class="o">%&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">This&lt;/span> &lt;span class="nx">content&lt;/span> &lt;span class="nx">will&lt;/span> &lt;span class="nx">be&lt;/span> &lt;span class="nx">encrypted&lt;/span>&lt;span class="p">!&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>&lt;span class="o">%&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">hugo&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">encrypt&lt;/span> &lt;span class="o">%&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="视频api测试mp4">视频API测试（MP4）&lt;/h2>
+&lt;div class="video-wrapper">
 &lt;video
 controls
 src=""
@@ -24413,21 +24353,45 @@ Your browser doesn't support HTML5 video. Here is a
 &lt;/p>
 &lt;/video>
 &lt;/div>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">video&lt;/span> &lt;span class="nx">src&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;&amp;#34;&lt;/span> &lt;span class="nx">autoplay&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;false&amp;#34;&lt;/span> &lt;span class="nx">poster&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;./avatar.webp&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="重点标记">重点标记&lt;/h2>
 &lt;mark>这是一个重点标记&lt;/mark>
-&lt;pre>&lt;code>&lt;mark>这是一个重点标记&lt;/mark>
-&lt;/code>&lt;/pre>
-&lt;h2 id="缩写">缩写&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">mark&lt;/span> &lt;span class="nx">text&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;这是一个重点标记&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="缩写">缩写&lt;/h2>
 &lt;abbr title="这里有着非常非常非常非常非常非常非常非常长的缩写内容~">缩写的文本&lt;/abbr>
-&lt;pre>&lt;code>&lt;abbr title="这里有着非常非常非常非常非常非常非常非常长的缩写内容~">缩写的文本&lt;/abbr>
-&lt;/code>&lt;/pre>
-&lt;h2 id="文字居中">文字居中&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">abbr&lt;/span> &lt;span class="nx">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;这里有着非常非常非常非常非常非常非常非常长的缩写内容~&amp;#34;&lt;/span> &lt;span class="nx">text&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;缩写的文本&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="文字居中">文字居中&lt;/h2>
 &lt;p style="text-align:center">文字居中&lt;/p>
-&lt;pre>&lt;code>&lt;p style="text-align:center">文字居中&lt;/p>
-&lt;/code>&lt;/pre>
-&lt;h2 id="块引用">块引用&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">align&lt;/span> &lt;span class="nx">center&lt;/span> &lt;span class="s">&amp;#34;文字居中&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="块引用">块引用&lt;/h2>
 &lt;blockquote>
 &lt;p>死亡不是一切的终点，遗忘才是&lt;/p>
 &lt;footer style="text-align:right">
@@ -24437,39 +24401,51 @@ Your browser doesn't support HTML5 video. Here is a
 &lt;/cite>
 &lt;/footer>
 &lt;/blockquote>
-&lt;pre>&lt;code>
-&lt;blockquote>
-&lt;p>&lt;pre>&lt;code>死亡不是一切的终点，遗忘才是
-&lt;/code>&lt;/pre>
-&lt;/p>
-&lt;footer style="text-align:right">
-&lt;strong>电影&lt;/strong>
-&lt;cite>
-&lt;a href="https://irithys.com" title="https://irithys.com" rel="noopener noreferrer">《寻梦环游记》&lt;/a>
-&lt;/cite>
-&lt;/footer>
-&lt;/blockquote>
-&lt;/code>&lt;/pre>
-&lt;h2 id="隐藏">隐藏&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">blockquote&lt;/span> &lt;span class="nx">author&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;电影&amp;#34;&lt;/span> &lt;span class="nx">link&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;https://irithys.com&amp;#34;&lt;/span> &lt;span class="nx">title&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;《寻梦环游记》&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">死亡不是一切的终点&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">遗忘才是&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">blockquote&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="隐藏">隐藏&lt;/h2>
 &lt;details>
 &lt;summary>点下我呀&lt;/summary>
 对看到这行文字的人报以深切的祝福！
 &lt;/details>
-&lt;pre>&lt;code>&lt;details>
-&lt;summary>点下我呀&lt;/summary>
-&lt;pre>&lt;code>对看到这行文字的人报以深切的祝福！
-&lt;/code>&lt;/pre>
-&lt;/details>
-&lt;/code>&lt;/pre>
-&lt;h3 id="标签">标签&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">detail&lt;/span> &lt;span class="s">&amp;#34;点下我呀&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">对看到这行文字的人报以深切的祝福&lt;/span>&lt;span class="err">！&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">detail&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="标签">标签&lt;/h3>
 &lt;div class="notice notice-warning" >
 &lt;div class="notice-title">&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 576 512" fill="hsl(0, 65%, 65%)">&lt;path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/>&lt;/svg>&lt;/div>&lt;p>警告！这个标签太好看了，我忍不住分享。&lt;/p>&lt;/div>
-&lt;pre>&lt;code>
-&lt;div class="notice notice-warning" >
-&lt;div class="notice-title">&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 576 512" fill="hsl(0, 65%, 65%)">&lt;path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/>&lt;/svg>&lt;/div>&lt;pre>&lt;code>警告！这个标签太好看了，我忍不住分享。
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/code>&lt;/pre>
-&lt;p>这是第一个标签，将 &lt;code>notice-warning&lt;/code> 分别修改为 &lt;code>notice-note&lt;/code>、&lt;code>notice-info&lt;/code>、&lt;code>notice-tip&lt;/code> 就可以得到其他三个不同样式的标签啦&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">notice&lt;/span> &lt;span class="nx">notice&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">warning&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">警告&lt;/span>&lt;span class="err">！&lt;/span>&lt;span class="nx">这个标签太好看了&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">我忍不住分享&lt;/span>&lt;span class="err">。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">notice&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是第一个标签，将 &lt;code>notice-warning&lt;/code> 分别修改为 &lt;code>notice-note&lt;/code>、&lt;code>notice-info&lt;/code>、&lt;code>notice-tip&lt;/code> 就可以得到其他三个不同样式的标签啦&lt;/p>
 &lt;h2 id="音乐">音乐&lt;/h2>
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 &lt;style type="text/css">.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .aplayer-list li .aplayer-list-index{color:#ddd}.dark-theme .aplayer .aplayer-list li .aplayer-list-author{color:#ddd}.dark-theme .aplayer .aplayer-lrc{text-shadow:-1px -1px 0 #666}.dark-theme .aplayer .aplayer-lrc:before{background:-moz-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:-webkit-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:linear-gradient(to bottom, #212121 0%, rgba(33,33,33,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#00212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc:after{background:-moz-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:-webkit-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:linear-gradient(to bottom, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00212121', endColorstr='#cc212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc p{color:#fff}.dark-theme .aplayer .aplayer-miniswitcher{background:#484848}.dark-theme .aplayer .aplayer-miniswitcher .aplayer-icon path{fill:#eee}&lt;/style>
@@ -24489,33 +24465,34 @@ prelosd="auto"
 mutex="true"
 list-folded="true">
 &lt;/meting-js>
-&lt;pre>&lt;code>
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-&lt;style type="text/css">.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .aplayer-list li .aplayer-list-index{color:#ddd}.dark-theme .aplayer .aplayer-list li .aplayer-list-author{color:#ddd}.dark-theme .aplayer .aplayer-lrc{text-shadow:-1px -1px 0 #666}.dark-theme .aplayer .aplayer-lrc:before{background:-moz-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:-webkit-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:linear-gradient(to bottom, #212121 0%, rgba(33,33,33,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#00212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc:after{background:-moz-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:-webkit-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:linear-gradient(to bottom, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00212121', endColorstr='#cc212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc p{color:#fff}.dark-theme .aplayer .aplayer-miniswitcher{background:#484848}.dark-theme .aplayer .aplayer-miniswitcher .aplayer-icon path{fill:#eee}&lt;/style>
-&lt;script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js">&lt;/script>
-&lt;script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js">&lt;/script>
-&lt;meting-js
-id="557578993"
-server="netease"
-type="song"
-fixed="false"
-mini="false"
-autoplay="false"
-loop="none"
-theme="#255579"
-volume="0.6"
-prelosd="auto"
-mutex="true"
-list-folded="true">
-&lt;/meting-js>
-&lt;/code>&lt;/pre>
-&lt;h2 id="网易云">网易云&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">music&lt;/span> &lt;span class="nx">id&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;557578993&amp;#34;&lt;/span> &lt;span class="kd">type&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;song&amp;#34;&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;netease&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="网易云">网易云&lt;/h2>
 &lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=557578993&amp;auto=0&amp;height=66">&lt;/iframe>
-&lt;pre>&lt;code>&amp;lt;!-- &lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=557578993&amp;auto=0&amp;height=66">&lt;/iframe>
---&amp;gt;
-&lt;/code>&lt;/pre>
-&lt;h2 id="按键">按键&lt;/h2>
-&lt;p>Press &lt;kbd>CTRL&lt;/kbd> + &lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;/p></description></item><item><title>Free Client（免费客户端集合）</title><link>https://blog.xpdbk.com/post/crack-client/</link><pubDate>Fri, 30 Jun 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/crack-client/</guid><description>&lt;img src="https://blog.xpdbk.com/post/crack-client/1314535.webp" alt="Featured image of post Free Client（免费客户端集合）" />&lt;h2 id="free-client免费客户端集合">Free Client（免费客户端集合）&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">netease&lt;/span> &lt;span class="mi">557578993&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="p">&amp;gt;}}&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="nx">为了不让加载&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">正常应该&lt;/span> &lt;span class="p">{&amp;lt;&lt;/span> &lt;span class="nx">内容&lt;/span> &lt;span class="p">&amp;gt;}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="按键">按键&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">Press&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">CTRL&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">ALT&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="nx">Delete&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">kbd&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="nx">to&lt;/span> &lt;span class="nx">end&lt;/span> &lt;span class="nx">the&lt;/span> &lt;span class="nx">session&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Press &lt;kbd>CTRL&lt;/kbd> + &lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;/p></description></item><item><title>Free Client（免费客户端集合）</title><link>https://blog.xpdbk.com/post/crack-client/</link><pubDate>Fri, 30 Jun 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/crack-client/</guid><description>&lt;img src="https://blog.xpdbk.com/post/crack-client/1314535.webp" alt="Featured image of post Free Client（免费客户端集合）" />&lt;h2 id="free-client免费客户端集合">Free Client（免费客户端集合）&lt;/h2>
 &lt;blockquote>
 &lt;p>欢迎来这里交流低配电脑可用开裂客户端&lt;/p>
 &lt;p>仅为技术科普，请勿用于非法用途&lt;/p>

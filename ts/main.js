@@ -5,7 +5,8 @@
 /*!
 *   Wordpress Theme StackPro
 *
-*   @author: LEl_FENG
-*   @website: https://xpdbk.com
-*   @link: https://github.com/1x000
+*   @author: Jimmy
+*   @mogai: LEl_FENG
+*   @Mywebsite: https://xpdbk.com
+*   @Mylink: https://github.com/1x000
 */
