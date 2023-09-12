@@ -1,4 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/blog/</link><description>Recent content in blog on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>博客常用命令（离线用）</title><link>https://blog.xpdbk.com/post/blog-ml/</link><pubDate>Sun, 16 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/blog-ml/</guid><description>&lt;h2 id="博客命令记录">博客命令记录&lt;/h2>
+&lt;h2 id="代码块语言支持">代码块语言支持&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Prefix&lt;/th>
+&lt;th>Language&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>A&lt;/td>
+&lt;td>ABAP, ABNF, ActionScript, ActionScript 3, Ada, AL, Angular2, ANTLR, ApacheConf, APL, AppleScript, ArangoDB AQL, Arduino, ArmAsm, AutoHotkey, AutoIt, Awk&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>B&lt;/td>
+&lt;td>Ballerina, Bash, Bash Session, Batchfile, BibTeX, Bicep, BlitzBasic, BNF, BQN, Brainfuck&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>C&lt;/td>
+&lt;td>C, C#, C++, Caddyfile, Caddyfile Directives, Cap&amp;rsquo;n Proto, Cassandra CQL, Ceylon, CFEngine3, cfstatement, ChaiScript, Chapel, Cheetah, Clojure, CMake, COBOL, CoffeeScript, Common Lisp, Coq, Crystal, CSS, Cython&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>D&lt;/td>
+&lt;td>D, Dart, Diff, Django/Jinja, dns, Docker, DTD, Dylan&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>E&lt;/td>
+&lt;td>EBNF, Elixir, Elm, EmacsLisp, Erlang&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>F&lt;/td>
+&lt;td>Factor, Fennel, Fish, Forth, Fortran, FortranFixed, FSharp&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>G&lt;/td>
+&lt;td>GAS, GDScript, Genshi, Genshi HTML, Genshi Text, Gherkin, GLSL, Gnuplot, Go, Go HTML Template, Go Text Template, GraphQL, Groff, Groovy&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>H&lt;/td>
+&lt;td>Handlebars, Haskell, Haxe, HCL, Hexdump, HLB, HLSL, HolyC, HTML, HTTP, Hy&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>I&lt;/td>
+&lt;td>Idris, Igor, INI, Io, ISCdhcpd&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>J&lt;/td>
+&lt;td>J, Java, JavaScript, JSON, Julia, Jungle&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>K&lt;/td>
+&lt;td>Kotlin&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>L&lt;/td>
+&lt;td>Lighttpd configuration file, LLVM, Lua&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>M&lt;/td>
+&lt;td>Makefile, Mako, markdown, Mason, Mathematica, Matlab, mcfunction, Meson, Metal, MiniZinc, MLIR, Modula-2, MonkeyC, MorrowindScript, Myghty, MySQL&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>N&lt;/td>
+&lt;td>NASM, Natural, Newspeak, Nginx configuration file, Nim, Nix&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>O&lt;/td>
+&lt;td>Objective-C, OCaml, Octave, Odin, OnesEnterprise, OpenEdge ABL, OpenSCAD, Org Mode&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>P&lt;/td>
+&lt;td>PacmanConf, Perl, PHP, PHTML, Pig, PkgConfig, PL/pgSQL, plaintext, Plutus Core, Pony, PostgreSQL SQL dialect, PostScript, POVRay, PowerQuery, PowerShell, Prolog, PromQL, properties, Protocol Buffer, PSL, Puppet, Python, Python 2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Q&lt;/td>
+&lt;td>QBasic, QML&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>R&lt;/td>
+&lt;td>R, Racket, Ragel, Raku, react, ReasonML, reg, reStructuredText, Rexx, Ruby, Rust&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>S&lt;/td>
+&lt;td>SAS, Sass, Scala, Scheme, Scilab, SCSS, Sed, Sieve, Smali, Smalltalk, Smarty, Snobol, Solidity, SourcePawn, SPARQL, SQL, SquidConf, Standard ML, stas, Stylus, Svelte, Swift, SYSTEMD, systemverilog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>T&lt;/td>
+&lt;td>TableGen, Tal, TASM, Tcl, Tcsh, Termcap, Terminfo, Terraform, TeX, Thrift, TOML, TradingView, Transact-SQL, Turing, Turtle, Twig, TypeScript, TypoScript, TypoScriptCssData, TypoScriptHtmlData&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>V&lt;/td>
+&lt;td>V, V shell, Vala, VB.net, verilog, VHDL, VHS, VimL, vue&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>W&lt;/td>
+&lt;td>WDTE, WebGPU Shading Language, Whiley&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>X&lt;/td>
+&lt;td>XML, Xorg&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Y&lt;/td>
+&lt;td>YAML, YANG&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Z&lt;/td>
+&lt;td>Z80 Assembly, Zed, Zig&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;h2 id="主题相关">主题相关&lt;/h2>
 &lt;p>FrontMatter 字段含义&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">

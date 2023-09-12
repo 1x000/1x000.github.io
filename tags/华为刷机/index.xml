@@ -201,7 +201,7 @@ data-flex-basis="1465px"
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb shell cmd package install-existing 应用包名
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">adb shell cmd package install-existing 应用包名
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>关于应用数据：当时使用 &lt;code>pm&lt;/code> 卸载应用时，加了&lt;code>-k&lt;/code> 参数保留卸载的应用数据，才可以恢复后同时保留应用数据，如果当时&lt;code>pm&lt;/code>卸载应用没加，就只能恢复预装的应用，但是无法恢复用户数据。&lt;/p>
@@ -211,7 +211,7 @@ data-flex-basis="1465px"
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb shell cmd package install-existing com.huawei.appmarket
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">adb shell cmd package install-existing com.huawei.appmarket
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>通过 adb 命令方式卸载的预装都能恢复，通过root权限去文件系统上删除文件来卸载应用则无法恢复&lt;/p>
@@ -299,7 +299,7 @@ data-flex-basis="219px"
 &lt;/span>&lt;span class="lnt">22
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb shell
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">adb shell
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">255&lt;span class="p">|&lt;/span>shell@hwp7:/ $ su
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">root@hwp7:/ &lt;span class="c1"># cd /storage/sdcard1/&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">root@hwp7:/storage/sdcard1 &lt;span class="c1"># mkdir -p PartitionBackup&lt;/span>
@@ -542,7 +542,7 @@ data-flex-basis="291px"
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">fastboot oem unlock YOUR_CODE_HERE
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">fastboot oem unlock YOUR_CODE_HERE
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>玩得开心。&lt;/p>
@@ -720,7 +720,7 @@ data-flex-basis="291px"
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb devices
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">adb devices
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">adb push &amp;lt;LOCATION-OF-SUITABLE-SU-BINARY-ON-PC-HERE&amp;gt; /data/local/tmp/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -730,7 +730,7 @@ data-flex-basis="291px"
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb shell &lt;span class="s2">&amp;#34;cd /data/local/tmp &amp;amp; chmod 776 su&amp;#34;&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">adb shell &lt;span class="s2">&amp;#34;cd /data/local/tmp &amp;amp; chmod 776 su&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>是什么让&lt;strong>su&lt;/strong>二进制可执行文件：它的所有权默认设置为 shell。 C：然后在台式电脑shell中输入
@@ -748,7 +748,7 @@ data-flex-basis="291px"
 &lt;/span>&lt;span class="lnt">8
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">adb shell
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">adb shell
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">PATH&lt;/span>&lt;span class="o">=&lt;/span>/data/local/tmp:&lt;span class="nv">$PATH&lt;/span>&lt;span class="s2">&amp;#34;
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">su -c &amp;#34;&lt;/span>&amp;lt;SHELL-CMD-HERE&amp;gt;&lt;span class="s2">&amp;#34;
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">
@@ -818,7 +818,7 @@ EMUI5：&lt;/p>
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">0&lt;/span> &amp;gt; /sys/kernel/set_hmp_thresholds/enable
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">0&lt;/span> &amp;gt; /sys/kernel/set_hmp_thresholds/enable
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">1&lt;/span> &amp;gt; /sys/kernel/hmp/boost
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -829,7 +829,7 @@ EMUI5：&lt;/p>
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">0&lt;/span> &amp;gt; /sys/kernel/set_hmp_thresholds/enable
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">0&lt;/span> &amp;gt; /sys/kernel/set_hmp_thresholds/enable
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">1&lt;/span> &amp;gt; /sys/kernel/aes/boot_boost
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -840,7 +840,7 @@ EMUI5：&lt;/p>
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">85000&lt;/span> &amp;gt; /sys/class/thermal/thermal_zone0/trip_point_0_temp
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">85000&lt;/span> &amp;gt; /sys/class/thermal/thermal_zone0/trip_point_0_temp
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="m">90000&lt;/span> &amp;gt; /sys/class/thermal/thermal_zone0/trip_point_1_temp
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -1994,7 +1994,7 @@ PERF_TAG_GPU_MAX = 8（GPU最大频率）PERF_TAG_B_CPU_MAX = 5（CPU大核最�
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">service call perfhub &lt;span class="m">2&lt;/span> i64 &lt;span class="m">2&lt;/span> i64 &lt;span class="m">5&lt;/span> i64 2304000（修改大核最大频率至2304）
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">service call perfhub &lt;span class="m">2&lt;/span> i64 &lt;span class="m">2&lt;/span> i64 &lt;span class="m">5&lt;/span> i64 2304000（修改大核最大频率至2304）
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">service call perfhub &lt;span class="m">2&lt;/span> i64 &lt;span class="m">2&lt;/span> i64 &lt;span class="m">8&lt;/span> i64 800000000（修改GPU最大频率至800）
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -2035,7 +2035,7 @@ PERF_TAG_GPU_MAX = 8（GPU最大频率）PERF_TAG_B_CPU_MAX = 5（CPU大核最�
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">fastboot oem unlock
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">fastboot oem unlock
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>– 当您执行上述命令时，手机的引导加载程序屏幕上会出现一条确认消息。&lt;br>
@@ -2094,7 +2094,7 @@ PERF_TAG_GPU_MAX = 8（GPU最大频率）PERF_TAG_B_CPU_MAX = 5（CPU大核最�
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">fastboot oem unlock &lt;span class="o">[&lt;/span>解锁码&lt;span class="o">]&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">fastboot oem unlock &lt;span class="o">[&lt;/span>解锁码&lt;span class="o">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>。然后平板会提示解锁，初中水平的英语就能读懂，选择YES后会恢复出厂设置（可能失败，但没有影响）&lt;/p>
@@ -2107,7 +2107,7 @@ PERF_TAG_GPU_MAX = 8（GPU最大频率）PERF_TAG_B_CPU_MAX = 5（CPU大核最�
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hs2t list partitions //列出所有分区
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">hs2t list partitions //列出所有分区
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hs2t dump all --output .&lt;span class="se">\\&lt;/span> //提取分区镜像
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -2119,7 +2119,7 @@ PERF_TAG_GPU_MAX = 8（GPU最大频率）PERF_TAG_B_CPU_MAX = 5（CPU大核最�
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">fastboot flash recovery_ramdisk &lt;span class="o">[&lt;/span>twrp镜像位置&lt;span class="o">]&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">fastboot flash recovery_ramdisk &lt;span class="o">[&lt;/span>twrp镜像位置&lt;span class="o">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>重启进入recovery（电源键+音量上键），并插入SD卡（尽量大一些，userdata分区较大，否则可能备份失败），如果没有足够大的SD卡可以使用USB+OTG替代，挂载所有分区，使用终端指令&lt;/p>
@@ -2129,7 +2129,7 @@ PERF_TAG_GPU_MAX = 8（GPU最大频率）PERF_TAG_B_CPU_MAX = 5（CPU大核最�
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">dd &lt;span class="k">if&lt;/span>&lt;span class="o">=&lt;/span>/dev/block/platform/hi_mci.0/by-name/&lt;span class="o">[&lt;/span>分区名&lt;span class="o">]&lt;/span> &lt;span class="nv">of&lt;/span>&lt;span class="o">=&lt;/span>/external_sd/&lt;span class="o">[&lt;/span>分区名&lt;span class="o">]&lt;/span>.img //使用SD卡
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">dd &lt;span class="k">if&lt;/span>&lt;span class="o">=&lt;/span>/dev/block/platform/hi_mci.0/by-name/&lt;span class="o">[&lt;/span>分区名&lt;span class="o">]&lt;/span> &lt;span class="nv">of&lt;/span>&lt;span class="o">=&lt;/span>/external_sd/&lt;span class="o">[&lt;/span>分区名&lt;span class="o">]&lt;/span>.img //使用SD卡
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dd &lt;span class="k">if&lt;/span>&lt;span class="o">=&lt;/span>/dev/block/platform/hi_mci.0/by-name/&lt;span class="o">[&lt;/span>分区名&lt;span class="o">]&lt;/span> &lt;span class="nv">of&lt;/span>&lt;span class="o">=&lt;/span>/usbotg/&lt;span class="o">[&lt;/span>分区名&lt;span class="o">]&lt;/span>.img //使用USB+OTG
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -2153,7 +2153,7 @@ PERF_TAG_GPU_MAX = 8（GPU最大频率）PERF_TAG_B_CPU_MAX = 5（CPU大核最�
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">fastboot flash ramdisk &lt;span class="o">[&lt;/span>magisk文件地址&lt;span class="o">]&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">fastboot flash ramdisk &lt;span class="o">[&lt;/span>magisk文件地址&lt;span class="o">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>如果出现了“Commend not allowed&amp;quot;这样的错误，是因为处于原设备的fastboot下，重新短接、运行POTATONV进入potatoNV的fastboot以解决。&lt;/p>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Batchfile on LEl_FENG Blog</title><link>https://blog.xpdbk.com/en/tags/batchfile/</link><description>Recent content in Batchfile on LEl_FENG Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Tue, 12 Sep 2023 21:13:11 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/en/tags/batchfile/index.xml" rel="self" type="application/rss+xml"/><item><title>Batchfile batch script garbled solution</title><link>https://blog.xpdbk.com/en/post/batchfile-fix-lange-erorr/</link><pubDate>Tue, 12 Sep 2023 21:13:11 +0700</pubDate><guid>https://blog.xpdbk.com/en/post/batchfile-fix-lange-erorr/</guid><description>&lt;h2 id="question">question&lt;/h2>
+&lt;p>The bat batch processing script is as follows&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@echo off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo hello,world.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo haha
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pause
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>When CMD executes the script, Chinese garbled characters appear.&lt;/p>
+&lt;h2 id="analyze">analyze&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Garbled characters are all related to character encoding. .&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Computers can only process numbers. If text is encountered, it must be converted to a number before processing. This is where character encodings (character sets) come in. . If you use a certain character encoding for encoding, you must use the same character encoding for decoding. If different character encodings are used, garbled characters will appear. .&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="solve">solve&lt;/h2>
+&lt;h3 id="convert-the-encoding-of-script-files">Convert the encoding of script files&lt;/h3>
+&lt;p>By default, in the bat script file, if the Chinese is not ANSI encoding, garbled characters will appear. Therefore, you can use the Notepad that comes with the Windows operating system platform to open the script file, click the menu [File] - [Save As], and select ANSI encoding to save.&lt;/p>
+&lt;p>After converting the encoding and running it again, the Chinese garbled problem was solved.&lt;/p>
+&lt;h3 id="change-code">Change code&lt;/h3>
+&lt;p>Declare changes to the previous code in the original bat script file&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">chcp 65001
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="other">other&lt;/h2>
+&lt;ol>
+&lt;li>Common code page mapping&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>code page&lt;/th>
+&lt;th>mapped character set&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>936&lt;/td>
+&lt;td>GB2312&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>20127&lt;/td>
+&lt;td>US-ASCII&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>65001&lt;/td>
+&lt;td>UTF-8&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

@@ -1,0 +1,677 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="ffmpeg的流视频HLS格式转换"><meta name=keywords content="流视频，ffmpeg，转换视频"><title>MP4到流视频转换</title><link rel=canonical href=https://blog.xpdbk.com/post/ffmepg-mp4-to-hls-haha/><link rel=stylesheet href=/scss/style.min.5bc6c5a3cf7f61c06726b8be5d51be44c4af55ae623092ac24341d12d16b9c05.css><script>function addLoadEvent(e){var t=window.onload;typeof window.onload!="function"?window.onload=e:window.onload=function(){t(),e()}}</script><meta property="og:title" content="MP4到流视频转换"><meta property="og:description" content="ffmpeg的流视频HLS格式转换"><meta property="og:url" content="https://blog.xpdbk.com/post/ffmepg-mp4-to-hls-haha/"><meta property="og:site_name" content="LEl_FENG的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="ffmpeg"><meta property="article:tag" content="技术"><meta property="article:tag" content="转换视频"><meta property="article:published_time" content="2023-09-12T22:10:08+07:00"><meta property="article:modified_time" content="2023-09-12T15:24:48+00:00"><meta property="og:image" content="https://blog.xpdbk.com/img/default.webp"><meta name=twitter:site content="@HuaweiH45278254"><meta name=twitter:creator content="@HuaweiH45278254"><meta name=twitter:title content="MP4到流视频转换"><meta name=twitter:description content="ffmpeg的流视频HLS格式转换"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://blog.xpdbk.com/img/default.webp"><link rel="shortcut icon" href=/favicon.ico><script async src="https://www.googletagmanager.com/gtag/js?id=G-F7BV1R4CWR"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-F7BV1R4CWR",{anonymize_ip:!1})}</script><meta name=referrer content="no-referrer"><style>.blur{color:transparent;text-shadow:0 0 8px rgba(0,0,0,.5)}.blur:hover{color:transparent;text-shadow:0 0 0 #000}.shady{color:#000;font-weight:700;box-shadow:0 -20px #000 inset;transition:all .3s ease}.shady:hover{font-weight:700;color:#fff;box-shadow:0 -20px #000 inset}</style><script>function confirmLink(e){var t=e.href,n=`您即将离开当前网站,前往:
+
+${t}
+
+确定继续前往?`;confirm(n)&&window.open(t)}document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll('a[href^="http"]');for(let t of e)/^https:\/\/blog\.xpdbk\.com/.test(t.href)||t.addEventListener("click",e=>{e.preventDefault(),confirmLink(t)})})</script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><div id=article-toolbar style=position:sticky;top:5px;z-index:1000><a href=/ class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>返回</span></a></div><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#mp4-转-m3u8>MP4 转 M3U8</a><ol><li><a href=#操作简单效率低>操作简单，效率低</a></li><li><a href=#效率优化提升效率>效率优化，提升效率</a></li><li><a href=#hls_time-切片时间不准确的问题>hls_time 切片时间不准确的问题</a></li><li><a href=#m3u8-格式解析>m3u8 格式解析</a></li></ol></li><li><a href=#hls>HLS</a></li><li><a href=#m3u8ts-合并为-mp4>m3u8(ts) 合并为 MP4</a><ol><li><a href=#远程文件>远程文件</a></li><li><a href=#本地文件>本地文件</a></li><li><a href=#php实现代码>php实现代码</a></li><li><a href=#python实现代码>Python实现代码</a></li><li><a href=#golang实现代码>Golang实现代码</a></li><li><a href=#rust实现代码>Rust实现代码</a></li><li><a href=#c实现代码>C++实现代码</a></li><li><a href=#nasm实现代码>NASM实现代码</a></li><li><a href=#nodejs实现代码>NODEJS实现代码</a></li><li><a href=#kotlin实现代码>kotlin实现代码</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/%E6%8A%80%E6%9C%AF/ style=background-color:#253rdf;color:#fff>技术</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/post/ffmepg-mp4-to-hls-haha/>MP4到流视频转换</a></h2><h3 class=article-subtitle>ffmpeg的流视频HLS格式转换</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>2023-09-12</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4L18.5 9.5a1.5 1.5.0 00-4-4L4 16v4"/><path d="M13.5 6.5l4 4"/></svg><time class=article-words>文章字数: 3297 字</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 7 分钟</time></div></footer></div></header><section class=article-content><p>FFmpeg 是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。它提供了录制、转换以及流化音视频的软件。</p><blockquote><p>官方下载网站 http://www.ffmpeg.org/download.html 下载解压缩后配置环境</p></blockquote><h2 id=mp4-转-m3u8>MP4 转 M3U8</h2><p>M3U8 是 Unicode 版本的 M3U，用 UTF-8 编码。”M3U” 和 “M3U8” 文件都是苹果公司使用的 HTTP Live Streaming（HLS） 协议格式的基础，这种协议格式可以在 iPhone 和 Macbook 等设备播放。</p><p>简单来说，m3u8是一个视频格式，就是将一个视频分成很多的小部分，这样方便视频的加载。</p><h3 id=操作简单效率低>操作简单，效率低</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ffmpeg -i input.mp4 -c:v libx264 -c:a aac -strict -2 -f hls -hls_list_size <span class=m>2</span> -hls_time <span class=m>15</span> output.m3u8
+</span></span></code></pre></td></tr></table></div></div><p>生成的效果是：</p><p>将 input.mp4 视频文件每 15 秒生成一个 ts 文件，最后生成一个 m3u8 文件，m3u8 文件是 ts 的索引文件。</p><p>我们直接用 VLC media player 等播放软件是可以直接打开 m3u8 文件，像播放 mp4 一样。</p><blockquote><p>默认的每片长度为 2 秒，m3u8 文件中默认只保存最新的 5 条片的信息，导致最后播放的时候只能播最后的一小部分（直播的时候特别注意）。<br>-hls_time n 设置每片的长度，默认值为 2，单位为秒。<br>-hls_list_size n 设置播放列表保存的最多条目，设置为 0 会保存有所片信息，默认值为5。<br>-hls_wrap n 设置多少片之后开始覆盖，如果设置为0则不会覆盖，默认值为0。这个选项能够避免在磁盘上存储过多的 片，而且能够限制写入磁盘的最多的片的数量。<br>-hls_start_number n 设置播放列表中 sequence number 的值为 number，默认值为 0。<br>注意：播放列表的 sequence number 对每个 segment 来说都必须是唯一的，而且它不能和片的文件名（当使用 wrap 选项时，文件名有可能会重复使用）混淆。</p><p>更多参数请看文档：ffmpeg.org/ffmpeg.html#Video-Options</p></blockquote><h3 id=效率优化提升效率>效率优化，提升效率</h3><blockquote><p>TS 文件是一种媒体的扩展名，它是日本高清摄像机拍摄下进行的封装格式。MPEG2-TS（Transport Stream“传输流”；又称TS、TP、MPEG-TS 或 M2T）是用于音效、图像与数据的通信协定，最早应用于DVD的实时传送节目。MPEG2-TS格式的特点就是要求从视频流的任一片段开始都是可以独立解码的。</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 1.视频整体转码ts</span>
+</span></span><span class=line><span class=cl>ffmpeg -y -i music.mp4  -vcodec copy -acodec copy -vbsf h264_mp4toannexb out<span class=se>\m</span>usic.ts
+</span></span><span class=line><span class=cl><span class=c1># 2. .ts文件切片</span>
+</span></span><span class=line><span class=cl>ffmpeg -i music.ts -c copy -map <span class=m>0</span> -f segment -segment_list out<span class=se>\m</span>usic.m3u8 -segment_time <span class=m>10</span> out<span class=se>\1</span>5s_%3d.ts
+</span></span></code></pre></td></tr></table></div></div><h3 id=hls_time-切片时间不准确的问题>hls_time 切片时间不准确的问题</h3><p>播放 m3u8 的 ts 切片，必须要完整的下载一个 ts 切片，才能够播放，设置hls_time 的时间间隔越短越好（ 根据实际情况来 ），实际过程中设置切片时间间隔为 2 秒，调用如下指令：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ffmpeg -i test.mp4 -c:v libx264 -c:a aac -strict -2 -f hls -hls_time <span class=m>2</span> index.m3u8
+</span></span></code></pre></td></tr></table></div></div><p>但没有按照参数输入，进行切片。</p><p>原因：</p><p>ts 文件的切割，还跟原文件视频的 GOP 大小有关系（也就是两个 I 帧之间的时间间隔），因为任何一个 ts 分片第一帧必须是I帧，否则无法最快播放，并且第一帧不是 I 帧，对于播放器也是没有任何的意义，直接被播放器扔掉。任何一个视频流必须在获取到第一个I帧才能成功解码出图片。虽然指定了 1 秒切割一个 ts 文件，实际上，由于原视频流可能好几秒才有一个 I 帧，所以必须等到下一个 I 帧，才会重新开始切片。</p><p>解决：</p><p>既然知道要1秒产生一个ts分片，那就必须产生切片的过程中，强制一秒中产生一个关键帧。</p><p>设置关键帧间隔，设置间隔为 2 秒的参数如下：<code>-force_key_frames "expr:gte(t,n_forced*2)</code>“</p><p>完整指令如：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ffmpeg -i test.mp4 -force_key_frames <span class=s2>&#34;expr:gte(t,n_forced*2)&#34;</span> -strict -2 -c:a aac -c:v libx264 -hls_time <span class=m>2</span> -f hls index.m3u8
+</span></span></code></pre></td></tr></table></div></div><h3 id=m3u8-格式解析>m3u8 格式解析</h3><p>完整的 m3u8 文件有三部分：</p><ul><li>index.m3u8，保存视频的基本信息和分段文件顺序；</li><li>key，如果视频加密，保存密钥；</li><li>data文件，其他都是视频的数据文件。</li></ul><p>具体内容解析：</p><ul><li><code>#EXTM3U</code>，是文件开始</li><li><code>#EXT-X-VERSION</code>，标识HLS的协议版本号；</li><li><code>#EXT-X-TARGETDURATION</code>，表示每个视频分段最大的时长（单位秒）；</li><li><code>#EXT-X-MEDIA-SEQUENCE</code>，表示播放列表第一个 URL 片段文件的序列号；</li><li><code>#EXT-X-PLAYLIST-TYPE</code>，表明流媒体类型；</li><li><code>#EXT-X-KEY</code>，加密方式，这里加密方式为<code>AES-128</code>，同时指定<code>IV</code>，在解密时需要；</li><li><code>#EXTINF</code>，表示其后 URL 指定的媒体片段时长（单位为秒）。</li></ul><h2 id=hls>HLS</h2><blockquote><p>HLS 的工作原理是把整个流分成一个个小的基于 HTTP 的文件来下载，每次只下载一些。</p><p>当媒体流正在播放时，客户端可以选择从许多不同的备用源中以不同的速率下载同样的资源，允许流媒体会话适应不同的数据速率。</p><p>在开始一个流媒体会话时，客户端会下载一个包含元数据的 extended M3U (m3u8) playlist文件，用于寻找可用的媒体流。</p><p>HLS 只请求基本的 HTTP 报文，与实时传输协议（RTP）不同，HLS 可以穿过任何允许 HTTP 数据通过的防火墙或者代理服务器。</p><p>它也很容易使用内容分发网络来传输媒体流。</p></blockquote><h2 id=m3u8ts-合并为-mp4>m3u8(ts) 合并为 MP4</h2><h3 id=远程文件>远程文件</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ffmpeg -i “https://xpdbk.com/demo/ffmpeg/hls265/output.m3u8” -vcodec copy -acodec copy -absf aac_adtstoasc output.mp4
+</span></span></code></pre></td></tr></table></div></div><h3 id=本地文件>本地文件</h3><p>1、打开 <code>cmd</code></p><p>2、输入指令，按照文件的实际路径合并</p><p>合并成 <code>ts</code>文件 <code>copy /b  F:\f\*.ts  E:\f\new.ts</code></p><p>合并成 <code>MP4</code> 文件 <code>copy /b  F:\f\*.ts  E:\f\new.MP4</code></p><p>而通过 ffmpeg 命令如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>直接转：  
+</span></span><span class=line><span class=cl>ffmpeg -i new.ts -c copy -map 0:v -map 0:a output.mp4
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>指定音频流（一般用这个）：  
+</span></span><span class=line><span class=cl>ffmpeg -i new.ts -c copy -map 0:v -map 0:a -bsf:a aac_adtstoasc output.mp4
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>重编码视频：  
+</span></span><span class=line><span class=cl>ffmpeg -y -i new.ts -c:v libx264 -c:a copy -bsf:a aac_adtstoasc output.mp4
+</span></span></code></pre></td></tr></table></div></div><h3 id=php实现代码>php实现代码</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=nv>$url</span> <span class=o>=</span> <span class=s1>&#39;https://******.m3u8?Expires=15853412145&amp;OSSAccessKeyId=******&amp;Signature=******&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>$ts_content</span> <span class=o>=</span> <span class=nx>file_get_contents</span><span class=p>(</span><span class=nv>$url</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=nv>$ts_content</span> <span class=o>=</span> <span class=nx>explode</span><span class=p>(</span><span class=s1>&#39;,&#39;</span><span class=p>,</span> <span class=nv>$ts_content</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=nv>$ts_file</span> <span class=o>=</span> <span class=k>array</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>foreach</span> <span class=p>(</span><span class=nv>$ts_content</span> <span class=k>as</span> <span class=nv>$key</span> <span class=o>=&gt;</span> <span class=nv>$value</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span><span class=p>(</span><span class=nv>$key</span> <span class=o>==</span> <span class=mi>0</span><span class=p>)</span> <span class=k>continue</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$value</span> <span class=o>=</span> <span class=nx>trim</span><span class=p>(</span><span class=nv>$value</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$ts_file</span><span class=p>[]</span> <span class=o>=</span> <span class=nx>substr</span><span class=p>(</span><span class=nv>$value</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=nx>strpos</span><span class=p>(</span><span class=nv>$value</span><span class=p>,</span> <span class=s1>&#39;.ts&#39;</span><span class=p>)</span> <span class=o>+</span> <span class=mi>3</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>$url_prefix</span> <span class=o>=</span> <span class=nx>substr</span><span class=p>(</span><span class=nv>$url</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=nx>strpos</span><span class=p>(</span><span class=nv>$url</span><span class=p>,</span> <span class=s1>&#39;.m3u8&#39;</span><span class=p>));</span>
+</span></span><span class=line><span class=cl><span class=nv>$url_prefix</span> <span class=o>=</span> <span class=nx>substr</span><span class=p>(</span><span class=nv>$url</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=nx>strrpos</span><span class=p>(</span><span class=nv>$url</span><span class=p>,</span> <span class=s1>&#39;/&#39;</span><span class=p>)</span> <span class=o>+</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=nv>$file_content</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>foreach</span> <span class=p>(</span><span class=nv>$ts_file</span> <span class=k>as</span> <span class=nv>$key</span> <span class=o>=&gt;</span> <span class=nv>$value</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$file_content</span> <span class=o>.=</span> <span class=nx>file_get_contents</span><span class=p>(</span><span class=nv>$url_prefix</span> <span class=o>.</span> <span class=nv>$value</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>file_put_contents</span><span class=p>(</span><span class=s1>&#39;tmp_out.ts&#39;</span><span class=p>,</span> <span class=nv>$file_content</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// FFMPEG_PATH 是你自己解压ffmpeg的bin路径，例如我的是F:/ffmpeg/bin/
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>exec</span><span class=p>(</span><span class=nx>FFMPEG_PATH</span> <span class=o>.</span> <span class=s2>&#34;ffmpeg -i tmp_out.ts tmp_out.mp4&#34;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=python实现代码>Python实现代码</h3><p>目录结构<br>./<br>  |&ndash; m3u8.py<br>  |&ndash; result<br>  |&ndash; 文件1<br>    |&ndash; key<br>    |&ndash; index.m3u8<br>    |&ndash; data&mldr;<br>  |&ndash; 文件2<br>    |&ndash; &mldr; 114514</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>os</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>sys</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>time</span>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>Crypto.Cipher</span> <span class=kn>import</span> <span class=n>AES</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>fileList</span><span class=p>(</span><span class=n>findex</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>rpath</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>dirname</span><span class=p>(</span><span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>realpath</span><span class=p>(</span><span class=n>findex</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=n>name</span> <span class=o>=</span> <span class=n>rpath</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s2>&#34;</span><span class=se>\\</span><span class=s2>&#34;</span><span class=p>)[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=n>fi</span> <span class=o>=</span> <span class=nb>open</span><span class=p>(</span><span class=n>findex</span><span class=p>,</span> <span class=s1>&#39;r&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>flag</span> <span class=o>=</span> <span class=kc>False</span>
+</span></span><span class=line><span class=cl>    <span class=n>IV</span> <span class=o>=</span> <span class=kc>None</span>
+</span></span><span class=line><span class=cl>    <span class=n>tl</span> <span class=o>=</span> <span class=p>[]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>line</span> <span class=ow>in</span> <span class=n>fi</span><span class=o>.</span><span class=n>readlines</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>line</span><span class=o>.</span><span class=n>startswith</span><span class=p>(</span><span class=s2>&#34;#EXT-X-KEY&#34;</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=c1># 如果存在 IV 则提取；</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>line</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s2>&#34;,&#34;</span><span class=p>)[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>.</span><span class=n>startswith</span><span class=p>(</span><span class=s2>&#34;IV=&#34;</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>                <span class=n>IV</span> <span class=o>=</span> <span class=n>line</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s2>&#34;,&#34;</span><span class=p>)[</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=mi>5</span><span class=p>:]</span>
+</span></span><span class=line><span class=cl>                <span class=n>IV</span> <span class=o>=</span> <span class=nb>bytes</span><span class=o>.</span><span class=n>fromhex</span><span class=p>(</span><span class=n>IV</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>line</span><span class=o>.</span><span class=n>startswith</span><span class=p>(</span><span class=s2>&#34;#EXTINF&#34;</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=n>flag</span> <span class=o>=</span> <span class=ow>not</span> <span class=n>flag</span>
+</span></span><span class=line><span class=cl>            <span class=k>continue</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>flag</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=n>tmp</span> <span class=o>=</span> <span class=n>line</span><span class=o>.</span><span class=n>strip</span><span class=p>()</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s2>&#34;/&#34;</span><span class=p>)[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>            <span class=n>tmp</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>rpath</span><span class=p>,</span> <span class=n>tmp</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>tl</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>tmp</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>flag</span> <span class=o>=</span> <span class=ow>not</span> <span class=n>flag</span>
+</span></span><span class=line><span class=cl>    <span class=n>fi</span><span class=o>.</span><span class=n>close</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=n>fk</span> <span class=o>=</span> <span class=nb>open</span><span class=p>(</span><span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>rpath</span><span class=p>,</span> <span class=s2>&#34;key&#34;</span><span class=p>),</span> <span class=s1>&#39;rb&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>key</span> <span class=o>=</span> <span class=n>fk</span><span class=o>.</span><span class=n>read</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=n>fk</span><span class=o>.</span><span class=n>close</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>name</span><span class=p>,</span> <span class=n>tl</span><span class=p>,</span> <span class=n>key</span><span class=p>,</span> <span class=n>IV</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>aes_decode</span><span class=p>(</span><span class=n>data</span><span class=p>,</span> <span class=n>key</span><span class=p>,</span> <span class=n>IV</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=c1># 如果没有指定 IV 值，则直接使用 key 值</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=ow>not</span> <span class=n>IV</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>IV</span> <span class=o>=</span> <span class=n>key</span>
+</span></span><span class=line><span class=cl>    <span class=n>cryptor</span> <span class=o>=</span> <span class=n>AES</span><span class=o>.</span><span class=n>new</span><span class=p>(</span><span class=n>key</span><span class=p>,</span> <span class=n>AES</span><span class=o>.</span><span class=n>MODE_CBC</span><span class=p>,</span> <span class=n>IV</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>plain_text</span> <span class=o>=</span> <span class=n>cryptor</span><span class=o>.</span><span class=n>decrypt</span><span class=p>(</span><span class=n>data</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>plain_text</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>main</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>fp</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>listdir</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=n>used</span> <span class=o>=</span> <span class=p>[</span><span class=n>s</span><span class=p>[:</span><span class=o>-</span><span class=mi>4</span><span class=p>]</span> <span class=k>for</span> <span class=n>s</span> <span class=ow>in</span> <span class=n>os</span><span class=o>.</span><span class=n>listdir</span><span class=p>(</span><span class=s2>&#34;./result/&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>ind</span> <span class=ow>in</span> <span class=n>fp</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=ow>not</span> <span class=n>ind</span><span class=o>.</span><span class=n>isdigit</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>            <span class=k>continue</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>ind</span> <span class=ow>in</span> <span class=n>used</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=k>continue</span>
+</span></span><span class=line><span class=cl>        <span class=k>try</span><span class=p>:</span> 
+</span></span><span class=line><span class=cl>            <span class=n>name</span><span class=p>,</span> <span class=n>fl</span><span class=p>,</span> <span class=n>key</span><span class=p>,</span> <span class=n>IV</span> <span class=o>=</span> <span class=n>fileList</span><span class=p>(</span><span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>ind</span><span class=p>,</span> <span class=s2>&#34;index.m3u8&#34;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=k>except</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;-&#34;</span><span class=o>*</span><span class=mi>30</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;[-] Errot! file: &#34;</span><span class=p>,</span> <span class=n>ind</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;-&#34;</span><span class=o>*</span><span class=mi>30</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=k>continue</span>
+</span></span><span class=line><span class=cl>        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;[*] Begin process file: &#34;</span><span class=p>,</span> <span class=n>name</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>start</span> <span class=o>=</span> <span class=n>time</span><span class=o>.</span><span class=n>time</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=n>f</span> <span class=o>=</span> <span class=nb>open</span><span class=p>(</span><span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=s2>&#34;./result/&#34;</span><span class=p>,</span> <span class=n>name</span><span class=o>+</span><span class=s2>&#34;.mp4&#34;</span><span class=p>),</span> <span class=s1>&#39;ab&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=n>fl</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=n>i</span><span class=p>,</span> <span class=s1>&#39;rb&#39;</span><span class=p>)</span> <span class=k>as</span> <span class=n>inf</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                <span class=n>data</span> <span class=o>=</span> <span class=n>inf</span><span class=o>.</span><span class=n>read</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>                <span class=n>f</span><span class=o>.</span><span class=n>write</span><span class=p>(</span><span class=n>aes_decode</span><span class=p>(</span><span class=n>data</span><span class=p>,</span> <span class=n>key</span><span class=p>,</span> <span class=n>IV</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>f</span><span class=o>.</span><span class=n>close</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;[+] Sucessfully! Cost time: &#34;</span><span class=p>,</span> <span class=n>time</span><span class=o>.</span><span class=n>time</span><span class=p>()</span><span class=o>-</span><span class=n>start</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>main</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=golang实现代码>Golang实现代码</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span> <span class=nx>main</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>	<span class=s>&#34;io/ioutil&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=s>&#34;net/http&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=s>&#34;os/exec&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=s>&#34;strings&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>url</span> <span class=o>:=</span> <span class=s>&#34;https://******.m3u8?Expires=15853412145&amp;OSSAccessKeyId=******&amp;Signature=******&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=nx>resp</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nf>Get</span><span class=p>(</span><span class=nx>url</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=nx>body</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>ioutil</span><span class=p>.</span><span class=nf>ReadAll</span><span class=p>(</span><span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=nx>tsContent</span> <span class=o>:=</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>Split</span><span class=p>(</span><span class=nb>string</span><span class=p>(</span><span class=nx>body</span><span class=p>),</span> <span class=s>&#34;,&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=kd>var</span> <span class=nx>tsFile</span> <span class=p>[]</span><span class=kt>string</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=nx>key</span><span class=p>,</span> <span class=nx>value</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>tsContent</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=nx>key</span> <span class=o>==</span> <span class=mi>0</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>			<span class=k>continue</span>
+</span></span><span class=line><span class=cl>		<span class=p>}</span>
+</span></span><span class=line><span class=cl>		<span class=nx>value</span> <span class=p>=</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>TrimSpace</span><span class=p>(</span><span class=nx>value</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>		<span class=nx>tsFile</span> <span class=p>=</span> <span class=nb>append</span><span class=p>(</span><span class=nx>tsFile</span><span class=p>,</span> <span class=nx>value</span><span class=p>[:</span><span class=nx>strings</span><span class=p>.</span><span class=nf>Index</span><span class=p>(</span><span class=nx>value</span><span class=p>,</span> <span class=s>&#34;.ts&#34;</span><span class=p>)</span><span class=o>+</span><span class=mi>3</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=nx>urlPrefix</span> <span class=o>:=</span> <span class=nx>url</span><span class=p>[:</span><span class=nx>strings</span><span class=p>.</span><span class=nf>LastIndex</span><span class=p>(</span><span class=nx>url</span><span class=p>,</span> <span class=s>&#34;/&#34;</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>	<span class=kd>var</span> <span class=nx>fileContent</span> <span class=kt>string</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>value</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>tsFile</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=nx>resp</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nf>Get</span><span class=p>(</span><span class=nx>urlPrefix</span> <span class=o>+</span> <span class=nx>value</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>		<span class=nx>body</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>ioutil</span><span class=p>.</span><span class=nf>ReadAll</span><span class=p>(</span><span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>		<span class=nx>fileContent</span> <span class=o>+=</span> <span class=nb>string</span><span class=p>(</span><span class=nx>body</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=nx>ioutil</span><span class=p>.</span><span class=nf>WriteFile</span><span class=p>(</span><span class=s>&#34;tmp_out.ts&#34;</span><span class=p>,</span> <span class=p>[]</span><span class=nb>byte</span><span class=p>(</span><span class=nx>fileContent</span><span class=p>),</span> <span class=mo>0644</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=nx>cmd</span> <span class=o>:=</span> <span class=nx>exec</span><span class=p>.</span><span class=nf>Command</span><span class=p>(</span><span class=s>&#34;ffmpeg&#34;</span><span class=p>,</span> <span class=s>&#34;-i&#34;</span><span class=p>,</span> <span class=s>&#34;tmp_out.ts&#34;</span><span class=p>,</span> <span class=s>&#34;tmp_out.mp4&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	<span class=nx>cmd</span><span class=p>.</span><span class=nf>Run</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=rust实现代码>Rust实现代码</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-rust data-lang=rust><span class=line><span class=cl><span class=k>use</span><span class=w> </span><span class=n>std</span>::<span class=n>fs</span>::<span class=n>File</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>use</span><span class=w> </span><span class=n>std</span>::<span class=n>io</span>::<span class=n>prelude</span>::<span class=o>*</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>use</span><span class=w> </span><span class=n>std</span>::<span class=n>process</span>::<span class=n>Command</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>use</span><span class=w> </span><span class=n>reqwest</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=cp>#[tokio::main]</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>async</span><span class=w> </span><span class=k>fn</span> <span class=nf>main</span><span class=p>()</span><span class=w> </span>-&gt; <span class=nb>Result</span><span class=o>&lt;</span><span class=p>(),</span><span class=w> </span><span class=nb>Box</span><span class=o>&lt;</span><span class=k>dyn</span><span class=w> </span><span class=n>std</span>::<span class=n>error</span>::<span class=n>Error</span><span class=o>&gt;&gt;</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>let</span><span class=w> </span><span class=n>url</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;https://******.m3u8?Expires=15853412145&amp;OSSAccessKeyId=******&amp;Signature=******&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>let</span><span class=w> </span><span class=n>resp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>reqwest</span>::<span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>).</span><span class=k>await</span><span class=o>?</span><span class=p>.</span><span class=n>text</span><span class=p>().</span><span class=k>await</span><span class=o>?</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>let</span><span class=w> </span><span class=n>ts_content</span>: <span class=nb>Vec</span><span class=o>&lt;&amp;</span><span class=kt>str</span><span class=o>&gt;</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>resp</span><span class=p>.</span><span class=n>split</span><span class=p>(</span><span class=sc>&#39;,&#39;</span><span class=p>).</span><span class=n>collect</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>let</span><span class=w> </span><span class=k>mut</span><span class=w> </span><span class=n>ts_file</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=fm>vec!</span><span class=p>[];</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=n>i</span><span class=p>,</span><span class=w> </span><span class=n>line</span><span class=p>)</span><span class=w> </span><span class=k>in</span><span class=w> </span><span class=n>ts_content</span><span class=p>.</span><span class=n>iter</span><span class=p>().</span><span class=n>enumerate</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>if</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>==</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=p>{</span><span class=w> </span><span class=k>continue</span><span class=p>;</span><span class=w> </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=kd>let</span><span class=w> </span><span class=n>value</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>line</span><span class=p>.</span><span class=n>trim</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>ts_file</span><span class=p>.</span><span class=n>push</span><span class=p>(</span><span class=o>&amp;</span><span class=n>value</span><span class=p>[</span><span class=mi>0</span><span class=o>..</span><span class=n>value</span><span class=p>.</span><span class=n>find</span><span class=p>(</span><span class=s>&#34;.ts&#34;</span><span class=p>).</span><span class=n>unwrap</span><span class=p>()</span><span class=o>+</span><span class=mi>3</span><span class=p>]);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>let</span><span class=w> </span><span class=n>url_prefix</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=o>&amp;</span><span class=n>url</span><span class=p>[</span><span class=mi>0</span><span class=o>..</span><span class=n>url</span><span class=p>.</span><span class=n>rfind</span><span class=p>(</span><span class=sc>&#39;/&#39;</span><span class=p>).</span><span class=n>unwrap</span><span class=p>()</span><span class=o>+</span><span class=mi>1</span><span class=p>];</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>let</span><span class=w> </span><span class=k>mut</span><span class=w> </span><span class=n>file_content</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=fm>vec!</span><span class=p>[];</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>for</span><span class=w> </span><span class=n>file</span><span class=w> </span><span class=k>in</span><span class=w> </span><span class=n>ts_file</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=kd>let</span><span class=w> </span><span class=n>resp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>reqwest</span>::<span class=n>get</span><span class=p>(</span><span class=o>&amp;</span><span class=p>(</span><span class=n>url_prefix</span><span class=p>.</span><span class=n>to_string</span><span class=p>()</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>file</span><span class=p>)).</span><span class=k>await</span><span class=o>?</span><span class=p>.</span><span class=n>bytes</span><span class=p>().</span><span class=k>await</span><span class=o>?</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>file_content</span><span class=p>.</span><span class=n>extend_from_slice</span><span class=p>(</span><span class=o>&amp;</span><span class=n>resp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>let</span><span class=w> </span><span class=k>mut</span><span class=w> </span><span class=n>file</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>File</span>::<span class=n>create</span><span class=p>(</span><span class=s>&#34;tmp_out.ts&#34;</span><span class=p>)</span><span class=o>?</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>file</span><span class=p>.</span><span class=n>write_all</span><span class=p>(</span><span class=o>&amp;</span><span class=n>file_content</span><span class=p>)</span><span class=o>?</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Command</span>::<span class=n>new</span><span class=p>(</span><span class=s>&#34;ffmpeg&#34;</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>.</span><span class=n>arg</span><span class=p>(</span><span class=s>&#34;-i&#34;</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>.</span><span class=n>arg</span><span class=p>(</span><span class=s>&#34;tmp_out.ts&#34;</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>.</span><span class=n>arg</span><span class=p>(</span><span class=s>&#34;tmp_out.mp4&#34;</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>.</span><span class=n>output</span><span class=p>()</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>.</span><span class=n>expect</span><span class=p>(</span><span class=s>&#34;Failed to execute command&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nb>Ok</span><span class=p>(())</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=c实现代码>C++实现代码</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span><span class=lnt>70
+</span><span class=lnt>71
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-CPP data-lang=CPP><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;fstream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;string&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;vector&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;curl/curl.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=n>size_t</span> <span class=nf>WriteCallback</span><span class=p>(</span><span class=kt>void</span><span class=o>*</span> <span class=n>contents</span><span class=p>,</span> <span class=n>size_t</span> <span class=n>size</span><span class=p>,</span> <span class=n>size_t</span> <span class=n>nmemb</span><span class=p>,</span> <span class=n>std</span><span class=o>::</span><span class=n>string</span><span class=o>*</span> <span class=n>s</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>size_t</span> <span class=n>newLength</span> <span class=o>=</span> <span class=n>size</span><span class=o>*</span><span class=n>nmemb</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>size_t</span> <span class=n>oldLength</span> <span class=o>=</span> <span class=n>s</span><span class=o>-&gt;</span><span class=n>size</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=k>try</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>s</span><span class=o>-&gt;</span><span class=n>resize</span><span class=p>(</span><span class=n>oldLength</span> <span class=o>+</span> <span class=n>newLength</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>catch</span><span class=p>(</span><span class=n>std</span><span class=o>::</span><span class=n>bad_alloc</span> <span class=o>&amp;</span><span class=n>e</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>copy</span><span class=p>((</span><span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=n>contents</span><span class=p>,(</span><span class=kt>char</span><span class=o>*</span><span class=p>)</span><span class=n>contents</span><span class=o>+</span><span class=n>newLength</span><span class=p>,</span><span class=n>s</span><span class=o>-&gt;</span><span class=n>begin</span><span class=p>()</span><span class=o>+</span><span class=n>oldLength</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>size</span><span class=o>*</span><span class=n>nmemb</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>GetFile</span><span class=p>(</span><span class=k>const</span> <span class=n>std</span><span class=o>::</span><span class=n>string</span><span class=o>&amp;</span> <span class=n>url</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>CURL</span><span class=o>*</span> <span class=n>curl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>CURLcode</span> <span class=n>res</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>readBuffer</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>curl_global_init</span><span class=p>(</span><span class=n>CURL_GLOBAL_DEFAULT</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>curl</span> <span class=o>=</span> <span class=n>curl_easy_init</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span><span class=p>(</span><span class=n>curl</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>curl_easy_setopt</span><span class=p>(</span><span class=n>curl</span><span class=p>,</span> <span class=n>CURLOPT_URL</span><span class=p>,</span> <span class=n>url</span><span class=p>.</span><span class=n>c_str</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>        <span class=n>curl_easy_setopt</span><span class=p>(</span><span class=n>curl</span><span class=p>,</span> <span class=n>CURLOPT_WRITEFUNCTION</span><span class=p>,</span> <span class=n>WriteCallback</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>curl_easy_setopt</span><span class=p>(</span><span class=n>curl</span><span class=p>,</span> <span class=n>CURLOPT_WRITEDATA</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>readBuffer</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>res</span> <span class=o>=</span> <span class=n>curl_easy_perform</span><span class=p>(</span><span class=n>curl</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=p>(</span><span class=n>res</span> <span class=o>!=</span> <span class=n>CURLE_OK</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=n>fprintf</span><span class=p>(</span><span class=n>stderr</span><span class=p>,</span> <span class=s>&#34;curl_easy_perform() failed: %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>curl_easy_strerror</span><span class=p>(</span><span class=n>res</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>curl_easy_cleanup</span><span class=p>(</span><span class=n>curl</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>curl_global_cleanup</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>readBuffer</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>url</span> <span class=o>=</span> <span class=s>&#34;https://******.m3u8?Expires=15853412145&amp;OSSAccessKeyId=******&amp;Signature=******&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>ts_content</span> <span class=o>=</span> <span class=n>GetFile</span><span class=p>(</span><span class=n>url</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>vector</span><span class=o>&lt;</span><span class=n>std</span><span class=o>::</span><span class=n>string</span><span class=o>&gt;</span> <span class=n>ts_file</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>delimiter</span> <span class=o>=</span> <span class=s>&#34;,&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>size_t</span> <span class=n>pos</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>token</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>while</span> <span class=p>((</span><span class=n>pos</span> <span class=o>=</span> <span class=n>ts_content</span><span class=p>.</span><span class=n>find</span><span class=p>(</span><span class=n>delimiter</span><span class=p>))</span> <span class=o>!=</span> <span class=n>std</span><span class=o>::</span><span class=n>string</span><span class=o>::</span><span class=n>npos</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>token</span> <span class=o>=</span> <span class=n>ts_content</span><span class=p>.</span><span class=n>substr</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=n>pos</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>ts_file</span><span class=p>.</span><span class=n>push_back</span><span class=p>(</span><span class=n>token</span><span class=p>.</span><span class=n>substr</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=n>token</span><span class=p>.</span><span class=n>find</span><span class=p>(</span><span class=s>&#34;.ts&#34;</span><span class=p>)</span> <span class=o>+</span> <span class=mi>3</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>        <span class=n>ts_content</span><span class=p>.</span><span class=n>erase</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=n>pos</span> <span class=o>+</span> <span class=n>delimiter</span><span class=p>.</span><span class=n>length</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>url_prefix</span> <span class=o>=</span> <span class=n>url</span><span class=p>.</span><span class=n>substr</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=n>url</span><span class=p>.</span><span class=n>rfind</span><span class=p>(</span><span class=sc>&#39;/&#39;</span><span class=p>)</span> <span class=o>+</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>ofstream</span> <span class=n>outfile</span> <span class=p>(</span><span class=s>&#34;tmp_out.ts&#34;</span><span class=p>,</span><span class=n>std</span><span class=o>::</span><span class=n>ofstream</span><span class=o>::</span><span class=n>binary</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=p>(</span><span class=k>auto</span> <span class=o>&amp;</span><span class=nl>value</span> <span class=p>:</span> <span class=n>ts_file</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>file_content</span> <span class=o>=</span> <span class=n>GetFile</span><span class=p>(</span><span class=n>url_prefix</span> <span class=o>+</span> <span class=n>value</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>outfile</span><span class=p>.</span><span class=n>write</span><span class=p>(</span><span class=n>file_content</span><span class=p>.</span><span class=n>c_str</span><span class=p>(),</span> <span class=n>file_content</span><span class=p>.</span><span class=n>size</span><span class=p>());</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>outfile</span><span class=p>.</span><span class=n>close</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>system</span><span class=p>(</span><span class=s>&#34;ffmpeg -i tmp_out.ts tmp_out.mp4&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=nasm实现代码>NASM实现代码</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-NASM data-lang=NASM><span class=line><span class=cl><span class=err>我不会</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=nodejs实现代码>NODEJS实现代码</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>https</span> <span class=o>=</span> <span class=nx>require</span><span class=p>(</span><span class=s1>&#39;https&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>fs</span> <span class=o>=</span> <span class=nx>require</span><span class=p>(</span><span class=s1>&#39;fs&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=p>{</span> <span class=nx>exec</span> <span class=p>}</span> <span class=o>=</span> <span class=nx>require</span><span class=p>(</span><span class=s1>&#39;child_process&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>url</span> <span class=o>=</span> <span class=s1>&#39;https://******.m3u8?Expires=15853412145&amp;OSSAccessKeyId=******&amp;Signature=******&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>https</span><span class=p>.</span><span class=nx>get</span><span class=p>(</span><span class=nx>url</span><span class=p>,</span> <span class=p>(</span><span class=nx>res</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>let</span> <span class=nx>tsContent</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nx>res</span><span class=p>.</span><span class=nx>on</span><span class=p>(</span><span class=s1>&#39;data&#39;</span><span class=p>,</span> <span class=p>(</span><span class=nx>chunk</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>tsContent</span> <span class=o>+=</span> <span class=nx>chunk</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nx>res</span><span class=p>.</span><span class=nx>on</span><span class=p>(</span><span class=s1>&#39;end&#39;</span><span class=p>,</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=kr>const</span> <span class=nx>tsFile</span> <span class=o>=</span> <span class=nx>tsContent</span><span class=p>.</span><span class=nx>split</span><span class=p>(</span><span class=s1>&#39;,&#39;</span><span class=p>).</span><span class=nx>slice</span><span class=p>(</span><span class=mi>1</span><span class=p>).</span><span class=nx>map</span><span class=p>(</span><span class=nx>value</span> <span class=p>=&gt;</span> <span class=nx>value</span><span class=p>.</span><span class=nx>trim</span><span class=p>().</span><span class=nx>split</span><span class=p>(</span><span class=s1>&#39;.ts&#39;</span><span class=p>)[</span><span class=mi>0</span><span class=p>]</span> <span class=o>+</span> <span class=s1>&#39;.ts&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=kr>const</span> <span class=nx>urlPrefix</span> <span class=o>=</span> <span class=nx>url</span><span class=p>.</span><span class=nx>split</span><span class=p>(</span><span class=s1>&#39;.m3u8&#39;</span><span class=p>)[</span><span class=mi>0</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>let</span> <span class=nx>fileContent</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>tsFile</span><span class=p>.</span><span class=nx>forEach</span><span class=p>((</span><span class=nx>value</span><span class=p>,</span> <span class=nx>i</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=nx>https</span><span class=p>.</span><span class=nx>get</span><span class=p>(</span><span class=nx>urlPrefix</span> <span class=o>+</span> <span class=nx>value</span><span class=p>,</span> <span class=p>(</span><span class=nx>res</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                <span class=kd>let</span> <span class=nx>data</span> <span class=o>=</span> <span class=s1>&#39;&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                <span class=nx>res</span><span class=p>.</span><span class=nx>on</span><span class=p>(</span><span class=s1>&#39;data&#39;</span><span class=p>,</span> <span class=p>(</span><span class=nx>chunk</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                    <span class=nx>data</span> <span class=o>+=</span> <span class=nx>chunk</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>                <span class=p>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                <span class=nx>res</span><span class=p>.</span><span class=nx>on</span><span class=p>(</span><span class=s1>&#39;end&#39;</span><span class=p>,</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                    <span class=nx>fileContent</span> <span class=o>+=</span> <span class=nx>data</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                    <span class=k>if</span> <span class=p>(</span><span class=nx>i</span> <span class=o>===</span> <span class=nx>tsFile</span><span class=p>.</span><span class=nx>length</span> <span class=o>-</span> <span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                        <span class=nx>fs</span><span class=p>.</span><span class=nx>writeFile</span><span class=p>(</span><span class=s1>&#39;tmp_out.ts&#39;</span><span class=p>,</span> <span class=nx>fileContent</span><span class=p>,</span> <span class=p>(</span><span class=nx>err</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                            <span class=k>if</span> <span class=p>(</span><span class=nx>err</span><span class=p>)</span> <span class=k>throw</span> <span class=nx>err</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                            <span class=nx>exec</span><span class=p>(</span><span class=s1>&#39;ffmpeg -i tmp_out.ts tmp_out.mp4&#39;</span><span class=p>,</span> <span class=p>(</span><span class=nx>err</span><span class=p>,</span> <span class=nx>stdout</span><span class=p>,</span> <span class=nx>stderr</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                                <span class=k>if</span> <span class=p>(</span><span class=nx>err</span><span class=p>)</span> <span class=k>throw</span> <span class=nx>err</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>                            <span class=p>});</span>
+</span></span><span class=line><span class=cl>                        <span class=p>});</span>
+</span></span><span class=line><span class=cl>                    <span class=p>}</span>
+</span></span><span class=line><span class=cl>                <span class=p>});</span>
+</span></span><span class=line><span class=cl>            <span class=p>});</span>
+</span></span><span class=line><span class=cl>        <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=kotlin实现代码>kotlin实现代码</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kn>import</span> <span class=nn>java.io.*</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>java.net.URL</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>java.nio.file.*</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>java.util.stream.*</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>public</span> <span class=kd>class</span> <span class=nc>Main</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=n>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=kd>throws</span> <span class=n>IOException</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>String</span> <span class=n>url</span> <span class=o>=</span> <span class=s>&#34;https://******.m3u8?Expires=15853412145&amp;OSSAccessKeyId=******&amp;Signature=******&#34;</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>String</span> <span class=n>tsContent</span> <span class=o>=</span> <span class=k>new</span> <span class=n>String</span><span class=o>(</span><span class=n>Files</span><span class=o>.</span><span class=na>readAllBytes</span><span class=o>(</span><span class=n>Paths</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=n>url</span><span class=o>)));</span>
+</span></span><span class=line><span class=cl>        <span class=n>String</span><span class=o>[]</span> <span class=n>tsFile</span> <span class=o>=</span> <span class=n>tsContent</span><span class=o>.</span><span class=na>split</span><span class=o>(</span><span class=s>&#34;,&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>String</span> <span class=n>urlPrefix</span> <span class=o>=</span> <span class=n>url</span><span class=o>.</span><span class=na>substring</span><span class=o>(</span><span class=n>0</span><span class=o>,</span> <span class=n>url</span><span class=o>.</span><span class=na>lastIndexOf</span><span class=o>(</span><span class=sc>&#39;/&#39;</span><span class=o>)</span> <span class=o>+</span> <span class=n>1</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>StringBuilder</span> <span class=n>fileContent</span> <span class=o>=</span> <span class=k>new</span> <span class=n>StringBuilder</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=n>1</span><span class=o>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>tsFile</span><span class=o>.</span><span class=na>length</span><span class=o>;</span> <span class=n>i</span><span class=o>++)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>String</span> <span class=n>value</span> <span class=o>=</span> <span class=n>tsFile</span><span class=o>[</span><span class=n>i</span><span class=o>].</span><span class=na>trim</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>            <span class=n>fileContent</span><span class=o>.</span><span class=na>append</span><span class=o>(</span><span class=k>new</span> <span class=n>String</span><span class=o>(</span><span class=n>Files</span><span class=o>.</span><span class=na>readAllBytes</span><span class=o>(</span><span class=n>Paths</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=n>urlPrefix</span> <span class=o>+</span> <span class=n>value</span><span class=o>.</span><span class=na>substring</span><span class=o>(</span><span class=n>0</span><span class=o>,</span> <span class=n>value</span><span class=o>.</span><span class=na>indexOf</span><span class=o>(</span><span class=s>&#34;.ts&#34;</span><span class=o>)</span> <span class=o>+</span> <span class=n>3</span><span class=o>)))));</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>Files</span><span class=o>.</span><span class=na>write</span><span class=o>(</span><span class=n>Paths</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=s>&#34;tmp_out.ts&#34;</span><span class=o>),</span> <span class=n>fileContent</span><span class=o>.</span><span class=na>toString</span><span class=o>().</span><span class=na>getBytes</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>try</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>ProcessBuilder</span> <span class=n>pb</span> <span class=o>=</span> <span class=k>new</span> <span class=n>ProcessBuilder</span><span class=o>(</span><span class=s>&#34;ffmpeg&#34;</span><span class=o>,</span> <span class=s>&#34;-i&#34;</span><span class=o>,</span> <span class=s>&#34;tmp_out.ts&#34;</span><span class=o>,</span> <span class=s>&#34;tmp_out.mp4&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>Process</span> <span class=n>p</span> <span class=o>=</span> <span class=n>pb</span><span class=o>.</span><span class=na>start</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>            <span class=n>p</span><span class=o>.</span><span class=na>waitFor</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=n>Exception</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>e</span><span class=o>.</span><span class=na>printStackTrace</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div></section><footer class=article-footer><section class=article-tags><a href=/tags/ffmpeg/>ffmpeg</a>
+<a href=/tags/%E6%8A%80%E6%9C%AF/>技术</a>
+<a href=/tags/%E8%BD%AC%E6%8D%A2%E8%A7%86%E9%A2%91/>转换视频</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0 转载或引用本文时请遵守许可协议，并注明出处不得用于商业用途！</span></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最后更新于 2023-09-12 15:24 UTC</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/post/debug-pyinstaller-crack/><div class=article-details><h2 class=article-title>逆向Pyinstaller打包程序的一个方法</h2></div></a></article><article><a href=/post/batchfile-fix-lange-erorr/><div class=article-details><h2 class=article-title>Batchfile批处理脚本乱码解决方法</h2></div></a></article><article><a href=/post/python-fdp-config-update/><div class=article-details><h2 class=article-title>FDP配置外置更新器（源码公开）</h2></div></a></article><article><a href=/post/links-cloudflare-workers/><div class=article-details><h2 class=article-title>如何用Cloudflare worker自建短链接服务</h2></div></a></article><article><a href=/post/python-img-to-webp/><div class=article-details><h2 class=article-title>Python把图片转换为webp</h2></div></a></article></div></div></aside><script src=//lib.baomitu.com/waline/2.14.8/waline.min.js></script>
+<link href=//lib.baomitu.com/waline/2.14.8/waline.min.css rel=stylesheet><div id=waline class=waline-container></div><style>.waline-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding);--waline-font-size:var(--article-font-size)}.waline-container .wl-count{color:var(--card-text-color-main)}</style><script>Waline.init({dark:'html[data-scheme="dark"]',el:"#waline",emoji:["https://unpkg.com/@waline/emojis@1.1.0/bilibili","https://unpkg.com/@waline/emojis@1.1.0/alus","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],lang:"zh-CN",locale:{admin:"站长",placeholder:"您在博客中所发表的评论仅代表您的个人观点与本博客立场无关，您发布的所有评论都需要由站长进行审核才能公开。"},pageview:!1,requiredMeta:["nick","email"],serverURL:"https://pl.xpdbk.com"})</script><footer class=site-footer><section class=copyright>&copy;
+2022 -
+2023 XiaoPang版权所有</section><section class=powerby><a href=https://shengming.xpdbk.com/ target=_blank>免责声明</a> <a href=https://blog.xpdbk.com/sitemap.xml target=_blank>站点地图</a> <a href=https://blog.xpdbk.com/index.xml target=_blank>RSS订阅</a><br>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.20.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计
+<span>• 由LEl_FENG用❤️魔改</span></section><a href="https://icp.gov.moe/?keyword=20230087" target=_blank>萌ICP备20230087号</a><section class=powerby>作者共咕咕了 281.02k 字 · 共水了 87篇文章.</br><span><p></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/photoswipe/4.1.3/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/photoswipe/4.1.3/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/photoswipe/4.1.3/photoswipe.min.css crossorigin=anonymous></main></div><script src=/js/vibrant.min.js crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&display=swap" rel=stylesheet><script src=https://lib.baomitu.com/ribbon.js/1.0.1/ribbon.min.js integrity=sha384-xC0eH8k8Nq6WKXlooH5kB+xWjFX/08AfAgcGiKWXj4+kYvrRuDr9MU2+MTrx2Jc6 crossorigin=anonymous size=150 alpha=0.5 zindex=-1 defer></script><!doctype html><html><head><link rel=stylesheet href=https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css></head><body><div class=demo><div id=player1></div></div><script>async function loadAPlayer(){return new Promise((e,t)=>{const n=document.createElement("script");n.src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js",n.onload=e,n.onerror=t,document.head.appendChild(n)})}window.addEventListener("load",()=>{loadAPlayer().then(()=>{var e=new APlayer({element:document.getElementById("player1"),fixed:!0,autoplay:!1,mini:!0,theme:"#f8f4fc",loop:"all",order:"random",preload:"none",volume:.5,mutex:!0,listFolded:!1,listMaxHeight:90,lrcType:0,music:[{name:"超燃歌曲",url:"/music/chaoran2077.mp3",artists:"2077游戏公司",cover:"/avatar.webp"},{name:"2077边缘行者1",url:"/music/2077R.mp3",artists:"2077游戏公司",cover:"/avatar.webp"},{name:"2077边缘行者2",url:"/music/2077.mp3",artists:"2077游戏公司",cover:"/avatar.webp"}]})}).catch(e=>{console.log("APlayer加载失败:",e)})})</script></body><a href=# id=back-to-top title=返回顶部></a><style>#back-to-top{display:none;position:fixed;bottom:20px;right:55px;width:55px;height:55px;border-radius:7px;background-color:var(--back-to-top-background);box-shadow:var(--shadow-l2);font-size:30px;text-align:center;line-height:50px;cursor:pointer}#back-to-top:before{content:" ";display:inline-block;position:relative;top:0;transform:rotate(135deg);height:10px;width:10px;border-width:0 0 2px 2px;border-color:var(--back-to-top-color);border-style:solid}#back-to-top:hover:before{border-color:red}@media screen and (max-width:768px){#back-to-top{bottom:20px;right:20px;width:40px;height:40px;font-size:10px}}@media screen and (min-width:1024px){#back-to-top{bottom:20px;right:40px}}@media screen and (min-width:1280px){#back-to-top{bottom:20px;right:55px}}@media screen and (min-width:1536px){#back-to-top{visibility:hidden}}</style><script>function backToTop(){document.documentElement.scrollIntoView({behavior:"smooth"})}window.onload=function(){let t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t>0?e.style.display="inline":e.style.display="none"},window.onscroll=function(){let t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t<200?e.style.display="none":(e.style.display="inline",e.addEventListener("click",backToTop,!1))}</script><script src=//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js type=module></script></body></html>
