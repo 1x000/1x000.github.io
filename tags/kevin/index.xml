@@ -1,1 +1,5016 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kevin on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/kevin/</link><description>Recent content in kevin on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Tue, 22 Aug 2023 22:43:53 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/kevin/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kevin on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/kevin/</link><description>Recent content in kevin on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Tue, 22 Aug 2023 22:43:53 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/kevin/index.xml" rel="self" type="application/rss+xml"/><item><title>Kevin客户端的Hack VS Hack配置</title><link>https://blog.xpdbk.com/post/kevin-hvh/</link><pubDate>Tue, 22 Aug 2023 22:43:53 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin-hvh/</guid><description>&lt;img src="https://blog.xpdbk.com/post/kevin-hvh/2022-04-17_20.44.16.webp" alt="Featured image of post Kevin客户端的Hack VS Hack配置" />&lt;blockquote>
+&lt;p>HVH V1 KEVIN 2023.8.23&lt;/p>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iWICZ165u2je" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码: &lt;code>1pcs&lt;/code>&lt;/p>
+&lt;p>压缩密码: &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
+&lt;hr>
+&lt;p>可能只能在允许发包很多的服务器打HVH，如果有包限制可能会被踢出去&lt;/p>
+&lt;p>Kevin客户端的开源地址：&lt;a class="link" href="https://github.com/RE-KevinClient/KevinClient-Reborn" target="_blank" rel="noopener"
+>GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>这个配置没什么主要就是把能关的都关了能开的全打开把所有的安全功能全部关掉&lt;/p>
+&lt;blockquote>
+&lt;p>把Kevin文件替换了就行了&lt;/p>
+&lt;/blockquote>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV14p4y1K7AM&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Kevin客户端的使用与配置</title><link>https://blog.xpdbk.com/post/kevin-install/</link><pubDate>Tue, 22 Aug 2023 22:43:40 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin-install/</guid><description>&lt;img src="https://blog.xpdbk.com/post/kevin-install/back.webp" alt="Featured image of post Kevin客户端的使用与配置" />&lt;h2 id="kevin客户端的使用与配置">Kevin客户端的使用与配置&lt;/h2>
+&lt;blockquote>
+&lt;p>这个Kevin客户端比FDPClient客户端在grim和vulcan和polar的绕过强一点，但是目前的视觉很不好和BUG很玄学&lt;/p>
+&lt;p>Kevin客户端的开源地址：&lt;a class="link" href="https://github.com/RE-KevinClient/KevinClient-Reborn" target="_blank" rel="noopener"
+>GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>&lt;/p>
+&lt;p>以后我会建一个镜像站的吧（没有大硬盘？）&lt;/p>
+&lt;hr>
+&lt;p>Kevin一键客户端（U2.4.8版本（可以自己更换JAR和JSON实现更新））&lt;/p>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iB7tO165hg7i" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码:&lt;code>e4m8&lt;/code> 压缩包密码： &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;div class="notice notice-warning" >
+&lt;div class="notice-title">&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 576 512" fill="hsl(0, 65%, 65%)">&lt;path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/>&lt;/svg>&lt;/div>&lt;p>本文章使用的是 &lt;code>KevinClient Reborn u2.4.8&lt;/code> 这个版本&lt;/p>&lt;/div>
+&lt;p>我这个视频里面的内容已经不生效了了（&lt;del>因为我搞错了这个端并不是那种残疾端&lt;/del>），Kevin只需要把&lt;code>json&lt;/code>和&lt;code>jar&lt;/code>复制进去就行了&lt;/p>
+&lt;h2 id="一键端的文件列表">一键端的文件列表&lt;/h2>
+&lt;blockquote>
+&lt;p>好玩&lt;/p>
+&lt;/blockquote>
+&lt;details>
+&lt;summary>一键端的文件树&lt;/summary>
+/:.
+│ tree.txt
+│ 免责声明.txt
+│ 目录列表生成.bat
+│&lt;br>
+└─KevinClient-Reborn
+│ background.jpg
+│ 必看.txt
+│ 点击运行启动器.jar
+│&lt;br>
+└─.minecraft
+│ launcher_profiles.json
+│ options.txt
+│ optionsof.txt
+│ optionsshaders.txt
+│ servers.dat
+│ 分发人博客.url
+│&lt;br>
+├─Kevin
+│ │ bindCommand.json
+│ │ hud.json
+│ │ modules.json
+│ │&lt;br>
+│ ├─Capes
+│ │ cape.json
+│ │ &lt;br>
+│ ├─Configs
+│ ├─Fonts
+│ │ fonts.json
+│ │ &lt;br>
+│ ├─KillMessages
+│ ├─PlayerModels
+│ ├─Scripts
+│ ├─ServerIcons
+│ │ 1 IP-play.pika-network.net .png
+│ │ 10 IP-minemora.net .png
+│ │ 11 IP-mc.supercraft.es .png
+│ │ 12 IP-3fmc.com .png
+│ │ 13 IP-flamemc.com.br .png
+│ │ 14 IP-hypixel.net .png
+│ │ 15 IP-craftplay.pl .png
+│ │ 16 IP-herobrine.org .png
+│ │ 17 IP-librecraft.com .png
+│ │ 18 IP-kokscraft.pl .png
+│ │ 19 IP-playmc.games .png
+│ │ 2 IP-premium.blocksmc.com .png
+│ │ 20 IP-mc.gamster.org .png
+│ │ 21 IP-syuu.net .png
+│ │ 22 IP-test.karhu.ac .png
+│ │ 23 IP-hylex.gg .png
+│ │ 24 IP-mc.mooncookie.top .png
+│ │ 25 IP-dcjnw.ga .png
+│ │ 26 IP-shengcun.xpdbk.com .png
+│ │ 27 IP-mc.universocraft.com .png
+│ │ 28 IP-as.minemen.club .png
+│ │ 29 IP-play.mccisland.net .png
+│ │ 3 IP-mc.mineland.net .png
+│ │ 30 IP-2b2t.xin .png
+│ │ 4 IP-play.zonecraft.es .png
+│ │ 5 IP-eu.loyisa.cn .png
+│ │ 6 IP-ziblacking.coldpvp.com .png
+│ │ 7 IP-mc.stitch.best .png
+│ │ 8 IP-mc.hycraft.us_25565 .png
+│ │ 9 IP-play.bridger.land .png
+│ │ config.json
+│ │ &lt;br>
+│ ├─Skins
+│ │ skin.json
+│ │ &lt;br>
+│ ├─SpammerMessages
+│ └─Via
+│ ├─ViaBackwards
+│ │ config.yml
+│ │ &lt;br>
+│ ├─ViaRewind
+│ │ config.yml
+│ │ &lt;br>
+│ └─ViaVersion
+│ viaversion.yml
+│ &lt;br>
+├─resourcepacks
+│ ├─Rodrigo&amp;rsquo;s+Pack+(1.8)
+│ │ │ pack.mcmeta
+│ │ │ pack.png
+│ │ │&lt;br>
+│ │ ├─assets
+│ │ │ └─minecraft
+│ │ │ ├─blockstates
+│ │ │ │ bedrock.json
+│ │ │ │ netherrack.json
+│ │ │ │ &lt;br>
+│ │ │ ├─mcpatcher
+│ │ │ │ │ color.properties
+│ │ │ │ │&lt;br>
+│ │ │ │ ├─colormap
+│ │ │ │ │ fog0.png
+│ │ │ │ │ myceliumparticle.png
+│ │ │ │ │ sky0.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─ctm
+│ │ │ │ │ ├─cactus
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ cactus.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─glass
+│ │ │ │ │ │ ├─black
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_black.properties
+│ │ │ │ │ │ │ glass_pane_black.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─blue
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_blue.properties
+│ │ │ │ │ │ │ glass_pane_blue.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─brown
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_brown.properties
+│ │ │ │ │ │ │ glass_pane_brown.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─cyan
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_cyan.properties
+│ │ │ │ │ │ │ glass_pane_cyan.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─default
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass.properties
+│ │ │ │ │ │ │ glass_pane.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─gray
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_gray.properties
+│ │ │ │ │ │ │ glass_pane_gray.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─green
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_green.properties
+│ │ │ │ │ │ │ glass_pane_green.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─light_blue
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_light_blue.properties
+│ │ │ │ │ │ │ glass_pane_light_blue.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─lime
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_lime.properties
+│ │ │ │ │ │ │ glass_pane_lime.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─magenta
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_magenta.properties
+│ │ │ │ │ │ │ glass_pane_magenta.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─orange
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_orange.properties
+│ │ │ │ │ │ │ glass_pane_orange.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─pink
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_pane_pink.properties
+│ │ │ │ │ │ │ glass_pink.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─purple
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_pane_purple.properties
+│ │ │ │ │ │ │ glass_purple.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─red
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_pane_red.properties
+│ │ │ │ │ │ │ glass_red.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─silver
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_pane_silver.properties
+│ │ │ │ │ │ │ glass_silver.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─white
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ glass_pane_white.properties
+│ │ │ │ │ │ │ glass_white.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ └─yellow
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ glass_pane_yellow.properties
+│ │ │ │ │ │ glass_yellow.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─hardened_clay
+│ │ │ │ │ │ ├─black
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_black.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─blue
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_blue.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─brown
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_brown.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─cyan
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_cyan.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─default
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─gray
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_gray.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─green
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_green.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─light_blue
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_light_blue.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─lime
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_lime.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─magenta
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_magenta.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─orange
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_orange.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─pink
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_pink.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─purple
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_purple.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─red
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_red.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─silver
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_silver.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─white
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ hardened_clay_white.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ └─yellow
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ hardened_clay_yellow.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─hay_block
+│ │ │ │ │ │ ├─side
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ hay_block.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ └─top_bottom
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ hay_block_x.properties
+│ │ │ │ │ │ hay_block_y.properties
+│ │ │ │ │ │ hay_block_z.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─ice
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ ice.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─log
+│ │ │ │ │ │ ├─acacia
+│ │ │ │ │ │ │ ├─bark
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ log_acacia_x.properties
+│ │ │ │ │ │ │ │ log_acacia_z.properties
+│ │ │ │ │ │ │ │ wood_acacia_sides.properties
+│ │ │ │ │ │ │ │ wood_acacia_top_bottom.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ └─inner
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ log_acacia_bottom_x.properties
+│ │ │ │ │ │ │ log_acacia_bottom_z.properties
+│ │ │ │ │ │ │ log_acacia_top_x.properties
+│ │ │ │ │ │ │ log_acacia_top_z.properties
+│ │ │ │ │ │ │ log_acacia_y.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─big_oak
+│ │ │ │ │ │ │ ├─bark
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ log_big_oak_x.properties
+│ │ │ │ │ │ │ │ log_big_oak_z.properties
+│ │ │ │ │ │ │ │ wood_big_oak_sides.properties
+│ │ │ │ │ │ │ │ wood_big_oak_top_bottom.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ └─inner
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ log_big_oak_bottom_x.properties
+│ │ │ │ │ │ │ log_big_oak_bottom_z.properties
+│ │ │ │ │ │ │ log_big_oak_top_x.properties
+│ │ │ │ │ │ │ log_big_oak_top_z.properties
+│ │ │ │ │ │ │ log_big_oak_y.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─birch
+│ │ │ │ │ │ │ ├─bark
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ log_birch_x.properties
+│ │ │ │ │ │ │ │ log_birch_z.properties
+│ │ │ │ │ │ │ │ wood_birch_sides.properties
+│ │ │ │ │ │ │ │ wood_birch_top_bottom.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ └─inner
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ log_birch_bottom_x.properties
+│ │ │ │ │ │ │ log_birch_bottom_z.properties
+│ │ │ │ │ │ │ log_birch_top_x.properties
+│ │ │ │ │ │ │ log_birch_top_z.properties
+│ │ │ │ │ │ │ log_birch_y.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─jungle
+│ │ │ │ │ │ │ ├─bark
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ log_jungle_x.properties
+│ │ │ │ │ │ │ │ log_jungle_z.properties
+│ │ │ │ │ │ │ │ wood_jungle_sides.properties
+│ │ │ │ │ │ │ │ wood_jungle_top_bottom.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ └─inner
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ log_jungle_bottom_x.properties
+│ │ │ │ │ │ │ log_jungle_bottom_z.properties
+│ │ │ │ │ │ │ log_jungle_top_x.properties
+│ │ │ │ │ │ │ log_jungle_top_z.properties
+│ │ │ │ │ │ │ log_jungle_y.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─oak
+│ │ │ │ │ │ │ ├─bark
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ log_oak_x.properties
+│ │ │ │ │ │ │ │ log_oak_z.properties
+│ │ │ │ │ │ │ │ wood_oak_sides.properties
+│ │ │ │ │ │ │ │ wood_oak_top_bottom.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ └─inner
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ log_oak_bottom_x.properties
+│ │ │ │ │ │ │ log_oak_bottom_z.properties
+│ │ │ │ │ │ │ log_oak_top_x.properties
+│ │ │ │ │ │ │ log_oak_top_z.properties
+│ │ │ │ │ │ │ log_oak_y.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ └─spruce
+│ │ │ │ │ │ ├─bark
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ log_spruce_x.properties
+│ │ │ │ │ │ │ log_spruce_z.properties
+│ │ │ │ │ │ │ wood_spruce_sides.properties
+│ │ │ │ │ │ │ wood_spruce_top_bottom.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ └─inner
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ log_spruce_bottom_x.properties
+│ │ │ │ │ │ log_spruce_bottom_z.properties
+│ │ │ │ │ │ log_spruce_top_x.properties
+│ │ │ │ │ │ log_spruce_top_z.properties
+│ │ │ │ │ │ log_spruce_y.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─mushroom_stem
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ mushroom_all_stem.properties
+│ │ │ │ │ │ mushroom_stem.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─nether_portal
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 0.png.mcmeta
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 1.png.mcmeta
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 2.png.mcmeta
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 3.png.mcmeta
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 4.png.mcmeta
+│ │ │ │ │ │ nether_portal.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─quartz
+│ │ │ │ │ │ ├─chiseled
+│ │ │ │ │ │ │ ├─side
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ │ quartz_block_chiseled.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ └─top_bottom
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ quartz_block_chiseled.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ └─lines
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ quartz_block_lines.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─sandstone
+│ │ │ │ │ │ ├─default
+│ │ │ │ │ │ │ ├─carved
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ │ sandstone_carved.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ ├─default
+│ │ │ │ │ │ │ │ ├─side
+│ │ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ │ │ sandstone.properties
+│ │ │ │ │ │ │ │ │ sandstone_slab_double.properties
+│ │ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ │ ├─slab_stair
+│ │ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ │ sandstone_slab.properties
+│ │ │ │ │ │ │ │ │ sandstone_stair.properties
+│ │ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ │ └─top_bottom
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ │ sandstone.properties
+│ │ │ │ │ │ │ │ sandstone_carved.properties
+│ │ │ │ │ │ │ │ sandstone_slab.properties
+│ │ │ │ │ │ │ │ sandstone_slab_double.properties
+│ │ │ │ │ │ │ │ sandstone_slab_double_seamless.properties
+│ │ │ │ │ │ │ │ sandstone_smooth.properties
+│ │ │ │ │ │ │ │ sandstone_stair.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ └─smooth
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ sandstone_smooth.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ └─red_sandstone
+│ │ │ │ │ │ ├─carved
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ carved_red_sandstone.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ ├─default
+│ │ │ │ │ │ │ ├─side
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ │ red_sandstone.properties
+│ │ │ │ │ │ │ │ red_sandstone_slab_double.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ ├─slab_stair
+│ │ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ │ red_sandstone_slab.properties
+│ │ │ │ │ │ │ │ red_sandstone_stair.properties
+│ │ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ │ └─top_bottom
+│ │ │ │ │ │ │ 0.png
+│ │ │ │ │ │ │ 1.png
+│ │ │ │ │ │ │ 10.png
+│ │ │ │ │ │ │ 11.png
+│ │ │ │ │ │ │ 12.png
+│ │ │ │ │ │ │ 13.png
+│ │ │ │ │ │ │ 14.png
+│ │ │ │ │ │ │ 15.png
+│ │ │ │ │ │ │ 16.png
+│ │ │ │ │ │ │ 17.png
+│ │ │ │ │ │ │ 18.png
+│ │ │ │ │ │ │ 19.png
+│ │ │ │ │ │ │ 2.png
+│ │ │ │ │ │ │ 20.png
+│ │ │ │ │ │ │ 21.png
+│ │ │ │ │ │ │ 22.png
+│ │ │ │ │ │ │ 23.png
+│ │ │ │ │ │ │ 24.png
+│ │ │ │ │ │ │ 25.png
+│ │ │ │ │ │ │ 26.png
+│ │ │ │ │ │ │ 27.png
+│ │ │ │ │ │ │ 28.png
+│ │ │ │ │ │ │ 29.png
+│ │ │ │ │ │ │ 3.png
+│ │ │ │ │ │ │ 30.png
+│ │ │ │ │ │ │ 31.png
+│ │ │ │ │ │ │ 32.png
+│ │ │ │ │ │ │ 33.png
+│ │ │ │ │ │ │ 34.png
+│ │ │ │ │ │ │ 35.png
+│ │ │ │ │ │ │ 36.png
+│ │ │ │ │ │ │ 37.png
+│ │ │ │ │ │ │ 38.png
+│ │ │ │ │ │ │ 39.png
+│ │ │ │ │ │ │ 4.png
+│ │ │ │ │ │ │ 40.png
+│ │ │ │ │ │ │ 41.png
+│ │ │ │ │ │ │ 42.png
+│ │ │ │ │ │ │ 43.png
+│ │ │ │ │ │ │ 44.png
+│ │ │ │ │ │ │ 45.png
+│ │ │ │ │ │ │ 46.png
+│ │ │ │ │ │ │ 5.png
+│ │ │ │ │ │ │ 6.png
+│ │ │ │ │ │ │ 7.png
+│ │ │ │ │ │ │ 8.png
+│ │ │ │ │ │ │ 9.png
+│ │ │ │ │ │ │ carved_red_sandstone.properties
+│ │ │ │ │ │ │ red_sandstone.properties
+│ │ │ │ │ │ │ red_sandstone_slab.properties
+│ │ │ │ │ │ │ red_sandstone_slab_double.properties
+│ │ │ │ │ │ │ red_sandstone_slab_double_seamless.properties
+│ │ │ │ │ │ │ red_sandstone_smooth.properties
+│ │ │ │ │ │ │ red_sandstone_stair.properties
+│ │ │ │ │ │ │ &lt;br>
+│ │ │ │ │ │ └─smooth
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ smooth_red_sandstone.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─sea_lantern
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 0.png.mcmeta
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 1.png.mcmeta
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 2.png.mcmeta
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 3.png.mcmeta
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 4.png.mcmeta
+│ │ │ │ │ │ sea_lantern.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─stonebrick
+│ │ │ │ │ │ └─carved
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ monster_egg_stonebrick_carved.properties
+│ │ │ │ │ │ stonebrick_carved.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ └─wool
+│ │ │ │ │ ├─black
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_black.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─blue
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_blue.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─brown
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_brown.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─cyan
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_cyan.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─gray
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_gray.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─green
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_green.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─light_blue
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_light_blue.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─lime
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_lime.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─magenta
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_magenta.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─orange
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_orange.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─pink
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_pink.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─purple
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_purple.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─red
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_red.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─silver
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_silver.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ ├─white
+│ │ │ │ │ │ 0.png
+│ │ │ │ │ │ 1.png
+│ │ │ │ │ │ 10.png
+│ │ │ │ │ │ 11.png
+│ │ │ │ │ │ 12.png
+│ │ │ │ │ │ 13.png
+│ │ │ │ │ │ 14.png
+│ │ │ │ │ │ 15.png
+│ │ │ │ │ │ 16.png
+│ │ │ │ │ │ 17.png
+│ │ │ │ │ │ 18.png
+│ │ │ │ │ │ 19.png
+│ │ │ │ │ │ 2.png
+│ │ │ │ │ │ 20.png
+│ │ │ │ │ │ 21.png
+│ │ │ │ │ │ 22.png
+│ │ │ │ │ │ 23.png
+│ │ │ │ │ │ 24.png
+│ │ │ │ │ │ 25.png
+│ │ │ │ │ │ 26.png
+│ │ │ │ │ │ 27.png
+│ │ │ │ │ │ 28.png
+│ │ │ │ │ │ 29.png
+│ │ │ │ │ │ 3.png
+│ │ │ │ │ │ 30.png
+│ │ │ │ │ │ 31.png
+│ │ │ │ │ │ 32.png
+│ │ │ │ │ │ 33.png
+│ │ │ │ │ │ 34.png
+│ │ │ │ │ │ 35.png
+│ │ │ │ │ │ 36.png
+│ │ │ │ │ │ 37.png
+│ │ │ │ │ │ 38.png
+│ │ │ │ │ │ 39.png
+│ │ │ │ │ │ 4.png
+│ │ │ │ │ │ 40.png
+│ │ │ │ │ │ 41.png
+│ │ │ │ │ │ 42.png
+│ │ │ │ │ │ 43.png
+│ │ │ │ │ │ 44.png
+│ │ │ │ │ │ 45.png
+│ │ │ │ │ │ 46.png
+│ │ │ │ │ │ 5.png
+│ │ │ │ │ │ 6.png
+│ │ │ │ │ │ 7.png
+│ │ │ │ │ │ 8.png
+│ │ │ │ │ │ 9.png
+│ │ │ │ │ │ wool_white.properties
+│ │ │ │ │ │ &lt;br>
+│ │ │ │ │ └─yellow
+│ │ │ │ │ 0.png
+│ │ │ │ │ 1.png
+│ │ │ │ │ 10.png
+│ │ │ │ │ 11.png
+│ │ │ │ │ 12.png
+│ │ │ │ │ 13.png
+│ │ │ │ │ 14.png
+│ │ │ │ │ 15.png
+│ │ │ │ │ 16.png
+│ │ │ │ │ 17.png
+│ │ │ │ │ 18.png
+│ │ │ │ │ 19.png
+│ │ │ │ │ 2.png
+│ │ │ │ │ 20.png
+│ │ │ │ │ 21.png
+│ │ │ │ │ 22.png
+│ │ │ │ │ 23.png
+│ │ │ │ │ 24.png
+│ │ │ │ │ 25.png
+│ │ │ │ │ 26.png
+│ │ │ │ │ 27.png
+│ │ │ │ │ 28.png
+│ │ │ │ │ 29.png
+│ │ │ │ │ 3.png
+│ │ │ │ │ 30.png
+│ │ │ │ │ 31.png
+│ │ │ │ │ 32.png
+│ │ │ │ │ 33.png
+│ │ │ │ │ 34.png
+│ │ │ │ │ 35.png
+│ │ │ │ │ 36.png
+│ │ │ │ │ 37.png
+│ │ │ │ │ 38.png
+│ │ │ │ │ 39.png
+│ │ │ │ │ 4.png
+│ │ │ │ │ 40.png
+│ │ │ │ │ 41.png
+│ │ │ │ │ 42.png
+│ │ │ │ │ 43.png
+│ │ │ │ │ 44.png
+│ │ │ │ │ 45.png
+│ │ │ │ │ 46.png
+│ │ │ │ │ 5.png
+│ │ │ │ │ 6.png
+│ │ │ │ │ 7.png
+│ │ │ │ │ 8.png
+│ │ │ │ │ 9.png
+│ │ │ │ │ wool_yellow.properties
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─lightmap
+│ │ │ │ │ Copyright.txt
+│ │ │ │ │ world-1.png
+│ │ │ │ │ world0.png
+│ │ │ │ │ world0_rain.png
+│ │ │ │ │ world1.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ └─sky
+│ │ │ │ └─world0
+│ │ │ │ Copyright.txt
+│ │ │ │ day.png
+│ │ │ │ day_rain.png
+│ │ │ │ night.png
+│ │ │ │ night_rain.png
+│ │ │ │ sky1.properties
+│ │ │ │ sky2.properties
+│ │ │ │ sky3.properties
+│ │ │ │ sky4.properties
+│ │ │ │ sky5.properties
+│ │ │ │ sky6.properties
+│ │ │ │ sky7.properties
+│ │ │ │ sky8.properties
+│ │ │ │ stars.png
+│ │ │ │ sunrise_sunset.png
+│ │ │ │ &lt;br>
+│ │ │ ├─models
+│ │ │ │ ├─block
+│ │ │ │ │ acacia_fence_gate_closed.json
+│ │ │ │ │ acacia_fence_gate_open.json
+│ │ │ │ │ acacia_fence_n.json
+│ │ │ │ │ acacia_fence_ne.json
+│ │ │ │ │ acacia_fence_ns.json
+│ │ │ │ │ acacia_fence_nse.json
+│ │ │ │ │ acacia_fence_nsew.json
+│ │ │ │ │ acacia_fence_post.json
+│ │ │ │ │ acacia_wall_gate_closed.json
+│ │ │ │ │ acacia_wall_gate_open.json
+│ │ │ │ │ bed_foot.json
+│ │ │ │ │ bed_head.json
+│ │ │ │ │ birch_fence_gate_closed.json
+│ │ │ │ │ birch_fence_gate_open.json
+│ │ │ │ │ birch_fence_n.json
+│ │ │ │ │ birch_fence_ne.json
+│ │ │ │ │ birch_fence_ns.json
+│ │ │ │ │ birch_fence_nse.json
+│ │ │ │ │ birch_fence_nsew.json
+│ │ │ │ │ birch_fence_post.json
+│ │ │ │ │ birch_wall_gate_closed.json
+│ │ │ │ │ birch_wall_gate_open.json
+│ │ │ │ │ cobblestone_wall_n.json
+│ │ │ │ │ cobblestone_wall_ne.json
+│ │ │ │ │ cobblestone_wall_ns.json
+│ │ │ │ │ cobblestone_wall_nse.json
+│ │ │ │ │ cobblestone_wall_nsew.json
+│ │ │ │ │ cobblestone_wall_ns_above.json
+│ │ │ │ │ cobblestone_wall_post.json
+│ │ │ │ │ dark_oak_fence_gate_closed.json
+│ │ │ │ │ dark_oak_fence_gate_open.json
+│ │ │ │ │ dark_oak_fence_n.json
+│ │ │ │ │ dark_oak_fence_ne.json
+│ │ │ │ │ dark_oak_fence_ns.json
+│ │ │ │ │ dark_oak_fence_nse.json
+│ │ │ │ │ dark_oak_fence_nsew.json
+│ │ │ │ │ dark_oak_fence_post.json
+│ │ │ │ │ dark_oak_wall_gate_closed.json
+│ │ │ │ │ dark_oak_wall_gate_open.json
+│ │ │ │ │ door_bottom.json
+│ │ │ │ │ door_bottom_rh.json
+│ │ │ │ │ door_top.json
+│ │ │ │ │ door_top_rh.json
+│ │ │ │ │ flower_pot_cactus.json
+│ │ │ │ │ half_slab_cobblestone.json
+│ │ │ │ │ half_slab_quartz.json
+│ │ │ │ │ half_slab_red_sandstone.json
+│ │ │ │ │ half_slab_sandstone.json
+│ │ │ │ │ hopper_down.json
+│ │ │ │ │ jungle_fence_gate_closed.json
+│ │ │ │ │ jungle_fence_gate_open.json
+│ │ │ │ │ jungle_fence_n.json
+│ │ │ │ │ jungle_fence_ne.json
+│ │ │ │ │ jungle_fence_ns.json
+│ │ │ │ │ jungle_fence_nse.json
+│ │ │ │ │ jungle_fence_nsew.json
+│ │ │ │ │ jungle_fence_post.json
+│ │ │ │ │ jungle_wall_gate_closed.json
+│ │ │ │ │ jungle_wall_gate_open.json
+│ │ │ │ │ lever.json
+│ │ │ │ │ lever_off.json
+│ │ │ │ │ mossy_wall_n.json
+│ │ │ │ │ mossy_wall_ne.json
+│ │ │ │ │ mossy_wall_ns.json
+│ │ │ │ │ mossy_wall_nse.json
+│ │ │ │ │ mossy_wall_nsew.json
+│ │ │ │ │ mossy_wall_ns_above.json
+│ │ │ │ │ mossy_wall_post.json
+│ │ │ │ │ nether_brick_fence_n.json
+│ │ │ │ │ nether_brick_fence_ne.json
+│ │ │ │ │ nether_brick_fence_ns.json
+│ │ │ │ │ nether_brick_fence_nse.json
+│ │ │ │ │ nether_brick_fence_nsew.json
+│ │ │ │ │ nether_brick_fence_post.json
+│ │ │ │ │ oak_fence_gate_closed.json
+│ │ │ │ │ oak_fence_gate_open.json
+│ │ │ │ │ oak_fence_n.json
+│ │ │ │ │ oak_fence_ne.json
+│ │ │ │ │ oak_fence_ns.json
+│ │ │ │ │ oak_fence_nse.json
+│ │ │ │ │ oak_fence_nsew.json
+│ │ │ │ │ oak_fence_post.json
+│ │ │ │ │ oak_wall_gate_closed.json
+│ │ │ │ │ oak_wall_gate_open.json
+│ │ │ │ │ quartz_inner_stairs.json
+│ │ │ │ │ quartz_outer_stairs.json
+│ │ │ │ │ quartz_stairs.json
+│ │ │ │ │ red_sandstone_inner_stairs.json
+│ │ │ │ │ red_sandstone_outer_stairs.json
+│ │ │ │ │ red_sandstone_stairs.json
+│ │ │ │ │ reeds.json
+│ │ │ │ │ sandstone_inner_stairs.json
+│ │ │ │ │ sandstone_outer_stairs.json
+│ │ │ │ │ sandstone_stairs.json
+│ │ │ │ │ spruce_fence_gate_closed.json
+│ │ │ │ │ spruce_fence_gate_open.json
+│ │ │ │ │ spruce_fence_n.json
+│ │ │ │ │ spruce_fence_ne.json
+│ │ │ │ │ spruce_fence_ns.json
+│ │ │ │ │ spruce_fence_nse.json
+│ │ │ │ │ spruce_fence_nsew.json
+│ │ │ │ │ spruce_fence_post.json
+│ │ │ │ │ spruce_wall_gate_closed.json
+│ │ │ │ │ spruce_wall_gate_open.json
+│ │ │ │ │ stone_button.json
+│ │ │ │ │ stone_button_pressed.json
+│ │ │ │ │ stone_inner_stairs.json
+│ │ │ │ │ stone_outer_stairs.json
+│ │ │ │ │ stone_stairs.json
+│ │ │ │ │ trapdoor_bottom.json
+│ │ │ │ │ trapdoor_open.json
+│ │ │ │ │ trapdoor_top.json
+│ │ │ │ │ tripwire_hook.json
+│ │ │ │ │ tripwire_hook_attached.json
+│ │ │ │ │ tripwire_hook_attached_powered.json
+│ │ │ │ │ tripwire_hook_attached_suspended.json
+│ │ │ │ │ tripwire_hook_attached_suspended_powered.json
+│ │ │ │ │ tripwire_hook_powered.json
+│ │ │ │ │ upper_slab_cobblestone.json
+│ │ │ │ │ upper_slab_quartz.json
+│ │ │ │ │ upper_slab_red_sandstone.json
+│ │ │ │ │ upper_slab_sandstone.json
+│ │ │ │ │ wooden_button.json
+│ │ │ │ │ wooden_button_pressed.json
+│ │ │ │ │ &lt;br>
+│ │ │ │ └─item
+│ │ │ │ bottle_splash.json
+│ │ │ │ double_fern.json
+│ │ │ │ double_grass.json
+│ │ │ │ &lt;br>
+│ │ │ ├─sounds
+│ │ │ │ ├─dig
+│ │ │ │ │ stone1.ogg
+│ │ │ │ │ stone2.ogg
+│ │ │ │ │ stone3.ogg
+│ │ │ │ │ stone4.ogg
+│ │ │ │ │ wood1.ogg
+│ │ │ │ │ wood2.ogg
+│ │ │ │ │ wood3.ogg
+│ │ │ │ │ wood4.ogg
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─random
+│ │ │ │ │ bow.ogg
+│ │ │ │ │ bowhit1.ogg
+│ │ │ │ │ bowhit2.ogg
+│ │ │ │ │ bowhit3.ogg
+│ │ │ │ │ bowhit4.ogg
+│ │ │ │ │ burp.ogg
+│ │ │ │ │ drink.ogg
+│ │ │ │ │ eat1.ogg
+│ │ │ │ │ eat2.ogg
+│ │ │ │ │ eat3.ogg
+│ │ │ │ │ &lt;br>
+│ │ │ │ └─step
+│ │ │ │ stone1.ogg
+│ │ │ │ stone2.ogg
+│ │ │ │ stone3.ogg
+│ │ │ │ stone4.ogg
+│ │ │ │ stone5.ogg
+│ │ │ │ stone6.ogg
+│ │ │ │ &lt;br>
+│ │ │ ├─texts
+│ │ │ │ splashes.txt
+│ │ │ │ &lt;br>
+│ │ │ └─textures
+│ │ │ ├─blocks
+│ │ │ │ anvil_base.png
+│ │ │ │ anvil_top_damaged_0.png
+│ │ │ │ anvil_top_damaged_1.png
+│ │ │ │ anvil_top_damaged_2.png
+│ │ │ │ beacon.png
+│ │ │ │ bedrock.png
+│ │ │ │ bed_feet_end.png
+│ │ │ │ bed_feet_side.png
+│ │ │ │ bed_feet_top.png
+│ │ │ │ bed_head_end.png
+│ │ │ │ bed_head_side.png
+│ │ │ │ bed_head_top.png
+│ │ │ │ bookshelf.png
+│ │ │ │ brewing_stand.png
+│ │ │ │ brewing_stand_base.png
+│ │ │ │ brick.png
+│ │ │ │ cactus_bottom.png
+│ │ │ │ cactus_side.png
+│ │ │ │ cactus_top.png
+│ │ │ │ cake_bottom.png
+│ │ │ │ cake_inner.png
+│ │ │ │ cake_side.png
+│ │ │ │ cake_top.png
+│ │ │ │ carrots_stage_0.png
+│ │ │ │ carrots_stage_1.png
+│ │ │ │ carrots_stage_2.png
+│ │ │ │ carrots_stage_3.png
+│ │ │ │ cauldron_bottom.png
+│ │ │ │ cauldron_inner.png
+│ │ │ │ cauldron_side.png
+│ │ │ │ cauldron_top.png
+│ │ │ │ clay.png
+│ │ │ │ coal_block.png
+│ │ │ │ coal_ore.png
+│ │ │ │ coarse_dirt.png
+│ │ │ │ cobblestone.png
+│ │ │ │ cobblestone_mossy.png
+│ │ │ │ cocoa_stage_0.png
+│ │ │ │ cocoa_stage_1.png
+│ │ │ │ cocoa_stage_2.png
+│ │ │ │ command_block.png
+│ │ │ │ comparator_off.png
+│ │ │ │ comparator_on.png
+│ │ │ │ crafting_table_front.png
+│ │ │ │ crafting_table_side.png
+│ │ │ │ crafting_table_top.png
+│ │ │ │ daylight_detector_inverted_top.png
+│ │ │ │ daylight_detector_side.png
+│ │ │ │ daylight_detector_top.png
+│ │ │ │ deadbush.png
+│ │ │ │ destroy_stage_0.png
+│ │ │ │ destroy_stage_1.png
+│ │ │ │ destroy_stage_2.png
+│ │ │ │ destroy_stage_3.png
+│ │ │ │ destroy_stage_4.png
+│ │ │ │ destroy_stage_5.png
+│ │ │ │ destroy_stage_6.png
+│ │ │ │ destroy_stage_7.png
+│ │ │ │ destroy_stage_8.png
+│ │ │ │ destroy_stage_9.png
+│ │ │ │ diamond_block.png
+│ │ │ │ diamond_ore.png
+│ │ │ │ dirt.png
+│ │ │ │ dirt_podzol_side.png
+│ │ │ │ dirt_podzol_top.png
+│ │ │ │ dispenser_front_horizontal.png
+│ │ │ │ dispenser_front_vertical.png
+│ │ │ │ door_acacia_lower.png
+│ │ │ │ door_acacia_upper.png
+│ │ │ │ door_birch_lower.png
+│ │ │ │ door_birch_upper.png
+│ │ │ │ door_dark_oak_lower.png
+│ │ │ │ door_dark_oak_upper.png
+│ │ │ │ door_iron_lower.png
+│ │ │ │ door_iron_upper.png
+│ │ │ │ door_jungle_lower.png
+│ │ │ │ door_jungle_upper.png
+│ │ │ │ door_spruce_lower.png
+│ │ │ │ door_spruce_upper.png
+│ │ │ │ door_wood_lower.png
+│ │ │ │ door_wood_upper.png
+│ │ │ │ double_plant_fern_bottom.png
+│ │ │ │ double_plant_fern_top.png
+│ │ │ │ double_plant_grass_bottom.png
+│ │ │ │ double_plant_grass_top.png
+│ │ │ │ double_plant_paeonia_bottom.png
+│ │ │ │ double_plant_paeonia_top.png
+│ │ │ │ double_plant_rose_bottom.png
+│ │ │ │ double_plant_rose_top.png
+│ │ │ │ double_plant_sunflower_back.png
+│ │ │ │ double_plant_sunflower_bottom.png
+│ │ │ │ double_plant_sunflower_front.png
+│ │ │ │ double_plant_sunflower_top.png
+│ │ │ │ double_plant_syringa_bottom.png
+│ │ │ │ double_plant_syringa_top.png
+│ │ │ │ dragon_egg.png
+│ │ │ │ dropper_front_horizontal.png
+│ │ │ │ dropper_front_vertical.png
+│ │ │ │ emerald_block.png
+│ │ │ │ emerald_ore.png
+│ │ │ │ enchanting_table_bottom.png
+│ │ │ │ enchanting_table_side.png
+│ │ │ │ enchanting_table_top.png
+│ │ │ │ endframe_eye.png
+│ │ │ │ endframe_side.png
+│ │ │ │ endframe_top.png
+│ │ │ │ end_stone.png
+│ │ │ │ farmland_dry.png
+│ │ │ │ farmland_wet.png
+│ │ │ │ fern.png
+│ │ │ │ fire_layer_0.png
+│ │ │ │ fire_layer_0.png.mcmeta
+│ │ │ │ fire_layer_1.png
+│ │ │ │ fire_layer_1.png.mcmeta
+│ │ │ │ flower_allium.png
+│ │ │ │ flower_blue_orchid.png
+│ │ │ │ flower_dandelion.png
+│ │ │ │ flower_houstonia.png
+│ │ │ │ flower_oxeye_daisy.png
+│ │ │ │ flower_pot.png
+│ │ │ │ flower_rose.png
+│ │ │ │ flower_tulip_orange.png
+│ │ │ │ flower_tulip_pink.png
+│ │ │ │ flower_tulip_red.png
+│ │ │ │ flower_tulip_white.png
+│ │ │ │ furnace_front_off.png
+│ │ │ │ furnace_front_on.png
+│ │ │ │ furnace_front_on.png.mcmeta
+│ │ │ │ furnace_side.png
+│ │ │ │ furnace_top.png
+│ │ │ │ glass.png
+│ │ │ │ glass_black.png
+│ │ │ │ glass_blue.png
+│ │ │ │ glass_brown.png
+│ │ │ │ glass_cyan.png
+│ │ │ │ glass_gray.png
+│ │ │ │ glass_green.png
+│ │ │ │ glass_light_blue.png
+│ │ │ │ glass_lime.png
+│ │ │ │ glass_magenta.png
+│ │ │ │ glass_orange.png
+│ │ │ │ glass_pane_top.png
+│ │ │ │ glass_pane_top_black.png
+│ │ │ │ glass_pane_top_blue.png
+│ │ │ │ glass_pane_top_brown.png
+│ │ │ │ glass_pane_top_cyan.png
+│ │ │ │ glass_pane_top_gray.png
+│ │ │ │ glass_pane_top_green.png
+│ │ │ │ glass_pane_top_light_blue.png
+│ │ │ │ glass_pane_top_lime.png
+│ │ │ │ glass_pane_top_magenta.png
+│ │ │ │ glass_pane_top_orange.png
+│ │ │ │ glass_pane_top_pink.png
+│ │ │ │ glass_pane_top_purple.png
+│ │ │ │ glass_pane_top_red.png
+│ │ │ │ glass_pane_top_silver.png
+│ │ │ │ glass_pane_top_white.png
+│ │ │ │ glass_pane_top_yellow.png
+│ │ │ │ glass_pink.png
+│ │ │ │ glass_purple.png
+│ │ │ │ glass_red.png
+│ │ │ │ glass_silver.png
+│ │ │ │ glass_white.png
+│ │ │ │ glass_yellow.png
+│ │ │ │ glowstone.png
+│ │ │ │ gold_block.png
+│ │ │ │ gold_ore.png
+│ │ │ │ grass_side.png
+│ │ │ │ grass_side_overlay.png
+│ │ │ │ grass_side_snowed.png
+│ │ │ │ grass_top.png
+│ │ │ │ gravel.png
+│ │ │ │ hardened_clay.png
+│ │ │ │ hardened_clay_stained_black.png
+│ │ │ │ hardened_clay_stained_blue.png
+│ │ │ │ hardened_clay_stained_brown.png
+│ │ │ │ hardened_clay_stained_cyan.png
+│ │ │ │ hardened_clay_stained_gray.png
+│ │ │ │ hardened_clay_stained_green.png
+│ │ │ │ hardened_clay_stained_light_blue.png
+│ │ │ │ hardened_clay_stained_lime.png
+│ │ │ │ hardened_clay_stained_magenta.png
+│ │ │ │ hardened_clay_stained_orange.png
+│ │ │ │ hardened_clay_stained_pink.png
+│ │ │ │ hardened_clay_stained_purple.png
+│ │ │ │ hardened_clay_stained_red.png
+│ │ │ │ hardened_clay_stained_silver.png
+│ │ │ │ hardened_clay_stained_white.png
+│ │ │ │ hardened_clay_stained_yellow.png
+│ │ │ │ hay_block_side.png
+│ │ │ │ hay_block_top.png
+│ │ │ │ hopper_inside.png
+│ │ │ │ hopper_inside_down.png
+│ │ │ │ hopper_outside.png
+│ │ │ │ hopper_top.png
+│ │ │ │ ice.png
+│ │ │ │ ice_packed.png
+│ │ │ │ iron_bars.png
+│ │ │ │ iron_block.png
+│ │ │ │ iron_ore.png
+│ │ │ │ iron_trapdoor.png
+│ │ │ │ itemframe_background.png
+│ │ │ │ jukebox_side.png
+│ │ │ │ jukebox_top.png
+│ │ │ │ ladder.png
+│ │ │ │ lapis_block.png
+│ │ │ │ lapis_ore.png
+│ │ │ │ lava_flow.png
+│ │ │ │ lava_flow.png.mcmeta
+│ │ │ │ lava_still.png
+│ │ │ │ lava_still.png.mcmeta
+│ │ │ │ leaves_acacia.png
+│ │ │ │ leaves_big_oak.png
+│ │ │ │ leaves_birch.png
+│ │ │ │ leaves_jungle.png
+│ │ │ │ leaves_oak.png
+│ │ │ │ leaves_spruce.png
+│ │ │ │ lever.png
+│ │ │ │ log_acacia.png
+│ │ │ │ log_acacia_top.png
+│ │ │ │ log_big_oak.png
+│ │ │ │ log_big_oak_top.png
+│ │ │ │ log_birch.png
+│ │ │ │ log_birch_top.png
+│ │ │ │ log_jungle.png
+│ │ │ │ log_jungle_top.png
+│ │ │ │ log_oak.png
+│ │ │ │ log_oak_top.png
+│ │ │ │ log_spruce.png
+│ │ │ │ log_spruce_top.png
+│ │ │ │ melon_side.png
+│ │ │ │ melon_stem_connected.png
+│ │ │ │ melon_stem_disconnected.png
+│ │ │ │ melon_top.png
+│ │ │ │ mob_spawner.png
+│ │ │ │ mushroom_block_inside.png
+│ │ │ │ mushroom_block_skin_brown.png
+│ │ │ │ mushroom_block_skin_red.png
+│ │ │ │ mushroom_block_skin_stem.png
+│ │ │ │ mushroom_brown.png
+│ │ │ │ mushroom_red.png
+│ │ │ │ mycelium_side.png
+│ │ │ │ mycelium_top.png
+│ │ │ │ netherrack.png
+│ │ │ │ nether_brick.png
+│ │ │ │ nether_wart_stage_0.png
+│ │ │ │ nether_wart_stage_1.png
+│ │ │ │ nether_wart_stage_2.png
+│ │ │ │ noteblock.png
+│ │ │ │ obsidian.png
+│ │ │ │ piston_bottom.png
+│ │ │ │ piston_inner.png
+│ │ │ │ piston_side.png
+│ │ │ │ piston_top_normal.png
+│ │ │ │ piston_top_sticky.png
+│ │ │ │ planks_acacia.png
+│ │ │ │ planks_big_oak.png
+│ │ │ │ planks_birch.png
+│ │ │ │ planks_jungle.png
+│ │ │ │ planks_oak.png
+│ │ │ │ planks_spruce.png
+│ │ │ │ portal.png
+│ │ │ │ portal.png.mcmeta
+│ │ │ │ potatoes_stage_0.png
+│ │ │ │ potatoes_stage_1.png
+│ │ │ │ potatoes_stage_2.png
+│ │ │ │ potatoes_stage_3.png
+│ │ │ │ prismarine_bricks.png
+│ │ │ │ prismarine_dark.png
+│ │ │ │ prismarine_rough.png
+│ │ │ │ prismarine_rough.png.mcmeta
+│ │ │ │ pumpkin_face_off.png
+│ │ │ │ pumpkin_face_on.png
+│ │ │ │ pumpkin_side.png
+│ │ │ │ pumpkin_stem_connected.png
+│ │ │ │ pumpkin_stem_disconnected.png
+│ │ │ │ pumpkin_top.png
+│ │ │ │ quartz_block_bottom.png
+│ │ │ │ quartz_block_chiseled.png
+│ │ │ │ quartz_block_chiseled_top.png
+│ │ │ │ quartz_block_lines.png
+│ │ │ │ quartz_block_lines_top.png
+│ │ │ │ quartz_block_side.png
+│ │ │ │ quartz_block_top.png
+│ │ │ │ quartz_ore.png
+│ │ │ │ rail_activator.png
+│ │ │ │ rail_activator_powered.png
+│ │ │ │ rail_detector.png
+│ │ │ │ rail_detector_powered.png
+│ │ │ │ rail_golden.png
+│ │ │ │ rail_golden_powered.png
+│ │ │ │ rail_normal.png
+│ │ │ │ rail_normal_turned.png
+│ │ │ │ redstone_block.png
+│ │ │ │ redstone_dust_cross.png
+│ │ │ │ redstone_dust_line.png
+│ │ │ │ redstone_lamp_off.png
+│ │ │ │ redstone_lamp_on.png
+│ │ │ │ redstone_ore.png
+│ │ │ │ redstone_torch_off.png
+│ │ │ │ redstone_torch_on.png
+│ │ │ │ red_sand.png
+│ │ │ │ red_sandstone_bottom.png
+│ │ │ │ red_sandstone_carved.png
+│ │ │ │ red_sandstone_normal.png
+│ │ │ │ red_sandstone_smooth.png
+│ │ │ │ red_sandstone_top.png
+│ │ │ │ reeds.png
+│ │ │ │ repeater_off.png
+│ │ │ │ repeater_on.png
+│ │ │ │ sand.png
+│ │ │ │ sandstone_bottom.png
+│ │ │ │ sandstone_carved.png
+│ │ │ │ sandstone_normal.png
+│ │ │ │ sandstone_smooth.png
+│ │ │ │ sandstone_top.png
+│ │ │ │ sapling_acacia.png
+│ │ │ │ sapling_birch.png
+│ │ │ │ sapling_jungle.png
+│ │ │ │ sapling_oak.png
+│ │ │ │ sapling_roofed_oak.png
+│ │ │ │ sapling_spruce.png
+│ │ │ │ sea_lantern.png
+│ │ │ │ sea_lantern.png.mcmeta
+│ │ │ │ slime.png
+│ │ │ │ snow.png
+│ │ │ │ soul_sand.png
+│ │ │ │ sponge.png
+│ │ │ │ sponge_wet.png
+│ │ │ │ stone.png
+│ │ │ │ stonebrick.png
+│ │ │ │ stonebrick_carved.png
+│ │ │ │ stonebrick_cracked.png
+│ │ │ │ stonebrick_mossy.png
+│ │ │ │ stone_andesite.png
+│ │ │ │ stone_andesite_smooth.png
+│ │ │ │ stone_diorite.png
+│ │ │ │ stone_diorite_smooth.png
+│ │ │ │ stone_granite.png
+│ │ │ │ stone_granite_smooth.png
+│ │ │ │ stone_slab_side.png
+│ │ │ │ stone_slab_top.png
+│ │ │ │ tallgrass.png
+│ │ │ │ tnt_bottom.png
+│ │ │ │ tnt_side.png
+│ │ │ │ tnt_top.png
+│ │ │ │ torch_on.png
+│ │ │ │ trapdoor.png
+│ │ │ │ trip_wire.png
+│ │ │ │ trip_wire_source.png
+│ │ │ │ vine.png
+│ │ │ │ waterlily.png
+│ │ │ │ water_flow.png
+│ │ │ │ water_overlay.png
+│ │ │ │ water_still.png
+│ │ │ │ web.png
+│ │ │ │ wheat_stage_0.png
+│ │ │ │ wheat_stage_1.png
+│ │ │ │ wheat_stage_2.png
+│ │ │ │ wheat_stage_3.png
+│ │ │ │ wheat_stage_4.png
+│ │ │ │ wheat_stage_5.png
+│ │ │ │ wheat_stage_6.png
+│ │ │ │ wheat_stage_7.png
+│ │ │ │ wool_colored_black.png
+│ │ │ │ wool_colored_blue.png
+│ │ │ │ wool_colored_brown.png
+│ │ │ │ wool_colored_cyan.png
+│ │ │ │ wool_colored_gray.png
+│ │ │ │ wool_colored_green.png
+│ │ │ │ wool_colored_light_blue.png
+│ │ │ │ wool_colored_lime.png
+│ │ │ │ wool_colored_magenta.png
+│ │ │ │ wool_colored_orange.png
+│ │ │ │ wool_colored_pink.png
+│ │ │ │ wool_colored_purple.png
+│ │ │ │ wool_colored_red.png
+│ │ │ │ wool_colored_silver.png
+│ │ │ │ wool_colored_white.png
+│ │ │ │ wool_colored_yellow.png
+│ │ │ │ &lt;br>
+│ │ │ ├─blocks_extra
+│ │ │ │ ├─bed
+│ │ │ │ │ bed_foot_bottom.png
+│ │ │ │ │ bed_head_bottom.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─buttons
+│ │ │ │ │ stone_button.png
+│ │ │ │ │ wood_button.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─fences
+│ │ │ │ │ acacia_fence.png
+│ │ │ │ │ acacia_fence_gate.png
+│ │ │ │ │ birch_fence.png
+│ │ │ │ │ birch_fence_gate.png
+│ │ │ │ │ dark_oak_fence.png
+│ │ │ │ │ dark_oak_fence_gate.png
+│ │ │ │ │ jungle_fence.png
+│ │ │ │ │ jungle_fence_gate.png
+│ │ │ │ │ nether_brick_fence.png
+│ │ │ │ │ nether_brick_fence_gate.png
+│ │ │ │ │ oak_fence.png
+│ │ │ │ │ oak_fence_gate.png
+│ │ │ │ │ spruce_fence.png
+│ │ │ │ │ spruce_fence_gate.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─flower_pot
+│ │ │ │ │ flower_pot_cactus.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─lever
+│ │ │ │ │ lever_base.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─slabs_stairs
+│ │ │ │ │ cobblestone_slab_stair.png
+│ │ │ │ │ quartz_slab_stair.png
+│ │ │ │ │ red_sandstone_slab_stair.png
+│ │ │ │ │ sandstone_slab_stair.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─tripwire
+│ │ │ │ │ tripwire_hook.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ └─walls
+│ │ │ │ cobblestone_mossy_wall_ns.png
+│ │ │ │ cobblestone_mossy_wall_post.png
+│ │ │ │ cobblestone_mossy_wall_side.png
+│ │ │ │ cobblestone_wall_ns.png
+│ │ │ │ cobblestone_wall_post.png
+│ │ │ │ cobblestone_wall_side.png
+│ │ │ │ &lt;br>
+│ │ │ ├─colormap
+│ │ │ │ foliage.png
+│ │ │ │ grass.png
+│ │ │ │ old.png
+│ │ │ │ old2.png
+│ │ │ │ &lt;br>
+│ │ │ ├─entity
+│ │ │ │ │ alex.png
+│ │ │ │ │ arrow.png
+│ │ │ │ │ banner_base.png
+│ │ │ │ │ bat.png
+│ │ │ │ │ beacon_beam.png
+│ │ │ │ │ blaze.png
+│ │ │ │ │ boat.png
+│ │ │ │ │ chicken.png
+│ │ │ │ │ enchanting_table_book.png
+│ │ │ │ │ endermite.png
+│ │ │ │ │ end_gateway_beam.png
+│ │ │ │ │ end_portal.png
+│ │ │ │ │ experience_orb.png
+│ │ │ │ │ explosion.png
+│ │ │ │ │ guardian.png
+│ │ │ │ │ guardian_beam.png
+│ │ │ │ │ guardian_elder.png
+│ │ │ │ │ iron_golem.png
+│ │ │ │ │ lead_knot.png
+│ │ │ │ │ minecart.png
+│ │ │ │ │ sign.png
+│ │ │ │ │ silverfish.png
+│ │ │ │ │ snowman.png
+│ │ │ │ │ spider_eyes.png
+│ │ │ │ │ squid.png
+│ │ │ │ │ steve.png
+│ │ │ │ │ witch.png
+│ │ │ │ │ zombie_pigman.png
+│ │ │ │ │&lt;br>
+│ │ │ │ ├─armorstand
+│ │ │ │ │ wood.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─cat
+│ │ │ │ │ black.png
+│ │ │ │ │ ocelot.png
+│ │ │ │ │ red.png
+│ │ │ │ │ siamese.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─chest
+│ │ │ │ │ christmas.png
+│ │ │ │ │ christmas_double.png
+│ │ │ │ │ ender.png
+│ │ │ │ │ normal.png
+│ │ │ │ │ normal_double.png
+│ │ │ │ │ trapped.png
+│ │ │ │ │ trapped_double.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─cow
+│ │ │ │ │ cow.png
+│ │ │ │ │ mooshroom.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─creeper
+│ │ │ │ │ creeper.png
+│ │ │ │ │ creeper_armor.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─endercrystal
+│ │ │ │ │ endercrystal.png
+│ │ │ │ │ endercrystal_beam.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─enderdragon
+│ │ │ │ │ dragon.png
+│ │ │ │ │ dragon_exploding.png
+│ │ │ │ │ dragon_eyes.png
+│ │ │ │ │ dragon_fireball.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─enderman
+│ │ │ │ │ enderman.png
+│ │ │ │ │ enderman_eyes.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─ghast
+│ │ │ │ │ ghast.png
+│ │ │ │ │ ghast_shooting.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─horse
+│ │ │ │ │ │ donkey.png
+│ │ │ │ │ │ horse_black.png
+│ │ │ │ │ │ horse_brown.png
+│ │ │ │ │ │ horse_chestnut.png
+│ │ │ │ │ │ horse_creamy.png
+│ │ │ │ │ │ horse_darkbrown.png
+│ │ │ │ │ │ horse_gray.png
+│ │ │ │ │ │ horse_markings_blackdots.png
+│ │ │ │ │ │ horse_markings_white.png
+│ │ │ │ │ │ horse_markings_whitedots.png
+│ │ │ │ │ │ horse_markings_whitefield.png
+│ │ │ │ │ │ horse_skeleton.png
+│ │ │ │ │ │ horse_white.png
+│ │ │ │ │ │ horse_zombie.png
+│ │ │ │ │ │ mule.png
+│ │ │ │ │ │&lt;br>
+│ │ │ │ │ └─armor
+│ │ │ │ │ horse_armor_diamond.png
+│ │ │ │ │ horse_armor_gold.png
+│ │ │ │ │ horse_armor_iron.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─pig
+│ │ │ │ │ pig.png
+│ │ │ │ │ pig_saddle.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─rabbit
+│ │ │ │ │ black.png
+│ │ │ │ │ brown.png
+│ │ │ │ │ caerbannog.png
+│ │ │ │ │ gold.png
+│ │ │ │ │ salt.png
+│ │ │ │ │ toast.png
+│ │ │ │ │ white.png
+│ │ │ │ │ white_splotched.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─sheep
+│ │ │ │ │ sheep.png
+│ │ │ │ │ sheep_fur.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─skeleton
+│ │ │ │ │ skeleton.png
+│ │ │ │ │ wither_skeleton.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─slime
+│ │ │ │ │ magmacube.png
+│ │ │ │ │ slime.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─spider
+│ │ │ │ │ cave_spider.png
+│ │ │ │ │ spider.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─villager
+│ │ │ │ │ butcher.png
+│ │ │ │ │ farmer.png
+│ │ │ │ │ librarian.png
+│ │ │ │ │ priest.png
+│ │ │ │ │ smith.png
+│ │ │ │ │ villager.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─wither
+│ │ │ │ │ wither.png
+│ │ │ │ │ wither_armor.png
+│ │ │ │ │ wither_invulnerable.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─wolf
+│ │ │ │ │ wolf.png
+│ │ │ │ │ wolf_angry.png
+│ │ │ │ │ wolf_collar.png
+│ │ │ │ │ wolf_tame.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ └─zombie
+│ │ │ │ zombie.png
+│ │ │ │ zombie_villager.png
+│ │ │ │ &lt;br>
+│ │ │ ├─environment
+│ │ │ │ end_sky.png
+│ │ │ │ moon_phases.png
+│ │ │ │ rain.png
+│ │ │ │ snow.png
+│ │ │ │ sun.png
+│ │ │ │ &lt;br>
+│ │ │ ├─font
+│ │ │ │ ascii.png
+│ │ │ │ ascii_sga.png
+│ │ │ │ Copyright.txt
+│ │ │ │ &lt;br>
+│ │ │ ├─gui
+│ │ │ │ │ bars.png
+│ │ │ │ │ book.png
+│ │ │ │ │ icons.png
+│ │ │ │ │ options_background.png
+│ │ │ │ │ resource_packs.png
+│ │ │ │ │ server_selection.png
+│ │ │ │ │ spectator_widgets.png
+│ │ │ │ │ stream_indicator.png
+│ │ │ │ │ widgets.png
+│ │ │ │ │&lt;br>
+│ │ │ │ ├─achievement
+│ │ │ │ │ achievement_background.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ ├─container
+│ │ │ │ │ │ anvil.png
+│ │ │ │ │ │ beacon.png
+│ │ │ │ │ │ brewing_stand.png
+│ │ │ │ │ │ crafting_table.png
+│ │ │ │ │ │ dispenser.png
+│ │ │ │ │ │ enchanting_table.png
+│ │ │ │ │ │ furnace.png
+│ │ │ │ │ │ generic_54.png
+│ │ │ │ │ │ hopper.png
+│ │ │ │ │ │ horse.png
+│ │ │ │ │ │ inventory.png
+│ │ │ │ │ │ stats_icons.png
+│ │ │ │ │ │ villager.png
+│ │ │ │ │ │&lt;br>
+│ │ │ │ │ └─creative_inventory
+│ │ │ │ │ tabs.png
+│ │ │ │ │ tab_inventory.png
+│ │ │ │ │ tab_items.png
+│ │ │ │ │ tab_item_search.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ └─title
+│ │ │ │ │ minecraft.png
+│ │ │ │ │ mojang.png
+│ │ │ │ │&lt;br>
+│ │ │ │ └─background
+│ │ │ │ panorama_0.png
+│ │ │ │ panorama_1.png
+│ │ │ │ panorama_2.png
+│ │ │ │ panorama_3.png
+│ │ │ │ panorama_4.png
+│ │ │ │ panorama_5.png
+│ │ │ │ &lt;br>
+│ │ │ ├─items
+│ │ │ │ apple.png
+│ │ │ │ apple_golden.png
+│ │ │ │ arrow.png
+│ │ │ │ barrier.png
+│ │ │ │ bed.png
+│ │ │ │ beef_cooked.png
+│ │ │ │ beef_raw.png
+│ │ │ │ blaze_powder.png
+│ │ │ │ blaze_rod.png
+│ │ │ │ boat.png
+│ │ │ │ bone.png
+│ │ │ │ book_enchanted.png
+│ │ │ │ book_normal.png
+│ │ │ │ book_writable.png
+│ │ │ │ book_written.png
+│ │ │ │ bowl.png
+│ │ │ │ bow_pulling_0.png
+│ │ │ │ bow_pulling_1.png
+│ │ │ │ bow_pulling_2.png
+│ │ │ │ bow_standby.png
+│ │ │ │ bread.png
+│ │ │ │ brewing_stand.png
+│ │ │ │ brick.png
+│ │ │ │ bucket_empty.png
+│ │ │ │ bucket_lava.png
+│ │ │ │ bucket_milk.png
+│ │ │ │ bucket_water.png
+│ │ │ │ cake.png
+│ │ │ │ carrot.png
+│ │ │ │ carrot_golden.png
+│ │ │ │ carrot_on_a_stick.png
+│ │ │ │ cauldron.png
+│ │ │ │ chainmail_boots.png
+│ │ │ │ chainmail_chestplate.png
+│ │ │ │ chainmail_helmet.png
+│ │ │ │ chainmail_leggings.png
+│ │ │ │ charcoal.png
+│ │ │ │ chicken_cooked.png
+│ │ │ │ chicken_raw.png
+│ │ │ │ clay_ball.png
+│ │ │ │ clock.png
+│ │ │ │ clock.png.mcmeta
+│ │ │ │ coal.png
+│ │ │ │ comparator.png
+│ │ │ │ compass.png
+│ │ │ │ compass.png.mcmeta
+│ │ │ │ cookie.png
+│ │ │ │ diamond.png
+│ │ │ │ diamond_axe.png
+│ │ │ │ diamond_boots.png
+│ │ │ │ diamond_chestplate.png
+│ │ │ │ diamond_helmet.png
+│ │ │ │ diamond_hoe.png
+│ │ │ │ diamond_horse_armor.png
+│ │ │ │ diamond_leggings.png
+│ │ │ │ diamond_pickaxe.png
+│ │ │ │ diamond_shovel.png
+│ │ │ │ diamond_sword.png
+│ │ │ │ door_acacia.png
+│ │ │ │ door_birch.png
+│ │ │ │ door_dark_oak.png
+│ │ │ │ door_iron.png
+│ │ │ │ door_jungle.png
+│ │ │ │ door_spruce.png
+│ │ │ │ door_wood.png
+│ │ │ │ dye_powder_black.png
+│ │ │ │ dye_powder_blue.png
+│ │ │ │ dye_powder_brown.png
+│ │ │ │ dye_powder_cyan.png
+│ │ │ │ dye_powder_gray.png
+│ │ │ │ dye_powder_green.png
+│ │ │ │ dye_powder_light_blue.png
+│ │ │ │ dye_powder_lime.png
+│ │ │ │ dye_powder_magenta.png
+│ │ │ │ dye_powder_orange.png
+│ │ │ │ dye_powder_pink.png
+│ │ │ │ dye_powder_purple.png
+│ │ │ │ dye_powder_red.png
+│ │ │ │ dye_powder_silver.png
+│ │ │ │ dye_powder_white.png
+│ │ │ │ dye_powder_yellow.png
+│ │ │ │ egg.png
+│ │ │ │ emerald.png
+│ │ │ │ empty_armor_slot_boots.png
+│ │ │ │ empty_armor_slot_chestplate.png
+│ │ │ │ empty_armor_slot_helmet.png
+│ │ │ │ empty_armor_slot_leggings.png
+│ │ │ │ ender_eye.png
+│ │ │ │ ender_pearl.png
+│ │ │ │ end_crystal.png
+│ │ │ │ experience_bottle.png
+│ │ │ │ feather.png
+│ │ │ │ fireball.png
+│ │ │ │ fireworks.png
+│ │ │ │ fireworks_charge.png
+│ │ │ │ fireworks_charge_overlay.png
+│ │ │ │ fishing_rod_cast.png
+│ │ │ │ fishing_rod_uncast.png
+│ │ │ │ fish_clownfish_raw.png
+│ │ │ │ fish_cod_cooked.png
+│ │ │ │ fish_cod_raw.png
+│ │ │ │ fish_pufferfish_raw.png
+│ │ │ │ fish_salmon_cooked.png
+│ │ │ │ fish_salmon_raw.png
+│ │ │ │ flint.png
+│ │ │ │ flint_and_steel.png
+│ │ │ │ flower_pot.png
+│ │ │ │ ghast_tear.png
+│ │ │ │ glowstone_dust.png
+│ │ │ │ gold_axe.png
+│ │ │ │ gold_boots.png
+│ │ │ │ gold_chestplate.png
+│ │ │ │ gold_helmet.png
+│ │ │ │ gold_hoe.png
+│ │ │ │ gold_horse_armor.png
+│ │ │ │ gold_ingot.png
+│ │ │ │ gold_leggings.png
+│ │ │ │ gold_nugget.png
+│ │ │ │ gold_pickaxe.png
+│ │ │ │ gold_shovel.png
+│ │ │ │ gold_sword.png
+│ │ │ │ gunpowder.png
+│ │ │ │ hopper.png
+│ │ │ │ iron_axe.png
+│ │ │ │ iron_boots.png
+│ │ │ │ iron_chestplate.png
+│ │ │ │ iron_helmet.png
+│ │ │ │ iron_hoe.png
+│ │ │ │ iron_horse_armor.png
+│ │ │ │ iron_ingot.png
+│ │ │ │ iron_leggings.png
+│ │ │ │ iron_pickaxe.png
+│ │ │ │ iron_shovel.png
+│ │ │ │ iron_sword.png
+│ │ │ │ item_frame.png
+│ │ │ │ lead.png
+│ │ │ │ leather.png
+│ │ │ │ leather_boots.png
+│ │ │ │ leather_boots_overlay.png
+│ │ │ │ leather_chestplate.png
+│ │ │ │ leather_chestplate_overlay.png
+│ │ │ │ leather_helmet.png
+│ │ │ │ leather_helmet_overlay.png
+│ │ │ │ leather_leggings.png
+│ │ │ │ leather_leggings_overlay.png
+│ │ │ │ magma_cream.png
+│ │ │ │ map_empty.png
+│ │ │ │ map_filled.png
+│ │ │ │ melon.png
+│ │ │ │ melon_speckled.png
+│ │ │ │ minecart_chest.png
+│ │ │ │ minecart_command_block.png
+│ │ │ │ minecart_furnace.png
+│ │ │ │ minecart_hopper.png
+│ │ │ │ minecart_normal.png
+│ │ │ │ minecart_tnt.png
+│ │ │ │ mushroom_stew.png
+│ │ │ │ mutton_cooked.png
+│ │ │ │ mutton_raw.png
+│ │ │ │ name_tag.png
+│ │ │ │ netherbrick.png
+│ │ │ │ nether_star.png
+│ │ │ │ nether_wart.png
+│ │ │ │ painting.png
+│ │ │ │ paper.png
+│ │ │ │ porkchop_cooked.png
+│ │ │ │ porkchop_raw.png
+│ │ │ │ potato.png
+│ │ │ │ potato_baked.png
+│ │ │ │ potato_poisonous.png
+│ │ │ │ potion_bottle_drinkable.png
+│ │ │ │ potion_bottle_empty.png
+│ │ │ │ potion_bottle_splash.png
+│ │ │ │ potion_overlay.png
+│ │ │ │ prismarine_crystals.png
+│ │ │ │ prismarine_shard.png
+│ │ │ │ pufferfish.png
+│ │ │ │ pumpkin_pie.png
+│ │ │ │ quartz.png
+│ │ │ │ rabbit_cooked.png
+│ │ │ │ rabbit_foot.png
+│ │ │ │ rabbit_hide.png
+│ │ │ │ rabbit_raw.png
+│ │ │ │ rabbit_stew.png
+│ │ │ │ record_11.png
+│ │ │ │ record_13.png
+│ │ │ │ record_blocks.png
+│ │ │ │ record_cat.png
+│ │ │ │ record_chirp.png
+│ │ │ │ record_far.png
+│ │ │ │ record_mall.png
+│ │ │ │ record_mellohi.png
+│ │ │ │ record_stal.png
+│ │ │ │ record_strad.png
+│ │ │ │ record_wait.png
+│ │ │ │ record_ward.png
+│ │ │ │ redstone_dust.png
+│ │ │ │ reeds.png
+│ │ │ │ repeater.png
+│ │ │ │ rotten_flesh.png
+│ │ │ │ saddle.png
+│ │ │ │ seeds_melon.png
+│ │ │ │ seeds_pumpkin.png
+│ │ │ │ seeds_wheat.png
+│ │ │ │ shears.png
+│ │ │ │ sign.png
+│ │ │ │ slimeball.png
+│ │ │ │ snowball.png
+│ │ │ │ spawn_egg.png
+│ │ │ │ spawn_egg_overlay.png
+│ │ │ │ spider_eye.png
+│ │ │ │ spider_eye_fermented.png
+│ │ │ │ stick.png
+│ │ │ │ stone_axe.png
+│ │ │ │ stone_hoe.png
+│ │ │ │ stone_pickaxe.png
+│ │ │ │ stone_shovel.png
+│ │ │ │ stone_sword.png
+│ │ │ │ string.png
+│ │ │ │ sugar.png
+│ │ │ │ wheat.png
+│ │ │ │ wooden_armorstand.png
+│ │ │ │ wood_axe.png
+│ │ │ │ wood_hoe.png
+│ │ │ │ wood_pickaxe.png
+│ │ │ │ wood_shovel.png
+│ │ │ │ wood_sword.png
+│ │ │ │ &lt;br>
+│ │ │ ├─items_extra
+│ │ │ │ ├─plants
+│ │ │ │ │ large_fern.png
+│ │ │ │ │ tall_grass.png
+│ │ │ │ │ &lt;br>
+│ │ │ │ └─potion
+│ │ │ │ potion_overlay_splash.png
+│ │ │ │ &lt;br>
+│ │ │ ├─map
+│ │ │ │ map_background.png
+│ │ │ │ map_icons.png
+│ │ │ │ &lt;br>
+│ │ │ ├─misc
+│ │ │ │ enchanted_item_glint.png
+│ │ │ │ enchanted_item_glint.png.mcmeta
+│ │ │ │ forcefield.png
+│ │ │ │ pumpkinblur.png
+│ │ │ │ pumpkinblur.png.mcmeta
+│ │ │ │ shadow.png
+│ │ │ │ shadow.png.mcmeta
+│ │ │ │ underwater.png
+│ │ │ │ unknown_pack.png
+│ │ │ │ unknown_server.png
+│ │ │ │ &lt;br>
+│ │ │ ├─models
+│ │ │ │ └─armor
+│ │ │ │ chainmail_layer_1.png
+│ │ │ │ chainmail_layer_2.png
+│ │ │ │ diamond_layer_1.png
+│ │ │ │ diamond_layer_2.png
+│ │ │ │ gold_layer_1.png
+│ │ │ │ gold_layer_2.png
+│ │ │ │ iron_layer_1.png
+│ │ │ │ iron_layer_2.png
+│ │ │ │ leather_layer_1.png
+│ │ │ │ leather_layer_1_overlay.png
+│ │ │ │ leather_layer_2.png
+│ │ │ │ leather_layer_2_overlay.png
+│ │ │ │ &lt;br>
+│ │ │ ├─painting
+│ │ │ │ paintings_kristoffer_zetterstrand.png
+│ │ │ │ &lt;br>
+│ │ │ └─particle
+│ │ │ particles.png
+│ │ │ &lt;br>
+│ │ └─info
+│ │ ├─English
+│ │ │ Copyright.txt
+│ │ │ Information.txt
+│ │ │ Update log.txt
+│ │ │ &lt;br>
+│ │ └─Espanol
+│ │ Derechos de Autor.txt
+│ │ Informacion.txt
+│ │ &lt;br>
+│ └─§l§6PVP §l§cSound Resource Kit
+│ │ pack.mcmeta
+│ │ pack.png
+│ │&lt;br>
+│ └─assets
+│ └─minecraft
+│ └─sounds
+│ ├─ambient
+│ │ ├─cave
+│ │ │ cave1.ogg
+│ │ │ cave10.ogg
+│ │ │ cave11.ogg
+│ │ │ cave12.ogg
+│ │ │ cave13.ogg
+│ │ │ cave2.ogg
+│ │ │ cave3.ogg
+│ │ │ cave4.ogg
+│ │ │ cave5.ogg
+│ │ │ cave6.ogg
+│ │ │ cave7.ogg
+│ │ │ cave8.ogg
+│ │ │ cave9.ogg
+│ │ │ &lt;br>
+│ │ └─weather
+│ │ rain1.ogg
+│ │ rain2.ogg
+│ │ rain3.ogg
+│ │ rain4.ogg
+│ │ thunder1.ogg
+│ │ &lt;br>
+│ ├─damage
+│ │ hit1.ogg
+│ │ hit2.ogg
+│ │ hit3.ogg
+│ │ &lt;br>
+│ ├─dig
+│ │ cloth1.ogg
+│ │ cloth2.ogg
+│ │ cloth3.ogg
+│ │ cloth4.ogg
+│ │ grass1.ogg
+│ │ grass2.ogg
+│ │ grass3.ogg
+│ │ grass4.ogg
+│ │ grass5.ogg
+│ │ grass6.ogg
+│ │ grass7.ogg
+│ │ grass8.ogg
+│ │ gravel1.ogg
+│ │ gravel2.ogg
+│ │ gravel3.ogg
+│ │ gravel4.ogg
+│ │ sand1.ogg
+│ │ sand2.ogg
+│ │ sand3.ogg
+│ │ sand4.ogg
+│ │ snow1.ogg
+│ │ snow2.ogg
+│ │ snow3.ogg
+│ │ snow4.ogg
+│ │ stone1.ogg
+│ │ stone2.ogg
+│ │ stone3.ogg
+│ │ stone4.ogg
+│ │ wood.ogg
+│ │ wood1.ogg
+│ │ wood2.ogg
+│ │ wood3.ogg
+│ │ wood4.ogg
+│ │ &lt;br>
+│ ├─fire
+│ │ fire.ogg
+│ │ ignite.ogg
+│ │ &lt;br>
+│ ├─liquid
+│ │ lava.ogg
+│ │ lavapop.ogg
+│ │ splash.ogg
+│ │ splash1.ogg
+│ │ splash2.ogg
+│ │ swim1.ogg
+│ │ swim2.ogg
+│ │ swim3.ogg
+│ │ swim4.ogg
+│ │ water.ogg
+│ │ &lt;br>
+│ ├─minecart
+│ │ base.ogg
+│ │ base2.ogg
+│ │ base3.ogg
+│ │ base4.ogg
+│ │ inside.ogg
+│ │ inside2.ogg
+│ │ inside3.ogg
+│ │ inside4.ogg
+│ │ &lt;br>
+│ ├─random
+│ │ bow.ogg
+│ │ burp.ogg
+│ │ click.ogg
+│ │ eat1.ogg
+│ │ eat2.ogg
+│ │ eat3.ogg
+│ │ explode1.ogg
+│ │ explode2.ogg
+│ │ explode3.ogg
+│ │ explode4.ogg
+│ │ glass1.ogg
+│ │ glass2.ogg
+│ │ glass3.ogg
+│ │ levelup.ogg
+│ │ successful_hit.ogg
+│ │ &lt;br>
+│ └─step
+│ cloth1.ogg
+│ cloth2.ogg
+│ cloth3.ogg
+│ cloth4.ogg
+│ grass1.ogg
+│ grass2.ogg
+│ grass3.ogg
+│ grass4.ogg
+│ grass5.ogg
+│ grass6.ogg
+│ gravel1.ogg
+│ gravel2.ogg
+│ gravel3.ogg
+│ gravel4.ogg
+│ gravel5.ogg
+│ ladder1.ogg
+│ ladder2.ogg
+│ ladder3.ogg
+│ ladder4.ogg
+│ ladder5.ogg
+│ sand1.ogg
+│ sand2.ogg
+│ sand3.ogg
+│ sand4.ogg
+│ sand5.ogg
+│ snow1.ogg
+│ snow2.ogg
+│ snow3.ogg
+│ snow4.ogg
+│ stone1.ogg
+│ stone2.ogg
+│ stone3.ogg
+│ stone4.ogg
+│ stone5.ogg
+│ stone6.ogg
+│ wood1.ogg
+│ wood2.ogg
+│ wood3.ogg
+│ wood4.ogg
+│ wood5.ogg
+│ wood6.ogg
+│ &lt;br>
+└─versions
+└─KevinClient-Reborn
+icon.png
+KevinClient-Reborn.jar
+KevinClient-Reborn.json
+&lt;/details>
+&lt;h3 id="视频教程完全错误因为不是残疾端">视频教程（完全错误因为不是残疾端）&lt;/h3>
+&lt;blockquote>
+&lt;p>因为我喜欢玩别人开裂的残疾端，这种端就需要关闭完整性校验和加入&lt;code>-noverify&lt;/code>命令，但是在kevin这里就不需要了&lt;/p>
+&lt;/blockquote>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1cp4y1K7v5&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h2 id="演示画面与帧数">演示画面与帧数&lt;/h2>
+&lt;blockquote>
+&lt;p>还行吧（awa）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.23.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.23_hua7be50db3f9f2c6011b78734a4ec831a_75416_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.23_hua7be50db3f9f2c6011b78734a4ec831a_75416_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="演示画面和帧数"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;h3 id="命令和键位">命令和键位&lt;/h3>
+&lt;blockquote>
+&lt;p>很重要的awa&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;code>.help&lt;/code> 查看所有的命令&lt;/p>
+&lt;p>&lt;code>.binds&lt;/code> 查看设置的所有键位&lt;/p>
+&lt;p>&lt;code>.bind 功能名字(包含大小写) 键位(最好字母)&lt;/code> 设置键位&lt;/p>
+&lt;p>没有 &lt;code>.cfg&lt;/code> 这种切换配置的命令&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.33.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.33_hu15670bf2b313fc051f5c203966635540_92326_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.33_hu15670bf2b313fc051f5c203966635540_92326_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt=".binds"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.41.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.41_hu4d65b05fb59bce97d28850770ef53c9d_94914_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.13.41_hu4d65b05fb59bce97d28850770ef53c9d_94914_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt=".bind saffold v"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.14.11.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.14.11_hu433edc7c7be5d58d50a329baa3dd582c_112894_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-install/2023-08-23_08.14.11_hu433edc7c7be5d58d50a329baa3dd582c_112894_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt=".help"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;h3 id="按照视频里面的教程搞出错的解决方法">按照视频里面的教程搞出错的解决方法&lt;/h3>
+&lt;blockquote>
+&lt;p>UWU我的视频里面是有点错误，这点我承认UWUawa&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-install/back.webp"
+width="803"
+height="489"
+srcset="https://blog.xpdbk.com/post/kevin-install/back_hu77ebc12c5d6f1c1fd1347b0f783f5e34_34180_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-install/back_hu77ebc12c5d6f1c1fd1347b0f783f5e34_34180_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="没有开完整性和添加noverify之后的错误"
+class="gallery-image"
+data-flex-grow="164"
+data-flex-basis="394px"
+>&lt;/p>
+&lt;p>进入 设置 &amp;gt; 高级设置&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-install/install.webp"
+width="802"
+height="494"
+srcset="https://blog.xpdbk.com/post/kevin-install/install_hu6bd10ea44c04ca81492baa375061af1a_23206_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-install/install_hu6bd10ea44c04ca81492baa375061af1a_23206_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="设置"
+class="gallery-image"
+data-flex-grow="162"
+data-flex-basis="389px"
+>&lt;/p>
+&lt;p>更改完整性校验的开关让它变成关而不是开（把JAVA虚拟机指令 &lt;code>-noverify&lt;/code> 删掉）&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-install/gg.webp"
+width="801"
+height="496"
+srcset="https://blog.xpdbk.com/post/kevin-install/gg_hu7da56842dccf5988e6f8eb0b02857727_19044_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-install/gg_hu7da56842dccf5988e6f8eb0b02857727_19044_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="关闭完整性校验"
+class="gallery-image"
+data-flex-grow="161"
+data-flex-basis="387px"
+>&lt;/p>
+&lt;h2 id="疑难杂症问题">疑难杂症（问题）&lt;/h2>
+&lt;blockquote>
+&lt;p>你可能会遇到启动之后没有响应的情况，这时候你只需要等就行了（因为这端的加载就是这么慢）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-install/%E6%97%A0%E5%93%8D%E5%BA%94.webp"
+width="1365"
+height="767"
+srcset="https://blog.xpdbk.com/post/kevin-install/%E6%97%A0%E5%93%8D%E5%BA%94_hu3c35a4e9ba68205c76b8aa859bde2588_7918_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-install/%E6%97%A0%E5%93%8D%E5%BA%94_hu3c35a4e9ba68205c76b8aa859bde2588_7918_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="无响应"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="427px"
+>&lt;/p>
+&lt;h2 id="结尾">结尾&lt;/h2>
+&lt;p>还行的端，性能一般&lt;/p></description></item><item><title>Kevin在GrimAC的绕过配置</title><link>https://blog.xpdbk.com/post/kevin-grim/</link><pubDate>Tue, 22 Aug 2023 22:43:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin-grim/</guid><description>&lt;img src="https://blog.xpdbk.com/post/kevin-grim/2023-08-02_13.01.21.webp" alt="Featured image of post Kevin在GrimAC的绕过配置" />&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iC4v2165u2hc" target="_blank" rel="noopener"
+>蓝奏云&lt;/a> 访问密码: &lt;code>9v2b&lt;/code>&lt;/p>
+&lt;p>压缩密码: &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
+&lt;hr>
+&lt;p>对比FDP多了一个合法搭路&lt;/p>
+&lt;p>Kevin客户端的开源地址：&lt;a class="link" href="https://github.com/RE-KevinClient/KevinClient-Reborn" target="_blank" rel="noopener"
+>GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="kevin在grimac的绕过配置">Kevin在GrimAC的绕过配置&lt;/h2>
+&lt;blockquote>
+&lt;p>合法搭路需要开了之后一直跳不然的话没两下子就封禁了&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06_hu784d8e73f7046cf081289d25d08b9c15_75670_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06_hu784d8e73f7046cf081289d25d08b9c15_75670_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="合法搭路"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;h2 id="推荐服务器">推荐服务器&lt;/h2>
+&lt;p>play.zonecraft.es (OGrim)&lt;/p>
+&lt;p>3fmc.com (Grim+Matrix)&lt;/p>
+&lt;h2 id="演示视频">演示视频&lt;/h2>
+&lt;h3 id="3fmc">3FMC&lt;/h3>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Pu4y1i7qi&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h3 id="zonecraft">Zonecraft&lt;/h3>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Gh4y1D7WX&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div></description></item></channel></rss>

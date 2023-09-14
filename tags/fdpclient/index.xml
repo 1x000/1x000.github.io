@@ -1,1 +1,266 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fdpclient on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/fdpclient/</link><description>Recent content in Fdpclient on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Tue, 01 Aug 2023 08:01:01 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/fdpclient/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fdpclient on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/fdpclient/</link><description>Recent content in Fdpclient on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Tue, 01 Aug 2023 08:01:01 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/fdpclient/index.xml" rel="self" type="application/rss+xml"/><item><title>FDPClient功能翻译与浅解析</title><link>https://blog.xpdbk.com/post/fdpclient-function-translation/</link><pubDate>Tue, 01 Aug 2023 08:01:01 +0700</pubDate><guid>https://blog.xpdbk.com/post/fdpclient-function-translation/</guid><description>&lt;blockquote>
+&lt;p>本教程为&lt;code>LEl_FENG&lt;/code>用时间和经验缩写，希望能成为FDPClient使用者的入门功能翻译&lt;/p>
+&lt;p>本教程使用的FDPClient版本是 &lt;code>FDPClient-5bc44a222bcaaf053ca2b5c38c0c62eb11b2e4e3&lt;/code>&lt;/p>
+&lt;p>本人并非大佬，请在评论区提出你认为错误的地方&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="combat攻击功能目录">Combat（攻击功能目录）&lt;/h2>
+&lt;h3 id="aimbot-自动瞄准">Aimbot (自动瞄准)&lt;/h3>
+&lt;blockquote>
+&lt;p>自动瞄准（暴力+合法两个极端取决于你的瞄准速度和设置方法）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Aimbot (自动瞄准)的子功能&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>位于Aimbot (自动瞄准)功能下面的功能&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Range（距离）&lt;/strong> : 1.0到8.0（以方块为距离）&lt;/p>
+&lt;blockquote>
+&lt;p>自瞄触发距离（据说POT PVP大蛇喜欢8.0的距离）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>TurnSpeed（瞄准速度）&lt;/strong> : 1.0到180&lt;/p>
+&lt;blockquote>
+&lt;p>越高就越不容易自证自己（越低也越不如合法玩家）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>TurnSpeedRandomRate（瞄准速度随机性）&lt;/strong> ：0.0到15&lt;/p>
+&lt;blockquote>
+&lt;p>应该是瞄准速度随机性（一会快一会慢的），其实这个功能可以让人觉得你的鼠标不好哈哈哈&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Smooth (平滑瞄准)&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>就是让你的瞄准滑过去，而不是猛的一下瞄准让人不会认为你开了自瞄（仅高瞄准速度）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>SmoothMinAngle（平滑瞄准的强度）&lt;/strong> ：0.0到180 {需要打开Smooth (平滑瞄准)才能使用}&lt;/p>
+&lt;blockquote>
+&lt;p>提高在高瞄准速度下的平滑力度&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>FOV（有效角度）&lt;/strong> ：0.0到180（以角度为单位）&lt;/p>
+&lt;blockquote>
+&lt;p>这个功能掌管着自瞄的启动角度（如果拉满的话就能实现看前面瞬间瞄准后面）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Center（瞄准躯体周围）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>按照人物的碰撞箱边缘进行不丝滑的瞄准（不丝滑的意思是这个功能单独启动之后会让瞄准变得顿挫）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Look（瞄准躯体中心）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>这个开了之后瞄准中心点而不是边缘（但是瞄准丝滑了）&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>OnClick（点击鼠标左键才触发）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>如果你还不熟悉键盘快捷键操作的话，这个功能对你很有帮助，松开鼠标自动不瞄准&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>OnClickDuration（点击鼠标之后的瞄准持续时间）&lt;/strong> ：100到1000（以毫秒 &lt;code>ms&lt;/code> 为单位）&lt;/p>
+&lt;blockquote>
+&lt;p>就是你瞄准完别人之后，松开鼠标你会继续看着他的时间&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Jitter（随机移动瞄准位置）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>这个功能就是随机的移动你的瞄准的点，类似你操作鼠标&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>JitterRandomRate（随机移动瞄准位置的力度）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>拉的越高就越抖&lt;/p>
+&lt;/blockquote>
+&lt;p>视频演示&lt;/p>
+&lt;h3 id="autobot">AutoBot&lt;/h3></description></item><item><title>Polar的FDPClient配置</title><link>https://blog.xpdbk.com/post/1.8.9-polar/</link><pubDate>Sun, 04 Jun 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/1.8.9-polar/</guid><description>&lt;h2 id="polar反作弊配置">Polar反作弊配置&lt;/h2>
+&lt;blockquote>
+&lt;p>这是雏形版&lt;/p>
+&lt;/blockquote>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1wh4y1G7oy&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/irZQT0y77l2h" target="_blank" rel="noopener"
+>https://pvphack.lanzoue.com/irZQT0y77l2h&lt;/a>&lt;br>
+密码:9bg4&lt;/p>
+&lt;h2 id="v2">V2&lt;/h2>
+&lt;p>需要使用FDPClient 5.3.5版本进行加载&lt;/p>
+&lt;p>本版本更新了杀戮光环&lt;/p>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/i45tF10oit1e" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>&lt;/p>
+&lt;p>蓝奏云密码：&lt;code>5hxp&lt;/code>&lt;/p>
+&lt;p>压缩包：&lt;code>H97tg896FG&lt;/code>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1fo4y1P78D&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>FDP功能翻译</title><link>https://blog.xpdbk.com/post/fdp-fy/</link><pubDate>Sun, 26 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/fdp-fy/</guid><description>&lt;blockquote>
+&lt;p>本篇文章以FDP 5.2.7版本展开，其他版本我会一一做&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="fdp-功能翻译与解析">FDP 功能翻译与解析&lt;/h2>
+&lt;h2 id="看下去必须要的东西">看下去必须要的东西&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>需要你可以进入&lt;code>FDP&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>需要会玩&lt;code>Minecraft&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>需要随机应变&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="mermaid" style="margin: auto; width: max-content;">flowchart TD
+A[启动学习] --&amp;gt; B{有问题去评论区问}
+B --&amp;gt;|行| C[继续学习]
+C --&amp;gt; D[遇到不会的东西]
+D --&amp;gt; B
+B ----&amp;gt;|不要| E[完]
+&lt;/div>
+&lt;h2 id="功能翻译">功能翻译&lt;/h2>
+&lt;blockquote>
+&lt;p>没时间做了QAQ 我会尽力&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="combat战斗列表">Combat战斗列表&lt;/h3>
+&lt;p>Aimbot:自动瞄准(Range:范围 TurnSpeed:转头速度 FOV:角度 OnClick:你点击的时候才瞄准 Jitter:瞄准时抖动)&lt;/p>
+&lt;p>AutoArmor:自动穿护甲(MaxDelay:最大延迟 MinDelay:最小延迟 InvPoen:手动打开背包穿护甲 Simulateinventory:假装打开背包 NoMove:不移动 ItemDelay:物品延迟 Hotbar:一起穿护甲)&lt;/p>
+&lt;p>AutoBow:自动弓&lt;/p>
+&lt;p>AutoClicker:自动点击(MaxCPS:最大点击次数 MiNCPS:最小点击次数 Right:右键点击 Left:左键点击 Jitter:点击时抖动)&lt;/p>
+&lt;p>AutoLeave:自动离开(Health:生命值 Mode:模式 Quit:退出 InvaildPacket:虚拟内存 SelfHurt:自己扣血 IllegalChat:非法聊天)&lt;/p>
+&lt;p>AutoPot:自动药水(Health:生命值 Delay:延迟 Openinv:手动打开背包 Mode:模式 Normal:普通 Jump:跳跃 Port:端口)&lt;/p>
+&lt;p>AutoSoup:自动喝汤(Health:生命值 Delay:延迟 Openinv:手动打开背包)&lt;/p>
+&lt;p>AutoSword:自动拿出最好的剑(攻击敌人时)&lt;/p>
+&lt;p>BowAimBot:攻击自动瞄准(Silent:沉默 Predict:预判 TatgetMode:射箭模式 Distance:距离 Direction:方向)&lt;/p>
+&lt;p>Criticals:刀刀暴击(Type:类型 Packet:暴力模式 NoGround:不暴击地面的 Hop:大跳 Jump:普通跳跃 LowJump:跳远 Delay:延迟)&lt;/p>
+&lt;p>FastBow:快速射箭(Mode:模式 Vanilla:快速 MineSecute:矿场？)&lt;/p>
+&lt;p>HitBox:击中的盒子(Size:尺码)&lt;/p>
+&lt;p>Ignite:自动打火石&lt;/p>
+&lt;p>Killaura:杀戮光环(MaxCPS:最大点击次数 MiNCPS:最小点击次数 HurtTime:受伤时间 Range:范围 RangeSprintReducement:还原奔跑距离 Prioriry:优先权 Health:生命值 Distance:距离 Direction:方向 TargetMode:杀戮模式 Single:最近的玩家 Switch:一直打某个玩家知道打不到或者死为止 Multi:攻击多个玩家 MultiMode:多个玩家的模式 Vanilla:快速 NCP:反作弊名称 Throughwalls:可以打到墙外的人 Swing:显示动作 KeepSprint:保持疾跑 AutoBlock:自动防砍 BlockRate:防砍几率 AAC:AAC反作弊模式 RayCast:攻击线连着的玩家 RayCastIgnored:不打射线连的玩家 LivingRayCast:攻击线连着的生物 Predict:预测 NoinvAttack:打开背包不攻击 NoinvDelay:打开背包不攻击的延迟 FailRate:失败速度？ MaxTurnspeed:最快转头速度 MinTurnspeed:最慢转头速度 RandomCenter:随机中心 Fov:角度 Mark:记号 FakeSharp:伪锋利)&lt;/p>
+&lt;p>Legitaura:自动瞄准但会自动点击(MaxCPS:最大点击次数 MiNCPS:最小点击次数 Range:范围 TurnSpeed:转头速度 HitBox:击中的盒子)&lt;/p>
+&lt;p>NoFriends:没有朋友&lt;/p>
+&lt;p>SuperKnockback:超级击退&lt;/p>
+&lt;p>TNTBlock:TNT自动格挡(Fuse:保险时间 AutoSword:自动拿出剑)&lt;/p>
+&lt;p>Teleporthit:TP攻击需要你手动打玩家&lt;/p>
+&lt;p>Trigger:玩家在你的准星上和你的攻击距离范围内点击(MaxCPS:最大点击次数 MiNCPS:最小点击次数)&lt;/p>
+&lt;p>Velocity:防击退(Horizontal:水平防击退 Vertical:垂直防击退 Mode:模式 Simple:简单的&lt;/p>
+&lt;p> AAC:AAC反作弊模式 AACPush:AAC反作弊模式2 Jump:跳跃 Reverse:反向就是别人打你你不来要后退的但是这个模式会帮你向前 Reverse2:和刚刚那个一样 Glitch:差错 ReverseStrength:方向击退强度 Reverse2Strength:方向击退强度模式2的)&lt;/p>
+&lt;h3 id="player玩家列表">Player玩家列表&lt;/h3>
+&lt;p>AntiCactus:无视仙人掌的伤害。&lt;/p>
+&lt;p>AutoRespawn:自动帮你重生。&lt;/p>
+&lt;p>AutoTool:自动选择最好的攻击与你挖掘的方块所对应的工具。&lt;/p>
+&lt;p>Blink:瞬移 (按下时脱离实体 移动到指定地方时关闭即可)。&lt;/p>
+&lt;p>Eagle:到方块边缘时潜行。&lt;/p>
+&lt;p>FarmKingBot:自动操作FarmKingBot小游戏。&lt;/p>
+&lt;p>FastUse:快速使用。&lt;/p>
+&lt;p>InventoryCleaner:快速清理没用的物品。&lt;/p>
+&lt;p>NoFall:无视掉落伤害&lt;/p>
+&lt;p>PotionSaver:药水保护？不明。&lt;/p>
+&lt;p>Reach(build48):增加你挖掘方块距离与攻击距离。&lt;/p>
+&lt;p>Regen:快速回复你的生命值。&lt;/p>
+&lt;p>Zoot:取消Debuff。&lt;/p>
+&lt;h3 id="movement-动作列表">Movement 动作列表&lt;/h3>
+&lt;p>AirJump:允许你在空气中跳跃。&lt;/p>
+&lt;p>AirLadder:爬梯子的时候不会受到远程伤害。&lt;/p>
+&lt;p>AutoWalk:自动向前行走。&lt;/p>
+&lt;p>BufferSpeed:在某方块上面加速。&lt;/p>
+&lt;p>BugUp:虚空回弹。&lt;/p>
+&lt;p>FastClimb:快速爬梯子。&lt;/p>
+&lt;p>FastSlabs:加速行走(平面行走)&lt;/p>
+&lt;p>FastStairs:加速上楼梯和台阶。&lt;/p>
+&lt;p>Fly:飞行。&lt;/p>
+&lt;p>Freeze:鬼畜转头,存才意义不明。&lt;/p>
+&lt;p>Glide:滑翔，在空气中MotionY。&lt;/p>
+&lt;p>HighJump:增加你的跳跃高度。&lt;/p>
+&lt;p>IceSpeed:在冰方块上面会增加移动速度。&lt;/p>
+&lt;p>InventoryMove:允许你打开背包物品栏的时候行走。&lt;/p>
+&lt;p>LadderJump:你触及梯子方块的时候会高跳。&lt;/p>
+&lt;p>LiquidWalk:水上行走。&lt;/p>
+&lt;p>LongJump:长跳。&lt;/p>
+&lt;p>NoClip:无视重力,并且可以穿墙。&lt;/p>
+&lt;p>NoSlow:取消使用物品时的减速。&lt;/p>
+&lt;p>NoWeb:取消你在蜘蛛网行走时的减速。&lt;/p>
+&lt;p>Parkour:当你在方块边缘的时候会跳跃。&lt;/p>
+&lt;p>ReverseStep:快速下台阶。&lt;/p>
+&lt;p>SafeWalk:你在方块边缘行走时不会下落。&lt;/p>
+&lt;p>SmileJump:在史莱姆方块上面跳跃。&lt;/p>
+&lt;p>Sneak:发送数据包让你潜行。&lt;/p>
+&lt;p>SnowSpeed:在雪方块上面获得加速。&lt;/p>
+&lt;p>SnowWalk:在雪方块上面行走。&lt;/p>
+&lt;p>Speed:加速。&lt;/p>
+&lt;p>Sprint:保持疾跑。&lt;/p>
+&lt;p>Step:自动上坡。&lt;/p>
+&lt;p>Strafe:让你的动作更加灵活,允许你在空中移动。&lt;/p>
+&lt;p>WallClimb:爬墙。&lt;/p>
+&lt;p>WallGlide:墙边滑翔。&lt;/p>
+&lt;p>WallSpeed:墙边加速。&lt;/p>
+&lt;p>WaterFly:在水上增减你的Y。&lt;/p>
+&lt;p>WaterSpeed:在水上加速。&lt;/p>
+&lt;p>WebWalk:在蜘蛛网上面行走。&lt;/p>
+&lt;h3 id="render显示列表">Render显示列表&lt;/h3>
+&lt;p>AntiBlind:无视失明Debuff造成的视觉影响。&lt;/p>
+&lt;p>BlockESP:使某方块高亮显示。&lt;/p>
+&lt;p>BlockOverlay:玩家准心所指的方块将会高亮显示。&lt;/p>
+&lt;p>Breadcrumbs:你走过的地方会留下一条线。&lt;/p>
+&lt;p>CameraClip:隔墙看到玩家的装备与动作。&lt;/p>
+&lt;p>Chams:透过方块看见实体。&lt;/p>
+&lt;p>ClickGUI:GUI菜单。&lt;/p>
+&lt;p>ESP:透视实体。&lt;/p>
+&lt;p>FreeCam:灵魂出窍,变为一个独立实体可飞行移动,用于观察。&lt;/p>
+&lt;p>Fullbright:夜视。&lt;/p>
+&lt;p>HUD:HUD菜单。&lt;/p>
+&lt;p>ItemESP:透视物品。&lt;/p>
+&lt;p>NameTags:名字标签放大。&lt;/p>
+&lt;p>NoBob:没有手臂摇晃。&lt;/p>
+&lt;p>NoFov:没有视角影响。&lt;/p>
+&lt;p>NoScoreboard:关闭计分板显示。&lt;/p>
+&lt;p>NoSwing:没有攻击动作。&lt;/p>
+&lt;p>Projectiles:显示抛物线。&lt;/p>
+&lt;p>RemoteView:让你使用某玩家的视角观察。&lt;/p>
+&lt;p>SiwtchAnimation:其他攻击动作。&lt;/p>
+&lt;p>Tracers:在实体与你之间显示一条线。&lt;/p>
+&lt;p>TrueSight:显示隐身的实体。&lt;/p>
+&lt;p>Xray:透视矿物。&lt;/p>
+&lt;h3 id="world世界列表">World世界列表:&lt;/h3>
+&lt;p>AutoBreak:破坏准星所指向的方块。&lt;/p>
+&lt;p>ChestAura:自动打开周围的箱子。&lt;/p>
+&lt;p>ChestStealer:自动取出箱子内物品并关闭箱子。&lt;/p>
+&lt;p>CivBreak:点击一个方块一下后会持续破坏所点方块。&lt;/p>
+&lt;p>FastBreak:加速破坏方块。&lt;/p>
+&lt;p>FastPlace:加速放置方块。&lt;/p>
+&lt;p>Fucker:自动破坏某方块。&lt;/p>
+&lt;p>Scaffold:自动搭路。&lt;/p>
+&lt;p>Timer:变速齿轮。&lt;/p>
+&lt;p>Tower:向上搭方块。&lt;/p>
+&lt;h3 id="misc杂项列表">Misc杂项列表:&lt;/h3>
+&lt;p>AntiBot:KillAura不攻击服务器假人。&lt;/p>
+&lt;p>AtAllProvider:将一个命令同时执行多次。&lt;/p>
+&lt;p>AllControllerControl:使用别的控制器？不明&lt;/p>
+&lt;p>LiquidChat:水影IRC聊天，需要连接服务器。&lt;/p>
+&lt;p>MidClick:鼠标中键点击添加好友。&lt;/p>
+&lt;p>NameProtect:将你的ID字符串改为其他的。&lt;/p>
+&lt;p>NoRotateSet:无视摇头动作,不推荐开启。&lt;/p>
+&lt;p>Spammer:自动刷屏。&lt;/p>
+&lt;p>Teams:不攻击同队伍的玩家。&lt;/p>
+&lt;h3 id="exploit漏洞列表">Exploit漏洞列表:&lt;/h3>
+&lt;p>AbortBreaking:保存方块挖掘进度。&lt;/p>
+&lt;p>AntiHunger:无视饥饿Debuff。&lt;/p>
+&lt;p>BedGodMode:你在床上睡觉时无法被攻击。&lt;/p>
+&lt;p>CommandSign:指令牌子。&lt;/p>
+&lt;p>ConsoleSpammer:在服务器后台发送大量垃圾信息。&lt;/p>
+&lt;p>Damage:给你自己受到伤害。&lt;/p>
+&lt;p>EmptyMessage:在聊天框内发送一个空格。&lt;/p>
+&lt;p>ForceUnicodeChat:强行发送聊天。&lt;/p>
+&lt;p>Ghost:允许你在死后可以做某些动作。&lt;/p>
+&lt;p>GhostHand:隔墙接触实体/隔墙破坏方块。&lt;/p>
+&lt;p>GodMode:在AAC服务器内无敌。&lt;/p>
+&lt;p>ItemTeleport:TP拾取物品。&lt;/p>
+&lt;p>KeepContainer:打开一个箱子后让箱子的动画一直是打开的动画。&lt;/p>
+&lt;p>Kick:将你自己踢出服务器。&lt;/p>
+&lt;p>MoreCarry:发送垃圾数据包卡服。&lt;/p>
+&lt;p>MultiActions:允许你同时进行多个动作。&lt;/p>
+&lt;p>NoPirchLimit:没有高音限制。&lt;/p>
+&lt;p>Paralyze:使延迟玩家瘫痪。&lt;/p>
+&lt;p>Phase:穿墙。&lt;/p>
+&lt;p>PingSpoof:延迟欺骗。&lt;/p>
+&lt;p>Plugins:显示你当前所在服务器的插件。&lt;/p>
+&lt;p>Teleport:传送。(目前不可用了&lt;/p>
+&lt;p>VClip:提升Y的高度。&lt;/p>
+&lt;p>VehicaleOneHit:意义不明&lt;/p></description></item></channel></rss>
