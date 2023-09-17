@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WEB技术 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/web%E6%8A%80%E6%9C%AF/</link><description>Recent content in WEB技术 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sun, 17 Sep 2023 21:45:02 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/web%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>视频托管方法</title><link>https://blog.xpdbk.com/post/video-save-free/</link><pubDate>Sun, 17 Sep 2023 21:45:02 +0700</pubDate><guid>https://blog.xpdbk.com/post/video-save-free/</guid><description>&lt;img src="https://blog.xpdbk.com/post/video-save-free/123123.webp" alt="Featured image of post 视频托管方法" />&lt;h2 id="视频托管的免费方式">视频托管的免费方式&lt;/h2>
+&lt;blockquote>
+&lt;p>是的，我最终选择使用最简单的方法对抗恶意举报然后下架的困扰&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="起因">起因&lt;/h2>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/video-save-free/%E8%A7%86%E9%A2%91%E4%B8%8B%E6%9E%B6.webp"
+width="1075"
+height="550"
+srcset="https://blog.xpdbk.com/post/video-save-free/%E8%A7%86%E9%A2%91%E4%B8%8B%E6%9E%B6_hu4f32a87e96a31292e7f7752bfffb0494_39300_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/video-save-free/%E8%A7%86%E9%A2%91%E4%B8%8B%E6%9E%B6_hu4f32a87e96a31292e7f7752bfffb0494_39300_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="视频下架"
+class="gallery-image"
+data-flex-grow="195"
+data-flex-basis="469px"
+>&lt;/p>
+&lt;h2 id="实践">实践&lt;/h2>
+&lt;p>我把我的视频用&lt;code>ffmpeg&lt;/code>进行了转码和压缩具体代码看上一篇文章&lt;a class="link" href="https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall" >ffmpeg批量压缩转换视频为30FPS&lt;/a>然后我就开始寻找托管的方法，结果找到了&lt;code>cfpage&lt;/code>这个不限流量的东西，上传GITHUB然后访问文件名一气呵成&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/video-save-free/sc.webp"
+width="1163"
+height="569"
+srcset="https://blog.xpdbk.com/post/video-save-free/sc_huc830ef430cfe48ce8e1ca0b509057252_69234_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/video-save-free/sc_huc830ef430cfe48ce8e1ca0b509057252_69234_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="1"
+class="gallery-image"
+data-flex-grow="204"
+data-flex-basis="490px"
+>
+&lt;img src="https://blog.xpdbk.com/sc2.webp"
+loading="lazy"
+alt="2"
+>
+&lt;img src="https://blog.xpdbk.com/post/video-save-free/sc1.webp"
+width="1348"
+height="571"
+srcset="https://blog.xpdbk.com/post/video-save-free/sc1_hu20a2ba287196793388b7f9aa39eb8cc2_45266_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/video-save-free/sc1_hu20a2ba287196793388b7f9aa39eb8cc2_45266_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="2"
+class="gallery-image"
+data-flex-grow="236"
+data-flex-basis="566px"
+>&lt;/p>
+&lt;h2 id="魔改hugo短代码">魔改HUGO短代码&lt;/h2>
+&lt;p>&lt;code>video.html&lt;/code>改成这个&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">{{- $src := .Get &amp;#34;src&amp;#34; | default (.Get 0) -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;video-wrapper&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">video&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;my-video&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;video-js vjs-default-skin&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">controls&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">preload&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;none&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">poster&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ with .Get &amp;#34;&lt;/span>&lt;span class="na">poster&lt;/span>&lt;span class="err">&amp;#34;&lt;/span> &lt;span class="err">}}{{&lt;/span>&lt;span class="na">-&lt;/span> &lt;span class="err">.&lt;/span> &lt;span class="na">-&lt;/span>&lt;span class="err">}}{{&lt;/span> &lt;span class="na">end&lt;/span> &lt;span class="err">}}&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">data-setup&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#39;{&amp;#34;playbackRates&amp;#34;: [0.5, 1, 1.5, 2]}&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">source&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{- $src -}}&amp;#34;&lt;/span> &lt;span class="na">type&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#39;video/mp4&amp;#39;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;vjs-no-js&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 您的浏览器不支持HTML5视频。这是一个
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{- $src -}}&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>链接到视频&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">video&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">link&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://cdn.bootcdn.net/ajax/libs/video.js/8.0.0/video-js.min.css&amp;#34;&lt;/span> &lt;span class="na">rel&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;stylesheet&amp;#34;&lt;/span> &lt;span class="na">media&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;print&amp;#34;&lt;/span> &lt;span class="na">onload&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;this.media=&amp;#39;all&amp;#39;&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://cdn.bootcdn.net/ajax/libs/video.js/8.0.0/video.min.js&amp;#34;&lt;/span> &lt;span class="na">defer&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">window&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;DOMContentLoaded&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">event&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">player&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">videojs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;my-video&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;visibilitychange&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">hidden&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">player&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">pause&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">videoWrapper&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">querySelector&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;.video-wrapper&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">timer&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">videoWrapper&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;mouseleave&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">timer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">setTimeout&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">videoWrapper&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">style&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">border&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;none&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">videoWrapper&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;mouseenter&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">clearTimeout&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">timer&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">videoWrapper&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">style&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">border&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="实际演示">实际演示&lt;/h2>
+&lt;p>演示视频: &lt;div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
+&lt;video
+id="my-video"
+class="video-js vjs-default-skin"
+controls
+preload="none"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+poster=""
+data-setup='{"playbackRates": [0.5, 1, 1.5, 2]}'
+>
+&lt;source src="https://video-cei.pages.dev/pika%20network%20bypass%20Full_2.mp4" type='video/mp4'>
+&lt;p class="vjs-no-js">
+您的浏览器不支持HTML5视频。这是一个
+&lt;a href="https://video-cei.pages.dev/pika%20network%20bypass%20Full_2.mp4">链接到视频&lt;/a>。
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;link href="https://cdn.bootcdn.net/ajax/libs/video.js/8.0.0/video-js.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+&lt;script src="https://cdn.bootcdn.net/ajax/libs/video.js/8.0.0/video.min.js" defer>&lt;/script>
+&lt;script>
+window.addEventListener('DOMContentLoaded', (event) => {
+var player = videojs('my-video');
+document.addEventListener('visibilitychange', function() {
+if (document.hidden) {
+player.pause();
+}
+});
+var videoWrapper = document.querySelector('.video-wrapper');
+var timer;
+videoWrapper.addEventListener('mouseleave', function() {
+timer = setTimeout(function() {
+videoWrapper.style.border = 'none';
+}, 1000);
+});
+videoWrapper.addEventListener('mouseenter', function() {
+clearTimeout(timer);
+videoWrapper.style.border = '';
+});
+});
+&lt;/script>
+&lt;/p></description></item></channel></rss>
