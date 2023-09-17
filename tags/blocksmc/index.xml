@@ -610,6 +610,19 @@ data-setup='{"playbackRates": [0.5, 1, 1.5, 2]}'
 &lt;script>
 window.addEventListener('DOMContentLoaded', (event) => {
 var player = videojs('my-video');
+var fullscreenCount = 0;
+player.on('fullscreenchange', function() {
+fullscreenCount++;
+if (fullscreenCount === 3) {
+player.requestFullscreen();
+fullscreenCount = 0;
+}
+});
+player.on('timeupdate', function() {
+if (player.currentTime() === 0) {
+player.currentTime(1);
+}
+});
 document.addEventListener('visibilitychange', function() {
 if (document.hidden) {
 player.pause();
