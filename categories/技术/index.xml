@@ -146,56 +146,44 @@ data-flex-basis="566px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="实际演示">实际演示&lt;/h2>
-&lt;p>演示视频: &lt;div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
-&lt;video
-id="my-video"
-class="video-js vjs-default-skin"
-controls
-preload="none"
-style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-poster=""
-data-setup='{"playbackRates": [0.5, 1, 1.5, 2]}'
->
-&lt;source src="https://video-cei.pages.dev/pika%20network%20bypass%20Full_2.mp4" type='video/mp4'>
-&lt;p class="vjs-no-js">
-您的浏览器不支持HTML5视频。这是一个
-&lt;a href="https://video-cei.pages.dev/pika%20network%20bypass%20Full_2.mp4">链接到视频&lt;/a>。
-&lt;/p>
-&lt;/video>
-&lt;/div>
-&lt;link href="https://cdn.bootcdn.net/ajax/libs/video.js/8.0.0/video-js.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-&lt;script src="https://cdn.bootcdn.net/ajax/libs/video.js/8.0.0/video.min.js" defer>&lt;/script>
-&lt;script>
-window.addEventListener('DOMContentLoaded', (event) => {
-var player = videojs('my-video');
-var fullscreenCount = 0;
-player.on('fullscreenchange', function() {
-fullscreenCount++;
-if (fullscreenCount === 3) {
-player.requestFullscreen();
-fullscreenCount = 0;
-}
+&lt;p>演示视频: &lt;div id="dplayer">&lt;/div>
+&lt;link rel="preload" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+&lt;script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js" defer>&lt;/script>
+&lt;script defer>
+document.addEventListener('DOMContentLoaded', function () {
+var dp = new DPlayer({
+container: document.getElementById('dplayer'),
+screenshot: false,
+video: {
+url: 'https:\/\/video-cei.pages.dev\/pika%20network%20bypass%20Full_2.mp4',
+type: 'auto'
+},
+preload: 'none',
+lang: 'zh-cn'
 });
-player.on('timeupdate', function() {
-if (player.currentTime() === 0) {
-player.currentTime(1);
+dp.on('fullscreen', function () {
+dp.fullScreen.request('web');
+});
+dp.on('timeupdate', function () {
+if (dp.video.currentTime === 0) {
+dp.seek(1);
 }
 });
 document.addEventListener('visibilitychange', function() {
 if (document.hidden) {
-player.pause();
+dp.pause();
 }
 });
-var videoWrapper = document.querySelector('.video-wrapper');
+var dplayerContainer = document.getElementById('dplayer');
 var timer;
-videoWrapper.addEventListener('mouseleave', function() {
+dplayerContainer.addEventListener('mouseleave', function() {
 timer = setTimeout(function() {
-videoWrapper.style.border = 'none';
+dplayerContainer.style.border = 'none';
 }, 1000);
 });
-videoWrapper.addEventListener('mouseenter', function() {
+dplayerContainer.addEventListener('mouseenter', function() {
 clearTimeout(timer);
-videoWrapper.style.border = '';
+dplayerContainer.style.border = '';
 });
 });
 &lt;/script>

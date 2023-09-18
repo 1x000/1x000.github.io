@@ -5814,56 +5814,44 @@ data-flex-basis="778px"
 &lt;p>&lt;a class="link" href="https://mt2.cn/" target="_blank" rel="noopener"
 >MT管理器下载&lt;/a>&lt;/p>
 &lt;p>[!] MT管理器请谨慎使用，可能会毁掉你的数据！（别问我是怎么知道的）&lt;/p>
-&lt;p>演示视频: &lt;div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
-&lt;video
-id="my-video"
-class="video-js vjs-default-skin"
-controls
-preload="none"
-style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-poster=""
-data-setup='{"playbackRates": [0.5, 1, 1.5, 2]}'
->
-&lt;source src="https://video.xpdbk.com/LEl_FENG%E7%9A%84%E8%A7%86%E9%A2%91%E5%88%97%E8%A1%A8-Blocksmc%20B%20U%20G%20%E7%AB%AF%20%E9%85%8D%E7%BD%AE%E7%AE%80%E4%BB%8B-p01-16_2.mp4" type='video/mp4'>
-&lt;p class="vjs-no-js">
-您的浏览器不支持HTML5视频。这是一个
-&lt;a href="https://video.xpdbk.com/LEl_FENG%E7%9A%84%E8%A7%86%E9%A2%91%E5%88%97%E8%A1%A8-Blocksmc%20B%20U%20G%20%E7%AB%AF%20%E9%85%8D%E7%BD%AE%E7%AE%80%E4%BB%8B-p01-16_2.mp4">链接到视频&lt;/a>。
-&lt;/p>
-&lt;/video>
-&lt;/div>
-&lt;link href="https://cdn.bootcdn.net/ajax/libs/video.js/8.0.0/video-js.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-&lt;script src="https://cdn.bootcdn.net/ajax/libs/video.js/8.0.0/video.min.js" defer>&lt;/script>
-&lt;script>
-window.addEventListener('DOMContentLoaded', (event) => {
-var player = videojs('my-video');
-var fullscreenCount = 0;
-player.on('fullscreenchange', function() {
-fullscreenCount++;
-if (fullscreenCount === 3) {
-player.requestFullscreen();
-fullscreenCount = 0;
-}
+&lt;p>演示视频: &lt;div id="dplayer">&lt;/div>
+&lt;link rel="preload" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+&lt;script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js" defer>&lt;/script>
+&lt;script defer>
+document.addEventListener('DOMContentLoaded', function () {
+var dp = new DPlayer({
+container: document.getElementById('dplayer'),
+screenshot: false,
+video: {
+url: 'https:\/\/video.xpdbk.com\/LEl_FENG%E7%9A%84%E8%A7%86%E9%A2%91%E5%88%97%E8%A1%A8-Blocksmc%20B%20U%20G%20%E7%AB%AF%20%E9%85%8D%E7%BD%AE%E7%AE%80%E4%BB%8B-p01-16_2.mp4',
+type: 'auto'
+},
+preload: 'none',
+lang: 'zh-cn'
 });
-player.on('timeupdate', function() {
-if (player.currentTime() === 0) {
-player.currentTime(1);
+dp.on('fullscreen', function () {
+dp.fullScreen.request('web');
+});
+dp.on('timeupdate', function () {
+if (dp.video.currentTime === 0) {
+dp.seek(1);
 }
 });
 document.addEventListener('visibilitychange', function() {
 if (document.hidden) {
-player.pause();
+dp.pause();
 }
 });
-var videoWrapper = document.querySelector('.video-wrapper');
+var dplayerContainer = document.getElementById('dplayer');
 var timer;
-videoWrapper.addEventListener('mouseleave', function() {
+dplayerContainer.addEventListener('mouseleave', function() {
 timer = setTimeout(function() {
-videoWrapper.style.border = 'none';
+dplayerContainer.style.border = 'none';
 }, 1000);
 });
-videoWrapper.addEventListener('mouseenter', function() {
+dplayerContainer.addEventListener('mouseenter', function() {
 clearTimeout(timer);
-videoWrapper.style.border = '';
+dplayerContainer.style.border = '';
 });
 });
 &lt;/script>
