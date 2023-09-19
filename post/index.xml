@@ -160,13 +160,14 @@ data-flex-basis="566px"
 &lt;p>演示视频: &lt;div id="dplayer">&lt;/div>
 &lt;link rel="preload" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 &lt;script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js" defer>&lt;/script>
+&lt;script src="https://lib.baomitu.com/hls.js/latest/hls.min.js" defer>&lt;/script>
 &lt;script defer>
 document.addEventListener('DOMContentLoaded', function () {
 var dp = new DPlayer({
 container: document.getElementById('dplayer'),
 screenshot: false,
 video: {
-url: 'https:\/\/video-cei.pages.dev\/pika%20network%20bypass%20Full_2.mp4',
+url: 'https:\/\/video.xpdbk.com\/LEl_FENG%E7%9A%84%E8%A7%86%E9%A2%91%E5%88%97%E8%A1%A8-%E6%B0%B4%E6%99%B6PVP%20%E6%B0%B4-p01-16_2\/output.m3u8',
 type: 'auto'
 },
 preload: 'none',
@@ -11732,6 +11733,7 @@ data-flex-basis="778px"
 &lt;p>演示视频: &lt;div id="dplayer">&lt;/div>
 &lt;link rel="preload" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 &lt;script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js" defer>&lt;/script>
+&lt;script src="https://lib.baomitu.com/hls.js/latest/hls.min.js" defer>&lt;/script>
 &lt;script defer>
 document.addEventListener('DOMContentLoaded', function () {
 var dp = new DPlayer({
@@ -25913,6 +25915,7 @@ data-flex-basis="153px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">&lt;div id="dplayer">&lt;/div>
 &lt;link rel="preload" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 &lt;script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js" defer>&lt;/script>
+&lt;script src="https://lib.baomitu.com/hls.js/latest/hls.min.js" defer>&lt;/script>
 &lt;script defer>
 document.addEventListener('DOMContentLoaded', function () {
 var dp = new DPlayer({
@@ -26197,6 +26200,7 @@ hugoDecrypt(userStorage.getItem(storageKey), "storage");
 &lt;div id="dplayer">&lt;/div>
 &lt;link rel="preload" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 &lt;script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js" defer>&lt;/script>
+&lt;script src="https://lib.baomitu.com/hls.js/latest/hls.min.js" defer>&lt;/script>
 &lt;script defer>
 document.addEventListener('DOMContentLoaded', function () {
 var dp = new DPlayer({

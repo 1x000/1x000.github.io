@@ -5817,6 +5817,7 @@ data-flex-basis="778px"
 &lt;p>演示视频: &lt;div id="dplayer">&lt;/div>
 &lt;link rel="preload" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 &lt;script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js" defer>&lt;/script>
+&lt;script src="https://lib.baomitu.com/hls.js/latest/hls.min.js" defer>&lt;/script>
 &lt;script defer>
 document.addEventListener('DOMContentLoaded', function () {
 var dp = new DPlayer({
