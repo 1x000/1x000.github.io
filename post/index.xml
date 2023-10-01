@@ -1,9 +1,235 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LEl_FENG的博客</title><link>https://blog.xpdbk.com/post/</link><description>Recent content in Posts on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sun, 17 Sep 2023 21:45:02 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>置顶公告</title><link>https://blog.xpdbk.com/post/zhiding/</link><pubDate>Sun, 10 Sep 2023 21:36:10 +0700</pubDate><guid>https://blog.xpdbk.com/post/zhiding/</guid><description>&lt;h2 id="置顶公告">置顶公告&lt;/h2>
-&lt;p>所有的纪狗文章和网站推荐已搬到下方链接&lt;/p>
-&lt;p>&lt;a class="link" href="https://l.xpdbk.com/A6xbfn" target="_blank" rel="noopener"
->LF纪狗网&lt;/a>&lt;/p>
-&lt;p>&lt;a class="link" href="https://l.xpdbk.com/A1xbfn" target="_blank" rel="noopener"
->纪狗导航&lt;/a>&lt;/p></description></item><item><title>视频托管方法</title><link>https://blog.xpdbk.com/post/video-save-free/</link><pubDate>Sun, 17 Sep 2023 21:45:02 +0700</pubDate><guid>https://blog.xpdbk.com/post/video-save-free/</guid><description>&lt;img src="https://blog.xpdbk.com/post/video-save-free/123123.webp" alt="Featured image of post 视频托管方法" />&lt;h2 id="视频托管的免费方式">视频托管的免费方式&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LEl_FENG的博客</title><link>https://blog.xpdbk.com/post/</link><description>Recent content in Posts on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>置顶公告</title><link>https://blog.xpdbk.com/post/zhiding/</link><pubDate>Sun, 10 Sep 2023 21:36:10 +0700</pubDate><guid>https://blog.xpdbk.com/post/zhiding/</guid><description>&lt;h2 id="置顶公告">置顶公告&lt;/h2>
+&lt;p>测试&lt;/p></description></item><item><title>FDPClient功能翻译</title><link>https://blog.xpdbk.com/post/fdp-fy/</link><pubDate>Sat, 30 Sep 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/fdp-fy/</guid><description>&lt;blockquote>
+&lt;p>本翻译使用的FDPClient版本是&lt;code>FDPClient-5bc44a222bcaaf053ca2b5c38c0c62eb11b2e4e3&lt;/code>本人并非大佬，请在评论区提出你认为错误的地方&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="fdpclient-功能翻译与解析">FDPClient 功能翻译与解析&lt;/h2>
+&lt;h2 id="看下去必须要的东西">看下去必须要的东西&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>需要你可以进入&lt;code>FDP&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>需要会玩&lt;code>Minecraft&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="mermaid" style="margin: auto; width: max-content;">flowchart TD
+A[启动] --&amp;gt; B{有问题去评论区问}
+B --&amp;gt;|行| C[继续]
+C --&amp;gt; D[遇到不会的东西]
+D --&amp;gt; B
+B ----&amp;gt;|不| E[完]
+&lt;/div>
+&lt;h2 id="功能翻译">功能翻译&lt;/h2>
+&lt;blockquote>
+&lt;p>？&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="combat战斗列表">Combat（战斗列表）&lt;/h3>
+&lt;p>&lt;strong>Aimbot&lt;/strong>:自动瞄准(Range:范围 TurnSpeed:转头速度 TurnSpeedRandomRate:转头速度随机 Smooth:平滑瞄准 FOV:角度 Center:瞄准躯体周围 Look:瞄准躯体中心 OnClick:点击的时候瞄准 Jitter:瞄准时抖动)&lt;/p>
+&lt;p>&lt;strong>AutoBot&lt;/strong>:自动机器人&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>AutoSoup&lt;/code>:自动喝汤(Health:生命值 Delay:延迟 Openinv:手动打开背包 Simulatelnventory:模拟背包 Bowl:碗)&lt;/li>
+&lt;li>&lt;code>AutoPot&lt;/code>:自动药水(AutoPot-ThrowMode:投掷设置 AutoPot-Health:生命值 AutoPot-Delay:延迟 AutoPot-ThrowTick:视线延迟 AutoPot-SelectSlot:物品栏设置？ AutoPot-Openlnv:手动打开背包AutoPot-Simulatelnventory:模拟背包 AutoPot-Regen:回血 AutoPot-Utility:实用？ AutoPot-NotCombat:没有攻击时投掷 AutoPot-OnGround:只在地面)&lt;/li>
+&lt;li>&lt;code>AutoBow&lt;/code>:自动弓箭(AutoBow-WaitForBowAimbot:使用弓自瞄时判断目标是否被遮挡)&lt;/li>
+&lt;li>&lt;code>AntiFireBall&lt;/code>:自动把火球打回(AntiFireBall-Swing:对火球的动作 AntiFireBall-Rotation:盯着火球)&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>AutoClicker&lt;/strong>:自动点击(Mode:模式 MaxCPS:最大点击次数 MiNCPS:最小点击次数 RightClick:右键点击 LeftClick:左键点击 AutoBlock:自动防砍 Jitter:点击时抖动)&lt;/p>
+&lt;p>&lt;strong>AutoRod&lt;/strong>:自动下一局还是自动拉杆？(Delay:延迟 AutoDisable:自动关闭)&lt;/p>
+&lt;p>&lt;strong>AutoWeapon&lt;/strong>:攻击敌人时自动拿出最好的剑(OnlySword:只有剑 SpoofItem:拿着其他东西给服务器发包说拿着剑)&lt;/p>
+&lt;p>&lt;strong>BackTrack&lt;/strong>:无用功能原意是延迟攻击(MaxDelay:最大延迟 MaxCachedPositions:缓存敌人模型的最大数量)&lt;/p>
+&lt;p>&lt;strong>BowAimBot&lt;/strong>:弓攻击自动瞄准(Silent:无视角变换 Predict:预判 ThroughWalls:穿墙瞄准 Priority:以什么方式优先攻击敌人 Mark:显示弓箭落点)&lt;/p>
+&lt;p>&lt;strong>BowAura&lt;/strong>:弓光环:(Silent:无视角变换 Predict:预判 ThroughWalls:穿墙瞄准 Priority:以什么方式优先攻击敌人 MaxDistance:最远距离 Mark:显示弓箭落点)&lt;/p>
+&lt;p>&lt;strong>ComboOneHit&lt;/strong>:一拳变十拳(Packets:发包数量 SwingMode:手动作 OnlyAura:只有杀戮光环开启时 GameBreaking:崩服)&lt;/p>
+&lt;p>&lt;strong>Criticals&lt;/strong>:刀刀暴击(Mode:模式 Delay:延迟 FlagPause:遇到卡顿暂停暴击 HurtTime:受伤时间 CritTiming:生效方式 UseC06Packet:使用延迟包 DebugMessage:显示暴击信息)&lt;/p>
+&lt;p>&lt;strong>FastBow&lt;/strong>:快速射箭(Packets:发包速度 Delay:延迟)&lt;/p>
+&lt;p>&lt;strong>FightBot&lt;/strong>:自走机器人(PathRender:路线显示 JumpReset:跳跃重置 AutoJump:自动跳跃 Silent:静态攻击 blockMode:方块模式 findWay:寻路 workReach:侦测距离)&lt;/p>
+&lt;p>&lt;strong>HitBox&lt;/strong>:扩大击中目标的盒子(Size:尺码)&lt;/p>
+&lt;p>InfiniteAura:TP攻击敌人(Mode:模式 Targets:盒子密集度 CPS:点击速度 Distance:距离 MoveDistance:盒子直接的间隙 NoRegen:没有回血 NoLagback:没有回弹 Swing:动作 PathRender:路线显示)&lt;/p>
+&lt;p>&lt;strong>Killaura&lt;/strong>:杀戮光环(&lt;code>Attack Options&lt;/code>:攻击功能集合(MaxCPS:最大点击次数 MinCPS:最小点击次数 SimulateCooldown:1.9攻击间隔 HurtTime:受伤时间 ClickOnly:按住才工作 Range:范围 ThroughWallsRange:透过方块攻击距离 RangeSprintReducement:还原奔跑距离 SwingRange:挥动手所需的距离 DiscoverRange:开始盯着对方看的距离 Hitselect:1.9版本控距 HitselectRange:控距距离 BlinkCheck:检查对方是否使用了瞬移功能 NoScaffold:开启搭路时不启动 NoFly:飞行时不启动 Swing:动作方式 AttackTiming:模拟点击鼠标的方式 KeepSprint:一直前进 NoBadPackets:没有坏掉的数据包 AutoBlock:自动防砍 RayCast:不打敌人后面的敌人) &lt;code>Rotation Options&lt;/code>:视角功能集合 Prioriry:优先权 TargetMode:杀戮模式 RotationMode:视角模式 SilentRotation:瞄准敌人但是自己的视角不变 AlwaysHitAble:一直对着敌人发已攻击包 FOV:视角范围 MaxTurnspeed:最快转头速度 MinTurnspeed:最慢转头速度 SmoothMode:平滑过渡瞄准 RandomCenter:随机中心 RotationReverse:慢慢的转回去 KeepDirection:转头后固定一小会视角 RotationDelay:瞄准一段之后不瞄准 Predict:预测 PredictPlayer:预测敌人位置 &lt;code>Bypass Options&lt;/code>:绕过功能集合 Predict:预测 Strafe:随意空中移动 FailRate:攻击失败可能性 NoinvAttack:打开背包不攻击 &lt;code>Visual Options&lt;/code>:视觉功能集合 Mark:被攻击的敌人的记号 Circle:攻击范围圈圈)&lt;/p>
+&lt;p>&lt;strong>NoClickDelay&lt;/strong>:没有鼠标点击延迟&lt;/p>
+&lt;p>&lt;strong>Reach&lt;/strong>:长臂猿(CombatReach:攻击手长 BuildReach:方块放置手长)&lt;/p>
+&lt;p>&lt;strong>SuperKnockback&lt;/strong>:超级击退(HurtTime:受伤时间 Mode:模式 OnlyMove:只有行走才打开 OnlyGround:只有地面 Delay:延迟 )&lt;/p>
+&lt;p>&lt;strong>TickBase&lt;/strong>:时间停止这个功能用不了(Range:距离)&lt;/p>
+&lt;p>&lt;strong>Velocity&lt;/strong>:防击退(Mode:模式 OnlyGround:只有平地 OnlyCombat:只有攻击 noFire:遇到火伤害不打开反击退 OverrideDirection:强制最后角度？)&lt;/p>
+&lt;h3 id="player玩家列表">Player玩家列表&lt;/h3>
+&lt;p>&lt;strong>AntiVoid&lt;/strong>:虚空回弹(Mode:模式 MaxFallDistance:最大掉落回弹距离 OnlyVoid:只有虚空才打开)&lt;/p>
+&lt;p>&lt;strong>AutoReport&lt;/strong>:自动举报:(Mode:模式 Tip:建议 AllDelay:全部延迟 BlockBooks:书本方块 FDP配置文件第331行可以更改举报的命令:&lt;code>&amp;quot;Command&amp;quot;: &amp;quot;/reportar %name%&amp;quot;,&lt;/code> )&lt;/p>
+&lt;p>&lt;strong>AutoTool&lt;/strong>:自动选择最好的攻击与你挖掘的方块所对应的工具。&lt;/p>
+&lt;p>&lt;strong>Blink&lt;/strong>:瞬移 按下时脱离实体 移动到指定地方时关闭即可(Pulse:定时开启和关闭防踢)&lt;/p>
+&lt;p>&lt;strong>Eagle&lt;/strong>:到方块边缘时潜行(MotionPredictAmount:预判运动之后潜行 SneakTimeLimit:潜行时间平滑 MaxSneakTime:最大潜行时间)&lt;/p>
+&lt;p>&lt;strong>FastUse&lt;/strong>:快速使用(Mode:模式 ViaVersion:跨版本兼容花雨庭等服务器)&lt;/p>
+&lt;p>&lt;strong>Gapple&lt;/strong>:自动吃金苹果 在HVH服无敌(Mode:模式 HealthPercent:什么血量吃苹果 MinDelay:最小延迟 MaxDelay:最大延迟 MinRegenSec:回血时间秒数 OnlyOnGround:只有在地面打开 WaitRegen:无攻击自动吃 InvCheck:背包开启侦测 NoAbsorption:无吸收？)&lt;/p>
+&lt;p>&lt;strong>HackerDetector&lt;/strong>:侦测其他黑客（就是一个反作弊）:(Combat:攻击侦测 Movement:运动侦测 Debug:调试信息 Notify:通知栏 AutoReport:自动举报使用黑客者对应上面的&lt;strong>AutoReport&lt;/strong>功能使用前要设置好举报命令方式否则不成功 VL:最大容忍违规操作)&lt;/p>
+&lt;p>&lt;strong>InvManager&lt;/strong>:快速清理没用的物品和整理背包和穿盔甲和整理物品栏(MinDelay:最小延迟 MaxDelay:最大延迟 InvOpen:背包是否打开侦测 SimulateInventory:整理物品 NoMove:走路时不整理 Hotbar:整理物品拦 RandomSlot:随机整理物品栏物品 Sort:整理物品栏物品 ThrowGarbage:投掷物 Armor:盔甲 NoCombat:没有攻击的时候整理 OnlySwordWeapon:只要剑 Swing:整理时手摇动作 NBTGoal:应该是NBT标签识别？ IgnoreVehicles:忽略东西？ OnlyPositivePotion:？ KeepTools:一直拿着工具 SortSlot-1~9:整理物品栏时的物品排列)&lt;/p>
+&lt;p>&lt;strong>MidClick&lt;/strong>:鼠标中键加好友&lt;/p>
+&lt;p>&lt;strong>NoFall&lt;/strong>:无视掉落伤害(Mode:模式 Novoid:掉入虚空关闭)&lt;/p>
+&lt;p>&lt;strong>PrevFallPos&lt;/strong>:掉落位置显示&lt;/p>
+&lt;p>&lt;strong>Refill&lt;/strong>:物品栏重新填充 功能不可用(Delay:延迟 ItemDelay:物品延迟 Mode:模式 InvOpen:背包打开侦测 SimulateInventory:背包欺骗 NoMoveClicks:不让用鼠标点击 NoClicksInAir:禁止点击空气 NoClicksOnGround:禁止在地面点击)&lt;/p>
+&lt;p>&lt;strong>Regen&lt;/strong>:快速回复你的生命值(Mode:模式 Health:生命值 Delay:延迟 Food:食物 Speed:速度 Noair:没有空气不工作 PotionEffect:药水效果)&lt;/p>
+&lt;p>&lt;strong>SpinBot&lt;/strong>:陀螺旋转(YawMode:左右 PitchMode:上下 spinSpeed:旋转速度 SilentRotate:旋转过程中视角不旋转)&lt;/p>
+&lt;h3 id="movement-动作列表">Movement 动作列表&lt;/h3>
+&lt;p>&lt;strong>AirJump&lt;/strong>:允许你在空气中跳跃(SpoofGround:假地面)&lt;/p>
+&lt;p>&lt;strong>AntiStuck&lt;/strong>回弹时自动冻结(Flag:回弹次数)&lt;/p>
+&lt;p>&lt;strong>BoatFly&lt;/strong>:船飞(Mode:模式 Speed:速度)&lt;/p>
+&lt;p>&lt;strong>BoatJump&lt;/strong>:船跳(Mode:模式 HBoost:左右加速 VBoost:上下加速 Delay:延迟 AutoHit:自动坐上去)&lt;/p>
+&lt;p>&lt;strong>BowJump&lt;/strong>弓箭伤害跳:(hypixelBypass:看门狗绕过 BoostMode:加速模式 SpeedInAir:在空气加速 Boost:加速 Height:跳跃 Timer:时间加速 DelayBeforeArrowLaunch:弓箭发射间隔 AutoDisable:自动关闭 RenderStatus:发射的进度条)&lt;/p>
+&lt;p>&lt;strong>FastLadder&lt;/strong>Y轴加速(YMotion:Y轴运动)&lt;/p>
+&lt;p>&lt;strong>Fly&lt;/strong>:飞(Mode:模式 MotionReset:运动重置 Mark:在上还是下显示方块 FakeDamage:假自伤 ViewBobbing:夸张的抖动 LegacyWarn:旧版警告)&lt;/p>
+&lt;p>&lt;strong>Freeze&lt;/strong>:时间停止,意义不明。&lt;/p>
+&lt;p>&lt;strong>Glide&lt;/strong>:在空气中滑翔(Mode:模式 MotionReset:运动重置 FakeDamage:假自伤 ViewBobbing:夸张的抖动)&lt;/p>
+&lt;p>&lt;strong>HighJump&lt;/strong>:增加你的跳跃高度(Height:高度 Mode:模式 OnlyGlassPane:意义不明 StableMotion:跳跃高度)&lt;/p>
+&lt;p>&lt;strong>InventoryMove&lt;/strong>:允许你打开背包物品栏的时候行走(NoDetectable:假行走 Bypass:绕过 Rotate:视角 NoMoveClicks:在物品栏里面点击不了 NoSprint:没有疾跑)&lt;/p>
+&lt;p>&lt;strong>Jesus&lt;/strong>:浮起来(Mode:模式 NoJump:没有跳跃)&lt;/p>
+&lt;p>&lt;strong>LongJump&lt;/strong>:远跳(Mode:模式 AutoJump:自动跳 AutoDisable:自动关 GlobalTimer:跳跃的时候的时间速度 TimerOnlyAir:在空气里面时间加速 LegacyWarn:旧版警告 NCP-Boost:NCP加速)&lt;/p>
+&lt;p>&lt;strong>NoFluid&lt;/strong>:没有液体(Water:水 Lava:岩浆)&lt;/p>
+&lt;p>&lt;strong>NoJumpDelay&lt;/strong>:没有跳跃延迟能一直跳跃&lt;/p>
+&lt;p>&lt;strong>NoSlow&lt;/strong>:取消使用物品时的减速(PacketMode:包模式 AntiSwitchItem:禁止切换物品 OnlyGround:地面开启 OnlyMove:运动时开启 Blocking:防砍加速 Consume:吃东西加速 Bow:弓加速 SoulSand:水中启用还是关闭 Teleport:传送无减速)&lt;/p>
+&lt;p>&lt;strong>NoWeb&lt;/strong>:取消你在蜘蛛网行走时的减速(mode:模式 HorizonSpeed:速度)&lt;/p>
+&lt;p>&lt;strong>OldJesus&lt;/strong>:旧浮起来(Mode:模式 NoJump:没有跳跃)&lt;/p>
+&lt;p>&lt;strong>Parkour&lt;/strong>:当你在方块边缘的时候会跳跃。&lt;/p>
+&lt;p>&lt;strong>SafeWalk&lt;/strong>:你在方块边缘行走时不会下落(AirSafe:跳起来前进也会限制 OnlyPredictVoid:只有在虚空边缘才启动)&lt;/p>
+&lt;p>&lt;strong>Sneak&lt;/strong>:发送数据包让你潜行(Mode:模式 OnlySneak:只有蹲下)&lt;/p>
+&lt;p>&lt;strong>Speed&lt;/strong>:加速(Mode:模式 NoWater:在水中不加速 alwaysSprint:一直疾跑)&lt;/p>
+&lt;p>&lt;strong>Spider&lt;/strong>:变成蜘蛛侠爬墙(Mode:模式 Motion:运动)&lt;/p>
+&lt;p>&lt;strong>Sprint&lt;/strong>:保持疾跑(UseItem:拿东西也疾跑 Hungry:饿了也疾跑 Sneak:蹲下也疾跑 Collide:吃东西不变速度 JumpDirections:跳起来也疾跑 AllDirections:万向跑 AllDirectionsLimitSpeedOnlyGround:只有在地面加速 NoPackets:不发包的跑)&lt;/p>
+&lt;p>&lt;strong>Step&lt;/strong>:自动上坡(Mode:模式 Height:触发自动上去的高度 JumpMotion:跳跃高度 Delay:延迟 Timer:时间加速 UseDynamicTimer:动态时间加速)&lt;/p>
+&lt;p>&lt;strong>Strafe&lt;/strong>:让你的动作更加灵活,允许你在空中移动(Strength:灵活度 NoMoveStop:没有运动停止 OnGroundStrafe:只有在地面起跳才灵活 AllDirectionsJump:允许随便跳)&lt;/p>
+&lt;p>&lt;strong>StrafeFix&lt;/strong>:修复杀戮光环的Silent功能反作弊侦测问题(Silent:静默)&lt;/p>
+&lt;p>&lt;strong>TargetStrafe&lt;/strong>:开启杀戮光环的时候围着敌人转圈圈(ThirdPersonView:第三人称 RenderMode:显示转圈圈路径 LineWidth:圈圈线的粗度 RadiusMode:是正常的还是不正常的 Radius:圈圈大小 OnlyOnGround:只有地面 HoldSpace:只有按下空格键 OnlySpeed:只有启动加速功能)&lt;/p>
+&lt;h3 id="render-视觉列表">Render 视觉列表&lt;/h3>
+&lt;p>&lt;strong>AntiBlind&lt;/strong>:无视失明等Debuff造成的视觉影响。&lt;/p>
+&lt;p>&lt;strong>BlockESP&lt;/strong>:使某方块高亮显示(可能不正常)。&lt;/p>
+&lt;p>&lt;strong>BlockOverlay&lt;/strong>:玩家准心所指的方块将会高亮显示且有信息。&lt;/p>
+&lt;p>&lt;strong>Breadcrumbs&lt;/strong>:走过的地方会留下一条线。&lt;/p>
+&lt;p>&lt;strong>CameraClip&lt;/strong>:隔墙看到玩家的装备与动作。&lt;/p>
+&lt;p>&lt;strong>Chams&lt;/strong>:透过方块看见实体。&lt;/p>
+&lt;p>&lt;strong>XXXXXHat&lt;/strong>:一个草帽&lt;/p>
+&lt;p>&lt;strong>Crosshair&lt;/strong>:准星样式自定义&lt;/p>
+&lt;p>&lt;strong>DamageParticle&lt;/strong>:伤害以数字飘浮显示&lt;/p>
+&lt;p>&lt;strong>ESP&lt;/strong>:透视玩家和实体&lt;/p>
+&lt;p>&lt;strong>ESP2D&lt;/strong>:透视玩家和实体但是平面透视&lt;/p>
+&lt;p>&lt;strong>FollowTargetHud&lt;/strong>:被攻击者旁边显示一个生命值界面&lt;/p>
+&lt;p>&lt;strong>FreeCam&lt;/strong>:灵魂出窍,变为一个独立实体可飞行移动,用于观察。&lt;/p>
+&lt;p>&lt;strong>Glint&lt;/strong>:自定义末影箱的颜色&lt;/p>
+&lt;p>&lt;strong>GlowESP&lt;/strong>:每个玩家都显示一个晕影&lt;/p>
+&lt;p>&lt;strong>HitEffect&lt;/strong>:打击手感&lt;/p>
+&lt;p>&lt;strong>ItemESP&lt;/strong>:透视物品。&lt;/p>
+&lt;p>&lt;strong>ItemPhysics&lt;/strong>:物品物理效果&lt;/p>
+&lt;p>&lt;strong>JumpCircle&lt;/strong>:跳跃出圆圈&lt;/p>
+&lt;p>&lt;strong>NameTags&lt;/strong>:名字标签放大。&lt;/p>
+&lt;p>&lt;strong>NoBob&lt;/strong>:没有手臂摇晃。&lt;/p>
+&lt;p>&lt;strong>NoFov&lt;/strong>:没有视角影响。&lt;/p>
+&lt;p>&lt;strong>Particles&lt;/strong>:弓箭效果？&lt;/p>
+&lt;p>&lt;strong>PerspectiveMod&lt;/strong>:第二视角模式&lt;/p>
+&lt;p>&lt;strong>PointerESP&lt;/strong>:其他玩家位置显示&lt;/p>
+&lt;p>&lt;strong>Projectiles&lt;/strong>:显示抛物线。&lt;/p>
+&lt;p>&lt;strong>Radar&lt;/strong>:雷达小地图&lt;/p>
+&lt;p>&lt;strong>Skeletal&lt;/strong>:显示其他玩家的骨架&lt;/p>
+&lt;p>&lt;strong>StorageESP&lt;/strong>:箱子等存储容器透视&lt;/p>
+&lt;p>&lt;strong>SuperheroFX&lt;/strong>:超帅的攻击粒子特效&lt;/p>
+&lt;p>&lt;strong>Tracers&lt;/strong>:在实体与你之间显示一条线。&lt;/p>
+&lt;p>&lt;strong>Trails&lt;/strong>:未知？&lt;/p>
+&lt;p>&lt;strong>TrueSight&lt;/strong>:显示隐身的实体。&lt;/p>
+&lt;p>&lt;strong>Xray&lt;/strong>:透视矿物。&lt;/p>
+&lt;h3 id="client-客户端列表">Client 客户端列表:&lt;/h3>
+&lt;p>&lt;strong>Animations&lt;/strong>:剑和Tab栏的动画设置&lt;/p>
+&lt;p>&lt;strong>CapeManager&lt;/strong>:披风管理&lt;/p>
+&lt;p>&lt;strong>ChatEnhance&lt;/strong>:聊天栏管理&lt;/p>
+&lt;p>&lt;strong>ClickGUI&lt;/strong>:点击打开GUI菜单&lt;/p>
+&lt;p>&lt;strong>ClientSpoof&lt;/strong>:客户端欺骗&lt;/p>
+&lt;p>&lt;strong>DiscordRPC&lt;/strong>:把Discode集成进去&lt;/p>
+&lt;p>&lt;strong>HUD&lt;/strong>:HUD游戏界面菜单&lt;/p>
+&lt;p>&lt;strong>Hotbar&lt;/strong>:物品栏动画设置&lt;/p>
+&lt;p>&lt;strong>HudDesigner&lt;/strong>:HUD游戏界面设置&lt;/p>
+&lt;p>&lt;strong>Hurtcam&lt;/strong>:受伤之后的反馈&lt;/p>
+&lt;p>&lt;strong>KeyBindManager&lt;/strong>:以图形化而不是以&lt;code>.bind &amp;lt;功能&amp;gt; &amp;lt;bind&amp;gt;&lt;/code>设置键位&lt;/p>
+&lt;p>&lt;strong>NameProtect&lt;/strong>:名称保护防视频发出来ID被举报&lt;/p>
+&lt;p>&lt;strong>NoAchievements&lt;/strong>:没有成就显示&lt;/p>
+&lt;p>&lt;strong>Performance&lt;/strong>:游戏速度性能优化&lt;/p>
+&lt;p>&lt;strong>Rotations&lt;/strong>:视角反馈设置&lt;/p>
+&lt;p>&lt;strong>ScriptGUI&lt;/strong>:脚本加载的选择界面&lt;/p>
+&lt;p>&lt;strong>SoundModules&lt;/strong>:功能开关声音设置，在这个文件夹里面自定义音频&lt;code>FDPCLIENT-1.8\sounds&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Target&lt;/strong>:目标设置&lt;/p>
+&lt;p>&lt;strong>UIEffects&lt;/strong>:hud界面的UI效果&lt;/p>
+&lt;p>&lt;strong>Wings&lt;/strong>:末影龙翅膀&lt;/p>
+&lt;h3 id="world-世界列表">World 世界列表:&lt;/h3>
+&lt;p>&lt;strong>Ambience&lt;/strong>:自定义世界时间&lt;/p>
+&lt;p>&lt;strong>ChestAura&lt;/strong>:自动打开周围的箱子。&lt;/p>
+&lt;p>&lt;strong>FastBreak&lt;/strong>:加速破坏方块。&lt;/p>
+&lt;p>&lt;strong>FastPlace&lt;/strong>:加速放置方块。&lt;/p>
+&lt;p>&lt;strong>Fisher&lt;/strong>:自动钓鱼&lt;/p>
+&lt;p>&lt;strong>Fucker&lt;/strong>:自动破坏某方块。&lt;/p>
+&lt;p>&lt;strong>LightningDetect&lt;/strong>:闪电出现位置侦测&lt;/p>
+&lt;p>&lt;strong>NoSlowBreak&lt;/strong>:挖东西没有减速&lt;/p>
+&lt;p>&lt;strong>Nuker&lt;/strong>:暴力挖掘身边方块&lt;/p>
+&lt;p>&lt;strong>Scaffold&lt;/strong>:自动搭路。&lt;/p>
+&lt;p>&lt;strong>SuperMine&lt;/strong>:速度挖掘&lt;/p>
+&lt;p>&lt;strong>Stealer&lt;/strong>:自动取出箱子内物品并关闭箱子。&lt;/p>
+&lt;p>&lt;strong>Timer&lt;/strong>:变速齿轮。&lt;/p>
+&lt;h3 id="misc杂项列表">Misc杂项列表:&lt;/h3>
+&lt;p>&lt;strong>AntiBot&lt;/strong>:KillAura不攻击服务器假人。&lt;/p>
+&lt;p>&lt;strong>AntiExploit&lt;/strong>:修复服务器的一些问题&lt;/p>
+&lt;p>&lt;strong>AntiStaff&lt;/strong>:防客服可在配置文件的&lt;code>158行&lt;/code>处设置文件链接&lt;/p>
+&lt;p>&lt;strong>AntiTabComplete&lt;/strong>:防TAB栏卡住？&lt;/p>
+&lt;p>&lt;strong>AntiVanish&lt;/strong>:防崩？&lt;/p>
+&lt;p>&lt;strong>AutoGG&lt;/strong>:自动在打完一局之后自动在聊天拦输出&lt;code>GG&lt;/code>&lt;/p>
+&lt;p>&lt;strong>AutoLogin&lt;/strong>:自动登录(&lt;code>/login 114514&lt;/code>)可在配置文件的第&lt;code>293行&lt;/code>更改登录的命令&lt;/p>
+&lt;p>&lt;strong>AutoPlay&lt;/strong>:自动下一局&lt;/p>
+&lt;p>&lt;strong>ChatTranslator&lt;/strong>:聊天栏翻译器&lt;/p>
+&lt;p>&lt;strong>FakePlayer&lt;/strong>:假玩家 测试杀戮光环的&lt;/p>
+&lt;p>&lt;strong>HealthWarn&lt;/strong>:生命值下限警告&lt;/p>
+&lt;p>&lt;strong>Insult&lt;/strong>:击败之后进行一个优美的问候&lt;/p>
+&lt;p>可在&lt;code>FDPCLIENT-1.8&lt;/code>文件夹下面的&lt;code>insult.json&lt;/code>更改问候语&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;[&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; 主播666,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; 看起来你需要IQ,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; LLLLLLLLLLLLLLLLL,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; 就这手法练个114514年再来吧,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; 是不是没吃饭啊,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; 没实力,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>MemoryFix&lt;/strong>:内存溢出修复&lt;/p>
+&lt;p>&lt;strong>NoInvClose&lt;/strong>:防止服务器关闭我的背包&lt;/p>
+&lt;p>&lt;strong>NoRotateSet&lt;/strong>:无视摇头动作&lt;/p>
+&lt;p>&lt;strong>PacketDebugger&lt;/strong>:查看发包是&lt;code>S22&lt;/code>还是&lt;code>C0F&lt;/code>还是&lt;code>C03&lt;/code>&lt;/p>
+&lt;p>&lt;strong>PotionSpoof&lt;/strong>:药水效果欺骗&lt;/p>
+&lt;p>&lt;strong>SilentDisconnect&lt;/strong>:被封禁的时候在聊天拦显示信息而不是猛地推出游戏&lt;/p>
+&lt;p>&lt;strong>Spammer&lt;/strong>:自动刷屏可在配置文件&lt;code>2534行&lt;/code>附近更改刷屏内容&lt;/p>
+&lt;p>&lt;strong>Teams&lt;/strong>:不攻击同队伍的玩家。&lt;/p>
+&lt;h3 id="exploit漏洞列表">Exploit漏洞列表:&lt;/h3>
+&lt;p>&lt;strong>AntiDeSync&lt;/strong>:防止不同步&lt;/p>
+&lt;p>&lt;strong>ChatBypass&lt;/strong>:防止发中文被踢&lt;/p>
+&lt;p>&lt;strong>Damage&lt;/strong>:给你自己受到伤害。&lt;/p>
+&lt;p>&lt;strong>Disabler&lt;/strong>:削弱反作弊检测&lt;/p>
+&lt;p>&lt;strong>GhostHand&lt;/strong>:隔墙接触实体/隔墙破坏方块。&lt;/p>
+&lt;p>&lt;strong>IllegalItems&lt;/strong>:自动拿出32K剑等违禁品&lt;/p>
+&lt;p>&lt;strong>ItemMagnet&lt;/strong>:TP拾取物品。&lt;/p>
+&lt;p>&lt;strong>Kick&lt;/strong>:将你自己踢出服务器。&lt;/p>
+&lt;p>&lt;strong>MultiActions&lt;/strong>:一个时间做多件事&lt;/p>
+&lt;p>&lt;strong>PackSpoofer&lt;/strong>:强制不装服务器的材质包&lt;/p>
+&lt;p>&lt;strong>Phase&lt;/strong>:穿墙。&lt;/p>
+&lt;p>&lt;strong>PingSpoof&lt;/strong>:延迟欺骗。&lt;/p>
+&lt;p>&lt;strong>Plugins&lt;/strong>:显示你当前所在服务器的插件。&lt;/p>
+&lt;p>&lt;strong>ServerCrasher&lt;/strong>:崩掉服务器&lt;/p>
+&lt;p>&lt;strong>Teleport&lt;/strong>:传送。(目前不可用了&lt;/p>
+&lt;p>&lt;strong>ViaVersionFix&lt;/strong>:修复跨版本的问题&lt;/p></description></item><item><title>视频托管方法</title><link>https://blog.xpdbk.com/post/video-save-free/</link><pubDate>Sun, 17 Sep 2023 21:45:02 +0700</pubDate><guid>https://blog.xpdbk.com/post/video-save-free/</guid><description>&lt;img src="https://blog.xpdbk.com/post/video-save-free/123123.webp" alt="Featured image of post 视频托管方法" />&lt;h2 id="视频托管的免费方式">视频托管的免费方式&lt;/h2>
 &lt;blockquote>
 &lt;p>是的，我最终选择使用最简单的方法对抗恶意举报然后下架的困扰&lt;/p>
 &lt;/blockquote>
@@ -7649,7 +7875,7 @@ framespacing="0"
 allowfullscreen="true"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>FDP</title><link>https://blog.xpdbk.com/post/fdp/</link><pubDate>Sun, 20 Aug 2023 12:22:15 +0700</pubDate><guid>https://blog.xpdbk.com/post/fdp/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>LAOSAT机顶盒固件提取备份与固件结构研究</title><link>https://blog.xpdbk.com/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</link><pubDate>Thu, 17 Aug 2023 17:31:31 +0700</pubDate><guid>https://blog.xpdbk.com/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>Python把图片转换为webp</title><link>https://blog.xpdbk.com/post/python-img-to-webp/</link><pubDate>Mon, 07 Aug 2023 19:59:13 +0700</pubDate><guid>https://blog.xpdbk.com/post/python-img-to-webp/</guid><description>&lt;h2 id="python把图片批量转换为webp">Python把图片批量转换为webp&lt;/h2>
+&lt;/div></description></item><item><title>LAOSAT机顶盒固件提取备份与固件结构研究</title><link>https://blog.xpdbk.com/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</link><pubDate>Thu, 17 Aug 2023 17:31:31 +0700</pubDate><guid>https://blog.xpdbk.com/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>Python把图片转换为webp</title><link>https://blog.xpdbk.com/post/python-img-to-webp/</link><pubDate>Mon, 07 Aug 2023 19:59:13 +0700</pubDate><guid>https://blog.xpdbk.com/post/python-img-to-webp/</guid><description>&lt;h2 id="python把图片批量转换为webp">Python把图片批量转换为webp&lt;/h2>
 &lt;blockquote>
 &lt;p>需要Python 3.8.10，我不想使用在线转换awa&lt;/p>
 &lt;/blockquote>
@@ -8289,70 +8515,7 @@ data-flex-basis="505px"
 &lt;p>心里不明白，不启发&lt;/p>
 &lt;p>别人想改变自己，才启发&lt;/p>
 &lt;p>别人改变不了，只能改变自己&lt;/p>
-&lt;p>自己是自己最大的敌人&lt;/p></description></item><item><title>FDPClient功能翻译与浅解析</title><link>https://blog.xpdbk.com/post/fdpclient-function-translation/</link><pubDate>Tue, 01 Aug 2023 08:01:01 +0700</pubDate><guid>https://blog.xpdbk.com/post/fdpclient-function-translation/</guid><description>&lt;blockquote>
-&lt;p>本教程为&lt;code>LEl_FENG&lt;/code>用时间和经验缩写，希望能成为FDPClient使用者的入门功能翻译&lt;/p>
-&lt;p>本教程使用的FDPClient版本是 &lt;code>FDPClient-5bc44a222bcaaf053ca2b5c38c0c62eb11b2e4e3&lt;/code>&lt;/p>
-&lt;p>本人并非大佬，请在评论区提出你认为错误的地方&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="combat攻击功能目录">Combat（攻击功能目录）&lt;/h2>
-&lt;h3 id="aimbot-自动瞄准">Aimbot (自动瞄准)&lt;/h3>
-&lt;blockquote>
-&lt;p>自动瞄准（暴力+合法两个极端取决于你的瞄准速度和设置方法）&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>Aimbot (自动瞄准)的子功能&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>位于Aimbot (自动瞄准)功能下面的功能&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>Range（距离）&lt;/strong> : 1.0到8.0（以方块为距离）&lt;/p>
-&lt;blockquote>
-&lt;p>自瞄触发距离（据说POT PVP大蛇喜欢8.0的距离）&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>TurnSpeed（瞄准速度）&lt;/strong> : 1.0到180&lt;/p>
-&lt;blockquote>
-&lt;p>越高就越不容易自证自己（越低也越不如合法玩家）&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>TurnSpeedRandomRate（瞄准速度随机性）&lt;/strong> ：0.0到15&lt;/p>
-&lt;blockquote>
-&lt;p>应该是瞄准速度随机性（一会快一会慢的），其实这个功能可以让人觉得你的鼠标不好哈哈哈&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>Smooth (平滑瞄准)&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>就是让你的瞄准滑过去，而不是猛的一下瞄准让人不会认为你开了自瞄（仅高瞄准速度）&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>SmoothMinAngle（平滑瞄准的强度）&lt;/strong> ：0.0到180 {需要打开Smooth (平滑瞄准)才能使用}&lt;/p>
-&lt;blockquote>
-&lt;p>提高在高瞄准速度下的平滑力度&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>FOV（有效角度）&lt;/strong> ：0.0到180（以角度为单位）&lt;/p>
-&lt;blockquote>
-&lt;p>这个功能掌管着自瞄的启动角度（如果拉满的话就能实现看前面瞬间瞄准后面）&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>Center（瞄准躯体周围）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>按照人物的碰撞箱边缘进行不丝滑的瞄准（不丝滑的意思是这个功能单独启动之后会让瞄准变得顿挫）&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>Look（瞄准躯体中心）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>这个开了之后瞄准中心点而不是边缘（但是瞄准丝滑了）&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>OnClick（点击鼠标左键才触发）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>如果你还不熟悉键盘快捷键操作的话，这个功能对你很有帮助，松开鼠标自动不瞄准&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>OnClickDuration（点击鼠标之后的瞄准持续时间）&lt;/strong> ：100到1000（以毫秒 &lt;code>ms&lt;/code> 为单位）&lt;/p>
-&lt;blockquote>
-&lt;p>就是你瞄准完别人之后，松开鼠标你会继续看着他的时间&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>Jitter（随机移动瞄准位置）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>这个功能就是随机的移动你的瞄准的点，类似你操作鼠标&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>JitterRandomRate（随机移动瞄准位置的力度）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>拉的越高就越抖&lt;/p>
-&lt;/blockquote>
-&lt;p>视频演示&lt;/p>
-&lt;h3 id="autobot">AutoBot&lt;/h3></description></item><item><title>记一次博客被反向代理</title><link>https://blog.xpdbk.com/post/web-fake-fandai/</link><pubDate>Thu, 27 Jul 2023 10:11:14 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-fake-fandai/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-fake-fandai/photo_2023-07-27_21-08-20.webp" alt="Featured image of post 记一次博客被反向代理" />&lt;p>昨天闲来无事在看谷歌分析统计出来的数据，看到了一条从来没见过的域名的引用，原本以为是那种采集站或者是谁参考了我的文章，打算去看看的，但是打开页面之后直接看到打开了我的博客（原封不动）。&lt;/p>
+&lt;p>自己是自己最大的敌人&lt;/p></description></item><item><title>记一次博客被反向代理</title><link>https://blog.xpdbk.com/post/web-fake-fandai/</link><pubDate>Thu, 27 Jul 2023 10:11:14 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-fake-fandai/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-fake-fandai/photo_2023-07-27_21-08-20.webp" alt="Featured image of post 记一次博客被反向代理" />&lt;p>昨天闲来无事在看谷歌分析统计出来的数据，看到了一条从来没见过的域名的引用，原本以为是那种采集站或者是谁参考了我的文章，打算去看看的，但是打开页面之后直接看到打开了我的博客（原封不动）。&lt;/p>
 &lt;p>内容不能说一模一样吧，只能说连页面的结构都一样。见过采集的也见过参考的，但是还没见过整个站都反代过去的。。。&lt;/p>
 &lt;hr>
 &lt;h2 id="一开始">一开始&lt;/h2>
@@ -29783,178 +29946,7 @@ hugoDecrypt(userStorage.getItem(storageKey), "storage");
 }
 };
 &lt;/script>
-&lt;/hugo-encrypt></description></item><item><title>FDP功能翻译</title><link>https://blog.xpdbk.com/post/fdp-fy/</link><pubDate>Sun, 26 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/fdp-fy/</guid><description>&lt;blockquote>
-&lt;p>本篇文章以FDP 5.2.7版本展开，其他版本我会一一做&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="fdp-功能翻译与解析">FDP 功能翻译与解析&lt;/h2>
-&lt;h2 id="看下去必须要的东西">看下去必须要的东西&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>需要你可以进入&lt;code>FDP&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>需要会玩&lt;code>Minecraft&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>需要随机应变&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;div class="mermaid" style="margin: auto; width: max-content;">flowchart TD
-A[启动学习] --&amp;gt; B{有问题去评论区问}
-B --&amp;gt;|行| C[继续学习]
-C --&amp;gt; D[遇到不会的东西]
-D --&amp;gt; B
-B ----&amp;gt;|不要| E[完]
-&lt;/div>
-&lt;h2 id="功能翻译">功能翻译&lt;/h2>
-&lt;blockquote>
-&lt;p>没时间做了QAQ 我会尽力&lt;/p>
-&lt;/blockquote>
-&lt;h3 id="combat战斗列表">Combat战斗列表&lt;/h3>
-&lt;p>Aimbot:自动瞄准(Range:范围 TurnSpeed:转头速度 FOV:角度 OnClick:你点击的时候才瞄准 Jitter:瞄准时抖动)&lt;/p>
-&lt;p>AutoArmor:自动穿护甲(MaxDelay:最大延迟 MinDelay:最小延迟 InvPoen:手动打开背包穿护甲 Simulateinventory:假装打开背包 NoMove:不移动 ItemDelay:物品延迟 Hotbar:一起穿护甲)&lt;/p>
-&lt;p>AutoBow:自动弓&lt;/p>
-&lt;p>AutoClicker:自动点击(MaxCPS:最大点击次数 MiNCPS:最小点击次数 Right:右键点击 Left:左键点击 Jitter:点击时抖动)&lt;/p>
-&lt;p>AutoLeave:自动离开(Health:生命值 Mode:模式 Quit:退出 InvaildPacket:虚拟内存 SelfHurt:自己扣血 IllegalChat:非法聊天)&lt;/p>
-&lt;p>AutoPot:自动药水(Health:生命值 Delay:延迟 Openinv:手动打开背包 Mode:模式 Normal:普通 Jump:跳跃 Port:端口)&lt;/p>
-&lt;p>AutoSoup:自动喝汤(Health:生命值 Delay:延迟 Openinv:手动打开背包)&lt;/p>
-&lt;p>AutoSword:自动拿出最好的剑(攻击敌人时)&lt;/p>
-&lt;p>BowAimBot:攻击自动瞄准(Silent:沉默 Predict:预判 TatgetMode:射箭模式 Distance:距离 Direction:方向)&lt;/p>
-&lt;p>Criticals:刀刀暴击(Type:类型 Packet:暴力模式 NoGround:不暴击地面的 Hop:大跳 Jump:普通跳跃 LowJump:跳远 Delay:延迟)&lt;/p>
-&lt;p>FastBow:快速射箭(Mode:模式 Vanilla:快速 MineSecute:矿场？)&lt;/p>
-&lt;p>HitBox:击中的盒子(Size:尺码)&lt;/p>
-&lt;p>Ignite:自动打火石&lt;/p>
-&lt;p>Killaura:杀戮光环(MaxCPS:最大点击次数 MiNCPS:最小点击次数 HurtTime:受伤时间 Range:范围 RangeSprintReducement:还原奔跑距离 Prioriry:优先权 Health:生命值 Distance:距离 Direction:方向 TargetMode:杀戮模式 Single:最近的玩家 Switch:一直打某个玩家知道打不到或者死为止 Multi:攻击多个玩家 MultiMode:多个玩家的模式 Vanilla:快速 NCP:反作弊名称 Throughwalls:可以打到墙外的人 Swing:显示动作 KeepSprint:保持疾跑 AutoBlock:自动防砍 BlockRate:防砍几率 AAC:AAC反作弊模式 RayCast:攻击线连着的玩家 RayCastIgnored:不打射线连的玩家 LivingRayCast:攻击线连着的生物 Predict:预测 NoinvAttack:打开背包不攻击 NoinvDelay:打开背包不攻击的延迟 FailRate:失败速度？ MaxTurnspeed:最快转头速度 MinTurnspeed:最慢转头速度 RandomCenter:随机中心 Fov:角度 Mark:记号 FakeSharp:伪锋利)&lt;/p>
-&lt;p>Legitaura:自动瞄准但会自动点击(MaxCPS:最大点击次数 MiNCPS:最小点击次数 Range:范围 TurnSpeed:转头速度 HitBox:击中的盒子)&lt;/p>
-&lt;p>NoFriends:没有朋友&lt;/p>
-&lt;p>SuperKnockback:超级击退&lt;/p>
-&lt;p>TNTBlock:TNT自动格挡(Fuse:保险时间 AutoSword:自动拿出剑)&lt;/p>
-&lt;p>Teleporthit:TP攻击需要你手动打玩家&lt;/p>
-&lt;p>Trigger:玩家在你的准星上和你的攻击距离范围内点击(MaxCPS:最大点击次数 MiNCPS:最小点击次数)&lt;/p>
-&lt;p>Velocity:防击退(Horizontal:水平防击退 Vertical:垂直防击退 Mode:模式 Simple:简单的&lt;/p>
-&lt;p> AAC:AAC反作弊模式 AACPush:AAC反作弊模式2 Jump:跳跃 Reverse:反向就是别人打你你不来要后退的但是这个模式会帮你向前 Reverse2:和刚刚那个一样 Glitch:差错 ReverseStrength:方向击退强度 Reverse2Strength:方向击退强度模式2的)&lt;/p>
-&lt;h3 id="player玩家列表">Player玩家列表&lt;/h3>
-&lt;p>AntiCactus:无视仙人掌的伤害。&lt;/p>
-&lt;p>AutoRespawn:自动帮你重生。&lt;/p>
-&lt;p>AutoTool:自动选择最好的攻击与你挖掘的方块所对应的工具。&lt;/p>
-&lt;p>Blink:瞬移 (按下时脱离实体 移动到指定地方时关闭即可)。&lt;/p>
-&lt;p>Eagle:到方块边缘时潜行。&lt;/p>
-&lt;p>FarmKingBot:自动操作FarmKingBot小游戏。&lt;/p>
-&lt;p>FastUse:快速使用。&lt;/p>
-&lt;p>InventoryCleaner:快速清理没用的物品。&lt;/p>
-&lt;p>NoFall:无视掉落伤害&lt;/p>
-&lt;p>PotionSaver:药水保护？不明。&lt;/p>
-&lt;p>Reach(build48):增加你挖掘方块距离与攻击距离。&lt;/p>
-&lt;p>Regen:快速回复你的生命值。&lt;/p>
-&lt;p>Zoot:取消Debuff。&lt;/p>
-&lt;h3 id="movement-动作列表">Movement 动作列表&lt;/h3>
-&lt;p>AirJump:允许你在空气中跳跃。&lt;/p>
-&lt;p>AirLadder:爬梯子的时候不会受到远程伤害。&lt;/p>
-&lt;p>AutoWalk:自动向前行走。&lt;/p>
-&lt;p>BufferSpeed:在某方块上面加速。&lt;/p>
-&lt;p>BugUp:虚空回弹。&lt;/p>
-&lt;p>FastClimb:快速爬梯子。&lt;/p>
-&lt;p>FastSlabs:加速行走(平面行走)&lt;/p>
-&lt;p>FastStairs:加速上楼梯和台阶。&lt;/p>
-&lt;p>Fly:飞行。&lt;/p>
-&lt;p>Freeze:鬼畜转头,存才意义不明。&lt;/p>
-&lt;p>Glide:滑翔，在空气中MotionY。&lt;/p>
-&lt;p>HighJump:增加你的跳跃高度。&lt;/p>
-&lt;p>IceSpeed:在冰方块上面会增加移动速度。&lt;/p>
-&lt;p>InventoryMove:允许你打开背包物品栏的时候行走。&lt;/p>
-&lt;p>LadderJump:你触及梯子方块的时候会高跳。&lt;/p>
-&lt;p>LiquidWalk:水上行走。&lt;/p>
-&lt;p>LongJump:长跳。&lt;/p>
-&lt;p>NoClip:无视重力,并且可以穿墙。&lt;/p>
-&lt;p>NoSlow:取消使用物品时的减速。&lt;/p>
-&lt;p>NoWeb:取消你在蜘蛛网行走时的减速。&lt;/p>
-&lt;p>Parkour:当你在方块边缘的时候会跳跃。&lt;/p>
-&lt;p>ReverseStep:快速下台阶。&lt;/p>
-&lt;p>SafeWalk:你在方块边缘行走时不会下落。&lt;/p>
-&lt;p>SmileJump:在史莱姆方块上面跳跃。&lt;/p>
-&lt;p>Sneak:发送数据包让你潜行。&lt;/p>
-&lt;p>SnowSpeed:在雪方块上面获得加速。&lt;/p>
-&lt;p>SnowWalk:在雪方块上面行走。&lt;/p>
-&lt;p>Speed:加速。&lt;/p>
-&lt;p>Sprint:保持疾跑。&lt;/p>
-&lt;p>Step:自动上坡。&lt;/p>
-&lt;p>Strafe:让你的动作更加灵活,允许你在空中移动。&lt;/p>
-&lt;p>WallClimb:爬墙。&lt;/p>
-&lt;p>WallGlide:墙边滑翔。&lt;/p>
-&lt;p>WallSpeed:墙边加速。&lt;/p>
-&lt;p>WaterFly:在水上增减你的Y。&lt;/p>
-&lt;p>WaterSpeed:在水上加速。&lt;/p>
-&lt;p>WebWalk:在蜘蛛网上面行走。&lt;/p>
-&lt;h3 id="render显示列表">Render显示列表&lt;/h3>
-&lt;p>AntiBlind:无视失明Debuff造成的视觉影响。&lt;/p>
-&lt;p>BlockESP:使某方块高亮显示。&lt;/p>
-&lt;p>BlockOverlay:玩家准心所指的方块将会高亮显示。&lt;/p>
-&lt;p>Breadcrumbs:你走过的地方会留下一条线。&lt;/p>
-&lt;p>CameraClip:隔墙看到玩家的装备与动作。&lt;/p>
-&lt;p>Chams:透过方块看见实体。&lt;/p>
-&lt;p>ClickGUI:GUI菜单。&lt;/p>
-&lt;p>ESP:透视实体。&lt;/p>
-&lt;p>FreeCam:灵魂出窍,变为一个独立实体可飞行移动,用于观察。&lt;/p>
-&lt;p>Fullbright:夜视。&lt;/p>
-&lt;p>HUD:HUD菜单。&lt;/p>
-&lt;p>ItemESP:透视物品。&lt;/p>
-&lt;p>NameTags:名字标签放大。&lt;/p>
-&lt;p>NoBob:没有手臂摇晃。&lt;/p>
-&lt;p>NoFov:没有视角影响。&lt;/p>
-&lt;p>NoScoreboard:关闭计分板显示。&lt;/p>
-&lt;p>NoSwing:没有攻击动作。&lt;/p>
-&lt;p>Projectiles:显示抛物线。&lt;/p>
-&lt;p>RemoteView:让你使用某玩家的视角观察。&lt;/p>
-&lt;p>SiwtchAnimation:其他攻击动作。&lt;/p>
-&lt;p>Tracers:在实体与你之间显示一条线。&lt;/p>
-&lt;p>TrueSight:显示隐身的实体。&lt;/p>
-&lt;p>Xray:透视矿物。&lt;/p>
-&lt;h3 id="world世界列表">World世界列表:&lt;/h3>
-&lt;p>AutoBreak:破坏准星所指向的方块。&lt;/p>
-&lt;p>ChestAura:自动打开周围的箱子。&lt;/p>
-&lt;p>ChestStealer:自动取出箱子内物品并关闭箱子。&lt;/p>
-&lt;p>CivBreak:点击一个方块一下后会持续破坏所点方块。&lt;/p>
-&lt;p>FastBreak:加速破坏方块。&lt;/p>
-&lt;p>FastPlace:加速放置方块。&lt;/p>
-&lt;p>Fucker:自动破坏某方块。&lt;/p>
-&lt;p>Scaffold:自动搭路。&lt;/p>
-&lt;p>Timer:变速齿轮。&lt;/p>
-&lt;p>Tower:向上搭方块。&lt;/p>
-&lt;h3 id="misc杂项列表">Misc杂项列表:&lt;/h3>
-&lt;p>AntiBot:KillAura不攻击服务器假人。&lt;/p>
-&lt;p>AtAllProvider:将一个命令同时执行多次。&lt;/p>
-&lt;p>AllControllerControl:使用别的控制器？不明&lt;/p>
-&lt;p>LiquidChat:水影IRC聊天，需要连接服务器。&lt;/p>
-&lt;p>MidClick:鼠标中键点击添加好友。&lt;/p>
-&lt;p>NameProtect:将你的ID字符串改为其他的。&lt;/p>
-&lt;p>NoRotateSet:无视摇头动作,不推荐开启。&lt;/p>
-&lt;p>Spammer:自动刷屏。&lt;/p>
-&lt;p>Teams:不攻击同队伍的玩家。&lt;/p>
-&lt;h3 id="exploit漏洞列表">Exploit漏洞列表:&lt;/h3>
-&lt;p>AbortBreaking:保存方块挖掘进度。&lt;/p>
-&lt;p>AntiHunger:无视饥饿Debuff。&lt;/p>
-&lt;p>BedGodMode:你在床上睡觉时无法被攻击。&lt;/p>
-&lt;p>CommandSign:指令牌子。&lt;/p>
-&lt;p>ConsoleSpammer:在服务器后台发送大量垃圾信息。&lt;/p>
-&lt;p>Damage:给你自己受到伤害。&lt;/p>
-&lt;p>EmptyMessage:在聊天框内发送一个空格。&lt;/p>
-&lt;p>ForceUnicodeChat:强行发送聊天。&lt;/p>
-&lt;p>Ghost:允许你在死后可以做某些动作。&lt;/p>
-&lt;p>GhostHand:隔墙接触实体/隔墙破坏方块。&lt;/p>
-&lt;p>GodMode:在AAC服务器内无敌。&lt;/p>
-&lt;p>ItemTeleport:TP拾取物品。&lt;/p>
-&lt;p>KeepContainer:打开一个箱子后让箱子的动画一直是打开的动画。&lt;/p>
-&lt;p>Kick:将你自己踢出服务器。&lt;/p>
-&lt;p>MoreCarry:发送垃圾数据包卡服。&lt;/p>
-&lt;p>MultiActions:允许你同时进行多个动作。&lt;/p>
-&lt;p>NoPirchLimit:没有高音限制。&lt;/p>
-&lt;p>Paralyze:使延迟玩家瘫痪。&lt;/p>
-&lt;p>Phase:穿墙。&lt;/p>
-&lt;p>PingSpoof:延迟欺骗。&lt;/p>
-&lt;p>Plugins:显示你当前所在服务器的插件。&lt;/p>
-&lt;p>Teleport:传送。(目前不可用了&lt;/p>
-&lt;p>VClip:提升Y的高度。&lt;/p>
-&lt;p>VehicaleOneHit:意义不明&lt;/p></description></item><item><title>使用linux进行24小时直播</title><link>https://blog.xpdbk.com/post/zhibo-24h/</link><pubDate>Sat, 25 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/zhibo-24h/</guid><description>&lt;blockquote>
+&lt;/hugo-encrypt></description></item><item><title>使用linux进行24小时直播</title><link>https://blog.xpdbk.com/post/zhibo-24h/</link><pubDate>Sat, 25 Mar 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/zhibo-24h/</guid><description>&lt;blockquote>
 &lt;p>本文章的方法，禁止用来滥用。&lt;/p>
 &lt;p>使用之前请看视频网站TOS，禁止违反视频网站纪律。&lt;/p>
 &lt;/blockquote>
