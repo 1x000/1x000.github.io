@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>基岩版我的世界 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/%E5%9F%BA%E5%B2%A9%E7%89%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/</link><description>Recent content in 基岩版我的世界 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sun, 27 Aug 2023 21:11:59 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E5%9F%BA%E5%B2%A9%E7%89%88%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/index.xml" rel="self" type="application/rss+xml"/><item><title>基岩版黑客配置和端集合</title><link>https://blog.xpdbk.com/post/jyb-hack/</link><pubDate>Sun, 27 Aug 2023 21:11:59 +0700</pubDate><guid>https://blog.xpdbk.com/post/jyb-hack/</guid><description>&lt;img src="https://blog.xpdbk.com/post/jyb-hack/Screenshot_20230827_220342_dev.sora.protohax.webp" alt="Featured image of post 基岩版黑客配置和端集合" />&lt;h2 id="基岩版黑客protohax">基岩版黑客ProtoHax&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://github.com/CloudPixel-Studio/ProtoHax-Release" target="_blank" rel="noopener"
->ProtoHax魔改&lt;/a>&lt;/p>
+>ProtoHax魔改&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/SRYuYing369/ProtoHaxNeo-Android" target="_blank" rel="noopener"
->ProtoHaxNeo魔改-没有预编译要自己编译&lt;/a>&lt;/p>
+>ProtoHaxNeo魔改-没有预编译要自己编译&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/hax0r31337/ProtoHax-Android" target="_blank" rel="noopener"
->原版ProtoHax-停更&lt;/a>&lt;/p>
+>原版ProtoHax-停更&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;del>LEl_FENG汉化版&lt;/del> 没时间 T-T&lt;/p>
 &lt;hr>
 &lt;p>本文章的端是&lt;strong>ProtoHax魔改&lt;/strong>如果访问不了&lt;strong>GITHUB&lt;/strong>可以在这里下载1.4.0版本&lt;/p>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/i7wXZ16nf5of" target="_blank" rel="noopener"
->蓝奏云&lt;/a> 访问密码: &lt;code>hbrb&lt;/code> &lt;strong>注&lt;/strong>：加密仅仅是为了文件不会被删除&lt;/p>
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码: &lt;code>hbrb&lt;/code> &lt;strong>注&lt;/strong>：加密仅仅是为了文件不会被删除&lt;/p>
 &lt;p>压缩密码: &lt;code>Hdn1kkT5k2&lt;/code> &lt;strong>MD5&lt;/strong>: &lt;code>9C6BB6659B7F056308F96C7B3503E884&lt;/code>&lt;/p>
 &lt;p>请下载完毕之后验证压缩包的&lt;strong>MD5&lt;/strong>如果不一致请重新下载&lt;/p>
 &lt;/blockquote>
@@ -61,7 +89,14 @@ data-flex-basis="426px"
 &lt;p>Lifeboat是Minecraft基岩版的精选服务器，需要有一个Minecraft基岩版的正版账号，但是可以试试XGP账号登录，因为现在每一个JAVA账号都会捆绑一个基岩版&lt;/p>
 &lt;hr>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/ih6Y116ninah" target="_blank" rel="noopener"
->蓝奏云&lt;/a> 访问密码: &lt;code>bchr&lt;/code>&lt;/p>
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码: &lt;code>bchr&lt;/code>&lt;/p>
 &lt;p>压缩密码: &lt;code>5X2jZUGqUc&lt;/code>&lt;/p>
 &lt;hr>
 &lt;p>直接导入json即可，我想要做一个配置导入教程视频&lt;/p>

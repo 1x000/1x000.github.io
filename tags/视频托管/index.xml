@@ -14,7 +14,8 @@ data-flex-grow="195"
 data-flex-basis="469px"
 >&lt;/p>
 &lt;h2 id="实践">实践&lt;/h2>
-&lt;p>我把我的视频用&lt;code>ffmpeg&lt;/code>进行了转码和压缩具体代码看上一篇文章&lt;a class="link" href="https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall" >ffmpeg批量压缩转换视频为30FPS&lt;/a>然后我就开始寻找托管的方法，结果找到了&lt;code>cfpage&lt;/code>这个不限流量的东西，上传GITHUB然后访问文件名一气呵成&lt;/p>
+&lt;p>我把我的视频用&lt;code>ffmpeg&lt;/code>进行了转码和压缩具体代码看上一篇文章&lt;a class="link" href="https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall" >ffmpeg批量压缩转换视频为30FPS&lt;/a>
+然后我就开始寻找托管的方法，结果找到了&lt;code>cfpage&lt;/code>这个不限流量的东西，上传GITHUB然后访问文件名一气呵成&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/video-save-free/sc.webp"
 width="1163"
 height="569"

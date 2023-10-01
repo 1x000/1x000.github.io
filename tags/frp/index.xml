@@ -8,21 +8,56 @@
 &lt;h2 id="2-下载并安装以下软件">2. 下载并安装以下软件&lt;/h2>
 &lt;p>KSWEB3.963 破解版&lt;br>
 &lt;a class="link" href="https://pan.baidu.com/s/1Pu1i3pSzC2PCs-yC3u7N2g" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1Pu1i3pSzC2PCs-yC3u7N2g&lt;/a> 提取码：504q&lt;br>
+>https://pan.baidu.com/s/1Pu1i3pSzC2PCs-yC3u7N2g&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+ 提取码：504q&lt;br>
 JuiceSSH&lt;br>
 &lt;a class="link" href="https://pan.baidu.com/s/1iXLYrG-UhzJG5NSdK5pIFQ" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1iXLYrG-UhzJG5NSdK5pIFQ&lt;/a> 提取码：1jhz&lt;br>
+>https://pan.baidu.com/s/1iXLYrG-UhzJG5NSdK5pIFQ&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+ 提取码：1jhz&lt;br>
 FRP 安卓客户端&lt;br>
 &lt;a class="link" href="https://pan.baidu.com/s/1UQpn2YtodPxuv9LcKfCiWA" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1UQpn2YtodPxuv9LcKfCiWA&lt;/a> 提取码:t4h2&lt;/p>
+>https://pan.baidu.com/s/1UQpn2YtodPxuv9LcKfCiWA&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+ 提取码:t4h2&lt;/p>
 &lt;h2 id="3-一台服务器网上有免费的内网穿透服务不过体验太差我这里买了一台写教程写完之后当然是退款了">3. 一台服务器，网上有免费的内网穿透服务，不过体验太差，我这里买了一台写教程，写完之后当然是退款了&lt;/h2>
 &lt;h3 id="1-建立本地-php-环境安装程序">1. 建立本地 php 环境，安装程序&lt;/h3>
 &lt;p>打开 KSWEB 软件，并等待自动安装环境&lt;br>
 划到最右边设置 KSWEB：保护服务器非授权终止，锁定 wifi划到到 NGINX, 开启服务并新建一个主机划到工具，点击 phpMYAdmin 并选择 Nginx划到最左边的状态，点击开关重启一遍，以防止刚才添加的配置发生不生效的情况访问 phpMYAdmin, 我这里的本地链接为 &lt;a class="link" href="http://localhost:8002/" target="_blank" rel="noopener"
->http://localhost:8002/&lt;/a>&lt;br>
+>http://localhost:8002/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;br>
 默认密码为空，登陆进去设置一个秘密，顺便新建一个数据库&lt;br>
 把你的网站源码用文件管理器解压至 htdocs 目录，访问本地链接并进行安装，我这里的地址为 &lt;a class="link" href="http://localhost:8001/" target="_blank" rel="noopener"
->http://localhost:8001/&lt;/a>（这一步也可以在内网穿透绑定域名后进行）&lt;/p>
+>http://localhost:8001/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+（这一步也可以在内网穿透绑定域名后进行）&lt;/p>
 &lt;h3 id="2-进行内网穿透绑定域名让他人可以访问">2. 进行内网穿透，绑定域名让他人可以访问&lt;/h3>
 &lt;p>将域名 A 记录解析至你服务器的 ip&lt;/p>
 &lt;h4 id="注意在这之前你可能需要在服务器上放行下方所用到的端口">注意：在这之前，你可能需要在服务器上放行下方所用到的端口&lt;/h4>
