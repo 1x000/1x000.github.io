@@ -9,14 +9,7 @@ appKey: '666' // Your LeanCloud appKey
 &lt;/script></description></item><item><title>本站声明</title><link>https://blog.xpdbk.com/bzsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/bzsm/</guid><description>&lt;h2 id="本站声明">本站声明&lt;/h2>
 &lt;blockquote>
 &lt;p>本站指的是 &lt;a class="link" href="https://blog.xpdbk.com" target="_blank" rel="noopener"
->blog.xpdbk.com&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>blog.xpdbk.com&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="联系方式">联系方式&lt;/h3>
 &lt;p>B站和Youtube私信&lt;/p>
@@ -86,8 +79,7 @@ fill="currentColor">
 &lt;p>FdpClient 是基于水影的一个客户端并添加了更多的功能和更多的~~bug&lt;/p>
 &lt;h2 id="网站-隐私政策">网站 隐私政策&lt;/h2>
 &lt;p>欢迎您访问我们的产品。 &lt;strong>网站&lt;/strong> （包括网站等产品提供的服务，以下简称“产品和服务”）是由 &lt;strong>LEl_FENG&lt;/strong> （以下简称“我们”）开发并运营的。 确保用户的数据安全和隐私保护是我们的首要任务， 本隐私政策载明了您访问和使用我们的产品和服务时所收集的数据及其处理方式。&lt;/p>
-&lt;p>请您在继续使用我们的产品前务必认真仔细阅读并确认充分理解本隐私政策全部规则和要点， 一旦您选择使用，即视为您同意本隐私政策的全部内容，同意我们按其收集和使用您的相关信息。 如您在在阅读过程中，对本政策有任何疑问，可联系我们的客服咨询， 请通过 &lt;strong>&lt;a class="link" href="mailto:huaweilaomke402@gmail.com" >huaweilaomke402@gmail.com&lt;/a>
-&lt;/strong> 或产品中的反馈方式与我们取得联系。 如您不同意相关协议或其中的任何条款的，您应停止使用我们的产品和服务。&lt;/p>
+&lt;p>请您在继续使用我们的产品前务必认真仔细阅读并确认充分理解本隐私政策全部规则和要点， 一旦您选择使用，即视为您同意本隐私政策的全部内容，同意我们按其收集和使用您的相关信息。 如您在在阅读过程中，对本政策有任何疑问，可联系我们的客服咨询， 请通过 &lt;strong>&lt;a class="link" href="mailto:huaweilaomke402@gmail.com" >huaweilaomke402@gmail.com&lt;/a>&lt;/strong> 或产品中的反馈方式与我们取得联系。 如您不同意相关协议或其中的任何条款的，您应停止使用我们的产品和服务。&lt;/p>
 &lt;p>本隐私政策帮助您了解以下内容：&lt;/p>
 &lt;p>一、我们如何收集和使用您的个人信息；&lt;/p>
 &lt;p>二、我们如何存储和保护您的个人信息；&lt;/p>
@@ -131,74 +123,32 @@ fill="currentColor">
 &lt;tbody>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://blog.xpdbk.com/" target="_blank" rel="noopener"
->主站&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/td>
+>主站&lt;/a>&lt;/td>
 &lt;td>本站的主要线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://vlblog.xpdbk.com/" target="_blank" rel="noopener"
->Vercel 线路&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/td>
+>Vercel 线路&lt;/a>&lt;/td>
 &lt;td>基于 Vercel 平台的镜像线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://lelfeng.netlify.app/" target="_blank" rel="noopener"
->Netlify 线路&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/td>
+>Netlify 线路&lt;/a>&lt;/td>
 &lt;td>基于 Netlify 平台的镜像线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://cfblog.xpdbk.com/" target="_blank" rel="noopener"
->Cf Pages 线路&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/td>
+>Cf Pages 线路&lt;/a>&lt;/td>
 &lt;td>基于 Cloudflare Pages 平台的镜像线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://1x000.github.io/" target="_blank" rel="noopener"
->Github 线路&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/td>
+>Github 线路&lt;/a>&lt;/td>
 &lt;td>基于 GitHub Pages 平台的镜像线路&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;a class="link" href="https://adaewfd321fg3.cachefly.net/" target="_blank" rel="noopener"
->CacheFly 线路&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/td>
+>CacheFly 线路&lt;/a>&lt;/td>
 &lt;td>基于 CacheFly CDN 的镜像线路&lt;/td>
 &lt;/tr>
 &lt;/tbody>
@@ -257,14 +207,7 @@ data-flex-basis="360px"
 &lt;p>&lt;strong>TG&lt;/strong> ：https://l.xpdbk.com/dt52S6&lt;/p>
 &lt;p>&lt;strong>Email&lt;/strong>：huaweilaomke402@gmail.com&lt;/p>
 &lt;p>&lt;strong>Discord群聊&lt;/strong> : &lt;a class="link" href="https://discord.gg/5hPzGNUvSS" target="_blank" rel="noopener"
->https://discord.gg/5hPzGNUvSS&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://discord.gg/5hPzGNUvSS&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h2 id="我的兴趣爱好">🌵我的兴趣爱好:&lt;/h2>
 &lt;p>兴趣爱好:兴趣过于广泛，就不列举了，反正就是“样样通，没样精”.&lt;/p>
@@ -300,41 +243,13 @@ fill="currentColor">
 &lt;hr>
 &lt;h2 id="我的历史网站具有纪念意义">我的历史网站（具有纪念意义）&lt;/h2>
 &lt;p>&lt;a class="link" href="https://web.archive.org/web/20220428105733/https://hlmc.ga/" target="_blank" rel="noopener"
->HLM组织官网1&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>HLM组织官网1&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://web.archive.org/web/20220426093245/https://hlmmc.ga/" target="_blank" rel="noopener"
->HLM组织官网2&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>HLM组织官网2&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://web.archive.org/web/20230526225711/https://abaaba.cyou/" target="_blank" rel="noopener"
->历史地址1&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>历史地址1&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://web.archive.org/web/20230719164818/http://xpdbk.top/" target="_blank" rel="noopener"
->历史地址2&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>历史地址2&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h2 id="博客编月史">博客编月史&lt;/h2>
 &lt;blockquote>
@@ -345,22 +260,8 @@ fill="currentColor">
 &lt;h3 id="2023-年-02-月">2023 年 02 月&lt;/h3>
 &lt;p>02-08 添加了个表情包&lt;/p>
 &lt;p>&lt;strong>02-09 开始计划搭建基于 &lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
->hugo&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-框架与 &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
->stack&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-主题的站点&lt;/strong>&lt;/p>
+>hugo&lt;/a> 框架与 &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
+>stack&lt;/a> 主题的站点&lt;/strong>&lt;/p>
 &lt;p>02-10 “关于” 页面添加&lt;strong>博客编月史&lt;/strong>&lt;/p>
 &lt;p>02-13 站点迁移至 WordPress 框架&lt;/p>
 &lt;h3 id="2023-年-03-月">2023 年 03 月&lt;/h3>
@@ -379,32 +280,11 @@ fill="currentColor">
 祝各位大佬在新的一年PHP全致命错误，fileinfo全装不上，npm/composer install全报错，Laravel Mix全报未知错误，服务器全部宕机，电脑开机报错，Linux rm rf，数据库被删除，CN2全绕路，线路全阻断，海外网站全被墙，服务器炸库，网关无响应，代理50O，网站502，RAID组几个一起炸几个，UPS爆炸，一年到头DDOS CC不断，流量几千个T，并发上亿，ping全超时，备案全重审，资源404，SSL全重定向，CDN全不回源，爬虫永远不来你家，收录零蛋，数据库超时，前端永远502，IP永远封80,443，windows开机蓝屏，linux开机Kernel Panic，macos开机五国，服务器iDRAC/iLO/IPMI/KVM全部失联，路由器全爆炸，路由表内存全溢出，交换机全环路，防火墙全阻断，无线信道全冲突,CC,DDOS全来，压接网线全短路，BGP全漏表，机柜全断电，RAiD全爆炸，NAS数据全丢，光模块全炸，光纤全不同，光猫全烫手，电表全倒转，空开全烧穿，Java空指针，Adobe全家保存失败+闪退，制作程序做一半全关机，差一分102，英语完形填空题目正文不在同一页、数学23题二次函数动点、语文作文跑题、政治答不到点上、历史小短文不会、生物遗传不知道、体育考试前骨折、踢足球踩到球上、阅读理解比喻说成拟人、寒假作业没写完、网络延迟=999，电压表电流表分不清、高锰酸钾不塞棉花，Windows update致命性错误，刷第三方固件必变砖，水冷漏液，CPU弯脚，风扇断叶，鼠标双击，键盘进水，显卡花屏，主板浪涌，电源烧毁，USB短路，固态掉盘，磁盘坏道，容麦受潮，内存出错，2345绑架，编译器抽风，github连不上，编译程序全错误，错误全都抛不出，多线程全都调不好，忘记保存必停电，内存全吃满，CPU高发热，调试全崩溃，封装全找不到主类，问题全无法解决，IDE全无响应，找人帮忙全不是大佬，有想法时全尿急，变量全接不到值，写过的代码全忘记，自己的注释全看不懂，程序编译后全是bug,bug越修越多，bug修到不想做，买英特尔CPU和AMD主板配、买到思杰马克丁的正版、开机账户错误，涂硅脂涂到针脚上、支付宝被自动扣费、忘记密码不重置、办理长城宽带、twrp卡刷必报错、download模式必掉、9008救砖救不过、黑苹果无兼容efi、数据线断掉
 &lt;/details>
 &lt;hr></description></item><item><title>网站后台</title><link>https://blog.xpdbk.com/edit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/edit/</guid><description>&lt;p>&lt;a class="link" href="https://1x000-special-couscous-qjwwgwvvxqf69jw.github.dev/" target="_blank" rel="noopener"
->在线编辑文章（本站）&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>在线编辑文章（本站）&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://blogdash.xpdbk.com/" target="_blank" rel="noopener"
->本站后台面板&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>本站后台面板&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://1x000-glowing-guacamole-745gjqpj7rgh9jj.github.dev/" target="_blank" rel="noopener"
->在线编辑文章（jigoudoc）&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>在线编辑文章（jigoudoc）&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>如果你不是内部人员，请不要点击这些链接awa。&lt;/p>
 &lt;/blockquote></description></item><item><title>文章搜索</title><link>https://blog.xpdbk.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/search/</guid><description/></item><item><title>友情链接</title><link>https://blog.xpdbk.com/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/links/</guid><description>&lt;img src="https://blog.xpdbk.com/links/666.webp" alt="Featured image of post 友情链接" />&lt;h1 id="有用的网站和友情链接">有用的网站和友情链接&lt;/h1>
@@ -414,24 +294,10 @@ fill="currentColor">
 &lt;hr>
 &lt;p>本站友链信息如下：&lt;/p>
 &lt;p>网站图标: &lt;a class="link" href="https://img.xpdbk.com/file/imglol/img/avatar.jpg" target="_blank" rel="noopener"
->https://img.xpdbk.com/file/imglol/img/avatar.jpg&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://img.xpdbk.com/file/imglol/img/avatar.jpg&lt;/a>&lt;/p>
 &lt;p>网站名称： XiaoPang的个人博客&lt;/p>
 &lt;p>网站地址： &lt;a class="link" href="https://blog.xpdbk.com" target="_blank" rel="noopener"
->https://blog.xpdbk.com&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://blog.xpdbk.com&lt;/a>&lt;/p>
 &lt;p>网站简介： 追随梦想需竭尽全力&lt;/p>
 &lt;hr>
 &lt;h2 id="必遵守的">必遵守的&lt;/h2>
@@ -454,9 +320,6 @@ fill="currentColor">
 &lt;p>当博客失联后，将会尝试联系博主；若长时间失联将会归档友链（非删除=留一个你曾经的痕迹）。&lt;/p>
 &lt;p>博客运行时间 ≥3天&lt;/p>
 &lt;p>每12个月至少更新一个文章&lt;/p>
-&lt;p>保证网站服务器24小时内17小时不掉线（经常掉线对你我都不好）&lt;/p></description></item><item><title>整合页面</title><link>https://blog.xpdbk.com/allinone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/allinone/</guid><description>&lt;p>&lt;a class="link" href="https://blog.xpdbk.com/shuoshuo" >说说&lt;/a>
-&lt;/p>
-&lt;p>&lt;a class="link" href="https://blog.xpdbk.com/bloglink" >本站线路&lt;/a>
-&lt;/p>
-&lt;p>&lt;a class="link" href="https://blog.xpdbk.com/edit" >网站后台&lt;/a>
-&lt;/p></description></item></channel></rss>
+&lt;p>保证网站服务器24小时内17小时不掉线（经常掉线对你我都不好）&lt;/p></description></item><item><title>整合页面</title><link>https://blog.xpdbk.com/allinone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/allinone/</guid><description>&lt;p>&lt;a class="link" href="https://blog.xpdbk.com/shuoshuo" >说说&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.xpdbk.com/bloglink" >本站线路&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.xpdbk.com/edit" >网站后台&lt;/a>&lt;/p></description></item></channel></rss>

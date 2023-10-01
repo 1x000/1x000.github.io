@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/linux/</link><description>Recent content in linux on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Fri, 01 Sep 2023 08:49:19 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>一键设置ROOT账户访问SSH的脚本</title><link>https://blog.xpdbk.com/post/linux-ssh-root-shell/</link><pubDate>Fri, 01 Sep 2023 08:49:19 +0700</pubDate><guid>https://blog.xpdbk.com/post/linux-ssh-root-shell/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>当我们自己用官方 &lt;a class="link" href="https://ubuntu.com/download/server" target="_blank" rel="noopener"
->Ubuntu服务器镜像&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-安装到服务器上面之后登录账号也只能登录当初安装并设置的账号并用&lt;code>sudo su&lt;/code>命令提权，但是并没有root账户可以进行SSH登录，这是因为root账户创建之后每次开机都会随机密码且关闭SSH登录，所以我们去一个一个的用&lt;code>nano&lt;/code>和&lt;code>vim&lt;/code>改密码对我们来说一点都不方便。&lt;/p>
+>Ubuntu服务器镜像&lt;/a> 安装到服务器上面之后登录账号也只能登录当初安装并设置的账号并用&lt;code>sudo su&lt;/code>命令提权，但是并没有root账户可以进行SSH登录，这是因为root账户创建之后每次开机都会随机密码且关闭SSH登录，所以我们去一个一个的用&lt;code>nano&lt;/code>和&lt;code>vim&lt;/code>改密码对我们来说一点都不方便。&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>Windows&lt;/strong>全部都需要新建一个&lt;code>.txt&lt;/code>文件之后改后缀保存为&lt;code>.sh&lt;/code>文件并在linux上面&lt;code>./root.sh&lt;/code>运行&lt;/p>
 &lt;p>&lt;strong>linux&lt;/strong> 直接用&lt;code>nano&lt;/code>或者&lt;code>vim&lt;/code>创建一个&lt;code>root.sh&lt;/code>并使用&lt;code>./&lt;/code>运行即可&lt;/p>
@@ -242,23 +235,9 @@ fill="currentColor">
 &lt;p>Portainer官网提供的安装文档：&lt;/p>
 &lt;ol>
 &lt;li>&lt;a class="link" href="https://www.portainer.io/installation/" target="_blank" rel="noopener"
->https://www.portainer.io/installation/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/li>
+>https://www.portainer.io/installation/&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://portainer.readthedocs.io/en/stable/deployment.html" target="_blank" rel="noopener"
->https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/li>
+>https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
 &lt;p>&lt;strong>安装docker&lt;/strong> 这里不多说&lt;/p>
@@ -460,47 +439,19 @@ fill="currentColor">
 &lt;p>以上就是大部分与 Docker 镜像相关的重要命令。&lt;/p>
 &lt;p>要在使用 Docker 时查看 CLI 引用，只需在命令行中输入命令 docker 即可。Docker 文档请参阅：&lt;/p>
 &lt;p>&lt;a class="link" href="https://docs.docker.com/engine/reference/commandline/cli/" target="_blank" rel="noopener"
->Use the Docker command line | Docker Documentation&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>Use the Docker command line | Docker Documentation&lt;/a>&lt;/p>
 &lt;p>现在你已经掌握了运行 Docker 的关键命令，可以用 Docker 了！&lt;/p>
 &lt;h2 id="docker可视化-portainer安装">Docker可视化 Portainer安装&lt;/h2>
 &lt;p>&lt;strong>Portainer是Docker的可视化管理工具&lt;/strong>，镜像、容器、日志显示等操作，Swarm集群、服务等集中管理和操作、登录用户管理和控制等功能。&lt;/p>
 &lt;h3 id="portainer官网">Portainer官网&lt;/h3>
 &lt;p>Portainer官网：&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.portainer.io%2F" target="_blank" rel="noopener"
->https://www.portainer.io/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.portainer.io/&lt;/a>&lt;/p>
 &lt;p>Portainer官网提供的安装文档：&lt;/p>
 &lt;ol>
 &lt;li>&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.portainer.io%2Finstallation%2F" target="_blank" rel="noopener"
->https://www.portainer.io/installation/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/li>
+>https://www.portainer.io/installation/&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fportainer.readthedocs.io%2Fen%2Fstable%2Fdeployment.html" target="_blank" rel="noopener"
->https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/li>
+>https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
 &lt;p>&lt;strong>1、利用Docker拉取portainer镜像&lt;/strong>&lt;/p>
@@ -542,14 +493,7 @@ fill="currentColor">
 &lt;/ul>
 &lt;h3 id="docker-部署">Docker 部署&lt;/h3>
 &lt;p>Docker Hub 镜像地址：&lt;a class="link" href="https://hub.docker.com/r/adguard/adguardhome" target="_blank" rel="noopener"
->Docker&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>Docker&lt;/a>&lt;/p>
 &lt;p>安装好 Docker 后下载镜像，以下任选其一&lt;/p>
 &lt;table>
 &lt;thead>
@@ -797,14 +741,7 @@ mkdir /root/adguardhome/confdir
 &lt;h2 id="在vps上使用bittorrent-tracker">在VPS上使用bittorrent-tracker&lt;/h2>
 &lt;p>这是&lt;code>webtorrent&lt;/code>项目的一个部分。使用&lt;code>nodejs&lt;/code>进行搭建部署。&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/webtorrent/bittorrent-tracker" target="_blank" rel="noopener"
->官方&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-有英文文档，这里我简单说一下如何使用：&lt;/p>
+>官方&lt;/a>有英文文档，这里我简单说一下如何使用：&lt;/p>
 &lt;p>首先要下载&lt;code>nodejs&lt;/code>和&lt;code>npm&lt;/code>：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -1007,32 +944,11 @@ fill="currentColor">
 &lt;p>使用Xshell的密钥生成功能选择最高加密位数然后加上密码&lt;/p>
 &lt;p>关于 SSH key 的知识可参考&lt;br>
 &lt;a class="link" href="https://www.jianshu.com/p/1246cfdbe460" target="_blank" rel="noopener"
->SSH key 的介绍与在 Git 中的使用&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>SSH key 的介绍与在 Git 中的使用&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.ssh.com/ssh/keygen/" target="_blank" rel="noopener"
->ssh 官网&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>ssh 官网&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.vultr.com/docs/how-do-i-generate-ssh-keys/" target="_blank" rel="noopener"
->&lt;del>vultr 一直被墙IP的VPS 官网&lt;/del>&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>&lt;del>vultr 一直被墙IP的VPS 官网&lt;/del>&lt;/a>&lt;/p>
 &lt;p>2.将本地的公钥扔到服务器上去&lt;/p>
 &lt;p>要注意的是，你想要这对密钥登录哪个账户，就放到哪个账户下，比如我要自动登录 root，那么我就会这样做：&lt;/p>
 &lt;blockquote>

@@ -44,14 +44,7 @@
 &lt;h2 id="开始挖矿吧">开始挖矿吧&lt;/h2>
 &lt;p>至此，已经可以开始在Android 手机上挖矿了！&lt;/p>
 &lt;p>如果您仍停留在build 目录下的话，可以直接使用 &lt;code>./xmrig -o xmr.pool.minergate.com:45700 -u se17vk4ar7nsrtx -t 8&lt;/code> 指令开始挖矿，不要忘记将矿池和User ID 替换成您使用的矿池和User ID。这些参数的使用方法与其他平台的XMRig 是完全相同的，可以在&lt;a class="link" href="https://xmrig.com/docs/miner/command-line-options" target="_blank" rel="noopener"
->这个页面&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-查看。&lt;/p>
+>这个页面&lt;/a>查看。&lt;/p>
 &lt;p>而如果您已经退出了Termux，可以使用指令 &lt;code>cd xmrig/build&lt;/code> 来重新前往build 目录，或使用 &lt;code>~/xmrig/build/xmrig&lt;/code> 来替代&lt;code>./xmrig&lt;/code>。&lt;/p>
 &lt;h3 id="tips-1">Tips&lt;/h3>
 &lt;ul>

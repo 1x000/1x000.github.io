@@ -2,14 +2,7 @@
 &lt;p>我在用x64dbg研究一个程序然后突然想到如果我字符串改了会咋样，这个程序是我在网上随便找的一个Minecraft GC放到下面链接供使用&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/imViN1ad7o6h" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码:&lt;code>gy99&lt;/code>&lt;/p>
+>蓝奏云&lt;/a> 访问密码:&lt;code>gy99&lt;/code>&lt;/p>
 &lt;p>压缩密码:&lt;code>GgGg313df&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/x64dbg%E6%94%B9%E5%AD%97%E7%AC%A6%E4%B8%B2/1.webp"
@@ -125,8 +118,7 @@ data-flex-grow="195"
 data-flex-basis="469px"
 >&lt;/p>
 &lt;h2 id="实践">实践&lt;/h2>
-&lt;p>我把我的视频用&lt;code>ffmpeg&lt;/code>进行了转码和压缩具体代码看上一篇文章&lt;a class="link" href="https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall" >ffmpeg批量压缩转换视频为30FPS&lt;/a>
-然后我就开始寻找托管的方法，结果找到了&lt;code>cfpage&lt;/code>这个不限流量的东西，上传GITHUB然后访问文件名一气呵成&lt;/p>
+&lt;p>我把我的视频用&lt;code>ffmpeg&lt;/code>进行了转码和压缩具体代码看上一篇文章&lt;a class="link" href="https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall" >ffmpeg批量压缩转换视频为30FPS&lt;/a>然后我就开始寻找托管的方法，结果找到了&lt;code>cfpage&lt;/code>这个不限流量的东西，上传GITHUB然后访问文件名一气呵成&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/video-save-free/sc.webp"
 width="1163"
 height="569"
@@ -1145,34 +1137,13 @@ dplayerContainer.style.border = '';
 &lt;h2 id="环境工具">环境工具&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;code>Python 3.8.10&lt;/code>：&lt;a class="link" href="https://www.python.org/downloads/release/" target="_blank" rel="noopener"
->没有自己下载&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>没有自己下载&lt;/a>&lt;/p>
 &lt;p>&lt;code>Pyinstaller库&lt;/code>：pip install -i &lt;a class="link" href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener"
->https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-pyinstaller==5.13.0&lt;/p>
+>https://pypi.tuna.tsinghua.edu.cn/simple&lt;/a> pyinstaller==5.13.0&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
 &lt;p>&lt;code>pyinstxtractor.py&lt;/code>：&lt;a class="link" href="https://github.com/extremecoders-re/pyinstxtractor" target="_blank" rel="noopener"
->下载地址&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>下载地址&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="编译程序">编译程序&lt;/h2>
 &lt;h3 id="检查环境">检查环境&lt;/h3>
