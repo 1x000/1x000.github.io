@@ -1,499 +1,258 @@
-<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="只是一个小东西而已"><meta name=keywords content="python,golang,fdp,cfg,config"><title>FDP配置外置更新器（源码公开）</title><link rel=canonical href=https://blog.xpdbk.com/post/python-fdp-config-update/><link rel=stylesheet href=/scss/style.min.40183a81be6a74358f5608bc20c25c0d0f44ae35cb59994a1e350cfddf2f9360.css><script>function addLoadEvent(e){var t=window.onload;typeof window.onload!="function"?window.onload=e:window.onload=function(){t(),e()}}</script><meta property="og:title" content="FDP配置外置更新器（源码公开）"><meta property="og:description" content="只是一个小东西而已"><meta property="og:url" content="https://blog.xpdbk.com/post/python-fdp-config-update/"><meta property="og:site_name" content="LEl_FENG的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="FDP"><meta property="article:tag" content="更新器"><meta property="article:tag" content="配置"><meta property="article:published_time" content="2023-09-01T21:16:59+07:00"><meta property="article:modified_time" content="2023-10-01T14:32:43+00:00"><meta property="og:image" content="https://blog.xpdbk.com/img/default.webp"><meta name=twitter:site content="@HuaweiH45278254"><meta name=twitter:creator content="@HuaweiH45278254"><meta name=twitter:title content="FDP配置外置更新器（源码公开）"><meta name=twitter:description content="只是一个小东西而已"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://blog.xpdbk.com/img/default.webp"><link rel="shortcut icon" href=/favicon.ico><script async src=https://blog0.xpdbk.com/blog123 data-website-id=9551974d-ffe1-4197-8140-2019cfad63cb></script><meta name=referrer content="no-referrer"><style>.blur{color:transparent;text-shadow:0 0 8px rgba(0,0,0,.5)}.blur:hover{color:transparent;text-shadow:0 0 0 #000}.shady{color:#000;font-weight:700;box-shadow:0 -20px #000 inset;transition:all .3s ease}.shady:hover{font-weight:700;color:#fff;box-shadow:0 -20px #000 inset}</style><script>function confirmLink(e){var t=e.href,n=`您即将离开当前网站,前往:
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="只是一个小东西而已"><meta name=keywords content="python,golang,fdp,cfg,config"><title>FDP配置外置更新器（源码公开）</title><link rel=canonical href=https://blog.xpdbk.com/post/python-fdp-config-update/><link rel=stylesheet href=/scss/style.min.246444ddc0a6acd9fca23fec6621cd2418417920e58a38bffd2d55775dde900b.css><script>function addLoadEvent(e){var t=window.onload;typeof window.onload!="function"?window.onload=e:window.onload=function(){t(),e()}}</script><meta property="og:title" content="FDP配置外置更新器（源码公开）"><meta property="og:description" content="只是一个小东西而已"><meta property="og:url" content="https://blog.xpdbk.com/post/python-fdp-config-update/"><meta property="og:site_name" content="LEl_FENG的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="FDP"><meta property="article:tag" content="更新器"><meta property="article:tag" content="配置"><meta property="article:published_time" content="2023-09-01T21:16:59+07:00"><meta property="article:modified_time" content="2023-10-01T15:09:39+00:00"><meta property="og:image" content="https://blog.xpdbk.com/img/default.webp"><meta name=twitter:site content="@HuaweiH45278254"><meta name=twitter:creator content="@HuaweiH45278254"><meta name=twitter:title content="FDP配置外置更新器（源码公开）"><meta name=twitter:description content="只是一个小东西而已"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://blog.xpdbk.com/img/default.webp"><link rel="shortcut icon" href=/favicon.ico><script async src=https://blog0.xpdbk.com/blog123 data-website-id=9551974d-ffe1-4197-8140-2019cfad63cb></script><meta name=referrer content="no-referrer"><style>.blur{color:transparent;text-shadow:0 0 8px rgba(0,0,0,.5)}.blur:hover{color:transparent;text-shadow:0 0 0 #000}.shady{color:#000;font-weight:700;box-shadow:0 -20px #000 inset;transition:all .3s ease}.shady:hover{font-weight:700;color:#fff;box-shadow:0 -20px #000 inset}</style><script>function confirmLink(e){var t=e.href,n=`您即将离开当前网站,前往:
 
 ${t}
 
-确定继续前往?`;confirm(n)&&window.open(t)}document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll('a[href^="http"]');for(let t of e)/^https:\/\/blog\.xpdbk\.com/.test(t.href)||t.addEventListener("click",e=>{e.preventDefault(),confirmLink(t)})})</script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><div id=article-toolbar style=position:sticky;top:5px;z-index:1000><a href=/ class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>返回</span></a></div><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#外置fdp配置更新器python版本>外置FDP配置更新器（Python版本）</a></li><li><a href=#服务端是什么>服务端是什么</a></li><li><a href=#go语言版本>Go语言版本</a></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/%E6%8A%80%E6%9C%AF/ style=background-color:#253rdf;color:#fff>技术</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/post/python-fdp-config-update/>FDP配置外置更新器（源码公开）</a></h2><h3 class=article-subtitle>只是一个小东西而已</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>2023-09-01</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4L18.5 9.5a1.5 1.5.0 00-4-4L4 16v4"/><path d="M13.5 6.5l4 4"/></svg><time class=article-words>文章字数: 1514 字</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 4 分钟</time></div></footer></div></header><section class=article-content><section class="toc toc--inline"><h2>目录</h2><div><nav id=TableOfContents><ol><li><a href=#外置fdp配置更新器python版本>外置FDP配置更新器（Python版本）</a></li><li><a href=#服务端是什么>服务端是什么</a></li><li><a href=#go语言版本>Go语言版本</a></li></ol></nav></div></section><h2 id=外置fdp配置更新器python版本>外置FDP配置更新器（Python版本）</h2><blockquote><p>经过测试可以使用（请使用python3.8.10进行运行）</p></blockquote><p>使用了<code>HTTP BASIC验证</code>来进行验证防护，当然了还有<code>HWID验证</code>和<code>时间戳验证</code>和<code>私有浏览器UA验证</code>和<code>完整性验证</code>和<code>内存解压</code>什么的，但是都太复杂了呜呜呜</p><details><summary>点下我呀</summary><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span><span class=lnt>21
-</span><span class=lnt>22
-</span><span class=lnt>23
-</span><span class=lnt>24
-</span><span class=lnt>25
-</span><span class=lnt>26
-</span><span class=lnt>27
-</span><span class=lnt>28
-</span><span class=lnt>29
-</span><span class=lnt>30
-</span><span class=lnt>31
-</span><span class=lnt>32
-</span><span class=lnt>33
-</span><span class=lnt>34
-</span><span class=lnt>35
-</span><span class=lnt>36
-</span><span class=lnt>37
-</span><span class=lnt>38
-</span><span class=lnt>39
-</span><span class=lnt>40
-</span><span class=lnt>41
-</span><span class=lnt>42
-</span><span class=lnt>43
-</span><span class=lnt>44
-</span><span class=lnt>45
-</span><span class=lnt>46
-</span><span class=lnt>47
-</span><span class=lnt>48
-</span><span class=lnt>49
-</span><span class=lnt>50
-</span><span class=lnt>51
-</span><span class=lnt>52
-</span><span class=lnt>53
-</span><span class=lnt>54
-</span><span class=lnt>55
-</span><span class=lnt>56
-</span><span class=lnt>57
-</span><span class=lnt>58
-</span><span class=lnt>59
-</span><span class=lnt>60
-</span><span class=lnt>61
-</span><span class=lnt>62
-</span><span class=lnt>63
-</span><span class=lnt>64
-</span><span class=lnt>65
-</span><span class=lnt>66
-</span><span class=lnt>67
-</span><span class=lnt>68
-</span><span class=lnt>69
-</span><span class=lnt>70
-</span><span class=lnt>71
-</span><span class=lnt>72
-</span><span class=lnt>73
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>os</span>
-</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>requests</span>
-</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>urllib3.util</span> <span class=kn>import</span> <span class=n>Retry</span>
-</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>requests.adapters</span> <span class=kn>import</span> <span class=n>HTTPAdapter</span>
-</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>PyQt5.QtGui</span> <span class=kn>import</span> <span class=n>QIcon</span>
-</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>PyQt5.QtWidgets</span> <span class=kn>import</span> <span class=n>QApplication</span><span class=p>,</span> <span class=n>QMainWindow</span><span class=p>,</span> <span class=n>QLabel</span><span class=p>,</span> <span class=n>QPushButton</span><span class=p>,</span> <span class=n>QMessageBox</span>
-</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>PyQt5.QtCore</span> <span class=kn>import</span> <span class=n>Qt</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=n>USERNAME</span> <span class=o>=</span> <span class=s1>&#39;tRd#D9l6XVY5GFQUQDDN&#39;</span>
-</span></span><span class=line><span class=cl><span class=n>PASSWORD</span> <span class=o>=</span> <span class=s1>&#39;c!rY5iMUv8c4jGT1u0nH&#39;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=n>session</span> <span class=o>=</span> <span class=n>requests</span><span class=o>.</span><span class=n>Session</span><span class=p>()</span>
-</span></span><span class=line><span class=cl><span class=n>retry</span> <span class=o>=</span> <span class=n>Retry</span><span class=p>(</span><span class=n>total</span><span class=o>=</span><span class=mi>5</span><span class=p>,</span> <span class=n>backoff_factor</span><span class=o>=</span><span class=mf>0.1</span><span class=p>,</span> <span class=n>status_forcelist</span><span class=o>=</span><span class=p>[</span><span class=mi>500</span><span class=p>,</span> <span class=mi>502</span><span class=p>,</span> <span class=mi>503</span><span class=p>,</span> <span class=mi>504</span><span class=p>])</span>
-</span></span><span class=line><span class=cl><span class=n>adapter</span> <span class=o>=</span> <span class=n>HTTPAdapter</span><span class=p>(</span><span class=n>max_retries</span><span class=o>=</span><span class=n>retry</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=n>session</span><span class=o>.</span><span class=n>mount</span><span class=p>(</span><span class=s1>&#39;https://&#39;</span><span class=p>,</span> <span class=n>adapter</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>MainWindow</span><span class=p>(</span><span class=n>QMainWindow</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=o>=</span><span class=kc>None</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>        <span class=nb>super</span><span class=p>()</span><span class=o>.</span><span class=fm>__init__</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>setWindowTitle</span><span class=p>(</span><span class=s1>&#39;FDP配置文件在线更新&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>setGeometry</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>300</span><span class=p>,</span> <span class=mi>150</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>setFixedSize</span><span class=p>(</span><span class=mi>300</span><span class=p>,</span> <span class=mi>150</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>qtRectangle</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>frameGeometry</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>        <span class=n>centerPoint</span> <span class=o>=</span> <span class=n>QApplication</span><span class=o>.</span><span class=n>desktop</span><span class=p>()</span><span class=o>.</span><span class=n>availableGeometry</span><span class=p>()</span><span class=o>.</span><span class=n>center</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>        <span class=n>qtRectangle</span><span class=o>.</span><span class=n>moveCenter</span><span class=p>(</span><span class=n>centerPoint</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>move</span><span class=p>(</span><span class=n>qtRectangle</span><span class=o>.</span><span class=n>topLeft</span><span class=p>())</span>
-</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>setWindowIcon</span><span class=p>(</span><span class=n>QIcon</span><span class=p>(</span><span class=s1>&#39;avatar.jpg&#39;</span><span class=p>))</span>
-</span></span><span class=line><span class=cl>        <span class=n>author_label</span> <span class=o>=</span> <span class=n>QLabel</span><span class=p>(</span><span class=bp>self</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>author_label</span><span class=o>.</span><span class=n>setText</span><span class=p>(</span><span class=s2>&#34;&lt;a href=&#39;https://blog.xpdbk.com&#39;&gt;© LEl_FENG&lt;/a&gt;&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>author_label</span><span class=o>.</span><span class=n>setOpenExternalLinks</span><span class=p>(</span><span class=kc>True</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>author_label</span><span class=o>.</span><span class=n>setAlignment</span><span class=p>(</span><span class=n>Qt</span><span class=o>.</span><span class=n>AlignRight</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>author_label</span><span class=o>.</span><span class=n>setGeometry</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span> <span class=mi>10</span><span class=p>,</span> <span class=mi>90</span><span class=p>,</span> <span class=mi>20</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>welcome_label</span> <span class=o>=</span> <span class=n>QLabel</span><span class=p>(</span><span class=bp>self</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>welcome_label</span><span class=o>.</span><span class=n>setText</span><span class=p>(</span><span class=s1>&#39;&lt;h2&gt;欢迎使用OVO&lt;/h2&gt;&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>welcome_label</span><span class=o>.</span><span class=n>setAlignment</span><span class=p>(</span><span class=n>Qt</span><span class=o>.</span><span class=n>AlignLeft</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>welcome_label</span><span class=o>.</span><span class=n>setGeometry</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span> <span class=mi>10</span><span class=p>,</span> <span class=mi>150</span><span class=p>,</span> <span class=mi>30</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>label</span> <span class=o>=</span> <span class=n>QLabel</span><span class=p>(</span><span class=bp>self</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>label</span><span class=o>.</span><span class=n>setText</span><span class=p>(</span><span class=s1>&#39;开始更新FDP配置&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>label</span><span class=o>.</span><span class=n>move</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=mi>50</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>button</span> <span class=o>=</span> <span class=n>QPushButton</span><span class=p>(</span><span class=s1>&#39;更新配置文件&#39;</span><span class=p>,</span> <span class=bp>self</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>button</span><span class=o>.</span><span class=n>move</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=mi>90</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>button</span><span class=o>.</span><span class=n>clicked</span><span class=o>.</span><span class=n>connect</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>download_confirmation</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>download_confirmation</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>        <span class=n>reply</span> <span class=o>=</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>question</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=s1>&#39;确认下载&#39;</span><span class=p>,</span> <span class=s1>&#39;确定要更新配置文件吗，可能会覆盖你的配置文件&#39;</span><span class=p>,</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>Yes</span> <span class=o>|</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>No</span><span class=p>,</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>No</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>reply</span> <span class=o>==</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>Yes</span><span class=p>:</span>
-</span></span><span class=line><span class=cl>            <span class=n>configs_dir</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=s1>&#39;.minecraft&#39;</span><span class=p>,</span> <span class=s1>&#39;versions&#39;</span><span class=p>,</span> <span class=s1>&#39;FDP&#39;</span><span class=p>,</span> <span class=s1>&#39;FDPCLIENT-1.8&#39;</span><span class=p>,</span> <span class=s1>&#39;configs&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>            <span class=k>for</span> <span class=n>file</span> <span class=ow>in</span> <span class=n>os</span><span class=o>.</span><span class=n>listdir</span><span class=p>(</span><span class=n>configs_dir</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=n>file</span><span class=o>.</span><span class=n>endswith</span><span class=p>(</span><span class=s1>&#39;.json&#39;</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>                    <span class=n>os</span><span class=o>.</span><span class=n>remove</span><span class=p>(</span><span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>configs_dir</span><span class=p>,</span> <span class=n>file</span><span class=p>))</span>
-</span></span><span class=line><span class=cl>            <span class=n>download_all_jsons</span><span class=p>(</span><span class=s1>&#39;https://config-pass.lel-feng.workers.dev/fite.txt&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>download_json</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>save_path</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>    <span class=n>response</span> <span class=o>=</span> <span class=n>session</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>auth</span><span class=o>=</span><span class=p>(</span><span class=n>USERNAME</span><span class=p>,</span> <span class=n>PASSWORD</span><span class=p>))</span>
-</span></span><span class=line><span class=cl>    <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=n>save_path</span><span class=p>,</span> <span class=s1>&#39;wb&#39;</span><span class=p>)</span> <span class=k>as</span> <span class=n>out_file</span><span class=p>:</span>
-</span></span><span class=line><span class=cl>        <span class=n>out_file</span><span class=o>.</span><span class=n>write</span><span class=p>(</span><span class=n>response</span><span class=o>.</span><span class=n>content</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>download_all_jsons</span><span class=p>(</span><span class=n>url</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>    <span class=n>response</span> <span class=o>=</span> <span class=n>session</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>auth</span><span class=o>=</span><span class=p>(</span><span class=n>USERNAME</span><span class=p>,</span> <span class=n>PASSWORD</span><span class=p>))</span>
-</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>response</span><span class=o>.</span><span class=n>status_code</span> <span class=o>==</span> <span class=mi>200</span><span class=p>:</span>
-</span></span><span class=line><span class=cl>        <span class=n>content</span> <span class=o>=</span> <span class=n>response</span><span class=o>.</span><span class=n>content</span><span class=o>.</span><span class=n>decode</span><span class=p>(</span><span class=s1>&#39;utf-8&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        <span class=n>json_urls</span> <span class=o>=</span> <span class=p>[</span><span class=n>line</span><span class=o>.</span><span class=n>strip</span><span class=p>()</span> <span class=k>for</span> <span class=n>line</span> <span class=ow>in</span> <span class=n>content</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s1>&#39;</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>)</span> <span class=k>if</span> <span class=n>line</span><span class=o>.</span><span class=n>strip</span><span class=p>()]</span>
-</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>json_url</span> <span class=ow>in</span> <span class=n>json_urls</span><span class=p>:</span>
-</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>json_url</span><span class=o>.</span><span class=n>endswith</span><span class=p>(</span><span class=s1>&#39;.json&#39;</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>                <span class=n>json_filename</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>basename</span><span class=p>(</span><span class=n>json_url</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>                <span class=n>save_path</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=s1>&#39;.minecraft&#39;</span><span class=p>,</span> <span class=s1>&#39;versions&#39;</span><span class=p>,</span> <span class=s1>&#39;FDP&#39;</span><span class=p>,</span> <span class=s1>&#39;FDPCLIENT-1.8&#39;</span><span class=p>,</span> <span class=s1>&#39;configs&#39;</span><span class=p>,</span> <span class=n>json_filename</span><span class=p>)</span><span class=o>.</span><span class=n>replace</span><span class=p>(</span><span class=s1>&#39;/&#39;</span><span class=p>,</span> <span class=s1>&#39;</span><span class=se>\\</span><span class=s1>&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>                <span class=n>download_json</span><span class=p>(</span><span class=n>json_url</span><span class=p>,</span> <span class=n>save_path</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s1>&#39;__main__&#39;</span><span class=p>:</span>
-</span></span><span class=line><span class=cl>    <span class=n>app</span> <span class=o>=</span> <span class=n>QApplication</span><span class=p>([])</span>
-</span></span><span class=line><span class=cl>    <span class=n>window</span> <span class=o>=</span> <span class=n>MainWindow</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>    <span class=n>window</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=o>.</span><span class=n>exec_</span><span class=p>()</span>
-</span></span></code></pre></td></tr></table></div></div></details><h2 id=服务端是什么>服务端是什么</h2><p>CloudFlare Worker的反代脚本</p><details><summary>点下我呀</summary><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span><span class=lnt>21
-</span><span class=lnt>22
-</span><span class=lnt>23
-</span><span class=lnt>24
-</span><span class=lnt>25
-</span><span class=lnt>26
-</span><span class=lnt>27
-</span><span class=lnt>28
-</span><span class=lnt>29
-</span><span class=lnt>30
-</span><span class=lnt>31
-</span><span class=lnt>32
-</span><span class=lnt>33
-</span><span class=lnt>34
-</span><span class=lnt>35
-</span><span class=lnt>36
-</span><span class=lnt>37
-</span><span class=lnt>38
-</span><span class=lnt>39
-</span><span class=lnt>40
-</span><span class=lnt>41
-</span><span class=lnt>42
-</span><span class=lnt>43
-</span><span class=lnt>44
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=nx>addEventListener</span><span class=p>(</span><span class=s1>&#39;fetch&#39;</span><span class=p>,</span> <span class=nx>event</span> <span class=p>=&gt;</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=nx>event</span><span class=p>.</span><span class=nx>respondWith</span><span class=p>(</span><span class=nx>handleRequest</span><span class=p>(</span><span class=nx>event</span><span class=p>.</span><span class=nx>request</span><span class=p>))</span>
-</span></span><span class=line><span class=cl><span class=p>})</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kr>async</span> <span class=kd>function</span> <span class=nx>handleRequest</span><span class=p>(</span><span class=nx>request</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=c1>// 设置 HTTP 基本身份验证的用户名和密码
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>USERNAME</span> <span class=o>=</span> <span class=s1>&#39;tRd#D9l6XVY5GFQUQDDN&#39;</span>
-</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>PASSWORD</span> <span class=o>=</span> <span class=s1>&#39;c!rY5iMUv8c4jGT1u0nH&#39;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>  <span class=c1>// 检查请求是否包含正确的身份验证凭据
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>authHeader</span> <span class=o>=</span> <span class=nx>request</span><span class=p>.</span><span class=nx>headers</span><span class=p>.</span><span class=nx>get</span><span class=p>(</span><span class=s1>&#39;Authorization&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=nx>authHeader</span> <span class=o>||</span> <span class=o>!</span><span class=nx>checkAuth</span><span class=p>(</span><span class=nx>authHeader</span><span class=p>,</span><span class=nx>USERNAME</span><span class=p>,</span><span class=nx>PASSWORD</span><span class=p>))</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=k>new</span> <span class=nx>Response</span><span class=p>(</span><span class=s1>&#39;Unauthorized&#39;</span><span class=p>,</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=mi>401</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>      <span class=nx>headers</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=s1>&#39;WWW-Authenticate&#39;</span><span class=o>:</span> <span class=s1>&#39;Basic realm=&#34;Access to the requested resource&#34;&#39;</span>
-</span></span><span class=line><span class=cl>      <span class=p>}</span>
-</span></span><span class=line><span class=cl>    <span class=p>})</span>
-</span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>  <span class=c1>// 设置源服务器的 URL
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>originUrl</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>URL</span><span class=p>(</span><span class=nx>request</span><span class=p>.</span><span class=nx>url</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>  <span class=nx>originUrl</span><span class=p>.</span><span class=nx>hostname</span> <span class=o>=</span> <span class=s1>&#39;wjgl.pages.dev&#39;</span>
-</span></span><span class=line><span class=cl>  <span class=nx>originUrl</span><span class=p>.</span><span class=nx>pathname</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>URL</span><span class=p>(</span><span class=nx>request</span><span class=p>.</span><span class=nx>url</span><span class=p>).</span><span class=nx>pathname</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>  <span class=c1>// 使用更新后的 URL 创建新请求
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>newRequest</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>Request</span><span class=p>(</span><span class=nx>originUrl</span><span class=p>,</span> <span class=nx>request</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>  <span class=c1>// 从源服务器获取响应
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>response</span> <span class=o>=</span> <span class=kr>await</span> <span class=nx>fetch</span><span class=p>(</span><span class=nx>newRequest</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>  <span class=c1>// 将响应返回给客户端
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>return</span> <span class=nx>response</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>checkAuth</span><span class=p>(</span><span class=nx>authHeader</span><span class=p>,</span> <span class=nx>username</span><span class=p>,</span> <span class=nx>password</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=c1>// 解码身份验证头
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=p>[</span><span class=nx>type</span><span class=p>,</span> <span class=nx>credentials</span><span class=p>]</span> <span class=o>=</span> <span class=nx>authHeader</span><span class=p>.</span><span class=nx>split</span><span class=p>(</span><span class=s1>&#39; &#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>type</span> <span class=o>!==</span> <span class=s1>&#39;Basic&#39;</span><span class=p>)</span> <span class=k>return</span> <span class=kc>false</span>
-</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>decodedCredentials</span> <span class=o>=</span> <span class=nx>atob</span><span class=p>(</span><span class=nx>credentials</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>  
-</span></span><span class=line><span class=cl>  <span class=c1>// 检查提供的凭据是否与预期的用户名和密码匹配
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>return</span> <span class=nx>decodedCredentials</span> <span class=o>===</span> <span class=sb>`</span><span class=si>${</span><span class=nx>username</span><span class=si>}</span><span class=sb>:</span><span class=si>${</span><span class=nx>password</span><span class=si>}</span><span class=sb>`</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div></details><h2 id=go语言版本>Go语言版本</h2><p>Golang1.20.7</p><p><details><summary>点下我呀</summary><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
-</span><span class=lnt>  2
-</span><span class=lnt>  3
-</span><span class=lnt>  4
-</span><span class=lnt>  5
-</span><span class=lnt>  6
-</span><span class=lnt>  7
-</span><span class=lnt>  8
-</span><span class=lnt>  9
-</span><span class=lnt> 10
-</span><span class=lnt> 11
-</span><span class=lnt> 12
-</span><span class=lnt> 13
-</span><span class=lnt> 14
-</span><span class=lnt> 15
-</span><span class=lnt> 16
-</span><span class=lnt> 17
-</span><span class=lnt> 18
-</span><span class=lnt> 19
-</span><span class=lnt> 20
-</span><span class=lnt> 21
-</span><span class=lnt> 22
-</span><span class=lnt> 23
-</span><span class=lnt> 24
-</span><span class=lnt> 25
-</span><span class=lnt> 26
-</span><span class=lnt> 27
-</span><span class=lnt> 28
-</span><span class=lnt> 29
-</span><span class=lnt> 30
-</span><span class=lnt> 31
-</span><span class=lnt> 32
-</span><span class=lnt> 33
-</span><span class=lnt> 34
-</span><span class=lnt> 35
-</span><span class=lnt> 36
-</span><span class=lnt> 37
-</span><span class=lnt> 38
-</span><span class=lnt> 39
-</span><span class=lnt> 40
-</span><span class=lnt> 41
-</span><span class=lnt> 42
-</span><span class=lnt> 43
-</span><span class=lnt> 44
-</span><span class=lnt> 45
-</span><span class=lnt> 46
-</span><span class=lnt> 47
-</span><span class=lnt> 48
-</span><span class=lnt> 49
-</span><span class=lnt> 50
-</span><span class=lnt> 51
-</span><span class=lnt> 52
-</span><span class=lnt> 53
-</span><span class=lnt> 54
-</span><span class=lnt> 55
-</span><span class=lnt> 56
-</span><span class=lnt> 57
-</span><span class=lnt> 58
-</span><span class=lnt> 59
-</span><span class=lnt> 60
-</span><span class=lnt> 61
-</span><span class=lnt> 62
-</span><span class=lnt> 63
-</span><span class=lnt> 64
-</span><span class=lnt> 65
-</span><span class=lnt> 66
-</span><span class=lnt> 67
-</span><span class=lnt> 68
-</span><span class=lnt> 69
-</span><span class=lnt> 70
-</span><span class=lnt> 71
-</span><span class=lnt> 72
-</span><span class=lnt> 73
-</span><span class=lnt> 74
-</span><span class=lnt> 75
-</span><span class=lnt> 76
-</span><span class=lnt> 77
-</span><span class=lnt> 78
-</span><span class=lnt> 79
-</span><span class=lnt> 80
-</span><span class=lnt> 81
-</span><span class=lnt> 82
-</span><span class=lnt> 83
-</span><span class=lnt> 84
-</span><span class=lnt> 85
-</span><span class=lnt> 86
-</span><span class=lnt> 87
-</span><span class=lnt> 88
-</span><span class=lnt> 89
-</span><span class=lnt> 90
-</span><span class=lnt> 91
-</span><span class=lnt> 92
-</span><span class=lnt> 93
-</span><span class=lnt> 94
-</span><span class=lnt> 95
-</span><span class=lnt> 96
-</span><span class=lnt> 97
-</span><span class=lnt> 98
-</span><span class=lnt> 99
-</span><span class=lnt>100
-</span><span class=lnt>101
-</span><span class=lnt>102
-</span><span class=lnt>103
-</span><span class=lnt>104
-</span><span class=lnt>105
-</span><span class=lnt>106
-</span><span class=lnt>107
-</span><span class=lnt>108
-</span><span class=lnt>109
-</span><span class=lnt>110
-</span><span class=lnt>111
-</span><span class=lnt>112
-</span><span class=lnt>113
-</span><span class=lnt>114
-</span><span class=lnt>115
-</span><span class=lnt>116
-</span><span class=lnt>117
-</span><span class=lnt>118
-</span><span class=lnt>119
-</span><span class=lnt>120
-</span><span class=lnt>121
-</span><span class=lnt>122
-</span><span class=lnt>123
-</span><span class=lnt>124
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=cl><span class=kn>package</span> <span class=nx>main</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=p>(</span>
-</span></span><span class=line><span class=cl>	<span class=s>&#34;io&#34;</span>
-</span></span><span class=line><span class=cl>	<span class=s>&#34;net/http&#34;</span>
-</span></span><span class=line><span class=cl>	<span class=s>&#34;os&#34;</span>
-</span></span><span class=line><span class=cl>	<span class=s>&#34;path/filepath&#34;</span>
-</span></span><span class=line><span class=cl>	<span class=s>&#34;strings&#34;</span>
-</span></span><span class=line><span class=cl>	<span class=s>&#34;time&#34;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=s>&#34;github.com/andlabs/ui&#34;</span>
-</span></span><span class=line><span class=cl><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>var</span> <span class=p>(</span>
-</span></span><span class=line><span class=cl>	<span class=nx>mainwin</span> <span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Window</span>
-</span></span><span class=line><span class=cl><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>setupUI</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=nx>mainwin</span> <span class=p>=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewWindow</span><span class=p>(</span><span class=s>&#34;FDP配置文件在线更新&#34;</span><span class=p>,</span> <span class=mi>300</span><span class=p>,</span> <span class=mi>150</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>mainwin</span><span class=p>.</span><span class=nf>OnClosing</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Window</span><span class=p>)</span> <span class=kt>bool</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nx>ui</span><span class=p>.</span><span class=nf>Quit</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>		<span class=k>return</span> <span class=kc>true</span>
-</span></span><span class=line><span class=cl>	<span class=p>})</span>
-</span></span><span class=line><span class=cl>	<span class=nx>ui</span><span class=p>.</span><span class=nf>OnShouldQuit</span><span class=p>(</span><span class=kd>func</span><span class=p>()</span> <span class=kt>bool</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nx>mainwin</span><span class=p>.</span><span class=nf>Destroy</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>		<span class=k>return</span> <span class=kc>true</span>
-</span></span><span class=line><span class=cl>	<span class=p>})</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>vbox</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewVerticalBox</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>	<span class=nx>vbox</span><span class=p>.</span><span class=nf>SetPadded</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>hbox</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewHorizontalBox</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>SetPadded</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>vbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>hbox</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>welcomeLabel</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewLabel</span><span class=p>(</span><span class=s>&#34;欢迎使用OVO&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>welcomeLabel</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>updateLabel</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewLabel</span><span class=p>(</span><span class=s>&#34;开始更新FDP配置&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>vbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>updateLabel</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>button</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewButton</span><span class=p>(</span><span class=s>&#34;更新配置文件&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>button</span><span class=p>.</span><span class=nf>OnClicked</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Button</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nf>downloadConfirmation</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>	<span class=p>})</span>
-</span></span><span class=line><span class=cl>	<span class=nx>vbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>button</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>mainwin</span><span class=p>.</span><span class=nf>SetChild</span><span class=p>(</span><span class=nx>vbox</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>mainwin</span><span class=p>.</span><span class=nf>SetMargined</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>downloadConfirmation</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=nx>window</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewWindow</span><span class=p>(</span><span class=s>&#34;确认下载&#34;</span><span class=p>,</span> <span class=mi>100</span><span class=p>,</span> <span class=mi>50</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>box</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewVerticalBox</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>	<span class=nx>box</span><span class=p>.</span><span class=nf>SetPadded</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>box</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>ui</span><span class=p>.</span><span class=nf>NewLabel</span><span class=p>(</span><span class=s>&#34;确定要更新配置文件吗，可能会覆盖你的配置文件&#34;</span><span class=p>),</span> <span class=kc>false</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>hbox</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewHorizontalBox</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>SetPadded</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>box</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>hbox</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>buttonYes</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewButton</span><span class=p>(</span><span class=s>&#34;Yes&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>buttonYes</span><span class=p>.</span><span class=nf>OnClicked</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Button</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nx>window</span><span class=p>.</span><span class=nf>Destroy</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>		<span class=nx>configsDir</span> <span class=o>:=</span> <span class=nx>filepath</span><span class=p>.</span><span class=nf>Join</span><span class=p>(</span><span class=s>&#34;.minecraft&#34;</span><span class=p>,</span> <span class=s>&#34;versions&#34;</span><span class=p>,</span> <span class=s>&#34;FDP&#34;</span><span class=p>,</span> <span class=s>&#34;FDPCLIENT-1.8&#34;</span><span class=p>,</span> <span class=s>&#34;configs&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>		<span class=nx>files</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nf>ReadDir</span><span class=p>(</span><span class=nx>configsDir</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>		<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>file</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>files</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>			<span class=k>if</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>HasSuffix</span><span class=p>(</span><span class=nx>file</span><span class=p>.</span><span class=nf>Name</span><span class=p>(),</span> <span class=s>&#34;.json&#34;</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>				<span class=nx>os</span><span class=p>.</span><span class=nf>Remove</span><span class=p>(</span><span class=nx>filepath</span><span class=p>.</span><span class=nf>Join</span><span class=p>(</span><span class=nx>configsDir</span><span class=p>,</span> <span class=nx>file</span><span class=p>.</span><span class=nf>Name</span><span class=p>()))</span>
-</span></span><span class=line><span class=cl>			<span class=p>}</span>
-</span></span><span class=line><span class=cl>		<span class=p>}</span>
-</span></span><span class=line><span class=cl>		<span class=nf>downloadAllJSONs</span><span class=p>(</span><span class=s>&#34;https://tr7mur567m8r6573n67.xpdbk.com/fite.txt&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=p>})</span>
-</span></span><span class=line><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>buttonYes</span><span class=p>,</span> <span class=kc>true</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>buttonNo</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewButton</span><span class=p>(</span><span class=s>&#34;No&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>buttonNo</span><span class=p>.</span><span class=nf>OnClicked</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Button</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nx>window</span><span class=p>.</span><span class=nf>Destroy</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>	<span class=p>})</span>
-</span></span><span class=line><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>buttonNo</span><span class=p>,</span> <span class=kc>true</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>window</span><span class=p>.</span><span class=nf>SetChild</span><span class=p>(</span><span class=nx>box</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=nx>window</span><span class=p>.</span><span class=nf>Show</span><span class=p>()</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>downloadAllJSONs</span><span class=p>(</span><span class=nx>url</span> <span class=kt>string</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=nx>resp</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nf>Get</span><span class=p>(</span><span class=nx>url</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nb>panic</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=p>}</span>
-</span></span><span class=line><span class=cl>	<span class=k>defer</span> <span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>.</span><span class=nf>Close</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>body</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>io</span><span class=p>.</span><span class=nf>ReadAll</span><span class=p>(</span><span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nb>panic</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>jsonURLs</span> <span class=o>:=</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>Split</span><span class=p>(</span><span class=nb>string</span><span class=p>(</span><span class=nx>body</span><span class=p>),</span> <span class=s>&#34;\n&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>jsonURL</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>jsonURLs</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nx>jsonURL</span> <span class=p>=</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>TrimSpace</span><span class=p>(</span><span class=nx>jsonURL</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>		<span class=k>if</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>HasSuffix</span><span class=p>(</span><span class=nx>jsonURL</span><span class=p>,</span> <span class=s>&#34;.json&#34;</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>			<span class=nx>jsonFilename</span> <span class=o>:=</span> <span class=nx>filepath</span><span class=p>.</span><span class=nf>Base</span><span class=p>(</span><span class=nx>jsonURL</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>			<span class=nx>savePath</span> <span class=o>:=</span> <span class=nx>filepath</span><span class=p>.</span><span class=nf>Join</span><span class=p>(</span><span class=s>&#34;.minecraft&#34;</span><span class=p>,</span> <span class=s>&#34;versions&#34;</span><span class=p>,</span> <span class=s>&#34;FDP&#34;</span><span class=p>,</span> <span class=s>&#34;FDPCLIENT-1.8&#34;</span><span class=p>,</span> <span class=s>&#34;configs&#34;</span><span class=p>,</span> <span class=nx>jsonFilename</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>			<span class=nf>downloadJSON</span><span class=p>(</span><span class=nx>jsonURL</span><span class=p>,</span> <span class=nx>savePath</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>		<span class=p>}</span>
-</span></span><span class=line><span class=cl>	<span class=p>}</span>
-</span></span><span class=line><span class=cl>	<span class=nx>time</span><span class=p>.</span><span class=nf>AfterFunc</span><span class=p>(</span><span class=mi>100</span><span class=o>*</span><span class=nx>time</span><span class=p>.</span><span class=nx>Second</span><span class=p>,</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span> <span class=nx>os</span><span class=p>.</span><span class=nf>Exit</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span> <span class=p>})</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>downloadJSON</span><span class=p>(</span><span class=nx>url</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>savePath</span> <span class=kt>string</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=nx>resp</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nf>Get</span><span class=p>(</span><span class=nx>url</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nb>panic</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=p>}</span>
-</span></span><span class=line><span class=cl>	<span class=k>defer</span> <span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>.</span><span class=nf>Close</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>outFile</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nf>Create</span><span class=p>(</span><span class=nx>savePath</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>		<span class=nb>panic</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	<span class=p>}</span>
-</span></span><span class=line><span class=cl>	<span class=k>defer</span> <span class=nx>outFile</span><span class=p>.</span><span class=nf>Close</span><span class=p>()</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>	<span class=nx>io</span><span class=p>.</span><span class=nf>Copy</span><span class=p>(</span><span class=nx>outFile</span><span class=p>,</span> <span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>	<span class=nx>ui</span><span class=p>.</span><span class=nf>Main</span><span class=p>(</span><span class=nx>setupUI</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div></details>完</p></section><footer class=article-footer><section class=article-tags><a href=/tags/fdp/>FDP</a>
+确定继续前往?`;confirm(n)&&window.open(t)}document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll('a[href^="http"]');for(let t of e)/^https:\/\/blog\.xpdbk\.com/.test(t.href)||t.addEventListener("click",e=>{e.preventDefault(),confirmLink(t)})})</script><link rel=apple-touch-icon sizes=180x180 href=https://cdn.jsdelivr.net/gh/1x000/zdzy/tp/avatar.jpg></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><div id=article-toolbar style=position:sticky;top:5px;z-index:1000><a href=/ class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>返回</span></a></div><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#外置fdp配置更新器python版本>外置FDP配置更新器（Python版本）</a></li><li><a href=#服务端是什么>服务端是什么</a></li><li><a href=#go语言版本>Go语言版本</a></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/%E6%8A%80%E6%9C%AF/ style=background-color:#253rdf;color:#fff>技术</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/post/python-fdp-config-update/>FDP配置外置更新器（源码公开）</a></h2><h3 class=article-subtitle>只是一个小东西而已</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>2023-09-01</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4L18.5 9.5a1.5 1.5.0 00-4-4L4 16v4"/><path d="M13.5 6.5l4 4"/></svg><time class=article-words>文章字数: 1476 字</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 3 分钟</time></div></footer></div></header><section class=article-content><section class="toc toc--inline"><h2>目录</h2><div><nav id=TableOfContents><ol><li><a href=#外置fdp配置更新器python版本>外置FDP配置更新器（Python版本）</a></li><li><a href=#服务端是什么>服务端是什么</a></li><li><a href=#go语言版本>Go语言版本</a></li></ol></nav></div></section><h2 id=外置fdp配置更新器python版本>外置FDP配置更新器（Python版本）</h2><blockquote><p>经过测试可以使用（请使用python3.8.10进行运行）</p></blockquote><p>使用了<code>HTTP BASIC验证</code>来进行验证防护，当然了还有<code>HWID验证</code>和<code>时间戳验证</code>和<code>私有浏览器UA验证</code>和<code>完整性验证</code>和<code>内存解压</code>什么的，但是都太复杂了呜呜呜</p><details><summary>点下我呀</summary><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=ln> 1</span><span class=cl><span class=kn>import</span> <span class=nn>os</span>
+</span></span><span class=line><span class=ln> 2</span><span class=cl><span class=kn>import</span> <span class=nn>requests</span>
+</span></span><span class=line><span class=ln> 3</span><span class=cl><span class=kn>from</span> <span class=nn>urllib3.util</span> <span class=kn>import</span> <span class=n>Retry</span>
+</span></span><span class=line><span class=ln> 4</span><span class=cl><span class=kn>from</span> <span class=nn>requests.adapters</span> <span class=kn>import</span> <span class=n>HTTPAdapter</span>
+</span></span><span class=line><span class=ln> 5</span><span class=cl><span class=kn>from</span> <span class=nn>PyQt5.QtGui</span> <span class=kn>import</span> <span class=n>QIcon</span>
+</span></span><span class=line><span class=ln> 6</span><span class=cl><span class=kn>from</span> <span class=nn>PyQt5.QtWidgets</span> <span class=kn>import</span> <span class=n>QApplication</span><span class=p>,</span> <span class=n>QMainWindow</span><span class=p>,</span> <span class=n>QLabel</span><span class=p>,</span> <span class=n>QPushButton</span><span class=p>,</span> <span class=n>QMessageBox</span>
+</span></span><span class=line><span class=ln> 7</span><span class=cl><span class=kn>from</span> <span class=nn>PyQt5.QtCore</span> <span class=kn>import</span> <span class=n>Qt</span>
+</span></span><span class=line><span class=ln> 8</span><span class=cl>
+</span></span><span class=line><span class=ln> 9</span><span class=cl><span class=n>USERNAME</span> <span class=o>=</span> <span class=s1>&#39;tRd#D9l6XVY5GFQUQDDN&#39;</span>
+</span></span><span class=line><span class=ln>10</span><span class=cl><span class=n>PASSWORD</span> <span class=o>=</span> <span class=s1>&#39;c!rY5iMUv8c4jGT1u0nH&#39;</span>
+</span></span><span class=line><span class=ln>11</span><span class=cl>
+</span></span><span class=line><span class=ln>12</span><span class=cl><span class=n>session</span> <span class=o>=</span> <span class=n>requests</span><span class=o>.</span><span class=n>Session</span><span class=p>()</span>
+</span></span><span class=line><span class=ln>13</span><span class=cl><span class=n>retry</span> <span class=o>=</span> <span class=n>Retry</span><span class=p>(</span><span class=n>total</span><span class=o>=</span><span class=mi>5</span><span class=p>,</span> <span class=n>backoff_factor</span><span class=o>=</span><span class=mf>0.1</span><span class=p>,</span> <span class=n>status_forcelist</span><span class=o>=</span><span class=p>[</span><span class=mi>500</span><span class=p>,</span> <span class=mi>502</span><span class=p>,</span> <span class=mi>503</span><span class=p>,</span> <span class=mi>504</span><span class=p>])</span>
+</span></span><span class=line><span class=ln>14</span><span class=cl><span class=n>adapter</span> <span class=o>=</span> <span class=n>HTTPAdapter</span><span class=p>(</span><span class=n>max_retries</span><span class=o>=</span><span class=n>retry</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>15</span><span class=cl><span class=n>session</span><span class=o>.</span><span class=n>mount</span><span class=p>(</span><span class=s1>&#39;https://&#39;</span><span class=p>,</span> <span class=n>adapter</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>16</span><span class=cl>
+</span></span><span class=line><span class=ln>17</span><span class=cl><span class=k>class</span> <span class=nc>MainWindow</span><span class=p>(</span><span class=n>QMainWindow</span><span class=p>):</span>
+</span></span><span class=line><span class=ln>18</span><span class=cl>    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=o>=</span><span class=kc>None</span><span class=p>):</span>
+</span></span><span class=line><span class=ln>19</span><span class=cl>        <span class=nb>super</span><span class=p>()</span><span class=o>.</span><span class=fm>__init__</span><span class=p>()</span>
+</span></span><span class=line><span class=ln>20</span><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>setWindowTitle</span><span class=p>(</span><span class=s1>&#39;FDP配置文件在线更新&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>21</span><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>setGeometry</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>300</span><span class=p>,</span> <span class=mi>150</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>22</span><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>setFixedSize</span><span class=p>(</span><span class=mi>300</span><span class=p>,</span> <span class=mi>150</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>23</span><span class=cl>        <span class=n>qtRectangle</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>frameGeometry</span><span class=p>()</span>
+</span></span><span class=line><span class=ln>24</span><span class=cl>        <span class=n>centerPoint</span> <span class=o>=</span> <span class=n>QApplication</span><span class=o>.</span><span class=n>desktop</span><span class=p>()</span><span class=o>.</span><span class=n>availableGeometry</span><span class=p>()</span><span class=o>.</span><span class=n>center</span><span class=p>()</span>
+</span></span><span class=line><span class=ln>25</span><span class=cl>        <span class=n>qtRectangle</span><span class=o>.</span><span class=n>moveCenter</span><span class=p>(</span><span class=n>centerPoint</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>26</span><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>move</span><span class=p>(</span><span class=n>qtRectangle</span><span class=o>.</span><span class=n>topLeft</span><span class=p>())</span>
+</span></span><span class=line><span class=ln>27</span><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>setWindowIcon</span><span class=p>(</span><span class=n>QIcon</span><span class=p>(</span><span class=s1>&#39;avatar.jpg&#39;</span><span class=p>))</span>
+</span></span><span class=line><span class=ln>28</span><span class=cl>        <span class=n>author_label</span> <span class=o>=</span> <span class=n>QLabel</span><span class=p>(</span><span class=bp>self</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>29</span><span class=cl>        <span class=n>author_label</span><span class=o>.</span><span class=n>setText</span><span class=p>(</span><span class=s2>&#34;&lt;a href=&#39;https://blog.xpdbk.com&#39;&gt;© LEl_FENG&lt;/a&gt;&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>30</span><span class=cl>        <span class=n>author_label</span><span class=o>.</span><span class=n>setOpenExternalLinks</span><span class=p>(</span><span class=kc>True</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>31</span><span class=cl>        <span class=n>author_label</span><span class=o>.</span><span class=n>setAlignment</span><span class=p>(</span><span class=n>Qt</span><span class=o>.</span><span class=n>AlignRight</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>32</span><span class=cl>        <span class=n>author_label</span><span class=o>.</span><span class=n>setGeometry</span><span class=p>(</span><span class=mi>200</span><span class=p>,</span> <span class=mi>10</span><span class=p>,</span> <span class=mi>90</span><span class=p>,</span> <span class=mi>20</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>33</span><span class=cl>        <span class=n>welcome_label</span> <span class=o>=</span> <span class=n>QLabel</span><span class=p>(</span><span class=bp>self</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>34</span><span class=cl>        <span class=n>welcome_label</span><span class=o>.</span><span class=n>setText</span><span class=p>(</span><span class=s1>&#39;&lt;h2&gt;欢迎使用OVO&lt;/h2&gt;&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>35</span><span class=cl>        <span class=n>welcome_label</span><span class=o>.</span><span class=n>setAlignment</span><span class=p>(</span><span class=n>Qt</span><span class=o>.</span><span class=n>AlignLeft</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>36</span><span class=cl>        <span class=n>welcome_label</span><span class=o>.</span><span class=n>setGeometry</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span> <span class=mi>10</span><span class=p>,</span> <span class=mi>150</span><span class=p>,</span> <span class=mi>30</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>37</span><span class=cl>        <span class=n>label</span> <span class=o>=</span> <span class=n>QLabel</span><span class=p>(</span><span class=bp>self</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>38</span><span class=cl>        <span class=n>label</span><span class=o>.</span><span class=n>setText</span><span class=p>(</span><span class=s1>&#39;开始更新FDP配置&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>39</span><span class=cl>        <span class=n>label</span><span class=o>.</span><span class=n>move</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=mi>50</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>40</span><span class=cl>        <span class=n>button</span> <span class=o>=</span> <span class=n>QPushButton</span><span class=p>(</span><span class=s1>&#39;更新配置文件&#39;</span><span class=p>,</span> <span class=bp>self</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>41</span><span class=cl>        <span class=n>button</span><span class=o>.</span><span class=n>move</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=mi>90</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>42</span><span class=cl>        <span class=n>button</span><span class=o>.</span><span class=n>clicked</span><span class=o>.</span><span class=n>connect</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>download_confirmation</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>43</span><span class=cl>
+</span></span><span class=line><span class=ln>44</span><span class=cl>    <span class=k>def</span> <span class=nf>download_confirmation</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+</span></span><span class=line><span class=ln>45</span><span class=cl>        <span class=n>reply</span> <span class=o>=</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>question</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=s1>&#39;确认下载&#39;</span><span class=p>,</span> <span class=s1>&#39;确定要更新配置文件吗，可能会覆盖你的配置文件&#39;</span><span class=p>,</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>Yes</span> <span class=o>|</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>No</span><span class=p>,</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>No</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>46</span><span class=cl>        <span class=k>if</span> <span class=n>reply</span> <span class=o>==</span> <span class=n>QMessageBox</span><span class=o>.</span><span class=n>Yes</span><span class=p>:</span>
+</span></span><span class=line><span class=ln>47</span><span class=cl>            <span class=n>configs_dir</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=s1>&#39;.minecraft&#39;</span><span class=p>,</span> <span class=s1>&#39;versions&#39;</span><span class=p>,</span> <span class=s1>&#39;FDP&#39;</span><span class=p>,</span> <span class=s1>&#39;FDPCLIENT-1.8&#39;</span><span class=p>,</span> <span class=s1>&#39;configs&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>48</span><span class=cl>            <span class=k>for</span> <span class=n>file</span> <span class=ow>in</span> <span class=n>os</span><span class=o>.</span><span class=n>listdir</span><span class=p>(</span><span class=n>configs_dir</span><span class=p>):</span>
+</span></span><span class=line><span class=ln>49</span><span class=cl>                <span class=k>if</span> <span class=n>file</span><span class=o>.</span><span class=n>endswith</span><span class=p>(</span><span class=s1>&#39;.json&#39;</span><span class=p>):</span>
+</span></span><span class=line><span class=ln>50</span><span class=cl>                    <span class=n>os</span><span class=o>.</span><span class=n>remove</span><span class=p>(</span><span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>configs_dir</span><span class=p>,</span> <span class=n>file</span><span class=p>))</span>
+</span></span><span class=line><span class=ln>51</span><span class=cl>            <span class=n>download_all_jsons</span><span class=p>(</span><span class=s1>&#39;https://config-pass.lel-feng.workers.dev/fite.txt&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>52</span><span class=cl>
+</span></span><span class=line><span class=ln>53</span><span class=cl><span class=k>def</span> <span class=nf>download_json</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>save_path</span><span class=p>):</span>
+</span></span><span class=line><span class=ln>54</span><span class=cl>    <span class=n>response</span> <span class=o>=</span> <span class=n>session</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>auth</span><span class=o>=</span><span class=p>(</span><span class=n>USERNAME</span><span class=p>,</span> <span class=n>PASSWORD</span><span class=p>))</span>
+</span></span><span class=line><span class=ln>55</span><span class=cl>    <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=n>save_path</span><span class=p>,</span> <span class=s1>&#39;wb&#39;</span><span class=p>)</span> <span class=k>as</span> <span class=n>out_file</span><span class=p>:</span>
+</span></span><span class=line><span class=ln>56</span><span class=cl>        <span class=n>out_file</span><span class=o>.</span><span class=n>write</span><span class=p>(</span><span class=n>response</span><span class=o>.</span><span class=n>content</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>57</span><span class=cl>
+</span></span><span class=line><span class=ln>58</span><span class=cl><span class=k>def</span> <span class=nf>download_all_jsons</span><span class=p>(</span><span class=n>url</span><span class=p>):</span>
+</span></span><span class=line><span class=ln>59</span><span class=cl>    <span class=n>response</span> <span class=o>=</span> <span class=n>session</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>auth</span><span class=o>=</span><span class=p>(</span><span class=n>USERNAME</span><span class=p>,</span> <span class=n>PASSWORD</span><span class=p>))</span>
+</span></span><span class=line><span class=ln>60</span><span class=cl>    <span class=k>if</span> <span class=n>response</span><span class=o>.</span><span class=n>status_code</span> <span class=o>==</span> <span class=mi>200</span><span class=p>:</span>
+</span></span><span class=line><span class=ln>61</span><span class=cl>        <span class=n>content</span> <span class=o>=</span> <span class=n>response</span><span class=o>.</span><span class=n>content</span><span class=o>.</span><span class=n>decode</span><span class=p>(</span><span class=s1>&#39;utf-8&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>62</span><span class=cl>        <span class=n>json_urls</span> <span class=o>=</span> <span class=p>[</span><span class=n>line</span><span class=o>.</span><span class=n>strip</span><span class=p>()</span> <span class=k>for</span> <span class=n>line</span> <span class=ow>in</span> <span class=n>content</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s1>&#39;</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>)</span> <span class=k>if</span> <span class=n>line</span><span class=o>.</span><span class=n>strip</span><span class=p>()]</span>
+</span></span><span class=line><span class=ln>63</span><span class=cl>        <span class=k>for</span> <span class=n>json_url</span> <span class=ow>in</span> <span class=n>json_urls</span><span class=p>:</span>
+</span></span><span class=line><span class=ln>64</span><span class=cl>            <span class=k>if</span> <span class=n>json_url</span><span class=o>.</span><span class=n>endswith</span><span class=p>(</span><span class=s1>&#39;.json&#39;</span><span class=p>):</span>
+</span></span><span class=line><span class=ln>65</span><span class=cl>                <span class=n>json_filename</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>basename</span><span class=p>(</span><span class=n>json_url</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>66</span><span class=cl>                <span class=n>save_path</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=s1>&#39;.minecraft&#39;</span><span class=p>,</span> <span class=s1>&#39;versions&#39;</span><span class=p>,</span> <span class=s1>&#39;FDP&#39;</span><span class=p>,</span> <span class=s1>&#39;FDPCLIENT-1.8&#39;</span><span class=p>,</span> <span class=s1>&#39;configs&#39;</span><span class=p>,</span> <span class=n>json_filename</span><span class=p>)</span><span class=o>.</span><span class=n>replace</span><span class=p>(</span><span class=s1>&#39;/&#39;</span><span class=p>,</span> <span class=s1>&#39;</span><span class=se>\\</span><span class=s1>&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>67</span><span class=cl>                <span class=n>download_json</span><span class=p>(</span><span class=n>json_url</span><span class=p>,</span> <span class=n>save_path</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>68</span><span class=cl>
+</span></span><span class=line><span class=ln>69</span><span class=cl><span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s1>&#39;__main__&#39;</span><span class=p>:</span>
+</span></span><span class=line><span class=ln>70</span><span class=cl>    <span class=n>app</span> <span class=o>=</span> <span class=n>QApplication</span><span class=p>([])</span>
+</span></span><span class=line><span class=ln>71</span><span class=cl>    <span class=n>window</span> <span class=o>=</span> <span class=n>MainWindow</span><span class=p>()</span>
+</span></span><span class=line><span class=ln>72</span><span class=cl>    <span class=n>window</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span><span class=line><span class=ln>73</span><span class=cl>    <span class=n>app</span><span class=o>.</span><span class=n>exec_</span><span class=p>()</span>
+</span></span></code></pre></div></details><h2 id=服务端是什么>服务端是什么</h2><p>CloudFlare Worker的反代脚本</p><details><summary>点下我呀</summary><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=ln> 1</span><span class=cl><span class=nx>addEventListener</span><span class=p>(</span><span class=s1>&#39;fetch&#39;</span><span class=p>,</span> <span class=nx>event</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 2</span><span class=cl>  <span class=nx>event</span><span class=p>.</span><span class=nx>respondWith</span><span class=p>(</span><span class=nx>handleRequest</span><span class=p>(</span><span class=nx>event</span><span class=p>.</span><span class=nx>request</span><span class=p>))</span>
+</span></span><span class=line><span class=ln> 3</span><span class=cl><span class=p>})</span>
+</span></span><span class=line><span class=ln> 4</span><span class=cl>
+</span></span><span class=line><span class=ln> 5</span><span class=cl><span class=kr>async</span> <span class=kd>function</span> <span class=nx>handleRequest</span><span class=p>(</span><span class=nx>request</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 6</span><span class=cl>  <span class=c1>// 设置 HTTP 基本身份验证的用户名和密码
+</span></span></span><span class=line><span class=ln> 7</span><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>USERNAME</span> <span class=o>=</span> <span class=s1>&#39;tRd#D9l6XVY5GFQUQDDN&#39;</span>
+</span></span><span class=line><span class=ln> 8</span><span class=cl>  <span class=kr>const</span> <span class=nx>PASSWORD</span> <span class=o>=</span> <span class=s1>&#39;c!rY5iMUv8c4jGT1u0nH&#39;</span>
+</span></span><span class=line><span class=ln> 9</span><span class=cl>
+</span></span><span class=line><span class=ln>10</span><span class=cl>  <span class=c1>// 检查请求是否包含正确的身份验证凭据
+</span></span></span><span class=line><span class=ln>11</span><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>authHeader</span> <span class=o>=</span> <span class=nx>request</span><span class=p>.</span><span class=nx>headers</span><span class=p>.</span><span class=nx>get</span><span class=p>(</span><span class=s1>&#39;Authorization&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>12</span><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=nx>authHeader</span> <span class=o>||</span> <span class=o>!</span><span class=nx>checkAuth</span><span class=p>(</span><span class=nx>authHeader</span><span class=p>,</span><span class=nx>USERNAME</span><span class=p>,</span><span class=nx>PASSWORD</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>13</span><span class=cl>    <span class=k>return</span> <span class=k>new</span> <span class=nx>Response</span><span class=p>(</span><span class=s1>&#39;Unauthorized&#39;</span><span class=p>,</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>14</span><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=mi>401</span><span class=p>,</span>
+</span></span><span class=line><span class=ln>15</span><span class=cl>      <span class=nx>headers</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>16</span><span class=cl>        <span class=s1>&#39;WWW-Authenticate&#39;</span><span class=o>:</span> <span class=s1>&#39;Basic realm=&#34;Access to the requested resource&#34;&#39;</span>
+</span></span><span class=line><span class=ln>17</span><span class=cl>      <span class=p>}</span>
+</span></span><span class=line><span class=ln>18</span><span class=cl>    <span class=p>})</span>
+</span></span><span class=line><span class=ln>19</span><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=ln>20</span><span class=cl>
+</span></span><span class=line><span class=ln>21</span><span class=cl>  <span class=c1>// 设置源服务器的 URL
+</span></span></span><span class=line><span class=ln>22</span><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>originUrl</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>URL</span><span class=p>(</span><span class=nx>request</span><span class=p>.</span><span class=nx>url</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>23</span><span class=cl>  <span class=nx>originUrl</span><span class=p>.</span><span class=nx>hostname</span> <span class=o>=</span> <span class=s1>&#39;wjgl.pages.dev&#39;</span>
+</span></span><span class=line><span class=ln>24</span><span class=cl>  <span class=nx>originUrl</span><span class=p>.</span><span class=nx>pathname</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>URL</span><span class=p>(</span><span class=nx>request</span><span class=p>.</span><span class=nx>url</span><span class=p>).</span><span class=nx>pathname</span>
+</span></span><span class=line><span class=ln>25</span><span class=cl>
+</span></span><span class=line><span class=ln>26</span><span class=cl>  <span class=c1>// 使用更新后的 URL 创建新请求
+</span></span></span><span class=line><span class=ln>27</span><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>newRequest</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>Request</span><span class=p>(</span><span class=nx>originUrl</span><span class=p>,</span> <span class=nx>request</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>28</span><span class=cl>
+</span></span><span class=line><span class=ln>29</span><span class=cl>  <span class=c1>// 从源服务器获取响应
+</span></span></span><span class=line><span class=ln>30</span><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=nx>response</span> <span class=o>=</span> <span class=kr>await</span> <span class=nx>fetch</span><span class=p>(</span><span class=nx>newRequest</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>31</span><span class=cl>
+</span></span><span class=line><span class=ln>32</span><span class=cl>  <span class=c1>// 将响应返回给客户端
+</span></span></span><span class=line><span class=ln>33</span><span class=cl><span class=c1></span>  <span class=k>return</span> <span class=nx>response</span>
+</span></span><span class=line><span class=ln>34</span><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=ln>35</span><span class=cl>
+</span></span><span class=line><span class=ln>36</span><span class=cl><span class=kd>function</span> <span class=nx>checkAuth</span><span class=p>(</span><span class=nx>authHeader</span><span class=p>,</span> <span class=nx>username</span><span class=p>,</span> <span class=nx>password</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>37</span><span class=cl>  <span class=c1>// 解码身份验证头
+</span></span></span><span class=line><span class=ln>38</span><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=p>[</span><span class=nx>type</span><span class=p>,</span> <span class=nx>credentials</span><span class=p>]</span> <span class=o>=</span> <span class=nx>authHeader</span><span class=p>.</span><span class=nx>split</span><span class=p>(</span><span class=s1>&#39; &#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>39</span><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>type</span> <span class=o>!==</span> <span class=s1>&#39;Basic&#39;</span><span class=p>)</span> <span class=k>return</span> <span class=kc>false</span>
+</span></span><span class=line><span class=ln>40</span><span class=cl>  <span class=kr>const</span> <span class=nx>decodedCredentials</span> <span class=o>=</span> <span class=nx>atob</span><span class=p>(</span><span class=nx>credentials</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>41</span><span class=cl>  
+</span></span><span class=line><span class=ln>42</span><span class=cl>  <span class=c1>// 检查提供的凭据是否与预期的用户名和密码匹配
+</span></span></span><span class=line><span class=ln>43</span><span class=cl><span class=c1></span>  <span class=k>return</span> <span class=nx>decodedCredentials</span> <span class=o>===</span> <span class=sb>`</span><span class=si>${</span><span class=nx>username</span><span class=si>}</span><span class=sb>:</span><span class=si>${</span><span class=nx>password</span><span class=si>}</span><span class=sb>`</span>
+</span></span><span class=line><span class=ln>44</span><span class=cl><span class=p>}</span>
+</span></span></code></pre></div></details><h2 id=go语言版本>Go语言版本</h2><p>Golang1.20.7</p><p><details><summary>点下我呀</summary><div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=line><span class=ln>  1</span><span class=cl><span class=kn>package</span> <span class=nx>main</span>
+</span></span><span class=line><span class=ln>  2</span><span class=cl>
+</span></span><span class=line><span class=ln>  3</span><span class=cl><span class=kn>import</span> <span class=p>(</span>
+</span></span><span class=line><span class=ln>  4</span><span class=cl>	<span class=s>&#34;io&#34;</span>
+</span></span><span class=line><span class=ln>  5</span><span class=cl>	<span class=s>&#34;net/http&#34;</span>
+</span></span><span class=line><span class=ln>  6</span><span class=cl>	<span class=s>&#34;os&#34;</span>
+</span></span><span class=line><span class=ln>  7</span><span class=cl>	<span class=s>&#34;path/filepath&#34;</span>
+</span></span><span class=line><span class=ln>  8</span><span class=cl>	<span class=s>&#34;strings&#34;</span>
+</span></span><span class=line><span class=ln>  9</span><span class=cl>	<span class=s>&#34;time&#34;</span>
+</span></span><span class=line><span class=ln> 10</span><span class=cl>
+</span></span><span class=line><span class=ln> 11</span><span class=cl>	<span class=s>&#34;github.com/andlabs/ui&#34;</span>
+</span></span><span class=line><span class=ln> 12</span><span class=cl><span class=p>)</span>
+</span></span><span class=line><span class=ln> 13</span><span class=cl>
+</span></span><span class=line><span class=ln> 14</span><span class=cl><span class=kd>var</span> <span class=p>(</span>
+</span></span><span class=line><span class=ln> 15</span><span class=cl>	<span class=nx>mainwin</span> <span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Window</span>
+</span></span><span class=line><span class=ln> 16</span><span class=cl><span class=p>)</span>
+</span></span><span class=line><span class=ln> 17</span><span class=cl>
+</span></span><span class=line><span class=ln> 18</span><span class=cl><span class=kd>func</span> <span class=nf>setupUI</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 19</span><span class=cl>	<span class=nx>mainwin</span> <span class=p>=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewWindow</span><span class=p>(</span><span class=s>&#34;FDP配置文件在线更新&#34;</span><span class=p>,</span> <span class=mi>300</span><span class=p>,</span> <span class=mi>150</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 20</span><span class=cl>	<span class=nx>mainwin</span><span class=p>.</span><span class=nf>OnClosing</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Window</span><span class=p>)</span> <span class=kt>bool</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 21</span><span class=cl>		<span class=nx>ui</span><span class=p>.</span><span class=nf>Quit</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 22</span><span class=cl>		<span class=k>return</span> <span class=kc>true</span>
+</span></span><span class=line><span class=ln> 23</span><span class=cl>	<span class=p>})</span>
+</span></span><span class=line><span class=ln> 24</span><span class=cl>	<span class=nx>ui</span><span class=p>.</span><span class=nf>OnShouldQuit</span><span class=p>(</span><span class=kd>func</span><span class=p>()</span> <span class=kt>bool</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 25</span><span class=cl>		<span class=nx>mainwin</span><span class=p>.</span><span class=nf>Destroy</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 26</span><span class=cl>		<span class=k>return</span> <span class=kc>true</span>
+</span></span><span class=line><span class=ln> 27</span><span class=cl>	<span class=p>})</span>
+</span></span><span class=line><span class=ln> 28</span><span class=cl>
+</span></span><span class=line><span class=ln> 29</span><span class=cl>	<span class=nx>vbox</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewVerticalBox</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 30</span><span class=cl>	<span class=nx>vbox</span><span class=p>.</span><span class=nf>SetPadded</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 31</span><span class=cl>
+</span></span><span class=line><span class=ln> 32</span><span class=cl>	<span class=nx>hbox</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewHorizontalBox</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 33</span><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>SetPadded</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 34</span><span class=cl>	<span class=nx>vbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>hbox</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 35</span><span class=cl>
+</span></span><span class=line><span class=ln> 36</span><span class=cl>	<span class=nx>welcomeLabel</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewLabel</span><span class=p>(</span><span class=s>&#34;欢迎使用OVO&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 37</span><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>welcomeLabel</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 38</span><span class=cl>
+</span></span><span class=line><span class=ln> 39</span><span class=cl>	<span class=nx>updateLabel</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewLabel</span><span class=p>(</span><span class=s>&#34;开始更新FDP配置&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 40</span><span class=cl>	<span class=nx>vbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>updateLabel</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 41</span><span class=cl>
+</span></span><span class=line><span class=ln> 42</span><span class=cl>	<span class=nx>button</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewButton</span><span class=p>(</span><span class=s>&#34;更新配置文件&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 43</span><span class=cl>	<span class=nx>button</span><span class=p>.</span><span class=nf>OnClicked</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Button</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 44</span><span class=cl>		<span class=nf>downloadConfirmation</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 45</span><span class=cl>	<span class=p>})</span>
+</span></span><span class=line><span class=ln> 46</span><span class=cl>	<span class=nx>vbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>button</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 47</span><span class=cl>
+</span></span><span class=line><span class=ln> 48</span><span class=cl>	<span class=nx>mainwin</span><span class=p>.</span><span class=nf>SetChild</span><span class=p>(</span><span class=nx>vbox</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 49</span><span class=cl>	<span class=nx>mainwin</span><span class=p>.</span><span class=nf>SetMargined</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 50</span><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=ln> 51</span><span class=cl>
+</span></span><span class=line><span class=ln> 52</span><span class=cl><span class=kd>func</span> <span class=nf>downloadConfirmation</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 53</span><span class=cl>	<span class=nx>window</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewWindow</span><span class=p>(</span><span class=s>&#34;确认下载&#34;</span><span class=p>,</span> <span class=mi>100</span><span class=p>,</span> <span class=mi>50</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 54</span><span class=cl>	<span class=nx>box</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewVerticalBox</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 55</span><span class=cl>	<span class=nx>box</span><span class=p>.</span><span class=nf>SetPadded</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 56</span><span class=cl>	<span class=nx>box</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>ui</span><span class=p>.</span><span class=nf>NewLabel</span><span class=p>(</span><span class=s>&#34;确定要更新配置文件吗，可能会覆盖你的配置文件&#34;</span><span class=p>),</span> <span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 57</span><span class=cl>	<span class=nx>hbox</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewHorizontalBox</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 58</span><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>SetPadded</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 59</span><span class=cl>	<span class=nx>box</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>hbox</span><span class=p>,</span> <span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 60</span><span class=cl>	<span class=nx>buttonYes</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewButton</span><span class=p>(</span><span class=s>&#34;Yes&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 61</span><span class=cl>	<span class=nx>buttonYes</span><span class=p>.</span><span class=nf>OnClicked</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Button</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 62</span><span class=cl>		<span class=nx>window</span><span class=p>.</span><span class=nf>Destroy</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 63</span><span class=cl>		<span class=nx>configsDir</span> <span class=o>:=</span> <span class=nx>filepath</span><span class=p>.</span><span class=nf>Join</span><span class=p>(</span><span class=s>&#34;.minecraft&#34;</span><span class=p>,</span> <span class=s>&#34;versions&#34;</span><span class=p>,</span> <span class=s>&#34;FDP&#34;</span><span class=p>,</span> <span class=s>&#34;FDPCLIENT-1.8&#34;</span><span class=p>,</span> <span class=s>&#34;configs&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 64</span><span class=cl>		<span class=nx>files</span><span class=p>,</span> <span class=nx>_</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nf>ReadDir</span><span class=p>(</span><span class=nx>configsDir</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 65</span><span class=cl>		<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>file</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>files</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 66</span><span class=cl>			<span class=k>if</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>HasSuffix</span><span class=p>(</span><span class=nx>file</span><span class=p>.</span><span class=nf>Name</span><span class=p>(),</span> <span class=s>&#34;.json&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 67</span><span class=cl>				<span class=nx>os</span><span class=p>.</span><span class=nf>Remove</span><span class=p>(</span><span class=nx>filepath</span><span class=p>.</span><span class=nf>Join</span><span class=p>(</span><span class=nx>configsDir</span><span class=p>,</span> <span class=nx>file</span><span class=p>.</span><span class=nf>Name</span><span class=p>()))</span>
+</span></span><span class=line><span class=ln> 68</span><span class=cl>			<span class=p>}</span>
+</span></span><span class=line><span class=ln> 69</span><span class=cl>		<span class=p>}</span>
+</span></span><span class=line><span class=ln> 70</span><span class=cl>		<span class=nf>downloadAllJSONs</span><span class=p>(</span><span class=s>&#34;https://tr7mur567m8r6573n67.xpdbk.com/fite.txt&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 71</span><span class=cl>	<span class=p>})</span>
+</span></span><span class=line><span class=ln> 72</span><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>buttonYes</span><span class=p>,</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 73</span><span class=cl>	<span class=nx>buttonNo</span> <span class=o>:=</span> <span class=nx>ui</span><span class=p>.</span><span class=nf>NewButton</span><span class=p>(</span><span class=s>&#34;No&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 74</span><span class=cl>	<span class=nx>buttonNo</span><span class=p>.</span><span class=nf>OnClicked</span><span class=p>(</span><span class=kd>func</span><span class=p>(</span><span class=o>*</span><span class=nx>ui</span><span class=p>.</span><span class=nx>Button</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 75</span><span class=cl>		<span class=nx>window</span><span class=p>.</span><span class=nf>Destroy</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 76</span><span class=cl>	<span class=p>})</span>
+</span></span><span class=line><span class=ln> 77</span><span class=cl>	<span class=nx>hbox</span><span class=p>.</span><span class=nf>Append</span><span class=p>(</span><span class=nx>buttonNo</span><span class=p>,</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 78</span><span class=cl>	<span class=nx>window</span><span class=p>.</span><span class=nf>SetChild</span><span class=p>(</span><span class=nx>box</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 79</span><span class=cl>	<span class=nx>window</span><span class=p>.</span><span class=nf>Show</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 80</span><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=ln> 81</span><span class=cl>
+</span></span><span class=line><span class=ln> 82</span><span class=cl><span class=kd>func</span> <span class=nf>downloadAllJSONs</span><span class=p>(</span><span class=nx>url</span> <span class=kt>string</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 83</span><span class=cl>	<span class=nx>resp</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nf>Get</span><span class=p>(</span><span class=nx>url</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 84</span><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 85</span><span class=cl>		<span class=nb>panic</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 86</span><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=ln> 87</span><span class=cl>	<span class=k>defer</span> <span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>.</span><span class=nf>Close</span><span class=p>()</span>
+</span></span><span class=line><span class=ln> 88</span><span class=cl>
+</span></span><span class=line><span class=ln> 89</span><span class=cl>	<span class=nx>body</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>io</span><span class=p>.</span><span class=nf>ReadAll</span><span class=p>(</span><span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 90</span><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 91</span><span class=cl>		<span class=nb>panic</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 92</span><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=ln> 93</span><span class=cl>
+</span></span><span class=line><span class=ln> 94</span><span class=cl>	<span class=nx>jsonURLs</span> <span class=o>:=</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>Split</span><span class=p>(</span><span class=nb>string</span><span class=p>(</span><span class=nx>body</span><span class=p>),</span> <span class=s>&#34;\n&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 95</span><span class=cl>	<span class=k>for</span> <span class=nx>_</span><span class=p>,</span> <span class=nx>jsonURL</span> <span class=o>:=</span> <span class=k>range</span> <span class=nx>jsonURLs</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 96</span><span class=cl>		<span class=nx>jsonURL</span> <span class=p>=</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>TrimSpace</span><span class=p>(</span><span class=nx>jsonURL</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 97</span><span class=cl>		<span class=k>if</span> <span class=nx>strings</span><span class=p>.</span><span class=nf>HasSuffix</span><span class=p>(</span><span class=nx>jsonURL</span><span class=p>,</span> <span class=s>&#34;.json&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln> 98</span><span class=cl>			<span class=nx>jsonFilename</span> <span class=o>:=</span> <span class=nx>filepath</span><span class=p>.</span><span class=nf>Base</span><span class=p>(</span><span class=nx>jsonURL</span><span class=p>)</span>
+</span></span><span class=line><span class=ln> 99</span><span class=cl>			<span class=nx>savePath</span> <span class=o>:=</span> <span class=nx>filepath</span><span class=p>.</span><span class=nf>Join</span><span class=p>(</span><span class=s>&#34;.minecraft&#34;</span><span class=p>,</span> <span class=s>&#34;versions&#34;</span><span class=p>,</span> <span class=s>&#34;FDP&#34;</span><span class=p>,</span> <span class=s>&#34;FDPCLIENT-1.8&#34;</span><span class=p>,</span> <span class=s>&#34;configs&#34;</span><span class=p>,</span> <span class=nx>jsonFilename</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>100</span><span class=cl>			<span class=nf>downloadJSON</span><span class=p>(</span><span class=nx>jsonURL</span><span class=p>,</span> <span class=nx>savePath</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>101</span><span class=cl>		<span class=p>}</span>
+</span></span><span class=line><span class=ln>102</span><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=ln>103</span><span class=cl>	<span class=nx>time</span><span class=p>.</span><span class=nf>AfterFunc</span><span class=p>(</span><span class=mi>100</span><span class=o>*</span><span class=nx>time</span><span class=p>.</span><span class=nx>Second</span><span class=p>,</span> <span class=kd>func</span><span class=p>()</span> <span class=p>{</span> <span class=nx>os</span><span class=p>.</span><span class=nf>Exit</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span> <span class=p>})</span>
+</span></span><span class=line><span class=ln>104</span><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=ln>105</span><span class=cl>
+</span></span><span class=line><span class=ln>106</span><span class=cl><span class=kd>func</span> <span class=nf>downloadJSON</span><span class=p>(</span><span class=nx>url</span> <span class=kt>string</span><span class=p>,</span> <span class=nx>savePath</span> <span class=kt>string</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>107</span><span class=cl>	<span class=nx>resp</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>http</span><span class=p>.</span><span class=nf>Get</span><span class=p>(</span><span class=nx>url</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>108</span><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>109</span><span class=cl>		<span class=nb>panic</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>110</span><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=ln>111</span><span class=cl>	<span class=k>defer</span> <span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>.</span><span class=nf>Close</span><span class=p>()</span>
+</span></span><span class=line><span class=ln>112</span><span class=cl>
+</span></span><span class=line><span class=ln>113</span><span class=cl>	<span class=nx>outFile</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nf>Create</span><span class=p>(</span><span class=nx>savePath</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>114</span><span class=cl>	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>115</span><span class=cl>		<span class=nb>panic</span><span class=p>(</span><span class=nx>err</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>116</span><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=ln>117</span><span class=cl>	<span class=k>defer</span> <span class=nx>outFile</span><span class=p>.</span><span class=nf>Close</span><span class=p>()</span>
+</span></span><span class=line><span class=ln>118</span><span class=cl>
+</span></span><span class=line><span class=ln>119</span><span class=cl>	<span class=nx>io</span><span class=p>.</span><span class=nf>Copy</span><span class=p>(</span><span class=nx>outFile</span><span class=p>,</span> <span class=nx>resp</span><span class=p>.</span><span class=nx>Body</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>120</span><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=ln>121</span><span class=cl>
+</span></span><span class=line><span class=ln>122</span><span class=cl><span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=ln>123</span><span class=cl>	<span class=nx>ui</span><span class=p>.</span><span class=nf>Main</span><span class=p>(</span><span class=nx>setupUI</span><span class=p>)</span>
+</span></span><span class=line><span class=ln>124</span><span class=cl><span class=p>}</span>
+</span></span></code></pre></div></details>完</p></section><footer class=article-footer><section class=article-tags><a href=/tags/fdp/>FDP</a>
 <a href=/tags/%E6%9B%B4%E6%96%B0%E5%99%A8/>更新器</a>
 <a href=/tags/%E9%85%8D%E7%BD%AE/>配置</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span><p>转载需要保留原始链接，未经明确许可，禁止商业使用。<a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
-<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></p></span></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最后更新于 2023-10-01 14:32 UTC</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/post/x64dbg%E6%94%B9%E5%AD%97%E7%AC%A6%E4%B8%B2/><div class=article-details><h2 class=article-title>X64DBG改字符串</h2></div></a></article><article class=has-image><a href=/post/video-save-free/><div class=article-image><img src=/post/video-save-free/123123.5d4c04365b58adf9597543367bbd0ad2_hud29953d5d9956b3e0e51767d617c14a8_24354_250x150_fill_q75_h2_box_smart1_2.webp width=250 height=150 loading=lazy alt="Featured image of post 视频托管方法" data-key=video-save-free data-hash="md5-XUwENltYrflZdUM2e70K0g=="></div><div class=article-details><h2 class=article-title>视频托管方法</h2></div></a></article><article><a href=/post/ffmepg-mp4-to-hls-haha/><div class=article-details><h2 class=article-title>MP4到流视频转换</h2></div></a></article><article><a href=/post/debug-pyinstaller-crack/><div class=article-details><h2 class=article-title>逆向Pyinstaller打包程序的一个方法</h2></div></a></article><article><a href=/post/batchfile-fix-lange-erorr/><div class=article-details><h2 class=article-title>Batchfile批处理脚本乱码解决方法</h2></div></a></article></div></div></aside><script src=//lib.baomitu.com/waline/2.14.8/waline.min.js></script>
+<span style=white-space:nowrap><svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z" fill="currentcolor"/><path d="M19 19H5V5h7l-2-2H5c-1.103.0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103.0 2-.897 2-2v-5l-2-2v7z" fill="currentcolor"/></span></p></span></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最后更新于 2023-10-01 15:09 UTC</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/post/x64dbg%E6%94%B9%E5%AD%97%E7%AC%A6%E4%B8%B2/><div class=article-details><h2 class=article-title>X64DBG改字符串</h2></div></a></article><article class=has-image><a href=/post/video-save-free/><div class=article-image><img src=/post/video-save-free/123123.5d4c04365b58adf9597543367bbd0ad2_hud29953d5d9956b3e0e51767d617c14a8_24354_250x150_fill_q75_h2_box_smart1_2.webp width=250 height=150 loading=lazy alt="Featured image of post 视频托管方法" data-key=video-save-free data-hash="md5-XUwENltYrflZdUM2e70K0g=="></div><div class=article-details><h2 class=article-title>视频托管方法</h2></div></a></article><article><a href=/post/ffmepg-mp4-to-hls-haha/><div class=article-details><h2 class=article-title>MP4到流视频转换</h2></div></a></article><article><a href=/post/debug-pyinstaller-crack/><div class=article-details><h2 class=article-title>逆向Pyinstaller打包程序的一个方法</h2></div></a></article><article><a href=/post/batchfile-fix-lange-erorr/><div class=article-details><h2 class=article-title>Batchfile批处理脚本乱码解决方法</h2></div></a></article></div></div></aside><script src=//lib.baomitu.com/waline/2.14.8/waline.min.js></script>
 <link href=//lib.baomitu.com/waline/2.14.8/waline.min.css rel=stylesheet><div id=waline class=waline-container></div><style>.waline-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding);--waline-font-size:var(--article-font-size)}.waline-container .wl-count{color:var(--card-text-color-main)}</style><script>Waline.init({dark:'html[data-scheme="dark"]',el:"#waline",emoji:["https://unpkg.com/@waline/emojis@1.1.0/bilibili","https://unpkg.com/@waline/emojis@1.1.0/alus","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],lang:"zh-CN",locale:{admin:"站长",placeholder:"您在博客中所发表的评论仅代表您的个人观点与本博客立场无关，您发布的所有评论都需要由站长进行审核才能公开。"},pageview:!1,requiredMeta:["nick","email"],serverURL:"https://pl.xpdbk.com"})</script><footer class=site-footer><section class=copyright>&copy;
 2022 -
-2023 XiaoPang版权所有</section><section class=powerby><a href=https://shengming.xpdbk.com/ target=_blank>免责声明</a> <a href=https://blog.xpdbk.com/sitemap.xml target=_blank>站点地图</a> <a href=https://blog.xpdbk.com/index.xml target=_blank>RSS订阅</a><br>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 构建<br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.20.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计
-<span>• 由LEl_FENG用❤️魔改</span></section><a href="https://icp.gov.moe/?keyword=20230087" target=_blank>萌ICP备20230087号</a><section class=powerby>作者共咕咕了 285.31k 字 · 共水了 87篇文章.</br><span><p></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+2023 XiaoPang版权所有</section><section class=powerby><b><a href=https://shengming.xpdbk.com/ target=_blank>免责声明</a></b> <b><a href=https://blog0.xpdbk.com/share/iGagIgzX4V2CAUov/%E5%8D%9A%E5%AE%A2 target=_blank>访客统计</a></b> <a href=https://blog.xpdbk.com/sitemap.xml target=_blank>站点地图</a> <a href=https://blog.xpdbk.com/index.xml target=_blank>RSS订阅</a><br>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 构建<br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.20.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计
+<span>• 由LEl_FENG用❤️魔改</span></section><a href="https://icp.gov.moe/?keyword=20230087" target=_blank>萌ICP备20230087号</a><section class=powerby>作者共咕咕了 283.61k 字 · 共水了 87篇文章.</br><span><p></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 <button class="pswp__button pswp__button--share" title=Share></button>
 <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
 <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/photoswipe/4.1.3/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/photoswipe/4.1.3/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/photoswipe/4.1.3/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/photoswipe/4.1.3/photoswipe.min.css crossorigin=anonymous></main></div><script src=/js/vibrant.min.js crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
-<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&display=swap" rel=stylesheet><script src=https://lib.baomitu.com/ribbon.js/1.0.1/ribbon.min.js integrity=sha384-xC0eH8k8Nq6WKXlooH5kB+xWjFX/08AfAgcGiKWXj4+kYvrRuDr9MU2+MTrx2Jc6 crossorigin=anonymous size=150 alpha=0.5 zindex=-1 defer></script><!doctype html><html><head><link rel=stylesheet href=https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css></head><body><div class=demo><div id=player1></div></div><script>async function loadAPlayer(){return new Promise((e,t)=>{const n=document.createElement("script");n.src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js",n.onload=e,n.onerror=t,document.head.appendChild(n)})}window.addEventListener("load",()=>{loadAPlayer().then(()=>{var e=new APlayer({element:document.getElementById("player1"),fixed:!0,autoplay:!1,mini:!0,theme:"#f8f4fc",loop:"all",order:"random",preload:"none",volume:.5,mutex:!0,listFolded:!1,listMaxHeight:90,lrcType:0,music:[{name:"超燃歌曲",url:"/music/chaoran2077.mp3",artists:"2077游戏公司",cover:"/avatar.webp"},{name:"2077边缘行者1",url:"/music/2077R.mp3",artists:"2077游戏公司",cover:"/avatar.webp"},{name:"2077边缘行者2",url:"/music/2077.mp3",artists:"2077游戏公司",cover:"/avatar.webp"}]})}).catch(e=>{console.log("APlayer加载失败:",e)})})</script></body><a href=# id=back-to-top title=返回顶部></a><style>#back-to-top{display:none;position:fixed;bottom:20px;right:55px;width:55px;height:55px;border-radius:7px;background-color:var(--back-to-top-background);box-shadow:var(--shadow-l2);font-size:30px;text-align:center;line-height:50px;cursor:pointer}#back-to-top:before{content:" ";display:inline-block;position:relative;top:0;transform:rotate(135deg);height:10px;width:10px;border-width:0 0 2px 2px;border-color:var(--back-to-top-color);border-style:solid}#back-to-top:hover:before{border-color:red}@media screen and (max-width:768px){#back-to-top{bottom:20px;right:20px;width:40px;height:40px;font-size:10px}}@media screen and (min-width:1024px){#back-to-top{bottom:20px;right:40px}}@media screen and (min-width:1280px){#back-to-top{bottom:20px;right:55px}}@media screen and (min-width:1536px){#back-to-top{visibility:hidden}}</style><script>function backToTop(){document.documentElement.scrollIntoView({behavior:"smooth"})}window.onload=function(){let t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t>0?e.style.display="inline":e.style.display="none"},window.onscroll=function(){let t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t<200?e.style.display="none":(e.style.display="inline",e.addEventListener("click",backToTop,!1))}</script><script>var CURSOR;Math.lerp=(e,t,n)=>(1-n)*e+n*t;const getStyle=(e,t)=>{try{return window.getComputedStyle?window.getComputedStyle(e)[t]:e.currentStyle[t]}catch{}return""};class Cursor{constructor(){this.pos={curr:null,prev:null},this.pt=[],this.create(),this.init(),this.render()}move(e,t){this.cursor.style.left=`${e}px`,this.cursor.style.top=`${t}px`}create(){this.cursor||(this.cursor=document.createElement("div"),this.cursor.id="cursor",this.cursor.classList.add("hidden"),document.body.append(this.cursor));var e=document.getElementsByTagName("*");for(let t=0;t<e.length;t++)getStyle(e[t],"cursor")=="pointer"&&this.pt.push(e[t].outerHTML);document.body.appendChild(this.scr=document.createElement("style")),this.scr.innerHTML=`* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`}refresh(){this.scr.remove(),this.cursor.classList.remove("hover"),this.cursor.classList.remove("active"),this.pos={curr:null,prev:null},this.pt=[],this.create(),this.init(),this.render()}init(){document.onmouseover=e=>this.pt.includes(e.target.outerHTML)&&this.cursor.classList.add("hover"),document.onmouseout=e=>this.pt.includes(e.target.outerHTML)&&this.cursor.classList.remove("hover"),document.onmousemove=e=>{this.pos.curr==null&&this.move(e.clientX-8,e.clientY-8),this.pos.curr={x:e.clientX-8,y:e.clientY-8},this.cursor.classList.remove("hidden")},document.onmouseenter=e=>this.cursor.classList.remove("hidden"),document.onmouseleave=e=>this.cursor.classList.add("hidden"),document.onmousedown=e=>this.cursor.classList.add("active"),document.onmouseup=e=>this.cursor.classList.remove("active")}render(){this.pos.prev?(this.pos.prev.x=Math.lerp(this.pos.prev.x,this.pos.curr.x,.15),this.pos.prev.y=Math.lerp(this.pos.prev.y,this.pos.curr.y,.15),this.move(this.pos.prev.x,this.pos.prev.y)):this.pos.prev=this.pos.curr,requestAnimationFrame(()=>this.render())}}(()=>{CURSOR=new Cursor})()</script><script src=//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js type=module></script></body></html>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&display=swap" rel=stylesheet><script src=https://lib.baomitu.com/ribbon.js/1.0.1/ribbon.min.js integrity=sha384-xC0eH8k8Nq6WKXlooH5kB+xWjFX/08AfAgcGiKWXj4+kYvrRuDr9MU2+MTrx2Jc6 crossorigin=anonymous size=150 alpha=0.5 zindex=-1 defer></script><!doctype html><html><head><link rel=stylesheet href=https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css></head><body><div class=demo><div id=player1></div></div><script>async function loadAPlayer(){return new Promise((e,t)=>{const n=document.createElement("script");n.src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js",n.onload=e,n.onerror=t,document.head.appendChild(n)})}window.addEventListener("load",()=>{loadAPlayer().then(()=>{var e=new APlayer({element:document.getElementById("player1"),fixed:!0,autoplay:!1,mini:!0,theme:"#f8f4fc",loop:"all",order:"random",preload:"none",volume:.5,mutex:!0,listFolded:!1,listMaxHeight:90,lrcType:0,music:[{name:"超燃歌曲",url:"/music/chaoran2077.mp3",artists:"2077游戏公司",cover:"/avatar.webp"},{name:"2077边缘行者1",url:"/music/2077R.mp3",artists:"2077游戏公司",cover:"/avatar.webp"},{name:"2077边缘行者2",url:"/music/2077.mp3",artists:"2077游戏公司",cover:"/avatar.webp"}]})}).catch(e=>{console.log("APlayer加载失败:",e)})})</script></body><a href=# id=back-to-top title=返回顶部></a><style>#back-to-top{display:none;position:fixed;bottom:20px;right:55px;width:55px;height:55px;border-radius:7px;background-color:rgba(64,158,255,.5);box-shadow:var(--shadow-l2);font-size:30px;text-align:center;line-height:50px;cursor:pointer}#back-to-top:before{content:' ';display:inline-block;position:relative;top:0;transform:rotate(135deg);height:10px;width:10px;border-width:0 0 2px 2px;border-color:var(--back-to-top-color);border-style:solid}#back-to-top:hover:before{border-color:#2674e0}@media screen and (max-width:768px){#back-to-top{bottom:20px;right:20px;width:40px;height:40px;font-size:10px}}@media screen and (min-width:1024px){#back-to-top{bottom:20px;right:40px}}@media screen and (min-width:1280px){#back-to-top{bottom:20px;right:55px}}@media screen and (min-width:1536px){#back-to-top{visibility:hidden}}</style><script>function backToTop(){document.documentElement.scrollIntoView({behavior:"smooth"})}window.onload=function(){let t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t>0?e.style.display="inline":e.style.display="none"},window.onscroll=function(){let t=this.document.documentElement.scrollTop||this.document.body.scrollTop,e=this.document.getElementById("back-to-top");t<200?e.style.display="none":(e.style.display="inline",e.addEventListener("click",backToTop,!1))}</script><script>var CURSOR;Math.lerp=(e,t,n)=>(1-n)*e+n*t;const getStyle=(e,t)=>{try{return window.getComputedStyle?window.getComputedStyle(e)[t]:e.currentStyle[t]}catch{}return""};class Cursor{constructor(){this.pos={curr:null,prev:null},this.pt=[],this.create(),this.init(),this.render()}move(e,t){this.cursor.style.left=`${e}px`,this.cursor.style.top=`${t}px`}create(){this.cursor||(this.cursor=document.createElement("div"),this.cursor.id="cursor",this.cursor.classList.add("hidden"),document.body.append(this.cursor));var e=document.getElementsByTagName("*");for(let t=0;t<e.length;t++)getStyle(e[t],"cursor")=="pointer"&&this.pt.push(e[t].outerHTML);document.body.appendChild(this.scr=document.createElement("style")),this.scr.innerHTML=`* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`}refresh(){this.scr.remove(),this.cursor.classList.remove("hover"),this.cursor.classList.remove("active"),this.pos={curr:null,prev:null},this.pt=[],this.create(),this.init(),this.render()}init(){document.onmouseover=e=>this.pt.includes(e.target.outerHTML)&&this.cursor.classList.add("hover"),document.onmouseout=e=>this.pt.includes(e.target.outerHTML)&&this.cursor.classList.remove("hover"),document.onmousemove=e=>{this.pos.curr==null&&this.move(e.clientX-8,e.clientY-8),this.pos.curr={x:e.clientX-8,y:e.clientY-8},this.cursor.classList.remove("hidden")},document.onmouseenter=e=>this.cursor.classList.remove("hidden"),document.onmouseleave=e=>this.cursor.classList.add("hidden"),document.onmousedown=e=>this.cursor.classList.add("active"),document.onmouseup=e=>this.cursor.classList.remove("active")}render(){this.pos.prev?(this.pos.prev.x=Math.lerp(this.pos.prev.x,this.pos.curr.x,.15),this.pos.prev.y=Math.lerp(this.pos.prev.y,this.pos.curr.y,.15),this.move(this.pos.prev.x,this.pos.prev.y)):this.pos.prev=this.pos.curr,requestAnimationFrame(()=>this.render())}}(()=>{CURSOR=new Cursor})()</script><script src=//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js type=module></script></body></html>

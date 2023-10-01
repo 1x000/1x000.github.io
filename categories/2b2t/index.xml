@@ -154,25 +154,13 @@ allowfullscreen="true"
 &lt;h2 id="贡献寻路缓存">贡献寻路缓存&lt;/h2>
 &lt;p>贡献寻路缓存方法：将你的&lt;code>.minecraft\baritone&lt;/code>目录下的文件分享出来（不要 &lt;code>settings.txt&lt;/code>）&lt;/p>
 &lt;p>例如：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── .minecraft
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── baritone
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── xx.xx
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── xx.xx
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── xx.xx
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>可以在评论区贴出来你的网盘地址&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">└── .minecraft
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> └── baritone
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> ├── xx.xx
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> ├── xx.xx
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl"> └── xx.xx
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>可以在评论区贴出来你的网盘地址&lt;/p>
 &lt;h2 id="impact-功能翻译想折腾的可以看看">Impact 功能翻译（想折腾的可以看看）&lt;/h2>
 &lt;p>[&lt;code>Visible&lt;/code>：是否显示     &lt;code>Keybind&lt;/code>：热键     &lt;code>Mode&lt;/code>：模式]&lt;/p>
 &lt;h3 id="impact-client-491-功能翻译">Impact Client 4.9.1 功能翻译&lt;/h3>

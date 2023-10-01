@@ -53,17 +53,9 @@ fill="currentColor">
 &lt;blockquote>
 &lt;p>压缩包密码：&lt;code>3e23r6&lt;/code>&lt;/p>
 &lt;/blockquote>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">CONFIG BY:LEl_FENG
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2022/12/11 zonecraft无法连接 疑似在修什么 希望不是反作弊
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="zonecraft-v1版本-良好的优化与超级绕过">zonecraft V1版本 （良好的优化与超级绕过）&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">CONFIG BY:LEl_FENG
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">2022/12/11 zonecraft无法连接 疑似在修什么 希望不是反作弊
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="zonecraft-v1版本-良好的优化与超级绕过">zonecraft V1版本 （良好的优化与超级绕过）&lt;/h2>
 &lt;p>这个配置在反作弊跟前非常稳定（&lt;del>除非你乱调配置和飞行的太久被Ban以外&lt;/del>）&lt;/p>
 &lt;ul>
 &lt;li>

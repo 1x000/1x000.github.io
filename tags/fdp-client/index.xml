@@ -29,15 +29,8 @@
 &lt;/ul>
 &lt;p>可用系统为&lt;strong>Windows7&lt;/strong>&lt;code>32位&lt;/code>以上&lt;/p>
 &lt;p>源码：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">无&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Incognito Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</link><pubDate>Sat, 13 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</guid><description>&lt;h2 id="incognito-绕过">Incognito 绕过&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="n">无&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Incognito Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</link><pubDate>Sat, 13 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</guid><description>&lt;h2 id="incognito-绕过">Incognito 绕过&lt;/h2>
 &lt;p>首先这个反作弊是免费的，在检测&lt;code>Noslow&lt;/code>和&lt;code>Fly&lt;/code>上面堪称完美，但是其他地方就不行了。目前没见服务器使用（失落）&lt;/p>
 &lt;h2 id="incognito-v1官方fdp">Incognito V1（官方FDP）&lt;/h2>
 &lt;ul>
@@ -703,475 +696,238 @@ data-flex-grow="3244"
 data-flex-basis="7786px"
 >&lt;/p>
 &lt;p>把下面的字段覆盖到你的 &lt;code>.minecraft\FDPCLIENT-1.8\hud.json&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt"> 10
-&lt;/span>&lt;span class="lnt"> 11
-&lt;/span>&lt;span class="lnt"> 12
-&lt;/span>&lt;span class="lnt"> 13
-&lt;/span>&lt;span class="lnt"> 14
-&lt;/span>&lt;span class="lnt"> 15
-&lt;/span>&lt;span class="lnt"> 16
-&lt;/span>&lt;span class="lnt"> 17
-&lt;/span>&lt;span class="lnt"> 18
-&lt;/span>&lt;span class="lnt"> 19
-&lt;/span>&lt;span class="lnt"> 20
-&lt;/span>&lt;span class="lnt"> 21
-&lt;/span>&lt;span class="lnt"> 22
-&lt;/span>&lt;span class="lnt"> 23
-&lt;/span>&lt;span class="lnt"> 24
-&lt;/span>&lt;span class="lnt"> 25
-&lt;/span>&lt;span class="lnt"> 26
-&lt;/span>&lt;span class="lnt"> 27
-&lt;/span>&lt;span class="lnt"> 28
-&lt;/span>&lt;span class="lnt"> 29
-&lt;/span>&lt;span class="lnt"> 30
-&lt;/span>&lt;span class="lnt"> 31
-&lt;/span>&lt;span class="lnt"> 32
-&lt;/span>&lt;span class="lnt"> 33
-&lt;/span>&lt;span class="lnt"> 34
-&lt;/span>&lt;span class="lnt"> 35
-&lt;/span>&lt;span class="lnt"> 36
-&lt;/span>&lt;span class="lnt"> 37
-&lt;/span>&lt;span class="lnt"> 38
-&lt;/span>&lt;span class="lnt"> 39
-&lt;/span>&lt;span class="lnt"> 40
-&lt;/span>&lt;span class="lnt"> 41
-&lt;/span>&lt;span class="lnt"> 42
-&lt;/span>&lt;span class="lnt"> 43
-&lt;/span>&lt;span class="lnt"> 44
-&lt;/span>&lt;span class="lnt"> 45
-&lt;/span>&lt;span class="lnt"> 46
-&lt;/span>&lt;span class="lnt"> 47
-&lt;/span>&lt;span class="lnt"> 48
-&lt;/span>&lt;span class="lnt"> 49
-&lt;/span>&lt;span class="lnt"> 50
-&lt;/span>&lt;span class="lnt"> 51
-&lt;/span>&lt;span class="lnt"> 52
-&lt;/span>&lt;span class="lnt"> 53
-&lt;/span>&lt;span class="lnt"> 54
-&lt;/span>&lt;span class="lnt"> 55
-&lt;/span>&lt;span class="lnt"> 56
-&lt;/span>&lt;span class="lnt"> 57
-&lt;/span>&lt;span class="lnt"> 58
-&lt;/span>&lt;span class="lnt"> 59
-&lt;/span>&lt;span class="lnt"> 60
-&lt;/span>&lt;span class="lnt"> 61
-&lt;/span>&lt;span class="lnt"> 62
-&lt;/span>&lt;span class="lnt"> 63
-&lt;/span>&lt;span class="lnt"> 64
-&lt;/span>&lt;span class="lnt"> 65
-&lt;/span>&lt;span class="lnt"> 66
-&lt;/span>&lt;span class="lnt"> 67
-&lt;/span>&lt;span class="lnt"> 68
-&lt;/span>&lt;span class="lnt"> 69
-&lt;/span>&lt;span class="lnt"> 70
-&lt;/span>&lt;span class="lnt"> 71
-&lt;/span>&lt;span class="lnt"> 72
-&lt;/span>&lt;span class="lnt"> 73
-&lt;/span>&lt;span class="lnt"> 74
-&lt;/span>&lt;span class="lnt"> 75
-&lt;/span>&lt;span class="lnt"> 76
-&lt;/span>&lt;span class="lnt"> 77
-&lt;/span>&lt;span class="lnt"> 78
-&lt;/span>&lt;span class="lnt"> 79
-&lt;/span>&lt;span class="lnt"> 80
-&lt;/span>&lt;span class="lnt"> 81
-&lt;/span>&lt;span class="lnt"> 82
-&lt;/span>&lt;span class="lnt"> 83
-&lt;/span>&lt;span class="lnt"> 84
-&lt;/span>&lt;span class="lnt"> 85
-&lt;/span>&lt;span class="lnt"> 86
-&lt;/span>&lt;span class="lnt"> 87
-&lt;/span>&lt;span class="lnt"> 88
-&lt;/span>&lt;span class="lnt"> 89
-&lt;/span>&lt;span class="lnt"> 90
-&lt;/span>&lt;span class="lnt"> 91
-&lt;/span>&lt;span class="lnt"> 92
-&lt;/span>&lt;span class="lnt"> 93
-&lt;/span>&lt;span class="lnt"> 94
-&lt;/span>&lt;span class="lnt"> 95
-&lt;/span>&lt;span class="lnt"> 96
-&lt;/span>&lt;span class="lnt"> 97
-&lt;/span>&lt;span class="lnt"> 98
-&lt;/span>&lt;span class="lnt"> 99
-&lt;/span>&lt;span class="lnt">100
-&lt;/span>&lt;span class="lnt">101
-&lt;/span>&lt;span class="lnt">102
-&lt;/span>&lt;span class="lnt">103
-&lt;/span>&lt;span class="lnt">104
-&lt;/span>&lt;span class="lnt">105
-&lt;/span>&lt;span class="lnt">106
-&lt;/span>&lt;span class="lnt">107
-&lt;/span>&lt;span class="lnt">108
-&lt;/span>&lt;span class="lnt">109
-&lt;/span>&lt;span class="lnt">110
-&lt;/span>&lt;span class="lnt">111
-&lt;/span>&lt;span class="lnt">112
-&lt;/span>&lt;span class="lnt">113
-&lt;/span>&lt;span class="lnt">114
-&lt;/span>&lt;span class="lnt">115
-&lt;/span>&lt;span class="lnt">116
-&lt;/span>&lt;span class="lnt">117
-&lt;/span>&lt;span class="lnt">118
-&lt;/span>&lt;span class="lnt">119
-&lt;/span>&lt;span class="lnt">120
-&lt;/span>&lt;span class="lnt">121
-&lt;/span>&lt;span class="lnt">122
-&lt;/span>&lt;span class="lnt">123
-&lt;/span>&lt;span class="lnt">124
-&lt;/span>&lt;span class="lnt">125
-&lt;/span>&lt;span class="lnt">126
-&lt;/span>&lt;span class="lnt">127
-&lt;/span>&lt;span class="lnt">128
-&lt;/span>&lt;span class="lnt">129
-&lt;/span>&lt;span class="lnt">130
-&lt;/span>&lt;span class="lnt">131
-&lt;/span>&lt;span class="lnt">132
-&lt;/span>&lt;span class="lnt">133
-&lt;/span>&lt;span class="lnt">134
-&lt;/span>&lt;span class="lnt">135
-&lt;/span>&lt;span class="lnt">136
-&lt;/span>&lt;span class="lnt">137
-&lt;/span>&lt;span class="lnt">138
-&lt;/span>&lt;span class="lnt">139
-&lt;/span>&lt;span class="lnt">140
-&lt;/span>&lt;span class="lnt">141
-&lt;/span>&lt;span class="lnt">142
-&lt;/span>&lt;span class="lnt">143
-&lt;/span>&lt;span class="lnt">144
-&lt;/span>&lt;span class="lnt">145
-&lt;/span>&lt;span class="lnt">146
-&lt;/span>&lt;span class="lnt">147
-&lt;/span>&lt;span class="lnt">148
-&lt;/span>&lt;span class="lnt">149
-&lt;/span>&lt;span class="lnt">150
-&lt;/span>&lt;span class="lnt">151
-&lt;/span>&lt;span class="lnt">152
-&lt;/span>&lt;span class="lnt">153
-&lt;/span>&lt;span class="lnt">154
-&lt;/span>&lt;span class="lnt">155
-&lt;/span>&lt;span class="lnt">156
-&lt;/span>&lt;span class="lnt">157
-&lt;/span>&lt;span class="lnt">158
-&lt;/span>&lt;span class="lnt">159
-&lt;/span>&lt;span class="lnt">160
-&lt;/span>&lt;span class="lnt">161
-&lt;/span>&lt;span class="lnt">162
-&lt;/span>&lt;span class="lnt">163
-&lt;/span>&lt;span class="lnt">164
-&lt;/span>&lt;span class="lnt">165
-&lt;/span>&lt;span class="lnt">166
-&lt;/span>&lt;span class="lnt">167
-&lt;/span>&lt;span class="lnt">168
-&lt;/span>&lt;span class="lnt">169
-&lt;/span>&lt;span class="lnt">170
-&lt;/span>&lt;span class="lnt">171
-&lt;/span>&lt;span class="lnt">172
-&lt;/span>&lt;span class="lnt">173
-&lt;/span>&lt;span class="lnt">174
-&lt;/span>&lt;span class="lnt">175
-&lt;/span>&lt;span class="lnt">176
-&lt;/span>&lt;span class="lnt">177
-&lt;/span>&lt;span class="lnt">178
-&lt;/span>&lt;span class="lnt">179
-&lt;/span>&lt;span class="lnt">180
-&lt;/span>&lt;span class="lnt">181
-&lt;/span>&lt;span class="lnt">182
-&lt;/span>&lt;span class="lnt">183
-&lt;/span>&lt;span class="lnt">184
-&lt;/span>&lt;span class="lnt">185
-&lt;/span>&lt;span class="lnt">186
-&lt;/span>&lt;span class="lnt">187
-&lt;/span>&lt;span class="lnt">188
-&lt;/span>&lt;span class="lnt">189
-&lt;/span>&lt;span class="lnt">190
-&lt;/span>&lt;span class="lnt">191
-&lt;/span>&lt;span class="lnt">192
-&lt;/span>&lt;span class="lnt">193
-&lt;/span>&lt;span class="lnt">194
-&lt;/span>&lt;span class="lnt">195
-&lt;/span>&lt;span class="lnt">196
-&lt;/span>&lt;span class="lnt">197
-&lt;/span>&lt;span class="lnt">198
-&lt;/span>&lt;span class="lnt">199
-&lt;/span>&lt;span class="lnt">200
-&lt;/span>&lt;span class="lnt">201
-&lt;/span>&lt;span class="lnt">202
-&lt;/span>&lt;span class="lnt">203
-&lt;/span>&lt;span class="lnt">204
-&lt;/span>&lt;span class="lnt">205
-&lt;/span>&lt;span class="lnt">206
-&lt;/span>&lt;span class="lnt">207
-&lt;/span>&lt;span class="lnt">208
-&lt;/span>&lt;span class="lnt">209
-&lt;/span>&lt;span class="lnt">210
-&lt;/span>&lt;span class="lnt">211
-&lt;/span>&lt;span class="lnt">212
-&lt;/span>&lt;span class="lnt">213
-&lt;/span>&lt;span class="lnt">214
-&lt;/span>&lt;span class="lnt">215
-&lt;/span>&lt;span class="lnt">216
-&lt;/span>&lt;span class="lnt">217
-&lt;/span>&lt;span class="lnt">218
-&lt;/span>&lt;span class="lnt">219
-&lt;/span>&lt;span class="lnt">220
-&lt;/span>&lt;span class="lnt">221
-&lt;/span>&lt;span class="lnt">222
-&lt;/span>&lt;span class="lnt">223
-&lt;/span>&lt;span class="lnt">224
-&lt;/span>&lt;span class="lnt">225
-&lt;/span>&lt;span class="lnt">226
-&lt;/span>&lt;span class="lnt">227
-&lt;/span>&lt;span class="lnt">228
-&lt;/span>&lt;span class="lnt">229
-&lt;/span>&lt;span class="lnt">230
-&lt;/span>&lt;span class="lnt">231
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-JSON" data-lang="JSON">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Armor&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">-15.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">60.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.99999994&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Down&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Mode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;LiquidBounce&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Alignment&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Horizontal&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Notifications&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">20.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">-1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Right&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Down&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;BackGroundAlpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;TitleShadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Motionblur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;ContentShadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;WhiteTextColor&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;CustomModeColored&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Mode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Tenacity&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Scoreboard&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">9.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">31.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Right&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowBar&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;ShadowText&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;ServerIp&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;ClientName&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;NoPoints&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Font&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Minecraft Font&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">-1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Strength&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Background&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Effects&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">-1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">50.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Left&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Arraylist&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Right&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Up&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Tag-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Tag-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Tag-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Tag-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;AllSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">400&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Random-Saturation&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Random-Brightness&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;TagsStyle&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;None&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;ShadowText&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;SplitName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;SlideInAnimation&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;NoRenderModules&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Expand&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;None&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Case&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Normal&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Space&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;TextHeight&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">9.954023&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;TextY&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Font&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Minecraft Font&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">-1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;TextAlpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-NoCut&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Strength&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Background&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;CRainbow-Seconds&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;CRainbow-Distance&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Targets&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">180.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">-25.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Mode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Arris&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RiseMode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Rise6&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Chill-FontSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.01&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Font&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Minecraft Font&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">-1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Strength&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Background&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">111&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;AnimSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HpAnimType&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;SINE&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HpAnimOrder&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;FAST_AT_START_AND_END&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;SwitchMode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Slide&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;SwitchAnimType&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;SINE&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;SwitchAnimOrder&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;FAST_AT_START_AND_END&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;SwitchAnimSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;No-Animation&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Global-AnimSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">3.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;ArrisRounded&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Health&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">252&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">96&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">66&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Saturation&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Brightness&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">60&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;TenacityNewStaticRainbow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;FadeAnim&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Fade-Speed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Seconds&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RiseHurt&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RiseAlpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">130&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-Count&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-Size&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.7&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-Distance&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-MoveTime&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-FadeTime&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;GradientLoop&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">19&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;GradientDistance&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">88&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;GradientRoundedBar&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-Particle&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-ParticleSpin&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;GenerateAmount&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Circle-Particles&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Solid&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Particles&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Solid&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Triangle-Particles&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Solid&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-ParticleSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.05&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-ParticleFade&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;ParticleFadingSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.05&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-ParticleRange&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">50.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;MinParticleSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;MaxParticleSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Text&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">10.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">10.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Left&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Up&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;DisplayText&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;BlocksmcV3.5 https://blog.xpdbk.com&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Strength&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">216&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;None&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectColor&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectRed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectGreen&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectBlue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectAlpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectExpand&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectRoundingMultiplier&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowIndex&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Font&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Minecraft Font&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">-1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="v1-hud">V1 HUD&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-JSON" data-lang="JSON">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Armor&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">-15.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">60.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.99999994&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Down&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Mode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;LiquidBounce&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 10&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Alignment&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Horizontal&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 11&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 12&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 13&lt;/span>&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 14&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Notifications&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 15&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">20.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 16&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">-1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 17&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 18&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Right&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 19&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Down&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 20&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;BackGroundAlpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 21&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;TitleShadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 22&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Motionblur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 23&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;ContentShadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 24&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;WhiteTextColor&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 25&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;CustomModeColored&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 26&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Mode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Tenacity&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 27&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 28&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 29&lt;/span>&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 30&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Scoreboard&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 31&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">9.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 32&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">31.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 33&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 34&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Right&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 35&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 36&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 37&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 38&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 39&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 40&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 41&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 42&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 43&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 44&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 45&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 46&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 47&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 48&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 49&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowBar&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 50&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;ShadowText&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 51&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;ServerIp&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;ClientName&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 52&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;NoPoints&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 53&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Font&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 54&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Minecraft Font&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 55&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">-1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 56&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 57&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 58&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Strength&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 59&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Background&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 60&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 61&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 62&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 63&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 64&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 65&lt;/span>&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 66&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Effects&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 67&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">-1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 68&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">50.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 69&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 70&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Left&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 71&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 72&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 73&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 74&lt;/span>&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 75&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Arraylist&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 76&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 77&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 78&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 79&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Right&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 80&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Up&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 81&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 82&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 83&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 84&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Text-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 85&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Tag-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 86&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Tag-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 87&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Tag-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 88&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Tag-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 89&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;AllSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">400&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 90&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 91&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 92&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 93&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 94&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 95&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Random-Saturation&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 96&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Random-Brightness&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 97&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;TagsStyle&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;None&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 98&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;ShadowText&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 99&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;SplitName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">100&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;SlideInAnimation&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">101&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;NoRenderModules&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">102&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">103&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-R&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">104&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-G&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">105&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">106&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">107&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Expand&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">108&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">109&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;None&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">110&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Case&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Normal&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">111&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Space&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">112&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;TextHeight&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">9.954023&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">113&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;TextY&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">114&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Font&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">115&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Minecraft Font&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">116&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">-1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">117&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">118&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;TextAlpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">119&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">120&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-NoCut&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">121&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Strength&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">122&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Background&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">123&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">124&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">125&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">126&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;CRainbow-Seconds&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">127&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;CRainbow-Distance&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">128&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">129&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">130&lt;/span>&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">131&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Targets&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">132&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">180.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">133&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">-25.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">134&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">135&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">136&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Middle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">137&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Mode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Arris&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">138&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RiseMode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Rise6&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">139&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Chill-FontSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.01&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">140&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Font&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">141&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Minecraft Font&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">142&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">-1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">143&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">144&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">145&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Strength&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">146&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Background&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">147&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">148&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">111&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">149&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">150&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;AnimSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">151&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HpAnimType&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;SINE&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">152&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HpAnimOrder&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;FAST_AT_START_AND_END&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">153&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;SwitchMode&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Slide&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">154&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;SwitchAnimType&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;SINE&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">155&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;SwitchAnimOrder&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;FAST_AT_START_AND_END&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">156&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;SwitchAnimSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">157&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;No-Animation&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">158&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Global-AnimSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">3.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">159&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;ArrisRounded&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">160&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Health&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">161&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">252&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">162&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">96&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">163&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">66&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">164&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Saturation&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">165&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Brightness&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">166&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">167&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">168&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">169&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Background-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">60&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">170&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;TenacityNewStaticRainbow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">171&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">172&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;FadeAnim&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">173&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Fade-Speed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">174&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Seconds&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">175&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RiseHurt&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">176&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RiseAlpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">130&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">177&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-Count&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">178&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-Size&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">179&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.7&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">180&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-Distance&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">181&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-MoveTime&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">182&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rise-FadeTime&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">183&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;GradientLoop&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">19&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">184&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;GradientDistance&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">88&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">185&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;GradientRoundedBar&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">186&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-Particle&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">187&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-ParticleSpin&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">188&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;GenerateAmount&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">189&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Circle-Particles&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Solid&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">190&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect-Particles&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Solid&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">191&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Triangle-Particles&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Solid&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">192&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-ParticleSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.05&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">193&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-ParticleFade&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">194&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;ParticleFadingSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.05&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">195&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rice-ParticleRange&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">50.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">196&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;MinParticleSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">197&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;MaxParticleSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">198&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">199&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">200&lt;/span>&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">201&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Type&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Text&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">202&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;X&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">10.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">203&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Y&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">10.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">204&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Scale&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">205&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;HorizontalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Left&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">206&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;VerticalFacing&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Up&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">207&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;DisplayText&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;BlocksmcV3.5 https://blog.xpdbk.com&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">208&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">209&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Shadow-Strength&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">1.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">210&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Red&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">211&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Green&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">216&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">212&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">213&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Alpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">214&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Color&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">215&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Rect&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;None&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">216&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectColor&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Custom&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">217&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectRed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">218&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectGreen&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">219&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectBlue&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">220&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectAlpha&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">221&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectExpand&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">222&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RectRoundingMultiplier&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">223&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowSpeed&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">224&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;RainbowIndex&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">225&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Font&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">226&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontName&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Minecraft Font&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">227&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;fontSize&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">-1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">228&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">229&lt;/span>&lt;span class="cl"> &lt;span class="nt">&amp;#34;Blur&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">230&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">231&lt;/span>&lt;span class="cl">&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="v1-hud">V1 HUD&lt;/h2>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/b031s24ba" target="_blank" rel="noopener"
 >蓝奏云下载&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"

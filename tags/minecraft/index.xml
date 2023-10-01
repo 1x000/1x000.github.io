@@ -193,29 +193,15 @@ allowfullscreen="true"
 &lt;p>你的延迟高于&lt;code>300ms&lt;/code>（&lt;del>别玩了，不用加速器还想开军舰！&lt;/del>）。&lt;/p>
 &lt;p>（可以开自动骂人&lt;code>insult&lt;/code>）可以配置打完人自动阴阳怪气&lt;/p>
 &lt;p>&lt;strong>自动骂人配置的更改方法（仅用于FDP）&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-JSON" data-lang="JSON">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;[&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% 我看你需要蛋白质 盖亚！\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% ^^看起来你需要IQ\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% ^^真的L哈哈\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% 这就是亼\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;]&amp;#34;&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="err">可以发挥你的全部的想象力&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/rrr.webp"
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-JSON" data-lang="JSON">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34;[&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% 我看你需要蛋白质 盖亚！\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% ^^看起来你需要IQ\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% ^^真的L哈哈\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34; \&amp;#34;%name% 这就是亼\&amp;#34;,&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34;]&amp;#34;&lt;/span> &lt;span class="err">#&lt;/span> &lt;span class="err">可以发挥你的全部的想象力&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl">&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://blog.xpdbk.com/post/blocksmc-fdpclient/rrr.webp"
 width="1365"
 height="767"
 srcset="https://blog.xpdbk.com/post/blocksmc-fdpclient/rrr_hufab1be46ba800f7fcbfd7ec69cac3158_40498_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/blocksmc-fdpclient/rrr_hufab1be46ba800f7fcbfd7ec69cac3158_40498_1024x0_resize_q75_h2_box_2.webp 1024w"
@@ -605,24 +591,10 @@ fill="currentColor">
 &lt;h2 id="bmc-fdp-v35-配置开源起床战争增强">BMC FDP V3.5 配置（开源+起床战争增强）&lt;/h2>
 &lt;p>&lt;strong>开源库（没人贡献哈哈）&lt;/strong>&lt;/p>
 &lt;p>&lt;code>GITHUB&lt;/code>仓库&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">https://github.com/1x000/BMC/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;code>GITEE&lt;/code>仓库&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">https://gitee.com/cat-owo/BMC/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">https://github.com/1x000/BMC/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>GITEE&lt;/code>仓库&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">https://gitee.com/cat-owo/BMC/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
 &lt;p>蓝奏云&lt;/p>
 &lt;p>JSON配置（配置本体）&lt;/p>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/ihzKq0mpn8xc" target="_blank" rel="noopener"
