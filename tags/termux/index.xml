@@ -5,25 +5,67 @@
 &lt;p>&lt;strong>文档相关&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://termux.com/" target="_blank" rel="noopener"
->Termux 官网&lt;/a>&lt;/li>
+>Termux 官网&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
->Github 项目地址&lt;/a>&lt;/li>
+>Github 项目地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://wiki.termux.com/wiki/Main_Page" target="_blank" rel="noopener"
->官方英文 WiKi 文档&lt;/a>&lt;/li>
+>官方英文 WiKi 文档&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>下载地址&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;a class="link" href="https://f-droid.org/packages/com.termux/" target="_blank" rel="noopener"
->F-Droid 下载地址&lt;/a>&lt;/p>
+>F-Droid 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;a class="link" href="https://play.google.com/store/apps/details?id=com.termux" target="_blank" rel="noopener"
->Google Play 下载地址&lt;/a>&lt;/p>
+>Google Play 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;a class="link" href="https://www.coolapk.com/apk/com.termux" target="_blank" rel="noopener"
->酷安 下载地址&lt;/a>&lt;/p>
+>酷安 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;blockquote>
@@ -326,7 +368,14 @@
 &lt;/div>
 &lt;/div>&lt;h2 id="终端配色方案">终端配色方案&lt;/h2>
 &lt;p>&lt;strong>脚本项目地址&lt;/strong>&lt;a class="link" href="https://github.com/Cabbagec/termux-ohmyzsh/" target="_blank" rel="noopener"
->https://github.com/Cabbagec/termux-ohmyzsh/&lt;/a>&lt;/p>
+>https://github.com/Cabbagec/termux-ohmyzsh/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>该脚本主要使用了 &lt;code>zsh&lt;/code> 来替代 &lt;code>bash&lt;/code> 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。&lt;/p>
 &lt;blockquote>
 &lt;p>执行下面这个命令确保已经安装好了 curl 命令&lt;/p>
@@ -1091,9 +1140,23 @@
 &lt;/div>&lt;p>当然这个包可能不太稳定，遇到相关问题可以去 Termux 官方的项目下提交 issue&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://github.com/termux/termux-packages/issues?q=openjdk" target="_blank" rel="noopener"
->Issues · termux/termux-packages · GitHub&lt;/a>&lt;/li>
+>Issues · termux/termux-packages · GitHub&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/termux/termux-packages/issues?q=java" target="_blank" rel="noopener"
->Issues · termux/termux-packages · GitHub&lt;/a>&lt;/li>
+>Issues · termux/termux-packages · GitHub&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ul>
 &lt;h3 id="ecj">ECJ&lt;/h3>
 &lt;h4 id="安装编译工具">安装编译工具&lt;/h4>
@@ -1692,7 +1755,14 @@
 &lt;/div>&lt;p>查了下是这边版本的问题&lt;/p>
 &lt;p>这是一个 BUG，官方的解决方法如下&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/rvagg/node-worker-farm/commit/0b2349c6c7ed5c51e234e418fad226875313e773" target="_blank" rel="noopener"
->disable concurrency in case of libuv/libuv#1459&lt;/a>&lt;/p>
+>disable concurrency in case of libuv/libuv#1459&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>编辑如下文件&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2218,10 +2288,24 @@
 &lt;p>qwq这里就只是说一下这个思路，因为强迫症的我不能忍受 Nginx 根目录的文件 乱七八糟 =，= 大家想尝试的话 按照我这个思路去尝试就可以了。&lt;/p>
 &lt;h2 id="kodexplorer">KodExplorer&lt;/h2>
 &lt;p>KodExplorer 是一款开源文件资源管理器，搭建起来很简单，我们也可以在 Termux 搭建，这样就可以实现 Temux 下的文件分享了，十分优雅方便。在这篇文章&lt;a class="link" href="https://www.54t3456345yg356yh56h54h54h547h5hj/2019/11/kode.html" target="_blank" rel="noopener"
->macOS上快速搭建局域网文件分享系统 | qwq&lt;/a> 里面也讲解了 macOS 下的安装。&lt;/p>
+>macOS上快速搭建局域网文件分享系统 | qwq&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+ 里面也讲解了 macOS 下的安装。&lt;/p>
 &lt;h3 id="下载解压-kod">下载解压 Kod&lt;/h3>
 &lt;p>&lt;strong>官网的下载地址&lt;/strong>&lt;a class="link" href="https://kodcloud.com/download/" target="_blank" rel="noopener"
->下载 - 可道云-私有云存储&amp;amp;协同办公平台_企业网盘_企业云盘_网盘_云盘&lt;/a>&lt;/p>
+>下载 - 可道云-私有云存储&amp;amp;协同办公平台_企业网盘_企业云盘_网盘_云盘&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>我们拷贝下载链接后，使用 wegt 可以直接下载&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2265,7 +2349,14 @@
 &lt;p>可以看到 &lt;code>wordpress&lt;/code> 数据库已经新建成功了。&lt;/p>
 &lt;h3 id="下载-wordpress">下载 WordPress&lt;/h3>
 &lt;p>&lt;strong>WordPress 历届版本&lt;/strong>: &lt;a class="link" href="https://cn.wordpress.org/download/releases/" target="_blank" rel="noopener"
->版本发布 | WordPress.org China 简体中文&lt;/a>&lt;/p>
+>版本发布 | WordPress.org China 简体中文&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>选择最新的版本后，复制下载的直链，那么就开始用 wget 下载并解压吧&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2330,19 +2421,40 @@
 &lt;tr>
 &lt;td>VNC Viewer 3.6.1.42089 汉化版&lt;/td>
 &lt;td>&lt;a class="link" href="https://666.lanzoux.com/ibq43wb" target="_blank" rel="noopener"
->蓝奏云&lt;/a>&lt;/td>
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/td>
 &lt;td>远程连接使用&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>NetHunter KeX 4.0.7-6&lt;/td>
 &lt;td>&lt;a class="link" href="https://666.lanzoux.com/ibq4akb" target="_blank" rel="noopener"
->蓝奏云&lt;/a>&lt;/td>
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/td>
 &lt;td>Kali 官方 远程连接工具&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>AnLinux 6.10&lt;/td>
 &lt;td>&lt;a class="link" href="https://666.lanzoux.com/ibq4iuj" target="_blank" rel="noopener"
->蓝奏云&lt;/a>&lt;/td>
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/td>
 &lt;td>提供比较全面的系统安装脚本&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -2524,7 +2636,14 @@
 &lt;/div>
 &lt;/div>&lt;h2 id="其他-linux-系统">其他 Linux 系统&lt;/h2>
 &lt;p>&lt;strong>Termux 安装 Linux 系统项目地址&lt;/strong>&lt;a class="link" href="https://github.com/666/termux-install-linux" target="_blank" rel="noopener"
->GitHub - 666/termux-install-linux: Termux一键安装Linux脚本&lt;/a>&lt;/p>
+>GitHub - 666/termux-install-linux: Termux一键安装Linux脚本&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>这个脚本qwq我磨磨蹭蹭写了 1 天才写完，筛选下来的系统都是体验还不错的系统。&lt;/p>
 &lt;p>下载的主要镜像全部托管在了 Gitee 上，下载速度很快，而且系统对应的更新源qwq均替换为国内源了，安装和卸载都很容易上手，用户非预期的输入也都考虑到了，目前完美支持 Ubuntu、Kali、Debian、CentOS、Fedora 系统的安装，具体想尝试的话可以输入如下命令体验安装:&lt;/p>
 &lt;blockquote>
@@ -2543,7 +2662,14 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>系统安装的更多细节可以参考这一篇文章&lt;a class="link" href="https://www.54t3456345yg356yh56h54h54h547h5hj/2020/04/termuxlinux.html" target="_blank" rel="noopener"
->Android Termux 安装 Linux 就是这么简单&lt;/a>&lt;/p>
+>Android Termux 安装 Linux 就是这么简单&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;h1 id="极客行为">极客行为&lt;/h1>
 &lt;p>因为 Termux 各种基础的包都有，所以基本是一个小型的树莓派，所以可折腾性极高，如果你是一个极客玩家，不折腾会死星人的话，那么本章节比较适合你。祝你折腾愉快！&lt;/p>
 &lt;h2 id="aria2">Aria2&lt;/h2>
@@ -2578,7 +2704,14 @@
 &lt;/div>
 &lt;/div>&lt;h3 id="webui-aria2">webui-aria2&lt;/h3>
 &lt;p>qwq这里选的是这个比较流行的 aria2 的开源项目，地址是&lt;a class="link" href="https://github.com/ziahamza/webui-aria2" target="_blank" rel="noopener"
->GitHub - ziahamza/webui-aria2: The aim for this project is to create the worlds best and hottest interface to interact with aria2. Very simple to use, just download and open index.html in any web browser.&lt;/a> 安装运行起来也很简单&lt;/p>
+>GitHub - ziahamza/webui-aria2: The aim for this project is to create the worlds best and hottest interface to interact with aria2. Very simple to use, just download and open index.html in any web browser.&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+ 安装运行起来也很简单&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2949,7 +3082,14 @@
 &lt;p>下面以我自己的歌单为例子，首先找到自己喜欢的歌单，然后点击复制链接&lt;/p>
 &lt;blockquote>
 &lt;p>链接传送门&lt;a class="link" href="http://music.163.com/playlist?id=489221140" target="_blank" rel="noopener"
->渗透测试代码审计程序员必备电音&lt;/a>&lt;/p>
+>渗透测试代码审计程序员必备电音&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;/blockquote>
 &lt;p>直接 you-get 歌单的链接地址就可以直接批量下载地址了&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -3094,7 +3234,14 @@
 &lt;/div>
 &lt;/div>&lt;h2 id="netcat">Netcat&lt;/h2>
 &lt;p>nc 被誉为网络安全界的瑞士军刀，一个简单而有用的工具，netcat 是比较新的现代版本，并且作者是着名的 Nmap 程序的作者。nc 命令的详细教程可以参考这篇文章: &lt;a class="link" href="https://www.54t3456345yg356yh56h54h54h547h5hj/2019/10/nc.html" target="_blank" rel="noopener"
->nc 命令教程&lt;/a>&lt;/p>
+>nc 命令教程&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>目前 ncat 已经集成到了 nmap 里面，安装完 nmap 后就可以使用 &lt;code>ncat&lt;/code> 命令了，如果你不想安装 nmap 也可以单独安装 ncat 命令&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -3131,11 +3278,32 @@
 &lt;/div>&lt;h2 id="hashcat">Hashcat&lt;/h2>
 &lt;p>Hashcat 是世界上最快的密码破解程序，是一个支持多平台、多算法的开源的分布式工具。&lt;/p>
 &lt;p>官方:&lt;a class="link" href="https://hashcat.net/hashcat/" target="_blank" rel="noopener"
->hashcat - advanced password recovery&lt;/a>&lt;/p>
+>hashcat - advanced password recovery&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>Github:&lt;a class="link" href="https://github.com/hashcat/hashcat" target="_blank" rel="noopener"
->GitHub - hashcat/hashcat: World's fastest and most advanced password recovery utility&lt;/a>&lt;/p>
+>GitHub - hashcat/hashcat: World's fastest and most advanced password recovery utility&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>在另一篇文章里面有更详细的教程来介绍这款工具&lt;a class="link" href="https://www.54t3456345yg356yh56h54h54h547h5hj/2019/10/hashcat.html" target="_blank" rel="noopener"
->Hashcat 学习记录&lt;/a>&lt;/p>
+>Hashcat 学习记录&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;strong>安装 Hashcat&lt;/strong>&lt;/p>
 &lt;p>Termux unstable 源里面也封装好了 Hastcat，所以我们安装依然一条命令即可&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -3190,10 +3358,24 @@
 >&lt;img src="https://image.3001.net/images/20180502/1525253245778.webp!"
 loading="lazy"
 alt="成功爆破出了SSH的密码 以前的"
->&lt;/a>&lt;/p>
+>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;h2 id="sqlmap">SQLmap&lt;/h2>
 &lt;p>SQLmap 是一款用来检测与利用 SQL 注入漏洞的免费开源工具 &lt;a class="link" href="https://github.com/sqlmapproject/sqlmap" target="_blank" rel="noopener"
->官方项目地址&lt;/a>，后面 SQLmap 也支持 Python3 版本了&lt;/p>
+>官方项目地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+，后面 SQLmap 也支持 Python3 版本了&lt;/p>
 &lt;p>&lt;strong>安装 SQLmap&lt;/strong>&lt;/p>
 &lt;p>我们直接 &lt;code>git clone&lt;/code> 源码，然后运行 &lt;code>sqlmap.py&lt;/code> 文件&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -3213,9 +3395,23 @@ alt="成功爆破出了SSH的密码 以前的"
 &lt;/blockquote>
 &lt;h2 id="xray">xray&lt;/h2>
 &lt;p>xray 是长亭科技开发的 Web 漏洞扫描器，在圈内的反馈都是还不错的，在这篇文章 &lt;a class="link" href="https://www.54t3456345yg356yh56h54h54h547h5hj/2020/04/xray.html" target="_blank" rel="noopener"
->xray Web 扫描器学习记录&lt;/a>已经讲解了 xray 扫描器的基本使用，但是qwq注意到 xray 官方项目居然也发布了 arm64 的版本，那么理论 Termux 应该也就可以愉快地安装了，手机躺着挖洞也不是不可能。&lt;/p>
+>xray Web 扫描器学习记录&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+已经讲解了 xray 扫描器的基本使用，但是qwq注意到 xray 官方项目居然也发布了 arm64 的版本，那么理论 Termux 应该也就可以愉快地安装了，手机躺着挖洞也不是不可能。&lt;/p>
 &lt;p>&lt;strong>官方版本发布地址&lt;/strong>: &lt;a class="link" href="https://github.com/chaitin/xray/releases" target="_blank" rel="noopener"
->Releases · chaitin/xray · GitHub&lt;/a>&lt;/p>
+>Releases · chaitin/xray · GitHub&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>下面尝试直接安装运行看看&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -3248,9 +3444,23 @@ alt="成功爆破出了SSH的密码 以前的"
 &lt;p>&lt;strong>下载地址&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://play.google.com/store/apps/details?id=com.termux.api" target="_blank" rel="noopener"
->Termux:API Google Play 下载地址&lt;/a>&lt;/li>
+>Termux:API Google Play 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://f-droid.org/packages/com.termux.api/" target="_blank" rel="noopener"
->Termux:API F-Droid 下载地址&lt;/a>&lt;/li>
+>Termux:API F-Droid 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ul>
 &lt;blockquote>
 &lt;p>请勿在 Google Play 和 F-Droid 之间混合安装 Termux 和 插件。&lt;/p>
@@ -3269,15 +3479,36 @@ alt="成功爆破出了SSH的密码 以前的"
 &lt;/div>
 &lt;/div>&lt;p>下面只列举一些可能会用到的，想要获取更多关于 &lt;code>Termux-api&lt;/code> 的话，可以考虑参考官方文档。&lt;/p>
 &lt;p>因为本文的篇幅已经过长，而且手机用户浏览起来已经很卡顿了，所以单独把之前冗长的 Termux API 部分开了一篇文章来记录，提高用户的浏览体验&lt;a class="link" href="https://www.54t3456345yg356yh56h54h54h547h5hj/2018/05/termuxapi.html" target="_blank" rel="noopener"
->Termux-API 使用教程&lt;/a>&lt;/p>
+>Termux-API 使用教程&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;h2 id="termuxboot">Termux:Boot&lt;/h2>
 &lt;p>用于将自定义命令开机自启使用，不要每次重启完重复敲命令了。(当然你的手机性能很强，从来需要重启)&lt;/p>
 &lt;h3 id="安装-termuxboot">安装 Termux:Boot&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://play.google.com/store/apps/details?id=com.termux.boot" target="_blank" rel="noopener"
->Termux:Boot Google Play 下载地址&lt;/a>&lt;/li>
+>Termux:Boot Google Play 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://f-droid.org/packages/com.termux.boot/" target="_blank" rel="noopener"
->Termux:Boot F-Droid 下载地址&lt;/a>&lt;/li>
+>Termux:Boot F-Droid 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ul>
 &lt;blockquote>
 &lt;p>请勿在 Google Play 和 F-Droid 之间混合安装 Termux 和 插件。&lt;/p>
@@ -3302,9 +3533,23 @@ alt="成功爆破出了SSH的密码 以前的"
 &lt;p>可以将 Termux 悬浮窗形式显示，看上去比较酷炫。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://play.google.com/store/apps/details?id=com.termux.window" target="_blank" rel="noopener"
->Termux: Float Google Play 下载地址&lt;/a>&lt;/li>
+>Termux: Float Google Play 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://f-droid.org/packages/com.termux.window/" target="_blank" rel="noopener"
->Termux: Float F-Droid 下载地址&lt;/a>&lt;/li>
+>Termux: Float F-Droid 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ul>
 &lt;blockquote>
 &lt;p>请勿在 Google Play 和 F-Droid 之间混合安装 Termux 和 插件。&lt;/p>
@@ -3314,9 +3559,23 @@ alt="成功爆破出了SSH的密码 以前的"
 &lt;p>Termux 官方提供了终端的一些美化方案。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://play.google.com/store/apps/details?id=com.termux.styling" target="_blank" rel="noopener"
->Termux:Styling Google Play 下载地址&lt;/a>&lt;/li>
+>Termux:Styling Google Play 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://f-droid.org/packages/com.termux.styling/" target="_blank" rel="noopener"
->Termux:Styling F-Droid 下载地址&lt;/a>&lt;/li>
+>Termux:Styling F-Droid 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ul>
 &lt;blockquote>
 &lt;p>请勿在 Google Play 和 F-Droid 之间混合安装 Termux 和 插件。&lt;/p>
@@ -3326,9 +3585,23 @@ alt="成功爆破出了SSH的密码 以前的"
 &lt;p>提供了 Andorid 的 Termux 小部件。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://play.google.com/store/apps/details?id=com.termux.widget" target="_blank" rel="noopener"
->Termux:Widget Google Play 下载地址&lt;/a>&lt;/li>
+>Termux:Widget Google Play 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://f-droid.org/packages/com.termux.widget/" target="_blank" rel="noopener"
->Termux:Widget F-Droid 下载地址&lt;/a>&lt;/li>
+>Termux:Widget F-Droid 下载地址&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ul>
 &lt;blockquote>
 &lt;p>请勿在 Google Play 和 F-Droid 之间混合安装 Termux 和 插件。&lt;/p>
@@ -3641,8 +3914,22 @@ alt="成功爆破出了SSH的密码 以前的"
 &lt;p>本版块由初学生 KeySummer 提供，QQ 为1505708353 有这方面问题可以找他交流哦。&lt;/p>
 &lt;/blockquote>
 &lt;p>搭建 mc 基岩服务器首先得了解跨 CPU 技术，具体安装方法可以参考 &lt;a class="link" href="https://gitee.com/mo2/linux" target="_blank" rel="noopener"
->Gitee -Moe/Tmoe-linux&lt;/a> ，在安装过程中请安装 ubuntu，以便与直接开服。然后输入 debian 就可以进入跨 cpu 的容器里了，然后大家可以去&lt;a class="link" href="https://www.minecraft.net/zh-hans/download/server/bedrock" target="_blank" rel="noopener"
->基岩版服务器下载 | Minecraft&lt;/a> 网址内找到 Ubuntu 版的下载按钮，然后复制连接回到 Termux 内的 Ubuntu 后输入&lt;/p>
+>Gitee -Moe/Tmoe-linux&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+ ，在安装过程中请安装 ubuntu，以便与直接开服。然后输入 debian 就可以进入跨 cpu 的容器里了，然后大家可以去&lt;a class="link" href="https://www.minecraft.net/zh-hans/download/server/bedrock" target="_blank" rel="noopener"
+>基岩版服务器下载 | Minecraft&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+ 网址内找到 Ubuntu 版的下载按钮，然后复制连接回到 Termux 内的 Ubuntu 后输入&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1

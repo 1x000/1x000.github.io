@@ -2,12 +2,26 @@
 &lt;blockquote>
 &lt;p>这个Kevin客户端比FDPClient客户端在grim和vulcan和polar的绕过强一点，但是目前的视觉很不好和BUG很玄学&lt;/p>
 &lt;p>Kevin客户端的开源地址：&lt;a class="link" href="https://github.com/RE-KevinClient/KevinClient-Reborn" target="_blank" rel="noopener"
->GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>&lt;/p>
+>GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>以后我会建一个镜像站的吧（没有大硬盘？）&lt;/p>
 &lt;hr>
 &lt;p>Kevin一键客户端（U2.4.8版本（可以自己更换JAR和JSON实现更新））&lt;/p>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iB7tO165hg7i" target="_blank" rel="noopener"
->蓝奏云&lt;/a> 访问密码:&lt;code>e4m8&lt;/code> 压缩包密码： &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码:&lt;code>e4m8&lt;/code> 压缩包密码： &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;div class="notice notice-warning" >
 &lt;div class="notice-title">&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 576 512" fill="hsl(0, 65%, 65%)">&lt;path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/>&lt;/svg>&lt;/div>&lt;p>本文章使用的是 &lt;code>KevinClient Reborn u2.4.8&lt;/code> 这个版本&lt;/p>&lt;/div>

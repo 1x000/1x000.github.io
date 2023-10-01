@@ -30,11 +30,32 @@
 &lt;p>使用Xshell的密钥生成功能选择最高加密位数然后加上密码&lt;/p>
 &lt;p>关于 SSH key 的知识可参考&lt;br>
 &lt;a class="link" href="https://www.jianshu.com/p/1246cfdbe460" target="_blank" rel="noopener"
->SSH key 的介绍与在 Git 中的使用&lt;/a>&lt;/p>
+>SSH key 的介绍与在 Git 中的使用&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.ssh.com/ssh/keygen/" target="_blank" rel="noopener"
->ssh 官网&lt;/a>&lt;/p>
+>ssh 官网&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.vultr.com/docs/how-do-i-generate-ssh-keys/" target="_blank" rel="noopener"
->&lt;del>vultr 一直被墙IP的VPS 官网&lt;/del>&lt;/a>&lt;/p>
+>&lt;del>vultr 一直被墙IP的VPS 官网&lt;/del>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>2.将本地的公钥扔到服务器上去&lt;/p>
 &lt;p>要注意的是，你想要这对密钥登录哪个账户，就放到哪个账户下，比如我要自动登录 root，那么我就会这样做：&lt;/p>
 &lt;blockquote>
