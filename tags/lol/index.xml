@@ -305,25 +305,11 @@ data-flex-basis="714px"
 &lt;h4 id="前置服务器安装说明">前置服务器安装说明&lt;/h4>
 &lt;h5 id="手机安装-busybox-app">手机安装 BusyBox app&lt;/h5>
 &lt;p>&lt;a class="link" href="https://github.com/meefik/busybox/releases" target="_blank" rel="noopener"
->https://github.com/meefik/busybox/releases&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://github.com/meefik/busybox/releases&lt;/a>&lt;/p>
 &lt;p>&lt;del>应用界面，选择install(使用默认配置/system/xbin)&lt;/del> 请自己试试如果完蛋了就重新安装Linux Deploy&lt;/p>
 &lt;h5 id="手机安装-linux-deploy">手机安装 linux deploy&lt;/h5>
 &lt;p>&lt;a class="link" href="https://github.com/meefik/linuxdeploy/releases" target="_blank" rel="noopener"
->Releases · meefik/linuxdeploy · GitHub&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>Releases · meefik/linuxdeploy · GitHub&lt;/a>&lt;/p>
 &lt;h4 id="修改linux-deploy配置">修改linux deploy配置&lt;/h4>
 &lt;p>linux deploy界面，选择左上角图标-配置：&lt;/p>
 &lt;table>
@@ -453,24 +439,10 @@ fill="currentColor">
 &lt;blockquote>
 &lt;p>警告&lt;/p>
 &lt;p>&lt;strong>Termux 的Play 商店版本已经过时，不支持，不要使用，请使用 &lt;a class="link" href="https://github.com/termux/termux-app/releases/latest/" target="_blank" rel="noopener"
->Github one在新窗口打开&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/strong>&lt;/p>
+>Github one在新窗口打开&lt;/a>&lt;/strong>&lt;/p>
 &lt;/blockquote>
 &lt;p>转到 &lt;a class="link" href="https://github.com/termux/termux-app/releases/latest/" target="_blank" rel="noopener"
->Termux Github 最新版本在新窗口打开&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-, 下载 &lt;code>debug_universal.apk&lt;/code>, 解压缩它并运行它。&lt;/p>
+>Termux Github 最新版本在新窗口打开&lt;/a>, 下载 &lt;code>debug_universal.apk&lt;/code>, 解压缩它并运行它。&lt;/p>
 &lt;blockquote>
 &lt;p>提示&lt;/p>
 &lt;p>&lt;strong>如果您的文件管理器不允许您运行 APK 文件， 安装并使用 &lt;code>MT文件管理器&lt;/code> 并允许它在接到请求时安装第三方应用程序。&lt;/strong>&lt;/p>
@@ -547,14 +519,7 @@ fill="currentColor">
 &lt;/div>
 &lt;/div>&lt;h2 id="介绍-ffmpeg">介绍 FFmpeg&lt;/h2>
 &lt;p>&lt;a class="link" href="https://ffmpeg.org/" target="_blank" rel="noopener"
->FFmpeg&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
- 本身是一款非常强大的命令行实用程序，在 Linux 发行版、Windows 以及 macOS 等系统上均可运行，支持多种架构。FFmpeg 是用 C 语言和汇编语言编写的，性能强大，提供跨平台支持。&lt;/p>
+>FFmpeg&lt;/a> 本身是一款非常强大的命令行实用程序，在 Linux 发行版、Windows 以及 macOS 等系统上均可运行，支持多种架构。FFmpeg 是用 C 语言和汇编语言编写的，性能强大，提供跨平台支持。&lt;/p>
 &lt;h3 id="ffmpeg-安装">FFmpeg 安装&lt;/h3>
 &lt;p>在 Ubuntu 等 Linux 发行版上， FFmpeg 的安装比较简单。打开终端，运行以下命令安装即可。&lt;/p>
 &lt;h4 id="ubuntu-及与其相似的发行版">Ubuntu 及与其相似的发行版&lt;/h4>
@@ -680,14 +645,7 @@ data-flex-basis="1064px"
 &lt;p>例如我直播的内容是丁真所以也没事&lt;/p>
 &lt;p>有能力的可以点开链接看雪豹直播doge&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=xwTnSvGj4iw" target="_blank" rel="noopener"
->I Got Smoke 丁真无限循环 24H*7Days - YouTube&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>I Got Smoke 丁真无限循环 24H*7Days - YouTube&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/tlyt.webp"
 width="1365"
 height="696"
@@ -704,14 +662,7 @@ data-flex-basis="470px"
 &lt;p>需要IP地址在中国大陆&lt;/p>
 &lt;p>不在中国大陆的可以使用归雁加速器（自己搜）&lt;/p>
 &lt;p>&lt;a class="link" href="https://live.bilibili.com/24595202" target="_blank" rel="noopener"
->https://live.bilibili.com/24595202&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://live.bilibili.com/24595202&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/114514.webp"
 width="1364"
 height="695"

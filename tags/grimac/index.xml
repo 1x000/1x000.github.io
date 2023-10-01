@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GrimAC on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/grimac/</link><description>Recent content in GrimAC on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Tue, 22 Aug 2023 22:43:34 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/grimac/index.xml" rel="self" type="application/rss+xml"/><item><title>Kevin在GrimAC的绕过配置</title><link>https://blog.xpdbk.com/post/kevin-grim/</link><pubDate>Tue, 22 Aug 2023 22:43:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin-grim/</guid><description>&lt;img src="https://blog.xpdbk.com/post/kevin-grim/2023-08-02_13.01.21.webp" alt="Featured image of post Kevin在GrimAC的绕过配置" />&lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iC4v2165u2hc" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码: &lt;code>9v2b&lt;/code>&lt;/p>
+>蓝奏云&lt;/a> 访问密码: &lt;code>9v2b&lt;/code>&lt;/p>
 &lt;p>压缩密码: &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
 &lt;hr>
 &lt;p>对比FDP多了一个合法搭路&lt;/p>
 &lt;p>Kevin客户端的开源地址：&lt;a class="link" href="https://github.com/RE-KevinClient/KevinClient-Reborn" target="_blank" rel="noopener"
->GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="kevin在grimac的绕过配置">Kevin在GrimAC的绕过配置&lt;/h2>
 &lt;blockquote>
@@ -146,56 +132,28 @@ allowfullscreen="true"
 &lt;p>&lt;strong>V2版本（FDP官方）&lt;/strong>&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iumt30w19atc" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码：&lt;code>egrb&lt;/code>&lt;/p>
+>蓝奏云&lt;/a> 访问密码：&lt;code>egrb&lt;/code>&lt;/p>
 &lt;p>压缩密码：&lt;code>114514GrimConfig&lt;/code>&lt;/p>
 &lt;p>&lt;code>2023/5/13&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;strong>V2版本（XiaoxixiSense魔改FDP）&lt;/strong>&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iJCqP0u7fpng" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码:&lt;code>22u1&lt;/code>&lt;/p>
+>蓝奏云&lt;/a> 访问密码:&lt;code>22u1&lt;/code>&lt;/p>
 &lt;p>压缩密码：&lt;code>无&lt;/code>&lt;/p>
 &lt;p>&lt;code>2023/4/29&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;strong>V1版本（FDP官方）&lt;/strong>&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/imWgW0sqip4h" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码:&lt;code>ajd7&lt;/code>&lt;/p>
+>蓝奏云&lt;/a> 访问密码:&lt;code>ajd7&lt;/code>&lt;/p>
 &lt;p>压缩密码：&lt;code>iz@JkuT4&lt;/code>&lt;/p>
 &lt;p>&lt;code>2023/4/11&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;/blockquote></description></item><item><title>XiaoxixiSense 一个不成熟的FDP魔改</title><link>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</link><pubDate>Thu, 27 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-xiaoxixisense/113413.webp" alt="Featured image of post XiaoxixiSense 一个不成熟的FDP魔改" />&lt;h2 id="xiaoxixisense">XiaoxixiSense&lt;/h2>
 &lt;blockquote>
 &lt;p>魔改人的B站: &lt;a class="link" href="https://space.bilibili.com/1845968451" target="_blank" rel="noopener"
->笑嘻嘻Rua&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>笑嘻嘻Rua&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="sense公开">Sense公开&lt;/h2>
 &lt;blockquote>
@@ -263,12 +221,5 @@ fill="currentColor">
 &lt;h2 id="下载区">下载区&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/b032c0akd" target="_blank" rel="noopener"
->蓝奏云下载&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-密码:&lt;code>fskt&lt;/code>&lt;/p>
+>蓝奏云下载&lt;/a> 密码:&lt;code>fskt&lt;/code>&lt;/p>
 &lt;/blockquote></description></item></channel></rss>

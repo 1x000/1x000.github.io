@@ -12,14 +12,7 @@
 &lt;p>隐写术 (steganography) 是指对图片中每个像素的颜色进行肉眼无法察觉的微调，借此向图片文件中写入密文。&lt;/p>
 &lt;blockquote>
 &lt;p>隐写术需要借助 &lt;a class="link" href="https://pvphack.lanzoue.com/b031u7isd" target="_blank" rel="noopener"
->OpenStego （打开新窗口）&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>OpenStego （打开新窗口）&lt;/a>&lt;/p>
 &lt;p>访问密码:g0el&lt;/p>
 &lt;/blockquote>
 &lt;p>等专门的软件进行，写入信息过程是在软件中分别导入图片和写入信息的文档（如 .txt），选择加密算法和设置密码，最后由软件生成合成了原图片和文档的新图片；提取信息的过程是将图片导入软件，输入密码解密后提取出写入的信息。需要注意的是写入密文的图片必须以原图形式传输，如图片被压缩或修改将导致信息无法被读取。&lt;/p>
@@ -92,14 +85,7 @@ data-flex-basis="567px"
 &lt;p>&lt;strong>☆具有相当高的复杂性，使得破译的开销超过可能获得的利益，同时又要便于理解和掌握；&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>☆DES密码体制的安全性应该不依赖于算法的保密，其安全性仅以加密密钥的保密为基础；&lt;/strong>&lt;/p>
 &lt;p>离线加解密DES &lt;a class="link" href="https://leak.ptik.ga/d/%E8%A7%A3%E5%AF%86%E5%B7%A5%E5%85%B7/DES%E8%A7%A3%E5%AF%86.7z?sign=4yJi9D0j47i7eQO7aB0wz7yTsenV6eDtyiT-XTWAu8Q=:0" target="_blank" rel="noopener"
->HTML文件下载&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p></description></item><item><title>5B5T 基地坐标 记录</title><link>https://blog.xpdbk.com/post/5b5t-haha/</link><pubDate>Sun, 18 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/5b5t-haha/</guid><description>&lt;h2 id="5b5t-基地坐标-记录">5B5T 基地坐标 记录&lt;/h2>
+>HTML文件下载&lt;/a>&lt;/p></description></item><item><title>5B5T 基地坐标 记录</title><link>https://blog.xpdbk.com/post/5b5t-haha/</link><pubDate>Sun, 18 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/5b5t-haha/</guid><description>&lt;h2 id="5b5t-基地坐标-记录">5B5T 基地坐标 记录&lt;/h2>
 &lt;p>DES: &lt;code>U2FsdGVkX1/Fez/+ozPEvfaKewD113NRTsNEJ3tJqJWf7kw4SmPYWLJ/+BFKdJTb&lt;/code>&lt;/p>
 &lt;p>RSA最终加密：&lt;code>OpU0DYem5ccpMPNECxiOh0DtpWMsYHgQqxeDIth+qGvJZvms03wmR6B1zEVbBGY1pQ5X6EAOocAsDG4SCN254QLvitvW2eO8AUbc+xd4b7OGm5kHRmoZRK3FeeyCwljcXULjLb89I+Kvw02qsA544+8UzTyYfVc1EDSEvWfpuELrMBvY0OTT/yDz34QS1lF6750/cMbwehrNjy5QE614hrXCpR7yEUt6y9q62otaRuLBorCACXHbZVBwT+9j81yTuKLk5vT7W8NutU2c1OYvxN9UN973KnTfhd2fYwUfVHT0266z4GQBsQHn8DDFLnHbzCZNcxyc9N2wu6Dj3UsEG8gPG29EBttdecMCKB1B1r/ViEe6QwPd5r+y6BZW5dVkivCWH6FHs3NCrCsPNYRMZpkKOBPd7jVwqIHCcWkd3ichZsA9GSCROhRw554fWVHykNi53+CUxL4P2xoxDM1kauaqFsVfPjowlrskKJ1rK4HFI5JzlkUPb59DxC+CiB1JGsa35Y96ZSvl2VfdVYF1h7ASwKP0XNwzV2RNXYoym/QMKHCjk+OW2zyGemIO6auPd86KMF7XdjdwCoABrto1gcf7c8imkWDTdHAdhZ56lx9v/Oly9ZcG7ItR/2gmpvGSigL7TvgV5tBSWOFhqdUzfJE4ktHHZHVLXw/gL8OheTUeDa2fWVjWNUvbOXuNb5xAz8okRUAJx12oCV4Lb9ks5w6egII9FtDBbZ2RS6DtAu/XqmlMBSXRZyaKkTYXHSrC9WgWxZqESY9dPMJuVePRNWJ3aUMwBj6x3svOC2wi8D3CgxV3XG0+C2rhmwj4G2Ab7ljmk2bePPVDwY96NgRrBYPXHPrCIGyAJGhRXg+153ZeWJ2BfEWCQBTmgT6BfmCsW0hXSvSansGBEGJlHdGKypb2E8diDqRNuYgrH22mDR4UJJLH50DTsW3BtT99LYdvSFWAQL0pCIoDUlUWaVD9OMU165GAxvU731eiBN4oUs+Lc/FJb5JHIUx7RXt9aHpNE4Uwepzs16lmBKsLBMUh4eua7Flpx7002yRqAdPpZ/Xfzm27cppnNgLCDz39m57ZVfLpO/zyh8DGkKVCNYY+jOjGplKMdx7NpQ3Vk75QEktOYHq66qvDejvqYeYtf8MuNhN1hhouo8L1R80EI0wrp3L1RhQMm5g6ladADHYtFW59O5qehQfJB0JQLTV63RZ7/UzEyrle67LjIeFkjBNH4OcZA2JXtx9uHVgZVSapkn0/Cia59qBTcVUKPviK+0SQUeN2m+3wjaVqnDYSS2HI1TwotChL2FYu8uIMxhmkt9j8yAqA0Q69y0OHuJOWvheiBToLFmkCkHVf37bYwFfjNQ==&lt;/code>&lt;/p>
 &lt;p>公钥私钥加密长度: &lt;code>4096&lt;/code>&lt;/p>

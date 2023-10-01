@@ -922,47 +922,19 @@ data-flex-basis="410px"
 &lt;h2 id="事前准备-1">事前准备&lt;/h2>
 &lt;p>本人使用的工具：CE7.2汉化版（这次要&lt;strong>注意版本&lt;/strong>，插件和CE版本相关，汉化与否不影响）&lt;/p>
 &lt;p>论坛有：&lt;a class="link" href="https://down.52pojie.cn/Tools/Debuggers/Cheat%20Engine%20v7.2.exe" target="_blank" rel="noopener"
->https://down.52pojie.cn/Tools/Debuggers/Cheat%20Engine%20v7.2.exe&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://down.52pojie.cn/Tools/Debuggers/Cheat%20Engine%20v7.2.exe&lt;/a>&lt;/p>
 &lt;p>VS2015 （可以&lt;strong>兼容XP&lt;/strong>的插件开发）&lt;/p>
 &lt;p>&lt;a class="link" href="https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads" target="_blank" rel="noopener"
->https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads&lt;/a>&lt;/p>
 &lt;p>本人使用的游戏：植物大战僵尸&lt;strong>原版&lt;/strong>的汉化版(非年度版)     就是阳光基址是006A9EC0+768+5560的那个（ps:劳模植物大战僵尸）&lt;/p>
 &lt;p>CE7.2源码一份:&lt;a class="link" href="https://github.com/cheat-engine/cheat-engine/archive/7.2.zip" target="_blank" rel="noopener"
->https://github.com/cheat-engine/cheat-engine/archive/7.2.zip&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://github.com/cheat-engine/cheat-engine/archive/7.2.zip&lt;/a>&lt;/p>
 &lt;h2 id="需要知道的pvz数据">需要知道的pvz数据&lt;/h2>
 &lt;p>前面我们通过汇编硬追基址知道了&lt;/p>
 &lt;p>僵尸头部数组的地址是0x6a9ec0+0x768+0x90，僵尸数量上限地址为0x6a9ec0+0x768+0x94&lt;/p>
 &lt;p>僵尸血量为僵尸地址+0xc8，僵尸x坐标为僵尸地址+0x8，僵尸y坐标为僵尸地址+0xc&lt;/p>
 &lt;p>不知道的朋友们可以戳这里看之前的教程：&lt;a class="link" href="https://www.52pojie.cn/thread-1361473-1-1.html" target="_blank" rel="noopener"
->https://www.52pojie.cn/thread-1361473-1-1.html&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.52pojie.cn/thread-1361473-1-1.html&lt;/a>&lt;/p>
 &lt;p>知道了这些以后开启我们的LUA之旅&lt;/p>
 &lt;h2 id="教程内容-1">教程内容&lt;/h2>
 &lt;h2 id="编写我们的lua绘制脚本">编写我们的LUA绘制脚本&lt;/h2>
@@ -1387,22 +1359,8 @@ alt="绘制模板"
 >&lt;/p>
 &lt;h3 id="lua和asm混用">lua和asm混用&lt;/h3>
 &lt;p>Auto assembler scripts support section written in Lua.You can start such a section using the &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Auto_Assembler:LUA_ASM" target="_blank" rel="noopener"
->{$lua}&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-keyword, and end it with &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Auto_Assembler:LUA_ASM" target="_blank" rel="noopener"
->{$asm}&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-.&lt;/p>
+>{$lua}&lt;/a> keyword, and end it with &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Auto_Assembler:LUA_ASM" target="_blank" rel="noopener"
+>{$asm}&lt;/a>.&lt;/p>
 &lt;p>自动汇编脚本支持部分用Lua来写，你可以开始一段lua代码以 {$lua} 开始，以{$asm}结束lua代码&lt;/p>
 &lt;p>例:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1759,14 +1717,7 @@ data-flex-basis="311px"
 &lt;h2 id="lua文档查询">LUA文档查询&lt;/h2>
 &lt;p>CE Lua的相关接口可以参考：&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua" target="_blank" rel="noopener"
->https://wiki.cheatengine.org/index.php?title=Lua&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://wiki.cheatengine.org/index.php?title=Lua&lt;/a>&lt;/p>
 &lt;p>具体函数的内容通过 帮助(H)→Cheat Engine Lua文件来查看：&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/ce%E8%87%AA%E5%86%99%E6%8F%92%E4%BB%B6-lua%E6%8E%A5%E5%8F%A3-pvz-%E5%83%B5%E5%B0%B8%E7%BB%98%E5%88%B6/image-20210209184722820.webp"
 width="1594"
@@ -1793,14 +1744,7 @@ data-flex-basis="268px"
 &lt;ul>
 &lt;li>参数:要读取的地址&lt;/li>
 &lt;li>参数类型： &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=CEAddressString" target="_blank" rel="noopener"
->CEAddressString&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-或 Integer&lt;/li>
+>CEAddressString&lt;/a> 或 Integer&lt;/li>
 &lt;li>返回值：地址里存储的数据&lt;/li>
 &lt;li>返回值类型：integer&lt;/li>
 &lt;/ul>
@@ -1833,68 +1777,19 @@ fill="currentColor">
 &lt;/div>
 &lt;/div>&lt;p>和数据读取相关的函数还有很多，如&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readBytes" target="_blank" rel="noopener"
->readBytes&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>readBytes&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readSmallInteger" target="_blank" rel="noopener"
->readSmallInteger&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>readSmallInteger&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readQword" target="_blank" rel="noopener"
->readQword&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>readQword&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readPointer" target="_blank" rel="noopener"
->readPointer&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>readPointer&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readFloat" target="_blank" rel="noopener"
->readFloat&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>readFloat&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readDouble" target="_blank" rel="noopener"
->readDouble&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>readDouble&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readString" target="_blank" rel="noopener"
->readString&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>readString&lt;/a>&lt;/p>
 &lt;p>其使用方法大同小异，我这里就不每个都介绍了，感兴趣的可以自己去研究研究&lt;/p>
 &lt;p>而我的教程里只用到了readInteger于是接着介绍其它Lua函数了&lt;/p>
 &lt;p>接下来介绍有关绘制的相关类，主要是&lt;strong>自己翻译和补充了&lt;/strong>一下参考文档，之前&lt;strong>绘制透明窗口用到相关的类&lt;/strong>，类的来源在这里&lt;/p>
@@ -1905,14 +1800,7 @@ fill="currentColor">
 &lt;p>&lt;strong>Form的setLayeredAttributes方法继承自WinControl&lt;/strong>&lt;/p>
 &lt;p>这里的Form是&lt;strong>Delphi&lt;/strong>绘制的Form，Form属性可参考DelPhi的Form，PS：&lt;strong>CE的文档并不是很全&lt;/strong>&lt;/p>
 &lt;p>Delphi Form参考链接:&lt;a class="link" href="http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm_Properties" target="_blank" rel="noopener"
->http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm_Properties&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm_Properties&lt;/a>&lt;/p>
 &lt;p>属性（列举了CE文档里没有的）&lt;/p>
 &lt;p>FormStyle（窗体样式）:&lt;/p>
 &lt;table>
@@ -1942,14 +1830,7 @@ fill="currentColor">
 &lt;/tbody>
 &lt;/table>
 &lt;p>参考链接：&lt;a class="link" href="http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm.FormStyle" target="_blank" rel="noopener"
->http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm.FormStyle&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm.FormStyle&lt;/a>&lt;/p>
 &lt;p>BorderStyle（边界样式）&lt;/p>
 &lt;table>
 &lt;thead>
@@ -1986,14 +1867,7 @@ fill="currentColor">
 &lt;/tbody>
 &lt;/table>
 &lt;p>参考链接：&lt;a class="link" href="http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TCustomForm.BorderStyle" target="_blank" rel="noopener"
->http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TCustomForm.BorderStyle&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TCustomForm.BorderStyle&lt;/a>&lt;/p>
 &lt;h4 id="custmcontrol-class">CustmControl class&lt;/h4>
 &lt;p>(CustomControl-&amp;gt;WinControl-&amp;gt;Control-&amp;gt;Component-&amp;gt;Object)&lt;/p>
 &lt;p>属性&lt;/p>
@@ -2034,14 +1908,7 @@ See msdn SetLayeredWindowAttributes for more information（参考msdn的SetLayer
 &lt;/ul>
 &lt;p>LWA_ALPHA时：crKey参数无效，bAlpha参数有效；&lt;/p>
 &lt;p>LWA_COLORKEY：&lt;a class="link" href="https://baike.baidu.com/item/%E7%AA%97%E4%BD%93" target="_blank" rel="noopener"
->窗体&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-中的所有颜色为crKey的地方将变为透明，bAlpha参数无效。其常量值为1。&lt;/p>
+>窗体&lt;/a>中的所有颜色为crKey的地方将变为透明，bAlpha参数无效。其常量值为1。&lt;/p>
 &lt;p>LWA_ALPHA | LWA_COLORKEY：crKey的地方将变为全透明，而其它地方根据bAlpha参数确定透明度。&lt;/p>
 &lt;h4 id="control-class">Control Class&lt;/h4>
 &lt;p>(Inheritance: Component-&amp;gt;Object)&lt;/p>
@@ -2176,25 +2043,11 @@ fill="currentColor">
 &lt;/li>
 &lt;li>
 &lt;p>getPixel(x,y)（获得指定坐标点的像素的&lt;a class="link" href="https://baike.baidu.com/item/RGB/342517" target="_blank" rel="noopener"
->RGB&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-颜色值）&lt;/p>
+>RGB&lt;/a>颜色值）&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>setPixel(x,y,color)（设置指定坐标点的像素的&lt;a class="link" href="https://baike.baidu.com/item/RGB/342517" target="_blank" rel="noopener"
->RGB&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-颜色值）&lt;/p>
+>RGB&lt;/a>颜色值）&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>floodFill(x,y, color OPTIONAL default=brush.Color, filltype OPTIONAL default=fsSurface): Fills the picture till/with a color.(颜色填充)&lt;br>
@@ -2509,14 +2362,7 @@ fsStrikeOut 删除线&lt;/p>
 &lt;h3 id="其它绘制用到的方法参考方法">其它绘制用到的方法（参考方法）&lt;/h3>
 &lt;h4 id="createform">createForm&lt;/h4>
 &lt;p>参考链接:&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:Class:Form" target="_blank" rel="noopener"
->https://wiki.cheatengine.org/index.php?title=Lua:Class:Form&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://wiki.cheatengine.org/index.php?title=Lua:Class:Form&lt;/a>&lt;/p>
 &lt;p>创建窗体:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2572,14 +2418,7 @@ data-flex-basis="262px"
 >&lt;/p>
 &lt;h4 id="getscreenheight">getScreenHeight&lt;/h4>
 &lt;p>参考链接:&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:getScreenHeight" target="_blank" rel="noopener"
->getScreenHeight&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>getScreenHeight&lt;/a>&lt;/p>
 &lt;p>无参数&lt;/p>
 &lt;table>
 &lt;thead>
@@ -2599,14 +2438,7 @@ fill="currentColor">
 &lt;/table>
 &lt;h4 id="getscreenwidth">getScreenWidth&lt;/h4>
 &lt;p>参考链接:&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:getScreenWidth" target="_blank" rel="noopener"
->getScreenWidth&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>getScreenWidth&lt;/a>&lt;/p>
 &lt;p>无参数&lt;/p>
 &lt;table>
 &lt;thead>
@@ -2626,14 +2458,7 @@ fill="currentColor">
 &lt;/table>
 &lt;h4 id="createtimer">createTimer&lt;/h4>
 &lt;p>参考链接:&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=createTimer" target="_blank" rel="noopener"
->createTimer&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>createTimer&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2654,22 +2479,8 @@ fill="currentColor">
 &lt;tr>
 &lt;td>Owner&lt;/td>
 &lt;td>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Control" target="_blank" rel="noopener"
->Control&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-or &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Component" target="_blank" rel="noopener"
->Component&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-based object&lt;/td>
+>Control&lt;/a> or &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Component" target="_blank" rel="noopener"
+>Component&lt;/a> based object&lt;/td>
 &lt;td>计时器的所有者（用于资源清理）&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -2696,14 +2507,7 @@ based object&lt;/td>
 &lt;/tbody>
 &lt;/table>
 &lt;p>Tip: 使用&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=getMainForm" target="_blank" rel="noopener"
->getMainForm&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-方法作为owner(创建者) 可以使得计时器和main form同步摧毁&lt;/p>
+>getMainForm&lt;/a> 方法作为owner(创建者) 可以使得计时器和main form同步摧毁&lt;/p>
 &lt;h4 id="findwindow">findWindow&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2925,14 +2729,7 @@ data-flex-basis="1577px"
 &lt;h2 id="下篇前言">下篇前言：&lt;/h2>
 &lt;p>承接上篇教程，这次来讲讲如何为CE开发扩展的插件&lt;/p>
 &lt;p>上篇教程直达车：&lt;a class="link" href="https://www.52pojie.cn/thread-1369369-1-1.html" target="_blank" rel="noopener"
->&lt;strong>CE自写插件提供LUA接口实现pvz僵尸绘制之上篇&lt;/strong>&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>&lt;strong>CE自写插件提供LUA接口实现pvz僵尸绘制之上篇&lt;/strong>&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>总教程分成两部分：&lt;/p>
 &lt;ul>
@@ -2943,33 +2740,12 @@ fill="currentColor">
 &lt;h2 id="事前准备-2">事前准备&lt;/h2>
 &lt;p>本人使用的工具：CE7.2汉化版（这次要&lt;strong>注意版本&lt;/strong>，插件和CE版本相关，汉化与否不影响）&lt;/p>
 &lt;p>论坛有：&lt;a class="link" href="https://down.52pojie.cn/Tools/Debuggers/Cheat%20Engine%20v7.2.exe" target="_blank" rel="noopener"
->&lt;strong>CE7.2&lt;/strong>&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>&lt;strong>CE7.2&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>VS2015 （可以&lt;strong>兼容XP&lt;/strong>的插件开发）&lt;/p>
 &lt;p>VS2015:&lt;a class="link" href="https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads" target="_blank" rel="noopener"
->https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads&lt;/a>&lt;/p>
 &lt;p>CE7.2源码一份:&lt;a class="link" href="https://github.com/cheat-engine/cheat-engine/archive/7.2.zip" target="_blank" rel="noopener"
->https://github.com/cheat-engine/cheat-engine/archive/7.2.zip&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://github.com/cheat-engine/cheat-engine/archive/7.2.zip&lt;/a>&lt;/p>
 &lt;h2 id="教程内容-2">教程内容&lt;/h2>
 &lt;h2 id="vs2015的安装">VS2015的安装&lt;/h2>
 &lt;h3 id="插件编译环境">插件编译环境&lt;/h3>
@@ -3329,14 +3105,7 @@ data-flex-basis="679px"
 &lt;p>分别为：CEPlugin_GetVersion        CEPlugin_InitializePlugin        CEPlugin_DisablePlugin&lt;/p>
 &lt;hr>
 &lt;p>我们可以看看有关CE插件的文档：&lt;a class="link" href="https://cheatengine.org/help/index.html" target="_blank" rel="noopener"
->https://cheatengine.org/help/index.html&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://cheatengine.org/help/index.html&lt;/a>&lt;/p>
 &lt;p>Cheat Engine comes with a plugin system so developers can add extra functions and features to ce without having to code in Delphi (Any language that can create standard DLL&amp;rsquo;s with normal exports can make plugins for ce), or having to share their sourcecode.&lt;/p>
 &lt;p>CE 带来了插件系统 这样一来开发者们就可以添加额外的功能和特性到CE里，无需用Delphi 编程（任何语言都可以为CE创建正常导出的标准的DLL）&lt;/p>
 &lt;p>To make use of the plugin system you need to create a dll that exports 3 functions:&lt;/p>
@@ -3955,24 +3724,10 @@ fill="currentColor">
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>关于lua的函数可以参考&lt;a class="link" href="https://www.runoob.com/manual/lua53doc/contents.html#index" target="_blank" rel="noopener"
->Lua 函数索引&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-，这里只讲解用到的&lt;/p>
+>Lua 函数索引&lt;/a>，这里只讲解用到的&lt;/p>
 &lt;h6 id="lua_register">lua_register&lt;/h6>
 &lt;p>参考&lt;a class="link" href="https://www.runoob.com/manual/lua53doc/manual.html#lua_register" target="_blank" rel="noopener"
->lua_register&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>lua_register&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4003,24 +3758,10 @@ fill="currentColor">
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>参考&lt;a class="link" href="https://www.runoob.com/manual/lua53doc/manual.html#lua_pushcfunction" target="_blank" rel="noopener"
->lua_pushcfunction&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>lua_pushcfunction&lt;/a>&lt;/p>
 &lt;p>将一个 C 函数压栈。 这个函数接收一个 C 函数指针， 并将一个类型为 &lt;code>function&lt;/code> 的 Lua 值压栈。 当这个栈顶的值被调用时，将触发对应的 C 函数。&lt;/p>
 &lt;p>注册到 Lua 中的任何函数都必须遵循正确的协议来接收参数和返回值 （参见 &lt;a class="link" href="https://www.runoob.com/manual/lua53doc/manual.html#lua_CFunction" target="_blank" rel="noopener"
->&lt;code>lua_CFunction&lt;/code>&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-）&lt;/p>
+>&lt;code>lua_CFunction&lt;/code>&lt;/a> ）&lt;/p>
 &lt;h6 id="lua_cfunction">lua_CFunction&lt;/h6>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -4054,14 +3795,7 @@ fill="currentColor">
 &lt;p>&lt;strong>Lua和C/C++语言通信的主要方法是一个无处不在的虚拟栈&lt;/strong>&lt;/p>
 &lt;h6 id="lua_setglobal">lua_setglobal&lt;/h6>
 &lt;p>参考&lt;a class="link" href="https://www.runoob.com/manual/lua53doc/manual.html#lua_setglobal" target="_blank" rel="noopener"
->lua_setglobal&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>lua_setglobal&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4721,8 +4455,7 @@ data-flex-basis="153px"
 &lt;h2 id="总结">总结&lt;/h2>
 &lt;p>总算是把这个教程给更新完了，CE的插件功能可以让我们用C来实现很多强大的功能，我只是简单地带大家了解了一下有关CE的插件开发流程，还可以增加很多有用复杂的功能，我这里限于篇幅也不展开了。底下会&lt;strong>附上我开发的插件的源码和插件&lt;/strong>&lt;/p>
 &lt;p>最后，希望大家能一起变强，相互交流，相互进步，我也只是个&lt;strong>勉强入门的萌新&lt;/strong>，能力不足，水平有限，希望大家多多支持和鼓励一下。以上~~~~期待我们的下次再会&lt;/p>
-&lt;p>下载链接：&lt;a class="link" href="MyPlugin.zip?versionId=CAEQHhiBgICetbLAvBciIDZkZWM2ZTA3NGZmZjRhZTE5ZTZiNWNhYzZlODQ0Mjhh" >MyPlugin&lt;/a>
-&lt;/p>
+&lt;p>下载链接：&lt;a class="link" href="MyPlugin.zip?versionId=CAEQHhiBgICetbLAvBciIDZkZWM2ZTA3NGZmZjRhZTE5ZTZiNWNhYzZlODQ0Mjhh" >MyPlugin&lt;/a>&lt;/p>
 &lt;p>源码太大了，只能用自己的阿里云OSS了 QAQ&lt;/p>
 &lt;p>PS：本插件和上篇教程的插件是同一个插件，改了个名字而已&lt;/p></description></item><item><title>b站关注批量删除</title><link>https://blog.xpdbk.com/post/bz-gzqc/</link><pubDate>Sun, 09 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bz-gzqc/</guid><description>&lt;h2 id="快速取消b站哔哩哔哩关注的up">快速取消B站（哔哩哔哩）关注的UP？&lt;/h2>
 &lt;p>当你&lt;strong>互粉&lt;/strong>之后你就会发现一堆没有用的视频就出来了（我没互粉）或者你在注册新号的时候不小心关注了一堆UP&lt;/p>
@@ -4842,25 +4575,11 @@ data-flex-basis="714px"
 &lt;h4 id="前置服务器安装说明">前置服务器安装说明&lt;/h4>
 &lt;h5 id="手机安装-busybox-app">手机安装 BusyBox app&lt;/h5>
 &lt;p>&lt;a class="link" href="https://github.com/meefik/busybox/releases" target="_blank" rel="noopener"
->https://github.com/meefik/busybox/releases&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://github.com/meefik/busybox/releases&lt;/a>&lt;/p>
 &lt;p>&lt;del>应用界面，选择install(使用默认配置/system/xbin)&lt;/del> 请自己试试如果完蛋了就重新安装Linux Deploy&lt;/p>
 &lt;h5 id="手机安装-linux-deploy">手机安装 linux deploy&lt;/h5>
 &lt;p>&lt;a class="link" href="https://github.com/meefik/linuxdeploy/releases" target="_blank" rel="noopener"
->Releases · meefik/linuxdeploy · GitHub&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>Releases · meefik/linuxdeploy · GitHub&lt;/a>&lt;/p>
 &lt;h4 id="修改linux-deploy配置">修改linux deploy配置&lt;/h4>
 &lt;p>linux deploy界面，选择左上角图标-配置：&lt;/p>
 &lt;table>
@@ -4990,24 +4709,10 @@ fill="currentColor">
 &lt;blockquote>
 &lt;p>警告&lt;/p>
 &lt;p>&lt;strong>Termux 的Play 商店版本已经过时，不支持，不要使用，请使用 &lt;a class="link" href="https://github.com/termux/termux-app/releases/latest/" target="_blank" rel="noopener"
->Github one在新窗口打开&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/strong>&lt;/p>
+>Github one在新窗口打开&lt;/a>&lt;/strong>&lt;/p>
 &lt;/blockquote>
 &lt;p>转到 &lt;a class="link" href="https://github.com/termux/termux-app/releases/latest/" target="_blank" rel="noopener"
->Termux Github 最新版本在新窗口打开&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-, 下载 &lt;code>debug_universal.apk&lt;/code>, 解压缩它并运行它。&lt;/p>
+>Termux Github 最新版本在新窗口打开&lt;/a>, 下载 &lt;code>debug_universal.apk&lt;/code>, 解压缩它并运行它。&lt;/p>
 &lt;blockquote>
 &lt;p>提示&lt;/p>
 &lt;p>&lt;strong>如果您的文件管理器不允许您运行 APK 文件， 安装并使用 &lt;code>MT文件管理器&lt;/code> 并允许它在接到请求时安装第三方应用程序。&lt;/strong>&lt;/p>
@@ -5084,14 +4789,7 @@ fill="currentColor">
 &lt;/div>
 &lt;/div>&lt;h2 id="介绍-ffmpeg">介绍 FFmpeg&lt;/h2>
 &lt;p>&lt;a class="link" href="https://ffmpeg.org/" target="_blank" rel="noopener"
->FFmpeg&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
- 本身是一款非常强大的命令行实用程序，在 Linux 发行版、Windows 以及 macOS 等系统上均可运行，支持多种架构。FFmpeg 是用 C 语言和汇编语言编写的，性能强大，提供跨平台支持。&lt;/p>
+>FFmpeg&lt;/a> 本身是一款非常强大的命令行实用程序，在 Linux 发行版、Windows 以及 macOS 等系统上均可运行，支持多种架构。FFmpeg 是用 C 语言和汇编语言编写的，性能强大，提供跨平台支持。&lt;/p>
 &lt;h3 id="ffmpeg-安装">FFmpeg 安装&lt;/h3>
 &lt;p>在 Ubuntu 等 Linux 发行版上， FFmpeg 的安装比较简单。打开终端，运行以下命令安装即可。&lt;/p>
 &lt;h4 id="ubuntu-及与其相似的发行版">Ubuntu 及与其相似的发行版&lt;/h4>
@@ -5217,14 +4915,7 @@ data-flex-basis="1064px"
 &lt;p>例如我直播的内容是丁真所以也没事&lt;/p>
 &lt;p>有能力的可以点开链接看雪豹直播doge&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=xwTnSvGj4iw" target="_blank" rel="noopener"
->I Got Smoke 丁真无限循环 24H*7Days - YouTube&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>I Got Smoke 丁真无限循环 24H*7Days - YouTube&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/tlyt.webp"
 width="1365"
 height="696"
@@ -5241,14 +4932,7 @@ data-flex-basis="470px"
 &lt;p>需要IP地址在中国大陆&lt;/p>
 &lt;p>不在中国大陆的可以使用归雁加速器（自己搜）&lt;/p>
 &lt;p>&lt;a class="link" href="https://live.bilibili.com/24595202" target="_blank" rel="noopener"
->https://live.bilibili.com/24595202&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://live.bilibili.com/24595202&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/zhibo-24h/114514.webp"
 width="1364"
 height="695"
@@ -5378,14 +5062,7 @@ data-flex-basis="471px"
 &lt;p>7z和Themida就足够了（为的就是简单！）&lt;/p>
 &lt;blockquote>
 &lt;p>俩软件下载页面 &lt;a class="link" href="https://drive.xpdbk.com/0:/EXE%E6%96%87%E4%BB%B6%E5%8A%A0%E5%A3%B3%E9%98%B2%E6%8B%86/" target="_blank" rel="noopener"
->https://drive.xpdbk.com/0:/EXE%E6%96%87%E4%BB%B6%E5%8A%A0%E5%A3%B3%E9%98%B2%E6%8B%86/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://drive.xpdbk.com/0:/EXE%E6%96%87%E4%BB%B6%E5%8A%A0%E5%A3%B3%E9%98%B2%E6%8B%86/&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
 &lt;p>EXE文件直接打开解压就行了&lt;/p>
@@ -5428,14 +5105,7 @@ data-flex-basis="135px"
 &lt;h2 id="下载地址">下载地址&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/b0323sx8d" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>蓝奏云&lt;/a>&lt;/p>
 &lt;p>访问密码：&lt;code>3ae9&lt;/code>&lt;/p>
 &lt;/blockquote></description></item><item><title>Navicat Premium 15 软件</title><link>https://blog.xpdbk.com/post/npremium/</link><pubDate>Sun, 26 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/npremium/</guid><description>&lt;blockquote>
 &lt;p>仅用来探讨技术和学习&lt;/p>
@@ -5465,14 +5135,7 @@ data-flex-basis="449px"
 &lt;p>&lt;code>Navicat premium 15&lt;/code>安装包和破解工具&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://kkdaj.lanzoui.com/ic03rbi" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>蓝奏云&lt;/a>&lt;/p>
 &lt;p>访问密码：无&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
@@ -5673,14 +5336,7 @@ data-flex-basis="428px"
 &lt;p>&lt;strong>DLL to C&lt;/strong>是一款可怕的DLL反编译工具，能够把DLL转换成可编译的C或C++代码，当您丢失DLL的源代码时，您可以用DLL to C，它能够把DLL转换回可编译的代码，并且具有生成数据结构和反汇编代码段的功能，和其它的反编译或反汇编工具最大的不同是：它生成的代码是可以直接编译运行的，它可以为所有数据段生成数据结构并拆解代码段，还可以生成函数关系树，然后可以方便地导出DLL中所需的指定特征，它可以将汇编代码转换成C代码，C代码也是可编译的，非常强大&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iQwL30ojfmhi" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>蓝奏云&lt;/a>&lt;/p>
 &lt;p>访问密码：&lt;code>41ng&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;strong>压缩密码&lt;/strong>&lt;/p>
@@ -5698,8 +5354,7 @@ fill="currentColor">
 3. 单击“开始转换”按钮。
 4.将生成的文件复制到你的VC项目目录中，然后将复制的文件添加到你的VC项目中。
 5. 在您的 VC 项目中调用生成的代码。 您可以查看文件 TestWin32Dll\TestWin32Dll.cpp 以了解如何调用。&lt;/p>
-&lt;p>如果在编译或运行时出现错误，请尝试使用 Microsoft Visual Studio 2008 专业版进行编译。 如需更多帮助，请联系 &lt;a class="link" href="mailto:support@dll-decompiler.com" >support@dll-decompiler.com&lt;/a>
-&lt;/p>
+&lt;p>如果在编译或运行时出现错误，请尝试使用 Microsoft Visual Studio 2008 专业版进行编译。 如需更多帮助，请联系 &lt;a class="link" href="mailto:support@dll-decompiler.com" >support@dll-decompiler.com&lt;/a>&lt;/p>
 &lt;h2 id="dll-to-c-反编译效果源码">DLL TO C 反编译效果源码&lt;/h2>
 &lt;p>&lt;code>HPP.DLL&lt;/code> CS 1.6的纪&lt;/p>
 &lt;p>&lt;code>NorAdrenaline.DLL&lt;/code> CS1.6的纪&lt;/p></description></item><item><title>CS1.6 纪狗气死我了</title><link>https://blog.xpdbk.com/post/hacker-cs1.6/</link><pubDate>Fri, 13 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/hacker-cs1.6/</guid><description>&lt;img src="https://blog.xpdbk.com/post/hacker-cs1.6/cs1.6.webp" alt="Featured image of post CS1.6 纪狗气死我了" />&lt;h2 id="cs16-纪狗气死我了">CS1.6 纪狗气死我了&lt;/h2>
@@ -5708,14 +5363,7 @@ fill="currentColor">
 &lt;blockquote>
 &lt;p>压缩包密码：&lt;code>HfuGhf4c&lt;/code>&lt;/p>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iIv3k0kt5fwh" target="_blank" rel="noopener"
->蓝奏云地址&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>蓝奏云地址&lt;/a>&lt;/p>
 &lt;p>访问密码：&lt;code>d7qm&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;p>已测试里面纪的大部分快捷键为&lt;code>lns&lt;/code>&lt;/p>
@@ -5745,14 +5393,7 @@ fill="currentColor">
 &lt;h2 id="在vps上使用bittorrent-tracker">在VPS上使用bittorrent-tracker&lt;/h2>
 &lt;p>这是&lt;code>webtorrent&lt;/code>项目的一个部分。使用&lt;code>nodejs&lt;/code>进行搭建部署。&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/webtorrent/bittorrent-tracker" target="_blank" rel="noopener"
->官方&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-有英文文档，这里我简单说一下如何使用：&lt;/p>
+>官方&lt;/a>有英文文档，这里我简单说一下如何使用：&lt;/p>
 &lt;p>首先要下载&lt;code>nodejs&lt;/code>和&lt;code>npm&lt;/code>：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -6081,14 +5722,7 @@ fill="currentColor">
 &lt;/div>
 &lt;/div>&lt;h2 id="windows-frp客户端下载">Windows Frp客户端下载&lt;/h2>
 &lt;p>&lt;a class="link" href="https://github.com/fatedier/frp/releases/download/v0.46.0/frp_0.46.0_windows_386.zip" target="_blank" rel="noopener"
->https://github.com/fatedier/frp/releases/download/v0.46.0/frp_0.46.0_windows_386.zip&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://github.com/fatedier/frp/releases/download/v0.46.0/frp_0.46.0_windows_386.zip&lt;/a>&lt;/p>
 &lt;h3 id="解压并且用记事本打开修改配置文件frpcini">解压并且用记事本打开修改配置文件frpc.ini&lt;/h3>
 &lt;h4 id="frpcini内容为xxxx改成frp的服务器ip">frpc.ini内容为，x.x.x.x改成frp的服务器ip&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -6179,46 +5813,11 @@ fill="currentColor">
 &lt;p>&lt;u>obsidian是一种笔记软件，可在您的本地纯文本文件文件夹之上运行。&lt;/u>&lt;/p>
 &lt;h2 id="给孙子的笔记">给孙子的笔记&lt;/h2>
 &lt;p>在我们这个云服务可以随时 &lt;a class="link" href="https://techcrunch.com/2013/07/31/evernote-competitor-catch-com-shuts-down-its-note-taking-apps-company-heading-in-different-direction/" target="_blank" rel="noopener"
->关闭&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
- &lt;a class="link" href="https://www.theverge.com/2014/5/22/5741602/one-time-evernote-pinterest-rival-springpad-to-close-its-doors" target="_blank" rel="noopener"
->、&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;a class="link" href="https://gadgets.ndtv.com/apps/news/microsoft-to-do-new-features-wunderlist-shuts-down-2224833" target="_blank" rel="noopener"
->被&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
- &lt;a class="link" href="https://www.theverge.com/2012/3/12/2865638/twitter-acquires-posterous-blogging-platform" target="_blank" rel="noopener"
->收购&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-或 &lt;a class="link" href="https://techcrunch.com/2016/12/14/evernotes-new-privacy-policy-allows-employees-to-read-your-notes/" target="_blank" rel="noopener"
->更改隐私政策&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-的时代， 您最不想要的就是专有格式和数据锁定。&lt;/p>
+>关闭&lt;/a> &lt;a class="link" href="https://www.theverge.com/2014/5/22/5741602/one-time-evernote-pinterest-rival-springpad-to-close-its-doors" target="_blank" rel="noopener"
+>、&lt;/a>&lt;a class="link" href="https://gadgets.ndtv.com/apps/news/microsoft-to-do-new-features-wunderlist-shuts-down-2224833" target="_blank" rel="noopener"
+>被&lt;/a> &lt;a class="link" href="https://www.theverge.com/2012/3/12/2865638/twitter-acquires-posterous-blogging-platform" target="_blank" rel="noopener"
+>收购&lt;/a>或 &lt;a class="link" href="https://techcrunch.com/2016/12/14/evernotes-new-privacy-policy-allows-employees-to-read-your-notes/" target="_blank" rel="noopener"
+>更改隐私政策&lt;/a>的时代， 您最不想要的就是专有格式和数据锁定。&lt;/p>
 &lt;p>使用 Obsidian，&lt;strong>您的数据位于本地文件夹&lt;/strong>中。永远不要再将您一生的工作作为人质留在云端。&lt;/p>
 &lt;h2 id="面向未来的格式">面向未来的格式&lt;/h2>
 &lt;p>黑曜石使用 Markdown。Markdown 被 Reddit 和 GitHub 等网站广泛使用，并且不会很快消失。&lt;/p>
@@ -6230,14 +5829,7 @@ fill="currentColor">
 &lt;p>没有互联网？没问题。Obsidian 完全离线工作，互联网或服务问题永远不会成为您的问题。&lt;/p>
 &lt;p>随时随地享受阅读和处理笔记的乐趣。&lt;/p>
 &lt;p>&lt;a class="link" href="https://obsidian.md/" target="_blank" rel="noopener"
->官网&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p></description></item><item><title>如何安全的传送你的文件？</title><link>https://blog.xpdbk.com/post/404-jm/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/404-jm/</guid><description>&lt;h2 id="如何防止你的文件被别人偷看">如何防止你的文件被别人偷看？&lt;/h2>
+>官网&lt;/a>&lt;/p></description></item><item><title>如何安全的传送你的文件？</title><link>https://blog.xpdbk.com/post/404-jm/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/404-jm/</guid><description>&lt;h2 id="如何防止你的文件被别人偷看">如何防止你的文件被别人偷看？&lt;/h2>
 &lt;blockquote>
 &lt;p>本篇文章将教你如何传文件才不会被好兄弟看到&lt;/p>
 &lt;/blockquote>
@@ -6251,14 +5843,7 @@ fill="currentColor">
 &lt;p>隐写术 (steganography) 是指对图片中每个像素的颜色进行肉眼无法察觉的微调，借此向图片文件中写入密文。&lt;/p>
 &lt;blockquote>
 &lt;p>隐写术需要借助 &lt;a class="link" href="https://pvphack.lanzoue.com/b031u7isd" target="_blank" rel="noopener"
->OpenStego （打开新窗口）&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>OpenStego （打开新窗口）&lt;/a>&lt;/p>
 &lt;p>访问密码:g0el&lt;/p>
 &lt;/blockquote>
 &lt;p>等专门的软件进行，写入信息过程是在软件中分别导入图片和写入信息的文档（如 .txt），选择加密算法和设置密码，最后由软件生成合成了原图片和文档的新图片；提取信息的过程是将图片导入软件，输入密码解密后提取出写入的信息。需要注意的是写入密文的图片必须以原图形式传输，如图片被压缩或修改将导致信息无法被读取。&lt;/p>
@@ -6331,11 +5916,4 @@ data-flex-basis="567px"
 &lt;p>&lt;strong>☆具有相当高的复杂性，使得破译的开销超过可能获得的利益，同时又要便于理解和掌握；&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>☆DES密码体制的安全性应该不依赖于算法的保密，其安全性仅以加密密钥的保密为基础；&lt;/strong>&lt;/p>
 &lt;p>离线加解密DES &lt;a class="link" href="https://leak.ptik.ga/d/%E8%A7%A3%E5%AF%86%E5%B7%A5%E5%85%B7/DES%E8%A7%A3%E5%AF%86.7z?sign=4yJi9D0j47i7eQO7aB0wz7yTsenV6eDtyiT-XTWAu8Q=:0" target="_blank" rel="noopener"
->HTML文件下载&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p></description></item></channel></rss>
+>HTML文件下载&lt;/a>&lt;/p></description></item></channel></rss>

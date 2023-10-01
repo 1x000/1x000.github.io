@@ -14,14 +14,7 @@
 &lt;p>&lt;strong>方法一：鸿蒙工具箱&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>首先需要一台电脑和一部手机&lt;/strong>（本人的是P10）&lt;/p>
 &lt;p>&lt;strong>一&lt;/strong>、电脑下载鸿蒙工具箱：&lt;a class="link" href="https://pvphack.lanzoue.com/ive2U13moi1a" target="_blank" rel="noopener"
->鸿蒙工具箱下载&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-密码:&lt;code>faz0&lt;/code>&lt;/p>
+>鸿蒙工具箱下载&lt;/a> 密码:&lt;code>faz0&lt;/code>&lt;/p>
 &lt;p>把文件下载并解压&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/v2-99e841fb47224e7810a4af6a2f47ca6e_r.webp"
 width="948"
@@ -75,24 +68,10 @@ data-flex-basis="317px"
 &lt;p>&lt;strong>方法二：通过冰箱等冻结软件程序&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>需要电脑、手机&lt;/strong>&lt;/p>
 &lt;p>手机下载“冰箱”&lt;a class="link" href="https://www.coolapk.com/apk/com.catchingnow.icebox" target="_blank" rel="noopener"
->冰箱 IceBox：自动冻结・省电神器&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>冰箱 IceBox：自动冻结・省电神器&lt;/a>&lt;/p>
 &lt;p>手机打开软件提示你选择哪种方式使用，以下演示为普通adb模式&lt;/p>
 &lt;p>电脑下载冰箱激活器&lt;a class="link" href="https://iceboxdoc.catchingnow.cn/files/%E5%86%B0%E7%AE%B1%E6%BF%80%E6%B4%BB%E5%99%A8-Windows.zip" target="_blank" rel="noopener"
->冰箱激活器下载链接&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-解压后运行冰箱激活器&lt;/p>
+>冰箱激活器下载链接&lt;/a>解压后运行冰箱激活器&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/v2-3f9c309cda7ced312330668ca389197f_r.webp"
 width="948"
 height="546"
@@ -214,14 +193,7 @@ data-flex-basis="1465px"
 &lt;p>差不多就是这些了，下面是教程环节。以下的教程基本都需要一台windows电脑和数据线，手机&lt;/p>
 &lt;p>&lt;strong>首先是最最最基本的解温控，不需要root&lt;/strong>&lt;/p>
 &lt;p>电脑打开cmd，adb连接上手机，可以用adb devices和fastboot devices检验有没有adb和fastboot设备。然后卸载两个系统软件（实际上是停用，不是真正的卸载，可以恢复的）输入adb shell pm uninstall -k &amp;ndash;user 0 com.huawei.iaware，回车。输入adb shell pm uninstall -k &amp;ndash;user 0 com.huawei.powergenie，回车。还有一个卸载了会调节不了分辨率，可以试试，adb shell pm uninstall -k &amp;ndash;user 0 com.huawei.android.hwaps。如果忍受不了发热和想提升续航（续航如果不通过第三方调度程序管控，在国产各大毒瘤app蹂躏下，进程驻留，关联启动，互相唤醒都是家常便饭，手机续航会尿崩，所以需要一个后台进程管理应用，这里推荐黑域，支持root/无root），想反悔恢复这3个应用，可以执行adb shell cmd package install-existing 应用包名 进行无损恢复(pm卸载时需要使用-k参数保留应用数据)。这个教程非常不错 &lt;a class="link" href="https://www.0z.gs/memo/recovery-pri-app.html" target="_blank" rel="noopener"
->https://www.0z.gs/memo/recovery-pri-app.html&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-还有这段话是网上复制的，这个需要root“分享一些之前自己折腾过的东西，当然由于还是古老的955，可能不一定和现在的960/970一样，给大家参考参考。做这些的前提是把默认的省电精灵配置文件给删了，也就是删除/product/etc/hwpg下带performance和thermald的文件。1、大核优先。EMUI5：echo 0 &amp;gt; /sys/kernel/set_hmp_thresholds/enable echo 1 &amp;gt; /sys/kernel/hmp/boost EMUI8：echo 1 &amp;gt; /sys/kernel/set_hmp_thresholds/enable echo 1 &amp;gt; /sys/kernel/aes/boot_boost 2、修改温控（我这里改到85度和90度）echo 85000 &amp;gt; /sys/class/thermal/thermal_zone0/trip_point_0_temp echo 90000 &amp;gt; /sys/class/thermal/thermal_zone0/trip_point_1_temp”其实不用echo命令，mt管理器进到文件的路径，然后修改，如果告诉你错误无法保存/打开，就先把它复制到另一个地方，sd卡或者别的文件夹，修改温度后再复制并替换原来的温控文件就可以了&lt;/p>
+>https://www.0z.gs/memo/recovery-pri-app.html&lt;/a> 还有这段话是网上复制的，这个需要root“分享一些之前自己折腾过的东西，当然由于还是古老的955，可能不一定和现在的960/970一样，给大家参考参考。做这些的前提是把默认的省电精灵配置文件给删了，也就是删除/product/etc/hwpg下带performance和thermald的文件。1、大核优先。EMUI5：echo 0 &amp;gt; /sys/kernel/set_hmp_thresholds/enable echo 1 &amp;gt; /sys/kernel/hmp/boost EMUI8：echo 1 &amp;gt; /sys/kernel/set_hmp_thresholds/enable echo 1 &amp;gt; /sys/kernel/aes/boot_boost 2、修改温控（我这里改到85度和90度）echo 85000 &amp;gt; /sys/class/thermal/thermal_zone0/trip_point_0_temp echo 90000 &amp;gt; /sys/class/thermal/thermal_zone0/trip_point_1_temp”其实不用echo命令，mt管理器进到文件的路径，然后修改，如果告诉你错误无法保存/打开，就先把它复制到另一个地方，sd卡或者别的文件夹，修改温度后再复制并替换原来的温控文件就可以了&lt;/p>
 &lt;hr>
 &lt;p>&lt;strong>这个教程已经复制来了&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -269,14 +241,7 @@ fill="currentColor">
 &lt;p>推荐个工具，类似刷机精灵，蛮好用的，绿色版。&lt;br>
 本次教程用到的工具都放在网盘里了，还有荣耀6 Plus移动标配版的回退中转包，以及对应的ROM，其他机型不可用，请去花粉俱乐部或其他网站寻找。&lt;br>
 链接: &lt;a class="link" href="https://pan.baidu.com/s/17PEwfmTIDsg0QwdWR_2zEQ" target="_blank" rel="noopener"
->https://pan.baidu.com/s/17PEwfmTIDsg0QwdWR_2zEQ&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-提取码: tduc&lt;br>
+>https://pan.baidu.com/s/17PEwfmTIDsg0QwdWR_2zEQ&lt;/a> 提取码: tduc&lt;br>
 &lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/i4HS3t.webp"
 width="1155"
 height="683"
@@ -409,14 +374,7 @@ data-flex-basis="233px"
 &lt;p>关于版本回退，由于机型众多，我也不可能给大家提供那么多那么全的资源，所以我只能以我这次操作的荣耀6plus移动标准版做讲解，并提供相应的回退中转包以及相应的完整官方ROM。&lt;br>
 如果在看的你恰好手头要弄的机子就是荣耀6plus移动标准版，那么就可以直接去我提供的网盘里面下载相应的资源了。&lt;br>
 这边在发下网盘链接，链接: &lt;a class="link" href="https://pan.baidu.com/s/17PEwfmTIDsg0QwdWR_2zEQ" target="_blank" rel="noopener"
->https://pan.baidu.com/s/17PEwfmTIDsg0QwdWR_2zEQ&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-提取码: tduc跟上面的一样。&lt;br>
+>https://pan.baidu.com/s/17PEwfmTIDsg0QwdWR_2zEQ&lt;/a> 提取码: tduc跟上面的一样。&lt;br>
 &lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/i5puBn.webp"
 width="388"
 height="390"
@@ -453,14 +411,7 @@ data-flex-basis="342px"
 &lt;p>呃，当时随便搜的几个ROM类网站，号称什么官方ROM，我看有点不靠谱，文件大小都不一样，我要推荐的这个网站，好像是专门收集的华为资源，下载过B351的ROM，跟助手下载的文件一模一样，不管是大小还是文件时间，所有感觉还是比较靠谱的，当然大家也仔细甄别吧。&lt;br>
 这网站里面也有提供中转包，大家可以仔细看下。（推荐这个应该没什么问题吧，毕竟这网站也不是什么乱七八糟的网站）&lt;br>
 &lt;a class="link" href="http://www.huaweirom.com/rom/" target="_blank" rel="noopener"
->华粉圈&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-：www.huaweirom.com/rom/&lt;/p>
+>华粉圈&lt;/a>：www.huaweirom.com/rom/&lt;/p>
 &lt;h4 id="3-回退操作">3. 回退操作&lt;/h4>
 &lt;p>&lt;strong>事先准备好一张不小于2G的SD卡&lt;/strong>&lt;br>
 &lt;strong>注意提前备份好用户个人数据，会清除所有数据的&lt;/strong>&lt;br>
@@ -481,26 +432,12 @@ fill="currentColor">
 &lt;p>新的好用的教程就是用PotatoNV随机更改解锁码（酷安搜索），但是需要拆机短接触点进COM 1.0模式，不会拆机的有一点麻烦。短接图我是谷歌搜索花了5毛钱买的，但是真的很无脑很简单，强力推荐。&lt;/p>
 &lt;hr>
 &lt;p>&lt;a class="link" href="https://github.com/mashed-potatoes/PotatoNV" target="_blank" rel="noopener"
->GitHub - mashed-potatoes/PotatoNV: Unlock bootloader of Huawei devices on Kirin 960/95х/65x/620&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>GitHub - mashed-potatoes/PotatoNV: Unlock bootloader of Huawei devices on Kirin 960/95х/65x/620&lt;/a>&lt;/p>
 &lt;p>PotatoNV在 Kirin 960/95х/65x/620 上解锁华为设备的引导加载程序&lt;/p>
 &lt;hr>
 &lt;h2 id="下载">下载&lt;/h2>
 &lt;p>下载最新版本的&lt;a class="link" href="https://github.com/mashed-potatoes/PotatoNV/releases/download/v2.2.1_2022.03/PotatoNV-next-v2.2.1_2022.03-x86.zip" target="_blank" rel="noopener"
->PotatoNV&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>PotatoNV&lt;/a>&lt;/p>
 &lt;h2 id="用户手册">用户手册&lt;/h2>
 &lt;p>阅读下面的手册。&lt;/p>
 &lt;h3 id="确保您的设备兼容">确保您的设备兼容&lt;/h3>
@@ -550,14 +487,7 @@ fill="currentColor">
 &lt;p>如果您想知道为什么需要对不幸的测试点做一些事情，请阅读下面的剧透内容。&lt;/p>
 &lt;/blockquote>
 &lt;p>要进行搜索，请在连字符 +“测试点”之前使用型号名称。例如，对于 Honor 9 Lite (LLD-L31)，您应该 Google &lt;a class="link" href="https://www.google.com/search?q=lld&amp;#43;testpoint&amp;amp;tbm=isch" target="_blank" rel="noopener"
->“lld testpoint”&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-。&lt;/p>
+>“lld testpoint”&lt;/a>。&lt;/p>
 &lt;p>典型测试点照片的示例。&lt;/p>
 &lt;p>&lt;a class="link" href="https://camo.githubusercontent.com/93ec8f97fa530a32f7aa55c22f3bf5278f82b9c087c5b8b206f9543df61596d4/68747470733a2f2f692e696d6775722e636f6d2f3233334b6e32372e6a7067" target="_blank" rel="noopener"
 >&lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/68747470733a2f2f692e696d6775722e636f6d2f3233334b6e32372e6a7067.webp"
@@ -569,14 +499,7 @@ alt="Honor 9 Lite Testpoint location"
 class="gallery-image"
 data-flex-grow="121"
 data-flex-basis="291px"
->&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>&lt;/a>&lt;/p>
 &lt;p>标记可能会有所不同：&lt;/p>
 &lt;ol>
 &lt;li>照片中仅标记了一个点。&lt;/li>
@@ -590,32 +513,11 @@ fill="currentColor">
 &lt;h3 id="解锁引导加载程序">解锁引导加载程序&lt;/h3>
 &lt;ul>
 &lt;li>安装&lt;a class="link" href="https://consumer.huawei.com/en/support/hisuite/" target="_blank" rel="noopener"
->HiSuite&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-。&lt;/li>
+>HiSuite&lt;/a>。&lt;/li>
 &lt;li>安装&lt;a class="link" href="https://files.dc-unlocker.com/share.html?v=share/18B15B9D02C945A79B1967234CECB423" target="_blank" rel="noopener"
->华为测试点驱动程序&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-。&lt;/li>
+>华为测试点驱动程序&lt;/a>。&lt;/li>
 &lt;li>下载&lt;a class="link" href="https://github.com/mashed-potatoes/PotatoNV/releases" target="_blank" rel="noopener"
->最新版本&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-的 PotatoNV。&lt;/li>
+>最新版本&lt;/a>的 PotatoNV。&lt;/li>
 &lt;li>启动 PotatoNV。&lt;/li>
 &lt;/ul>
 &lt;blockquote>
@@ -631,14 +533,7 @@ fill="currentColor">
 &lt;p>&lt;code>FBLOCK&lt;/code>仅在配备 Kirin 960 或 Kirin 65x 的设备上才能正常解锁。禁用此选项可能会导致旧设备出现严重问题。&lt;/p>
 &lt;/blockquote>
 &lt;p>好的，现在参考&lt;a class="link" href="https://github.com/mashed-potatoes/PotatoNV/blob/master/README.md#tested-devices" target="_blank" rel="noopener"
->此表&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-并选择适当的引导加载程序。&lt;/p>
+>此表&lt;/a>并选择适当的引导加载程序。&lt;/p>
 &lt;p>按开始按钮。&lt;/p>
 &lt;p>该过程不会超过一分钟。该程序应该编写一个新的解锁代码，并将其保存在安全的地方。&lt;/p>
 &lt;p>将设备重新启动到快速启动模式并在主机上执行以下命令：&lt;/p>
@@ -653,14 +548,7 @@ fill="currentColor">
 &lt;/div>&lt;p>玩得开心。&lt;/p>
 &lt;h2 id="怎么运行的">怎么运行的&lt;/h2>
 &lt;p>甚至在创建 PotatoNV 之前，&lt;a class="link" href="https://github.com/TishSerg" target="_blank" rel="noopener"
->@TishSerg&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-就发现可以使用属性所需密钥的&lt;strong>SHA256 哈希值&lt;/strong>重写解锁密钥&lt;code>USRKEY&lt;/code>。但是，要访问&lt;strong>NVME&lt;/strong> （存储序列号、设备特征等内容的原始分区），用户应刷新&lt;strong>自定义恢复或获得临时 root 权限&lt;/strong>。但这两种方法都很复杂并且不能保证有效。在研究了一些华为设备的遗留引导加载程序后，我发现了一个&lt;code>nve&lt;/code>命令，它允许读取或写入&lt;strong>NVME中的任何属性&lt;/strong>分割。当然，此命令需要解锁的引导加载程序。因此，仍然需要找到一种快速解锁引导加载程序的方法。解决方法非常简单 - 使用主板软件中的引导加载程序。&lt;/p>
+>@TishSerg&lt;/a>就发现可以使用属性所需密钥的&lt;strong>SHA256 哈希值&lt;/strong>重写解锁密钥&lt;code>USRKEY&lt;/code>。但是，要访问&lt;strong>NVME&lt;/strong> （存储序列号、设备特征等内容的原始分区），用户应刷新&lt;strong>自定义恢复或获得临时 root 权限&lt;/strong>。但这两种方法都很复杂并且不能保证有效。在研究了一些华为设备的遗留引导加载程序后，我发现了一个&lt;code>nve&lt;/code>命令，它允许读取或写入&lt;strong>NVME中的任何属性&lt;/strong>分割。当然，此命令需要解锁的引导加载程序。因此，仍然需要找到一种快速解锁引导加载程序的方法。解决方法非常简单 - 使用主板软件中的引导加载程序。&lt;/p>
 &lt;p>该程序通过模式上传一个特殊的&lt;strong>USB bootloader&lt;/strong>（从板卡软件导出）&lt;code>DOWNLOAD_VCOM&lt;/code>。&lt;strong>VCOM&lt;/strong>类似于高通设备上的&lt;strong>EDL：它可以由系统故障或短路测试点&lt;/strong>触发。上传引导加载程序后，设备应切换到快速引导模式。“USB引导加载程序”有一个重要的特点：它是&lt;strong>开箱即用的&lt;/strong>，因此它允许执行任何命令。&lt;/p>
 &lt;p>因此，我们只需通过 USB 批量接口发送一条命令，将 SHA256 哈希写入 USRKEY 并重新启动设备。&lt;/p>
 &lt;p>就是这样。&lt;/p>
@@ -816,25 +704,11 @@ fill="currentColor">
 &lt;p>据我所知，目前只有一种工具可以处理较新的CPU——HCU Client。&lt;/p>
 &lt;p>该软件需要许可证，最实惠的计划是 3 天的访问，价格为 19 欧元。&lt;/p>
 &lt;p>&lt;a class="link" href="https://hcu-client.com/supported-models.php" target="_blank" rel="noopener"
->请参阅此处&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-HCU 客户端支持的型号。&lt;/p>
+>请参阅此处&lt;/a>HCU 客户端支持的型号。&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>笔记&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://hcu-client.com/buy/#:~:text=Timed%20licenses%20locked%20to%20first%20used%20PC" target="_blank" rel="noopener"
->限时许可证将在首次使用的电脑上锁定&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-两天。因此，在多部手机上使用此类许可证将会出现问题。&lt;/p>
+>限时许可证将在首次使用的电脑上锁定&lt;/a>两天。因此，在多部手机上使用此类许可证将会出现问题。&lt;/p>
 &lt;/blockquote>
 &lt;h6 id="免责声明我与-uab-digiteka-或其任何子公司或附属公司包括-dc-phoenix-和-hcu-client不隶属关联授权认可或以任何方式正式关联">免责声明：我与 UAB Digiteka 或其任何子公司或附属公司（包括 DC-Phoenix 和 HCU Client）不隶属、关联、授权、认可或以任何方式正式关联。&lt;/h6>
 &lt;hr>
@@ -907,113 +781,29 @@ fastboot oem unlock（如果你不理解这个命令是怎么回事，那么建�
 &lt;p>cmd输入fastboot flash kernel XXXX.img ，反正emui9是这样的，其他没有试过。&lt;/p>
 &lt;p>一些用过的网站和资源&lt;/p>
 &lt;p>1 这个是华为刷机包什么的网站，有但是不多&lt;a class="link" href="https://www.huaweirom.com/" target="_blank" rel="noopener"
->https://www.huaweirom.com/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.huaweirom.com/&lt;/a>&lt;/p>
 &lt;p>2 这个就有些硬核了，可以随意改温控，真正提高上限区间&lt;a class="link" href="https://tieba.baidu.com/p/5737085450" target="_blank" rel="noopener"
->https://tieba.baidu.com/p/5737085450&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://tieba.baidu.com/p/5737085450&lt;/a>&lt;/p>
 &lt;p>3 这个是某贼写的用PotatoNV解bl的教程，里面有不少资源&lt;a class="link" href="https://zhuanlan.zhihu.com/p/397173427" target="_blank" rel="noopener"
->https://zhuanlan.zhihu.com/p/397173427&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://zhuanlan.zhihu.com/p/397173427&lt;/a>&lt;/p>
 &lt;p>4 这个是现在依然好用的猎人单机版和教程&lt;a class="link" href="https://blog.csdn.net/COCO56/article/details/126882937" target="_blank" rel="noopener"
->https://blog.csdn.net/COCO56/article/details/126882937&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://blog.csdn.net/COCO56/article/details/126882937&lt;/a>&lt;/p>
 &lt;p>5 HuRupdate下载&lt;a class="link" href="https://pan.baidu.com/s/1IbBS3jEWqedLsskN5mL88g" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1IbBS3jEWqedLsskN5mL88g&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://pan.baidu.com/s/1IbBS3jEWqedLsskN5mL88g&lt;/a>&lt;/p>
 &lt;p>6 @麦麦观饭的emui9内核&lt;a class="link" href="https://www.coolapk.com/feed/18356564?shareKey=NDkyZmJiMzdkNTE0NjNjYjllMmU~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1" target="_blank" rel="noopener"
->https://www.coolapk.com/feed/18356564?shareKey=NDkyZmJiMzdkNTE0NjNjYjllMmU~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.coolapk.com/feed/18356564?shareKey=NDkyZmJiMzdkNTE0NjNjYjllMmU~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1&lt;/a>&lt;/p>
 &lt;p>7 mate9刷机工具箱，里面有havoc镜像、麒麟盘古工具箱和一些工具，比较齐全了，记得全部都下载才能解压出来&lt;a class="link" href="https://pan.baidu.com/s/1HW3Mep3XBGJMSDbU-vyFNA?pwd=kuan#list/path=%2F" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1HW3Mep3XBGJMSDbU-vyFNA?pwd=kuan#list/path=%2F&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-（提取码就是kuan）&lt;/p>
+>https://pan.baidu.com/s/1HW3Mep3XBGJMSDbU-vyFNA?pwd=kuan#list/path=%2F&lt;/a>（提取码就是kuan）&lt;/p>
 &lt;p>8 这个救砖教程也不错&lt;a class="link" href="https://www.coolapk.com/feed/42055424?shareKey=NWMyYWQ3ZjQxODc4NjNjYjlmYTA~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1" target="_blank" rel="noopener"
->https://www.coolapk.com/feed/42055424?shareKey=NWMyYWQ3ZjQxODc4NjNjYjlmYTA~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.coolapk.com/feed/42055424?shareKey=NWMyYWQ3ZjQxODc4NjNjYjlmYTA~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1&lt;/a>&lt;/p>
 &lt;p>9 @远灏写的刷工程包救砖的教程，我救砖是也帮了我很多的忙&lt;a class="link" href="https://www.coolapk.com/feed/42474094?shareKey=YWI5YWE5MmM0MWI5NjNjYmEwOGQ~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1" target="_blank" rel="noopener"
->https://www.coolapk.com/feed/42474094?shareKey=YWI5YWE5MmM0MWI5NjNjYmEwOGQ~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.coolapk.com/feed/42474094?shareKey=YWI5YWE5MmM0MWI5NjNjYmEwOGQ~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1&lt;/a>&lt;/p>
 &lt;p>10 @梦不见的只因写的PotatoNV救砖教程&lt;a class="link" href="https://www.coolapk.com/feed/42643165?shareKey=YzNkMzI3YzdhZTlmNjNjYmExMzg~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1" target="_blank" rel="noopener"
->https://www.coolapk.com/feed/42643165?shareKey=YzNkMzI3YzdhZTlmNjNjYmExMzg~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.coolapk.com/feed/42643165?shareKey=YzNkMzI3YzdhZTlmNjNjYmExMzg~&amp;amp;shareUid=20630802&amp;amp;shareFrom=com.coolapk.market_13.0.1&lt;/a>&lt;/p>
 &lt;p>11 @麦麦观饭给的解决两边失灵的magisk刷机包，没有用但是可以试试&lt;a class="link" href="https://maimaiguanfan.lanzoum.com/i8gDK0kxnjab" target="_blank" rel="noopener"
->https://maimaiguanfan.lanzoum.com/i8gDK0kxnjab&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://maimaiguanfan.lanzoum.com/i8gDK0kxnjab&lt;/a>&lt;/p>
 &lt;p>12 某度网盘高速下载工具，懂的都懂，刷机包基本上都是某度网盘&lt;a class="link" href="https://kinhdown.kinh.cc/?Type=APPS" target="_blank" rel="noopener"
->https://kinhdown.kinh.cc/?Type=APPS&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://kinhdown.kinh.cc/?Type=APPS&lt;/a>&lt;/p>
 &lt;p>另外，教程上有的资源我就不一一放出来了&lt;/p>
 &lt;p>最后，记住：官方的是最好最稳定的，够用就不要瞎搞，否则一定是得不偿失。刷机这个东西和考验你的耐心和脑子。还有，未知的magisk模块不要乱装，加密的magisk模块不要用，否则后悔都来不及。降级一定要走官方途径，不要瞎搞。&lt;/p>
 &lt;hr>
@@ -1064,14 +854,7 @@ i64/i32/STR：数值类型&lt;br>
 intent：数值&lt;br>
 我这里要调用perfhub服务以及它的set方法，方法id可以在&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/paladinzh/decompile-hw/blob/4c3efd95f3e997b44dd4ceec506de6164192eca3/decompile/framework/hwEmui/com/huawei/hwperformance/HwPerformanceImpl.java" target="_blank" rel="noopener"
->https://github.com/paladinzh/decompile-hw/blob/4c3efd95f3e997b44dd4ceec506de6164192eca3/decompile/framework/hwEmui/com/huawei/hwperformance/HwPerformanceImpl.java&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://github.com/paladinzh/decompile-hw/blob/4c3efd95f3e997b44dd4ceec506de6164192eca3/decompile/framework/hwEmui/com/huawei/hwperformance/HwPerformanceImpl.java&lt;/a>&lt;/p>
 &lt;details>
 &lt;summary>内有 &lt;del>完整&lt;/del> 版&lt;/summary>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2221,42 +2004,14 @@ PERF_TAG_GPU_MAX = 8（GPU最大频率）PERF_TAG_B_CPU_MAX = 5（CPU大核最�
 5、禁用省电精灵后跑分降低的问题
 主要问题在DDR频率上，省电精灵会在检测到跑分程序的时候把内存最低频率锁定在最高第二档上（P9上就是800，最高是933），禁用之后跑分时DDR频率基本不会超过最高第二档，导致跑分内存性能降低，如果手动锁定在最高频率，跑分成绩就和原来的差不多了&lt;/p>
 &lt;p>&lt;strong>华为P10固件反编译&lt;/strong>&lt;a class="link" href="https://github.com/paladinzh/decompile-hw" target="_blank" rel="noopener"
->GitHub - paladinzh/decompile-hw&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>GitHub - paladinzh/decompile-hw&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>搞机工具集合 &lt;a class="link" href="http://bbs.ydss.cn/thread-1525060-1-1.html" target="_blank" rel="noopener"
->http://bbs.ydss.cn/thread-1525060-1-1.html&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://bbs.ydss.cn/thread-1525060-1-1.html&lt;/a>&lt;/p>
 &lt;p>6x解锁全过程 &lt;a class="link" href="https://blog.csdn.net/keyiis_sh/article/details/131490490" target="_blank" rel="noopener"
->https://blog.csdn.net/keyiis_sh/article/details/131490490&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://blog.csdn.net/keyiis_sh/article/details/131490490&lt;/a>&lt;/p>
 &lt;p>X9升级降级 &lt;a class="link" href="https://coco56.blog.csdn.net/article/details/126863581" target="_blank" rel="noopener"
->https://coco56.blog.csdn.net/article/details/126863581&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://coco56.blog.csdn.net/article/details/126863581&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;details>
 &lt;summary>骁龙版本的海外华为解锁方式&lt;/summary>
@@ -2291,14 +2046,7 @@ fill="currentColor">
 &lt;h2 id="华为平板c5bzt-w09拆机刷机教程-定制rom硬刷">华为平板C5(BZT-W09)拆机刷机教程 定制rom硬刷&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://www.bilibili.com/read/cv16726669/" target="_blank" rel="noopener"
->https://www.bilibili.com/read/cv16726669/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.bilibili.com/read/cv16726669/&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;p>本文适用于定制ROM（如学生平板）刷机至正常平板（C00），如您需要同时使用两种ROM的功能请至文末链接&lt;/p>
 &lt;p>这篇专栏提供了一个刷机思路，如果您的平板与C5相近（如AGS2-W09，KIRIN659系列等），同样可以参考这个方法，但需要您自行寻找刷机包，并用解包工具解开&lt;/p>
@@ -2432,14 +2180,7 @@ fill="currentColor">
 &lt;h2 id="适用于华为平板c5bzt-w09的双系统">适用于华为平板C5(BZT-W09)的双系统&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://www.bilibili.com/read/cv17991709" target="_blank" rel="noopener"
->https://www.bilibili.com/read/cv17991709&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.bilibili.com/read/cv17991709&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;p>该方法或许不仅适用于该平板，但up只在该平板上做过测试&lt;/p>
 &lt;p>C5平板系华为面向企业的定制机型，因此其定制ROM的功能往往局限而特殊，这篇专栏将讨论如何在保存原系统的情况下使用正常ROM功能。&lt;/p>
@@ -2495,14 +2236,7 @@ fill="currentColor">
 &lt;h2 id="华为平板c5升级鸿蒙">华为平板C5升级鸿蒙&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://www.bilibili.com/read/cv18236607" target="_blank" rel="noopener"
->https://www.bilibili.com/read/cv18236607&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.bilibili.com/read/cv18236607&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;strong>写在开头&lt;/strong>&lt;/p>
 &lt;p>如果对鸿蒙系统没有很大的需求，就不建议乱来了，毕竟麒麟659+3G内存也没什么可折腾的了，如果一定要升级鸿蒙的话，也请先做好备份，以免驱动和设备信息不兼容。&lt;/p>
@@ -2533,14 +2267,7 @@ fill="currentColor">
 &lt;p>浅析科大讯飞华为设备启动流程&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://www.bilibili.com/read/cv18066068" target="_blank" rel="noopener"
->https://www.bilibili.com/read/cv18066068&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.bilibili.com/read/cv18066068&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;strong>本文转载自up的一位同学（https://github.com/hicode002/studentpad-hack/blob/main/docs/huawei_iflytek_boot_process.md）&lt;/strong>&lt;/p>
 &lt;p>与其他安卓设备不同，使用麒麟芯片的华为设备有其独特的分区和独特的启动流程。&lt;/p>
@@ -2651,23 +2378,9 @@ fill="currentColor">
 &lt;h2 id="解锁bootloader">解锁bootloader&lt;/h2>
 &lt;p>对于处理器为麒麟960及以下的华为手机，我们可以使用一个叫PotatoNV的工具，强行向手机中注入一个解锁码，这样我们就可以用注入的解锁码来解锁bootloader&lt;/p>
 &lt;p>首先安装驱动，&lt;a class="link" href="https://syxz.lanzoui.com/iS6s0nq4ofc" target="_blank" rel="noopener"
->https://syxz.lanzoui.com/iS6s0nq4ofc&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://syxz.lanzoui.com/iS6s0nq4ofc&lt;/a>&lt;/p>
 &lt;p>然后进入PotatoNV的项目地址，&lt;a class="link" href="https://github.com/mashed-potatoes/PotatoNV" target="_blank" rel="noopener"
->https://github.com/mashed-potatoes/PotatoNV&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://github.com/mashed-potatoes/PotatoNV&lt;/a>&lt;/p>
 &lt;p>其中可以看到支持的CPU和肯定不支持的CPU，荣耀9的CPU是麒麟960，刚好支持&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/QQ%E6%88%AA%E5%9B%BE20220823082322.webp"
 width="566"
@@ -2747,14 +2460,7 @@ data-flex-basis="234px"
 &lt;p>如果想要刷入类原生系统，则必须需要手机支持ProjectTreble。而这个东西是安卓8才有的.为此我们需要先升级到emui8&lt;/p>
 &lt;h2 id="刷入twrp">刷入TWRP&lt;/h2>
 &lt;p>对于emui5，网上可用的twrp比较少（大多数都是emui8的twrp，不能用到emui5上），这里我用的是KVIP的twrp，链接：&lt;a class="link" href="https://pan.baidu.com/s/1hsABt20" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1hsABt20&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://pan.baidu.com/s/1hsABt20&lt;/a>&lt;/p>
 &lt;p>下载完成后，点击其中的Run.bat按照提示进行刷入即可。&lt;/p>
 &lt;blockquote>
 &lt;p>注意&lt;/p>
@@ -2763,25 +2469,11 @@ fill="currentColor">
 &lt;blockquote>
 &lt;p>注意&lt;/p>
 &lt;p>刷入之后手机的触摸按键和手电筒将不可用。不过你可以选择使用悬浮按钮来代替触摸按键。相关问题的修复方法可以参考：&lt;a class="link" href="https://forum.xda-developers.com/t/oreo-twrp-3-2-1-0-0-3-capacitive-fix.3754483/" target="_blank" rel="noopener"
->https://forum.xda-developers.com/t/oreo-twrp-3-2-1-0-0-3-capacitive-fix.3754483/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://forum.xda-developers.com/t/oreo-twrp-3-2-1-0-0-3-capacitive-fix.3754483/&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="刷入emui8">刷入EMUI8&lt;/h2>
 &lt;p>我们需要准备emui8的强刷包，链接：&lt;a class="link" href="https://pan.baidu.com/s/1Ia8Q0MSgBArdZjieQbWgEQ" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1Ia8Q0MSgBArdZjieQbWgEQ&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://pan.baidu.com/s/1Ia8Q0MSgBArdZjieQbWgEQ&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -2839,14 +2531,7 @@ data-flex-basis="998px"
 >&lt;/p>
 &lt;p>你需要使用迅雷。将你要下载的文件先离线下载到迅雷云盘上，再从迅雷云盘上下载~（迅雷云盘好像不限速，好评~&lt;/p>
 &lt;p>再下载HuRUpdater，&lt;a class="link" href="https://pan.baidu.com/s/1KqLBhbhtIzwMSyeKMjpESA?fid=653326701347000" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1KqLBhbhtIzwMSyeKMjpESA?fid=653326701347000&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://pan.baidu.com/s/1KqLBhbhtIzwMSyeKMjpESA?fid=653326701347000&lt;/a>&lt;/p>
 &lt;p>这些都下载完后，按照上面所说的修改文件名，并把这四个文件放到一个文件夹中，并复制到u盘（或者sd卡都可以）&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/QQ%E6%88%AA%E5%9B%BE20220823092112.webp"
 loading="lazy"
@@ -2857,40 +2542,19 @@ alt="QQ截图20220823092112.webp"
 &lt;h2 id="使用更好的twrp">使用更好的TWRP&lt;/h2>
 &lt;p>刷入emui8之后，之前刷入的twrp就会被新的官方recovery覆盖。如果你还需要使用twrp的话，你可以再刷一个更好用的twrp&lt;/p>
 &lt;p>你可以到这里：&lt;a class="link" href="https://cloud.189.cn/web/share?code=7r6BfmBvEFvi" target="_blank" rel="noopener"
->https://cloud.189.cn/web/share?code=7r6BfmBvEFvi&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-下载由wzsx150大神适配的twrp。下载后依然可以直接使用压缩包内自带的bat脚本进行刷入。这里不多解释&lt;/p>
+>https://cloud.189.cn/web/share?code=7r6BfmBvEFvi&lt;/a> 下载由wzsx150大神适配的twrp。下载后依然可以直接使用压缩包内自带的bat脚本进行刷入。这里不多解释&lt;/p>
 &lt;p>值得注意的是，如果你是emui5的话，你是不能直接刷入这个twrp的。这就是为什么我们要先刷一个差点的twrp然后升级到emui8&lt;/p>
 &lt;h2 id="救砖">救砖&lt;/h2>
 &lt;p>emui8已经可以支持ProjectTreble了，于是我直接用twrp将DotOS直接刷到system分区，手机就不断进行重启了。并且rec进不去，卡在启动界面。erecovery也不能恢复。三键强刷也没有成功。&lt;/p>
 &lt;p>这时候你需要另一个神奇的twrp&lt;/p>
 &lt;p>链接：&lt;a class="link" href="https://pan.baidu.com/s/1FAWCr-snmD9C0GhSZzcPqA?pwd=t0pd" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1FAWCr-snmD9C0GhSZzcPqA?pwd=t0pd&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;br>
+>https://pan.baidu.com/s/1FAWCr-snmD9C0GhSZzcPqA?pwd=t0pd&lt;/a>&lt;br>
 提取码：t0pd&lt;/p>
 &lt;p>下载后，将手机进入fastboot模式并连接电脑，在命令行中输入&lt;code>fastboot flash recovery_ramdisk 文件路径&lt;/code> 进行刷入，然后重启进入recovery模式，就进到了这个twrp了&lt;/p>
 &lt;p>你可以在这个twrp中再次重复上面的步骤把emui8刷进去&lt;/p>
 &lt;h2 id="升级到emui9">升级到EMUI9&lt;/h2>
 &lt;p>首先你需要官方固件包。在万维论坛中可以找到。链接：&lt;a class="link" href="https://www.rom100.com/forum.php" target="_blank" rel="noopener"
->https://www.rom100.com/forum.php&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.rom100.com/forum.php&lt;/a>&lt;/p>
 &lt;p>你可以在其中搜索你的手机型号，就可以找到对应的固件包&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/QQ%E6%88%AA%E5%9B%BE20220823094755.webp"
 width="744"
@@ -2904,14 +2568,7 @@ data-flex-basis="299px"
 >&lt;/p>
 &lt;p>但是你需要回复帖子才能获得下载链接，而回复需要登录，等于需要邀请码，邀请码付费。你可以去加一些有关刷机的群，在群里向大佬们借一个论坛账号。我在这里给到我所用的固件包的下载链接&lt;/p>
 &lt;p>链接：&lt;a class="link" href="https://pan.baidu.com/s/1bEU-GzU2JCg1KTi7JdffDQ?pwd=d1wp" target="_blank" rel="noopener"
->https://pan.baidu.com/s/1bEU-GzU2JCg1KTi7JdffDQ?pwd=d1wp&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;br>
+>https://pan.baidu.com/s/1bEU-GzU2JCg1KTi7JdffDQ?pwd=d1wp&lt;/a>&lt;br>
 提取码：d1wp&lt;/p>
 &lt;p>（可能会有解压密码，解压密码就是压缩包里有个没扩展名的文件的文件名）&lt;/p>
 &lt;blockquote>
@@ -2937,14 +2594,7 @@ data-flex-basis="325px"
 &lt;h2 id="刷入类原生">刷入类原生&lt;/h2>
 &lt;p>在刷入类原生之前，你需要确保recovery是官方的recovery，这很重要！&lt;/p>
 &lt;p>首先下载treble check，链接：&lt;a class="link" href="https://www.cr173.com/soft/938868.html" target="_blank" rel="noopener"
->https://www.cr173.com/soft/938868.html&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.cr173.com/soft/938868.html&lt;/a>&lt;/p>
 &lt;p>安装后可以看到系统是否支持ProjectTreble。实际上emui8及以后的版本都支持&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/QQ%E5%9B%BE%E7%89%8720220823101815-374x1024.webp"
 width="374"
@@ -2991,14 +2641,7 @@ data-flex-basis="3504px"
 &lt;p>由于我刷完havoc，系统非常不稳定，有一堆问题，所以选择回到EMUI9了&lt;/p>
 &lt;h2 id="刷入面具">刷入面具&lt;/h2>
 &lt;p>首先你需要解包工具，链接：&lt;a class="link" href="http://www.mz6.net/soft/18553.html#downurl" target="_blank" rel="noopener"
->http://www.mz6.net/soft/18553.html#downurl&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://www.mz6.net/soft/18553.html#downurl&lt;/a>&lt;/p>
 &lt;p>下载完毕后打开工具，你需要先按照如下设置&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/huawei-kirin-flash-tutorial-resources/%E6%8D%951%E8%8E%B7.webp"
 width="434"
@@ -3031,50 +2674,15 @@ data-flex-basis="1995px"
 &lt;/blockquote>
 &lt;h2 id="参考">参考&lt;/h2>
 &lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/397173427" target="_blank" rel="noopener"
->https://zhuanlan.zhihu.com/p/397173427&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://zhuanlan.zhihu.com/p/397173427&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="http://www.rootbbs.com/?id=343" target="_blank" rel="noopener"
->http://www.rootbbs.com/?id=343&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://www.rootbbs.com/?id=343&lt;/a>&lt;/p>
 &lt;p>【【全网首发】华为刷机入门【保姆级教程】华为手机刷机-魔鬼级难度刷机-小白也能看懂！】 &lt;a class="link" href="https://www.bilibili.com/video/BV1HV4y1E7uo?share_source=copy_web" target="_blank" rel="noopener"
->https://www.bilibili.com/video/BV1HV4y1E7uo?share_source=copy_web&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.bilibili.com/video/BV1HV4y1E7uo?share_source=copy_web&lt;/a>&lt;/p>
 &lt;p>【玩机必看！带你入坑安卓刷机，小白也能看懂的ROOT基础指南来啦！】 &lt;a class="link" href="https://www.bilibili.com/video/BV1BY4y1H7Mc?share_source=copy_web" target="_blank" rel="noopener"
->https://www.bilibili.com/video/BV1BY4y1H7Mc?share_source=copy_web&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.bilibili.com/video/BV1BY4y1H7Mc?share_source=copy_web&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.bilibili.com/read/cv15133756" target="_blank" rel="noopener"
->https://www.bilibili.com/read/cv15133756&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>https://www.bilibili.com/read/cv15133756&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>有了解锁码接下来干什么，解锁刷TWRP刷面具嘛。全套教程奉上，大家照做就是了。&lt;/p>
 &lt;p>如何Root你的华为旧机？ 来自 某贼 - 酷安

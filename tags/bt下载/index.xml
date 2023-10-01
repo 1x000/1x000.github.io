@@ -10,14 +10,7 @@
 &lt;h2 id="在vps上使用bittorrent-tracker">在VPS上使用bittorrent-tracker&lt;/h2>
 &lt;p>这是&lt;code>webtorrent&lt;/code>项目的一个部分。使用&lt;code>nodejs&lt;/code>进行搭建部署。&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/webtorrent/bittorrent-tracker" target="_blank" rel="noopener"
->官方&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-有英文文档，这里我简单说一下如何使用：&lt;/p>
+>官方&lt;/a>有英文文档，这里我简单说一下如何使用：&lt;/p>
 &lt;p>首先要下载&lt;code>nodejs&lt;/code>和&lt;code>npm&lt;/code>：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
