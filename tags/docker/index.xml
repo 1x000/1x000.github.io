@@ -12,9 +12,23 @@
 &lt;p>Portainer官网提供的安装文档：&lt;/p>
 &lt;ol>
 &lt;li>&lt;a class="link" href="https://www.portainer.io/installation/" target="_blank" rel="noopener"
->https://www.portainer.io/installation/&lt;/a>&lt;/li>
+>https://www.portainer.io/installation/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://portainer.readthedocs.io/en/stable/deployment.html" target="_blank" rel="noopener"
->https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>&lt;/li>
+>https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
 &lt;p>&lt;strong>安装docker&lt;/strong> 这里不多说&lt;/p>
@@ -216,19 +230,47 @@
 &lt;p>以上就是大部分与 Docker 镜像相关的重要命令。&lt;/p>
 &lt;p>要在使用 Docker 时查看 CLI 引用，只需在命令行中输入命令 docker 即可。Docker 文档请参阅：&lt;/p>
 &lt;p>&lt;a class="link" href="https://docs.docker.com/engine/reference/commandline/cli/" target="_blank" rel="noopener"
->Use the Docker command line | Docker Documentation&lt;/a>&lt;/p>
+>Use the Docker command line | Docker Documentation&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>现在你已经掌握了运行 Docker 的关键命令，可以用 Docker 了！&lt;/p>
 &lt;h2 id="docker可视化-portainer安装">Docker可视化 Portainer安装&lt;/h2>
 &lt;p>&lt;strong>Portainer是Docker的可视化管理工具&lt;/strong>，镜像、容器、日志显示等操作，Swarm集群、服务等集中管理和操作、登录用户管理和控制等功能。&lt;/p>
 &lt;h3 id="portainer官网">Portainer官网&lt;/h3>
 &lt;p>Portainer官网：&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.portainer.io%2F" target="_blank" rel="noopener"
->https://www.portainer.io/&lt;/a>&lt;/p>
+>https://www.portainer.io/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>Portainer官网提供的安装文档：&lt;/p>
 &lt;ol>
 &lt;li>&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.portainer.io%2Finstallation%2F" target="_blank" rel="noopener"
->https://www.portainer.io/installation/&lt;/a>&lt;/li>
+>https://www.portainer.io/installation/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;li>&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fportainer.readthedocs.io%2Fen%2Fstable%2Fdeployment.html" target="_blank" rel="noopener"
->https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>&lt;/li>
+>https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
 &lt;p>&lt;strong>1、利用Docker拉取portainer镜像&lt;/strong>&lt;/p>
@@ -270,7 +312,14 @@
 &lt;/ul>
 &lt;h3 id="docker-部署">Docker 部署&lt;/h3>
 &lt;p>Docker Hub 镜像地址：&lt;a class="link" href="https://hub.docker.com/r/adguard/adguardhome" target="_blank" rel="noopener"
->Docker&lt;/a>&lt;/p>
+>Docker&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>安装好 Docker 后下载镜像，以下任选其一&lt;/p>
 &lt;table>
 &lt;thead>

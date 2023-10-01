@@ -117,11 +117,32 @@
 &lt;p>原理是，使用高性能运算，不停的尝试不同的私钥输入，直到出现满意的结果，例如 &lt;strong>Facebook&lt;/strong>的洋葱地址 &lt;code>facebookcorewwwi.onion&lt;/code>。相当的整齐，要爆破这么多，大概也只有 &lt;strong>Facebook&lt;/strong> 等拥有大规模服务器集群的厂商可以做得到，因为在密码学上的评估要暴力解出这样的结果以 &lt;code>1.5Ghz&lt;/code> 处理器要 &lt;code>260&lt;/code> 万年，惊为天人 &lt;strong>Facebook&lt;/strong> 展现出庞大运算的惊人实力，这是暗网目前最漂亮的域名了。&lt;/p>
 &lt;p>&lt;strong>GITHUB&lt;/strong>项目地址：&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/katmagic/Shallot" target="_blank" rel="noopener"
->https://github.com/katmagic/Shallot&lt;/a>&lt;/p>
+>https://github.com/katmagic/Shallot&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/lachesis/scallion" target="_blank" rel="noopener"
->GitHub - lachesis/scallion: GPU-based Onion Hash generator&lt;/a>&lt;/p>
+>GitHub - lachesis/scallion: GPU-based Onion Hash generator&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/cathugger/mkp224o" target="_blank" rel="noopener"
->GitHub - cathugger/mkp224o: vanity address generator for tor onion v3 (ed25519) hidden services&lt;/a>&lt;/p>
+>GitHub - cathugger/mkp224o: vanity address generator for tor onion v3 (ed25519) hidden services&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>如果运行过程中缺了什么套件沒有办法运行&lt;/p>
 &lt;p>可以输入以下命令：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">

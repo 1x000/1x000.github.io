@@ -865,19 +865,47 @@ data-flex-basis="410px"
 &lt;h2 id="事前准备-1">事前准备&lt;/h2>
 &lt;p>本人使用的工具：CE7.2汉化版（这次要&lt;strong>注意版本&lt;/strong>，插件和CE版本相关，汉化与否不影响）&lt;/p>
 &lt;p>论坛有：&lt;a class="link" href="https://down.52pojie.cn/Tools/Debuggers/Cheat%20Engine%20v7.2.exe" target="_blank" rel="noopener"
->https://down.52pojie.cn/Tools/Debuggers/Cheat%20Engine%20v7.2.exe&lt;/a>&lt;/p>
+>https://down.52pojie.cn/Tools/Debuggers/Cheat%20Engine%20v7.2.exe&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>VS2015 （可以&lt;strong>兼容XP&lt;/strong>的插件开发）&lt;/p>
 &lt;p>&lt;a class="link" href="https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads" target="_blank" rel="noopener"
->https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads&lt;/a>&lt;/p>
+>https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>本人使用的游戏：植物大战僵尸&lt;strong>原版&lt;/strong>的汉化版(非年度版)     就是阳光基址是006A9EC0+768+5560的那个（ps:劳模植物大战僵尸）&lt;/p>
 &lt;p>CE7.2源码一份:&lt;a class="link" href="https://github.com/cheat-engine/cheat-engine/archive/7.2.zip" target="_blank" rel="noopener"
->https://github.com/cheat-engine/cheat-engine/archive/7.2.zip&lt;/a>&lt;/p>
+>https://github.com/cheat-engine/cheat-engine/archive/7.2.zip&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;h2 id="需要知道的pvz数据">需要知道的pvz数据&lt;/h2>
 &lt;p>前面我们通过汇编硬追基址知道了&lt;/p>
 &lt;p>僵尸头部数组的地址是0x6a9ec0+0x768+0x90，僵尸数量上限地址为0x6a9ec0+0x768+0x94&lt;/p>
 &lt;p>僵尸血量为僵尸地址+0xc8，僵尸x坐标为僵尸地址+0x8，僵尸y坐标为僵尸地址+0xc&lt;/p>
 &lt;p>不知道的朋友们可以戳这里看之前的教程：&lt;a class="link" href="https://www.52pojie.cn/thread-1361473-1-1.html" target="_blank" rel="noopener"
->https://www.52pojie.cn/thread-1361473-1-1.html&lt;/a>&lt;/p>
+>https://www.52pojie.cn/thread-1361473-1-1.html&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>知道了这些以后开启我们的LUA之旅&lt;/p>
 &lt;h2 id="教程内容-1">教程内容&lt;/h2>
 &lt;h2 id="编写我们的lua绘制脚本">编写我们的LUA绘制脚本&lt;/h2>
@@ -1302,8 +1330,22 @@ alt="绘制模板"
 >&lt;/p>
 &lt;h3 id="lua和asm混用">lua和asm混用&lt;/h3>
 &lt;p>Auto assembler scripts support section written in Lua.You can start such a section using the &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Auto_Assembler:LUA_ASM" target="_blank" rel="noopener"
->{$lua}&lt;/a> keyword, and end it with &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Auto_Assembler:LUA_ASM" target="_blank" rel="noopener"
->{$asm}&lt;/a>.&lt;/p>
+>{$lua}&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+keyword, and end it with &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Auto_Assembler:LUA_ASM" target="_blank" rel="noopener"
+>{$asm}&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+.&lt;/p>
 &lt;p>自动汇编脚本支持部分用Lua来写，你可以开始一段lua代码以 {$lua} 开始，以{$asm}结束lua代码&lt;/p>
 &lt;p>例:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1660,7 +1702,14 @@ data-flex-basis="311px"
 &lt;h2 id="lua文档查询">LUA文档查询&lt;/h2>
 &lt;p>CE Lua的相关接口可以参考：&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua" target="_blank" rel="noopener"
->https://wiki.cheatengine.org/index.php?title=Lua&lt;/a>&lt;/p>
+>https://wiki.cheatengine.org/index.php?title=Lua&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>具体函数的内容通过 帮助(H)→Cheat Engine Lua文件来查看：&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/ce%E8%87%AA%E5%86%99%E6%8F%92%E4%BB%B6-lua%E6%8E%A5%E5%8F%A3-pvz-%E5%83%B5%E5%B0%B8%E7%BB%98%E5%88%B6/image-20210209184722820.webp"
 width="1594"
@@ -1687,7 +1736,14 @@ data-flex-basis="268px"
 &lt;ul>
 &lt;li>参数:要读取的地址&lt;/li>
 &lt;li>参数类型： &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=CEAddressString" target="_blank" rel="noopener"
->CEAddressString&lt;/a> 或 Integer&lt;/li>
+>CEAddressString&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+或 Integer&lt;/li>
 &lt;li>返回值：地址里存储的数据&lt;/li>
 &lt;li>返回值类型：integer&lt;/li>
 &lt;/ul>
@@ -1720,19 +1776,68 @@ data-flex-basis="268px"
 &lt;/div>
 &lt;/div>&lt;p>和数据读取相关的函数还有很多，如&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readBytes" target="_blank" rel="noopener"
->readBytes&lt;/a>&lt;/p>
+>readBytes&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readSmallInteger" target="_blank" rel="noopener"
->readSmallInteger&lt;/a>&lt;/p>
+>readSmallInteger&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readQword" target="_blank" rel="noopener"
->readQword&lt;/a>&lt;/p>
+>readQword&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readPointer" target="_blank" rel="noopener"
->readPointer&lt;/a>&lt;/p>
+>readPointer&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readFloat" target="_blank" rel="noopener"
->readFloat&lt;/a>&lt;/p>
+>readFloat&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readDouble" target="_blank" rel="noopener"
->readDouble&lt;/a>&lt;/p>
+>readDouble&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:readString" target="_blank" rel="noopener"
->readString&lt;/a>&lt;/p>
+>readString&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>其使用方法大同小异，我这里就不每个都介绍了，感兴趣的可以自己去研究研究&lt;/p>
 &lt;p>而我的教程里只用到了readInteger于是接着介绍其它Lua函数了&lt;/p>
 &lt;p>接下来介绍有关绘制的相关类，主要是&lt;strong>自己翻译和补充了&lt;/strong>一下参考文档，之前&lt;strong>绘制透明窗口用到相关的类&lt;/strong>，类的来源在这里&lt;/p>
@@ -1743,7 +1848,14 @@ data-flex-basis="268px"
 &lt;p>&lt;strong>Form的setLayeredAttributes方法继承自WinControl&lt;/strong>&lt;/p>
 &lt;p>这里的Form是&lt;strong>Delphi&lt;/strong>绘制的Form，Form属性可参考DelPhi的Form，PS：&lt;strong>CE的文档并不是很全&lt;/strong>&lt;/p>
 &lt;p>Delphi Form参考链接:&lt;a class="link" href="http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm_Properties" target="_blank" rel="noopener"
->http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm_Properties&lt;/a>&lt;/p>
+>http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm_Properties&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>属性（列举了CE文档里没有的）&lt;/p>
 &lt;p>FormStyle（窗体样式）:&lt;/p>
 &lt;table>
@@ -1773,7 +1885,14 @@ data-flex-basis="268px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>参考链接：&lt;a class="link" href="http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm.FormStyle" target="_blank" rel="noopener"
->http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm.FormStyle&lt;/a>&lt;/p>
+>http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TForm.FormStyle&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>BorderStyle（边界样式）&lt;/p>
 &lt;table>
 &lt;thead>
@@ -1810,7 +1929,14 @@ data-flex-basis="268px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>参考链接：&lt;a class="link" href="http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TCustomForm.BorderStyle" target="_blank" rel="noopener"
->http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TCustomForm.BorderStyle&lt;/a>&lt;/p>
+>http://docwiki.embarcadero.com/Libraries/Sydney/en/Vcl.Forms.TCustomForm.BorderStyle&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;h4 id="custmcontrol-class">CustmControl class&lt;/h4>
 &lt;p>(CustomControl-&amp;gt;WinControl-&amp;gt;Control-&amp;gt;Component-&amp;gt;Object)&lt;/p>
 &lt;p>属性&lt;/p>
@@ -1851,7 +1977,14 @@ See msdn SetLayeredWindowAttributes for more information（参考msdn的SetLayer
 &lt;/ul>
 &lt;p>LWA_ALPHA时：crKey参数无效，bAlpha参数有效；&lt;/p>
 &lt;p>LWA_COLORKEY：&lt;a class="link" href="https://baike.baidu.com/item/%E7%AA%97%E4%BD%93" target="_blank" rel="noopener"
->窗体&lt;/a>中的所有颜色为crKey的地方将变为透明，bAlpha参数无效。其常量值为1。&lt;/p>
+>窗体&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+中的所有颜色为crKey的地方将变为透明，bAlpha参数无效。其常量值为1。&lt;/p>
 &lt;p>LWA_ALPHA | LWA_COLORKEY：crKey的地方将变为全透明，而其它地方根据bAlpha参数确定透明度。&lt;/p>
 &lt;h4 id="control-class">Control Class&lt;/h4>
 &lt;p>(Inheritance: Component-&amp;gt;Object)&lt;/p>
@@ -1986,11 +2119,25 @@ See msdn SetLayeredWindowAttributes for more information（参考msdn的SetLayer
 &lt;/li>
 &lt;li>
 &lt;p>getPixel(x,y)（获得指定坐标点的像素的&lt;a class="link" href="https://baike.baidu.com/item/RGB/342517" target="_blank" rel="noopener"
->RGB&lt;/a>颜色值）&lt;/p>
+>RGB&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+颜色值）&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>setPixel(x,y,color)（设置指定坐标点的像素的&lt;a class="link" href="https://baike.baidu.com/item/RGB/342517" target="_blank" rel="noopener"
->RGB&lt;/a>颜色值）&lt;/p>
+>RGB&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+颜色值）&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>floodFill(x,y, color OPTIONAL default=brush.Color, filltype OPTIONAL default=fsSurface): Fills the picture till/with a color.(颜色填充)&lt;br>
@@ -2305,7 +2452,14 @@ fsStrikeOut 删除线&lt;/p>
 &lt;h3 id="其它绘制用到的方法参考方法">其它绘制用到的方法（参考方法）&lt;/h3>
 &lt;h4 id="createform">createForm&lt;/h4>
 &lt;p>参考链接:&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:Class:Form" target="_blank" rel="noopener"
->https://wiki.cheatengine.org/index.php?title=Lua:Class:Form&lt;/a>&lt;/p>
+>https://wiki.cheatengine.org/index.php?title=Lua:Class:Form&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>创建窗体:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2361,7 +2515,14 @@ data-flex-basis="262px"
 >&lt;/p>
 &lt;h4 id="getscreenheight">getScreenHeight&lt;/h4>
 &lt;p>参考链接:&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:getScreenHeight" target="_blank" rel="noopener"
->getScreenHeight&lt;/a>&lt;/p>
+>getScreenHeight&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>无参数&lt;/p>
 &lt;table>
 &lt;thead>
@@ -2381,7 +2542,14 @@ data-flex-basis="262px"
 &lt;/table>
 &lt;h4 id="getscreenwidth">getScreenWidth&lt;/h4>
 &lt;p>参考链接:&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Lua:getScreenWidth" target="_blank" rel="noopener"
->getScreenWidth&lt;/a>&lt;/p>
+>getScreenWidth&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>无参数&lt;/p>
 &lt;table>
 &lt;thead>
@@ -2401,7 +2569,14 @@ data-flex-basis="262px"
 &lt;/table>
 &lt;h4 id="createtimer">createTimer&lt;/h4>
 &lt;p>参考链接:&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=createTimer" target="_blank" rel="noopener"
->createTimer&lt;/a>&lt;/p>
+>createTimer&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -2422,8 +2597,22 @@ data-flex-basis="262px"
 &lt;tr>
 &lt;td>Owner&lt;/td>
 &lt;td>&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Control" target="_blank" rel="noopener"
->Control&lt;/a> or &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Component" target="_blank" rel="noopener"
->Component&lt;/a> based object&lt;/td>
+>Control&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+or &lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=Component" target="_blank" rel="noopener"
+>Component&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+based object&lt;/td>
 &lt;td>计时器的所有者（用于资源清理）&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -2450,7 +2639,14 @@ data-flex-basis="262px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>Tip: 使用&lt;a class="link" href="https://wiki.cheatengine.org/index.php?title=getMainForm" target="_blank" rel="noopener"
->getMainForm&lt;/a> 方法作为owner(创建者) 可以使得计时器和main form同步摧毁&lt;/p>
+>getMainForm&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+方法作为owner(创建者) 可以使得计时器和main form同步摧毁&lt;/p>
 &lt;h4 id="findwindow">findWindow&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -2672,7 +2868,14 @@ data-flex-basis="1577px"
 &lt;h2 id="下篇前言">下篇前言：&lt;/h2>
 &lt;p>承接上篇教程，这次来讲讲如何为CE开发扩展的插件&lt;/p>
 &lt;p>上篇教程直达车：&lt;a class="link" href="https://www.52pojie.cn/thread-1369369-1-1.html" target="_blank" rel="noopener"
->&lt;strong>CE自写插件提供LUA接口实现pvz僵尸绘制之上篇&lt;/strong>&lt;/a>&lt;/p>
+>&lt;strong>CE自写插件提供LUA接口实现pvz僵尸绘制之上篇&lt;/strong>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;hr>
 &lt;p>总教程分成两部分：&lt;/p>
 &lt;ul>
@@ -2683,12 +2886,33 @@ data-flex-basis="1577px"
 &lt;h2 id="事前准备-2">事前准备&lt;/h2>
 &lt;p>本人使用的工具：CE7.2汉化版（这次要&lt;strong>注意版本&lt;/strong>，插件和CE版本相关，汉化与否不影响）&lt;/p>
 &lt;p>论坛有：&lt;a class="link" href="https://down.52pojie.cn/Tools/Debuggers/Cheat%20Engine%20v7.2.exe" target="_blank" rel="noopener"
->&lt;strong>CE7.2&lt;/strong>&lt;/a>&lt;/p>
+>&lt;strong>CE7.2&lt;/strong>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>VS2015 （可以&lt;strong>兼容XP&lt;/strong>的插件开发）&lt;/p>
 &lt;p>VS2015:&lt;a class="link" href="https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads" target="_blank" rel="noopener"
->https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads&lt;/a>&lt;/p>
+>https://my.visualstudio.com/Downloads?q=visual%20studio%202015&amp;amp;wt.mc_id=o~msft~vscom~older-downloads&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>CE7.2源码一份:&lt;a class="link" href="https://github.com/cheat-engine/cheat-engine/archive/7.2.zip" target="_blank" rel="noopener"
->https://github.com/cheat-engine/cheat-engine/archive/7.2.zip&lt;/a>&lt;/p>
+>https://github.com/cheat-engine/cheat-engine/archive/7.2.zip&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;h2 id="教程内容-2">教程内容&lt;/h2>
 &lt;h2 id="vs2015的安装">VS2015的安装&lt;/h2>
 &lt;h3 id="插件编译环境">插件编译环境&lt;/h3>
@@ -3048,7 +3272,14 @@ data-flex-basis="679px"
 &lt;p>分别为：CEPlugin_GetVersion        CEPlugin_InitializePlugin        CEPlugin_DisablePlugin&lt;/p>
 &lt;hr>
 &lt;p>我们可以看看有关CE插件的文档：&lt;a class="link" href="https://cheatengine.org/help/index.html" target="_blank" rel="noopener"
->https://cheatengine.org/help/index.html&lt;/a>&lt;/p>
+>https://cheatengine.org/help/index.html&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>Cheat Engine comes with a plugin system so developers can add extra functions and features to ce without having to code in Delphi (Any language that can create standard DLL&amp;rsquo;s with normal exports can make plugins for ce), or having to share their sourcecode.&lt;/p>
 &lt;p>CE 带来了插件系统 这样一来开发者们就可以添加额外的功能和特性到CE里，无需用Delphi 编程（任何语言都可以为CE创建正常导出的标准的DLL）&lt;/p>
 &lt;p>To make use of the plugin system you need to create a dll that exports 3 functions:&lt;/p>
@@ -3667,10 +3898,24 @@ data-flex-basis="679px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>关于lua的函数可以参考&lt;a class="link" href="https://www.runoob.com/manual/lua53doc/contents.html#index" target="_blank" rel="noopener"
->Lua 函数索引&lt;/a>，这里只讲解用到的&lt;/p>
+>Lua 函数索引&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+，这里只讲解用到的&lt;/p>
 &lt;h6 id="lua_register">lua_register&lt;/h6>
 &lt;p>参考&lt;a class="link" href="https://www.runoob.com/manual/lua53doc/manual.html#lua_register" target="_blank" rel="noopener"
->lua_register&lt;/a>&lt;/p>
+>lua_register&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -3701,10 +3946,24 @@ data-flex-basis="679px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>参考&lt;a class="link" href="https://www.runoob.com/manual/lua53doc/manual.html#lua_pushcfunction" target="_blank" rel="noopener"
->lua_pushcfunction&lt;/a>&lt;/p>
+>lua_pushcfunction&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;p>将一个 C 函数压栈。 这个函数接收一个 C 函数指针， 并将一个类型为 &lt;code>function&lt;/code> 的 Lua 值压栈。 当这个栈顶的值被调用时，将触发对应的 C 函数。&lt;/p>
 &lt;p>注册到 Lua 中的任何函数都必须遵循正确的协议来接收参数和返回值 （参见 &lt;a class="link" href="https://www.runoob.com/manual/lua53doc/manual.html#lua_CFunction" target="_blank" rel="noopener"
->&lt;code>lua_CFunction&lt;/code>&lt;/a> ）&lt;/p>
+>&lt;code>lua_CFunction&lt;/code>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+）&lt;/p>
 &lt;h6 id="lua_cfunction">lua_CFunction&lt;/h6>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -3738,7 +3997,14 @@ data-flex-basis="679px"
 &lt;p>&lt;strong>Lua和C/C++语言通信的主要方法是一个无处不在的虚拟栈&lt;/strong>&lt;/p>
 &lt;h6 id="lua_setglobal">lua_setglobal&lt;/h6>
 &lt;p>参考&lt;a class="link" href="https://www.runoob.com/manual/lua53doc/manual.html#lua_setglobal" target="_blank" rel="noopener"
->lua_setglobal&lt;/a>&lt;/p>
+>lua_setglobal&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -4398,6 +4664,7 @@ data-flex-basis="153px"
 &lt;h2 id="总结">总结&lt;/h2>
 &lt;p>总算是把这个教程给更新完了，CE的插件功能可以让我们用C来实现很多强大的功能，我只是简单地带大家了解了一下有关CE的插件开发流程，还可以增加很多有用复杂的功能，我这里限于篇幅也不展开了。底下会&lt;strong>附上我开发的插件的源码和插件&lt;/strong>&lt;/p>
 &lt;p>最后，希望大家能一起变强，相互交流，相互进步，我也只是个&lt;strong>勉强入门的萌新&lt;/strong>，能力不足，水平有限，希望大家多多支持和鼓励一下。以上~~~~期待我们的下次再会&lt;/p>
-&lt;p>下载链接：&lt;a class="link" href="MyPlugin.zip?versionId=CAEQHhiBgICetbLAvBciIDZkZWM2ZTA3NGZmZjRhZTE5ZTZiNWNhYzZlODQ0Mjhh" >MyPlugin&lt;/a>&lt;/p>
+&lt;p>下载链接：&lt;a class="link" href="MyPlugin.zip?versionId=CAEQHhiBgICetbLAvBciIDZkZWM2ZTA3NGZmZjRhZTE5ZTZiNWNhYzZlODQ0Mjhh" >MyPlugin&lt;/a>
+&lt;/p>
 &lt;p>源码太大了，只能用自己的阿里云OSS了 QAQ&lt;/p>
 &lt;p>PS：本插件和上篇教程的插件是同一个插件，改了个名字而已&lt;/p></description></item></channel></rss>
