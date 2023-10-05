@@ -1,77 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>fdp client on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/fdp-client/</link><description>Recent content in fdp client on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sat, 20 May 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/fdp-client/index.xml" rel="self" type="application/rss+xml"/><item><title>FDP配置更新器</title><link>https://blog.xpdbk.com/post/minecraft-fdpconfig-update/</link><pubDate>Sat, 20 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-fdpconfig-update/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-fdpconfig-update/awa.webp" alt="Featured image of post FDP配置更新器" />&lt;h2 id="fdp配置更新器">FDP配置更新器&lt;/h2>
-&lt;p>就是为了让开纪方便一点&lt;/p>
-&lt;p>源代码使用的是CPython和WindowsGui&lt;/p>
-&lt;p>然后转换成C++语言进行编译&lt;/p>
-&lt;p>不会上传任何用户数据&lt;/p>
-&lt;p>&lt;strong>程序特点&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 自带虚拟化运行（杜绝L人破解）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 双线程加速打开（双虚拟机混淆）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 拒绝更改路径（更改路径就不给你下载了）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 禁止调试（调你NND调一天到晚就知道调调调）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 作者信息模块加密（改你爷爷）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 将程序所在内存段进行混淆&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 反添加弹窗&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>可用系统为&lt;strong>Windows7&lt;/strong>&lt;code>32位&lt;/code>以上&lt;/p>
-&lt;p>源码：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="n">无&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Incognito Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</link><pubDate>Sat, 13 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</guid><description>&lt;h2 id="incognito-绕过">Incognito 绕过&lt;/h2>
-&lt;p>首先这个反作弊是免费的，在检测&lt;code>Noslow&lt;/code>和&lt;code>Fly&lt;/code>上面堪称完美，但是其他地方就不行了。目前没见服务器使用（失落）&lt;/p>
-&lt;h2 id="incognito-v1官方fdp">Incognito V1（官方FDP）&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>fdp client on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/fdp-client/</link><description>Recent content in fdp client on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Thu, 05 Oct 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/fdp-client/index.xml" rel="self" type="application/rss+xml"/><item><title>FDPClient配置GrimAC Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-grim/2023-09-19_19.18.11.webp" alt="Featured image of post FDPClient配置GrimAC Bypass" />&lt;h2 id="grim-绕过">Grim 绕过&lt;/h2>
+&lt;p>首先这个配置是免费的，在功能上肯定不如那些付费&lt;strong>XXSense&lt;/strong>了，其次做这个配置我没有收益，如果你觉得不好的话可以左转去用他们的&lt;strong>Sense&lt;/strong>哈哈&lt;/p>
+&lt;h2 id="grim-v3-官方fdp">Grim V3 (官方FDP)&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定到家的静默杀戮光环&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 不好的反击退&lt;/p>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边移动边打人的0反GrimC07反击退&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超级OP的自动搭路&lt;/p>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 5秒的C0F包闪现&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 依旧手动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 加强键位设置&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 跑吃绕过（不支持3FMC）&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;input checked="" disabled="" type="checkbox"> 边走边真防砍（速度是跑着的速度）&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 弓箭超级Fly！&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 兼容最新FDP&lt;/p>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 5.4.0的FDPClient（捆绑在压缩包里面）&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>{！}需要使用最新FDP&lt;/p>
-&lt;h2 id="下载区">下载区&lt;/h2>
-&lt;blockquote>
-&lt;p>&lt;strong>V1版本（FDP官方）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/i61T60w19cgb" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码:&lt;code>d7w5&lt;/code>&lt;/p>
-&lt;p>压缩密码：&lt;code>Incognito114514&lt;/code>&lt;/p>
-&lt;p>&lt;code>2023/5/13&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;/blockquote></description></item><item><title>GrimFDP配置绕过Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</link><pubDate>Fri, 12 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</guid><description>&lt;h2 id="grim-绕过">Grim 绕过&lt;/h2>
-&lt;p>首先这个配置是免费的，在功能上肯定不如那些付费&lt;strong>XXSense&lt;/strong>了，其次做这个配置我没有收益，如果你觉得不好的话可以左转去用他们的&lt;strong>Sense&lt;/strong>哈哈&lt;/p>
 &lt;h2 id="grim-v2官方fdp">Grim V2（官方FDP）&lt;/h2>
 &lt;ul>
 &lt;li>
@@ -155,6 +110,22 @@ fill="currentColor">
 &lt;/ul>
 &lt;h2 id="下载区">下载区&lt;/h2>
 &lt;blockquote>
+&lt;p>&lt;strong>V3版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iHlkH1au7ogj" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码：&lt;code>60vz&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>2FsfdW323R&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/10/05&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;blockquote>
 &lt;p>&lt;strong>V2版本（FDP官方）&lt;/strong>&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iumt30w19atc" target="_blank" rel="noopener"
@@ -196,6 +167,101 @@ fill="currentColor">
 访问密码:&lt;code>ajd7&lt;/code>&lt;/p>
 &lt;p>压缩密码：&lt;code>iz@JkuT4&lt;/code>&lt;/p>
 &lt;p>&lt;code>2023/4/11&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h2 id="服务器ip">服务器IP&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>服务器IP&lt;/th>
+&lt;th>反作弊解释&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>3fmc.com&lt;/td>
+&lt;td>越南服不限区最新版GrimAC+关掉一堆检测只有搭路和杀戮等检测的未知版本Matrix&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>MC-SekSin.net&lt;/td>
+&lt;td>有钱赢游戏的服务器GrimAC旧版的但是里面一堆充钱大哥一刀秒杀&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>play.zonecraft.es&lt;/td>
+&lt;td>反击退等功能无法使用但是只有Grimac可能是新版的GrimAC&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>FDP配置更新器</title><link>https://blog.xpdbk.com/post/minecraft-fdpconfig-update/</link><pubDate>Sat, 20 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-fdpconfig-update/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-fdpconfig-update/awa.webp" alt="Featured image of post FDP配置更新器" />&lt;h2 id="fdp配置更新器">FDP配置更新器&lt;/h2>
+&lt;p>就是为了让开纪方便一点&lt;/p>
+&lt;p>源代码使用的是CPython和WindowsGui&lt;/p>
+&lt;p>然后转换成C++语言进行编译&lt;/p>
+&lt;p>不会上传任何用户数据&lt;/p>
+&lt;p>&lt;strong>程序特点&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 自带虚拟化运行（杜绝L人破解）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 双线程加速打开（双虚拟机混淆）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 拒绝更改路径（更改路径就不给你下载了）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 禁止调试（调你NND调一天到晚就知道调调调）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 作者信息模块加密（改你爷爷）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 将程序所在内存段进行混淆&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 反添加弹窗&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>可用系统为&lt;strong>Windows7&lt;/strong>&lt;code>32位&lt;/code>以上&lt;/p>
+&lt;p>源码：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="n">无&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Incognito Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</link><pubDate>Sat, 13 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-incognito/</guid><description>&lt;h2 id="incognito-绕过">Incognito 绕过&lt;/h2>
+&lt;p>首先这个反作弊是免费的，在检测&lt;code>Noslow&lt;/code>和&lt;code>Fly&lt;/code>上面堪称完美，但是其他地方就不行了。目前没见服务器使用（失落）&lt;/p>
+&lt;h2 id="incognito-v1官方fdp">Incognito V1（官方FDP）&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定到家的静默杀戮光环&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 不好的反击退&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超级OP的自动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边走边真防砍（速度是跑着的速度）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 弓箭超级Fly！&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 兼容最新FDP&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>{！}需要使用最新FDP&lt;/p>
+&lt;h2 id="下载区">下载区&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;strong>V1版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/i61T60w19cgb" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码:&lt;code>d7w5&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>Incognito114514&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/5/13&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;/blockquote></description></item><item><title>XiaoxixiSense 一个不成熟的FDP魔改</title><link>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</link><pubDate>Thu, 27 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-xiaoxixisense/113413.webp" alt="Featured image of post XiaoxixiSense 一个不成熟的FDP魔改" />&lt;h2 id="xiaoxixisense">XiaoxixiSense&lt;/h2>
 &lt;blockquote>

@@ -1,4 +1,197 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.8.9 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/1.8.9/</link><description>Recent content in 1.8.9 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Wed, 04 Oct 2023 21:31:46 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/categories/1.8.9/index.xml" rel="self" type="application/rss+xml"/><item><title>FDPClient的Intave反作弊JS</title><link>https://blog.xpdbk.com/post/intave-fdpclient-js-ast/</link><pubDate>Wed, 04 Oct 2023 21:31:46 +0700</pubDate><guid>https://blog.xpdbk.com/post/intave-fdpclient-js-ast/</guid><description>&lt;img src="https://blog.xpdbk.com/post/intave-fdpclient-js-ast/2023-09-10_18.51.42.webp" alt="Featured image of post FDPClient的Intave反作弊JS" />&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.8.9 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/1.8.9/</link><description>Recent content in 1.8.9 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Thu, 05 Oct 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/categories/1.8.9/index.xml" rel="self" type="application/rss+xml"/><item><title>FDPClient配置GrimAC Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-grim/2023-09-19_19.18.11.webp" alt="Featured image of post FDPClient配置GrimAC Bypass" />&lt;h2 id="grim-绕过">Grim 绕过&lt;/h2>
+&lt;p>首先这个配置是免费的，在功能上肯定不如那些付费&lt;strong>XXSense&lt;/strong>了，其次做这个配置我没有收益，如果你觉得不好的话可以左转去用他们的&lt;strong>Sense&lt;/strong>哈哈&lt;/p>
+&lt;h2 id="grim-v3-官方fdp">Grim V3 (官方FDP)&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定到家的静默杀戮光环&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边移动边打人的0反GrimC07反击退&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 5秒的C0F包闪现&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 依旧手动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 加强键位设置&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 跑吃绕过（不支持3FMC）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边走边真防砍（速度是跑着的速度）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 5.4.0的FDPClient（捆绑在压缩包里面）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="grim-v2官方fdp">Grim V2（官方FDP）&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定到家的静默杀戮光环&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边移动边打人的0反Grim反击退&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 更不容易掉落的手动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 3FMC 仿Matrix半径机器人mod专门绕过&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 跑吃绕过（不稳定）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边走边真防砍（速度是跑着的速度）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 去除一些BUG和HIM（不是）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 兼容最新FDP&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>{！}需要使用最新FDP&lt;/p>
+&lt;h2 id="grim-v2xiaoxixisense魔改fdp">Grim V2（XiaoxixiSense魔改FDP）&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 开箱即用&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超稳定的杀戮&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 多种反击退（奇怪的反击退）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 加强手动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 支持0反（不稳定能打人）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 可移动0反（不能打人）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 简洁的HUD&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 去除一些无用的选项&lt;/p>
+&lt;p>V2配置使用 &lt;code>.cfg load grimv1&lt;/code> 切换配置&lt;/p>
+&lt;p>本配置使用&lt;code>XiaoxixiSense&lt;/code>可以到我的上一期文章下载&lt;/p>
+&lt;p>如果你不会用的话可以找我远控你的电脑帮你安装（不要钱）但是需要你有minecraft游玩基础如果没有任何基础的话请去看官方的wiki&lt;/p>
+&lt;p>如果你发我消息我没回的话是我在复习中考有时间会帮你搞&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="grim-v1官方fdp配置">Grim V1（官方FDP配置）&lt;/h2>
+&lt;p>&lt;strong>V1 DEV LOG&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 安全搭路（快速蹲搭）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Blink（闪现）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 安全杀戮（正在摸索）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 没有视觉（优化）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 无假功能且免费&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 仅支持&lt;code>FDP 5.3.0 官方版&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="下载区">下载区&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;strong>V3版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iHlkH1au7ogj" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码：&lt;code>60vz&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>2FsfdW323R&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/10/05&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>&lt;strong>V2版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iumt30w19atc" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码：&lt;code>egrb&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>114514GrimConfig&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/5/13&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>V2版本（XiaoxixiSense魔改FDP）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iJCqP0u7fpng" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码:&lt;code>22u1&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>无&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/4/29&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>V1版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/imWgW0sqip4h" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码:&lt;code>ajd7&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>iz@JkuT4&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/4/11&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h2 id="服务器ip">服务器IP&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>服务器IP&lt;/th>
+&lt;th>反作弊解释&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>3fmc.com&lt;/td>
+&lt;td>越南服不限区最新版GrimAC+关掉一堆检测只有搭路和杀戮等检测的未知版本Matrix&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>MC-SekSin.net&lt;/td>
+&lt;td>有钱赢游戏的服务器GrimAC旧版的但是里面一堆充钱大哥一刀秒杀&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>play.zonecraft.es&lt;/td>
+&lt;td>反击退等功能无法使用但是只有Grimac可能是新版的GrimAC&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>FDPClient的Intave反作弊JS</title><link>https://blog.xpdbk.com/post/intave-fdpclient-js-ast/</link><pubDate>Wed, 04 Oct 2023 21:31:46 +0700</pubDate><guid>https://blog.xpdbk.com/post/intave-fdpclient-js-ast/</guid><description>&lt;img src="https://blog.xpdbk.com/post/intave-fdpclient-js-ast/2023-09-10_18.51.42.webp" alt="Featured image of post FDPClient的Intave反作弊JS" />&lt;blockquote>
 &lt;p>本篇文章所有东西仅供学习和记录&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="fdpclient的一个js的反混淆">FDPClient的一个js的反混淆&lt;/h2>
@@ -11785,133 +11978,6 @@ fill="currentColor">
 访问密码:&lt;code>d7w5&lt;/code>&lt;/p>
 &lt;p>压缩密码：&lt;code>Incognito114514&lt;/code>&lt;/p>
 &lt;p>&lt;code>2023/5/13&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;/blockquote></description></item><item><title>GrimFDP配置绕过Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</link><pubDate>Fri, 12 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</guid><description>&lt;h2 id="grim-绕过">Grim 绕过&lt;/h2>
-&lt;p>首先这个配置是免费的，在功能上肯定不如那些付费&lt;strong>XXSense&lt;/strong>了，其次做这个配置我没有收益，如果你觉得不好的话可以左转去用他们的&lt;strong>Sense&lt;/strong>哈哈&lt;/p>
-&lt;h2 id="grim-v2官方fdp">Grim V2（官方FDP）&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定到家的静默杀戮光环&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边移动边打人的0反Grim反击退&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 更不容易掉落的手动搭路&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 3FMC 仿Matrix半径机器人mod专门绕过&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 跑吃绕过（不稳定）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边走边真防砍（速度是跑着的速度）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 去除一些BUG和HIM（不是）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 兼容最新FDP&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>{！}需要使用最新FDP&lt;/p>
-&lt;h2 id="grim-v2xiaoxixisense魔改fdp">Grim V2（XiaoxixiSense魔改FDP）&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 开箱即用&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 超稳定的杀戮&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 多种反击退（奇怪的反击退）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 加强手动搭路&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 支持0反（不稳定能打人）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 可移动0反（不能打人）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 简洁的HUD&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 去除一些无用的选项&lt;/p>
-&lt;p>V2配置使用 &lt;code>.cfg load grimv1&lt;/code> 切换配置&lt;/p>
-&lt;p>本配置使用&lt;code>XiaoxixiSense&lt;/code>可以到我的上一期文章下载&lt;/p>
-&lt;p>如果你不会用的话可以找我远控你的电脑帮你安装（不要钱）但是需要你有minecraft游玩基础如果没有任何基础的话请去看官方的wiki&lt;/p>
-&lt;p>如果你发我消息我没回的话是我在复习中考有时间会帮你搞&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="grim-v1官方fdp配置">Grim V1（官方FDP配置）&lt;/h2>
-&lt;p>&lt;strong>V1 DEV LOG&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 安全搭路（快速蹲搭）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> Blink（闪现）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 安全杀戮（正在摸索）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 没有视觉（优化）&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 无假功能且免费&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> 仅支持&lt;code>FDP 5.3.0 官方版&lt;/code>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="下载区">下载区&lt;/h2>
-&lt;blockquote>
-&lt;p>&lt;strong>V2版本（FDP官方）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iumt30w19atc" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码：&lt;code>egrb&lt;/code>&lt;/p>
-&lt;p>压缩密码：&lt;code>114514GrimConfig&lt;/code>&lt;/p>
-&lt;p>&lt;code>2023/5/13&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>V2版本（XiaoxixiSense魔改FDP）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iJCqP0u7fpng" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码:&lt;code>22u1&lt;/code>&lt;/p>
-&lt;p>压缩密码：&lt;code>无&lt;/code>&lt;/p>
-&lt;p>&lt;code>2023/4/29&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>V1版本（FDP官方）&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/imWgW0sqip4h" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码:&lt;code>ajd7&lt;/code>&lt;/p>
-&lt;p>压缩密码：&lt;code>iz@JkuT4&lt;/code>&lt;/p>
-&lt;p>&lt;code>2023/4/11&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;/blockquote></description></item><item><title>XiaoxixiSense 一个不成熟的FDP魔改</title><link>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</link><pubDate>Thu, 27 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-xiaoxixisense/113413.webp" alt="Featured image of post XiaoxixiSense 一个不成熟的FDP魔改" />&lt;h2 id="xiaoxixisense">XiaoxixiSense&lt;/h2>
 &lt;blockquote>

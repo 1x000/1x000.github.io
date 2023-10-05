@@ -1,65 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GrimAC on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/grimac/</link><description>Recent content in GrimAC on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Tue, 22 Aug 2023 22:43:34 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/grimac/index.xml" rel="self" type="application/rss+xml"/><item><title>Kevin在GrimAC的绕过配置</title><link>https://blog.xpdbk.com/post/kevin-grim/</link><pubDate>Tue, 22 Aug 2023 22:43:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin-grim/</guid><description>&lt;img src="https://blog.xpdbk.com/post/kevin-grim/2023-08-02_13.01.21.webp" alt="Featured image of post Kevin在GrimAC的绕过配置" />&lt;blockquote>
-&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iC4v2165u2hc" target="_blank" rel="noopener"
->蓝奏云&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-访问密码: &lt;code>9v2b&lt;/code>&lt;/p>
-&lt;p>压缩密码: &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
-&lt;hr>
-&lt;p>对比FDP多了一个合法搭路&lt;/p>
-&lt;p>Kevin客户端的开源地址：&lt;a class="link" href="https://github.com/RE-KevinClient/KevinClient-Reborn" target="_blank" rel="noopener"
->GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="kevin在grimac的绕过配置">Kevin在GrimAC的绕过配置&lt;/h2>
-&lt;blockquote>
-&lt;p>合法搭路需要开了之后一直跳不然的话没两下子就封禁了&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06.webp"
-width="1366"
-height="706"
-srcset="https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06_hu784d8e73f7046cf081289d25d08b9c15_75670_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06_hu784d8e73f7046cf081289d25d08b9c15_75670_1024x0_resize_q75_h2_box_2.webp 1024w"
-loading="lazy"
-alt="合法搭路"
-class="gallery-image"
-data-flex-grow="193"
-data-flex-basis="464px"
->&lt;/p>
-&lt;h2 id="推荐服务器">推荐服务器&lt;/h2>
-&lt;p>play.zonecraft.es (OGrim)&lt;/p>
-&lt;p>3fmc.com (Grim+Matrix)&lt;/p>
-&lt;h2 id="演示视频">演示视频&lt;/h2>
-&lt;h3 id="3fmc">3FMC&lt;/h3>
-&lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Pu4y1i7qi&amp;autoplay=0"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div>
-&lt;h3 id="zonecraft">Zonecraft&lt;/h3>
-&lt;div class="video-wrapper">
-&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Gh4y1D7WX&amp;autoplay=0"
-scrolling="no"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>GrimFDP配置绕过Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</link><pubDate>Fri, 12 May 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</guid><description>&lt;h2 id="grim-绕过">Grim 绕过&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GrimAC on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/grimac/</link><description>Recent content in GrimAC on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Thu, 05 Oct 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/grimac/index.xml" rel="self" type="application/rss+xml"/><item><title>FDPClient配置GrimAC Bypass</title><link>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</link><pubDate>Thu, 05 Oct 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-1.8.9-grim/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-1.8.9-grim/2023-09-19_19.18.11.webp" alt="Featured image of post FDPClient配置GrimAC Bypass" />&lt;h2 id="grim-绕过">Grim 绕过&lt;/h2>
 &lt;p>首先这个配置是免费的，在功能上肯定不如那些付费&lt;strong>XXSense&lt;/strong>了，其次做这个配置我没有收益，如果你觉得不好的话可以左转去用他们的&lt;strong>Sense&lt;/strong>哈哈&lt;/p>
+&lt;h2 id="grim-v3-官方fdp">Grim V3 (官方FDP)&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 稳定到家的静默杀戮光环&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边移动边打人的0反GrimC07反击退&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 5秒的C0F包闪现&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 依旧手动搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 加强键位设置&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 跑吃绕过（不支持3FMC）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 边走边真防砍（速度是跑着的速度）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 5.4.0的FDPClient（捆绑在压缩包里面）&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="grim-v2官方fdp">Grim V2（官方FDP）&lt;/h2>
 &lt;ul>
 &lt;li>
@@ -143,6 +110,22 @@ allowfullscreen="true"
 &lt;/ul>
 &lt;h2 id="下载区">下载区&lt;/h2>
 &lt;blockquote>
+&lt;p>&lt;strong>V3版本（FDP官方）&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iHlkH1au7ogj" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码：&lt;code>60vz&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>2FsfdW323R&lt;/code>&lt;/p>
+&lt;p>&lt;code>2023/10/05&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;blockquote>
 &lt;p>&lt;strong>V2版本（FDP官方）&lt;/strong>&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iumt30w19atc" target="_blank" rel="noopener"
@@ -185,7 +168,90 @@ fill="currentColor">
 &lt;p>压缩密码：&lt;code>iz@JkuT4&lt;/code>&lt;/p>
 &lt;p>&lt;code>2023/4/11&lt;/code>&lt;/p>
 &lt;/blockquote>
-&lt;/blockquote></description></item><item><title>XiaoxixiSense 一个不成熟的FDP魔改</title><link>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</link><pubDate>Thu, 27 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-xiaoxixisense/113413.webp" alt="Featured image of post XiaoxixiSense 一个不成熟的FDP魔改" />&lt;h2 id="xiaoxixisense">XiaoxixiSense&lt;/h2>
+&lt;/blockquote>
+&lt;h2 id="服务器ip">服务器IP&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>服务器IP&lt;/th>
+&lt;th>反作弊解释&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>3fmc.com&lt;/td>
+&lt;td>越南服不限区最新版GrimAC+关掉一堆检测只有搭路和杀戮等检测的未知版本Matrix&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>MC-SekSin.net&lt;/td>
+&lt;td>有钱赢游戏的服务器GrimAC旧版的但是里面一堆充钱大哥一刀秒杀&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>play.zonecraft.es&lt;/td>
+&lt;td>反击退等功能无法使用但是只有Grimac可能是新版的GrimAC&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Kevin在GrimAC的绕过配置</title><link>https://blog.xpdbk.com/post/kevin-grim/</link><pubDate>Tue, 22 Aug 2023 22:43:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin-grim/</guid><description>&lt;img src="https://blog.xpdbk.com/post/kevin-grim/2023-08-02_13.01.21.webp" alt="Featured image of post Kevin在GrimAC的绕过配置" />&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iC4v2165u2hc" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码: &lt;code>9v2b&lt;/code>&lt;/p>
+&lt;p>压缩密码: &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
+&lt;hr>
+&lt;p>对比FDP多了一个合法搭路&lt;/p>
+&lt;p>Kevin客户端的开源地址：&lt;a class="link" href="https://github.com/RE-KevinClient/KevinClient-Reborn" target="_blank" rel="noopener"
+>GitHub - RE-KevinClient/KevinClient-Reborn&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="kevin在grimac的绕过配置">Kevin在GrimAC的绕过配置&lt;/h2>
+&lt;blockquote>
+&lt;p>合法搭路需要开了之后一直跳不然的话没两下子就封禁了&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06.webp"
+width="1366"
+height="706"
+srcset="https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06_hu784d8e73f7046cf081289d25d08b9c15_75670_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/kevin-grim/2023-08-23_10.31.06_hu784d8e73f7046cf081289d25d08b9c15_75670_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="合法搭路"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;h2 id="推荐服务器">推荐服务器&lt;/h2>
+&lt;p>play.zonecraft.es (OGrim)&lt;/p>
+&lt;p>3fmc.com (Grim+Matrix)&lt;/p>
+&lt;h2 id="演示视频">演示视频&lt;/h2>
+&lt;h3 id="3fmc">3FMC&lt;/h3>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Pu4y1i7qi&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h3 id="zonecraft">Zonecraft&lt;/h3>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Gh4y1D7WX&amp;autoplay=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>XiaoxixiSense 一个不成熟的FDP魔改</title><link>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</link><pubDate>Thu, 27 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-xiaoxixisense/113413.webp" alt="Featured image of post XiaoxixiSense 一个不成熟的FDP魔改" />&lt;h2 id="xiaoxixisense">XiaoxixiSense&lt;/h2>
 &lt;blockquote>
 &lt;p>魔改人的B站: &lt;a class="link" href="https://space.bilibili.com/1845968451" target="_blank" rel="noopener"
 >笑嘻嘻Rua&lt;/a>
