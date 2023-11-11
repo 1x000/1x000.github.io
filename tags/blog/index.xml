@@ -696,4 +696,14 @@ width="100%"
 height="80px"
 frameborder="0"
 allowtransparency="true"
-allow="encrypted-media">&lt;/iframe></description></item></channel></rss>
+allow="encrypted-media">&lt;/iframe>
+&lt;h2 id="时间轴">时间轴&lt;/h2>
+&lt;p>{{&amp;lt; timeline date=&amp;ldquo;2023-09-10&amp;rdquo; title=&amp;ldquo;awa&amp;rdquo; description=&amp;ldquo;awa&amp;rdquo; tags=&amp;ldquo;awa&amp;rdquo; url=&amp;ldquo;awa&amp;rdquo; &amp;gt;}}&lt;/p>
+&lt;p>{{&lt;em>/&amp;lt; timeline date=&amp;ldquo;2023-09-10&amp;rdquo; title=&amp;quot;&amp;quot; description=&amp;quot;&amp;quot; tags=&amp;quot;&amp;quot; url=&amp;quot;&amp;quot; &amp;gt;&lt;/em>/}}&lt;/p>
+&lt;h2 id="聊天">聊天&lt;/h2>
+&lt;p>{{&amp;lt; chat position=&amp;ldquo;left&amp;rdquo; name=&amp;ldquo;John Doe&amp;rdquo; timestamp=&amp;ldquo;2023-09-12 14:30&amp;rdquo;&amp;gt;}}
+这是左边的消息内容。
+{{&amp;lt; /chat &amp;gt;}}&lt;/p>
+&lt;p>{{&amp;lt; chat position=&amp;ldquo;right&amp;rdquo; name=&amp;ldquo;Alice&amp;rdquo; timestamp=&amp;ldquo;2023-09-12 14:45&amp;rdquo; &amp;gt;}}
+这是右边的消息内容，测试长长长长长长长长长长长长长长长长长长长长长长长长度。
+{{&amp;lt; /chat &amp;gt;}}&lt;/p></description></item></channel></rss>

@@ -1,1 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Skid on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/skid/</link><description>Recent content in Skid on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/skid/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Skid on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/skid/</link><description>Recent content in Skid on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/skid/index.xml" rel="self" type="application/rss+xml"/><item><title>XiaoxixiSense 一个不成熟的FDP魔改</title><link>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</link><pubDate>Thu, 27 Apr 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/minecraft-xiaoxixisense/</guid><description>&lt;img src="https://blog.xpdbk.com/post/minecraft-xiaoxixisense/113413.webp" alt="Featured image of post XiaoxixiSense 一个不成熟的FDP魔改" />&lt;h2 id="xiaoxixisense">XiaoxixiSense&lt;/h2>
+&lt;blockquote>
+&lt;p>魔改人的B站: &lt;a class="link" href="https://space.bilibili.com/1845968451" target="_blank" rel="noopener"
+>笑嘻嘻Rua&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="sense公开">Sense公开&lt;/h2>
+&lt;blockquote>
+&lt;p>主打绕GrimAC，搭路不行以外都可以。我不修改任何原作者的FDP信息&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="v5未出">V5（未出）&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 跑步搭路&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 少量禁用移动检查&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> Grim disabler&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> BlinkFly&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> C0F FLY&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="v4">V4&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Grim可移动反击退&lt;/li>
+&lt;/ul>
+&lt;h3 id="v3">V3&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> NOC03反击退&lt;/li>
+&lt;/ul>
+&lt;h3 id="v2">V2&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 新的TellyBridge&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 新的2个Grim反击退&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> 不知道有没有添加的Crit的Grim模式&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input disabled="" type="checkbox"> NOC03 Grim反击退&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="v1">V1&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Bypass Grim 0.5vel&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 良好的界面&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> 自写TellyBridge脚本&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> AAC4HYT暴击绕过&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> killaurafix（自动调整距离）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="下载区">下载区&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/b032c0akd" target="_blank" rel="noopener"
+>蓝奏云下载&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+密码:&lt;code>fskt&lt;/code>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
