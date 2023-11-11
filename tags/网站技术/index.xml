@@ -1,4 +1,146 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网站技术 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/%E7%BD%91%E7%AB%99%E6%8A%80%E6%9C%AF/</link><description>Recent content in 网站技术 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sun, 27 Aug 2023 21:12:11 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E7%BD%91%E7%AB%99%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>如何用Cloudflare worker自建短链接服务</title><link>https://blog.xpdbk.com/post/links-cloudflare-workers/</link><pubDate>Sun, 27 Aug 2023 21:12:11 +0700</pubDate><guid>https://blog.xpdbk.com/post/links-cloudflare-workers/</guid><description>&lt;h2 id="如何用cloudflare-worker自建短链接服务">如何用Cloudflare worker自建短链接服务&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网站技术 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/%E7%BD%91%E7%AB%99%E6%8A%80%E6%9C%AF/</link><description>Recent content in 网站技术 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sun, 17 Sep 2023 21:45:02 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E7%BD%91%E7%AB%99%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>视频托管方法</title><link>https://blog.xpdbk.com/post/video-save-free/</link><pubDate>Sun, 17 Sep 2023 21:45:02 +0700</pubDate><guid>https://blog.xpdbk.com/post/video-save-free/</guid><description>&lt;img src="https://blog.xpdbk.com/post/video-save-free/123123.webp" alt="Featured image of post 视频托管方法" />&lt;h2 id="视频托管的免费方式">视频托管的免费方式&lt;/h2>
+&lt;blockquote>
+&lt;p>是的，我最终选择使用最简单的方法对抗恶意举报然后下架的困扰&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="起因">起因&lt;/h2>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/video-save-free/%E8%A7%86%E9%A2%91%E4%B8%8B%E6%9E%B6.webp"
+width="1075"
+height="550"
+srcset="https://blog.xpdbk.com/post/video-save-free/%E8%A7%86%E9%A2%91%E4%B8%8B%E6%9E%B6_hu4f32a87e96a31292e7f7752bfffb0494_39300_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/video-save-free/%E8%A7%86%E9%A2%91%E4%B8%8B%E6%9E%B6_hu4f32a87e96a31292e7f7752bfffb0494_39300_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="视频下架"
+class="gallery-image"
+data-flex-grow="195"
+data-flex-basis="469px"
+>&lt;/p>
+&lt;h2 id="实践">实践&lt;/h2>
+&lt;p>我把我的视频用&lt;code>ffmpeg&lt;/code>进行了转码和压缩具体代码看上一篇文章&lt;a class="link" href="https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall" >ffmpeg批量压缩转换视频为30FPS&lt;/a>
+然后我就开始寻找托管的方法，结果找到了&lt;code>cfpage&lt;/code>这个不限流量的东西，上传GITHUB然后访问文件名一气呵成&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/video-save-free/sc.webp"
+width="1163"
+height="569"
+srcset="https://blog.xpdbk.com/post/video-save-free/sc_huc830ef430cfe48ce8e1ca0b509057252_69234_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/video-save-free/sc_huc830ef430cfe48ce8e1ca0b509057252_69234_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="1"
+class="gallery-image"
+data-flex-grow="204"
+data-flex-basis="490px"
+>
+&lt;img src="https://blog.xpdbk.com/post/video-save-free/sc3.webp"
+width="1067"
+height="549"
+srcset="https://blog.xpdbk.com/post/video-save-free/sc3_hu015d29850ae8571db830e542aff41320_23470_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/video-save-free/sc3_hu015d29850ae8571db830e542aff41320_23470_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="2"
+class="gallery-image"
+data-flex-grow="194"
+data-flex-basis="466px"
+>
+&lt;img src="https://blog.xpdbk.com/post/video-save-free/sc1.webp"
+width="1348"
+height="571"
+srcset="https://blog.xpdbk.com/post/video-save-free/sc1_hu20a2ba287196793388b7f9aa39eb8cc2_45266_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/video-save-free/sc1_hu20a2ba287196793388b7f9aa39eb8cc2_45266_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="2"
+class="gallery-image"
+data-flex-grow="236"
+data-flex-basis="566px"
+>&lt;/p>
+&lt;h2 id="魔改hugo短代码">魔改HUGO短代码&lt;/h2>
+&lt;p>&lt;code>video.html&lt;/code>改成这个&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">{{- $src := .Get &amp;#34;src&amp;#34; | default (.Get 0) -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;dplayer&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">link&lt;/span> &lt;span class="na">rel&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;preload&amp;#34;&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css&amp;#34;&lt;/span> &lt;span class="na">as&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;style&amp;#34;&lt;/span> &lt;span class="na">onload&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;this.onload=null;this.rel=&amp;#39;stylesheet&amp;#39;&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js&amp;#34;&lt;/span> &lt;span class="na">defer&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">defer&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;DOMContentLoaded&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">dp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">DPlayer&lt;/span>&lt;span class="p">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="nx">container&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dplayer&amp;#39;&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="nx">screenshot&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &lt;span class="nx">video&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="nx">url&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;{{- $src -}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;auto&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> &lt;span class="nx">preload&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;none&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> &lt;span class="nx">lang&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;zh-cn&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"> &lt;span class="nx">dp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;fullscreen&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl"> &lt;span class="nx">dp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">fullScreen&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">request&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;web&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="nx">dp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;timeupdate&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">dp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">video&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">currentTime&lt;/span> &lt;span class="o">===&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl"> &lt;span class="nx">dp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">seek&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl"> &lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;visibilitychange&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">hidden&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">31&lt;/span>&lt;span class="cl"> &lt;span class="nx">dp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">pause&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">dplayerContainer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;dplayer&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">timer&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">38&lt;/span>&lt;span class="cl"> &lt;span class="nx">dplayerContainer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;mouseleave&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">39&lt;/span>&lt;span class="cl"> &lt;span class="nx">timer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">setTimeout&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">40&lt;/span>&lt;span class="cl"> &lt;span class="nx">dplayerContainer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">style&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">border&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;none&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">41&lt;/span>&lt;span class="cl"> &lt;span class="p">},&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">42&lt;/span>&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">43&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">44&lt;/span>&lt;span class="cl"> &lt;span class="nx">dplayerContainer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;mouseenter&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">45&lt;/span>&lt;span class="cl"> &lt;span class="nx">clearTimeout&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">timer&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">46&lt;/span>&lt;span class="cl"> &lt;span class="nx">dplayerContainer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">style&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">border&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">47&lt;/span>&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">48&lt;/span>&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">49&lt;/span>&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="实际演示">实际演示&lt;/h2>
+&lt;p>演示视频: &lt;div id="dplayer">&lt;/div>
+&lt;link rel="preload" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+&lt;script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js" defer>&lt;/script>
+&lt;script src="https://lib.baomitu.com/hls.js/latest/hls.min.js" defer>&lt;/script>
+&lt;script defer>
+document.addEventListener('DOMContentLoaded', function () {
+var dp = new DPlayer({
+container: document.getElementById('dplayer'),
+screenshot: false,
+video: {
+url: 'https:\/\/video.xpdbk.com\/LEl_FENG%E7%9A%84%E8%A7%86%E9%A2%91%E5%88%97%E8%A1%A8-%E6%B0%B4%E6%99%B6PVP%20%E6%B0%B4-p01-16_2\/output.m3u8',
+type: 'auto'
+},
+preload: 'none',
+lang: 'zh-cn'
+});
+dp.on('fullscreen', function () {
+dp.fullScreen.request('web');
+});
+dp.on('timeupdate', function () {
+if (dp.video.currentTime === 0) {
+dp.seek(1);
+}
+});
+document.addEventListener('visibilitychange', function() {
+if (document.hidden) {
+dp.pause();
+}
+});
+var dplayerContainer = document.getElementById('dplayer');
+var timer;
+dplayerContainer.addEventListener('mouseleave', function() {
+timer = setTimeout(function() {
+dplayerContainer.style.border = 'none';
+}, 1000);
+});
+dplayerContainer.addEventListener('mouseenter', function() {
+clearTimeout(timer);
+dplayerContainer.style.border = '';
+});
+});
+&lt;/script>
+&lt;/p></description></item><item><title>如何用Cloudflare worker自建短链接服务</title><link>https://blog.xpdbk.com/post/links-cloudflare-workers/</link><pubDate>Sun, 27 Aug 2023 21:12:11 +0700</pubDate><guid>https://blog.xpdbk.com/post/links-cloudflare-workers/</guid><description>&lt;h2 id="如何用cloudflare-worker自建短链接服务">如何用Cloudflare worker自建短链接服务&lt;/h2>
 &lt;p>短链接又称短网址、短码，意思就是形式上比较短的网址，可以通过将一个普通的冗长的网址缩短生成一个新的较短的网址，便于分享传播。&lt;/p>
 &lt;p>短链接主要应用场景如下：&lt;/p>
 &lt;p>短信发送 短信里用短链接，可以极大减少字符，现在很多营销短信都是用的短网址。&lt;/p>

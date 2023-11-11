@@ -10324,7 +10324,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 )&lt;/li>
-&lt;li>Freecam will now disable when the real player dies (&lt;a class="link" href="https://github.com/ImpactDevelopment/ImpactClient/issues/940" target="_blank" rel="noopener"
+&lt;li>白嫖cam will now disable when the real player dies (&lt;a class="link" href="https://github.com/ImpactDevelopment/ImpactClient/issues/940" target="_blank" rel="noopener"
 >#940&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
@@ -10614,7 +10614,7 @@ fill="currentColor">
 &lt;li>Significantly improve scaffold in all movement directions&lt;/li>
 &lt;li>Improve jitter on Auto Clicker&lt;/li>
 &lt;li>Added mineplex support for team check&lt;/li>
-&lt;li>Freecam is now always in first person view&lt;/li>
+&lt;li>白嫖cam is now always in first person view&lt;/li>
 &lt;li>Moved Inventory to the Misc category, updated its description and made move an option&lt;/li>
 &lt;li>Click GUI menus now stay on the screen at all times&lt;/li>
 &lt;li>Click GUI menus are now easier to navigate
@@ -10659,7 +10659,7 @@ fill="currentColor">
 &lt;li>Alt GUI having transparent background while in-game&lt;/li>
 &lt;li>Some vertical spacing problems with the HUD&lt;/li>
 &lt;li>Cycler boxes in Click GUI not properly encasing children&lt;/li>
-&lt;li>Freecam causing weird behavior while riding entities&lt;/li>
+&lt;li>白嫖cam causing weird behavior while riding entities&lt;/li>
 &lt;li>ChestStealer not functioning as expected&lt;/li>
 &lt;li>Forge and Optifine support &lt;del>(probably)&lt;/del>&lt;/li>
 &lt;li>AntiAFK “jump” option not working when a GUI is open&lt;/li>

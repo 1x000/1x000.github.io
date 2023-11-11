@@ -1,1 +1,759 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux资源和技术 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/linux%E7%B3%BB%E7%BB%9F/</link><description>Recent content in linux资源和技术 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><atom:link href="https://blog.xpdbk.com/categories/linux%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux资源和技术 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/linux%E7%B3%BB%E7%BB%9F/</link><description>Recent content in linux资源和技术 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><atom:link href="https://blog.xpdbk.com/categories/linux%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml"/><item><title>一键设置ROOT账户访问SSH的脚本</title><link>https://blog.xpdbk.com/post/linux-ssh-root-shell/</link><pubDate>Fri, 01 Sep 2023 08:49:19 +0700</pubDate><guid>https://blog.xpdbk.com/post/linux-ssh-root-shell/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>当我们自己用官方 &lt;a class="link" href="https://ubuntu.com/download/server" target="_blank" rel="noopener"
+>Ubuntu服务器镜像&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+安装到服务器上面之后登录账号也只能登录当初安装并设置的账号并用&lt;code>sudo su&lt;/code>命令提权，但是并没有root账户可以进行SSH登录，这是因为root账户创建之后每次开机都会随机密码且关闭SSH登录，所以我们去一个一个的用&lt;code>nano&lt;/code>和&lt;code>vim&lt;/code>改密码对我们来说一点都不方便。&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Windows&lt;/strong>全部都需要新建一个&lt;code>.txt&lt;/code>文件之后改后缀保存为&lt;code>.sh&lt;/code>文件并在linux上面&lt;code>./root.sh&lt;/code>运行&lt;/p>
+&lt;p>&lt;strong>linux&lt;/strong> 直接用&lt;code>nano&lt;/code>或者&lt;code>vim&lt;/code>创建一个&lt;code>root.sh&lt;/code>并使用&lt;code>./&lt;/code>运行即可&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="ｕｂｕｎｔｕ专属">ｕｂｕｎｔｕ专属&lt;/h2>
+&lt;details>
+&lt;summary>只针对内网ubuntu（不要安全只要方便）&lt;/summary>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="c1"># 开启root权限&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="c1"># 设置root密码&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root:awa114514&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> chpasswd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="c1"># 重启sshd服务&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">systemctl restart sshd.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;SSH ROOT权限已开启并密码已更改为awa114514&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/details>
+&lt;h2 id="兼容所有linux发型版本的脚本">兼容所有linux发型版本的脚本&lt;/h2>
+&lt;blockquote>
+&lt;p>随手写的&lt;/p>
+&lt;/blockquote>
+&lt;details>
+&lt;summary>兼容所有linux发行版的正常脚本&lt;/summary>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="c1"># 检查 root 密码是否满足安全要求&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="k">if&lt;/span> ! check_passwd&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root 密码不安全，请重新设置 root 密码&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="c1"># 提示用户确认操作&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="nb">read&lt;/span> -p &lt;span class="s2">&amp;#34;确认开启 root 权限并设置 root 密码吗？(y/n) &amp;#34;&lt;/span> answer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="nv">$answer&lt;/span> !&lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;y&amp;#34;&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;操作已取消&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">&lt;span class="c1"># 检查系统类型&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">&lt;span class="nv">type&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>uname &lt;span class="p">|&lt;/span> tr &lt;span class="s1">&amp;#39;[:upper:]&amp;#39;&lt;/span> &lt;span class="s1">&amp;#39;[:lower:]&amp;#39;&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">&lt;span class="c1"># 开启 root 权限&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">&lt;span class="k">case&lt;/span> &lt;span class="nv">$type&lt;/span> in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl"> linux&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> *&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;该脚本仅适用于 Linux 系统&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl">&lt;span class="k">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl">&lt;span class="c1"># 设置 root 密码&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">31&lt;/span>&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root:&lt;/span>&lt;span class="nv">$password&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> chpasswd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl">&lt;span class="c1"># 重启 sshd 服务&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl">systemctl restart sshd.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;SSH ROOT 权限已开启并密码已更改为 &lt;/span>&lt;span class="nv">$password&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/details>
+&lt;h2 id="兼容-centosubuntuarch-和-debian-的脚本">兼容 CentOS、Ubuntu、Arch 和 Debian 的脚本&lt;/h2>
+&lt;blockquote>
+&lt;p>随手写的&lt;/p>
+&lt;/blockquote>
+&lt;details>
+&lt;summary>兼容 CentOS、Ubuntu、Arch 和 Debian 的脚本&lt;/summary>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="c1"># 检查root密码是否满足安全要求&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="k">if&lt;/span> ! check_passwd&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root密码不安全，请重新设置root密码&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="c1"># 提示用户确认操作&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="nb">read&lt;/span> -p &lt;span class="s2">&amp;#34;确认开启root权限并设置root密码吗？(y/n) &amp;#34;&lt;/span> answer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="nv">$answer&lt;/span> !&lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;y&amp;#34;&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;操作已取消&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">&lt;span class="c1"># 检查操作系统&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">&lt;span class="nv">os&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>cat /etc/os-release &lt;span class="p">|&lt;/span> grep &lt;span class="s2">&amp;#34;PRETTY_NAME&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> cut -d &lt;span class="s1">&amp;#39;=&amp;#39;&lt;/span> -f &lt;span class="m">2&lt;/span> &lt;span class="p">|&lt;/span> tr -d &lt;span class="s1">&amp;#39;&amp;#34;&amp;#39;&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">&lt;span class="c1"># 开启root权限&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">&lt;span class="k">case&lt;/span> &lt;span class="nv">$os&lt;/span> in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34;CentOS Linux&amp;#34;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34;Ubuntu&amp;#34;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin no/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34;Arch Linux&amp;#34;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin no/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl"> &lt;span class="s2">&amp;#34;Debian&amp;#34;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">31&lt;/span>&lt;span class="cl"> sed -i &lt;span class="s1">&amp;#39;s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g&amp;#39;&lt;/span> /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl">&lt;span class="k">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl">&lt;span class="c1"># 设置root密码&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;root:awa114514&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> chpasswd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">38&lt;/span>&lt;span class="cl">&lt;span class="c1"># 重启sshd服务&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">39&lt;/span>&lt;span class="cl">systemctl restart sshd.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">40&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">41&lt;/span>&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;SSH ROOT权限已开启并密码已更改为awa114514&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/details></description></item><item><title>【Docker可视化工具】Portainer安装教程</title><link>https://blog.xpdbk.com/post/docker--portainer-install/</link><pubDate>Mon, 17 Jul 2023 20:42:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker--portainer-install/</guid><description>&lt;blockquote>
+&lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
+&lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
+&lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
+&lt;p>本站一切资源不代表本站立场，并不代表本站赞同其观点和对其真实性负责&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="docker可视化工具portainer安装教程">【Docker可视化工具】Portainer安装教程&lt;/h2>
+&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>&lt;strong>Portainer是Docker的可视化管理工具&lt;/strong>，镜像、容器、日志显示等操作，Swarm集群、服务等集中管理和操作、登录用户管理和控制等功能。&lt;/p>
+&lt;h2 id="portainer官网提供的有关资料">Portainer官网提供的有关资料&lt;/h2>
+&lt;p>Portainer官网：https://www.portainer.io/&lt;/p>
+&lt;p>Portainer官网提供的安装文档：&lt;/p>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://www.portainer.io/installation/" target="_blank" rel="noopener"
+>https://www.portainer.io/installation/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
+&lt;li>&lt;a class="link" href="https://portainer.readthedocs.io/en/stable/deployment.html" target="_blank" rel="noopener"
+>https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
+&lt;p>&lt;strong>安装docker&lt;/strong> 这里不多说&lt;/p>
+&lt;p>&lt;strong>利用Docker拉取portainer镜像&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">docker pull portainer/portainer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>运行启动portainer&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>这里需开放9000端口来映射portainer&lt;br>
+/var/run/docker.sock:/var/run/docker.sock -&amp;gt; 映射本地docker路径&lt;br>
+/home/docker/portainer:/data -&amp;gt; 实现数据持久化 原因：portainer的数据存储在容器内部的/data目录，容易导致容器重启的时候数据丢失，作用：将portainer数据映射到本地&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v /home/docker/portainer:/data --name portainer --restart&lt;span class="o">=&lt;/span>always portainer/portainer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>启动后通过 服务器地址:9000 即可访问portainer，第一次访问注意需要设置账号密码&lt;/p>
+&lt;p>设置好之后点击创建用户&lt;/p>
+&lt;p>进入之后可选择访问Local管理本地docker相关信息&lt;/p>
+&lt;p>点击下面的local进入管理docker&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>不同的环境安装可根据官网给出的文档进行操作~&lt;/p></description></item><item><title>Docker 资源整合</title><link>https://blog.xpdbk.com/post/docker-zy/</link><pubDate>Wed, 11 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/docker-zy/</guid><description>&lt;img src="https://blog.xpdbk.com/post/docker-zy/docker.webp" alt="Featured image of post Docker 资源整合" />&lt;h2 id="docker">Docker&lt;/h2>
+&lt;blockquote>
+&lt;p>记录玩Docker的过程&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="docker-安装">Docker 安装&lt;/h2>
+&lt;h3 id="使用官方安装脚本自动安装">使用官方安装脚本自动安装&lt;/h3>
+&lt;p>安装命令如下：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">curl -fsSL https://get.docker.com &lt;span class="p">|&lt;/span> bash -s docker
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>也可以使用国内 &lt;code>daocloud&lt;/code> 一键安装命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">curl -sSL https://get.daocloud.io/docker &lt;span class="p">|&lt;/span> sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="docker基本命令">Docker基本命令&lt;/h2>
+&lt;blockquote>
+&lt;p>Docker 镜像是由 Dockerfile 和一些必要的依赖项组成的，Docker 容器是动态的 Docker 镜像。要使用 Docker 命令，首先需要知道您是在处理镜像还是容器。一旦你知道你所处理的是镜像还是容器之后，你才可以找到正确的命令。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="命令的共性">命令的共性&lt;/h3>
+&lt;p>你需要知道一些关于 Docker 命令的规律：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Docker CLI 管理命令以 docker 开头，然后是空格，接着是管理类别，然后是空格最后是命令。例如，docker container stop 这一命令可以停止容器。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>引用特定容器或镜像的命令需要该容器或镜像的名称或 ID。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>举个例子，docker container run my_app 是用于构建和运行名为 &lt;em>my_app&lt;/em> 的容器的命令。在本文示例中，我将使用名称 my_container 来引用通用容器。同理，my_image、my_tag 也是如此。&lt;/p>
+&lt;p>我将单独提供命令和通用标志。前面有两个破折号的标志是标志的全名。带有一个破折号的标志是完整标志名称的缩写。例如，-p 是–port 标志的缩写。&lt;/p>
+&lt;p>本文的目标是让您牢牢记住这些命令和标记，并希望您可以在创建容器或构建镜像的时候可以将本指南作为参考。&lt;/p>
+&lt;h3 id="容器命令">容器命令&lt;/h3>
+&lt;p>使用 docker container my_command&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>create — 从镜像中创建一个容器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>start — 启动一个已有的容器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>run — 创建一个新的容器并且启动它&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ls — 列出正在运行的容器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>inspect — 查看关于容器的信息&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>logs — 打印日志&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>stop — 优雅停止正在运行的容器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>kill — 立即停止容器中的主要进程&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>rm — 删除已经停止的容器&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="镜像命令">镜像命令&lt;/h3>
+&lt;p>使用 docker image my_command&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>build — 构建一个镜像&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>push — 将镜像推送到远程镜像仓库中&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ls — 列出镜像&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>history — 查看中间镜像信息&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>inspect — 查看关于镜像的信息，包括层&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>rm — 删除镜像&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="容器-镜像">容器 &amp;amp;镜像&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>docker version — 列出关于 Docker 客户端以及服务器版本的信息&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>docker login — 登录到 Docker 镜像仓库&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>docker system prune — 删除所有未使用的容器、网络以及无名称的镜像（虚悬镜像）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="容器命令详解">容器命令详解&lt;/h3>
+&lt;h4 id="启动容器">启动容器&lt;/h4>
+&lt;p>术语“创建”，“开始”和“运行”在日常生活中都具有相似的语义，但每个都是一个独立的 Docker 命令，用于创建并/或启动容器。让我们先看看创建容器的命令。&lt;/p>
+&lt;p>&lt;strong>docker container create my_repo/my_image:my_tag&lt;/strong> — 从一个镜像中创建容器&lt;/p>
+&lt;p>我将在下文中把 my_repo/my_image:my_tag 缩写为 my_image。&lt;/p>
+&lt;p>你可以通过传递许多标志来 create。&lt;/p>
+&lt;p>&lt;strong>docker container create -a STDIN my_image&lt;/strong>&lt;/p>
+&lt;p>-a 是—attach 的缩写，指将容器连接到 STDIN，STDOUT 或 STDERR。&lt;/p>
+&lt;p>既然我们已经创建了一个容器，那么让我们来启动它。&lt;/p>
+&lt;p>&lt;strong>docker container start my_container&lt;/strong> — 启动一个已有的容器&lt;/p>
+&lt;p>请注意，容器可以通过容器的 ID 或容器的名称来引用。&lt;/p>
+&lt;p>&lt;strong>docker container start my_container&lt;/strong>&lt;/p>
+&lt;p>既然你知道如何创建和启动一个容器，让我们来看看最常见的 Docker 命令。它将 create 和 start 结合到一个命令中：run。&lt;/p>
+&lt;p>&lt;strong>docker container run my_image&lt;/strong> — 创建一个新容器并且启动它。这一命令同样也有许多选项。让我们看看其中几个。&lt;/p>
+&lt;p>&lt;strong>docker container run -i -t -p 1000:8000 &amp;ndash;rm my_image&lt;/strong>&lt;/p>
+&lt;p>-i 是—interactive 的缩写，即使未连接，也要保持 STDIN 打开；-t 是—tty 的缩写，它会分配一个伪终端，将终端与容器的 STDIN 和 STDOUT 连接起来。&lt;/p>
+&lt;p>你需要指定-i 和-t 通过终端 shell 与容器交互。&lt;/p>
+&lt;p>-p 是 –port 的缩写。端口是与外部世界的接口。1000：8000 将 Docker 端口 8000 映射到计算机上的端口 1000。如果你有一个 app 输出了一些内容到浏览器，你可以将浏览器导航到 localhost:1000 并且查看它。&lt;/p>
+&lt;p>–rm 自动删除停止运行的容器。&lt;/p>
+&lt;p>让我们再来看看 run 的几个例子。&lt;/p>
+&lt;p>&lt;strong>docker container run -it my_image my_command&lt;/strong>&lt;/p>
+&lt;p>sh 是你可在运行时指定的命令，它将在容器内部启动 shell 会话，你可以通过终端与其交互。对于 Alpine 镜像，sh 优于 bash，因为 Alpine 镜像不随 bash 一起安装。键入 exit 以结束交互式 shell 会话。&lt;/p>
+&lt;p>请注意，我们将-i 和-t 结合为-it。&lt;/p>
+&lt;p>&lt;strong>docker container run -d my_image&lt;/strong>&lt;/p>
+&lt;p>-d 是—detach 的缩写，指在后台运行容器，允许您在容器运行时将终端用于其他命令。&lt;/p>
+&lt;h4 id="检查容器状态">检查容器状态&lt;/h4>
+&lt;p>如果你有许多运行中的 Docker 容器并且想要找到与哪一个互动，那么你需要列出它们。&lt;/p>
+&lt;p>&lt;strong>docker container ls&lt;/strong> — 列出运行中的容器，同时提供关于容器有用的信息。&lt;/p>
+&lt;p>&lt;strong>docker container ls -a -s&lt;/strong>&lt;/p>
+&lt;p>-a 是–all 的缩写，列出所有容器（不仅仅是正在运行中的容器）&lt;/p>
+&lt;p>-s 是—size 的缩写，列出每个容器的大小。&lt;/p>
+&lt;p>&lt;strong>docker container inspect my_container&lt;/strong> — 查看有关容器的信息&lt;/p>
+&lt;p>&lt;strong>docker container logs my_container&lt;/strong> — 列出容器日志&lt;/p>
+&lt;h4 id="终止容器">终止容器&lt;/h4>
+&lt;p>有时你需要停止一个正在运行中的容器，你需要用到以下命令：&lt;/p>
+&lt;p>&lt;strong>docker container stop my_container&lt;/strong> — 优雅地停止一个或多个正在运行的容器。在容器关闭之前提供默认 10 秒以完成任何进程。&lt;/p>
+&lt;p>如果你觉得 10 秒太长的话，可以使用以下命令：&lt;/p>
+&lt;p>&lt;strong>docker container kill my_container&lt;/strong> — 立即停止一个或多个正在运行的容器。这就像拔掉电视上的插头一样。但是在大多数情况下，建议使用 stop 命令。&lt;/p>
+&lt;p>&lt;strong>docker container kill $(docker ps -q)&lt;/strong> — 终止所有运行中的容器&lt;/p>
+&lt;p>你需要删除容器可以使用以下命令：&lt;/p>
+&lt;p>&lt;strong>docker container rm my_container&lt;/strong> — 删除一个或多个容器&lt;/p>
+&lt;p>&lt;strong>docker container rm $(docker ps -a -q)&lt;/strong> — 删除所有不在运行中的容器&lt;/p>
+&lt;p>以上就是 Docker 容器的关键命令。接下来，我们来看看关于镜像的命令。&lt;/p>
+&lt;h3 id="镜像命令详解">镜像命令详解&lt;/h3>
+&lt;p>以下是 Docker 镜像使用的 7 条命令&lt;/p>
+&lt;h4 id="构建镜像">构建镜像&lt;/h4>
+&lt;p>&lt;strong>docker image build -t my_repo/my_image:my_tag .&lt;/strong> 在指定路径或 url 的 Dockerfile 中构建一个名为 &lt;em>&amp;gt;my_image&lt;/em> 的 Docker 镜像。&lt;/p>
+&lt;p>-t 是 tag 的缩写，是告诉 docker 用提供的标签来标记镜像，在本例中，是 &lt;em>my_tag&lt;/em>。&lt;/p>
+&lt;p>在命令末尾的句号（.）是告诉 Docker 根据当前工作目录中的 Dockerfile 构建镜像。&lt;/p>
+&lt;p>当你构建好镜像之后，你想要推送它到远程仓库中以便它可以共享并且在有需要的时候被拉取。那么下一个命令十分有用，尽管并非是镜像命令。&lt;/p>
+&lt;p>&lt;strong>docker login&lt;/strong> — 登录到 Docker 镜像仓库，根据提示键入你的用户名和密码&lt;/p>
+&lt;p>&lt;strong>docker image push my_repo/my_image:my_tag&lt;/strong> — 推送一个镜像到仓库。&lt;/p>
+&lt;p>你拥有了这些镜像之后，你可能想要检查他们。&lt;/p>
+&lt;h4 id="检查镜像">检查镜像&lt;/h4>
+&lt;p>&lt;strong>docker image ls&lt;/strong> — 列出你的镜像以及每个镜像的大小&lt;/p>
+&lt;p>&lt;strong>docker image history my_image&lt;/strong> — 显示镜像的中间镜像，包括大小及其创建方式&lt;/p>
+&lt;p>&lt;strong>docker image inspect my_image&lt;/strong> — 显示关于镜像的细节，包括组成镜像的层&lt;/p>
+&lt;p>有时候你还需要清理你的镜像。&lt;/p>
+&lt;h4 id="清理镜像">清理镜像&lt;/h4>
+&lt;p>&lt;strong>docker image rm my_image&lt;/strong> — 删除指定镜像。如果镜像被保存在镜像仓库中，那么该镜像在那依旧可用。&lt;/p>
+&lt;p>&lt;strong>docker image rm $(docker images -a -q)&lt;/strong> — 删除所有镜像。必须小心使用这一命令。请注意已经被推送到远程仓库的镜像依然能够保存，这是镜像仓库的一个优势。&lt;/p>
+&lt;p>以上就是大部分与 Docker 镜像相关的重要命令。&lt;/p>
+&lt;p>要在使用 Docker 时查看 CLI 引用，只需在命令行中输入命令 docker 即可。Docker 文档请参阅：&lt;/p>
+&lt;p>&lt;a class="link" href="https://docs.docker.com/engine/reference/commandline/cli/" target="_blank" rel="noopener"
+>Use the Docker command line | Docker Documentation&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>现在你已经掌握了运行 Docker 的关键命令，可以用 Docker 了！&lt;/p>
+&lt;h2 id="docker可视化-portainer安装">Docker可视化 Portainer安装&lt;/h2>
+&lt;p>&lt;strong>Portainer是Docker的可视化管理工具&lt;/strong>，镜像、容器、日志显示等操作，Swarm集群、服务等集中管理和操作、登录用户管理和控制等功能。&lt;/p>
+&lt;h3 id="portainer官网">Portainer官网&lt;/h3>
+&lt;p>Portainer官网：&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.portainer.io%2F" target="_blank" rel="noopener"
+>https://www.portainer.io/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>Portainer官网提供的安装文档：&lt;/p>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.portainer.io%2Finstallation%2F" target="_blank" rel="noopener"
+>https://www.portainer.io/installation/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
+&lt;li>&lt;a class="link" href="https://links.jianshu.com/go?to=https%3A%2F%2Fportainer.readthedocs.io%2Fen%2Fstable%2Fdeployment.html" target="_blank" rel="noopener"
+>https://portainer.readthedocs.io/en/stable/deployment.html&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
+&lt;p>&lt;strong>1、利用Docker拉取portainer镜像&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">docker pull portainer/portainer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>3、运行启动portainer&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>温馨小提示&lt;/strong>： 这里需开放9000端口来映射portainer&lt;br>
+/var/run/docker.sock:/var/run/docker.sock -&amp;gt; 映射本地docker路径&lt;br>
+/home/docker/portainer:/data -&amp;gt; 实现数据持久化【原因：portainer的数据存储在容器内部的/data目录，容易导致容器重启的时候数据丢失，作用：将portainer数据映射到本地】&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="n">docker&lt;/span> &lt;span class="n">run&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="n">9000&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">9000&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">sock&lt;/span>&lt;span class="o">:/&lt;/span>&lt;span class="n">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">sock&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">home&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">portainer&lt;/span>&lt;span class="o">:/&lt;/span>&lt;span class="n">data&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">name&lt;/span> &lt;span class="n">portainer&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">restart&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">always&lt;/span> &lt;span class="n">portainer&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">portainer&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>启动后通过 服务器地址:9000 即可访问portainer，第一次访问注意需要设置账号密码&lt;/p>
+&lt;h3 id="总结">总结&lt;/h3>
+&lt;ol>
+&lt;li>不同的环境安装可根据官网给出的文档进行操作&lt;/li>
+&lt;li>另外Docker的其它可视化管理工具还有：DockerUI、Shipyard、Rancher 等&lt;/li>
+&lt;/ol>
+&lt;h2 id="使用-docker-自建支持-dohdot-的-dns-服务器">使用 Docker 自建支持 DoH、DoT 的 DNS 服务器&lt;/h2>
+&lt;p>DoH (DNS over HTTPS) 和 DoT (DNS over TLS) 有效避免了运营商的 DNS 监听和劫持，本文记录在公网搭建一个可以去广告的 DNS 服务器（借助 Adguard Home）。&lt;/p>
+&lt;h3 id="前期准备">前期准备&lt;/h3>
+&lt;ul>
+&lt;li>公网服务器一台&lt;/li>
+&lt;li>域名一个，并且指向该公网服务器&lt;/li>
+&lt;li>域名指向该公网服务器，并申请好 TLS 证书（可使用 Let’s Encrypt 申请）&lt;/li>
+&lt;/ul>
+&lt;h3 id="docker-部署">Docker 部署&lt;/h3>
+&lt;p>Docker Hub 镜像地址：&lt;a class="link" href="https://hub.docker.com/r/adguard/adguardhome" target="_blank" rel="noopener"
+>Docker&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>安装好 Docker 后下载镜像，以下任选其一&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>1 &lt;br>2&lt;/th>
+&lt;th>docker pull adguard/adguardhome:latest # 稳定版 &lt;br>docker pull adguard/adguardhome:edge # 最新的版本，可能不稳定&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;/table>
+&lt;p>新建配置目录和工作目录&lt;/p>
+&lt;pre>&lt;code>mkdir /root/adguardhome/workdir
+mkdir /root/adguardhome/confdir
+&lt;/code>&lt;/pre>
+&lt;p>启动镜像，完成后进入配置页面：&lt;code>HostIP:3000&lt;/code>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>1 &lt;br>2 &lt;br>3 &lt;br>4 &lt;br>5 &lt;br>6&lt;/th>
+&lt;th>docker run &amp;ndash;name adguardhome \ &lt;br> -v /root/adguardhome/workdir:/opt/adguardhome/work \ &lt;br> -v /root/adguardhome/confdir:/opt/adguardhome/conf \ &lt;br> &amp;ndash;restart always \ &lt;br> -p 443:443 -p 853:853 -p 3000:3000 -p 53:53/udp -p 53:53/tcp \ &lt;br> -d adguard/adguardhome:edge&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;/table>
+&lt;p>注意，第一次进入配置页面需要配置监听端口，配置好后注意修改容器启动时端口的映射，并以新的命令重新启动容器&lt;/p>
+&lt;h3 id="上游服务器设置">上游服务器设置&lt;/h3>
+&lt;p>进入 Adguard Home 控制台，找到「设置 - DNS 设置」&lt;/p>
+&lt;p>「上游 DNS 服务器」可填入公共 DNS 服务器&lt;/p>
+&lt;p>国内常用的公共 DNS 如下：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>DNS 服务器地址&lt;/th>
+&lt;th>类型&lt;/th>
+&lt;th>提供商&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>https://dns.alidns.com/dns-query&lt;/code>&lt;/td>
+&lt;td>DNS over HTTPS&lt;/td>
+&lt;td>阿里 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>tls://dns.alidns.com&lt;/code>&lt;/td>
+&lt;td>DNS over TLS&lt;/td>
+&lt;td>阿里 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>https://doh.360.cn/dns-query&lt;/code>&lt;/td>
+&lt;td>DNS over HTTPS&lt;/td>
+&lt;td>360 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>119.29.29.29&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>DNSPod&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>182.254.116.116&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>DNSPod&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>223.5.5.5&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>阿里 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>223.6.6.6&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>阿里 DNS&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>114.114.114.114&lt;/code>&lt;/td>
+&lt;td>常规 DNS&lt;/td>
+&lt;td>114 DNS&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>「Bootstrap DNS 服务器」填入一到两个常规 DNS 服务器就可以，如 &lt;code>223.5.5.5&lt;/code> 和 &lt;code>119.29.29.29&lt;/code>&lt;/p>
+&lt;p>在 「DNS 服务设定中」，勾选「使用客户端的子网地址（EDNS）」，可以使查询的客户端得到离其最近的网站 IP 解析。&lt;/p>
+&lt;h3 id="doh--dot-设置">DoH &amp;amp; DoT 设置&lt;/h3>
+&lt;p>进入「设置 - 加密设置」&lt;/p>
+&lt;p>勾选「启用加密」，填写准备的域名，「HTTPS 端口」和「DNS-over-TLS 端口」均可自定义，如有改正记得重新修改容器启动时的端口映射配置。&lt;/p>
+&lt;p>证书可以选择「设置证书路径」和「粘贴证书内容」，按要求配置。&lt;/p>
+&lt;p>配置完成后可以使用「&lt;code>https://域名&lt;/code>」访问控制台&lt;/p>
+&lt;h3 id="去广告设置">去广告设置&lt;/h3>
+&lt;p>进入「过滤器 - DNS 封锁清单」&lt;/p>
+&lt;p>附一些常用的规则：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>HalfLife，规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则：&lt;code>https://gitee.com/halflife/list/raw/master/ad.txt&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>EasyPrivacy，隐私保护：&lt;code>https://easylist-downloads.adblockplus.org/easyprivacy.txt&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>I don’t care about cookies，我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告：&lt;code>https://www.i-dont-care-about-cookies.eu/abp/&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>anti-AD，自称是目前中文区命中率最高的广告过滤列表：&lt;code>https://gitee.com/privacy-protection-tools/anti-ad/raw/master/easylist.txt&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>乘风广告、视频过滤规则：&lt;code>https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt&lt;/code>、&lt;code>https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt&lt;/code>&lt;/p>
+&lt;p>&lt;strong>至此配置完成&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>使用普通 DNS 解析，在客户端填入服务器的 IP 即可，若要使用 DoH 和 DoT 则需使用另外的工具。&lt;/p>
+&lt;p>最新版的 Chrome 已经支持使用 DoH 解析，在 Chrome 中找到「设置 - 安全 - 使用安全 DNS」，按规则填入域名即可&lt;/p>
+&lt;h2 id="linux-53-dns端口被-systemd-resolve-占用">Linux 53 DNS端口被 systemd-resolve 占用&lt;/h2>
+&lt;p>1.停用 systemd-resolved 服务&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">systemctl stop systemd-resolved
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>编辑 &lt;code>/etc/systemd/resolved.conf&lt;/code> 文件&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">vi /etc/systemd/resolved.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>换下面说明更改，然后按一下“esc”键，再输入“:wq”（不要输入引号），回车保存&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-INI" data-lang="INI">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="k">[Resolve]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="na">DNS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">8.8.8.8 #取消注释，增加dns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="c1">#FallbackDNS=&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">&lt;span class="c1">#Domains=&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">&lt;span class="c1">#LLMNR=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">&lt;span class="c1">#MulticastDNS=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">&lt;span class="c1">#DNSSEC=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl">&lt;span class="c1">#Cache=yes&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl">&lt;span class="na">DNSStubListener&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">no #取消注释，把yes改为no&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>最后输入下面命令即可&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="使用docker安装opentracker自建bt-tracker服务器">使用Docker安装OpenTracker，自建BT Tracker服务器&lt;/h2>
+&lt;p>OpenTracker用于搭建Tracker服务器，据说该工具性能很强，就连全球最大的BT服务器海盗湾也在使用，有人专门制作了一个OpenTracker的Docker镜像，基本不到1分钟就可以搭建好一个BT Tracker服务器，有兴趣的也可以玩玩。&lt;/p>
+&lt;h3 id="安装opentracker">安装OpenTracker&lt;/h3>
+&lt;h3 id="运行命令">运行命令：&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">docker run --name tracker-server -d -p 6666:6666 -p 6666:6666/udp moerats/tracker-server:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果你服务器上的&lt;code>6666&lt;/code>端口正在被使用，而&lt;code>7777&lt;/code>没被使用，那就改成&lt;code>7777:6666&lt;/code>参数后再运行。&lt;/p>
+&lt;p>对于某些系统可能还需要开启防火墙端口，比如CentOS 7，开启命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">firewall-cmd --zone&lt;span class="o">=&lt;/span>public --add-port&lt;span class="o">=&lt;/span>6666/tcp --permanent
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">firewall-cmd --zone&lt;span class="o">=&lt;/span>public --add-port&lt;span class="o">=&lt;/span>6666/udp --permanent
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">firewall-cmd --reload
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="使用方法">使用方法&lt;/h3>
+&lt;p>我们在制作种子添加&lt;code>Tracker&lt;/code>服务器时，可以填：&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>http://IP:6666/announce&lt;/code>&lt;/li>
+&lt;li>或者：&lt;/li>
+&lt;li>&lt;code>udp://IP:6666/announce&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>也可以同时添加http和udp。&lt;/p>
+&lt;p>统计地址：&lt;code>http://IP:6666/stats&lt;/code>&lt;/p>
+&lt;p>更详细的统计地址：&lt;code>http://IP:6666/stats?mode=everything&lt;/code>。&lt;/p>
+&lt;h2 id="docker部署github-proxy代理为github文件下载加速">Docker部署Github Proxy代理为Github文件下载加速&lt;/h2>
+&lt;p>当前网络环境下Github要么不能访问，要么下载速度极慢，毫无体验可言，平时拉库等操作会失败，所以找到此办法，可有效解决以上问题。&lt;/p>
+&lt;h3 id="必备条件">必备条件：&lt;/h3>
+&lt;p>一台可以无限上网的linux主机，比如国外的服务器，或者阿里云、腾讯云的海外/香港云主机&lt;/p>
+&lt;p>这是必须的前提&lt;/p>
+&lt;h3 id="docker部署">Docker部署&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">docker run -d --name&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;gh-proxy-py&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> -p 0.0.0.0:9183:9183
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> --restart&lt;span class="o">=&lt;/span>always
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> hunsh/gh-proxy-py:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第一个&lt;code>9183&lt;/code>就是需要对外的端口，需要打开或映射出去&lt;/p>
+&lt;p>完成后可以浏览器打开：服务器地址:端口，如果出现页面，即代表成功&lt;/p>
+&lt;h3 id="如何使用">如何使用&lt;/h3>
+&lt;p>部署成功后就可以使用了，方法也很简单，直接Github地址之前加你的服务器地址：端口（80可以省略）&lt;/p>
+&lt;p>比如服务器地址：&lt;code>IP&lt;/code>&lt;/p>
+&lt;p>端口是&lt;code>9183&lt;/code>&lt;/p>
+&lt;p>就可以这样输入：&lt;code>IP:9183/https://github.com/Cyberbolt/baota.git&lt;/code>&lt;/p></description></item><item><title>自建一个tracker的方法</title><link>https://blog.xpdbk.com/post/bt-zyzf/</link><pubDate>Tue, 10 Jan 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/bt-zyzf/</guid><description>&lt;h2 id="自建tracker服务器用于文件分享">自建tracker服务器用于文件分享&lt;/h2>
+&lt;p>众所周知bittorrent是一款P2P文件传输协议，能够让两台内网机器实现点对点的文件传输。&lt;/p>
+&lt;p>随着各种资源的丰富，bit下载也越来越为大众所熟知。&lt;/p>
+&lt;p>我们都知道，两台内网机器，直接使用http或者udp是无法进行文件分享的。&lt;/p>
+&lt;p>要么使用网盘，有限速和和谐风险。&lt;/p>
+&lt;p>要么使用服务器FTP转发，但是硬盘和带宽成本比较高。&lt;/p>
+&lt;p>要么使用P2P同步工具，但是要安装专用的软件。&lt;/p>
+&lt;p>故这里尝试使用BT协议做文件分享，即将要分享的文件打包成种子，然后将种子传给对方。大部分人都是有BT下载工具的。&lt;/p>
+&lt;p>由于共有tracker存在安全隐患，本篇文章就是介绍如何搭建私有tracker服务器。&lt;/p>
+&lt;h2 id="在vps上使用bittorrent-tracker">在VPS上使用bittorrent-tracker&lt;/h2>
+&lt;p>这是&lt;code>webtorrent&lt;/code>项目的一个部分。使用&lt;code>nodejs&lt;/code>进行搭建部署。&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/webtorrent/bittorrent-tracker" target="_blank" rel="noopener"
+>官方&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+有英文文档，这里我简单说一下如何使用：&lt;/p>
+&lt;p>首先要下载&lt;code>nodejs&lt;/code>和&lt;code>npm&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">apt install nodejs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">apt install npm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后安装&lt;code>bittorrent-tracker&lt;/code>包：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">npm install bittorrent-tracker
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>新建一个&lt;code>server.js&lt;/code>文件，设置一个简单的服务器，更多可以参考官方文档&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl"> &lt;span class="c1">// Create a web sockets signaling server
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nx">lookup&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">hostname&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;0.0.0.0&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">port&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">process&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">env&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">PORT&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="mi">3001&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">Server&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;bittorrent-tracker&amp;#39;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">Server&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">server&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Server&lt;/span>&lt;span class="p">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &lt;span class="nx">udp&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// enable udp server? [default=true]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">http&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// enable http server? [default=true]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">ws&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// enable websocket server? [default=true]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">stats&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// enable web-based statistics? [default=true]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;error&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> &lt;span class="c1">// fatal server error!
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">//console.log(err.message)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;warning&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="c1">// client sent bad data. probably not a problem, just a buggy client.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">//console.log(err.message)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;listening&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl"> &lt;span class="c1">// fired when all requested servers are listening
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Signal server http port:&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">http&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">address&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">port&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Signal server ws port:&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">ws&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">address&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">port&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">31&lt;/span>&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl"> &lt;span class="c1">// listen for individual tracker messages from peers:
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;start&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">addr&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;got start message from &amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">addr&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl"> &lt;span class="nb">Object&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">keys&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">torrents&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">forEach&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">hash&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl"> &lt;span class="nx">lookup&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">torrents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">hash&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">infoHash&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">torrents&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">hash&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">peers&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">38&lt;/span>&lt;span class="cl"> &lt;span class="c1">//console.log(&amp;#34;peers: &amp;#34; + server.torrents[hash].peers.length)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">39&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">40&lt;/span>&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">41&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">42&lt;/span>&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;complete&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">addr&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">43&lt;/span>&lt;span class="cl"> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;stop&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">addr&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">44&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">45&lt;/span>&lt;span class="cl"> &lt;span class="c1">// start tracker server listening! Use 0 to listen on a random free port.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">46&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">server&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">listen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">port&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">hostname&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;listening&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后运行即可：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">node server.js
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>默认的使用端口为&lt;code>3001&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">root@lelfeng:~/tracker# node server-test.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">Signal server http port:3001
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">Signal server ws port:3001
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>访问对应地址，返回：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">d14:failure reason33:invalid action in HTTP request: /e
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这种方法不如&lt;code>Docker&lt;/code>然后也老&lt;/p></description></item><item><title>卸载Apache进阶版</title><link>https://blog.xpdbk.com/post/web-hax/</link><pubDate>Fri, 11 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/web-hax/</guid><description>&lt;img src="https://blog.xpdbk.com/post/web-hax/hax.webp" alt="Featured image of post 卸载Apache进阶版" />&lt;h2 id="删除apache">删除apache&lt;/h2>
+&lt;p>系统默认安装了apache2现在就来卸载此服务。&lt;/p>
+&lt;h2 id="1查找web服务">1、查找web服务&lt;/h2>
+&lt;p>使用如下命令：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;code>dpkg -l | grep apache2&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="2删除apache2">2、删除apache2&lt;/h2>
+&lt;p>删除命令如下：&lt;/p>
+&lt;p>&lt;code>apt-get --purge remove apache2&lt;/code>&lt;/p>
+&lt;p>&lt;code>apt-get --purge remove apache2-doc&lt;/code>&lt;/p>
+&lt;p>&lt;code>apt-get --purge remove apache2-utils&lt;/code>&lt;/p>
+&lt;p>&lt;code>apt-get --purge remove apache2-bin&lt;/code>&lt;/p>
+&lt;p>&lt;code>apt-get --purge remove apache2-data&lt;/code>&lt;/p>
+&lt;h2 id="3删除多余的文件">3、&lt;strong>删除多余的文件&lt;/strong>&lt;/h2>
+&lt;p>上面的执行完之后，执行如下的命令：&lt;/p>
+&lt;p>&lt;code>find /etc -name &amp;quot;apache&amp;quot; |xargs rm -rf&lt;/code>&lt;/p>
+&lt;p>&lt;code>rm -rf /var/www&lt;/code>&lt;/p>
+&lt;p>&lt;code>rm -rf /etc/libapache2-mod-jk&lt;/code>&lt;/p>
+&lt;h2 id="4最后">4、最后&lt;/h2>
+&lt;p>80端口释放，没有问题了。&lt;/p></description></item><item><title>VPS安全加固</title><link>https://blog.xpdbk.com/post/linux-anquan/</link><pubDate>Sat, 05 Nov 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/linux-anquan/</guid><description>&lt;img src="https://blog.xpdbk.com/post/linux-anquan/awa.webp" alt="Featured image of post VPS安全加固" />&lt;h2 id="vps安全加固">VPS安全加固&lt;/h2>
+&lt;p>VPS 用了快3个月，开始意识到之前 VPS 一点安全措施都没做。&lt;/p>
+&lt;blockquote>
+&lt;p>由于一台 vps 就相当于一台拥有独立 IP 的，直接暴露于互联网之上的电脑，这在为你带来便利的同时也直接让你的 vps 与危险画上了等号，密码穷举、DDOS 攻击、各种各样你想到的想不到的攻击方法都在等待着你，不要相信你那惊悚的创意能想出多么强大的密码，统计学告诉我们——还是相信 RSA 吧！&lt;/p>
+&lt;/blockquote>
+&lt;p>不信，我们在机器上跑几个命令看看吧。&lt;/p>
+&lt;ul>
+&lt;li>1.查看尝试暴力破解机器密码的人&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>sudo grep &amp;quot;Failed password for root&amp;quot; /var/log/auth.log | awk '{print $11}' | sort | uniq -c | sort -nr | more&lt;/code>&lt;/p>
+&lt;p>或者 &lt;code>cat /var/log/auth.log&lt;/code>&lt;br>
+​&lt;/p>
+&lt;ul>
+&lt;li>2.查看暴力猜用户名的人&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>sudo grep &amp;quot;Failed password for invalid user&amp;quot; /var/log/auth.log | awk '{print $13}' | sort | uniq -c | sort -nr | more&lt;/code>&lt;/p>
+&lt;p>看完倒吸一口可乐bushi&lt;/p>
+&lt;p>想破解我的 IP 有 14 个，看来必须行动起来了。&lt;/p>
+&lt;h2 id="采取行动">采取行动&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;code>root@vultr:~#&lt;/code> apt-get update&lt;br>
+&lt;code>root@vultr:~#&lt;/code> apt-get upgrade&lt;br>
+没用配置国内的源，速度嫌慢，就省略这步，否则需要等 20mins。&lt;br>
+对于自动每日更新，我们可以配置一些执行软件。至于是否必要，如果你的服务器只是用来安装一个 SS 或 SSR 应用，并没有其他非常重要的服务端服务，也许并不需要这种操作，因为这一过程实在太消耗时间和资源了。但是如果是有其他重要的数据服务，保证软件的安全补丁的及时更新还是十分必要的。&lt;/p>
+&lt;/blockquote>
+&lt;p>普通使用者，只在第一次安装，或在几个发行周期之后才去更新都没问题。&lt;/p>
+&lt;p>用户设置&lt;/p>
+&lt;p>启用公钥验证登入 ssh&lt;/p>
+&lt;p>在第一次部署 VPS 服务器没有勾选 SSH，删除重装其实最简单的办法。可是这样旧套餐就没了。只能在部署的服务器上手动添加 SSH key。&lt;/p>
+&lt;p>使用Xshell的密钥生成功能选择最高加密位数然后加上密码&lt;/p>
+&lt;p>关于 SSH key 的知识可参考&lt;br>
+&lt;a class="link" href="https://www.jianshu.com/p/1246cfdbe460" target="_blank" rel="noopener"
+>SSH key 的介绍与在 Git 中的使用&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.ssh.com/ssh/keygen/" target="_blank" rel="noopener"
+>ssh 官网&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.vultr.com/docs/how-do-i-generate-ssh-keys/" target="_blank" rel="noopener"
+>&lt;del>vultr 一直被墙IP的VPS 官网&lt;/del>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>2.将本地的公钥扔到服务器上去&lt;/p>
+&lt;p>要注意的是，你想要这对密钥登录哪个账户，就放到哪个账户下，比如我要自动登录 root，那么我就会这样做：&lt;/p>
+&lt;blockquote>
+&lt;p>mkdir ~/.ssh //如果当前用户目录下没有 .ssh 目录，就先创建目录&lt;br>
+chmod 700 ~/.ssh&lt;br>
+mv id_rsa.pub ~/.ssh&lt;br>
+cd .ssh&lt;br>
+mv id_rsa.pub authorized_keys //因为是新系统，就直接改名。 如果本身就有 authorized_keys 文件，就需要 cat id_rsa.pub &amp;raquo; authorized_keys。将文件内容追加入 authorized_keys。&lt;br>
+chmod 600 authorized_keys&lt;/p>
+&lt;/blockquote>
+&lt;p>关闭所有帐户 ssh 密码登录&lt;/p>
+&lt;blockquote>
+&lt;p>/etc/ssh/sshd_config&lt;/p>
+&lt;/blockquote>
+&lt;p>在如上目录找到 ssh 服务的配置文件，将如下字段进行修改：&lt;/p>
+&lt;blockquote>
+&lt;p>#PasswordAuthentication yes&lt;br>
+//修改为如下内容：&lt;br>
+PasswordAuthentication no //所有用户都不能以密码的方式登录了。&lt;br>
+RSAAuthentication yes&lt;br>
+PubkeyAuthentication yes&lt;br>
+//使用命令重启 ssh 服务：&lt;br>
+/etc/init.d/ssh restart&lt;br>
+另外，为了避免 Write failed: Broken pipe 错误，你也可以顺便在这个文档末尾加上下面一条命令，然后再重启 ssh 服务。&lt;br>
+ClientAliveInterval 60&lt;/p>
+&lt;/blockquote>
+&lt;p>更换默认 ssh 端口&lt;/p>
+&lt;blockquote>
+&lt;p>/etc/ssh/sshd_config&lt;/p>
+&lt;/blockquote>
+&lt;p>进入以上文件，注销 22 端口并新增。&lt;/p>
+&lt;blockquote>
+&lt;p>把#port 22&lt;br>
+改成port xxxxx //你定义的端口，任何 1024 – 65535 之间的数字。知名端口，常用于系统服务等，例如 http 服务的端口号是 80&lt;/p>
+&lt;/blockquote>
+&lt;p>一个没有防护的节点，就像带着流血的伤口，在鲨鱼出没的水域里游泳。俗称：肉鸡。&lt;br>
+网络虽然是自由的信息场，但也绝不是纯净的伊甸园。恩，得学会自我保护。&lt;/p></description></item></channel></rss>

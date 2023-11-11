@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>录屏 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/%E5%BD%95%E5%B1%8F/</link><description>Recent content in 录屏 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sat, 11 Nov 2023 21:22:48 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E5%BD%95%E5%B1%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>Spacedesk录屏神器: 硬件加速与无线投屏的完美结合</title><link>https://blog.xpdbk.com/post/spacedesk-luping/</link><pubDate>Sat, 11 Nov 2023 21:22:48 +0700</pubDate><guid>https://blog.xpdbk.com/post/spacedesk-luping/</guid><description>&lt;h2 id="spacedesk无线录屏神器">Spacedesk：无线录屏神器&lt;/h2>
+&lt;p>Spacedesk是一款强大的多显示器应用，它可以将Windows系统投屏到iOS手机、安卓手机、iPad、iMac上。它支持硬件加速和无线投屏，使得屏幕扩展变得轻松简单。然而，它极其依赖路由器和网线和手机的带宽，如果其中一个有丢包和速度慢的问题，那么Spacedesk可能无法正常工作。&lt;/p>
+&lt;h2 id="硬件和网络要求">硬件和网络要求&lt;/h2>
+&lt;p>Spacedesk的最高速度能达到100mbps，因此，为了保证最佳性能，建议电脑连接有线网络。在使用Spacedesk时，需要注意的是，如果你的路由器或网线或手机的带宽出现丢包或速度慢的问题，那么Spacedesk可能无法正常工作。因此，确保你的网络设备性能良好是非常重要的。&lt;/p>
+&lt;h2 id="spacedesk的版本和兼容性">Spacedesk的版本和兼容性&lt;/h2>
+&lt;p>这里提供了APK、IPA和EXE的历史版本，这对于使用Win7和旧设备的用户来说是一个福音。它解决了OBS和PotPlayer不支持在老电脑使用硬件加速的录屏问题，甚至在关键时刻闪退的问题也得到了解决。然而，需要注意的是，支持WinXP的版本没有硬件加速，还有一堆BUG还可能会键鼠失灵的问题，所以不推荐使用过于早期的版本。&lt;/p>
+&lt;h2 id="使用spacedesk的注意事项">使用Spacedesk的注意事项&lt;/h2>
+&lt;p>在使用Spacedesk时，需要确保手机和电脑在同一个局域网内，否则可能无法连接。此外，需要关闭LAN-LAN端口隔离。在连接前，请确保没有运行Minecraft、CS1.6等OPENGL游戏，否则你的游戏可能会退出。&lt;/p>
+&lt;p>手机录屏本身带有硬件加速，所以不用担心。然而，Spacedesk还有其他的特性，例如，它支持Windows桌面扩展（扩展名：x10-sion），Windows桌面复制（镜像/复制），触摸屏Windows VIEWER支持的KVM（键盘和鼠标远程控制）等。&lt;/p>
+&lt;h2 id="mbps和mbs的计算公式">Mbps和MB/s的计算公式&lt;/h2>
+&lt;p>在网络中，Mbps和MB/s都是常用的速度单位，它们之间的换算关系是：1Mbps = 0.125MB/s⁹。也就是说，如果你的网速是100Mbps，那么每秒传输的速率为12.5MB/s。&lt;/p>
+&lt;h2 id="结论">结论&lt;/h2>
+&lt;p>总的来说，Spacedesk是一款强大的无线录屏神器，它通过硬件加速和无线投屏，使得屏幕扩展变得轻松简单。然而，它极其依赖路由器和网线和手机的带宽，如果其中一个有丢包和速度慢的问题，那么Spacedesk可能无法正常工作。因此，为了保证最佳性能，建议电脑连接有线网络。&lt;/p>
+&lt;div class="mermaid" style="margin: auto; width: max-content;">graph TD;
+A[电脑] --&amp;gt;|网线| B[路由器]
+B --&amp;gt;|无线| C[手机]
+C --&amp;gt; D[手机录屏]
+&lt;/div>
+&lt;h2 id="下载链接">下载链接&lt;/h2>
+&lt;blockquote>
+&lt;p>全部压缩密码:&lt;code>JijIHFu213&lt;/code> &lt;a class="link" href="https://pvphack.lanzoue.com/b0337u88f" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码:&lt;code>6olu&lt;/code>&lt;/p>
+&lt;p>没有IPA是因为找不到，其中的win7版本带一堆BUG请慎重下载&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

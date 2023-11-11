@@ -95,7 +95,7 @@
 &lt;/ol>
 &lt;p>示例安装命令:&lt;/p>
 &lt;ul>
-&lt;li>Linux/Mac: &lt;code>pip install Pillow&lt;/code>&lt;/li>
+&lt;li>linux系统/Mac: &lt;code>pip install Pillow&lt;/code>&lt;/li>
 &lt;li>Windows: &lt;code>pip install Pillow&lt;/code> 或 &lt;code>pip install Pillow --user&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;p>主要步骤就是使用pip安装Pillow库,然后就可以在Python代码中导入 PIL包并使用Pillow了。&lt;/p>
