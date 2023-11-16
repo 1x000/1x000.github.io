@@ -192,6 +192,7 @@ fill="currentColor">
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>Kevin在GrimAC的绕过配置</title><link>https://blog.xpdbk.com/post/kevin-grim/</link><pubDate>Tue, 22 Aug 2023 22:43:34 +0700</pubDate><guid>https://blog.xpdbk.com/post/kevin-grim/</guid><description>&lt;img src="https://blog.xpdbk.com/post/kevin-grim/2023-08-02_13.01.21.webp" alt="Featured image of post Kevin在GrimAC的绕过配置" />&lt;blockquote>
+&lt;p>&lt;code>V1版本配置&lt;/code>&lt;/p>
 &lt;p>&lt;a class="link" href="https://pvphack.lanzoue.com/iC4v2165u2hc" target="_blank" rel="noopener"
 >蓝奏云&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -202,6 +203,22 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 访问密码: &lt;code>9v2b&lt;/code>&lt;/p>
 &lt;p>压缩密码: &lt;code>Gg3FgWg3GT&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>&lt;code>V2版本配置&lt;/code> &lt;a class="link" href="https://pvphack.lanzoue.com/iURFU1f1osgb" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码: &lt;code>70jr&lt;/code>&lt;/p>
+&lt;p>压缩密码：&lt;code>EIhbS5ul&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;blockquote>
 &lt;hr>
 &lt;p>对比FDP多了一个合法搭路&lt;/p>
 &lt;p>Kevin客户端的开源地址：&lt;a class="link" href="https://github.com/RE-KevinClient/KevinClient-Reborn" target="_blank" rel="noopener"
