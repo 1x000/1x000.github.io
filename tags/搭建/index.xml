@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>搭建 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/%E6%90%AD%E5%BB%BA/</link><description>Recent content in 搭建 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>如何用VPS搭建Minecraft Java原版服务器</title><link>https://blog.xpdbk.com/post/mc-server/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/mc-server/</guid><description>&lt;img src="https://blog.xpdbk.com/post/mc-server/game.webp" alt="Featured image of post 如何用VPS搭建Minecraft Java原版服务器" />&lt;h2 id="基于vps搭建minecraft服务器linux">基于VPS搭建Minecraft服务器（Linux）&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>搭建 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/%E6%90%AD%E5%BB%BA/</link><description>Recent content in 搭建 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>如何用VPS搭建Minecraft Java原版服务器</title><link>https://blog.xpdbk.com/post/mc-server/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/mc-server/</guid><description>&lt;img src="https://blog.xpdbk.com/post/mc-server/game.webp" alt="Featured image of post 如何用VPS搭建Minecraft Java原版服务器" />&lt;h2 id="基于vps搭建minecraft服务器linux">基于VPS搭建Minecraft服务器（Linux）&lt;/h2>
 &lt;h2 id="一为啥要搭建">一、为啥要搭建&lt;/h2>
 &lt;p>我们玩&lt;code>Minecraft&lt;/code>的时候，可能需要联机玩。但是在 &lt;code>Minecraft Java&lt;/code> 上只有 &lt;code>LAN&lt;/code> 在线。这时候我们就需要搭建一个服务器，让不同地区的玩家可以一起联机。&lt;/p>
 &lt;blockquote>
@@ -23,12 +23,33 @@
 &lt;/blockquote>
 &lt;h3 id="jdk-环境包">Jdk 环境包&lt;/h3>
 &lt;p>对于&lt;code>1.16&lt;/code>及之前版本，需要安装&lt;code>Jdk8&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo apt install openjdk-8-jdk
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>对于&lt;code>1.17&lt;/code>需要安装&lt;code>Jdk16&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo apt install openjdk-16-jdk
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>1.18&lt;/code>及以上需要&lt;code>Jdk17&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo apt install openjdk-17-jdk
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="服务端下载">服务端下载&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo apt install openjdk-8-jdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>对于&lt;code>1.17&lt;/code>需要安装&lt;code>Jdk16&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo apt install openjdk-16-jdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>1.18&lt;/code>及以上需要&lt;code>Jdk17&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo apt install openjdk-17-jdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="服务端下载">服务端下载&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>进入 &lt;a class="link" href="https://mcversions.net/" target="_blank" rel="noopener"
@@ -66,10 +87,24 @@ data-flex-grow="196"
 data-flex-basis="471px"
 >&lt;/p>
 &lt;p>输入下面的命令，下载mc的服务端&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">wget -N 复制的链接
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>输入下面的命令，启动服务端&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">java -server -XX:+UseG1GC -Xmx2048M -Xms1024M -jar server.jar nogui
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>打开&lt;code>eula.txt&lt;/code>，修改红框部分为&lt;code>eula=true&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">wget -N 复制的链接
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入下面的命令，启动服务端&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">java -server -XX:+UseG1GC -Xmx2048M -Xms1024M -jar server.jar nogui
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>打开&lt;code>eula.txt&lt;/code>，修改红框部分为&lt;code>eula=true&lt;/code>&lt;/p>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/mc-server/awda.webp"
 width="1059"
 height="364"
@@ -120,49 +155,143 @@ max-world-size=29999984
 &lt;/code>&lt;/pre>
 &lt;p>创建一个screen，然后编写一个启动脚本&lt;/p>
 &lt;p>创建脚本文件&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">nano start.sh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>填写脚本内容&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="cp">#!/bin/sh
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="cp">&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="o">((&lt;/span>&lt;span class="nv">i&lt;/span>&lt;span class="o">=&lt;/span>0&lt;span class="p">;&lt;/span> i&amp;lt;10&lt;span class="p">;&lt;/span> i ++&lt;span class="o">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">&lt;span class="k">do&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> java -server -XX:+UseG1GC -Xms1024M -Xmx2048M -jar server.jar nogui -noverify -XX:+AggressiveOpts -XX:+UseCompressedOops
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">&lt;span class="k">done&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Ctrl+X 保存&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">nano start.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>填写脚本内容&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/sh
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="o">((&lt;/span>&lt;span class="nv">i&lt;/span>&lt;span class="o">=&lt;/span>0&lt;span class="p">;&lt;/span> i&amp;lt;10&lt;span class="p">;&lt;/span> i ++&lt;span class="o">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> java -server -XX:+UseG1GC -Xms1024M -Xmx2048M -jar server.jar nogui -noverify -XX:+AggressiveOpts -XX:+UseCompressedOops
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Ctrl+X 保存&lt;/strong>&lt;/p>
 &lt;p>提权&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">chmod &lt;span class="m">777&lt;/span> start.sh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">./start.sh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="注意">注意&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">chmod &lt;span class="m">777&lt;/span> start.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">./start.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="注意">注意&lt;/h2>
 &lt;p>需要停止服务器端，请进到&lt;code>screen&lt;/code>，然后输入 &lt;code>/stop&lt;/code> 命令正常关闭服务器程序&lt;/p>
 &lt;p>你可以使用下面的命令检查是否已经在你的服务器上安装了&lt;code>screen&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">screen -v
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">apt-get -y install screen
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="如何启动一个-screen-会话">如何启动一个 screen 会话&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">screen -S name
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>将 “&lt;code>name&lt;/code>” 替换为对你会话有意义的名字（例如mc）&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">screen -v
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">apt-get -y install screen
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="如何启动一个-screen-会话">如何启动一个 screen 会话&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">screen -S name
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>将 “&lt;code>name&lt;/code>” 替换为对你会话有意义的名字（例如mc）&lt;/p>
 &lt;h3 id="从-screen-会话中分离">从 screen 会话中分离&lt;/h3>
 &lt;p>要从当前的 screen 会话中分离，你可以按下 &lt;code>Ctrl-A&lt;/code> 和 &lt;code>d&lt;/code>。所有的 screen 会话仍将是活跃的，你之后可以随时重新连接。&lt;/p>
 &lt;h3 id="重新连接到-screen-会话">重新连接到 screen 会话&lt;/h3>
 &lt;p>如果你从一个会话分离，或者由于某些原因你的连接被中断了，你可以使用下面的命令重新连接：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">screen -r mc
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果你有多个 screen 会话，你可以用 &lt;code>ls&lt;/code> 参数列出它们。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="c1"># 输入 &lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">screen -ls
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="c1"># 列出会话&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">There are screens on
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="c1"># 114514是会话号&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">114514.session &lt;span class="o">(&lt;/span>Detached&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">1919810.homo &lt;span class="o">(&lt;/span>Detached&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">514441.session1 &lt;span class="o">(&lt;/span>Detached&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">&lt;span class="m">3&lt;/span> Sockets in /var/run/screen/S-root
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在我们的例子中，我们有三个活跃的 &lt;code>screen&lt;/code> 会话。因此，如果你想要还原 “&lt;code>session2&lt;/code>” 会话，你可以执行：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">screen -r &lt;span class="m">1919810&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="c1"># 或者使用字符&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">screen -r -S homo
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="删除screen">删除Screen&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">screen -r mc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果你有多个 screen 会话，你可以用 &lt;code>ls&lt;/code> 参数列出它们。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 输入 &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">screen -ls
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 列出会话&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">There are screens on
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 114514是会话号&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">114514.session &lt;span class="o">(&lt;/span>Detached&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1919810.homo &lt;span class="o">(&lt;/span>Detached&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">514441.session1 &lt;span class="o">(&lt;/span>Detached&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> Sockets in /var/run/screen/S-root
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在我们的例子中，我们有三个活跃的 &lt;code>screen&lt;/code> 会话。因此，如果你想要还原 “&lt;code>session2&lt;/code>” 会话，你可以执行：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">screen -r &lt;span class="m">1919810&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 或者使用字符&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">screen -r -S homo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="删除screen">删除Screen&lt;/h3>
 &lt;p>在当前&lt;strong>screen&lt;/strong>下，输入&lt;code>Ctrl+D&lt;/code>，&lt;strong>删除&lt;/strong>该&lt;strong>screen&lt;/strong>.&lt;/p>
 &lt;h2 id="服务器开好了之后的样子">服务器开好了之后的样子&lt;/h2>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/mc-server/dfwerf.webp"

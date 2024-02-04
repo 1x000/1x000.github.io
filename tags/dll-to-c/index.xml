@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DLL TO C on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/dll-to-c/</link><description>Recent content in DLL TO C on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Sat, 25 Feb 2023 15:14:47 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/dll-to-c/index.xml" rel="self" type="application/rss+xml"/><item><title>DLL反编译</title><link>https://blog.xpdbk.com/post/dllfby/</link><pubDate>Sat, 25 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/dllfby/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DLL TO C on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/dll-to-c/</link><description>Recent content in DLL TO C on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><lastBuildDate>Sat, 25 Feb 2023 15:14:47 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/dll-to-c/index.xml" rel="self" type="application/rss+xml"/><item><title>DLL反编译</title><link>https://blog.xpdbk.com/post/dllfby/</link><pubDate>Sat, 25 Feb 2023 15:14:47 +0700</pubDate><guid>https://blog.xpdbk.com/post/dllfby/</guid><description>&lt;blockquote>
 &lt;p>仅用来探讨技术和学习&lt;/p>
 &lt;p>下载学习之后请24小时内删除&lt;/p>
 &lt;/blockquote>
@@ -27,8 +27,15 @@ fill="currentColor">
 &lt;p>访问密码：&lt;code>41ng&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;strong>压缩密码&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">NbeV+lgz9Ce6m2da/8bkvXWr9nBtjfId
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="使用方法">使用方法&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">NbeV+lgz9Ce6m2da/8bkvXWr9nBtjfId
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="使用方法">使用方法&lt;/h2>
 &lt;p>1.运行Dll2C.exe
 2. 打开文件TestWin32Dll\Win32Dll.dll
 3. 单击“开始转换”按钮。

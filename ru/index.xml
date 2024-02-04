@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Блог LEl_FENG</title><link>https://blog.xpdbk.com/ru/</link><description>Recent content on Блог LEl_FENG</description><generator>Hugo -- gohugo.io</generator><language>ru</language><copyright>XiaoPang版权所有</copyright><atom:link href="https://blog.xpdbk.com/ru/index.xml" rel="self" type="application/rss+xml"/><item><title>LAOSAT机顶盒固件提取备份与固件结构研究</title><link>https://blog.xpdbk.com/ru/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</link><pubDate>Thu, 17 Aug 2023 17:31:39 +0700</pubDate><guid>https://blog.xpdbk.com/ru/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>архив статей</title><link>https://blog.xpdbk.com/ru/archives/</link><pubDate>Thu, 17 Aug 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/ru/archives/</guid><description/></item><item><title>заявление</title><link>https://blog.xpdbk.com/ru/bzsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/ru/bzsm/</guid><description>&lt;h2 id="заявление-об-этом-сайте">Заявление об этом сайте&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Блог LEl_FENG</title><link>https://blog.xpdbk.com/ru/</link><description>Recent content on Блог LEl_FENG</description><generator>Hugo -- gohugo.io</generator><language>ru</language><copyright>LEl_FENG版权所有</copyright><atom:link href="https://blog.xpdbk.com/ru/index.xml" rel="self" type="application/rss+xml"/><item><title>LAOSAT机顶盒固件提取备份与固件结构研究</title><link>https://blog.xpdbk.com/ru/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</link><pubDate>Thu, 17 Aug 2023 17:31:39 +0700</pubDate><guid>https://blog.xpdbk.com/ru/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>архив статей</title><link>https://blog.xpdbk.com/ru/archives/</link><pubDate>Thu, 17 Aug 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/ru/archives/</guid><description/></item><item><title>заявление</title><link>https://blog.xpdbk.com/ru/bzsm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/ru/bzsm/</guid><description>&lt;h2 id="заявление-об-этом-сайте">Заявление об этом сайте&lt;/h2>
 &lt;blockquote>
 &lt;p>Этот сайт ссылается на &lt;a class="link" href="https://blog.xpdbk.com" target="_blank" rel="noopener"
 >blog.xpdbk.com&lt;/a>
@@ -159,16 +159,31 @@ data-flex-basis="360px"
 &lt;p>Мои теги: пост-00-е, личность INTP, любовь к технологиям, неудобно без метаний, минималистичный перфекционист&amp;hellip;&lt;/p>
 &lt;hr>
 &lt;h2 id="автопортрет">Автопортрет&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl"> 　 　▃▆█▇▄▖
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">　 　 　 ▟◤ ▖　　◥█▎
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">　 ◢◤　 ▐　　　 　▐▉
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">　 ▗◤　　　▂　▗▖　　▕█▎
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">　◤　▗▅▖◥▄　▀◣　 　█▊
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">▐　▕▎◥▖◣◤　　　◢██
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">█◣　◥▅█▀　　　　▐██◤
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl"> ▐█▙▂　　 　 ◢██◤
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl"> ◥██◣　◢▄◤
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 　 　▃▆█▇▄▖
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">　 　 　 ▟◤ ▖　　◥█▎
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">　 ◢◤　 ▐　　　 　▐▉
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">　 ▗◤　　　▂　▗▖　　▕█▎
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">　◤　▗▅▖◥▄　▀◣　 　█▊
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">▐　▕▎◥▖◣◤　　　◢██
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">█◣　◥▅█▀　　　　▐██◤
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ▐█▙▂　　 　 ◢██◤
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ◥██◣　◢▄◤
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
 &lt;h2 id="свяжитесь-со-мной">Свяжитесь со мной&lt;/h2>
 &lt;p>&lt;strong>Tg&lt;/strong>: &lt;a class="link" href="https://l.xpdbk.com/dt52S6" target="_blank" rel="noopener"
 >https://l.xpdbk.com/dt52S6&lt;/a>

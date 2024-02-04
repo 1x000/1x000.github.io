@@ -1,12 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LEl_FENG Blog</title><link>https://blog.xpdbk.com/en/</link><description>Recent content on LEl_FENG Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>XiaoPang版权所有</copyright><atom:link href="https://blog.xpdbk.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Batchfile batch script garbled solution</title><link>https://blog.xpdbk.com/en/post/batchfile-fix-lange-erorr/</link><pubDate>Tue, 12 Sep 2023 21:13:11 +0700</pubDate><guid>https://blog.xpdbk.com/en/post/batchfile-fix-lange-erorr/</guid><description>&lt;h2 id="question">question&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LEl_FENG Blog</title><link>https://blog.xpdbk.com/en/</link><description>Recent content on LEl_FENG Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>LEl_FENG版权所有</copyright><atom:link href="https://blog.xpdbk.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Batchfile batch script garbled solution</title><link>https://blog.xpdbk.com/en/post/batchfile-fix-lange-erorr/</link><pubDate>Tue, 12 Sep 2023 21:13:11 +0700</pubDate><guid>https://blog.xpdbk.com/en/post/batchfile-fix-lange-erorr/</guid><description>&lt;h2 id="question">question&lt;/h2>
 &lt;p>The bat batch processing script is as follows&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">@echo off
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">echo hello,world.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">echo haha
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">pause
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When CMD executes the script, Chinese garbled characters appear.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@echo off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo hello,world.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo haha
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pause
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>When CMD executes the script, Chinese garbled characters appear.&lt;/p>
 &lt;h2 id="analyze">analyze&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -22,8 +34,15 @@
 &lt;p>After converting the encoding and running it again, the Chinese garbled problem was solved.&lt;/p>
 &lt;h3 id="change-code">Change code&lt;/h3>
 &lt;p>Declare changes to the previous code in the original bat script file&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">chcp 65001
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="other">other&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">chcp 65001
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="other">other&lt;/h2>
 &lt;ol>
 &lt;li>Common code page mapping&lt;/li>
 &lt;/ol>
@@ -80,16 +99,31 @@ data-flex-basis="360px"
 &lt;p>My tags: post-00s, INTP personality, love of technology, uncomfortable without tossing, minimalist perfectionist&amp;hellip;&lt;/p>
 &lt;hr>
 &lt;h2 id="self-portrait">self-portrait&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl"> ▃▆█▇▄▖
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">▟◤ ▖ ◥█▎
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">◢◤ ▐ ▐▉
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">▗◤ ▂ ▗▖ ▕█▎
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">◤ ▗▅▖◥▄ ▀◣ █▊
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">▐ ▕▎◥▖◣◤◢██
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">█◣ ◥▅█▀ ▐██◤
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl"> ▐█▙▂ ◢██◤
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl"> ◥██◣◢▄◤
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> ▃▆█▇▄▖
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">▟◤ ▖ ◥█▎
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">◢◤ ▐ ▐▉
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">▗◤ ▂ ▗▖ ▕█▎
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">◤ ▗▅▖◥▄ ▀◣ █▊
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">▐ ▕▎◥▖◣◤◢██
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">█◣ ◥▅█▀ ▐██◤
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ▐█▙▂ ◢██◤
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ◥██◣◢▄◤
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
 &lt;h2 id="contact-me">Contact me&lt;/h2>
 &lt;p>&lt;strong>TG&lt;/strong>: &lt;a class="link" href="https://l.xpdbk.com/dt52S6" target="_blank" rel="noopener"
 >https://l.xpdbk.com/dt52S6&lt;/a>

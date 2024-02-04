@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>加密方法 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/</link><description>Recent content in 加密方法 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Mon, 19 Dec 2022 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml"/><item><title>如何安全的传送你的文件？</title><link>https://blog.xpdbk.com/post/404-jm/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/404-jm/</guid><description>&lt;h2 id="如何防止你的文件被别人偷看">如何防止你的文件被别人偷看？&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>加密方法 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/</link><description>Recent content in 加密方法 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><lastBuildDate>Mon, 19 Dec 2022 00:00:00 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml"/><item><title>如何安全的传送你的文件？</title><link>https://blog.xpdbk.com/post/404-jm/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/post/404-jm/</guid><description>&lt;h2 id="如何防止你的文件被别人偷看">如何防止你的文件被别人偷看？&lt;/h2>
 &lt;blockquote>
 &lt;p>本篇文章将教你如何传文件才不会被好兄弟看到&lt;/p>
 &lt;/blockquote>
@@ -36,9 +36,23 @@ fill="currentColor">
 &lt;/ol>
 &lt;p>对于图形用户界面：&lt;/p>
 &lt;p>如果您使用安装程序，请使用 OpenStego 的菜单快捷方式。对于 zip 下载，使用捆绑的批处理文件或 shell 脚本启动 GUI。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">openstego.bat &lt;span class="o">(&lt;/span>Windows&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">./openstego.sh &lt;span class="o">(&lt;/span>Linux / MacOS&lt;span class="o">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="隐藏信息">隐藏信息&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">openstego.bat &lt;span class="o">(&lt;/span>Windows&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./openstego.sh &lt;span class="o">(&lt;/span>Linux / MacOS&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="隐藏信息">隐藏信息&lt;/h3>
 &lt;p>在隐藏信息之前需要做做两样准备，也就是&lt;strong>Cover&lt;/strong>以及&lt;strong>Message文件&lt;/strong>。第一个就是我们需要用来作伪装的无害的图片，第二个message文件就是我们用来存储信息的文件，一般创建一个.txt的文件即可。 首先我们找好一张可以隐藏真实意图的图片，比如这样一张： &lt;img src="https://blog.xpdbk.com/post/404-jm/128.webp"
 width="605"
 height="605"

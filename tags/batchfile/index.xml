@@ -1,12 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Batchfile on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/batchfile/</link><description>Recent content in Batchfile on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>XiaoPang版权所有</copyright><lastBuildDate>Tue, 12 Sep 2023 21:13:05 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/batchfile/index.xml" rel="self" type="application/rss+xml"/><item><title>Batchfile批处理脚本乱码解决方法</title><link>https://blog.xpdbk.com/post/batchfile-fix-lange-erorr/</link><pubDate>Tue, 12 Sep 2023 21:13:05 +0700</pubDate><guid>https://blog.xpdbk.com/post/batchfile-fix-lange-erorr/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Batchfile on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/batchfile/</link><description>Recent content in Batchfile on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><lastBuildDate>Tue, 12 Sep 2023 21:13:05 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/batchfile/index.xml" rel="self" type="application/rss+xml"/><item><title>Batchfile批处理脚本乱码解决方法</title><link>https://blog.xpdbk.com/post/batchfile-fix-lange-erorr/</link><pubDate>Tue, 12 Sep 2023 21:13:05 +0700</pubDate><guid>https://blog.xpdbk.com/post/batchfile-fix-lange-erorr/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
 &lt;p>bat 批处理脚本如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">@echo off
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">echo hello,world.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">echo 哈哈
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">pause
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在 CMD 执行脚本时，出现了中文乱码&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@echo off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo hello,world.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo 哈哈
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pause
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在 CMD 执行脚本时，出现了中文乱码&lt;/p>
 &lt;h2 id="分析">分析&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -22,8 +34,15 @@
 &lt;p>转换编码后，再次运行，中文乱码问题得到解决。&lt;/p>
 &lt;h3 id="更改代码">更改代码&lt;/h3>
 &lt;p>在原先 bat 脚本文件中声明更改前面的代码&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">chcp 65001
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="其他">其他&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">chcp 65001
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="其他">其他&lt;/h2>
 &lt;ol>
 &lt;li>常用代码页映射&lt;/li>
 &lt;/ol>

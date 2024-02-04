@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ห้องโดยสารของ LEl_FENG</title><link>https://blog.xpdbk.com/th/</link><description>Recent content on ห้องโดยสารของ LEl_FENG</description><generator>Hugo -- gohugo.io</generator><language>th</language><copyright>XiaoPang版权所有</copyright><atom:link href="https://blog.xpdbk.com/th/index.xml" rel="self" type="application/rss+xml"/><item><title>LAOSAT机顶盒固件提取备份与固件结构研究</title><link>https://blog.xpdbk.com/th/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</link><pubDate>Thu, 17 Aug 2023 19:55:47 +0700</pubDate><guid>https://blog.xpdbk.com/th/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>คลังบทความ</title><link>https://blog.xpdbk.com/th/archives/</link><pubDate>Thu, 17 Aug 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/th/archives/</guid><description/></item><item><title>เกี่ยวกับฉัน</title><link>https://blog.xpdbk.com/th/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/th/about/</guid><description>&lt;img src="https://blog.xpdbk.com/th/about/about.webp" alt="Featured image of post เกี่ยวกับฉัน" />&lt;p>&lt;img src="https://blog.xpdbk.com/th/about/about.webp"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ห้องโดยสารของ LEl_FENG</title><link>https://blog.xpdbk.com/th/</link><description>Recent content on ห้องโดยสารของ LEl_FENG</description><generator>Hugo -- gohugo.io</generator><language>th</language><copyright>LEl_FENG版权所有</copyright><atom:link href="https://blog.xpdbk.com/th/index.xml" rel="self" type="application/rss+xml"/><item><title>LAOSAT机顶盒固件提取备份与固件结构研究</title><link>https://blog.xpdbk.com/th/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</link><pubDate>Thu, 17 Aug 2023 19:55:47 +0700</pubDate><guid>https://blog.xpdbk.com/th/post/laosat%E6%9C%BA%E9%A1%B6%E7%9B%92%E5%9B%BA%E4%BB%B6%E6%8F%90%E5%8F%96%E5%A4%87%E4%BB%BD%E4%B8%8E%E5%9B%BA%E4%BB%B6%E7%BB%93%E6%9E%84%E7%A0%94%E7%A9%B6/</guid><description>&lt;p>awa&lt;/p></description></item><item><title>คลังบทความ</title><link>https://blog.xpdbk.com/th/archives/</link><pubDate>Thu, 17 Aug 2023 00:00:00 +0700</pubDate><guid>https://blog.xpdbk.com/th/archives/</guid><description/></item><item><title>เกี่ยวกับฉัน</title><link>https://blog.xpdbk.com/th/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.xpdbk.com/th/about/</guid><description>&lt;img src="https://blog.xpdbk.com/th/about/about.webp" alt="Featured image of post เกี่ยวกับฉัน" />&lt;p>&lt;img src="https://blog.xpdbk.com/th/about/about.webp"
 width="2048"
 height="1365"
 srcset="https://blog.xpdbk.com/th/about/about_huca4ec442db75e1a75786acab8974567c_239866_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/th/about/about_huca4ec442db75e1a75786acab8974567c_239866_1024x0_resize_q75_h2_box_2.webp 1024w"
@@ -21,16 +21,31 @@ data-flex-basis="360px"
 &lt;p>แท็กของฉัน: ยุคหลัง 00, บุคลิกภาพแบบ INTP, รักเทคโนโลยี, อึดอัดโดยไม่ต้องโยน, มินิมัลลิสต์สมบูรณ์แบบ&amp;hellip;&lt;/p>
 &lt;hr>
 &lt;h2 id="ภาพเหมอน">ภาพเหมือน&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl"> 　 　▃▆█▇▄▖
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">　 　 　 ▟◤ ▖　　◥█▎
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">　 ◢◤　 ▐　　　 　▐▉
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">　 ▗◤　　　▂　▗▖　　▕█▎
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">　◤　▗▅▖◥▄　▀◣　 　█▊
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">▐　▕▎◥▖◣◤　　　◢██
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">█◣　◥▅█▀　　　　▐██◤
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">8&lt;/span>&lt;span class="cl"> ▐█▙▂　　 　 ◢██◤
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">9&lt;/span>&lt;span class="cl"> ◥██◣　◢▄◤
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 　 　▃▆█▇▄▖
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">　 　 　 ▟◤ ▖　　◥█▎
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">　 ◢◤　 ▐　　　 　▐▉
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">　 ▗◤　　　▂　▗▖　　▕█▎
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">　◤　▗▅▖◥▄　▀◣　 　█▊
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">▐　▕▎◥▖◣◤　　　◢██
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">█◣　◥▅█▀　　　　▐██◤
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ▐█▙▂　　 　 ◢██◤
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ◥██◣　◢▄◤
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
 &lt;h2 id="ตดตอฉน">ติดต่อฉัน&lt;/h2>
 &lt;p>&lt;strong>TG&lt;/strong>: &lt;a class="link" href="https://l.xpdbk.com/dt52S6" target="_blank" rel="noopener"
 >https://l.xpdbk.com/dt52S6&lt;/a>
