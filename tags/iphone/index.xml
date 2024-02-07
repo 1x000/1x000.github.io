@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iPhone on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/iphone/</link><description>Recent content in iPhone on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><lastBuildDate>Wed, 07 Feb 2024 07:51:55 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/iphone/index.xml" rel="self" type="application/rss+xml"/><item><title>如何刷新IPhone6的固件</title><link>https://blog.xpdbk.com/post/iphone6-firmware/</link><pubDate>Wed, 07 Feb 2024 07:51:55 +0700</pubDate><guid>https://blog.xpdbk.com/post/iphone6-firmware/</guid><description>&lt;h1 id="iphone-刷新固件的方法">IPhone 刷新固件的方法&lt;/h1>
+&lt;blockquote>
+&lt;p>因为越狱后我安装了一个插件导致APT包管理崩溃所以出了这一期教程&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="第一步-下载i4助手">第一步-下载i4助手&lt;/h2>
+&lt;p>&lt;a class="link" href="https://www.i4.cn/pro_pc.html" target="_blank" rel="noopener"
+>i4下载&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;h2 id="第二步-安装i4助手">第二步-安装i4助手&lt;/h2>
+&lt;p>一直点击下一步直到桌面或者开始菜单有下面的图标之后打开i4助手&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/iphone6-firmware/i4.webp"
+width="70"
+height="73"
+srcset="https://blog.xpdbk.com/post/iphone6-firmware/i4_hu69d6f1fb4b8f01bdd78410b4b43ad5a8_2080_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/iphone6-firmware/i4_hu69d6f1fb4b8f01bdd78410b4b43ad5a8_2080_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="i4"
+class="gallery-image"
+data-flex-grow="95"
+data-flex-basis="230px"
+>&lt;/p>
+&lt;h2 id="第三步-连接iphone6">第三步-连接IPhone6&lt;/h2>
+&lt;p>这一步可能涉及到你的充电器是否支持数据传说和数据接口是否被腐蚀&lt;/p>
+&lt;p>连接成功后如下图&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/iphone6-firmware/i41.webp"
+width="832"
+height="427"
+srcset="https://blog.xpdbk.com/post/iphone6-firmware/i41_hu78789dbbcc6c728f5cd0848bebd4cc27_45084_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/iphone6-firmware/i41_hu78789dbbcc6c728f5cd0848bebd4cc27_45084_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="i4助手连接成功"
+class="gallery-image"
+data-flex-grow="194"
+data-flex-basis="467px"
+>&lt;/p>
+&lt;h2 id="第四步-转到刷机选项卡">第四步-转到刷机选项卡&lt;/h2>
+&lt;p>第一步点击智能刷机&lt;/p>
+&lt;p>第二步点击下载&lt;/p>
+&lt;p>第三步点击立即刷机&lt;/p>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/iphone6-firmware/i42.webp"
+width="998"
+height="681"
+srcset="https://blog.xpdbk.com/post/iphone6-firmware/i42_hueb06c4969be0803e33be70975048b581_39238_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/iphone6-firmware/i42_hueb06c4969be0803e33be70975048b581_39238_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="操作过程"
+class="gallery-image"
+data-flex-grow="146"
+data-flex-basis="351px"
+>&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>除了最新固件你也能使用老固件，但是这需要你提前备份了SHSH2，因为苹果官方不想让你降级系统，降级系统会有被越狱的风险，这样就会触犯苹果官方的应用商店收费利益，所以你需要提前备份shsh2，也就是你最后能越狱的系统版本，因为最后能越狱的系统版本会在你手机刷机之后立刻换成最新版本的系统。&lt;/p></description></item></channel></rss>
