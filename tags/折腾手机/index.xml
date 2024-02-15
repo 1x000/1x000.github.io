@@ -209,14 +209,26 @@ data-flex-basis="300px"
 &lt;blockquote>
 &lt;p>点击下载之后记得要看看资料库有没有东西&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;img src="D:%5cblog%5cblog%5cmy%20blog%5ccontent%5cpost%5cIOSApp%e4%bb%bb%e6%84%8f%e7%89%88%e6%9c%ac%e6%8a%93%e5%8c%85%e9%99%8d%e7%ba%a7%e6%95%99%e7%a8%8b%5c3123.webp"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ios-app-download-old/3123.webp"
+width="1365"
+height="767"
+srcset="https://blog.xpdbk.com/post/ios-app-download-old/3123_huc9cd58784df4e82defd4830b62fe011e_29702_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ios-app-download-old/3123_huc9cd58784df4e82defd4830b62fe011e_29702_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="3123.webp"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="427px"
 >&lt;/p>
 &lt;p>好了我们通过右键-选择在windows资料管理器中打开 找到了IPA文件包&lt;/p>
-&lt;p>&lt;img src="D:%5cblog%5cblog%5cmy%20blog%5ccontent%5cpost%5cIOSApp%e4%bb%bb%e6%84%8f%e7%89%88%e6%9c%ac%e6%8a%93%e5%8c%85%e9%99%8d%e7%ba%a7%e6%95%99%e7%a8%8b%5c4124.webp"
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/ios-app-download-old/4124.webp"
+width="1176"
+height="535"
+srcset="https://blog.xpdbk.com/post/ios-app-download-old/4124_hu18947f795f42ad7332f62569caad87b5_2330_480x0_resize_q75_h2_box_2.webp 480w, https://blog.xpdbk.com/post/ios-app-download-old/4124_hu18947f795f42ad7332f62569caad87b5_2330_1024x0_resize_q75_h2_box_2.webp 1024w"
 loading="lazy"
 alt="4124.webp"
+class="gallery-image"
+data-flex-grow="219"
+data-flex-basis="527px"
 >&lt;/p>
 &lt;h2 id="第三步">第三步&lt;/h2>
 &lt;p>安装爱思助手并导入IPA（百度上面一大把教程）&lt;/p>
