@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nuitka on LEl_FENG的博客</title><link>https://blog.xpdbk.com/tags/nuitka/</link><description>Recent content in Nuitka on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><lastBuildDate>Fri, 15 Mar 2024 20:20:42 +0700</lastBuildDate><atom:link href="https://blog.xpdbk.com/tags/nuitka/index.xml" rel="self" type="application/rss+xml"/><item><title>Python的Nuitka打包教程</title><link>https://blog.xpdbk.com/post/python%E7%9A%84nuitka%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link><pubDate>Fri, 15 Mar 2024 20:20:42 +0700</pubDate><guid>https://blog.xpdbk.com/post/python%E7%9A%84nuitka%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</guid><description>&lt;p>Python的运行速度和源代码反编译，一直是一个让人难解的问题，然而使用了Nuitka后，你将会享受C++的速度，和免于被pyinstaller打包后被人完整反编译出来源代码的担忧&lt;/p>
+&lt;h2 id="解释一下pyinstaller和nuitka的不同">解释一下pyinstaller和Nuitka的不同&lt;/h2>
+&lt;p>这两个的不同点在于pyinstaller是现场做菜，一切都被在场人看的清清楚楚（解包出源码），但是Nuitka是把一堆东西打成浆糊你也不知道里面放了什么东西只能大致猜出这个东西在干嘛（反汇编只能得到汇编不能得到源码）&lt;/p>
+&lt;h2 id="python版本选择">Python版本选择&lt;/h2>
+&lt;p>Python版本越旧越好，越能兼容更多东西，选择python 3.8.10足以&lt;/p>
+&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;p>安装的目录不能带中文，不然会有一堆你无法解决的bug&lt;/p>
+&lt;h2 id="pip安装一些东西">PIP安装一些东西&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl"> pip install ordered-set &lt;span class="c1"># 加速编译&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> pip install nuitka &lt;span class="c1"># 主程序&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> pip install zstandard &lt;span class="c1"># onefile时压缩文件&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="一键指令">一键指令&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">python -m nuitka --mingw64 --standalone --output-dir&lt;span class="o">=&lt;/span>out --show-progress --onefile main.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>你可以保存成&lt;code>build.bat&lt;/code>以便打开即可食用&lt;/p></description></item></channel></rss>

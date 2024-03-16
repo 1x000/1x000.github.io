@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具文章 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具文章 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><atom:link href="https://blog.xpdbk.com/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>我的世界正版账号的UUID和皮肤一键获取器</title><link>https://blog.xpdbk.com/post/python-mc-skin-get/</link><pubDate>Fri, 15 Mar 2024 20:17:36 +0700</pubDate><guid>https://blog.xpdbk.com/post/python-mc-skin-get/</guid><description>&lt;img src="https://blog.xpdbk.com/post/python-mc-skin-get/1.PNG" alt="Featured image of post 我的世界正版账号的UUID和皮肤一键获取器" />&lt;h2 id="说明">说明&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具文章 on LEl_FENG的博客</title><link>https://blog.xpdbk.com/categories/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具文章 on LEl_FENG的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>LEl_FENG版权所有</copyright><atom:link href="https://blog.xpdbk.com/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>使用python制作的目录图片转换神器</title><link>https://blog.xpdbk.com/post/python-img-jpg-webp-png-jpeg/</link><pubDate>Sat, 16 Mar 2024 18:26:25 +0700</pubDate><guid>https://blog.xpdbk.com/post/python-img-jpg-webp-png-jpeg/</guid><description>&lt;img src="https://blog.xpdbk.com/post/python-img-jpg-webp-png-jpeg/%E6%8D%95%E8%8E%B7.PNG" alt="Featured image of post 使用python制作的目录图片转换神器" />&lt;h2 id="说明">说明&lt;/h2>
+&lt;p>本程序是一个用于转换程序所在的文件夹包括子文件夹全部图片的程序，本程序兼容win7以上的运行&lt;/p>
+&lt;h2 id="实际运行效果">实际运行效果&lt;/h2>
+&lt;p>&lt;img src="https://blog.xpdbk.com/post/python-img-jpg-webp-png-jpeg/%E6%8D%95%E8%8E%B7.PNG"
+width="845"
+height="472"
+srcset="https://blog.xpdbk.com/post/python-img-jpg-webp-png-jpeg/%E6%8D%95%E8%8E%B7_hu62796845f3ed56304a041dc65b26b76a_20048_480x0_resize_box_3.PNG 480w, https://blog.xpdbk.com/post/python-img-jpg-webp-png-jpeg/%E6%8D%95%E8%8E%B7_hu62796845f3ed56304a041dc65b26b76a_20048_1024x0_resize_box_3.PNG 1024w"
+loading="lazy"
+alt="效果"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="429px"
+>&lt;/p>
+&lt;h2 id="网盘下载">网盘下载&lt;/h2>
+&lt;p>&lt;a class="link" href="https://pvphack.lanzouw.com/i8A331rmkm1e" target="_blank" rel="noopener"
+>仅Windows7 64位以上&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+访问密码：&lt;code>2y8h&lt;/code> 压缩密码：&lt;code>图片转换&lt;/code>&lt;/p>
+&lt;p>MD5校验: &lt;code>8E6473A1C59BA22A18269D3F9506536F&lt;/code>&lt;/p></description></item><item><title>我的世界正版账号的UUID和皮肤一键获取器</title><link>https://blog.xpdbk.com/post/python-mc-skin-get/</link><pubDate>Fri, 15 Mar 2024 20:17:36 +0700</pubDate><guid>https://blog.xpdbk.com/post/python-mc-skin-get/</guid><description>&lt;img src="https://blog.xpdbk.com/post/python-mc-skin-get/1.PNG" alt="Featured image of post 我的世界正版账号的UUID和皮肤一键获取器" />&lt;h2 id="说明">说明&lt;/h2>
 &lt;p>本程序是一个用于获取我的世界玩家UUID和皮肤的程序，本程序兼容win7以上的运行&lt;/p>
 &lt;h2 id="实际运行效果">实际运行效果&lt;/h2>
 &lt;p>&lt;img src="https://blog.xpdbk.com/post/python-mc-skin-get/1.PNG"
@@ -30,7 +53,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 访问密码：&lt;code>arkc&lt;/code> 压缩密码：&lt;code>HQUUIDAND123&lt;/code>&lt;/p>
-&lt;p>校验: &lt;code>12C8ED57930947CE44A7DDAD88FC04CB&lt;/code>&lt;/p></description></item><item><title>ffmpeg批量压缩转换视频为30FPS</title><link>https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall/</link><pubDate>Sun, 10 Sep 2023 21:38:10 +0700</pubDate><guid>https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall/</guid><description>&lt;h2 id="ffmpeg批量转换为小视频">ffmpeg批量转换为小视频&lt;/h2>
+&lt;p>MD5校验: &lt;code>12C8ED57930947CE44A7DDAD88FC04CB&lt;/code>&lt;/p></description></item><item><title>ffmpeg批量压缩转换视频为30FPS</title><link>https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall/</link><pubDate>Sun, 10 Sep 2023 21:38:10 +0700</pubDate><guid>https://blog.xpdbk.com/post/ffmpeg-python-video-allinsmall/</guid><description>&lt;h2 id="ffmpeg批量转换为小视频">ffmpeg批量转换为小视频&lt;/h2>
 &lt;blockquote>
 &lt;p>有些时候我们需要批量压缩文件夹里面的视频，这时候我们就能使用python来对ffmpeg进行自动操控实现批量转视频，本脚本仅在&lt;code>termux&lt;/code>上面使用过&lt;/p>
 &lt;/blockquote>

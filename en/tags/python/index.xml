@@ -30,7 +30,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 Access password: &lt;code>arkc&lt;/code> Compression password: &lt;code>HQUUIDAND123&lt;/code>&lt;/p>
-&lt;p>Verification: &lt;code>12C8ED57930947CE44A7DDAD88FC04CB&lt;/code>&lt;/p>
+&lt;p>MD5 Verification: &lt;code>12C8ED57930947CE44A7DDAD88FC04CB&lt;/code>&lt;/p>
 &lt;h2 id="source-code">source code&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
